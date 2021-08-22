@@ -3,8 +3,8 @@
     "repoDefaultBranch": "main",
     "rootUrl": "https://hanaloop.gitlab.com/hanaloop.com/en/",
 
-    "name": "HanaLoop.com",
-    "logoUrl": "/images/logo.png",
+    "name": "HanaLoop",
+    "logoUrl": "/images/hanaloop-icon.png",
     "faviconUrl": "/images/logo.ico",
     "googleTagId": "", 
 

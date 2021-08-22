@@ -1,5 +1,5 @@
 # Once you complete modifying this file, run
-# $ yarn fundamenty:tool init
+# $ yarn yarn  init
 name: HanaLoop.com
 repoUrl: https://gitlab.com/hanaloop/branding/hanaloop.com
 rootUrl: https://hanaloop.gitlab.com/hanaloop.com/en/

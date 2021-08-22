@@ -1,16 +1,16 @@
 {
-    "name": "fundamenty",
-    "description": "Eleventy starter project with multi-language support",
-    "homepage": "https://github.com/creasoft-dev/fundamenty",
+    "name": "HanaLoop",
+    "description": "HanaLoop's website",
+    "homepage": "https://gitlab.com/hanaloop/branding/hanaloop.com",
     "keywords": [
-        "eleventy",
+        "HanaLoop",
         "website",
         "ssg"
     ],
-    "version": "0.1.1",
+    "version": "0.0.1",
     "author": "Young-Suk Ahn Park<ys.ahnpark@gmail.com>",
     "license": "MIT",
-    "repository": "git@github.com:creasoft-dev/fundamenty.git",
+    "repository": "git@gitlab.com:hanaloop/branding/hanaloop.com.git",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
