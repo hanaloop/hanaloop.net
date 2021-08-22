@@ -1,0 +1,10 @@
+{
+    "articles": "기사",
+    "by": "",
+    "published_on": "등록일",
+    "updated_on": "갱신일",
+    "search": "검색",
+    "edit_on_git": "Git로 편집",
+    "NOT_FOUND": "죄송합니다. 페이지를 찾지 못하였습니다.",
+    "tech_radar": "테크놀로지 레이더"
+}
