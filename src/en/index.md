@@ -15,14 +15,36 @@ slogan: Resources are finite  but your potential doesn't have to be
 
 ---
 
-## Sustainable Digital Transformation
+## We will help you harness your potential in a sustainable way.
+Stay in the loop of continuous improvement.
 
-Power up your business, make it thrive
+<div class="flex space-x-4 my-5 ">
+  <div class="rounded overflow-hidden hover:shadow-lg w-1/2 ">
+    <a class="no-underline hover:no-underline" href="{{'/en/products/' | url }}">
+      <img class="full before:bg-black/50" src="{{'/images/headway-5QgIuuBxKwM-unsplash.jpg' | url }}">
+      <figcaption class="absolute -mt-24 text-white px-4 w-2/5 ">
+        <div class="text-xl">Sustainable Digital Transformation</div>
+      </figcaption>
+      <div class="px-6 py-4">
+        <div class="text-gray-600">Leverage digital technology to obtain breakthrough outcomes.
+        </div>
+      </div>
+    </a>
+  </div>
 
-## Organization Agility and Technical Excellence
+  <div class="rounded overflow-hidden hover:shadow-lg w-1/2 ">
+    <a class="no-underline hover:no-underline" href="{{'/en/products/' | url }}">
+      <img class="full" src="{{'/images/quino-al-ZrLStmu_ZgY-unsplash.jpg' | url }}">
+      <figcaption class="absolute -mt-24 text-white px-4 w-2/5 ">
+        <div class="text-xl">Organization Agility and Technical Excellence</div>
+      </figcaption>
+      <div class="px-6 py-4">
+        <div class="text-gray-600">Power up your business, be resilient and thrive.
+        </div>
+      </div>
+    </a>
+  </div>
 
-When we increase the agility of an individual and strengthen the bond among your team, the overall organization performance goes up.
-The outcome is faster delivery, higher quality, resulting in happier customer.
+</div>
 
-## Sustainability Platform
-
+## Grow without compromising the nature!

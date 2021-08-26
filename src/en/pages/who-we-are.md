@@ -2,7 +2,8 @@
 title: Who we are
 ---
 
-We believe that ideas abounds but intention and execution matters. 
+# Who we are
+
 
 ## Our Mission
 
@@ -20,7 +21,6 @@ Our mission is to lead the transformation of the society so that every generatio
 ## Leadership
 
 * **Young-Suk Ahn Park** / MSEng
-
 
 ## Meaning of HanaLoop
 
