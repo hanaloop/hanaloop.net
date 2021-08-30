@@ -4,6 +4,7 @@ title: Who we are
 
 # Who we are
 
+We believe humans are capable of working together to create a better world by combining creativity with ethical practices. 
 
 ## Our Mission
 

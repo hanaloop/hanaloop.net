@@ -2,7 +2,7 @@
   "description": "API list",
   "note": "Trying to access GitLab raw file will err as it does not return 'Access-Control-Allow-Origin *'",
   "apis": {
-    "am:title_manager": {
+    "sys-title_manager": {
       "domain": "Library",
       "name": "Book Manager (WIP)",
       "description": "Title Management API",
