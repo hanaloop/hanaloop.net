@@ -2,6 +2,8 @@
 title: 회사 소개
 ---
 
+# 회사 소개
+
 위리는 인간이 창의력으로 유한한 자원을 윤리적으로 활용하여 풍요로운 세상을 이룰 수 있다는 것을 믿습니다.  
 
 ## Our Mission
@@ -17,24 +19,24 @@ title: 회사 소개
 ## 리더십
 
 <div class="flex space-x-3">
-<figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
-  <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/ysahnpark-20130815.jpg' | url }}" alt="" width="384" height="512">
-  <div class="pt-6 space-y-4">
-    <figcaption class="font-medium text-center">
-      <div class="fond-semibold">
-        <a href="https://youngsukahn.com">안박영석 (Young-Suk Ahn Park)</a>
-      </div>
-      <div class="text-primary-dark">
-        Principal Consultant
-      </div>
-    </figcaption>
-    <p class="text-xs">
-      Technology leader, educator, and software architect with experiences in leading teams to build large-scale software products.
-    </p>
-  </div>
-</figure>
+  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
+    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/ysahnpark-20130815.jpg' | url }}" alt="" width="384" height="512">
+    <div class="pt-6 space-y-4">
+      <figcaption class="font-medium text-center">
+        <div class="fond-semibold">
+          <a href="https://youngsukahn.com">안박영석 (Young-Suk Ahn Park)</a>
+        </div>
+        <div class="text-primary-dark">
+          Principal Consultant
+        </div>
+      </figcaption>
+      <p class="text-xs">
+        Technology leader, educator, and software architect with experiences in leading teams to build large-scale software products.
+      </p>
+    </div>
+  </figure>
 
-<figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
+  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
     <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/hykim-20210704.jpg' | url }}" alt="" width="384" height="512">
     <div class="pt-6 space-y-4">
       <figcaption class="font-medium text-center">

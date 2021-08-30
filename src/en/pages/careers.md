@@ -2,7 +2,7 @@
 title: Careers
 ---
 
-# Are you ready to take on the challenge?
+## Are you ready to take on the challenge?
 
 Are you looking to grow personally and professionally engaging projects that makes positive impacts in people's life and planet? 
 If you are, then we are in the same page.

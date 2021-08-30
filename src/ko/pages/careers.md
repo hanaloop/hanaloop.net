@@ -2,7 +2,7 @@
 title: 채용
 ---
 
-# Are you ready to take on the challenge?
+# 도전할 준비가 되셨습니까?
 
 Are you looking to grow personally and professionally engaging projects that makes positive impacts in people's life and planet? 
 If you are, then we are in the same page.
