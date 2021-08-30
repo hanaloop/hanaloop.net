@@ -4,20 +4,23 @@ title: 솔루션
 
 # 솔루션
 
-HanaLoop has two business arms that complement each other. The first arm is the consultancy services which focuses on clients’ technological capabilities to harness its potential and maximize business value from digital world.
+하나루프 솔루션은 서로를 보완하는 두가지 부문으로 구성됩니다. 
 
-The second arm is the sustainability platform which helps clients grow ethically in a sustainable way by providing guidance on regulations and insight of the market to create a more responsible and viable value chain.
+첫 번째 부문은 기술 역량 향상에 중점을 둔 컨설팅 서비스입니다. 디지털 세계에서 고객의 잠재력을 키우고 비즈니스 가치를 극대화하는 것을 목적으로 하며, 기술뿐만 아니라 기업 문화를 발전시켜 고객 조직의 만족도와 생산력을 높입니다.
 
-## Our Value Proposition
+두 번째 부문은 지속가능성 플랫폼을 제공하는 것입니다. 플랫폼은 환경 규제에 대한 지침과 시장에 대한 정보를(통찰력을) 제공하고 신속한 친환경 기술 검색 및 거래를 가능하게 하여 더욱 깨끗한 가치 사슬을 생성시킴으로써 고객이 지속 가능한 방식으로 성장할 수 있도록 도와줍니다. 결과적으로 보다 책임있고 윤리적인 산업으로 발전하는데 기여합니다.
 
-### Sustainable Digital Transformation
 
-Power up your business, make it thrive
+## 가치 제안
 
-### Organization Agility and Technical Excellence
+### 지속 가능한 디지털 전환
 
-When we increase the agility of an individual and strengthen the bond among your team 
+테크놀로지로 사업의 놀라운 도약을 경험하십시오.
 
-### Sustainability Platform
+### 애자일하고 기술적으로 우수한 조직을 빌딩
+
+귀사의 비즈니스를 강화하고, 탄력성있게 번창하게 하십시오. 
+
+### 지속가능성 플랫폼
 
 

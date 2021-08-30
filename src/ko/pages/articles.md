@@ -1,5 +1,5 @@
 ---
-title: 가시
+title: 기사
 layout: layout/page_with_posts.njk
 
 pagination:

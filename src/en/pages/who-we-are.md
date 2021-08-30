@@ -47,7 +47,7 @@ Our mission is to lead the transformation of the society so that every generatio
           <a href="https://youngsukahn.com">Hyeyeon Kim</a>
         </div>
         <div class="text-primary-dark">
-          Sustainability Analyst
+          Sustainability Researcher
         </div>
       </figcaption>
       <p class="text-xs">

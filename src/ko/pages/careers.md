@@ -4,14 +4,11 @@ title: 채용
 
 # 도전할 준비가 되셨습니까?
 
-Are you looking to grow personally and professionally engaging projects that makes positive impacts in people's life and planet? 
-If you are, then we are in the same page.
+인간의 삶과 지구에 긍정적인 영향을 줄 수 있는 프로젝트에 참여하며 전문성을 키우며 성장하고 싶으신가요? 
 
-Let's walk together in this journey.
+그렇다면 함께 갑시다.
 
-> "If you want to walk fast, talk alone.
-But if you want to walk far, walk together"
-African Proverb.
+"빨리 걷고 싶다면 혼자 걸으세요. 그러나 멀리 걷고 싶다면 함께 걸어가세요." -아프리카 속담
 
-Email us at <a href="mailto:careers@hanaloop.com">info@hanaloop.com</a>
+
 
