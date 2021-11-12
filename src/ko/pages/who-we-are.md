@@ -19,40 +19,25 @@ title: 회사 소개
 ## 리더십
 
 <div class="flex space-x-3">
-  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
-    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/ysahnpark-20130815.jpg' | url }}" alt="" width="384" height="512">
-    <div class="pt-6 space-y-4">
-      <figcaption class="font-medium text-center">
-        <div class="fond-semibold">
-          <a href="https://youngsukahn.com">안박영석 (Young-Suk Ahn Park)</a>
-        </div>
-        <div class="text-primary-dark">
-          수석 컨설턴트
-        </div>
-      </figcaption>
-      <p class="text-xs">
-        테크놀로지 리더, 교육가, 소프트웨어 아키텍트. 
-        다양한 규모의 소프트웨어 구축 팀을 리드.
-      </p>
-    </div>
-  </figure>
 
+  {% for teamMember in teamMembers  %}
   <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
-    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/hykim-20210704.jpg' | url }}" alt="" width="384" height="512">
+    <img class="w-32 h-32 rounded-full mx-auto" src="{{ teamMember.photo  | url }}" alt="" width="384" height="512">
     <div class="pt-6 space-y-4">
       <figcaption class="font-medium text-center">
         <div class="fond-semibold">
-          김혜연 (Hyeyeon Kim)
+          <a class="no-underline" href="{{ teamMember.profileUrl }}">{{ teamMember.name }}</a>
         </div>
-        <div class="text-primary-dark">
-          지속가능성 연구원
+        <div class="text-sm text-primary-dark">
+          {{ teamMember.title }}
         </div>
       </figcaption>
-      <p class="text-xs">
-        지속가능한 솔루션을 적용하기 위한 방법 연구. LEED Green Associate.
+      <p class="text-sm">
+        {{ teamMember.description }}
       </p>
     </div>
   </figure>
+  {% endfor %}
 </div>
 
 ## "하나루프"의 의미

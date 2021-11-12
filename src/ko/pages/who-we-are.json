@@ -1,0 +1,27 @@
+{
+  "teamMembers" :[
+    {
+      "name": "김혜연 (Hyeyeon Kim)",
+      "profileUrl": "https://www.linkedin.com/in/hyeyeon-kim-49534b1b/",
+      "photo": "/images/who-we-are/hykim-20210704.jpg",
+      "title": "CEO / 지속가능성 연구원",
+      "tagline": "환경을 되돌리기 위해 영웅 네트워크를 만들려는",
+      "description": "LEED Green Associate. 물리, 영상정보처리 전공. 시장 정책 조사"
+    },
+    {
+      "name": "안박영석 (Young-Suk Ahn Park)",
+      "profileUrl": "https://youngsukahn.com/",
+      "photo": "/images/who-we-are/ysahnpark-20130815.jpg",
+      "title": "CTO / IT 컨설턴트",
+      "tagline": "아름다운 지구를 딸에게 물려주려는",
+      "description": "테크놀로지 리더, 교육가, 소프트웨어 아키텍트. 다양한 규모의 소프트웨어 구축 팀을 리드."
+    },
+    {
+      "name": "박상윤 (Paul Park)",
+      "photo": "/images/who-we-are/paulpark.jpeg",
+      "title": "CMO / 친",
+      "tagline": "더 이상 쓰레기 만들지 않고 살기",
+      "description": "물리, 대기, 공업디자인 전공. 친환경 공예숍 창업운양. 유명잡지 에디터."
+    }
+  ]
+}
