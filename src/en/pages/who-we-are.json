@@ -1,0 +1,27 @@
+{
+  "teamMembers" :[
+    {
+      "name": "Hyeyeon Kim <span class='whitespace-nowrap'>(김혜연)</span>",
+      "profileUrl": "https://www.linkedin.com/in/hyeyeon-kim-49534b1b/",
+      "photo": "/images/who-we-are/hykim-20210704.jpg",
+      "title": "Sustainability Researcher",
+      "tagline": "",
+      "description": "LEED Green Associate exploring different ways of adopting sustainable practices."
+    },
+    {
+      "name": "Young-Suk Ahn Park <span class='whitespace-nowrap'>(안박영석)</span>",
+      "profileUrl": "https://youngsukahn.com/",
+      "photo": "/images/who-we-are/ysahnpark-20130815.jpg",
+      "title": "CTO / Consultant",
+      "tagline": "",
+      "description": "Technology leader, educator, and software architect with experiences in leading teams to build large-scale software products."
+    },
+    {
+      "name": "Paul Park <span class='whitespace-nowrap'>(박성윤)</span>",
+      "photo": "/images/who-we-are/paulpark.jpeg",
+      "title": "Marketing",
+      "tagline": "",
+      "description": "Former editor of major fashion and design magazines. Owner of PaulAvril atelier."
+    }
+  ]
+}

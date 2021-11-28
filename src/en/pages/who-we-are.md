@@ -17,44 +17,29 @@ Our mission is to lead the transformation of the society so that every generatio
 * Create True Value
 * Build Long-lasting Trust
 * Grow Sustainably
-
+* Thrive Together
 
 ## Leadership
 
 <div class="flex space-x-3">
+  {% for teamMember in teamMembers  %}
   <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
-    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/ysahnpark-20210728.jpg' | url }}" alt="" width="384" height="512">
+    <img class="w-32 h-32 rounded-full mx-auto" src="{{ teamMember.photo  | url }}" alt="" width="384" height="512">
     <div class="pt-6 space-y-4">
       <figcaption class="font-medium text-center">
         <div class="fond-semibold">
-          <a href="https://youngsukahn.com">Young-Suk Ahn Park</a>
+          <a class="no-underline" href="{{ teamMember.profileUrl }}">{{ teamMember.name | safe }}</a>
         </div>
-        <div class="text-primary-dark">
-          Principal Consultant
+        <div class="text-sm text-primary-dark">
+          {{ teamMember.title }}
         </div>
       </figcaption>
-      <p class="text-xs">
-        Technology leader, educator, and software architect with experiences in leading teams to build large-scale software products.
+      <p class="text-sm">
+        {{ teamMember.description }}
       </p>
     </div>
   </figure>
-
-  <figure class="bg-gray-100 rounded-md my-4 p-4 w-80 shadow">
-    <img class="w-32 h-32 rounded-full mx-auto" src="{{'/images/who-we-are/hykim-20210704.jpg' | url }}" alt="" width="384" height="512">
-    <div class="pt-6 space-y-4">
-      <figcaption class="font-medium text-center">
-        <div class="fond-semibold">
-          <a href="https://youngsukahn.com">Hyeyeon Kim</a>
-        </div>
-        <div class="text-primary-dark">
-          Sustainability Researcher
-        </div>
-      </figcaption>
-      <p class="text-xs">
-        LEED Green Associate exploring different ways of adopting sustainable practices.
-      </p>
-    </div>
-  </figure>
+  {% endfor %}
 </div>
 
 ## Meaning of HanaLoop
