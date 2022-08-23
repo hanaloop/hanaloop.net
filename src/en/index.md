@@ -8,8 +8,8 @@ pagination:
   reverse: true
   alias: posts
 
-description: Digital Transformation, Organizational Agility and Technical Excellence, Sustainable Platform
-keywords: ["digital transformation", "agile", "technology", "consulting", "sustainability", ""]
+description: Digital Transformation, Organizational Agility and Technical Excellence, Sustainable Platform, Carbon Neutral Platform, Carbon Accounting Platform, Carbon accounting API
+keywords: ["digital transformation", "agile", "technology", "consulting", "sustainability", "sustainable platform", "carbon neutral platform", "carbon accounting platform", "carbon accounting API"]
 
 contactUrl: /en/pages/contact_us
 slogan: Resources are finite  but your potential doesn't have to be
