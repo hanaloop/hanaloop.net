@@ -1,5 +1,5 @@
 ---
-title:  기술 역량 향상에 중점을 둔 컨설팅과 지속 가능성 플랫폼
+title: 기술 역량 향상에 중점을 둔 컨설팅과 지속 가능성 플랫폼
 layout: layout/landing.njk
 
 pagination:
@@ -8,15 +8,15 @@ pagination:
   reverse: true
   alias: posts
 
-description: 디지털 혁신, 지속 가능한 플랫폼, 온실가스 관리, 
-keywords: ["디지털 전환", "digital transformation", "agile", "애자일", "technology", "기술", "컨설팅", "sustainability", "친환경 기술", "지속 가능성", "ESG", "온실가스 공급망관리", "온실가스 관리 플랫폼", "에코루프"]
+description: 디지털 혁신, 지속 가능한 플랫폼, 지속가능성 플랫폼, 온실가스 관리, 공급망 탄소관리 플랫폼, 온실가스 관리 플랫폼, 클라우드 기반 온실가스 관리 플랫폼  
+keywords: ["디지털 전환", "digital transformation", "agile", "애자일", "technology", "기술", "컨설팅", "sustainability", "지속가능성 플랫폼", "공급망 온실가스 관리 플랫폼", "ESG 관리 플랫폼", "친환경 기술", "지속 가능성", "ESG", "온실가스 공급망관리", "온실가스 관리 플랫폼", "에코루프", "EcoLoop"]
 
 contactUrl: /ko/pages/contact_us
-slogan: 자원은 한계가 있지만<br /> 잠재력은 무한합니다
+slogan: 자원은 유한하지만<br /> 잠재력은 무한합니다
 
 ---
 
-## 하나루프는 지속가능성을 기반으로 귀사의 잠재력을 최대한 발휘할 수 있도록 도와드리겠습니다 
+## 하나루프 팀은 지속가능성을 생각하고 실천하며 귀사의 참재력을 최대한 발휘할 수 있도록 도와드리겠습니다 
 멈춤 없는 발전의 루프 위에 올라타십시오!
 
 <div class="my-5 grid md:grid-cols-2 grid-cols-1 gap-2">
@@ -38,10 +38,10 @@ slogan: 자원은 한계가 있지만<br /> 잠재력은 무한합니다
       <img class="full" src="{{'/images/ecoloop-banner.jpg' | url }}">
       <figcaption class="absolute -mt-20 text-white px-4 w-2/5 ">
         <div class="text-xl" style="text-shadow: 1px 1px 5px black;">
-        온실가스 관리 플랫폼</div>
+        확장성 있는 온실가스 관리 플랫폼</div>
       </figcaption>
       <div class="px-6 py-4">
-        <div class="text-gray-600">기후변화 위기로 변화하는 시장에 효율적인 탄소관리로 대응하세요.
+        <div class="text-gray-600">효율적인 가치사슬망 전반 탄소관리를 통해 기업의 리스크를 관리하고 이미지를 향상시키세요.
         </div>
       </div>
     </a>
@@ -49,4 +49,4 @@ slogan: 자원은 한계가 있지만<br /> 잠재력은 무한합니다
 
 </div>
 
-## 지구를 훼손하지 않고 성장하세요!
+## 지구 환경을 지키며 성장하실 수 있습니다!
