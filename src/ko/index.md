@@ -8,8 +8,8 @@ pagination:
   reverse: true
   alias: posts
 
-description: 디지털 혁신, 지속 가능한 플랫폼, 지속가능성 플랫폼, 온실가스 관리, 공급망 탄소관리 플랫폼, 온실가스 관리 플랫폼, 클라우드 기반 온실가스 관리 플랫폼  
-keywords: ["디지털 전환", "digital transformation", "agile", "애자일", "technology", "기술", "컨설팅", "sustainability", "지속가능성 플랫폼", "공급망 온실가스 관리 플랫폼", "ESG 관리 플랫폼", "친환경 기술", "지속 가능성", "ESG", "온실가스 공급망관리", "온실가스 관리 플랫폼", "에코루프", "EcoLoop"]
+description: 디지털 혁신, 지속가능성 플랫폼, 온실가스 관리, 공급망 탄소관리 플랫폼, 가치사슬망 전반 온실가스 관리 플랫폼, 온실가스 관리 플랫폼, 클라우드 기반 온실가스 관리 플랫폼, 탄소중립 플랫폼  
+keywords: ["디지털 전환", "digital transformation", "agile", "애자일", "technology", "기술", "컨설팅", "sustainability", "지속가능성 플랫폼", "공급망 온실가스 관리 플랫폼", "ESG 관리 플랫폼", "친환경 기술", "지속 가능성", "ESG", "온실가스 공급망관리", "온실가스 관리 플랫폼", "탄소중립 플랫폼", "에코루프", "EcoLoop"]
 
 contactUrl: /ko/pages/contact_us
 slogan: 자원은 유한하지만<br /> 잠재력은 무한합니다
