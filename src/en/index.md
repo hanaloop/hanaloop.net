@@ -1,5 +1,5 @@
 ---
-title: Maximizing Value Through Technology  
+title: HanaLoop Corp. | Carbon Management Platform, EcoLoop | Maximizing Value Through Technology 
 layout: layout/landing.njk
 
 pagination:
@@ -8,8 +8,8 @@ pagination:
   reverse: true
   alias: posts
 
-description: Digital Transformation, Organizational Agility and Technical Excellence, Sustainable Platform, Carbon Neutral Platform, Carbon Accounting Platform, Carbon accounting API
-keywords: ["digital transformation", "agile", "technology", "consulting", "sustainability", "sustainable platform", "carbon neutral platform", "carbon accounting platform", "carbon accounting API"]
+description: Digital Transformation, Carbon management platform, B2B SaaS Greenhouse gas managment platform, EcoLoop, Organizational Agility and Technical Excellence, Sustainable Platform, Carbon Neutral Platform, Carbon Accounting Platform, Carbon accounting API
+keywords: ["digital transformation", "SaaS Greenhouse gas management platform", "EcoLoop", "agile", "technology", "consulting", "sustainability", "sustainable platform", "carbon neutral platform", "carbon accounting platform", "carbon accounting API" ]
 
 contactUrl: /en/pages/contact_us
 slogan: Resources are finite  but your potential doesn't have to be
