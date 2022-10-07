@@ -1,6 +1,48 @@
 @tailwind base;
 
 
+/* EcoLoop Styles {{ */
+
+/* EcoLoop: Basic Elements */
+
+.el-heading {
+  @apply font-semibold text-gray-700
+}
+
+h1.el-heading {
+  @apply text-3xl
+}
+
+h2.el-heading {
+  @apply text-2xl
+}
+
+h3.el-heading {
+  @apply text-xl
+}
+
+h4.el-heading {
+  @apply text-xl
+}
+
+a.el-link {
+  @apply hover:underline hover:text-secondary-700
+}
+
+div.el-panel  {
+  @apply p-4 rounded-md border-2 border-gray-200
+}
+
+div.el-pane  {
+  @apply p-4 rounded-md shadow-md bg-white dark:bg-gray-800
+}
+
+.el-btn {
+  @apply inline-flex items-center px-3 py-1.5 text-sm font-medium text-center rounded  focus:ring-4
+}
+
+/* }} EcoLoop Styles */
+
 /**
  * For HTML generated from MDX. MDX must be enclosed in <article>
  * Referenced from: https://github.com/iandinwoodie/github-markdown-tailwindcss/blob/master/markdown.css
@@ -65,6 +107,8 @@ article a:hover {
 code:not(:where(.code-highlight, .language-json))  {
   @apply border-2 border-gray-300 bg-gray-100 px-1 rounded-md
 }
+
+
 
 @tailwind components;
 @tailwind utilities;

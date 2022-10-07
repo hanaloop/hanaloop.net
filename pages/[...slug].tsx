@@ -25,7 +25,6 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
 
 export default function PlainPage({ code, frontMatter, menu, filePath }: ContentPageProp) {
   
-  console.log('frontMatter:', frontMatter);
   return (
     <DefaultContentContainer background={frontMatter?.headerBackground} hero={frontMatter?.hero}>
       <DocContent code={code} frontMatter={frontMatter} filePath={filePath}></DocContent>

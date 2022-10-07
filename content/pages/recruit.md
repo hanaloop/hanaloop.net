@@ -1,6 +1,6 @@
 ---
-title: "About"
-description: "About the portal"
+title: "채용"
+description: "채용"
 keywords: "about"
 
 publishedAt: "2022-10-06"

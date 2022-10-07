@@ -4,10 +4,67 @@
   "contents": [
     {
       "_type": "item",
-      "slug": "/pages/about",
+      "slug": "/pages/company",
       "meta": {
-        "title": "About",
-        "description": "About the portal",
+        "title": "하나루프",
+        "description": "주식회사 하나루프란",
+        "keywords": "하나루프란",
+        "publishedAt": "2022-10-06",
+        "headerBackground": {
+          "imageUrl": "/images/bg-hero_pando.jpeg"
+        },
+        "hero": {
+          "header": "자원은 유한하지만 잠재력은 무한합니다"
+        },
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.28,
+          "time": 16800,
+          "words": 56
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/platform",
+      "meta": {
+        "title": "에코르프 플랫폼",
+        "description": "온시라스 관리 플랫폼 에코르프",
+        "keywords": "온시라스 관리, 탄소 관리",
+        "publishedAt": "2022-10-06",
+        "headerBackground": {
+          "imageUrl": "/images/bg-hero_platform.jpeg"
+        },
+        "hero": {
+          "header": "탄소관리 디지털 플랫폼",
+          "tagline": "에코루프!"
+        },
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.32,
+          "time": 19200,
+          "words": 64
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/privacy",
+      "meta": {
+        "readingTime": {
+          "text": "21 min read",
+          "minutes": 20.85,
+          "time": 1251000,
+          "words": 4170
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/recruit",
+      "meta": {
+        "title": "채용",
+        "description": "채용",
         "keywords": "about",
         "publishedAt": "2022-10-06",
         "headerBackground": {
@@ -19,21 +76,31 @@
         },
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.255,
-          "time": 15300,
-          "words": 51
+          "minutes": 0.265,
+          "time": 15900,
+          "words": 53
         }
       }
     },
     {
       "_type": "item",
-      "slug": "/pages/privacy",
+      "slug": "/pages/solution",
       "meta": {
+        "title": "에코르프 플랫폼",
+        "description": "온시라스 관리 플랫폼 에코르프",
+        "keywords": "온시라스 관리, 탄소 관리",
+        "publishedAt": "2022-10-06",
+        "headerBackground": {
+          "imageUrl": "/images/bg-hero_mangrove.jpeg"
+        },
+        "hero": {
+          "header": "자원은 유한하지만 잠재력은 무한합니다"
+        },
         "readingTime": {
-          "text": "6 min read",
-          "minutes": 5.505,
-          "time": 330300,
-          "words": 1101
+          "text": "1 min read",
+          "minutes": 0.34,
+          "time": 20400,
+          "words": 68
         }
       }
     }

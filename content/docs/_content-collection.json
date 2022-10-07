@@ -44,72 +44,9 @@
   },
   {
     "_type": "item",
-    "slug": "/docs/doc-2",
-    "meta": {
-      "title": "Second document",
-      "publishedAt": "2022-01-11",
-      "summary": "First document for demo purpose!",
-      "author": "ysahnpark",
-      "tags": [
-        "Document",
-        "Demo"
-      ],
-      "readingTime": {
-        "text": "1 min read",
-        "minutes": 0.98,
-        "time": 58800,
-        "words": 196
-      },
-      "contentFull": "\n## Second Demo doc\n\nI am glad to see you again\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n\nYou can follow the following code:\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
-    }
-  },
-  {
-    "_type": "item",
-    "slug": "/docs/doc-한글",
-    "meta": {
-      "title": "한글 문서",
-      "publishedAt": "2022-01-11",
-      "summary": "한글로 된 문서 예제!",
-      "author": "ysahnpark",
-      "tags": [
-        "Document",
-        "Demo"
-      ],
-      "readingTime": {
-        "text": "1 min read",
-        "minutes": 0.25,
-        "time": 15000,
-        "words": 50
-      },
-      "contentFull": "\n## 한글 문서\n\n한글도 참 잘 되요!\n\n우리나라는 아름다운 나라!\n"
-    }
-  },
-  {
-    "_type": "item",
-    "slug": "/docs/intro",
-    "meta": {
-      "title": "Introduction",
-      "publishedAt": "2022-01-11",
-      "summary": "Introduction to Dev Portal",
-      "author": "ysahnpark",
-      "tags": [
-        "Document",
-        "Intro"
-      ],
-      "readingTime": {
-        "text": "1 min read",
-        "minutes": 0.41,
-        "time": 24600,
-        "words": 82
-      },
-      "contentFull": "\n## Introduction\n\nThe Next Dev Portal allows you to build websites fast.\n\nIt is mainly intended for creating (software) product documentation, but it can easily be adapted to serve any kind of website.\n\nContent source files are written in markdown (MDX) and placed under content directory.\n\n\nYou can easily do syntax highlighting as seen below.\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
-    }
-  },
-  {
-    "_type": "item",
     "slug": "/docs/subtopic/doc-s1",
     "meta": {
-      "title": "First s1 document",
+      "title": "First doc",
       "publishedAt": "2022-01-11",
       "summary": "First document for demo purpose!",
       "author": "ysahnpark",
@@ -119,16 +56,16 @@
       ],
       "readingTime": {
         "text": "1 min read",
-        "minutes": 0.955,
-        "time": 57300,
-        "words": 191
+        "minutes": 0.155,
+        "time": 9300,
+        "words": 31
       },
-      "contentFull": "\n## Demo doc\n\nI am glad that you can see this!\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
+      "contentFull": "\n## Demo doc\n\nI am glad that you can see this!\n"
     }
   },
   {
     "_type": "item",
-    "slug": "/docs/subtopic/sub2topic/doc-s11",
+    "slug": "/docs/subtopic/news/doc-s11",
     "meta": {
       "title": "First s1.1 document",
       "publishedAt": "2022-01-11",
@@ -146,6 +83,28 @@
         "words": 194
       },
       "contentFull": "\n## Doc Level 2\n\nI am glad that you can see this!\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
+    }
+  },
+  {
+    "_type": "item",
+    "slug": "/docs/subtopic/regulations/doc-s11",
+    "meta": {
+      "title": "First s1.1 document",
+      "publishedAt": "2022-01-11",
+      "summary": "First document for demo purpose!",
+      "image": "/images/pexels-photo-414798.jpeg",
+      "author": "ysahnpark",
+      "tags": [
+        "배출권거래제",
+        "목표관리제"
+      ],
+      "readingTime": {
+        "text": "1 min read",
+        "minutes": 0.225,
+        "time": 13500,
+        "words": 45
+      },
+      "contentFull": "\n## 한국 배출권거래제 및 목표관리제 ETS \n\n\n"
     }
   }
 ]

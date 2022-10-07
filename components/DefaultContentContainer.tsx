@@ -7,7 +7,6 @@ type DefaultContentContainerProp = {
 }
 
 export default function DefaultContentContainer({background, hero, children}: DefaultContentContainerProp) {
-  console.log('background: ', background);
   return (
     <>
       {/* <Head>

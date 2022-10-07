@@ -47,70 +47,10 @@
       }
     },
     {
-      "_type": "item",
-      "slug": "/docs/doc-2",
-      "meta": {
-        "title": "Second document",
-        "publishedAt": "2022-01-11",
-        "summary": "First document for demo purpose!",
-        "author": "ysahnpark",
-        "tags": [
-          "Document",
-          "Demo"
-        ],
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.98,
-          "time": 58800,
-          "words": 196
-        }
-      }
-    },
-    {
-      "_type": "item",
-      "slug": "/docs/doc-한글",
-      "meta": {
-        "title": "한글 문서",
-        "publishedAt": "2022-01-11",
-        "summary": "한글로 된 문서 예제!",
-        "author": "ysahnpark",
-        "tags": [
-          "Document",
-          "Demo"
-        ],
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.25,
-          "time": 15000,
-          "words": 50
-        }
-      }
-    },
-    {
-      "_type": "item",
-      "slug": "/docs/intro",
-      "meta": {
-        "title": "Introduction",
-        "publishedAt": "2022-01-11",
-        "summary": "Introduction to Dev Portal",
-        "author": "ysahnpark",
-        "tags": [
-          "Document",
-          "Intro"
-        ],
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.41,
-          "time": 24600,
-          "words": 82
-        }
-      }
-    },
-    {
       "_type": "folder",
       "slug": "/docs/subtopic",
       "meta": {
-        "label": "Sub Topic",
+        "label": "제도",
         "tags": [
           "sub1"
         ]
@@ -120,7 +60,7 @@
           "_type": "item",
           "slug": "/docs/subtopic/doc-s1",
           "meta": {
-            "title": "First s1 document",
+            "title": "First doc",
             "publishedAt": "2022-01-11",
             "summary": "First document for demo purpose!",
             "author": "ysahnpark",
@@ -130,19 +70,19 @@
             ],
             "readingTime": {
               "text": "1 min read",
-              "minutes": 0.955,
-              "time": 57300,
-              "words": 191
+              "minutes": 0.155,
+              "time": 9300,
+              "words": 31
             }
           }
         },
         {
           "_type": "folder",
-          "slug": "/docs/subtopic/sub2topic",
+          "slug": "/docs/subtopic/news",
           "contents": [
             {
               "_type": "item",
-              "slug": "/docs/subtopic/sub2topic/doc-s11",
+              "slug": "/docs/subtopic/news/doc-s11",
               "meta": {
                 "title": "First s1.1 document",
                 "publishedAt": "2022-01-11",
@@ -158,6 +98,33 @@
                   "minutes": 0.97,
                   "time": 58200,
                   "words": 194
+                }
+              }
+            }
+          ]
+        },
+        {
+          "_type": "folder",
+          "slug": "/docs/subtopic/regulations",
+          "contents": [
+            {
+              "_type": "item",
+              "slug": "/docs/subtopic/regulations/doc-s11",
+              "meta": {
+                "title": "First s1.1 document",
+                "publishedAt": "2022-01-11",
+                "summary": "First document for demo purpose!",
+                "image": "/images/pexels-photo-414798.jpeg",
+                "author": "ysahnpark",
+                "tags": [
+                  "배출권거래제",
+                  "목표관리제"
+                ],
+                "readingTime": {
+                  "text": "1 min read",
+                  "minutes": 0.225,
+                  "time": 13500,
+                  "words": 45
                 }
               }
             }

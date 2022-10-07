@@ -1,0 +1,92 @@
+---
+title: "하나루프"
+description: "주식회사 하나루프란"
+keywords: "하나루프란"
+
+publishedAt: "2022-10-06"
+
+headerBackground:
+  imageUrl: "/images/bg-hero_pando.jpeg"
+hero:
+  header: "회사소개"
+  tagline: "듬직하고 민첩한 파트너 하나루프"
+---
+import SectionBlock from "../components/theme/SectionBlock";
+
+<div className="text-center"> 
+
+  <SectionBlock title='문제점과 우리가 해결하겠다는 결의 표현' >
+    <div className="p-4">
+    기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.
+
+특히 이윤의 창출과 지속적인 성장에 주요 가치를 두는 기업에게 정부, 투자자와 고객, 구성원 등 사회가 요구하는 환경 정책과 엄격한 규제는 이 시대에 피할 수 없는 중요 과제가 되었습니다.
+사회적 통념을 넘어 이제는 경제논리로도 환경을 대하는 태도가 진심으로 변화하고 있기 때문입니다.
+
+기업과 기관의 지속가능한 성장을 위해 하나루프가 함께 합니다.
+
+    </div>
+  </SectionBlock>
+
+
+  <SectionBlock title='비전' containerStyle='bg-gray-100'>
+    <div className="p-4">
+      <span className="text-xl">하나루프의 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간의 이념을 실현하는 것입니다.</span>
+      
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='미션' >
+    <div className="p-4">
+    <span className="text-xl">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>
+    
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='고객과의 약속' containerStyle='bg-gray-100'>
+    <div className="p-4">
+      <span className="text-xl">건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>
+      
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='하나루프의 문화' >
+    <div className="p-4">
+      <span className="text-xl">
+      
+      </span>
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='이름' containerStyle='bg-gray-100'>
+    <div className="p-4">
+      <span className="text-xl">
+      하나루프(Hana+Loop)
+      </span>
+
+      우주가 생긴 이래,
+      우리를 둘러싼 자연환경은 끊임없이 서로 순환하며 조화를 이루고 있습니다.
+      그런데 이 길고 긴 역사에서 뒤늦게 출현한 인류가 ‘문명과 개발’이라는 명목하에
+      이 아름답고 선한 순환의 고리, 즉 자연의 무한 루프를 끊으려 하고 있습니다.
+
+      하나루프는
+      자연의 지혜로운 선순환을 되살리고
+      사람도 그 무한의 루프 속으로 되돌아가서
+      자연과 조화를 이루며 하나가 되자는 의미를 담고 있습니다. 
+
+      Hana is,
+      “하나와 일치” in Korean
+      “Grace” in French, Jewish and Christian
+      “花 はな Flower” in Persian and Japanese
+      “Happiness” in Arabic 
+      “Craft” in Hawaiian 
+      “give out love” in Maori
+      “Hope” in Kurdish
+      에코루프(Eco+Loop)
+
+      영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와
+      자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.
+
+    </div>
+  </SectionBlock>
+
+</div>
