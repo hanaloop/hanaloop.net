@@ -3,7 +3,7 @@
     "_type": "item",
     "slug": "/docs/_index",
     "meta": {
-      "title": "Document Home",
+      "title": "환경기술 자료",
       "publishedAt": "2022-01-11",
       "summary": "Document Home for demo purpose!",
       "image": "/images/pexels-photo-414798.jpeg",
@@ -13,61 +13,19 @@
         "Demo"
       ],
       "readingTime": {
-        "text": "2 min read",
-        "minutes": 1.02,
-        "time": 61200,
-        "words": 204
-      },
-      "contentFull": "\n## Demo Doc Index\n\nThis is the index document.\n\n> Note: the file name is `_index.md`\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n\nYou can follow the following code:\n```js\nconst Home = () => {\n  do(\"fun\");\n}\n```\n"
-    }
-  },
-  {
-    "_type": "item",
-    "slug": "/docs/doc-1",
-    "meta": {
-      "title": "First document",
-      "publishedAt": "2022-01-11",
-      "summary": "First document for demo purpose!",
-      "author": "ysahnpark",
-      "tags": [
-        "Document",
-        "Demo"
-      ],
-      "readingTime": {
         "text": "1 min read",
-        "minutes": 0.985,
-        "time": 59100,
-        "words": 197
+        "minutes": 0.215,
+        "time": 12900,
+        "words": 43
       },
-      "contentFull": "\n## First Demo doc\n\nI am glad that you can see this!\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n\nYou can follow the following code:\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
+      "contentFull": "\n## Demo Doc Index\n\nThis is the index document.\n\n> Note: the file name is `_index.md`\n"
     }
   },
   {
     "_type": "item",
-    "slug": "/docs/subtopic/doc-s1",
+    "slug": "/docs/news/doc-s11",
     "meta": {
-      "title": "First doc",
-      "publishedAt": "2022-01-11",
-      "summary": "First document for demo purpose!",
-      "author": "ysahnpark",
-      "tags": [
-        "Document",
-        "Demo"
-      ],
-      "readingTime": {
-        "text": "1 min read",
-        "minutes": 0.155,
-        "time": 9300,
-        "words": 31
-      },
-      "contentFull": "\n## Demo doc\n\nI am glad that you can see this!\n"
-    }
-  },
-  {
-    "_type": "item",
-    "slug": "/docs/subtopic/news/doc-s11",
-    "meta": {
-      "title": "First s1.1 document",
+      "title": "환경소식",
       "publishedAt": "2022-01-11",
       "summary": "First document for demo purpose!",
       "image": "/images/pexels-photo-414798.jpeg",
@@ -78,16 +36,16 @@
       ],
       "readingTime": {
         "text": "1 min read",
-        "minutes": 0.97,
-        "time": 58200,
-        "words": 194
+        "minutes": 0.185,
+        "time": 11100,
+        "words": 37
       },
-      "contentFull": "\n## Doc Level 2\n\nI am glad that you can see this!\n\nAdipiscing commodo elit at imperdiet dui accumsan. Odio pellentesque diam volutpat commodo sed egestas. Euismod in pellentesque massa placerat duis ultricies lacus. Eget dolor morbi non arcu risus quis varius. Tempus urna et pharetra pharetra massa massa ultricies mi quis. Cursus turpis massa tincidunt dui. Praesent semper feugiat nibh sed pulvinar proin gravida. Et tortor at risus viverra. Varius sit amet mattis vulputate. Id eu nisl nunc mi ipsum faucibus vitae. Elementum nibh tellus molestie nunc non blandit massa enim nec. Justo nec ultrices dui sapien eget mi proin. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Morbi non arcu risus quis varius. In est ante in nibh mauris cursus mattis molestie. Mollis aliquam ut porttitor leo. Maecenas ultricies mi eget mauris pharetra et ultrices. Massa sed elementum tempus egestas sed sed risus. Quam vulputate dignissim suspendisse in est. Nulla facilisi cras fermentum odio eu feugiat pretium nibh.\n\n```js\nconst test = {\n  \"data\": \"test\"\n}\n```\n"
+      "contentFull": "\n## Doc Level 2\n\nI am glad that you can see this!\n"
     }
   },
   {
     "_type": "item",
-    "slug": "/docs/subtopic/regulations/doc-s11",
+    "slug": "/docs/regulations/doc-kets",
     "meta": {
       "title": "First s1.1 document",
       "publishedAt": "2022-01-11",
@@ -105,6 +63,27 @@
         "words": 45
       },
       "contentFull": "\n## 한국 배출권거래제 및 목표관리제 ETS \n\n\n"
+    }
+  },
+  {
+    "_type": "item",
+    "slug": "/docs/standards/doc-s1",
+    "meta": {
+      "title": "First doc",
+      "publishedAt": "2022-01-11",
+      "summary": "First document for demo purpose!",
+      "author": "ysahnpark",
+      "tags": [
+        "Document",
+        "Demo"
+      ],
+      "readingTime": {
+        "text": "1 min read",
+        "minutes": 0.155,
+        "time": 9300,
+        "words": 31
+      },
+      "contentFull": "\n## Demo doc\n\nI am glad that you can see this!\n"
     }
   }
 ]

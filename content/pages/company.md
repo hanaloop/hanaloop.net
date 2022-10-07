@@ -12,8 +12,10 @@ hero:
   tagline: "듬직하고 민첩한 파트너 하나루프"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
+import members from "../content/members";
+export const memberList = Object.values(members);
 
-<div className="text-center"> 
+<div className=""> 
 
   <SectionBlock title='문제점과 우리가 해결하겠다는 결의 표현' >
     <div className="p-4">
@@ -38,37 +40,77 @@ import SectionBlock from "../components/theme/SectionBlock";
   <SectionBlock title='미션' >
     <div className="p-4">
     <span className="text-xl">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>
-    
     </div>
   </SectionBlock>
 
   <SectionBlock title='고객과의 약속' containerStyle='bg-gray-100'>
     <div className="p-4">
-      <span className="text-xl">건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>
-      
+      <span className="text-lg">건강한 지구로 환경을 회복시키며 인류의 번영에 기여하겠습니다.</span>
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='핵심가치' >
+    <div className="p-4 w-auto flex justify-center ">
+    <div className="w-48 text-left">
+      - 탁월함 추구
+      - 진정한 가치 창출
+      - 오래 지속되는 신뢰 구축
+      - 지속 가능한 성장
+    </div>
+    </div>
+  </SectionBlock>
+
+  <SectionBlock title='하나루프의 문화' containerStyle='bg-gray-100'>
+    <div className="p-4">
+      <span className="text-lg">
+      하나루프는 모든 세대가 건강한 지구와 공생하기 위해, 현세의 가장 어려운 문제를 기술로 해결하기 위해 모인 사람들의 유기체입니다. 문제를 파악하고 해결 방법을 연구하며 최고의 기술로 최고의 효과를 내는 솔루션을 제공하기 위해 끊임없이 성장합니다. 우리 조직이 속한 사회의 건강한 변화를 주도합니다. 
+      </span>
     </div>
   </SectionBlock>
 
   <SectionBlock title='하나루프의 문화' >
     <div className="p-4">
-      <span className="text-xl">
-      
-      </span>
+      <div className="my-5 grid lg:grid-cols-3 grid-cols-2 gap-2">
+        {
+          memberList.map(m => (
+            <figure className="bg-gray-100 rounded-md my-4 p-4 shadow ">
+              <div className="w-auto flex justify-center">
+              <img className="w-32 h-32 rounded-full block" src={ m.image_url } alt="" />
+              </div>
+              <div className="pt-6 space-y-4 block">
+                <figcaption className="font-medium text-center">
+                  <div className="fond-semibold">
+                    <a className="no-underline" href={ m.profile_url }>{ m.name }</a>
+                  </div>
+                  <div className="text-sm text-primary-dark">
+                    { m.title }
+                  </div>
+                </figcaption>
+                <p className="text-sm">
+                  { m.description }
+                </p>
+              </div>
+            </figure>
+            )
+          )
+        }
+      </div>
     </div>
   </SectionBlock>
 
-  <SectionBlock title='이름' containerStyle='bg-gray-100'>
+  <SectionBlock title='이름' >
     <div className="p-4">
       <span className="text-xl">
       하나루프(Hana+Loop)
       </span>
 
+    <pre>
       우주가 생긴 이래,
       우리를 둘러싼 자연환경은 끊임없이 서로 순환하며 조화를 이루고 있습니다.
       그런데 이 길고 긴 역사에서 뒤늦게 출현한 인류가 ‘문명과 개발’이라는 명목하에
       이 아름답고 선한 순환의 고리, 즉 자연의 무한 루프를 끊으려 하고 있습니다.
 
-      하나루프는
+      **하나루프는**
       자연의 지혜로운 선순환을 되살리고
       사람도 그 무한의 루프 속으로 되돌아가서
       자연과 조화를 이루며 하나가 되자는 의미를 담고 있습니다. 
@@ -76,16 +118,16 @@ import SectionBlock from "../components/theme/SectionBlock";
       Hana is,
       “하나와 일치” in Korean
       “Grace” in French, Jewish and Christian
-      “花 はな Flower” in Persian and Japanese
+      “Flower, 花 はな ” in Persian and Japanese
       “Happiness” in Arabic 
       “Craft” in Hawaiian 
       “give out love” in Maori
       “Hope” in Kurdish
-      에코루프(Eco+Loop)
 
+      **에코루프(Eco+Loop)**
       영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와
       자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.
-
+    </pre>
     </div>
   </SectionBlock>
 

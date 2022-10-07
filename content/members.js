@@ -1,12 +1,25 @@
 module.exports = {
+  "hykim": {
+    "name": "김혜연 <span class='whitespace-nowrap'>(Hyeyeon Kim)</span>",
+    "profile_url": "https://www.linkedin.com/in/hyeyeon-kim-49534b1b/",
+    "image_url": "/images/who-we-are/hykim-20210704.jpg",
+    "title": "co-CEO / 지속가능성 연구원",
+    "tagline": "환경을 되돌리기 위해 영웅 네트워크를 만들려는",
+    "description": "LEED Green Associate. 물리, 영상정보처리 전공. 시장 정책 조사"
+  },
   "ysahnpark": {
-    "role": "leader",
-    "name": "Young Suk Ahn Park",
-    "title": "Sustainability Champion",
-    "url": "https://github.com/ysahnpark",
-    "image_url": "https://github.com/ysahnpark.png",
+    "name": "안박영석 <span class='whitespace-nowrap'>(Young-Suk Ahn Park)</span>",
     "profile_url": "https://youngsukahn.com/",
+    "image_url": "/images/who-we-are/ysahnpark-20130815.jpg",
+    "title": "co-CEO / CTO",
+    "tagline": "아름다운 지구를 딸에게 물려주려는",
+    "description": "테크놀로지 리더, 교육가, 소프트웨어 아키텍트. 다양한 규모의 소프트웨어 구축 팀을 리드."
+  },
+  "hkroh": {
+    "name": "노형기 <span class='whitespace-nowrap'>(Hyungki Roh)</span>",
+    "image_url": "/images/who-we-are/kay.jpeg",
+    "title": "수석엔지니어",
     "tagline": "",
-    "description": "Software architect and sustainability researcher"
+    "description": "다수의 상용 소프트웨어 개발 및 AI 프로젝트 수행. 멀티미디어, 모바일 앱, 웹 플랫폼, 머신 러닝 프로그램 다수 개발."
   }
 }

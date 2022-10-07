@@ -11,7 +11,7 @@
     "content:syncassets": "esr ./tool/ndp-cli.ts content/syncassets",
     "syncassetsall": "esr ./tool/ndp-cli.ts content/syncassets pages,blog,docs,products",
     "gen:collections": "esr ./tool/ndp-cli.ts content/collections",
-    "genall:collections": "esr ./tool/ndp-cli.ts content/collections blog,docs,products",
+    "genall:collections": "esr ./tool/ndp-cli.ts content/collections blog,docs,products,pages",
     "gen:trees": "esr ./tool/ndp-cli.ts content/trees",
     "genall:trees": "esr ./tool/ndp-cli.ts content/trees pages,blog,docs,products",
     "genall": "npm-run-all --parallel genall:*",

@@ -14,13 +14,14 @@
           "imageUrl": "/images/bg-hero_pando.jpeg"
         },
         "hero": {
-          "header": "자원은 유한하지만 잠재력은 무한합니다"
+          "header": "회사소개",
+          "tagline": "듬직하고 민첩한 파트너 하나루프"
         },
         "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.28,
-          "time": 16800,
-          "words": 56
+          "text": "6 min read",
+          "minutes": 5.22,
+          "time": 313200,
+          "words": 1044
         }
       }
     },
@@ -71,14 +72,14 @@
           "imageUrl": "/images/bg-hero_pando.jpeg"
         },
         "hero": {
-          "header": "Welcome",
-          "tagline": "Certainly!"
+          "header": "채용",
+          "tagline": "지속가능한 생태계 형성을 힘께!"
         },
         "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.265,
-          "time": 15900,
-          "words": 53
+          "text": "5 min read",
+          "minutes": 4.545,
+          "time": 272700,
+          "words": 909
         }
       }
     },
@@ -94,13 +95,14 @@
           "imageUrl": "/images/bg-hero_mangrove.jpeg"
         },
         "hero": {
-          "header": "자원은 유한하지만 잠재력은 무한합니다"
+          "header": "솔루션",
+          "tagline": "넷 제로로 향하기"
         },
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.34,
-          "time": 20400,
-          "words": 68
+          "minutes": 0.3,
+          "time": 18000,
+          "words": 60
         }
       }
     }

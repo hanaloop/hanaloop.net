@@ -9,7 +9,7 @@
       "_type": "item",
       "slug": "/docs/_index",
       "meta": {
-        "title": "Document Home",
+        "title": "환경기술 자료",
         "publishedAt": "2022-01-11",
         "summary": "Document Home for demo purpose!",
         "image": "/images/pexels-photo-414798.jpeg",
@@ -19,36 +19,49 @@
           "Demo"
         ],
         "readingTime": {
-          "text": "2 min read",
-          "minutes": 1.02,
-          "time": 61200,
-          "words": 204
-        }
-      }
-    },
-    {
-      "_type": "item",
-      "slug": "/docs/doc-1",
-      "meta": {
-        "title": "First document",
-        "publishedAt": "2022-01-11",
-        "summary": "First document for demo purpose!",
-        "author": "ysahnpark",
-        "tags": [
-          "Document",
-          "Demo"
-        ],
-        "readingTime": {
           "text": "1 min read",
-          "minutes": 0.985,
-          "time": 59100,
-          "words": 197
+          "minutes": 0.215,
+          "time": 12900,
+          "words": 43
         }
       }
     },
     {
       "_type": "folder",
-      "slug": "/docs/subtopic",
+      "slug": "/docs/news",
+      "meta": {
+        "label": "소식",
+        "tags": [
+          "sub1"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/news/doc-s11",
+          "meta": {
+            "title": "환경소식",
+            "publishedAt": "2022-01-11",
+            "summary": "First document for demo purpose!",
+            "image": "/images/pexels-photo-414798.jpeg",
+            "author": "ysahnpark",
+            "tags": [
+              "Document",
+              "Demo"
+            ],
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.185,
+              "time": 11100,
+              "words": 37
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/regulations",
       "meta": {
         "label": "제도",
         "tags": [
@@ -58,7 +71,40 @@
       "contents": [
         {
           "_type": "item",
-          "slug": "/docs/subtopic/doc-s1",
+          "slug": "/docs/regulations/doc-kets",
+          "meta": {
+            "title": "First s1.1 document",
+            "publishedAt": "2022-01-11",
+            "summary": "First document for demo purpose!",
+            "image": "/images/pexels-photo-414798.jpeg",
+            "author": "ysahnpark",
+            "tags": [
+              "배출권거래제",
+              "목표관리제"
+            ],
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.225,
+              "time": 13500,
+              "words": 45
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/standards",
+      "meta": {
+        "label": "표준",
+        "tags": [
+          "표준"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/standards/doc-s1",
           "meta": {
             "title": "First doc",
             "publishedAt": "2022-01-11",
@@ -75,60 +121,6 @@
               "words": 31
             }
           }
-        },
-        {
-          "_type": "folder",
-          "slug": "/docs/subtopic/news",
-          "contents": [
-            {
-              "_type": "item",
-              "slug": "/docs/subtopic/news/doc-s11",
-              "meta": {
-                "title": "First s1.1 document",
-                "publishedAt": "2022-01-11",
-                "summary": "First document for demo purpose!",
-                "image": "/images/pexels-photo-414798.jpeg",
-                "author": "ysahnpark",
-                "tags": [
-                  "Document",
-                  "Demo"
-                ],
-                "readingTime": {
-                  "text": "1 min read",
-                  "minutes": 0.97,
-                  "time": 58200,
-                  "words": 194
-                }
-              }
-            }
-          ]
-        },
-        {
-          "_type": "folder",
-          "slug": "/docs/subtopic/regulations",
-          "contents": [
-            {
-              "_type": "item",
-              "slug": "/docs/subtopic/regulations/doc-s11",
-              "meta": {
-                "title": "First s1.1 document",
-                "publishedAt": "2022-01-11",
-                "summary": "First document for demo purpose!",
-                "image": "/images/pexels-photo-414798.jpeg",
-                "author": "ysahnpark",
-                "tags": [
-                  "배출권거래제",
-                  "목표관리제"
-                ],
-                "readingTime": {
-                  "text": "1 min read",
-                  "minutes": 0.225,
-                  "time": 13500,
-                  "words": 45
-                }
-              }
-            }
-          ]
         }
       ]
     }

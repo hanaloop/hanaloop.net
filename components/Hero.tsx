@@ -22,7 +22,7 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
   const containerClass = background.imageUrl ? "h-64 bg-cover bg-center text-gray-100" :
     (background.solidColor ? `p-4 h-64 ${background.solidColor} justify-center items-center ` : 
     `p-4 h-64 bg-gradient-to-r ${background.gradientFrom} ${background.gradientTo} justify-center items-center `);
-  const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000000 90%, #00000000 90%), url(${background.imageUrl})`: '';
+  const containerStyle = background.imageUrl ? `linear-gradient(to top, transparent, #00000030 90%), url(${background.imageUrl})`: '';
 
   return (
     <div id="hero">

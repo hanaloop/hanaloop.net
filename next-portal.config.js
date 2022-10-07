@@ -51,10 +51,10 @@ const config = {
           //   type: 'separator',
           // },
           {
-            to: 'https://ecoloop.io',
+            to: 'https://www.ecoloop.io',
             label: 'EcoLoop 이동',
             style: 'button',
-            position: 'left',
+            style: 'px-1 rounded border-2 border-lime-700',
           },
           // {
           //   to: '/blog', 
