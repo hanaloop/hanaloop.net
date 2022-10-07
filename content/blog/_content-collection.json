@@ -1,0 +1,72 @@
+[
+  {
+    "_type": "item",
+    "slug": "/blog/20210114-first-blog",
+    "meta": {
+      "title": "Welcome",
+      "description": "First Blog",
+      "keywords": "blog, first",
+      "authors": [
+        "ysahnpark",
+        "ysahnpark"
+      ],
+      "tags": [
+        "hello",
+        "next-dev-portal"
+      ],
+      "publishedAt": "2021-01-14",
+      "readingTime": {
+        "text": "1 min read",
+        "minutes": 0.425,
+        "time": 25500,
+        "words": 85
+      },
+      "contentTruncated": "\nNext Dev Portal has built-in blogging feature.\n\nJust create an `*.mdx` file under `/content/blog` directory. \nThen run the generator too `yarn gen:collections` and you are good to go!\n\nRegular blog authors can be added to `authors.yml`. (Thanks Docusaurus for the idea!)\n\n"
+    }
+  },
+  {
+    "_type": "item",
+    "slug": "/blog/20210115-MDX-blog",
+    "meta": {
+      "title": "MDX blog with a relatively long title",
+      "authors": "ysahnpark",
+      "tags": [
+        "mdx",
+        "intro"
+      ],
+      "publishedAt": "2021-01-15",
+      "readingTime": {
+        "text": "1 min read",
+        "minutes": 0.22,
+        "time": 13200,
+        "words": 44
+      },
+      "contentFull": "\nWith [MDX](https://mdxjs.com/) you can embed JSX in the markdown file.\n\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button className=\"p-2  rounded-md text-blue-500\" onClick={() => alert('button clicked!')}>Click me!</button>\n"
+    }
+  },
+  {
+    "_type": "item",
+    "slug": "/blog/20210115-long-post",
+    "meta": {
+      "title": "A relatively long post",
+      "authors": {
+        "name": "Young Suk",
+        "title": "Consultant",
+        "url": "https://github.com/ysahnpark",
+        "image_url": "https://github.com/ysahnpark.png"
+      },
+      "tags": [
+        "hello",
+        "long"
+      ],
+      "publishedAt": "2021-01-15",
+      "readingTime": {
+        "text": "2 min read",
+        "minutes": 1.29,
+        "time": 77400,
+        "words": 258
+      },
+      "contentTruncated": "\nThis is a long post, but will only show the first part.\n\n"
+    }
+  }
+]

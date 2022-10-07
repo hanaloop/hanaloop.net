@@ -1,0 +1,173 @@
+openapi: 3.0.1
+info:
+  title: Music Manager
+  description: 'This is a Library''s Music Manager (INT) server.'
+  contact:
+    email: test@test.com
+  version: 0.0.1
+tags:
+  - name: musics
+    description: Access musics
+    externalDocs:
+      description: Find out more
+      url: https://confluence.
+  - name: bulk
+    description: Bulk Access
+    externalDocs:
+      description: Find out more about Music Manager in Wiki
+      url: https://library.test.com/docs/music
+servers:
+- url: https://stg-library.test.com/api/musics
+paths:
+  /musics/{id}:
+    put:
+      tags:
+      - musics
+      summary: Update an existing music by ID
+      operationId: updateMusic
+      parameters:
+        - name: id
+          in: path
+          description: Music's unique ID (Mongo ID).
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Music object that needs to be added to the db
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Music'
+        required: true
+      responses:
+        200:
+          description: Successfully updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Music'
+        400:
+          description: Invalid body supplied
+          content: {}
+        404:
+          description: Music not found
+          content: {}
+      security:
+      - am_auth:
+        - write:musics
+        - read:musics
+      x-codegen-request-body-name: body
+    get:
+      tags:
+      - musics
+      summary: Finds Musics by status
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findMusicsById
+      parameters:
+        - name: id
+          in: path
+          description: Music's unique ID (Mongo ID).
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: Successfully updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Music'
+        400:
+          description: Invalid ID format supplied
+          content: {}
+        404:
+          description: Music not found
+          content: {}
+      security:
+      - am_auth:
+        - read:musics
+    delete:
+      tags:
+      - musics
+      summary: Deletes a music
+      operationId: deleteMusic
+      parameters:
+        - name: id
+          in: path
+          description: Music's unique ID (Mongo ID).
+          required: true
+          schema:
+            type: string
+      responses:
+        400:
+          description: Invalid ID supplied
+          content: {}
+        404:
+          description: Music not found
+          content: {}
+      security:
+      - am_auth:
+        - write:musics
+        - read:musics
+  /musics/bulk:
+    get:
+      tags:
+      - bulk
+      summary: Bulk Create Musics
+      description: Create multiple musics in a single request.
+      operationId: createBulkMusics
+      responses:
+        200:
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Music'
+        400:
+          description: Invalid music value
+          content: {}
+      deprecated: false
+      security:
+      - am_auth:
+        - write:musics
+        - read:musics  
+components:
+  schemas:
+    Music:
+      required:
+      - source
+      - name
+      type: object
+      properties:
+        source:
+          title: The source of the music
+          type: string
+        status:
+          type: string
+        name:
+          type: string
+        isbn:
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+        source_id:
+          type: string
+        id:
+          type: string
+  securitySchemes:
+    am_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://stg-library.test.com/oauth
+          scopes:
+            write:musics: modify musics in your account
+            read:musics: read your musics
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header

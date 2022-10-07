@@ -1,0 +1,12 @@
+module.exports = {
+  "ysahnpark": {
+    "role": "leader",
+    "name": "Young Suk Ahn Park",
+    "title": "Sustainability Champion",
+    "url": "https://github.com/ysahnpark",
+    "image_url": "https://github.com/ysahnpark.png",
+    "profile_url": "https://youngsukahn.com/",
+    "tagline": "",
+    "description": "Software architect and sustainability researcher"
+  }
+}

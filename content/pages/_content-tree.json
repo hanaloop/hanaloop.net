@@ -1,0 +1,41 @@
+{
+  "_type": "folder",
+  "slug": "/pages",
+  "contents": [
+    {
+      "_type": "item",
+      "slug": "/pages/about",
+      "meta": {
+        "title": "About",
+        "description": "About the portal",
+        "keywords": "about",
+        "publishedAt": "2022-10-06",
+        "headerBackground": {
+          "imageUrl": "/images/bg-hero_pando.jpeg"
+        },
+        "hero": {
+          "header": "Welcome",
+          "tagline": "Certainly!"
+        },
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.255,
+          "time": 15300,
+          "words": 51
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/privacy",
+      "meta": {
+        "readingTime": {
+          "text": "6 min read",
+          "minutes": 5.505,
+          "time": 330300,
+          "words": 1101
+        }
+      }
+    }
+  ]
+}

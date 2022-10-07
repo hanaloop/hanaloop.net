@@ -1,0 +1,51 @@
+{/* Keep me as *.mdx file for nicer syntax highlighting  */}
+import DefaultContentContainer from "../components/MdxContainer";
+import MdxContainer from "../components/MdxContainer";
+import * as members from "../content/members";
+
+export const memberList = Object.values(members);
+
+export const meta = {
+    title: "Welcome Page",
+    publishedAt: "2022-10-06",
+    summary: "Welcome Page",
+    image: "/images/pexels-photo-414798.jpeg",
+    author: "ysahnpark",
+    tags: ["Page", "Demo"],
+    hero: {
+      backgroundImage: "/images/bg-hero_pando.jpeg",
+      header: "Welcome",
+      tagline: "Certainly!",
+    }
+}
+
+
+
+## Team
+<div className="my-5 grid lg:grid-cols-4 grid-cols-2 gap-2">
+  {
+    memberList.map(m => (
+      <figure className="bg-gray-100 rounded-md my-4 p-4 shadow">
+        <img className="w-32 h-32 rounded-full" src={ m.image_url } alt="" />
+        <div className="pt-6 space-y-4">
+          <figcaption className="font-medium text-center">
+            <div className="fond-semibold">
+              <a className="no-underline" href={ m.profile_url }>{ m.name }</a>
+            </div>
+            <div className="text-sm text-primary-dark">
+              { m.title }
+            </div>
+          </figcaption>
+          <p className="text-sm">
+            { m.description }
+          </p>
+        </div>
+      </figure>
+      )
+    )
+  }
+</div>
+
+
+{/* Below is needed for Markdown style to take place */}
+export default ({ children }) => <DefaultContentContainer><MdxContainer>{children}</MdxContainer></DefaultContentContainer>

@@ -1,0 +1,89 @@
+import Link from "next/link"
+import { useRouter } from "next/router";
+import { useContext } from "react";
+import { classNames } from "../libs/type.utils";
+import NavLink from "./NavLink";
+import QuickSearch from "./QuickSearch"
+import SiteContext from "./SiteContext";
+
+type NavBarProps = {
+  pageYOffset?: number
+}
+
+const STD_CONTENT_PATH = ['/docs', '/products', '/blog'];
+
+export default function NavBar({pageYOffset}: NavBarProps) {
+
+  const siteContext = useContext(SiteContext);
+
+  const router = useRouter();
+  const pathSeparatorPos = router.asPath.indexOf('/', 1);
+  const rootContextPath =  router.asPath.substring(0, pathSeparatorPos > 0 ? pathSeparatorPos : router.asPath.length);
+  
+  const disableTransparency = STD_CONTENT_PATH.includes(rootContextPath) || (pageYOffset && pageYOffset > 0);
+  
+  const containerClassName = classNames(
+    disableTransparency ? 'shadow bg-opacity-100 text-gray-700' : 'bg-opacity-0 shadow-none text-gray-50',
+    `bg-gray-100 top-0 h-16 fixed inset-x-0 z-50 transition-all duration-300`
+  );
+
+  return (
+    <nav className={containerClassName}>
+
+      <div className="px-4">
+        <div className="flex  h-16 items-center justify-between ">
+
+          <div className="flex space-x-4 items-center">
+            {/* <!-- Logo --> */}
+            <Link href="/" passHref>
+              <a className="flex  px-3">
+                {
+                  siteContext.themeConfig.navbar.logo.component || 
+                  <img className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} />
+                }
+                <span className="font-bold whitespace-nowrap">{siteContext.title}</span>
+              </a>
+            </Link>
+
+            <QuickSearch />
+          </div>
+
+          <div>
+            {/* <!-- Primary Nav --> */}
+            <div className="hidden sm:flex space-x-4">
+                {
+                  siteContext.themeConfig.navbar.items.map((item: any, idx: number) =>{
+                    return (
+                      <NavLink key={idx} item = {item} />
+                    )
+                  })
+                }
+            </div>
+
+            {/* <!-- Secondary Nav (login commented out) -->
+            <div className="hidden sm:flex ">
+                <a href="" className="px-3 hover:text-gray-800">Login</a>
+                <a href="" className="py-2 px-3 hover:text-gray-800 bg-yellow-400 rounded text-yellow-800 hover:bg-yellow-300 transition duration-300">Signup</a>
+            </div>
+            */}
+
+            {/* <!-- Mobile Button (replaces menu items con small view) --> */}
+            <div className="sm:hidden flex">
+                <button id="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                    </svg> 
+                </button>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
+    {/* <!-- TBD: Mobile Menu --> */}
+    <div id="mobile-menu" className="hidden sm:hidden">
+        <a href="#" className="block py-2 px-4 text-sm">About</a>
+    </div>
+</nav>
+  )
+}

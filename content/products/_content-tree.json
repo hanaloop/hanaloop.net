@@ -1,0 +1,104 @@
+{
+  "_type": "folder",
+  "slug": "/products",
+  "meta": {
+    "label": "The Services",
+    "image": "https://cdn.pixabay.com/photo/2020/03/18/06/54/smartphone-4942918_1280.jpg"
+  },
+  "contents": [
+    {
+      "_type": "item",
+      "slug": "/products/_index",
+      "meta": {
+        "label": "Hello",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.43,
+          "time": 25800,
+          "words": 86
+        }
+      }
+    },
+    {
+      "_type": "folder",
+      "slug": "/products/service-a",
+      "meta": {
+        "label": "The Service A",
+        "logoImage": null,
+        "description": "Provides services related to Imagination"
+      },
+      "contents": [
+        {
+          "_type": "openapi",
+          "slug": "/products/service-a/am-title_manager.openapi.yml",
+          "meta": {
+            "label": "Title Manager",
+            "description": "This is a Library's Title Manager (INT) server.",
+            "version": "0.0.1",
+            "slug": "/products/service-a/am-title_manager.openapi.yml"
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/products/service-a/index",
+          "meta": {
+            "label": "Service A",
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.13,
+              "time": 7800,
+              "words": 26
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/products/service-a/title-manager",
+          "meta": {
+            "label": "Title Manager",
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.22,
+              "time": 13200,
+              "words": 44
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/products/service-b",
+      "meta": {
+        "label": "The Service B",
+        "logoImage": null,
+        "description": "Provides services related to Creativity"
+      },
+      "contents": [
+        {
+          "_type": "openapi",
+          "slug": "/products/service-b/am-music_manager.openapi.yml",
+          "meta": {
+            "label": "Music Manager",
+            "description": "This is a Library's Music Manager (INT) server.",
+            "version": "0.0.1",
+            "slug": "/products/service-b/am-music_manager.openapi.yml"
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/products/service-b/mydoc",
+          "meta": {
+            "label": "Service B doc",
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.135,
+              "time": 8100,
+              "words": 27
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

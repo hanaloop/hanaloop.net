@@ -1,15 +1,13 @@
-image: node:12.18.1
+image: node:16.14.0
 
 pages:
   script:
   - yarn install
-  - echo $ALGOLIA_APP_ID
-  - echo $GOOGLE_TAG_ID
-  - ELEVENTY_ENV=production yarn build
+  - yarn build
   # The build directory is created based on the value set for projectName in
   # website/siteConfig.js. If you change it there, you need to change it here
   # as well.
-  - mv ./_site ./public
+  - mv ./out ./public
 
   artifacts:
     paths:
