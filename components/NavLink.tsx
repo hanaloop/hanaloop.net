@@ -17,8 +17,7 @@ export default function NavLink({item}: NavLinkProps) {
   const link = (item.type) ? `/${item.type}`
     : ( (item.href) ? item.href : item.to);
 
-  
-  
+  /* v2.1 */
   return <Link href={link!} passHref>
     <a className={`${item.style} hover:underline decoration-4 underline-offset-4 decoration-lime-700 whitespace-nowrap`}>{item.label}</a>
     </Link>

@@ -9,9 +9,10 @@ const META = {
   dir: __dirname,
   description: "Indexes content in _content-collection.json under /content/*/ directories",
   command: {
-      arguments: '<action>',
+      // arguments: '<action>',
+      arguments: '<types>',
       options: [
-          '-l, --lang <lang>' // language
+          '-a, --action <action>' // action
       ]
   }
 };
@@ -27,7 +28,8 @@ const META = {
 
   utils.logger.info(`Executing ${META.name} (%j)`, params);
 
-  const types = ['blog','docs','products'];
+  // v2.1
+  const types = params.types.split(',');
   
   let fullCollection: any = [];
   for (const contentType of types) {

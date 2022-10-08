@@ -11,18 +11,18 @@ type SideMenuProps = {
 }
 
 function MenuNode({menu, level}: SideMenuProps) {
-    const margin = `${level! * 0.5}rem`;
-    return (
-        <>
-            <div className="flex justify-between">
-                <div style={ { marginLeft: margin } } className="w-full py-2 px-4 text-gray-600">{menu?.label}</div>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-            </div>
-            <HierarchicalMenu menu={menu} level={level! + 1}/>
-        </>
-    )
+  const margin = `${level! * 0.5}rem`;
+  return (
+    <>
+      <div className="flex justify-between">
+        <div style={ { marginLeft: margin } } className="w-full py-2 px-4 text-gray-600">{menu?.label}</div>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+      <HierarchicalMenu menu={menu} level={level! + 1}/>
+    </>
+  )
 }
 
 function MenuItem ({menu, level}: SideMenuProps) {
@@ -37,53 +37,51 @@ function MenuItem ({menu, level}: SideMenuProps) {
   return (
     <>
     {
-        (menu?.subItems === null) 
-            ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + " block py-2 px-4 hover:bg-lime-700 hover:text-gray-50 transition duration-200"}>{menu?.label}</a></Link>
-            : (menu?.subItems?.length && menu?.subItems?.length > 0) 
-                ? <MenuNode menu={menu} level={level}/> : ""
+      (menu?.subItems === null) 
+          ? <Link key={menu?.label} href={menu?.link} passHref><a style={ { marginLeft: margin } } className={activeClass + " block py-2 px-4 hover:bg-primary hover:text-gray-50 transition duration-200"}>{menu?.label}</a></Link>
+          : (menu?.subItems?.length && menu?.subItems?.length > 0) 
+              ? <MenuNode menu={menu} level={level}/> : ""
     }
     </>
   )
 }
 
 function HierarchicalMenu ({menu, level}: SideMenuProps) {
-    return (
-        <>
-            { 
-                menu && menu?.subItems?.map((item, idx: number) => {
-                    return (
-                        <MenuItem key={idx} menu={item} level={level}/>
-                    )
-                })
-            }
-        </>
-    )
+  return (
+    <>
+      { 
+        menu && menu?.subItems?.map((item, idx: number) => {
+          return (
+              <MenuItem key={idx} menu={item} level={level}/>
+          )
+        })
+      }
+    </>
+  )
 }
 
 export default function SideMenu({ menu }:  SideMenuProps) {
 
-    const siteContext = useContext(SiteContext);
+  const siteContext = useContext(SiteContext);
 
-    return (
-        
-        <div className="bg-gray-50 text-gray-800 w-full absolute inset-y-0 left-0 transform -translate-x-0 transition duration-200">
-        
-            {/* Toggle above to -translate-x-full to contract */}
-            
-            {/* <!--    Org Heading --> */}
-            <div className="relative bg-gray-500"> 
-                {/* <!-- background for tinting --> */}
-                <img className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage} />
-                <div className="absolute bottom-0 left-0 w-full flex justify-center ">
-                <div className="text-xl font-bold text-white drop-shadow-sm"><Link href="/" >{siteContext.projectName}</Link> </div>
-                </div>
-            </div>
-            
-            {/* <!--     Navigation Menu --> */}
-            <nav className="mt-2">
-                <HierarchicalMenu menu={menu} level={0}/>
-            </nav>
-        </div>
-            
-    )
+  return (
+    <div className="bg-gray-50 text-gray-800 w-full absolute inset-y-0 left-0 transform -translate-x-0 transition duration-200">
+    
+      {/* Toggle above to -translate-x-full to contract */}
+      
+      {/* <!-- Org Heading --> */}
+      <div className="relative bg-gray-500"> 
+          {/* <!-- background for tinting --> */}
+          <img className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage} />
+          <div className="absolute bottom-0 left-0 w-full flex justify-center ">
+          <div className="text-xl font-bold text-white drop-shadow-sm"><Link href="/" >{siteContext.projectName}</Link> </div>
+          </div>
+      </div>
+      
+      {/* <!-- Navigation Menu --> */}
+      <nav className="mt-2 text-sm">
+          <HierarchicalMenu menu={menu} level={0}/>
+      </nav>
+  </div>
+  )
 }

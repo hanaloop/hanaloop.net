@@ -82,7 +82,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
         </div>
     </div>
 
-    {/* <!-- TBD: Mobile Menu --> */}
+    {/* v2.1 */}
     <Transition
       show={mobileMenuOpen}
       enter="transition ease-out duration-100 transform"
@@ -98,8 +98,8 @@ export default function NavBar({pageYOffset}: NavBarProps) {
           {
             siteContext.themeConfig.navbar.items.map((item: any, idx: number) =>{
               return (
-                <div className="block text-gray-700">
-                <NavLink key={idx} item={item} />
+                <div className="block text-gray-700" key={idx} >
+                  <NavLink item={item} />
                 </div>
               )
             })

@@ -1,15 +1,15 @@
 ---
-title: "환경기술 자료"
+title: "환경 자료"
 publishedAt: "2022-01-11"
 summary: "Document Home for demo purpose!"
 image: "/images/pexels-photo-414798.jpeg"
-author: "ysahnpark"
+author: "hykim"
 tags:
   - Document
   - Demo
 ---
 
-## Demo Doc Index
+## 환경 관련 자료
 
 This is the index document.
 

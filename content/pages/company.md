@@ -7,6 +7,7 @@ publishedAt: "2022-10-06"
 
 headerBackground:
   imageUrl: "/images/bg-hero_pando.jpeg"
+  imageDescription: "사진: Pando, Wikipedia"
 hero:
   header: "회사소개"
   tagline: "듬직하고 민첩한 파트너 하나루프"
@@ -68,19 +69,19 @@ export const memberList = Object.values(members);
     </div>
   </SectionBlock>
 
-  <SectionBlock title='하나루프의 문화' >
+  <SectionBlock title='리더십' >
     <div className="p-4">
       <div className="my-5 grid lg:grid-cols-3 grid-cols-2 gap-2">
         {
           memberList.map(m => (
-            <figure className="bg-gray-100 rounded-md my-4 p-4 shadow ">
+            <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>
               <div className="w-auto flex justify-center">
               <img className="w-32 h-32 rounded-full block" src={ m.image_url } alt="" />
               </div>
               <div className="pt-6 space-y-4 block">
                 <figcaption className="font-medium text-center">
                   <div className="fond-semibold">
-                    <a className="no-underline" href={ m.profile_url }>{ m.name }</a>
+                    <a className="no-underline  space-x-1" href={ m.profile_url }><span className="whitespace-nowrap">{ m.name }</span><span className="whitespace-nowrap">{ m.name_alt }</span></a>
                   </div>
                   <div className="text-sm text-primary-dark">
                     { m.title }
@@ -98,7 +99,7 @@ export const memberList = Object.values(members);
     </div>
   </SectionBlock>
 
-  <SectionBlock title='이름' >
+  <SectionBlock title='하나루프 이름의 배경' >
     <div className="p-4">
       <span className="text-xl">
       하나루프(Hana+Loop)

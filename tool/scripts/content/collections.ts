@@ -27,9 +27,7 @@ const run = async (context: ScriptContextType) => {
     utils.logger.info(`Executing ${META.name} (%j)`, params);
 
     // params.type
-
     const types = params.types.split(',');
-    const documentFolder = 'blog';
     
     for (const contentType of types) {
         

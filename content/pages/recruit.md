@@ -13,12 +13,18 @@ hero:
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 
-<div className="p-4">
+<div className="p-4 [word-break:keep-all]">
 
 지속가능한 세상, 다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상의 디딤돌이 될 지속가능성 플랫폼을 개발합니다. 
 인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장하고 싶으신가요? 그렇다면 하나루프로 오세요!
 
 “빨리 걷고 싶다면 혼자 걸으세요. 그러나 멀리 걷고 싶다면 함께걸어가세요.” - 아프리카 속담
+
+<div className="my-2 ">
+  <div className="p-2 border text-xl text-center border-secondary rounded-md bg-amber-50 bg-opacity-50">
+  지구를 위히, 매리를 위해 세계 일류 인력과 함께하세요! 
+  </div>
+</div>
 
 ## 하나루프의 복지
 

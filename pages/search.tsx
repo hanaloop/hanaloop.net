@@ -37,15 +37,15 @@ function SearchResult({result, clickHandler}: {result: ResultByType, clickHandle
           classNames(
             "py-1 px-3 rounded-t-md  ",
             selected
-                ? 'bg-blue-600 text-gray-50'
-                : 'text-blue-500 hover:bg-blue-300 hover:text-white'
+                ? 'bg-secondary-700 text-gray-50'
+                : 'text-secondary-600 hover:bg-secondary-400 hover:text-white'
           )} >
           <div className="flex items-center">{CATEGORIES[key].label}
-          <div className="px-1 ml-2 rounded-lg text-sm bg-blue-500 text-gray-100">{result[key]?.length}</div></div>
+          <div className="px-1 ml-2 rounded-lg text-sm bg-secondary-500 text-gray-100">{result[key]?.length}</div></div>
         </Tab>
         ))}
       </Tab.List>
-      <Tab.Panels className="p-3 border border-blue-600 bg-gray-50">
+      <Tab.Panels className="p-3 border border-secondary-600 bg-gray-50">
         {Object.values(result).map( (value, idx: number) => (
         <Tab.Panel key={idx}>
           {value && value.map((hit, idx:number ) => {

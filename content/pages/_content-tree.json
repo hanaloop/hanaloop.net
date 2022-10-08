@@ -11,7 +11,8 @@
         "keywords": "하나루프란",
         "publishedAt": "2022-10-06",
         "headerBackground": {
-          "imageUrl": "/images/bg-hero_pando.jpeg"
+          "imageUrl": "/images/bg-hero_pando.jpeg",
+          "imageDescription": "사진: Pando, Wikipedia"
         },
         "hero": {
           "header": "회사소개",
@@ -19,9 +20,9 @@
         },
         "readingTime": {
           "text": "6 min read",
-          "minutes": 5.22,
-          "time": 313200,
-          "words": 1044
+          "minutes": 5.29,
+          "time": 317400,
+          "words": 1058
         }
       }
     },
@@ -92,7 +93,8 @@
         "keywords": "온시라스 관리, 탄소 관리",
         "publishedAt": "2022-10-06",
         "headerBackground": {
-          "imageUrl": "/images/bg-hero_mangrove.jpeg"
+          "imageUrl": "/images/bg-hero_mangrove.jpeg",
+          "imageDescription": "사진: Mangrove. Termed “blue carbon” ecosystems (BCE), these habitats occupy a relatively small area of the global ocean (∼0.2%), but are major contributors to marine sediment organic carbon burial"
         },
         "hero": {
           "header": "솔루션",
@@ -100,9 +102,9 @@
         },
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.3,
-          "time": 18000,
-          "words": 60
+          "minutes": 0.46,
+          "time": 27600,
+          "words": 92
         }
       }
     }
