@@ -37,14 +37,17 @@ const config = {
           },
           {
             to: '/company',
-            docId: '',
             label: '회사소개',
             position: 'left',
           },
           {
             type: 'docs',
-            docId: '',
             label: '자료',
+            position: 'left',
+          },
+          {
+            to: '/recruit',
+            label: '채용',
             position: 'left',
           },
           // {

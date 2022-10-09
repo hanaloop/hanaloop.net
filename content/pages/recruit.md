@@ -6,10 +6,10 @@ keywords: "about"
 publishedAt: "2022-10-06"
 
 headerBackground:
-  imageUrl: "/images/bg-hero_pando.jpeg"
+  imageUrl: "/images/bg-hero_windturbine.jpeg"
 hero:
   header: "채용"
-  tagline: "지속가능한 생태계 형성을 힘께!"
+  tagline: "지속가능한 생태계 형성을 함께!"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 
@@ -37,7 +37,7 @@ import SectionBlock from "../components/theme/SectionBlock";
 </SectionBlock>
 
 <div className="my-2 ">
-  <div className="p-2 border text-xl text-center border-secondary rounded-md bg-amber-50 bg-opacity-50">
+  <div className="p-2 border text-xl text-center border-primary rounded-md bg-amber-50 bg-opacity-50">
   지구환경을 위해, 미래를 위해 세계의 일류 인재들과 함께하세요! 
   </div>
 </div>
@@ -91,6 +91,8 @@ import SectionBlock from "../components/theme/SectionBlock";
   - 각종 세미나, 포럼, 교육 참석 지원
   - 업무 관련 도서구매 지원
   - 3년 이상 함께하는 멤버의 공헌도에 따라 스톡옵션 지급
+
+  <div className="p-2 border border-primary rounded inline text-lg">[지원하기](recruit_apply)</div>
 </div>
 </SectionBlock>
 

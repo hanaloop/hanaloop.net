@@ -100,7 +100,7 @@ export const memberList = Object.values(members);
   </SectionBlock>
 
   <SectionBlock title='하나루프 이름의 배경' >
-    <div className="p-4">
+    <div className="px-4">
       <span className="text-xl">
       하나루프(Hana+Loop)
       </span>

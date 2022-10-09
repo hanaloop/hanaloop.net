@@ -15,8 +15,8 @@ hero:
 import SectionBlock from "../components/theme/SectionBlock";
 import data from "../content/pages/solution.data";
 
-<SectionBlock title='데이터가 보이면 전략이 보입니다.' containerStyle='bg-gray-100'>
-  <div className="my-5 grid xl:grid-cols-4 grid-cols-2 gap-2">
+<SectionBlock title='데이터가 보이면 전략이 보입니다!' containerStyle='bg-gray-100'>
+  <div className="my-5 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
     {data.benefits.map(benefit => 
     <div className="text-center "> 
       { /* <div className="text-lg text-white rounded-b-lg bg-secondary">{benefit.title}</div>*/ }
@@ -28,3 +28,7 @@ import data from "../content/pages/solution.data";
     )}
   </div>
 </SectionBlock>
+
+<div className="flex justify-center" >
+<img src="/images/banner-carbon_disclosure.jpeg" />
+</div>

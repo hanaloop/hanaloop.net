@@ -85,14 +85,14 @@ const Home: NextPage = () => {
         header="지속가능성을 위한 디지털 전환"
         tagline="SaaS형 온실가스와 오염물 관리 솔루션"
         button={
-          {href: '/docs', label: '에코루프 데모 요청'}
+          {href: '/demo_request', label: '에코루프 데모 요청'}
         }
       />
 
       {/* Features */}
-      <SectionBlock containerStyle="px-20 py-10">
+      <SectionBlock containerStyle="px-20">
         <>
-        <h2 className="my-2 text-4xl font-extrabold text-center text-gray-300">SaaS형 지속가능성 플랫폼 에코루프</h2>
+        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-300">SaaS형 지속가능성 플랫폼 에코루프</h2>
         <div className="p-6 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
             features.map(item => 
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       {/* Climate strategy is essential */}
-      <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다.' containerStyle='bg-gray-100'>
+      <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
         <div className="px-20  my-5 grid lg:grid-cols-3 grid-cols-1 gap-4  ">
           {
             reasons.map(item => 
