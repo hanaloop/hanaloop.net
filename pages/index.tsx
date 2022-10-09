@@ -49,12 +49,25 @@ const reasons: DisplayItems[] = [
   {
     // https://uxwing.com/svg-icon-editor/
     icon: <svg className="w-6 h-6" viewBox="0 0 100 100" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" > <g>
-      <text transform="matrix(2.77434 0 0 2.77434 -38.2076 -31.0621)" fontStyle="normal" fontWeight="normal" textAnchor="start" fontFamily="'Quicksand'" font-size="24" id="svg_1" y="38.1248" x="20.94585" stroke-width="0" fill="#000000">W</text>
+      <text transform="matrix(2.77434 0 0 2.77434 -38.2076 -31.0621)" fontStyle="normal" fontWeight="normal" textAnchor="start" fontFamily="'Quicksand'" fontSize="24" id="svg_1" y="38.1248" x="20.94585" strokeWidth="0" fill="#000000">W</text>
       <line strokeWidth={4} y2={63} x2={83.56713} y1="63" x1={16.5} fill="none"/>
       <line strokeWidth={4} y2="49" x2="83.56713" y1="49" x1="16.5" fill="none"/>
     </g>
   </svg>,
     title: '에너지가격과 보험료'
+  }
+]
+
+const partners: DisplayItems[] = [
+  {
+    title: "이마트",
+    imageUrl: "/images/partner-emart_logo.png",
+    description: "고객사: 국내 최초의 할인점. "
+  },
+  {
+    title: "로엔",
+    imageUrl: "/images/partner-roen_logo.png",
+    description: "파트너사: 정책 연구, 온실가스 감축, 탄소자산관리, 신재생애너지사업등 기후변화 대응 컨설팅. "
   }
 ]
 
@@ -76,9 +89,10 @@ const Home: NextPage = () => {
       />
 
       {/* Features */}
-      <div className="px-20 py-10">
+      <SectionBlock containerStyle="px-20 py-10">
+        <>
         <h2 className="my-2 text-4xl font-extrabold text-center text-gray-300">하나르프의 친환경 플랫폼 에코르푸</h2>
-        <div className="p-8 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
+        <div className="p-6 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
             features.map(item => 
               <div className="text-center" key={item.title}>
@@ -90,7 +104,8 @@ const Home: NextPage = () => {
               </div>)
           }
         </div>
-      </div>
+        </>
+      </SectionBlock>
 
       {/* Climate strategy is essential */}
       <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다!' containerStyle='bg-gray-100'>
@@ -108,8 +123,25 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       {/* 에게 기후 전략은 필수입니다 */}
-      <SectionBlock title='자료' containerStyle='bg-gray-100'>
+      <SectionBlock title='자료' >
         <div></div>
+      </SectionBlock>
+
+      <SectionBlock title='고객 및 파트너 ' containerStyle="bg-gray-100" >
+        <div className="flex justify-center" >
+          <div className="flex space-x-10" >
+            {
+              partners.map(item => 
+                <div className="group" key={item.title}>
+                  <div className="mt-10">
+                    <img className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl}  />
+                    <span className="p-3 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
+                  </div>
+                </div>
+            )
+            }
+          </div>
+        </div>
       </SectionBlock>
     </>
   )

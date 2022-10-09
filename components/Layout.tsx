@@ -23,6 +23,7 @@ export default function Layout({ children, meta }: LayoutProps) {
         <title>{meta && meta.title || siteContext.title}</title>
         <meta name="description" content={meta && meta.description || siteContext.tagline} />
         <meta name="keywords" content={meta && meta.keywords || siteContext.keywords} />
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
         <link rel="icon" href={siteContext.favicon} />
       </Head>
 

@@ -33,10 +33,10 @@ export default function Hero({header, tagline, button, background}: HeroProps & 
         
         <div className="px-8 w-full flex mx-auto" >
           <div id="hero-label" className="pt-16 space-y-2 flex flex-col w-full justify-center items-start text-center md:w-4/5 md:text-left">
-            <h1 className="text-4xl font-bold drop-shadow">{header}</h1>
-            <span className="text-2xl drop-shadow">{tagline}</span>
+            <h1 className="text-3xl md:text-4xl font-bold drop-shadow">{header}</h1>
+            <span className="text-xl md:text-2xl drop-shadow">{tagline}</span>
             {
-              button && <Link href={button.href} passHref><button className="p-3 rounded-md border-2 text-gray-200 font-bold">{button.label}</button></Link>
+              button && <Link href={button.href} passHref><button className="p-2 rounded-md border-2 text-gray-200 font-bold">{button.label}</button></Link>
             }
             {/* </div> */}
           </div>

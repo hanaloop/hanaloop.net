@@ -15,16 +15,16 @@ hero:
 import SectionBlock from "../components/theme/SectionBlock";
 import data from "../content/pages/solution.data";
 
-<div className="p-8">
-
+<SectionBlock title='데이터가 보이면 감축이 보인다!' containerStyle='bg-gray-100'>
   <div className="my-5 grid xl:grid-cols-4 grid-cols-2 gap-2">
     {data.benefits.map(benefit => 
-    <div className="text-center border border-primary-dark rounded-b"> 
-      <div className="text-lg text-white rounded-b-lg bg-primary-dark">{benefit.title}</div>
-      <div className=" text-gray-600 bg-white text-left">
+    <div className="text-center "> 
+      { /* <div className="text-lg text-white rounded-b-lg bg-secondary">{benefit.title}</div>*/ }
+      <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
+      <div className="h-32 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
         {benefit.description}
       </div>
     </div>
     )}
   </div>
-</div>
+</SectionBlock>
