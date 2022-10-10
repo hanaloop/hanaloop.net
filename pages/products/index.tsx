@@ -1,5 +1,5 @@
 import SidebarLayout from "../../components/SidebarLayout";
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import { AttributeType, ContentTreeItem } from "../../libs/content.types";
 import MdxContainer from "../../components/MdxContainer";
@@ -7,6 +7,7 @@ import MenuItem from "../../libs/MenuItem";
 import { getStaticPropsForIndexContentPage } from "../../libs/contentpage.utils";
 import Link from "next/link";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
 
 const C_TYPE = 'products';
 
@@ -61,7 +62,8 @@ function ProductTable({contentTree}:{contentTree: ContentTreeItem}) {
 
 export default function IndexPage({ code, frontMatter, contentTree, menuRoot }: IndexPageProps) {
   
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
 
   return (
     <DefaultContentContainer>

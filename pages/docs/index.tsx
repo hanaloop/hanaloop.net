@@ -1,11 +1,12 @@
 import SidebarLayout from "../../components/SidebarLayout";
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import MenuItem from "../../libs/MenuItem";
 import { AttributeType, ContentTreeItem } from "../../libs/content.types";
 import MdxContainer from "../../components/MdxContainer";
 import { getStaticPropsForIndexContentPage } from "../../libs/contentpage.utils";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
 
 const C_TYPE = 'docs';
 
@@ -18,7 +19,8 @@ type IndexPageProps = {
 
 export default function IndexPage({ code, frontMatter, menuRoot, contentTree }: IndexPageProps) {
   
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
   
   return (
     <DefaultContentContainer>

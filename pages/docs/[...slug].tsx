@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 
 import { getMDXComponent } from "mdx-bundler/client";
 import Image from "../../components/theme/Image";
@@ -8,11 +8,14 @@ import { ContentPageProp, ContentStaticPropsParams, getStaticPathsForContentPage
 import EditPageLink from "../../components/EditPageLink";
 import MdxContainer from "../../components/MdxContainer";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
 
 const C_TYPE = "docs";
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
 
   return (
     <>

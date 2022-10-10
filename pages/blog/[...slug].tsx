@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import Image from "next/image";
 
 import { getMDXComponent } from "mdx-bundler/client";
@@ -11,11 +11,14 @@ import EditPageLink from "../../components/EditPageLink";
 import AuthorsPane from "../../components/AuthorsPane";
 import MdxContainer from "../../components/MdxContainer";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
 
 const C_TYPE = "blog";
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
 
   return (
     <div className="max-w-4xl">

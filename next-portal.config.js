@@ -56,7 +56,6 @@ const config = {
           {
             to: 'https://www.ecoloop.io',
             label: 'EcoLoop.io',
-            style: 'button',
             style: 'px-1 rounded border-2 border-lime-700',
           },
           // {

@@ -1,7 +1,8 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 
 import { getMDXComponent } from "mdx-bundler/client";
 
+import SiteContext from "../components/SiteContext";
 import { AttributeType } from "../libs/content.types";
 import { ContentPageProp, ContentStaticPropsParams, getStaticPathsForContentPage, getStaticPropsForContentPage } from "../libs/contentpage.utils";
 import EditPageLink from "../components/EditPageLink";
@@ -11,7 +12,10 @@ import DefaultContentContainer from "../components/DefaultContentContainer";
 const C_TYPE = 'pages';
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+
+  const siteContext = useContext(SiteContext);
+  
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
 
   return (
     <div className="space-y-2">
