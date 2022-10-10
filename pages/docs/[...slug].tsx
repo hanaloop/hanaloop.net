@@ -14,10 +14,12 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
   const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
 
   return (
-    <div className="max-w-4xl">
+    <>
+    <img className="object-cover h-40 w-full bg-center " src={frontMatter.image}></img>
+    <div className="p-4 max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">
-          <h2 className="text-5xl font-black text-gray-800">
+          <h2 className="text-4xl font-black text-gray-600">
             {frontMatter.title}
           </h2>
           <p className="text-xl text-gray-500">{frontMatter.summary}</p>
@@ -38,6 +40,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
         </div>
       </div>
     </div>
+    </>
   );
 }
 
@@ -45,7 +48,7 @@ export default function DocPage({ code, frontMatter, menu, filePath }: ContentPa
   
   return (
     <DefaultContentContainer>
-      <SidebarLayout menu={menu} >
+      <SidebarLayout menu={menu} padding={false} >
         <DocContent code={code} frontMatter={frontMatter} filePath={filePath}></DocContent>
       </SidebarLayout>
     </DefaultContentContainer>

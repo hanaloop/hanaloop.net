@@ -36,6 +36,18 @@ export default function Layout({ children, meta }: LayoutProps) {
         </div>
 
         <footer className="p-4 items-center bg-gray-700 text-gray-50 -z-20">
+          <div className="mb-4">
+            {/* <!-- Logo --> */}
+            <Link href="/" passHref>
+              <a className="flex ">
+                {
+                  siteContext.themeConfig.navbar.logo.component || 
+                  <img className="h-6 mr-2" src={siteContext.themeConfig.navbar.logo.src} />
+                }
+                <span className="font-bold whitespace-nowrap">{siteContext.title}</span>
+              </a>
+            </Link>
+          </div>
           <div className="flex">
             {
               siteContext?.themeConfig.footer?.links.map( (link: any, index: number) => {
@@ -54,7 +66,10 @@ export default function Layout({ children, meta }: LayoutProps) {
             }
           </div>
           <div className="py-2 flex justify-center text-gray-100">
-            {siteContext.themeConfig.footer.copyright}
+            <div className="text-center">
+              <div>{siteContext.themeConfig.footer.copyright}</div>
+              <div className="text-xs text-gray-400">Site update: { (new Date()).toISOString().substring(0, 10) }</div>
+            </div>
           </div>
         </footer>
       </div>

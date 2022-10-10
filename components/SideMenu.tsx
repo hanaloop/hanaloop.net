@@ -72,7 +72,7 @@ export default function SideMenu({ menu }:  SideMenuProps) {
       {/* <!-- Org Heading --> */}
       <div className="relative bg-gray-500"> 
           {/* <!-- background for tinting --> */}
-          <img className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage} />
+          {siteContext.projectImage && <img className="h-24 w-full object-cover mix-blend-overlay"  src={siteContext.projectImage} />}
           <div className="absolute bottom-0 left-0 w-full flex justify-center ">
           <div className="text-xl font-bold text-white drop-shadow-sm"><Link href="/" >{siteContext.projectName}</Link> </div>
           </div>

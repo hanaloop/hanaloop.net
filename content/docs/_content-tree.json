@@ -9,20 +9,41 @@
       "_type": "item",
       "slug": "/docs/_index",
       "meta": {
-        "title": "환경기술 자료",
+        "title": "환경 자료",
+        "description": "환경관련 자료",
         "publishedAt": "2022-01-11",
         "summary": "Document Home for demo purpose!",
         "image": "/images/pexels-photo-414798.jpeg",
-        "author": "ysahnpark",
+        "author": "hykim",
         "tags": [
-          "Document",
-          "Demo"
+          "Document"
         ],
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.215,
-          "time": 12900,
-          "words": 43
+          "minutes": 0.25,
+          "time": 15000,
+          "words": 50
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/docs/glossary",
+      "meta": {
+        "title": "용어",
+        "description": "환경 용어",
+        "publishedAt": "2022-10-10",
+        "summary": "환경 용어",
+        "author": "hykim",
+        "tags": [
+          "용어"
+        ],
+        "image": "/images/bg-hero_book.jpeg",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.575,
+          "time": 34500,
+          "words": 115
         }
       }
     },
@@ -73,20 +94,20 @@
           "_type": "item",
           "slug": "/docs/regulations/doc-kets",
           "meta": {
-            "title": "First s1.1 document",
+            "title": "한국 배출권거래제",
             "publishedAt": "2022-01-11",
-            "summary": "First document for demo purpose!",
+            "summary": "배출권거래제",
             "image": "/images/pexels-photo-414798.jpeg",
-            "author": "ysahnpark",
+            "author": "hykim",
             "tags": [
               "배출권거래제",
               "목표관리제"
             ],
             "readingTime": {
               "text": "1 min read",
-              "minutes": 0.225,
-              "time": 13500,
-              "words": 45
+              "minutes": 0.265,
+              "time": 15900,
+              "words": 53
             }
           }
         }

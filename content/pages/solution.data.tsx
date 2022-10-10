@@ -1,6 +1,6 @@
-import { DisplayItems } from "../../libs/types"
+import { DisplayItem } from "../../libs/types"
 
-const benefits: DisplayItems[] = [
+const benefits: DisplayItem[] = [
   {
     title: "데이터 연동, 자동화 및 분석",
     description: <>

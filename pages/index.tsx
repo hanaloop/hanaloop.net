@@ -3,10 +3,14 @@ import type { NextPage } from 'next'
 import SiteContext from '../components/SiteContext';
 import Hero from '../components/Hero';
 import SectionBlock from '../components/theme/SectionBlock';
-import { DisplayItems } from '../libs/types';
+import { DisplayItem } from '../libs/types';
+
+import docsCollection from '../content/docs/_content-collection.json'
+
+const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, 4);
 
 // https://icons.getbootstrap.com/
-const features: DisplayItems[] = [
+const features: DisplayItem[] = [
   {
     icon: <svg className="h-8 text-secondary " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 5H7V7H17V5Z" fill="currentColor" /><path d="M7 9H9V11H7V9Z" fill="currentColor" /><path d="M9 13H7V15H9V13Z" fill="currentColor" /><path d="M7 17H9V19H7V17Z" fill="currentColor" /><path d="M13 9H11V11H13V9Z" fill="currentColor" /><path d="M11 13H13V15H11V13Z" fill="currentColor" /><path d="M13 17H11V19H13V17Z" fill="currentColor" /><path d="M15 9H17V11H15V9Z" fill="currentColor" /><path d="M17 13H15V19H17V13Z" fill="currentColor" /><path fillRule="evenodd" clipRule="evenodd" d="M3 3C3 1.89543 3.89543 1 5 1H19C20.1046 1 21 1.89543 21 3V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V3ZM5 3H19V21H5V3Z" fill="currentColor" /></svg>,
     title: "탄소 어카운팅",
@@ -33,7 +37,7 @@ const features: DisplayItems[] = [
   }
 ]
 
-const reasons: DisplayItems[] = [
+const reasons: DisplayItem[] = [
   {
     // Heroicon
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +62,7 @@ const reasons: DisplayItems[] = [
   }
 ]
 
-const partners: DisplayItems[] = [
+const partners: DisplayItem[] = [
   {
     title: "이마트",
     imageUrl: "/images/partner-emart_logo.png",
@@ -90,9 +94,9 @@ const Home: NextPage = () => {
       />
 
       {/* Features */}
-      <SectionBlock containerStyle="px-20">
-        <>
-        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-300">SaaS형 지속가능성 플랫폼 에코루프</h2>
+      <SectionBlock >
+        <div className="px-10">
+        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400">SaaS형 지속가능성 플랫폼 에코루프</h2>
         <div className="p-6 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
             features.map(item => 
@@ -105,12 +109,12 @@ const Home: NextPage = () => {
               </div>)
           }
         </div>
-        </>
+        </div>
       </SectionBlock>
 
       {/* Climate strategy is essential */}
       <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
-        <div className="px-20  my-5 grid lg:grid-cols-3 grid-cols-1 gap-4  ">
+        <div className="px-10  my-5 grid lg:grid-cols-3 grid-cols-1 gap-4  ">
           {
             reasons.map(item => 
               <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
@@ -123,9 +127,22 @@ const Home: NextPage = () => {
         </div>
       </SectionBlock>
 
-      {/* 에게 기후 전략은 필수입니다 */}
+      {/* Resources */}
       <SectionBlock title='자료' >
-        <div></div>
+      <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
+          {
+            docsSorted.map(item => 
+              <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>
+                <a href={item.slug}>
+                <div className="text-left items-center">
+                  <h3 className="px-4 py-2 hover:text-primary">{item.meta.title}</h3>
+                  <img className="object-cover h-40 w-full bg-center " src={item.meta.image}></img>
+                  <div className="px-4 py-2 text-sm text-gray-500">{item.meta.summary}</div>
+                </div>
+                </a>
+              </div>)
+          }
+        </div>
       </SectionBlock>
 
       <SectionBlock title='고객 및 파트너 ' containerStyle="bg-gray-100" >

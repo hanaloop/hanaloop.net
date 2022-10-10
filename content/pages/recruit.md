@@ -6,7 +6,7 @@ keywords: "about"
 publishedAt: "2022-10-06"
 
 headerBackground:
-  imageUrl: "/images/bg-hero_windturbine.jpeg"
+  imageUrl: "/images/bg-hero_workspace.jpeg"
 hero:
   header: "채용"
   tagline: "지속가능한 생태계 형성을 함께!"

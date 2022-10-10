@@ -6,9 +6,9 @@
       "_type": "item",
       "slug": "/pages/company",
       "meta": {
-        "title": "하나루프",
-        "description": "주식회사 하나루프란",
-        "keywords": "하나루프란",
+        "title": "(주)하나루프 소개",
+        "description": "주식회사 하나루프 설립 이유, 하나루프의 비전, 하나루프의 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프의 의미 소개",
+        "keywords": "하나루프, (주)하나루프, 하나루프 설립 이유, 하나루프 비전, 하나루프 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프 이름의 배경, 에코루프의 의미",
         "publishedAt": "2022-10-06",
         "headerBackground": {
           "imageUrl": "/images/bg-hero_pando.jpeg",
@@ -16,13 +16,45 @@
         },
         "hero": {
           "header": "회사소개",
-          "tagline": "듬직하고 민첩한 파트너 하나루프"
+          "tagline": "든든하고 민첩한 파트너 하나루프"
         },
         "readingTime": {
-          "text": "6 min read",
-          "minutes": 5.29,
-          "time": 317400,
-          "words": 1058
+          "text": "7 min read",
+          "minutes": 6.07,
+          "time": 364200,
+          "words": 1214
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/credits",
+      "meta": {
+        "title": "Credits",
+        "description": "Credits",
+        "keywords": "image, icons, credits",
+        "publishedAt": "2022-10-06",
+        "readingTime": {
+          "text": "2 min read",
+          "minutes": 1.335,
+          "time": 80100,
+          "words": 267
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/demo_request",
+      "meta": {
+        "title": "데모 요청",
+        "description": "데모 요청",
+        "keywords": "데모",
+        "publishedAt": "2022-10-06",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.175,
+          "time": 10500,
+          "words": 35
         }
       }
     },
@@ -30,22 +62,22 @@
       "_type": "item",
       "slug": "/pages/platform",
       "meta": {
-        "title": "에코르프 플랫폼",
-        "description": "온시라스 관리 플랫폼 에코르프",
-        "keywords": "온시라스 관리, 탄소 관리",
+        "title": "에코루프, SaaS형 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼 | EcoLoop",
+        "description": "SaaS형 온실가스 관리 플랫폼, 에코루프 (EcoLoop)는 온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. 에코루프를 통해 기관, 기업은 기후관련 규제에 대응하고, 기후 리스크를 줄이며, 에너지 소비를 줄이고, ESG 포트폴리오를 향상시킬 수 있습니다. 궁극적으로 기관, 기업은 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다. ",
+        "keywords": "에코루프, EcoLoop, SaaS형 지속가능성 플랫폼, 공급망 탄소관리 플랫폼, 온실가스 관리, 탄소 관리, 탄소중립 플랫폼, 넷제로 플랫폼 ",
         "publishedAt": "2022-10-06",
         "headerBackground": {
           "imageUrl": "/images/bg-hero_platform.jpeg"
         },
         "hero": {
-          "header": "탄소관리 디지털 플랫폼",
-          "tagline": "에코루프!"
+          "header": "지속가능성 플랫폼 EcoLoop",
+          "tagline": "데이터기반 지속가능성 | 탄소, 오염물질 등 환경데이터 관리"
         },
         "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.32,
-          "time": 19200,
-          "words": 64
+          "text": "4 min read",
+          "minutes": 3.275,
+          "time": 196500,
+          "words": 655
         }
       }
     },
@@ -70,17 +102,33 @@
         "keywords": "about",
         "publishedAt": "2022-10-06",
         "headerBackground": {
-          "imageUrl": "/images/bg-hero_pando.jpeg"
+          "imageUrl": "/images/bg-hero_workspace.jpeg"
         },
         "hero": {
           "header": "채용",
-          "tagline": "지속가능한 생태계 형성을 힘께!"
+          "tagline": "지속가능한 생태계 형성을 함께!"
         },
         "readingTime": {
           "text": "5 min read",
-          "minutes": 4.545,
-          "time": 272700,
-          "words": 909
+          "minutes": 4.87,
+          "time": 292200,
+          "words": 974
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/pages/recruit_apply",
+      "meta": {
+        "title": "지원",
+        "description": "지원",
+        "keywords": "지원",
+        "publishedAt": "2022-10-06",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.155,
+          "time": 9300,
+          "words": 31
         }
       }
     },
@@ -98,13 +146,15 @@
         },
         "hero": {
           "header": "솔루션",
-          "tagline": "넷 제로로 향하기"
+          "tagline": [
+            "자원은 유한하지만 잠재력은 무한합니다"
+          ]
         },
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.46,
-          "time": 27600,
-          "words": 92
+          "minutes": 0.855,
+          "time": 51300,
+          "words": 171
         }
       }
     }

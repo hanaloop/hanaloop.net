@@ -9,7 +9,7 @@ const config = {
     favicon: '/ecoloop-ico.png',
     organizationName: 'hanaloop', // Usually your GitHub org/user name.
     projectName: 'hanaloop.com', // Usually your repo name.
-    projectImage: 'https://images.unsplash.com/photo-1616408826319-f42dd3cefcad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80',
+    // projectImage: 'https://images.unsplash.com/photo-1616408826319-f42dd3cefcad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1474&q=80',
 
     contentRoot: 'content',
     contentTypes: ['blog', 'docs'],
@@ -110,11 +110,15 @@ const config = {
               {
                 label: '개인정보',
                 to: '/privacy',
+              },
+              {
+                label: 'Image Credits',
+                to: '/credits',
               }
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 주식화사 하나루프 `,
+        copyright: `Copyright © ${new Date().getFullYear()} 주식화사 하나루프 | HanaLoop Corp., Seoul Korea`,
       }
     }),
 }

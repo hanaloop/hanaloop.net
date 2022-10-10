@@ -1,16 +1,15 @@
-import { DisplayItems } from "../../libs/types"
+import { DisplayItem } from "../../libs/types"
 
-const features: DisplayItems[] = [
+const features: DisplayItem[] = [
   {
     title: "탄소 어카운팅",
     subtitle: "Carbon Accounting",
     description: <>에코루프는 기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 손쉽고 정확하게 탄소로 환산합니다.
         기업의 직접 활동에 따른 직접 배출(스코프1)과 구매한 전기, 가스 등에 따른 간접 배출(스코프2), 원자재의 생산부터 유통, 폐기까지 모든 가치사슬 상에서 발생하는 배출(스코프3)까지 고려합니다.
         <ul>
-        <li>휴먼에러 최소화</li>
+        <li>인공지능 기반 데이터 분석 , 휴먼에러 최소화</li>
         <li>한전과 연동 - 전력사용량 수집 자동화</li>
-        <li>인공지능 기반 데이터 분석 및 시각화</li>
-  
+        <li>손쉬운 증빙자료 관리</li>
         </ul>
       </>
   },
@@ -43,7 +42,7 @@ const features: DisplayItems[] = [
   }
 ]
 
-const benefits: DisplayItems[] = [
+const benefits: DisplayItem[] = [
   {
     title: "비용 절감",
     subtitle: "1",
