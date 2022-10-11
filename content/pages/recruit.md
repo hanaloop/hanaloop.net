@@ -1,7 +1,7 @@
 ---
-title: "채용"
-description: "채용"
-keywords: "about"
+title: "하나루프 | 채용 - 지속가능성 임팩트 프로젝트 최적 글로벌 일류 인재 채용"
+description: ",  임팩트 프로젝트 최적 글로벌 일류 인재 채용지속가능성 임팩트 프로젝트 합류, 하나루프는 지속가능한 세상의 디딤돌이 될 지속가능성 플랫폼 개발에 참여할 인재 채용. 다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상을 위한 임팩트 프로젝트 합류. 인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장할 인재 채용. 글로벌 일류 인재로 합류"
+keywords: "지속가능성 임팩트 프로젝트 최적 글로벌 일류 인재 채용, 하나루프 인재 채용, 에코루프 인재 채용, 하나루프 개발자 채용, 풀스택 개발자 채용, 프런트엔드 개발자 채용, 백엔드 개발자 채용, 소프트웨어 엔지니어 채용, 하나루프 글로벌 일류 인재, 지속가능성 임팩트 프로젝트 합류"
 
 publishedAt: "2022-10-06"
 
@@ -9,18 +9,20 @@ headerBackground:
   imageUrl: "/images/bg-hero_workspace.jpeg"
 hero:
   header: "채용"
-  tagline: "지속가능한 생태계 형성을 함께!"
+  tagline: "지속가능성 임팩트 프로젝트에 합류하세요!"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 
 <div className="p-4 [word-break:keep-all]">
 
-지속가능한 세상의 디딤돌이 될 지속가능성 플랫폼을 개발합니다. 
+지속가능한 세상의 디딤돌이 될 **지속가능성 플랫폼**을 개발합니다. 
 다음 세대가 지금까지의 세대가 누렸던 모든 것들을 타협없이 누릴 수 있는 세상을 위한 임팩트 프로젝트! 
-인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장하고 싶으신가요? 
-그렇다면 하나루프로 오세요!
+**인류의 삶과 지구 환경을 위한 임팩트 프로젝트에 참여하며 함께 성장**하고 싶으신가요? 
+그렇다면 **하나루프**로 오세요!
 
-“빨리 걷고 싶다면 혼자 걸으세요. 그러나 멀리 걷고 싶다면 함께걸어가세요.” - 아프리카 속담
+
+“빨리 걷고 싶다면 혼자 걸으세요. 그러나 멀리 걷고 싶다면 함께 걸어가세요.” - 아프리카 속담
+
 
 
 <SectionBlock title='복지' >
@@ -37,15 +39,15 @@ import SectionBlock from "../components/theme/SectionBlock";
 </SectionBlock>
 
 <div className="my-2 ">
-  <div className="p-2 border text-xl text-center border-primary rounded-md bg-amber-50 bg-opacity-50">
-  지구환경을 위해, 미래를 위해 세계의 일류 인재들과 함께하세요! 
+  <div className="p-2 border text-xl text-center border-primary rounded-md ">
+  지구환경을 위해, 미래를 위해 글로벌 일류 인재들과 함께하세요! 
   </div>
 </div>
 
 <SectionBlock title='오픈 포지션' >
 
 <div className="text-left">
-  ### 클라우드 기반 플랫폼 웹 백엔드/프론트 & 시스템 SW 엔지니어
+  ### 클라우드 기반 플랫폼 웹 프론트엔드/프론트엔드 & 시스템 SW 엔지니어
   ▶ 하나루프의 Full-stack 개발자는 전지구적 기후위기 대응 가속화에 비전을 품은 사람들과 함께, 공동의 목표로 함께 문제를 해결하고 솔루션을 구현합니다.
 
   #### 주 역할 및 책임

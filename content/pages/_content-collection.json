@@ -108,7 +108,7 @@
       },
       "hero": {
         "header": "채용",
-        "tagline": "지속가능한 생태계 형성을 함께!"
+        "tagline": "지속가능한 임팩트 프로젝트에 합류하세요"
       },
       "readingTime": {
         "text": "5 min read",
@@ -141,8 +141,8 @@
     "slug": "/pages/solution",
     "meta": {
       "title": "에코르프 플랫폼",
-      "description": "온시라스 관리 플랫폼 에코르프",
-      "keywords": "온시라스 관리, 탄소 관리",
+      "description": "온실가스 관리 플랫폼 에코르프",
+      "keywords": "온실가스 관리, 탄소 관리",
       "publishedAt": "2022-10-06",
       "headerBackground": {
         "imageUrl": "/images/bg-hero_mangrove.jpeg",

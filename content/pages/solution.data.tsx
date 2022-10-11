@@ -13,10 +13,10 @@ const benefits: DisplayItem[] = [
       </>
   },
   {
-    title: "가치사슬망 스코프 3 산정",
+    title: "가치사슬망 스코프 3 관리",
     description: <>
       <ul>
-      <li>가치사슬 배출량 산정 </li>
+      <li>가치사슬 배출량 관리 </li>
       <li>맞춤형 보고서</li>
       <li>다국어 지원</li>
       </ul>
