@@ -11,12 +11,14 @@ import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
 import AuthorsPane from "../../components/AuthorsPane";
 
+import siteConfig from '../../next-portal.config';
+
 const C_TYPE = "docs";
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
 
   const siteContext = useContext(SiteContext);
-  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
 
   return (
     <>

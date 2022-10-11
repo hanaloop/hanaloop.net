@@ -8,6 +8,8 @@ import { getStaticPropsForIndexContentPage } from "../../libs/contentpage.utils"
 import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
 
+import siteConfig from '../../next-portal.config';
+
 const C_TYPE = 'docs';
 
 type IndexPageProps = {
@@ -20,7 +22,7 @@ type IndexPageProps = {
 export default function IndexPage({ code, frontMatter, menuRoot, contentTree }: IndexPageProps) {
   
   const siteContext = useContext(SiteContext);
-  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
   
   return (
     <DefaultContentContainer>

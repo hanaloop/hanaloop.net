@@ -12,6 +12,7 @@ import Link from "next/link";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
 
+import siteConfig from '../../next-portal.config';
 
 type BlogExcerptProps = {
   code: string, 
@@ -22,7 +23,7 @@ type BlogExcerptProps = {
 function BlogExcerpt({ code, slug, frontMatter }: BlogExcerptProps) {
   
   const siteContext = useContext(SiteContext);
-  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
   
   return (
     <div className="space-y-4 mb-6">

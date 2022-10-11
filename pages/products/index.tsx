@@ -9,6 +9,8 @@ import Link from "next/link";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
 
+import siteConfig from '../../next-portal.config';
+
 const C_TYPE = 'products';
 
 type IndexPageProps = {
@@ -63,7 +65,7 @@ function ProductTable({contentTree}:{contentTree: ContentTreeItem}) {
 export default function IndexPage({ code, frontMatter, contentTree, menuRoot }: IndexPageProps) {
   
   const siteContext = useContext(SiteContext);
-  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
 
   return (
     <DefaultContentContainer>

@@ -9,13 +9,15 @@ import EditPageLink from "../components/EditPageLink";
 import MdxContainer from "../components/MdxContainer";
 import DefaultContentContainer from "../components/DefaultContentContainer";
 
+import siteConfig from '../next-portal.config';
+
 const C_TYPE = 'pages';
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
 
   const siteContext = useContext(SiteContext);
   
-  const MdxComponent = useMemo(() => getMDXComponent(code, {siteContext}), [code]);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
 
   return (
     <div className="space-y-2">

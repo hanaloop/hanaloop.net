@@ -22,7 +22,6 @@ export const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.local
         <a className="no-underline" href={item.slug}>
         <div className="px-4 text-left items-center">
           <h3 className="py-2 hover:text-primary">{item.meta.title}</h3>
-          
           <div className="text-sm text-gray-500">
             <div className="text-xs">{item.meta.publishedAt}</div>
             <div>{item.meta.summary}</div>

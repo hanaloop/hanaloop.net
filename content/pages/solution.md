@@ -31,5 +31,5 @@ import data from "../content/pages/solution.data";
 </SectionBlock>
 
 <div className="flex justify-center" >
-<img src={contextualPath(siteContext,"/images/banner-carbon_disclosure.jpeg")} />
+<img src={contextualPath(siteConfig,"/images/banner-carbon_disclosure.jpeg")} />
 </div>

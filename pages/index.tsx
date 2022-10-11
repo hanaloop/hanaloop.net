@@ -7,6 +7,8 @@ import SectionBlock from '../components/theme/SectionBlock';
 import Image from "../components/theme/Image";
 import { DisplayItem } from '../libs/types';
 
+import { contextualPath } from '../libs/content.util';
+import siteConfig from '../next-portal.config';
 import docsCollection from '../content/docs/_content-collection.json'
 
 const MAX_DOCS = 4;
@@ -82,12 +84,11 @@ const partners: DisplayItem[] = [
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
-
   
   return (
     <>
       <Hero background={{
-          imageUrl: '/images/bg-hero_jungle_coast.jpg',
+          imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
         header="지속가능성을 위한 디지털 전환"
         tagline="SaaS형 온실가스 오염물질 관리 솔루션"
