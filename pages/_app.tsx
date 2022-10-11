@@ -5,8 +5,9 @@ import Layout from '../components/Layout'
 import SiteContext from '../components/SiteContext'
 import * as siteConfig from '../next-portal.config'
 
-const members = require ('../content/members.json');
-const sitContext = { ...siteConfig, authors: members };
+// const members = require ('../content/members.json');
+import members from '../content/members';
+const sitContext = { ...siteConfig, members };
 
 function MyApp({ Component, pageProps }: AppProps & { pageProps: any }) {
 

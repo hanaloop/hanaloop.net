@@ -7,7 +7,7 @@ export default function AuthorsPane({authors}: {authors?: AuthorType | AuthorTyp
   const siteContext = useContext(SiteContext);
 
   function addAuthorById(_authors: AuthorType[], auhorId: string) {
-    const author = siteContext.authors && siteContext.authors[auhorId]
+    const author = siteContext.members && siteContext.members[auhorId]
     author && _authors.push(author);
   }
 

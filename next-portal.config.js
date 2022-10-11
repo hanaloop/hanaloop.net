@@ -3,8 +3,9 @@
  */
 const config = {
     title: 'HanaLoop',
+    tagline: undefined,
     url: 'https://your-portal-site.com',
-    baseUrl: '/',
+    basePath: process.env.WEB_PATH_PREFIX || '',
     favicon: '/ecoloop-ico.png',
     organizationName: 'hanaloop', // Usually your GitHub org/user name.
     projectName: 'hanaloop.com', // Usually your repo name.
@@ -55,7 +56,6 @@ const config = {
           {
             to: 'https://www.ecoloop.io',
             label: 'EcoLoop.io',
-            style: 'button',
             style: 'px-1 rounded border-2 border-lime-700',
           },
           // {

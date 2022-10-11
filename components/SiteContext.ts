@@ -2,9 +2,13 @@ import { createContext } from 'react';
 
 export type AuthorType = {
   name: string,
+  name_alt?: string,
   title? : string,
+  description?: string,
+  tagline?: string,
   url?: string,
   image_url?: string
+  profile_url?: string
 }
 
 export type SiteContextType = {
@@ -12,7 +16,7 @@ export type SiteContextType = {
   tagline?: string,
   keywords?: string,
   url?: string,
-  baseUrl?: string,
+  basePath?: string,
   favicon?: string,
   organizationName?: string, // Usually your GitHub org/user name.
   projectName?: string,
@@ -22,7 +26,7 @@ export type SiteContextType = {
   contentRoot: string,
   contentTypes?: string[], 
 
-  authors? : { [key: string]: AuthorType },
+  members? : { [key: string]: AuthorType },
   themeConfig?: any
 }
 

@@ -1,13 +1,18 @@
 import { useContext } from 'react';
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import SiteContext from '../components/SiteContext';
 import Hero from '../components/Hero';
 import SectionBlock from '../components/theme/SectionBlock';
+import Image from "../components/theme/Image";
 import { DisplayItem } from '../libs/types';
 
+import { contextualPath } from '../libs/content.util';
+import siteConfig from '../next-portal.config';
 import docsCollection from '../content/docs/_content-collection.json'
 
-const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, 4);
+const MAX_DOCS = 4;
+const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
 // https://icons.getbootstrap.com/
 const features: DisplayItem[] = [
@@ -79,12 +84,11 @@ const partners: DisplayItem[] = [
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
-
   
   return (
     <>
       <Hero background={{
-          imageUrl: '/images/bg-hero_jungle_coast.jpg',
+          imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
         header="지속가능성을 위한 디지털 전환"
         tagline="SaaS형 온실가스 오염물질 관리 솔루션"
@@ -129,20 +133,27 @@ const Home: NextPage = () => {
 
       {/* Resources */}
       <SectionBlock title='자료' >
-      <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
+        <>
+        <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
           {
             docsSorted.map(item => 
               <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>
-                <a href={item.slug}>
+                <Link href={item.slug} passHref><a >
                 <div className="text-left items-center">
                   <h3 className="px-4 py-2 hover:text-primary">{item.meta.title}</h3>
-                  <img className="object-cover h-40 w-full bg-center " src={item.meta.image}></img>
-                  <div className="px-4 py-2 text-sm text-gray-500">{item.meta.summary}</div>
+                  {item.meta.image && <Image className="object-cover h-40 w-full bg-center " src={item.meta.image} alt={item.meta.title} />}
+                  
+                  <div className="px-4 py-2 text-sm text-gray-500">
+                    <div className="text-xs">{item.meta.publishedAt}</div>
+                    <div>{item.meta.summary}</div>
+                  </div>
                 </div>
-                </a>
+                </a></Link>
               </div>)
-          }
+          }  
         </div>
+        <Link href="/docs" passHref><a >자료 더 보기</a></Link>
+        </>
       </SectionBlock>
 
       <SectionBlock title='고객 및 파트너 ' containerStyle="bg-gray-100" >
@@ -152,7 +163,7 @@ const Home: NextPage = () => {
               partners.map(item => 
                 <div className="group" key={item.title}>
                   <div className="mt-10">
-                    <img className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl}  />
+                    <Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} />
                     <span className="p-3 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
                   </div>
                 </div>

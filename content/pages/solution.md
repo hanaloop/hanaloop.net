@@ -13,6 +13,7 @@ hero:
   tagline: ["자원은 유한하지만 잠재력은 무한합니다"]
 ---
 import SectionBlock from "../components/theme/SectionBlock";
+import { contextualPath } from "../libs/content.util"
 import data from "../content/pages/solution.data";
 
 <SectionBlock title='데이터가 보이면 전략이 보입니다!' containerStyle='bg-gray-100'>
@@ -30,5 +31,5 @@ import data from "../content/pages/solution.data";
 </SectionBlock>
 
 <div className="flex justify-center" >
-<img src="/images/banner-carbon_disclosure.jpeg" />
+<img src={contextualPath(siteConfig,"/images/banner-carbon_disclosure.jpeg")} />
 </div>
