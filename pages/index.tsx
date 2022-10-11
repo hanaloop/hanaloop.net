@@ -87,16 +87,16 @@ const Home: NextPage = () => {
           imageUrl: '/images/bg-hero_jungle_coast.jpg',
         }} 
         header="지속가능성을 위한 디지털 전환"
-        tagline="SaaS형 온실가스와 오염물 관리 솔루션"
+        tagline="SaaS형 온실가스 오염물질 관리 솔루션"
         button={
-          {href: '/demo_request', label: '에코루프 데모 요청'}
+          {href: '/demo_request', label: 'EcoLoop 데모 요청'}
         }
       />
 
       {/* Features */}
       <SectionBlock >
         <div className="px-10">
-        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400">SaaS형 지속가능성 플랫폼 에코루프</h2>
+        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400">SaaS형 지속가능성 플랫폼 EcoLoop</h2>
         <div className="p-6 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
           {
             features.map(item => 

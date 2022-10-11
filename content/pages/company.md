@@ -1,7 +1,7 @@
 ---
-title: "(주)하나루프 소개"
-description: "주식회사 하나루프 설립 이유, 하나루프의 비전, 하나루프의 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프의 의미 소개"
-keywords: "하나루프, (주)하나루프, 하나루프 설립 이유, 하나루프 비전, 하나루프 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프 이름의 배경, 에코루프의 의미"
+title: "하나루프 | 지속가능한 세상으로의 전환 - 지속가능성 임팩트 프로젝트 EcoLoop 에코루프"
+description: "주식회사 하나루프 설립 이유, 하나루프의 비전, 하나루프의 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프의 의미 소개, 지속가능성 임팩트 프로젝트, 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간 이념의 실현, 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것, 건강한 지구로 환경을 회복시키며 인류의 번영에 기여할 것을 약속"
+keywords: "하나루프, (주)하나루프, 하나루프 설립 이유, 하나루프 비전, 하나루프 미션, 하나루프의 고객과의 약속, 하나루프의 문화, 하나루프의 리더십, 하나루프 이름의 배경, 하나루프의 의미, 에코루프 이름의 배경, 에코루프의 의미, 지속가능성 임팩트 프로젝트, HanaLoop vision, HanaLoop mission, HanaLoop culture, HanaLoop leadership, HanaLoop Name meaning, EcoLoop"
 
 publishedAt: "2022-10-06"
 
@@ -9,8 +9,9 @@ headerBackground:
   imageUrl: "/images/bg-hero_pando.jpeg"
   imageDescription: "사진: Pando, Wikipedia"
 hero:
-  header: "회사소개"
-  tagline: "든든하고 민첩한 파트너 하나루프"
+  header: "하나루프"
+  tagline: "든든하고 민첩한 파트너"
+
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 import members from "../content/members";
@@ -52,7 +53,7 @@ export const memberList = Object.values(members);
 
   <SectionBlock title='핵심가치' >
     <div className="p-4 w-auto flex justify-center ">
-    <div className="w-48 text-left">
+    <div className="w-60 text-left text-lg">
       - 탁월함 추구
       - 진정한 가치 창출
       - 오래 지속되는 신뢰 구축
@@ -102,7 +103,7 @@ export const memberList = Object.values(members);
   <SectionBlock title='하나루프 이름의 배경' >
     <div className="px-4">
       <span className="text-xl">
-      하나루프(Hana+Loop)
+      하나루프 (Hana+Loop)
       </span>
 
     <pre>
@@ -125,7 +126,7 @@ export const memberList = Object.values(members);
       “give out love” in Maori
       “Hope” in Kurdish
 
-      **에코루프(Eco+Loop)**
+      **에코루프 (Eco+Loop)**
       영어 에콜로지(Ecology)에서 유래한 '환경', '생태'의 뜻을 가진 접두사 ‘에코(Eco)’와
       자연의 진화 속성인 무한 루프의 ‘루프(Loop)’가 만났습니다.
     </pre>
