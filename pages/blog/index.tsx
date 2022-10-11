@@ -1,6 +1,6 @@
 import SidebarLayout from "../../components/SidebarLayout";
 import { contentTreeToMenu } from "../../libs/content.util";
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 import { getMDXComponent } from "mdx-bundler/client";
 import MenuItem from "../../libs/MenuItem";
 import MdxContainer from "../../components/MdxContainer";
@@ -10,7 +10,9 @@ import { processMDX } from "../../libs/mdx";
 import * as _contentTree from '../../content/blog/_content-tree.json'; 
 import Link from "next/link";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
 
+import siteConfig from '../../next-portal.config';
 
 type BlogExcerptProps = {
   code: string, 
@@ -20,7 +22,8 @@ type BlogExcerptProps = {
 
 function BlogExcerpt({ code, slug, frontMatter }: BlogExcerptProps) {
   
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
   
   return (
     <div className="space-y-4 mb-6">

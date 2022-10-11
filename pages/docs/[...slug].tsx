@@ -1,27 +1,35 @@
-import { useMemo } from "react";
+import { useContext, useMemo } from "react";
 
 import { getMDXComponent } from "mdx-bundler/client";
+import Image from "../../components/theme/Image";
 import SidebarLayout from "../../components/SidebarLayout";
 import { AttributeType } from "../../libs/content.types";
 import { ContentPageProp, ContentStaticPropsParams, getStaticPathsForContentPage, getStaticPropsForContentPage } from "../../libs/contentpage.utils";
 import EditPageLink from "../../components/EditPageLink";
 import MdxContainer from "../../components/MdxContainer";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
+import SiteContext from "../../components/SiteContext";
+import AuthorsPane from "../../components/AuthorsPane";
+
+import siteConfig from '../../next-portal.config';
 
 const C_TYPE = "docs";
 
 function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter: AttributeType, filePath?: string}) {
-  const MdxComponent = useMemo(() => getMDXComponent(code), [code]);
+
+  const siteContext = useContext(SiteContext);
+  const MdxComponent = useMemo(() => getMDXComponent(code, {siteConfig}), [code, siteConfig]);
 
   return (
     <>
-    <img className="object-cover h-40 w-full bg-center " src={frontMatter.image}></img>
+    {frontMatter.image && <Image className="object-cover h-40 w-full bg-center" src={frontMatter.image} alt={""} />}
     <div className="p-4 max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">
           <h2 className="text-4xl font-black text-gray-600">
             {frontMatter.title}
           </h2>
+          <AuthorsPane authors={frontMatter.authors} />
           <p className="text-xl text-gray-500">{frontMatter.summary}</p>
           <div className="flex items-center space-x-3">
             <p className="px-3 py-1 text-sm text-purple-500 bg-gray-100 rounded-full">

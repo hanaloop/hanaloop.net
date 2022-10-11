@@ -3,7 +3,7 @@ title: "용어"
 description: "환경 용어"
 publishedAt: "2022-10-10"
 summary: "환경 용어"
-author: "hykim"
+authors: ['hykim']
 tags:
   - 용어
 image: /images/bg-hero_book.jpeg
