@@ -6,9 +6,9 @@
  */
 export default function MdxContainer({children, padding = true}: {children:JSX.Element, padding?: boolean}) {
 
-  const style = padding ? "p-4": "";
+  const style = padding ? "p-4 ": "";
   return (
-    <article className={`${style} prose`}>
+    <article className={`${style} prose text-gray-800`}>
       {children}
     </article>
   )

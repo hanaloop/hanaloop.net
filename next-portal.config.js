@@ -2,8 +2,8 @@
  * Inspired by Docusaurus' config
  */
 const config = {
-    title: '하나루프',
-    tagline: '자원은 유한하지만 잠재력은 무한합니다',
+    title: 'HanaLoop',
+    tagline: undefined,
     url: 'https://your-portal-site.com',
     basePath: process.env.WEB_PATH_PREFIX || '',
     favicon: '/ecoloop-ico.png',

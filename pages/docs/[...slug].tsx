@@ -9,6 +9,7 @@ import EditPageLink from "../../components/EditPageLink";
 import MdxContainer from "../../components/MdxContainer";
 import DefaultContentContainer from "../../components/DefaultContentContainer";
 import SiteContext from "../../components/SiteContext";
+import AuthorsPane from "../../components/AuthorsPane";
 
 const C_TYPE = "docs";
 
@@ -26,6 +27,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
           <h2 className="text-4xl font-black text-gray-600">
             {frontMatter.title}
           </h2>
+          <AuthorsPane authors={frontMatter.authors} />
           <p className="text-xl text-gray-500">{frontMatter.summary}</p>
           <div className="flex items-center space-x-3">
             <p className="px-3 py-1 text-sm text-purple-500 bg-gray-100 rounded-full">

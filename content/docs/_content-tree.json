@@ -9,22 +9,48 @@
       "_type": "item",
       "slug": "/docs/_index",
       "meta": {
-        "title": "환경 자료",
-        "description": "환경관련 자료",
+        "title": "하나루프 | 환경관련 자료",
+        "description": "환경관련 자료, 환경이슈, 환경정보",
         "publishedAt": "2022-01-11",
         "summary": "Document Home for demo purpose!",
         "image": "/images/pexels-photo-414798.jpeg",
-        "author": "hykim",
+        "authors": "hykim",
         "tags": [
           "Document"
         ],
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.25,
-          "time": 15000,
-          "words": 50
+          "minutes": 0.51,
+          "time": 30600,
+          "words": 102
         }
       }
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/engineering",
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/engineering/2022-10-11-",
+          "meta": {
+            "title": "HanaLoop website 2.0!",
+            "publishedAt": "2022-10-11",
+            "summary": "HanaLoop website 2.0 re-engineered and re-designed!",
+            "image": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            "authors": "ysahnpark",
+            "tags": [
+              "Development"
+            ],
+            "readingTime": {
+              "text": "1 min read",
+              "minutes": 0.375,
+              "time": 22500,
+              "words": 75
+            }
+          }
+        }
+      ]
     },
     {
       "_type": "item",
@@ -34,7 +60,9 @@
         "description": "환경 용어",
         "publishedAt": "2022-10-10",
         "summary": "환경 용어",
-        "author": "hykim",
+        "authors": [
+          "hykim"
+        ],
         "tags": [
           "용어"
         ],
@@ -56,29 +84,7 @@
           "sub1"
         ]
       },
-      "contents": [
-        {
-          "_type": "item",
-          "slug": "/docs/news/doc-s11",
-          "meta": {
-            "title": "환경소식",
-            "publishedAt": "2022-01-11",
-            "summary": "환경소식 입니다",
-            "image": "https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-soil-60013.jpeg",
-            "author": "ysahnpark",
-            "tags": [
-              "Document",
-              "Demo"
-            ],
-            "readingTime": {
-              "text": "1 min read",
-              "minutes": 0.195,
-              "time": 11700,
-              "words": 39
-            }
-          }
-        }
-      ]
+      "contents": []
     },
     {
       "_type": "folder",
@@ -98,7 +104,7 @@
             "publishedAt": "2022-01-11",
             "summary": "배출권거래제",
             "image": "/images/pexels-photo-414798.jpeg",
-            "author": "hykim",
+            "authors": "hykim",
             "tags": [
               "배출권거래제",
               "목표관리제"
@@ -122,28 +128,7 @@
           "표준"
         ]
       },
-      "contents": [
-        {
-          "_type": "item",
-          "slug": "/docs/standards/doc-s1",
-          "meta": {
-            "title": "First doc",
-            "publishedAt": "2022-01-11",
-            "summary": "First document for demo purpose!",
-            "author": "ysahnpark",
-            "tags": [
-              "Document",
-              "Demo"
-            ],
-            "readingTime": {
-              "text": "1 min read",
-              "minutes": 0.155,
-              "time": 9300,
-              "words": 31
-            }
-          }
-        }
-      ]
+      "contents": []
     }
   ]
 }
