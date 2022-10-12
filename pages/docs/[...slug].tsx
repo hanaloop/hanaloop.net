@@ -12,6 +12,7 @@ import SiteContext from "../../components/SiteContext";
 import AuthorsPane from "../../components/AuthorsPane";
 
 import siteConfig from '../../next-portal.config';
+import { Tags } from "../../components/Tags";
 
 const C_TYPE = "docs";
 
@@ -22,25 +23,25 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
 
   return (
     <>
-    {frontMatter.image && <Image className="object-cover h-40 w-full bg-center" src={frontMatter.image} alt={""} />}
+    {frontMatter.imageHide !== true && frontMatter.image && <Image className="object-cover h-64 w-full bg-center" src={frontMatter.image} alt={""} />}
     <div className="p-4 max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">
           <h2 className="text-4xl font-black text-gray-600">
             {frontMatter.title}
           </h2>
-          <AuthorsPane authors={frontMatter.authors} />
           <p className="text-xl text-gray-500">{frontMatter.summary}</p>
+          <AuthorsPane authors={frontMatter.authors} />
           <div className="flex items-center space-x-3">
-            <p className="px-3 py-1 text-sm text-purple-500 bg-gray-100 rounded-full">
+            <p className="px-3 py-1 text-sm text-lime-600 bg-gray-100 rounded-full">
               {frontMatter.readingTime.text}
             </p>
-            <p className="px-3 py-1 text-sm text-purple-500 bg-gray-100 rounded-full">
+            <p className="px-3 py-1 text-sm text-lime-600 bg-gray-100 rounded-full">
               Date : {frontMatter.publishedAt}
             </p>
           </div>
         </div>
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-2 pt-4">
           <MdxContainer padding={false}>
             <MdxComponent />
           </MdxContainer>

@@ -51,19 +51,19 @@ div.el-pane  {
  */
 
 article h1 {
-  @apply pt-3 leading-relaxed text-4xl text-gray-600 font-extrabold;
+  @apply pt-5 leading-relaxed text-4xl text-gray-600 font-extrabold;
 }
 
 article h2 {
-  @apply pt-2 leading-relaxed text-3xl text-gray-600 font-bold;
+  @apply pt-4 leading-relaxed text-3xl text-gray-600 font-bold;
 }
 
 article h3 {
-  @apply pt-3 leading-relaxed text-2xl text-gray-500;
+  @apply pt-4 leading-relaxed text-2xl text-gray-500;
 }
 
 article h4 {
-  @apply pt-2 leading-relaxed text-lg text-gray-500;
+  @apply pt-3 leading-relaxed text-lg text-gray-500;
 }
 
 article p {
@@ -71,15 +71,15 @@ article p {
 }
 
 article ul {
-  @apply text-base pl-8 list-disc my-3;
+  @apply pl-8 list-disc my-3;
 }
 
 article ol {
-  @apply text-base pl-8 list-decimal;
+  @apply pl-8 list-decimal;
 }
 
 article table {
-  @apply text-base border-gray-600;
+  @apply border-gray-600;
 }
 
 article th {
@@ -91,7 +91,7 @@ article td {
 }
 
 article blockquote {
-  @apply px-4 bg-indigo-50 rounded-md;
+  @apply px-4 border border-lime-600 rounded-md;
 }
 
 article a {

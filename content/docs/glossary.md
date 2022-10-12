@@ -1,7 +1,7 @@
 ---
 title: "환경용어사전"
 description: "환경분야에서 사용되는 용어들 정의"
-publishedAt: "2022-10-10"
+publishedAt: "2022-10-11"
 summary: "환경분야에서 자주 사용되는 용어들을 설명합니다."
 authors: ['hykim']
 tags:
