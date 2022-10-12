@@ -35,10 +35,10 @@
         "keywords": "image, icons, credits",
         "publishedAt": "2022-10-06",
         "readingTime": {
-          "text": "2 min read",
-          "minutes": 1.335,
-          "time": 80100,
-          "words": 267
+          "text": "1 min read",
+          "minutes": 0.335,
+          "time": 20100,
+          "words": 67
         }
       }
     },
@@ -151,10 +151,10 @@
           ]
         },
         "readingTime": {
-          "text": "2 min read",
-          "minutes": 1.695,
-          "time": 101700,
-          "words": 339
+          "text": "4 min read",
+          "minutes": 3.01,
+          "time": 180600,
+          "words": 602
         }
       }
     }

@@ -162,11 +162,12 @@ For **Github Pages** modify `.github/workflows/deploy-gh-pages.yml` file replaci
 
 
 ## TODO
+- [ ] site-map
+- [ ] Inject folder's meta to document's meta
 - [ ] Search (index on ElasticSearch)
 - [ ] Authentication for backend service
 - [ ] Integrate with API Key management
 - [ ] Technology Radar
-- [ ] GitLab / GitHub pages deploy script (CI)
 - [ ] Multi-language support
 
 ## Known Issue

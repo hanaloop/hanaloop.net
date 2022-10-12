@@ -27,10 +27,10 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
     <div className="p-4 max-w-4xl">
       <div className="">
         <div className="flex flex-col space-y-2">
-          <h2 className="text-4xl font-black text-gray-600">
+          <h2 className="text-4xl font-bold text-gray-600">
             {frontMatter.title}
           </h2>
-          <p className="text-xl text-gray-500">{frontMatter.summary}</p>
+          <p className="text-xl text-gray-500">{frontMatter.subtitle}</p>
           <AuthorsPane authors={frontMatter.authors} />
           <div className="flex items-center space-x-3">
             <p className="px-3 py-1 text-sm text-lime-600 bg-gray-100 rounded-full">
