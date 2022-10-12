@@ -1,38 +1,104 @@
 {
   "_type": "folder",
-  "slug": "\\docs",
+  "slug": "/docs",
   "meta": {
     "label": "Main documentation"
   },
   "contents": [
     {
       "_type": "item",
-      "slug": "\\docs\\2022-10-11-net_zero",
+      "slug": "/docs/_index",
       "meta": {
-        "title": "탄소중립, 선택이 아닌 필수",
-        "publishedAt": "2022-10-11",
-        "summary": "2050년까지 1.5℃로 억제해야 하는 이유",
-        "image": "https://images.unsplash.com/photo-1568994105591-922d787135dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1791&q=80",
-        "imageCredits": "https://unsplash.com/s/photos/climate-change",
-        "authors": "hykim",
+        "title": "하나루프 | 자료",
+        "description": "환경관련 자료, 환경이슈, 환경정보",
+        "publishedAt": "2022-01-11",
+        "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
+        "image": "/images/pexels-photo-414798.jpeg",
         "tags": [
-          "Development"
+          "Document"
         ],
         "readingTime": {
-          "text": "18 min read",
-          "minutes": 17.785,
-          "time": 1067100,
-          "words": 3557
+          "text": "1 min read",
+          "minutes": 0.535,
+          "time": 32100,
+          "words": 107
+        }
+      }
+    },
+    {
+      "_type": "item",
+      "slug": "/docs/glossary",
+      "meta": {
+        "title": "환경용어사전",
+        "description": "환경분야에서 사용되는 용어들 정의",
+        "publishedAt": "2022-10-11",
+        "summary": "환경분야에서 자주 사용되는 용어들을 설명합니다.",
+        "authors": [
+          "hykim"
+        ],
+        "tags": [
+          "환경용어사전"
+        ],
+        "image": "/images/bg-hero_book.jpeg",
+        "readingTime": {
+          "text": "1 min read",
+          "minutes": 0.745,
+          "time": 44700,
+          "words": 149
         }
       }
     },
     {
       "_type": "folder",
-      "slug": "\\docs\\engineering",
+      "slug": "/docs/x20_environment_general",
+      "meta": {
+        "label": "환경일반",
+        "tags": [
+          "환경일반"
+        ]
+      },
       "contents": [
         {
           "_type": "item",
-          "slug": "\\docs\\engineering\\2022-10-11-",
+          "slug": "/docs/x20_environment_general/2022-10-12-net_zero",
+          "meta": {
+            "title": "탄소중립, 선택이 아닌 필수",
+            "subtitle": "2050년까지 1.5℃로 억제해야 하는 이유",
+            "publishedAt": "2022-10-12",
+            "summary": "2050년까지 1.5℃로 억제해야 하는 이유",
+            "image": "https://images.unsplash.com/photo-1568994105591-922d787135dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1791&q=80",
+            "imageHide": true,
+            "imageCredits": "https://unsplash.com/s/photos/climate-change",
+            "authors": "hykim",
+            "tags": [
+              "소식",
+              "탄소중립"
+            ],
+            "readingTime": {
+              "text": "18 min read",
+              "minutes": 17.965,
+              "time": 1077900,
+              "words": 3593
+            }
+          }
+        }
+      ]
+    },
+    {
+      "_type": "folder",
+      "slug": "/docs/x40_engineering",
+      "meta": {
+        "label": "Engineering",
+        "tags": [
+          "engineering",
+          "development",
+          "programming"
+        ]
+      },
+      "contents": [
+        {
+          "_type": "item",
+          "slug": "/docs/x40_engineering/2022-10-11-homepage_v2",
           "meta": {
             "title": "HanaLoop website 2.0!",
             "publishedAt": "2022-10-11",
@@ -43,113 +109,14 @@
               "Development"
             ],
             "readingTime": {
-              "text": "1 min read",
-              "minutes": 0.405,
-              "time": 24300,
-              "words": 81
+              "text": "2 min read",
+              "minutes": 1.175,
+              "time": 70500,
+              "words": 235
             }
           }
         }
       ]
-    },
-    {
-      "_type": "item",
-      "slug": "\\docs\\glossary",
-      "meta": {
-        "title": "용어",
-        "description": "환경 용어",
-        "publishedAt": "2022-10-10",
-        "summary": "환경 용어",
-        "authors": [
-          "hykim"
-        ],
-        "tags": [
-          "용어"
-        ],
-        "image": "/images/bg-hero_book.jpeg",
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.575,
-          "time": 34500,
-          "words": 115
-        }
-      }
-    },
-    {
-      "_type": "folder",
-      "slug": "\\docs\\news",
-      "meta": {
-        "label": "소식",
-        "tags": [
-          "sub1"
-        ]
-      },
-      "contents": []
-    },
-    {
-      "_type": "folder",
-      "slug": "\\docs\\regulations",
-      "meta": {
-        "label": "제도",
-        "tags": [
-          "sub1"
-        ]
-      },
-      "contents": [
-        {
-          "_type": "item",
-          "slug": "\\docs\\regulations\\doc-kets",
-          "meta": {
-            "title": "한국 배출권거래제",
-            "publishedAt": "2022-01-11",
-            "summary": "배출권거래제",
-            "image": "/images/pexels-photo-414798.jpeg",
-            "authors": "hykim",
-            "tags": [
-              "배출권거래제",
-              "목표관리제"
-            ],
-            "readingTime": {
-              "text": "1 min read",
-              "minutes": 0.265,
-              "time": 15900,
-              "words": 53
-            }
-          }
-        }
-      ]
-    },
-    {
-      "_type": "folder",
-      "slug": "\\docs\\standards",
-      "meta": {
-        "label": "표준",
-        "tags": [
-          "표준"
-        ]
-      },
-      "contents": []
-    },
-    {
-      "_type": "item",
-      "slug": "\\docs\\_index",
-      "meta": {
-        "title": "하나루프 | 환경관련 자료",
-        "description": "환경관련 자료, 환경이슈, 환경정보",
-        "publishedAt": "2022-01-11",
-        "summary": "Document Home for demo purpose!",
-        "image": "/images/pexels-photo-414798.jpeg",
-        "authors": "hykim",
-        "tags": [
-          "Document"
-        ],
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.51,
-          "time": 30600,
-          "words": 102
-        }
-      }
     }
   ]
 }

@@ -13,7 +13,8 @@ cache:
 
 pages:
   script:
-    - yarn build
+    - yarn contentprep
+    - yarn build && yarn export
     # removing the existing public directory prior mv
     - rm -r ./public
     - mv ./out ./public

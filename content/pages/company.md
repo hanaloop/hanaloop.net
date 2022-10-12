@@ -20,8 +20,8 @@ export const memberList = Object.values(members);
 
 <div className=""> 
 
-  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' >
-    <div className="p-4">
+  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' containerStyle="flex justify-center" >
+    <div className="p-4 text-lg max-w-3xl">
     기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.
 
 특히 이윤의 창출과 지속적인 성장에 주요 가치를 두는 기업에게 정부, 투자자와 고객, 구성원 등 사회가 요구하는 환경 정책과 엄격한 규제는 이 시대에 피할 수 없는 중요 과제가 되었습니다.
@@ -35,14 +35,14 @@ export const memberList = Object.values(members);
 
   <SectionBlock title='비전' containerStyle='bg-gray-100'>
     <div className="p-4">
-      <span className="text-xl">하나루프의 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간의 이념을 실현하는 것입니다.</span>
+      <span className="text-lg">하나루프의 비전은 깨끗하고 지속가능한 세상으로의 전환으로 홍익인간의 이념을 실현하는 것입니다.</span>
       
     </div>
   </SectionBlock>
 
   <SectionBlock title='미션' >
     <div className="p-4">
-    <span className="text-xl">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>
+    <span className="text-lg">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>
     </div>
   </SectionBlock>
 
@@ -73,7 +73,7 @@ export const memberList = Object.values(members);
 
   <SectionBlock title='리더십' >
     <div className="p-4">
-      <div className="my-5 grid lg:grid-cols-3 grid-cols-2 gap-2">
+      <div className="my-5 grid lg:grid-cols-3 grid-cols-2 gap-4">
         {
           memberList.map(m => (
             <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>
@@ -83,11 +83,11 @@ export const memberList = Object.values(members);
               <div className="pt-6 space-y-4 block">
                 <figcaption className="font-medium text-center">
                   <div className="fond-semibold">
-                    <a className="no-underline  space-x-1" href={ m.profile_url }><span className="whitespace-nowrap">{ m.name }</span><span className="whitespace-nowrap">{ m.name_alt }</span></a>
+                    <a className="no-underline  space-x-1" href={ m.profile_url }><span className="whitespace-nowrap">{ m.name }</span>
+                    <span className="whitespace-nowrap text-sm text-slate-700">{ m.name_alt }</span></a>
                   </div>
-                  <div className="text-sm text-primary-dark">
-                    { m.title }
-                  </div>
+                  <div className="text-sm text-primary-dark">{ m.title }</div>
+                  <div className="mt-2 text-xs text-slate-500">{ m.education }</div>
                 </figcaption>
                 <p className="text-sm">
                   { m.description }

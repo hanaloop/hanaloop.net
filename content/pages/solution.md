@@ -19,8 +19,7 @@ import data from "../content/pages/solution.data";
 <SectionBlock title='데이터가 보이면 전략이 보입니다!' containerStyle='bg-gray-100'>
   <div className="my-5 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
     {data.benefits.map(benefit => 
-    <div className="text-center "> 
-      { /* <div className="text-lg text-white rounded-b-lg bg-secondary">{benefit.title}</div>*/ }
+    <div className="text-center" key={benefit.title}> 
       <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
       <div className="h-32 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
         {benefit.description}

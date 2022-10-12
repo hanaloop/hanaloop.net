@@ -41,7 +41,7 @@ const terms: DisplayItem[] = [
     sourceUrl: "https://www.korea.kr/news/visualNewsView.do?newsId=148886348"
   },
   {
-    title: "ppm, parts per million",
+    title: "PPM, parts per million",
     description: " 백만분의 일을 나타내는 영문 parts per million의 약자입니다. 일정한 부피의 물이나 유체의 무게가 1일 경우 이 속에 100만분의 1 무게 만큼의 오염 물질이 포함된 것을 말합니다.",
     source: "고용노동부 천안고용노동지청",
     sourceUrl: "https://www.moel.go.kr/local/cheonan/info/dataroom/view.do?bbs_seq=66005"

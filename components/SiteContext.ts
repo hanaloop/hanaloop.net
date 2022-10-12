@@ -8,6 +8,7 @@ export type AuthorType = {
   tagline?: string,
   url?: string,
   image_url?: string
+  education?: string
   profile_url?: string
 }
 

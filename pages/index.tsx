@@ -10,6 +10,7 @@ import { DisplayItem } from '../libs/types';
 import { contextualPath } from '../libs/content.util';
 import siteConfig from '../next-portal.config';
 import docsCollection from '../content/docs/_content-collection.json'
+import { Tags } from '../components/Tags';
 
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
@@ -100,8 +101,10 @@ const Home: NextPage = () => {
       {/* Features */}
       <SectionBlock >
         <div className="px-10">
-        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400">SaaS형 지속가능성 플랫폼 EcoLoop</h2>
-        <div className="p-6 border-2 border-secondary rounded-lg grid lg:grid-cols-4 grid-cols-1 gap-4  ">
+        <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400 hover:text-sky-700 duration-200">
+          <Link href={'/platform'}><a>SaaS형 지속가능성 플랫폼 EcoLoop</a></Link>
+        </h2>
+        <div className="p-6 border-2 border-secondary rounded-lg grid md:grid-cols-4 grid-cols-1 gap-4  ">
           {
             features.map(item => 
               <div className="text-center" key={item.title}>
@@ -118,7 +121,7 @@ const Home: NextPage = () => {
 
       {/* Climate strategy is essential */}
       <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
-        <div className="px-10  my-5 grid lg:grid-cols-3 grid-cols-1 gap-4  ">
+        <div className="px-10  my-5 grid md:grid-cols-3 grid-cols-1 gap-4  ">
           {
             reasons.map(item => 
               <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
@@ -134,7 +137,7 @@ const Home: NextPage = () => {
       {/* Resources */}
       <SectionBlock title='자료' >
         <>
-        <div className="px-10  my-5 grid lg:grid-cols-2 grid-cols-1 gap-4  ">
+        <div className="px-10 my-5 grid md:grid-cols-2 grid-cols-1 gap-4  ">
           {
             docsSorted.map(item => 
               <div className="border rounded text-gray-700 drop-shadow-md" key={item.slug}>
@@ -146,7 +149,9 @@ const Home: NextPage = () => {
                   <div className="px-4 py-2 text-sm text-gray-500">
                     <div className="text-xs">{item.meta.publishedAt}</div>
                     <div>{item.meta.summary}</div>
+                    <Tags tags={item.meta.tags} />
                   </div>
+                  
                 </div>
                 </a></Link>
               </div>)
