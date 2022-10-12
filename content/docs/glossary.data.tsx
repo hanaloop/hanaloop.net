@@ -59,13 +59,6 @@ const terms: DisplayItem[] = [
     sourceUrl: "https://me.go.kr/home/web/dictionary/read.do?pagerOffset=0&maxPageItems=10&maxIndexPages=10&searchKey=%E3%85%82&searchValue=&menuId=10448&orgCd=&condition.createDeptName=%EB%B0%B0%EC%B6%9C&boardMasterId=&dicSeq=8&decorator="
   },
 
-  {
-    title: "",
-    description: "",
-    source: "",
-    sourceUrl: ""
-  },
-  
 ]
 
 

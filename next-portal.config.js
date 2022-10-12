@@ -99,7 +99,7 @@ const config = {
               },
               {
                 label: '자료',
-                to: '/blog',
+                to: '/docs',
               },
             ],
           },
@@ -107,11 +107,11 @@ const config = {
             title: '약관',
             items: [
               {
-                label: '개인정보',
+                label: '개인정보 처리방침',
                 to: '/privacy',
               },
               {
-                label: 'Image Credits',
+                label: 'Credits',
                 to: '/credits',
               }
             ]

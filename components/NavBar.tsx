@@ -48,7 +48,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
               </a>
             </Link>
 
-            <QuickSearch />
+            { false && <QuickSearch />}
           </div>
 
           <div>
