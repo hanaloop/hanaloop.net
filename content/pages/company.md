@@ -16,7 +16,7 @@ hero:
 import SectionBlock from "../components/theme/SectionBlock";
 import members from "../content/members";
 import { contextualPath } from "../libs/content.util"
-export const memberList = Object.values(members);
+export const memberList = Object.values(members).filter(m => m.type !== 'system');
 
 <div className=""> 
 
@@ -73,7 +73,7 @@ export const memberList = Object.values(members);
 
   <SectionBlock title='리더십' >
     <div className="p-4">
-      <div className="my-5 grid lg:grid-cols-3 grid-cols-2 gap-4">
+      <div className="my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
         {
           memberList.map(m => (
             <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>

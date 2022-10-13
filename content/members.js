@@ -27,5 +27,12 @@ module.exports = {
     "tagline": "기술로 의미있는 일을 하고싶은",
     "education": "고려대 석사",
     "description": "다수의 상용 소프트웨어 개발 및 AI 프로젝트 수행. 멀티미디어, 모바일 앱, 웹 플랫폼, 머신 러닝 프로그램 다수 개발"
+  },
+  "hana": {
+    "type": "system",
+    "name": "하나",
+    "name_alt": "Hana",
+    "image_url": "/images/logo.png",
+    "title": "환경친구",
   }
 }

@@ -1,6 +1,7 @@
 import { createContext } from 'react';
 
 export type AuthorType = {
+  type?: string,
   name: string,
   name_alt?: string,
   title? : string,

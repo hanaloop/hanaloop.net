@@ -71,12 +71,14 @@ const reasons: DisplayItem[] = [
 const partners: DisplayItem[] = [
   {
     title: "이마트",
+    sourceUrl: "https://emartdt.ai/",
     imageUrl: "/images/partner-emart_logo.png",
     description: "고객사 | ESG경영 선도기업 이마트"
 
   },
   {
     title: "로엔 컨설팅",
+    sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partner-roen_logo.png",
     description: "파트너사 | 환경 토탈 솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생애너지사업 등 기후변화 대응 컨설팅"
   }
@@ -168,7 +170,7 @@ const Home: NextPage = () => {
               partners.map(item => 
                 <div className="group" key={item.title}>
                   <div className="mt-10">
-                    <Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} />
+                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
                     <span className="p-3 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
                   </div>
                 </div>
