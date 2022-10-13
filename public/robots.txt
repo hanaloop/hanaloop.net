@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow:
 
-Sitemap: https://www.example.com/sitemap_index.xml
+Sitemap: https://hanaloop.com/sitemap.xml
