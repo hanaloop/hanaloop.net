@@ -60,14 +60,16 @@ export async function getStaticPropsForContentPage(contentType: string, { params
 
   const menuRoot = contentTreeToMenu(_contentTree);
 
-  // trim root 'index' slug
-  if (menuRoot.subItems) {
-    for (let i = 0; i < menuRoot.subItems.length!; i++) {
-      if (menuRoot.subItems[i].link === `/${contentType}/${INDEX_FILE}`) {
-        menuRoot.subItems[i].link = `/${contentType}`;
-      }
-    }
-  }
+  // With SSG (GitLab pages), the docs/ does not get mapped to docs.html,
+  // Hence it fails.
+  // if (menuRoot.subItems) {
+  //   for (let i = 0; i < menuRoot.subItems.length!; i++) {
+         //  trim root 'index' slug
+  //     if (menuRoot.subItems[i].link === `/${contentType}/${INDEX_FILE}`) {
+  //       menuRoot.subItems[i].link = `/${contentType}`;
+  //     }
+  //   }
+  // }
 
   const retval = { ...doc, menu: menuRoot, filePath};
   // console.log("retval:",  JSON.stringify(retval, null, 2) );
@@ -88,13 +90,14 @@ export async function getStaticPropsForIndexContentPage(contentType: string) {
 
   const menuRoot = contentTreeToMenu(_contentTree);
 
-  if (menuRoot.subItems) {
-    for (let i = 0; i < menuRoot.subItems.length!; i++) {
-      if (menuRoot.subItems[i].link === `/${contentType}/${INDEX_FILE}`) {
-        menuRoot.subItems[i].link = `/${contentType}`;
-      }
-    }
-  }
+  // See above for why this code block was disabled
+  // if (menuRoot.subItems) {
+  //   for (let i = 0; i < menuRoot.subItems.length!; i++) {
+  //     if (menuRoot.subItems[i].link === `/${contentType}/${INDEX_FILE}`) {
+  //       menuRoot.subItems[i].link = `/${contentType}`;
+  //     }
+  //   }
+  // }
   
   return { 
     props: { ...doc, menuRoot, contentTree: _contentTree} 
