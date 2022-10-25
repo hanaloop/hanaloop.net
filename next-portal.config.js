@@ -41,7 +41,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs',
+            to: '/docs/_index',
             label: '자료',
             position: 'left',
           },

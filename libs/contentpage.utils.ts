@@ -25,6 +25,7 @@ export async function getStaticPathsForContentPage(contentType: string) {
     
     // slugArr is an array compose of path elements and filename without the .mdx extension
     const slugArr = docPath.replace(new RegExp(`${MD_EXTENSION}`), "").split('/');
+    // console.log('slugArr', JSON.stringify(slugArr, null, 2));
 
     return ({
       params: {

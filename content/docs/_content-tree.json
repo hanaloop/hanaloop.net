@@ -13,15 +13,15 @@
         "description": "환경관련 자료, 환경이슈, 환경정보",
         "publishedAt": "2022-01-10",
         "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
-        "image": "/images/pexels-photo-414798.jpeg",
+        "image": null,
         "tags": [
           "Document"
         ],
         "readingTime": {
           "text": "1 min read",
-          "minutes": 0.57,
-          "time": 34200,
-          "words": 114
+          "minutes": 0.565,
+          "time": 33900,
+          "words": 113
         }
       }
     },
@@ -45,26 +45,6 @@
           "minutes": 0.745,
           "time": 44700,
           "words": 149
-        }
-      }
-    },
-    {
-      "_type": "item",
-      "slug": "/docs/index",
-      "meta": {
-        "title": "하나루프 | 자료",
-        "description": "환경관련 자료, 환경이슈, 환경정보",
-        "publishedAt": "2022-01-10",
-        "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
-        "image": "/images/pexels-photo-414798.jpeg",
-        "tags": [
-          "Document"
-        ],
-        "readingTime": {
-          "text": "1 min read",
-          "minutes": 0.57,
-          "time": 34200,
-          "words": 114
         }
       }
     },

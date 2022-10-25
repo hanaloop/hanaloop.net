@@ -7,15 +7,15 @@
       "description": "환경관련 자료, 환경이슈, 환경정보",
       "publishedAt": "2022-01-10",
       "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
-      "image": "/images/pexels-photo-414798.jpeg",
+      "image": null,
       "tags": [
         "Document"
       ],
       "readingTime": {
         "text": "1 min read",
-        "minutes": 0.57,
-        "time": 34200,
-        "words": 114
+        "minutes": 0.565,
+        "time": 33900,
+        "words": 113
       },
       "contentFull": "import {Tags} from \"../components/Tags\";\nimport docsCollection from \"../content/docs/_content-collection.json\";\n\nexport const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt));\n\n## 환경 관련 자료\n\n\n<div className=\"my-5 space-y-2\">\n  {\n    docsSorted.map(item => \n      <div className=\"space-y-4 \" key={item.slug}>\n        <a className=\"no-underline hover:no-underline\" href={item.slug}>\n        <div className=\"px-4 text-left items-center border-l-4 hover:border-lime-500\">\n          <h3 className=\"py-2 hover:text-primary no-underline\">{item.meta.title}</h3>\n          <div className=\"text-sm text-gray-500\">\n            <div className=\"text-xs\">{item.meta.publishedAt}</div>\n            <div>{item.meta.summary}</div>\n            <Tags tags={item.meta.tags} />\n          </div>\n        </div>\n        </a>\n      </div>\n    )\n  }  \n</div>\n"
     }
@@ -42,27 +42,6 @@
         "words": 149
       },
       "contentFull": "\nimport data from \"../content/docs/glossary.data\";\n\n## 환경 용어\n\n<div className=\"[word-break:keep-all]\">\n\n<div className=\"text-left space-y-4 text-sm \">\n{data.termsKo.map(term => \n  <div className=\"flex align-top bg-gray-100 border hover:border-lime-600\" key={term.title}>\n    <div className=\"p-2 flex-initial w-64\">{term.title}</div>\n    <div className=\"p-2 flex-1 bg-white\">{term.description}\n      {term.source && <span className=\"text-xs\">\n      [출저: <a href={term.sourceUrl}>{term.source}</a>]\n      </span>} \n    </div>\n  </div>\n)}\n</div>\n\n<div className=\"mt-4 text-left space-y-4 text-sm \">\n{data.terms.map(term => \n  <div className=\"flex align-top bg-gray-100 border hover:border-lime-600\" key={term.title}>\n    <div className=\"p-2 flex-initial w-64\">{term.title}</div>\n    <div className=\"p-2 flex-1 bg-white\">{term.description}\n      {term.source && <span className=\"text-xs\">\n      [출저: <a href={term.sourceUrl}>{term.source}</a>]\n      </span>} \n    </div>\n  </div>\n)}\n</div>\n\n</div>\n"
-    }
-  },
-  {
-    "_type": "item",
-    "slug": "/docs/index",
-    "meta": {
-      "title": "하나루프 | 자료",
-      "description": "환경관련 자료, 환경이슈, 환경정보",
-      "publishedAt": "2022-01-10",
-      "summary": "환경관련 자료, 환경이슈, 환경정보 목차",
-      "image": "/images/pexels-photo-414798.jpeg",
-      "tags": [
-        "Document"
-      ],
-      "readingTime": {
-        "text": "1 min read",
-        "minutes": 0.57,
-        "time": 34200,
-        "words": 114
-      },
-      "contentFull": "import {Tags} from \"../components/Tags\";\nimport docsCollection from \"../content/docs/_content-collection.json\";\n\nexport const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt));\n\n## 환경 관련 자료\n\n\n<div className=\"my-5 space-y-2\">\n  {\n    docsSorted.map(item => \n      <div className=\"space-y-4 \" key={item.slug}>\n        <a className=\"no-underline hover:no-underline\" href={item.slug}>\n        <div className=\"px-4 text-left items-center border-l-4 hover:border-lime-500\">\n          <h3 className=\"py-2 hover:text-primary no-underline\">{item.meta.title}</h3>\n          <div className=\"text-sm text-gray-500\">\n            <div className=\"text-xs\">{item.meta.publishedAt}</div>\n            <div>{item.meta.summary}</div>\n            <Tags tags={item.meta.tags} />\n          </div>\n        </div>\n        </a>\n      </div>\n    )\n  }  \n</div>\n"
     }
   },
   {

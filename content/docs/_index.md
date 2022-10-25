@@ -3,7 +3,7 @@ title: "하나루프 | 자료"
 description: "환경관련 자료, 환경이슈, 환경정보"
 publishedAt: "2022-01-10"
 summary: "환경관련 자료, 환경이슈, 환경정보 목차"
-image: "/images/pexels-photo-414798.jpeg"
+image: 
 tags:
   - Document
 ---
