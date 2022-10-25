@@ -87,7 +87,7 @@ const partners: DisplayItem[] = [
     title: "로엔 컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partner-roen_logo.png",
-    description: "파트너사 | 환경 토탈 솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생애너지사업 등 기후변화 대응 컨설팅"
+    description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅"
   }
 ]
 
