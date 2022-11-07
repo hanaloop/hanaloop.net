@@ -10,9 +10,9 @@ imageCredits:
 
 authors: "ysahnpark"
 tags:
-  - 표준
-  - TCFD
-  - 사례 연구
+  - IPCC
+  - COP
+  - UN
 ---
 import CaptionedImage from "../components/theme/CaptionedImage";
 
