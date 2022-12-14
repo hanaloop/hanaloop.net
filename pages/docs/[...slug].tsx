@@ -26,12 +26,11 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
     {frontMatter.imageHide !== true && frontMatter.image && <Image className="object-cover h-64 w-full bg-center" src={frontMatter.image} alt={""} />}
     <div className="p-4 max-w-4xl">
       <div className="">
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-4">
           <h2 className="text-4xl font-bold text-gray-600">
             {frontMatter.title}
           </h2>
           <p className="text-xl text-gray-500">{frontMatter.subtitle}</p>
-          <AuthorsPane authors={frontMatter.authors} />
           <div className="flex items-center space-x-3">
             <p className="px-3 py-1 text-sm text-lime-600 bg-gray-100 rounded-full">
               {frontMatter.readingTime.text}
@@ -45,6 +44,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
           <MdxContainer padding={false}>
             <MdxComponent />
           </MdxContainer>
+          <AuthorsPane authors={frontMatter.authors} />
           <EditPageLink filePath={filePath} label="[Edit this page]"/>
         </div>
       </div>

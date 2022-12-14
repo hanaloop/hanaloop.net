@@ -3,7 +3,7 @@ title: "TCFD 2022 현황 보고서 사례 연구"
 subtitle: "TCFD의 사례 연구(Case Studies)에서 얻은 인사이트"
 publishedAt: "2022-10-25"
 description: "TCFD의 사례 연구에서 얻은 인사이트 " 
-summary: "TCFD의 사례 연구에서 얻은 인사이트 "
+summary: "TCFD의 사례 연구에서 얻은 인사이트로 기후 문제와 관련된 거버넌스를 규제에 닥칠 때까지 지연하는 것이 아니라 조기에 구현해야 한다는 것임."
 image: /images/posting/environment-general/EcoLoop_tcfd_case_studies.jpeg
 imageHide: true 
 imageCredits: 
@@ -31,9 +31,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 다행히도 기업에게는 기후변화 관련 재무정보 공개 전담협의체(TCFD, Task force on Climate Related Financial Disclosures) 권고와 같은 틀과 지침이 있습니다. TCFD 권고안은 기업의 임원들이 기후변화를 고려하여 기업의 위험요소를 제대로 평가하도록 도움을 줄 수 있습니다. TCFD 권고안은 투자자, 펀드매니저 및 보험회사가 자산의 기후 관련 위험을 적절하게 평가할 수 있도록 지원하기 위해 개발된 틀(Framework)입니다.
 
 
-
 2022년 10월 13일, TCFD는 2017년 최종 권고안 발표 이후 다섯 번째 현황 보고서를 발표했습니다. 이전 보고서와 달리 이번 보고서에는 지난 5년간 도입 과정 검토 및 사례 연구가 포함되어 있습니다.
-
 
 
 이 보고서는 기업이 TFCD에 따른 보고서를 공개하도록 요구하는 투자자 수가 꾸준히 증가함에 따라 재무 자료에 기후 관련 정보 공개 횟수가 증가하는 추세를 보여주고 있습니다. 설문 응답자의 대다수는 “전략의 탄력성” 및 “스코프 3 온실가스 배출” 측정 항목이 구현하기 가장 어렵다고 말했습니다.

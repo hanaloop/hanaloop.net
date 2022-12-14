@@ -3,7 +3,7 @@ title: "COP27이 뭐예요? 왜 중요한가요?"
 subtitle: "COP27 이해하기"
 publishedAt: "2022-11-07"
 description: "COP27 이해하기" 
-summary: "COP27 이해하기"
+summary: "COP27에서 다룰 핵심 내용: 1. 완화. 국가들이 배출량을 줄이는 방법, 2. 적응. 각 나라들은 어떻게 적응할 것인가, 3. 자금조달. “손실과 피해”"
 image: /images/posting/environment-general/2022-11-07-cop27-01.jpeg
 imageHide: true 
 imageCredits: 

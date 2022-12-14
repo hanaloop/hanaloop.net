@@ -159,7 +159,7 @@
             "subtitle": "TCFD의 사례 연구(Case Studies)에서 얻은 인사이트",
             "publishedAt": "2022-10-25",
             "description": "TCFD의 사례 연구에서 얻은 인사이트 ",
-            "summary": "TCFD의 사례 연구에서 얻은 인사이트 ",
+            "summary": "TCFD의 사례 연구에서 얻은 인사이트로 기후 문제와 관련된 거버넌스를 규제에 닥칠 때까지 지연하는 것이 아니라 조기에 구현해야 한다는 것임.",
             "image": "/images/posting/environment-general/EcoLoop_tcfd_case_studies.jpeg",
             "imageHide": true,
             "imageCredits": null,
@@ -170,10 +170,10 @@
               "사례 연구"
             ],
             "readingTime": {
-              "text": "8 min read",
-              "minutes": 7.955,
-              "time": 477300,
-              "words": 1591
+              "text": "9 min read",
+              "minutes": 8.17,
+              "time": 490200,
+              "words": 1634
             }
           }
         },
@@ -181,25 +181,51 @@
           "_type": "item",
           "slug": "/docs/x20_environment-general/2022-11-07-cop27-what-is-it",
           "meta": {
-            "title": "COP27가 뭐에요? 왜 중요한가요?",
+            "title": "COP27이 뭐예요? 왜 중요한가요?",
             "subtitle": "COP27 이해하기",
             "publishedAt": "2022-11-07",
             "description": "COP27 이해하기",
-            "summary": "COP27 이해하기",
+            "summary": "COP27에서 다룰 핵심 내용: 1. 완화. 국가들이 배출량을 줄이는 방법, 2. 적응. 각 나라들은 어떻게 적응할 것인가, 3. 자금조달. “손실과 피해”",
             "image": "/images/posting/environment-general/2022-11-07-cop27-01.jpeg",
             "imageHide": true,
             "imageCredits": null,
             "authors": "ysahnpark",
             "tags": [
-              "표준",
-              "TCFD",
-              "사례 연구"
+              "IPCC",
+              "COP",
+              "UN"
             ],
             "readingTime": {
-              "text": "12 min read",
-              "minutes": 11.095,
-              "time": 665700,
-              "words": 2219
+              "text": "13 min read",
+              "minutes": 12.305,
+              "time": 738300,
+              "words": 2461
+            }
+          }
+        },
+        {
+          "_type": "item",
+          "slug": "/docs/x20_environment-general/2022-12-14-CBAM",
+          "meta": {
+            "title": "기업이 탄소국경조정제도(CBAM)에 대해 알아야 할 것",
+            "subtitle": "EU 탄소국경조정제도(CBAM) 적용",
+            "publishedAt": "2022-12-14",
+            "description": "2023년 10월부터 CBAM 적용",
+            "summary": "본질적으로 CBAM은 EU ETS 탄소 가격과 연결된 탄소 국경세입니다. 수입업체는 수입 상품 생산 시 발생하는 배출량에 해당하는 CBAM 인증서(Certificate)를 구매해야 합니다. 인증서 가격은 EU ETS 주간 평균 가격과 연결됩니다.",
+            "image": "/images/posting/environment-general/2022-12-14-cbam.jpg",
+            "imageHide": true,
+            "imageCredits": null,
+            "authors": "ysahnpark",
+            "tags": [
+              "EU",
+              "CBAM",
+              "탄소국경조정제도"
+            ],
+            "readingTime": {
+              "text": "8 min read",
+              "minutes": 7.36,
+              "time": 441600,
+              "words": 1472
             }
           }
         }
