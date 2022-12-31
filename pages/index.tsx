@@ -79,14 +79,25 @@ const partners: DisplayItem[] = [
   {
     title: "이마트",
     sourceUrl: "https://emartdt.ai/",
-    imageUrl: "/images/partner-emart_logo.png",
+    imageUrl: "/images/partners/partner-emart_logo.png",
     description: "고객사 | ESG경영 선도기업 이마트"
-
+  },
+  {
+    title: "벽산",
+    sourceUrl: "http://www.byucksan.com/",
+    imageUrl: "/images/partners/byucksan-logo.png",
+    description: "고객사 | 늘 푸른 산처럼 아름다운 생활공간을 창조 | 지속가능경영 혁신기업"
+  },
+  {
+    title: "서경빌딩",
+    sourceUrl: "https://naver.me/FKKMDLip",
+    imageUrl: "/images/partners/seokyungbuildng-logo.png",
+    description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물"
   },
   {
     title: "로엔 컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
-    imageUrl: "/images/partner-roen_logo.png",
+    imageUrl: "/images/partners/partner-roen_logo.png",
     description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅"
   }
 ]
@@ -108,6 +119,24 @@ const Home: NextPage = () => {
           {href: '/demo_request', label: 'EcoLoop 데모 요청'}
         }
       />
+      <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="bg-gray-100" >
+        <div className="flex justify-center" >
+          <div className="flex mt-2 space-x-10" >
+            {
+              partners.map(item => 
+                <div className="group" key={item.title}>
+                  <div className="">
+                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
+                    <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
+                  </div>
+                </div>
+            )
+            }
+          </div>
+        </div>
+      </SectionBlock>
+
+      
 
       {/* Features */}
       <SectionBlock >
@@ -172,22 +201,7 @@ const Home: NextPage = () => {
         </>
       </SectionBlock>
 
-      <SectionBlock title='고객 및 파트너 ' containerStyle="bg-gray-100" >
-        <div className="flex justify-center" >
-          <div className="flex space-x-10" >
-            {
-              partners.map(item => 
-                <div className="group" key={item.title}>
-                  <div className="mt-10">
-                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
-                    <span className="p-3 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
-                  </div>
-                </div>
-            )
-            }
-          </div>
-        </div>
-      </SectionBlock>
+      
     </>
   )
 }
