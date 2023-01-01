@@ -15,12 +15,40 @@ import { Tags } from '../components/Tags';
 // For HTML meta & SEO 
 const frontMatter = {
   title: `${siteConfig.title} | 탄소중립 플랫폼 및 솔루션`,
-  description: "지속가능한 디지털 전환 Sustainable Digital Transformation과 친환경 EcoLoop 플랫폼 기반 솔루션 제공",
-  keywords: "하나루프, 에코루프, 온실가스 관리, 탄소 관리, 환경 플랫폼, Platform, HanaLoop, EcoLoop, Sustainability, Digital Transformation"
+  description: "지속가능한 디지털 전환 Sustainable Digital Transformation과 친환경 탄소관리 온실가스관리 플랫폼",
+  keywords: "공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 오염물질 관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop"
 }
 
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
+
+
+const elements: DisplayItem[] = [
+  {
+    title: "데이터 수집, 산정, 분석",
+    subtitle: "Collect, Quantify and Analyze",
+    imageUrl: "/images/platform/eco_accounting.png",
+    description: [
+      <span><b>수집에서 분석까지 배출활동 데이터 처리 간소화</b> - 기업의 활동으로 인해 발생하는 온실가스 배출활동 데이터 수집을 간편하게 하고, 배출량을 산정하고 모니터링하며 배출량 추이를 분석합니다.</span>,
+      <span><b>기후 데이터에서 얻는 실행 가능한 통찰력</b> - 인공지능 기반 데이터 분석 및 예측을 통해 의사 결정을 위한 통찰력을 얻을 수 있습니다.</span>] 
+  },
+  {
+    title: "전략",
+    subtitle: "Devise strategies",
+    imageUrl: "/images/platform/eco_strategy.png",
+    description: [
+      <span><b>기후 탄력적인 전략을 수립하고 이행하기 위한 협력</b> - 에너지 효율 향상, 배출권거래제 대응, 공급망 포함 탄소감축 목표와 전략 수립 및 이행, 각종 공시요구 대응 등을 탄력적으로 실행할 수 있습니다.</span>,
+      <span><b>기후요소를 근거로 현명한 비즈니스 의사 결정이 가능해집니다.</b></span>] 
+  },
+  {
+    title: "임팩트",
+    subtitle: "Make impact",
+    imageUrl: "/images/platform/eco_impact.png",
+    description: [
+      <span><b>탈탄소화 임팩트 네트워크 형성</b> - 산업별 탄소감축 방법과 결과를 분석하고, 그 임팩트를 공유함으로써 기업 간 탈탄소화 네트워크를 형성하며, 임팩트를 증대시킬 수 있습니다.</span>,
+      <span><b>친환경 사업 모델 개발</b> - 비즈니스 효율성을 높이는 동시에 기후 친화적인 비즈니스 모델 개발을 통해 친환경 산업으로의 전환을 이끌 수 있습니다.</span>] 
+  },
+]
 
 // https://icons.getbootstrap.com/
 const features: DisplayItem[] = [
@@ -51,6 +79,20 @@ const features: DisplayItem[] = [
 ]
 
 const reasons: DisplayItem[] = [
+  { 
+    // Material icon
+    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
+    title: '구매자와 소비자의 요구'
+  },
+  { 
+    // Material icon
+    icon: <svg className="w-6 h-6" viewBox="0 0 100 100" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" > <g>
+    <text transform="matrix(2.77434 0 0 2.77434 -38.2076 -31.0621)" fontStyle="normal" fontWeight="normal" textAnchor="start" fontFamily="'Quicksand'" fontSize="24" id="svg_1" y="38.1248" x="20.94585" strokeWidth="0" fill="#000000">W</text>
+    <line strokeWidth={4} y2={63} x2={83.56713} y1="63" x1={16.5} fill="none"/>
+    <line strokeWidth={4} y2="49" x2="83.56713" y1="49" x1="16.5" fill="none"/>
+  </g></svg>,
+    title: '투자자 요청'
+  },
   {
     // Heroicon
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -58,20 +100,12 @@ const reasons: DisplayItem[] = [
   </svg>,  
     title: '환경규제'
   },
-  { 
-    // Material icon
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
-    title: '소비자의식'
-  },
   {
     // https://uxwing.com/svg-icon-editor/
-    icon: <svg className="w-6 h-6" viewBox="0 0 100 100" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" > <g>
-      <text transform="matrix(2.77434 0 0 2.77434 -38.2076 -31.0621)" fontStyle="normal" fontWeight="normal" textAnchor="start" fontFamily="'Quicksand'" fontSize="24" id="svg_1" y="38.1248" x="20.94585" strokeWidth="0" fill="#000000">W</text>
-      <line strokeWidth={4} y2={63} x2={83.56713} y1="63" x1={16.5} fill="none"/>
-      <line strokeWidth={4} y2="49" x2="83.56713" y1="49" x1="16.5" fill="none"/>
-    </g>
+    icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
   </svg>,
-    title: '에너지가격과 보험료'
+    title: '비즈니스 위험 완화'
   }
 ]
 
@@ -102,6 +136,7 @@ const partners: DisplayItem[] = [
   }
 ]
 
+
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
@@ -119,24 +154,69 @@ const Home: NextPage = () => {
           {href: '/demo_request', label: 'EcoLoop 데모 요청'}
         }
       />
-      <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="bg-gray-100" >
-        <div className="flex justify-center" >
-          <div className="flex mt-2 space-x-10" >
-            {
-              partners.map(item => 
-                <div className="group" key={item.title}>
-                  <div className="">
-                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
-                    <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
-                  </div>
-                </div>
-            )
-            }
+      <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
+        <div>
+          <div className="flex justify-center" >
+            <div className="flex mt-2 space-x-10" >
+              {
+                partners.map(item => 
+                  <div className="group" key={item.title}>
+                    <div className="">
+                      <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
+                      <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
+                    </div>
+                  </div>)
+              }
+            </div>
+          </div>
+          <div className="mt-4 text-center items-center space-y-2 ">
+            <div className="flex justify-center space-x-2 ">
+              <Image className="h-8 " src="/images/partners/korea-mss-gov.png" alt="중소벤처기업부" />
+              <Image className="h-8 " src="/images/partners/korea-tipa-gov.gif" alt="중소기업기술정보진흥원" />
+            </div>
+            <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
           </div>
         </div>
       </SectionBlock>
 
-      
+      <SectionBlock title='' containerStyle="bg-gray-100" >
+        <div className="px-10 space-y-7 ">
+          <div className="text-xl font-bold">
+            협업식 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!
+          </div>
+          <div className='text-left space-y-7 '>
+          {
+            elements.map((item, ndx) => {
+              const lines = item.description as string[];
+              return (
+                
+              <div className="group mt-3 pl-2 rounded-md border-l-4 hover:border-primary-700 lg:flex" key={ndx}>
+                <div className="w-96 flex-none mb-2">
+                  <div className="text-3xl font-bold">
+                    <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
+                      
+                      <span className="pr-4">{ndx + 1}.</span>
+                        <h4 className=" py-2 inline">{item.title}</h4>
+                    </div>
+                  </div>
+                  <div className="text-xs text-gray-700 [word-break:keep-all] ml-10" >
+                    <div className="pb-2 text-base font-bold  text-gray-400">{item.subtitle}</div>
+                    <ul className="ml-3 list-disc space-y-2">
+                      {lines.map((line, ndx: number) => 
+                        <li key={ndx}>{line}</li>
+                      )}
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex-1 p-4">
+                  {item.imageUrl && <Image className="object-cover object-top h-40 w-full border group-hover:border-gray-300" src={item.imageUrl} alt={item.title} />}
+                </div>
+              </div>)
+            })
+          }
+          </div>
+        </div>
+      </SectionBlock>
 
       {/* Features */}
       <SectionBlock >
@@ -161,11 +241,11 @@ const Home: NextPage = () => {
 
       {/* Climate strategy is essential */}
       <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
-        <div className="px-10  my-5 grid md:grid-cols-3 grid-cols-1 gap-4  ">
+        <div className="px-10  my-5 grid md:grid-cols-4 grid-cols-1 gap-4  ">
           {
             reasons.map(item => 
               <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center text-sm">
                   <div className="flex mr-1">{item.icon}</div>
                   <h3 className="text-xl py-2">{item.title}</h3>
                 </div>
