@@ -180,10 +180,16 @@ const Home: NextPage = () => {
       </SectionBlock>
 
       <SectionBlock title='' containerStyle="bg-gray-100" >
-        <div className="px-10 space-y-7 ">
-          <div className="text-xl font-bold">
-            협업식 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!
+        <div className="px-10 space-y-20 ">
+          <div >
+            <div className="text-xl font-bold">
+            협업형 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!
+            </div>
+            <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
+              <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}><a className='text-sx '>협업형 스코프3 포함 탄소중립 플랫폼 하나루프.에코 소개</a></Link>
+            </div>  
           </div>
+          
           <div className='text-left space-y-7 '>
           {
             elements.map((item, ndx) => {
