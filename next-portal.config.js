@@ -117,7 +117,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 주식화사 하나루프 | HanaLoop Corp., Seoul Korea`,
+        copyright: `Copyright © ${new Date().getFullYear()} 주식회사 하나루프 | HanaLoop Corp., Seoul Korea`,
       }
     }),
 }
