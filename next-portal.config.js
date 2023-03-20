@@ -118,6 +118,7 @@ const config = {
           }
         ],
         copyright: `Copyright © ${new Date().getFullYear()} 주식회사 하나루프 | HanaLoop Corp., Seoul Korea`,
+        contact: `email: info@hanalooop.com  |  phone: +82 0507-1337-9251`
       }
     }),
 }

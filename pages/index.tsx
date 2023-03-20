@@ -129,6 +129,12 @@ const partners: DisplayItem[] = [
     description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물"
   },
   {
+    title: "플랜닥스",
+    sourceUrl: "https://plandocs.kr/",
+    imageUrl: "/images/partners/plandocs-logo.png",
+    description: "고객사 | 플랜닥스는 의료기기 및 의약품, 의료기구, 의료용품 등 다양한 미용성형 전문 제품 및 서비스를 제공하는 플랫폼 기업."
+  },
+  {
     title: "로엔 컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partners/partner-roen_logo.png",
@@ -148,10 +154,10 @@ const Home: NextPage = () => {
       <Hero background={{
           imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
-        header="지속가능성을 위한 디지털 전환"
-        tagline="SaaS형 온실가스 오염물질 관리 솔루션"
+        header="원스톱 탄소관리 솔루션"
+        tagline="지속가능성을 위한 디지털 전환"
         button={
-          {href: '/demo_request', label: 'EcoLoop 데모 요청'}
+          {href: '/demo_request', label: '데모 요청'}
         }
       />
       <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
