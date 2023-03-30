@@ -20,9 +20,9 @@ module.exports = {
     "description": "Walt Disney, Pearson, Wayfair, Altenia 등. 프로젝트: 이마트 DT, 디즈니 미디어 플랫폼, LG 콜센터, 신공항고속도로 통합, 한국통신 MMS 등 20년 이상 IT 업계에서 팀과 조직을 성공적으로 이끌며 대규모 엔터프라이즈 어플리케이션 개발. 보안 및 생물정보학 논문 저자."
   },
   "saeahn": {
-    "name": "안새해",
+    "name": "안새애",
     "name_alt": "Sae Ahn",
-    "profile_url": "https://youngsukahn.com/",
+    "profile_url": "https://www.linkedin.com/in/sae-ahn-4954795/",
     "image_url": "/images/who-we-are/saeahn-2022.jpg",
     "title": "General Counsel",
     "tagline": "인간과 지구 간의 조화를 이루기 위해",
