@@ -9,7 +9,7 @@ headerBackground:
   imageUrl: "/images/bg-hero_platform.jpeg"
 hero:
   header: "데이터기반 지속가능성 플랫폼 Hana.eco"
-  tagline: "온실가스 및 오염물질 환경데이터 관리"
+  tagline: "온실가스 및 대기오염 데이터 관리"
 ---
 import SectionBlock from "../components/theme/SectionBlock";
 import data from "../content/pages/platform.data";
