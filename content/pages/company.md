@@ -78,7 +78,7 @@ export const memberList = Object.values(members).filter(m => m.type !== 'system'
           memberList.map(m => (
             <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>
               <div className="w-auto flex justify-center">
-              <img className="h-40 lg:h-32 rounded-full block" src={ contextualPath(siteConfig, m.image_url) } alt="" />
+              <img className="h-40 lg:h-32 rounded-full block grayscale" src={ contextualPath(siteConfig, m.image_url) } alt="" />
               </div>
               <div className="pt-6 space-y-4 block">
                 <figcaption className="font-medium text-center">
