@@ -24,7 +24,7 @@ function DocContent({ code, frontMatter, filePath }: {code: string, frontMatter:
       <MdxContainer padding={false}>
         <MdxComponent />
       </MdxContainer>
-      <EditPageLink filePath={filePath} label="[Edit this page]"/>
+      {/* <EditPageLink filePath={filePath} label="[Edit this page]"/> */}
     </div>
   );
 }

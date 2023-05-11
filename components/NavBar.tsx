@@ -33,7 +33,7 @@ export default function NavBar({pageYOffset}: NavBarProps) {
   return (
     <nav className={containerClassName}>
 
-      <div className="px-4 ">
+      <div className="px-4 text-lg">
         <div className="flex  h-16 items-center justify-between ">
 
           <div className="flex space-x-4 items-center">

@@ -16,7 +16,7 @@ import { Tags } from '../components/Tags';
 const frontMatter = {
   title: `${siteConfig.title} | 탄소중립 플랫폼 및 솔루션`,
   description: "지속가능한 디지털 전환 Sustainable Digital Transformation과 친환경 탄소관리 온실가스관리 플랫폼",
-  keywords: "공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 오염물질 관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop"
+  keywords: "공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 오염물질 관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, 원스톱 탄소관리 플랫폼, 탄소 회계, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop"
 }
 
 const MAX_DOCS = 4;
@@ -109,7 +109,7 @@ const reasons: DisplayItem[] = [
   }
 ]
 
-const partners: DisplayItem[] = [
+const customers: DisplayItem[] = [
   {
     title: "이마트",
     sourceUrl: "https://emartdt.ai/",
@@ -134,11 +134,21 @@ const partners: DisplayItem[] = [
     imageUrl: "/images/partners/plandocs-logo.png",
     description: "고객사 | 플랜닥스는 의료기기 및 의약품, 의료기구, 의료용품 등 다양한 미용성형 전문 제품 및 서비스를 제공하는 플랫폼 기업."
   },
+  
+];
+
+const partners: DisplayItem[] = [
   {
     title: "로엔 컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partners/partner-roen_logo.png",
     description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅"
+  },
+  {
+    title: "한 컨설팅 그룹",
+    sourceUrl: "https://hcg.kr",
+    imageUrl: "/images/partners/partner-hanconsulting_logo.png",
+    description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅"
   }
 ]
 
@@ -154,34 +164,41 @@ const Home: NextPage = () => {
       <Hero background={{
           imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
-        header="원스톱 탄소관리 솔루션"
-        tagline="지속가능성을 위한 디지털 전환"
+        header="맞춤형 탄소관리 플랫폼"
+        tagline="스코프 1, 2, 3. 기업의 니즈에 맞추어 탄소 중립을 여정을 함께합니다."
         button={
           {href: '/demo_request', label: '데모 요청'}
         }
       />
       <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
         <div className="space-y-10">
-          <div className="flex justify-center" >
-            <div className="flex mt-2 space-x-10" >
+          <div className="mt-4 text-center items-center space-y-8 ">
+            <div className="flex justify-center space-x-6 ">
               {
-                partners.map(item => 
+                customers.map(item => 
                   <div className="group" key={item.title}>
-                    <div className="">
-                      <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
-                      <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
-                    </div>
+                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
+                    <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
                   </div>)
               }
             </div>
-          </div>
-          <div className="mt-4 text-center items-center space-y-2 ">
-            <div className="flex justify-center space-x-4 ">
-              <Image className="h-8 " src="/images/partners/korea-mss-gov.png" alt="중소벤처기업부" />
-              <Image className="h-8 " src="/images/partners/korea-tipa-gov.gif" alt="중소기업기술정보진흥원" />
-              <Image className="h-8 " src="/images/partners/seoulsocialventurehub-logo.png" alt="서울소셜벤처허브" />
+            <div className="flex justify-center space-x-6 ">
+              {
+                partners.map(item => 
+                  <div className="group" key={item.title}>
+                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
+                    <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
+                  </div>)
+              }
             </div>
-            <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
+            <div className="space-y-2">
+              <div className="flex justify-center space-x-6 ">
+                <Image className="h-8 " src="/images/partners/korea-mss-gov.png" alt="중소벤처기업부" />
+                <Image className="h-8 " src="/images/partners/korea-tipa-gov.gif" alt="중소기업기술정보진흥원" />
+                <Image className="h-8 " src="/images/partners/seoulsocialventurehub-logo.png" alt="서울소셜벤처허브" />
+              </div>
+              <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
+            </div>
           </div>
         </div>
       </SectionBlock>
