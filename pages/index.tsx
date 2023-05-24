@@ -79,20 +79,6 @@ const features: DisplayItem[] = [
 ]
 
 const reasons: DisplayItem[] = [
-  { 
-    // Material icon
-    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
-    title: '구매자와 소비자의 요구'
-  },
-  { 
-    // Material icon
-    icon: <svg className="w-6 h-6" viewBox="0 0 100 100" stroke="currentColor" fill="currentColor" xmlns="http://www.w3.org/2000/svg" > <g>
-    <text transform="matrix(2.77434 0 0 2.77434 -38.2076 -31.0621)" fontStyle="normal" fontWeight="normal" textAnchor="start" fontFamily="'Quicksand'" fontSize="24" id="svg_1" y="38.1248" x="20.94585" strokeWidth="0" fill="#000000">W</text>
-    <line strokeWidth={4} y2={63} x2={83.56713} y1="63" x1={16.5} fill="none"/>
-    <line strokeWidth={4} y2="49" x2="83.56713" y1="49" x1="16.5" fill="none"/>
-  </g></svg>,
-    title: '투자자 요청'
-  },
   {
     // Heroicon
     icon: <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -100,13 +86,25 @@ const reasons: DisplayItem[] = [
   </svg>,  
     title: '환경규제 대응'
   },
+  { 
+    // Material icon
+    icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+  </svg>,
+    title: '투자자 요청'
+  },
   {
     // https://uxwing.com/svg-icon-editor/
     icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
   </svg>,
     title: '비즈니스 위험 완화'
-  }
+  },
+  { 
+    // Material icon
+    icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
+    title: '구매자와 소비자의 요구'
+  },
 ]
 
 const customers: DisplayItem[] = [
@@ -160,16 +158,30 @@ const Home: NextPage = () => {
   // TODO: add meta description
   
   return (
-    <>
+    <div className="">
       <Hero background={{
           imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
         header="맞춤형 탄소관리 플랫폼"
-        tagline="스코프 1, 2, 3. 기업의 니즈에 맞추어 탄소 중립을 여정을 함께합니다."
+        tagline="스코프 1, 2, 3 기업의 니즈에 맞추어 탄소 중립을 여정을 함께합니다."
         button={
           {href: '/demo_request', label: '데모 요청'}
         }
       />
+      {/* Climate strategy is essential */}
+      <SectionBlock title='오늘날 기업에게 탄소관리는 필수입니다' containerStyle='bg-gray-100'>
+        <div className="px-10  my-5 grid lg:grid-cols-4 grid-cols-1 gap-4  ">
+          {
+            reasons.map(item => 
+              <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
+                <div className="flex justify-center items-center text-sm">
+                  <div className="flex mr-1">{item.icon}</div>
+                  <h3 className="text-xl py-2">{item.title}</h3>
+                </div>
+              </div>)
+          }
+        </div>
+      </SectionBlock>
       <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
         <div className="space-y-10">
           <div className="mt-4 text-center items-center space-y-8 ">
@@ -252,7 +264,7 @@ const Home: NextPage = () => {
       <SectionBlock >
         <div className="px-10">
         <h2 className="pb-10 text-4xl font-extrabold text-center text-gray-400 hover:text-sky-700 duration-200">
-          <Link href={'/platform'}><a>SaaS형 지속가능성 플랫폼 EcoLoop</a></Link>
+          <Link href={'/platform'}><a>SaaS형 지속가능성 플랫폼 Hana.eco</a></Link>
         </h2>
         <div className="p-6 border-2 border-secondary rounded-lg grid md:grid-cols-4 grid-cols-1 gap-4  ">
           {
@@ -266,21 +278,6 @@ const Home: NextPage = () => {
               </div>)
           }
         </div>
-        </div>
-      </SectionBlock>
-
-      {/* Climate strategy is essential */}
-      <SectionBlock title='오늘날 기업에게 기후 전략은 필수입니다' containerStyle='bg-gray-100'>
-        <div className="px-10  my-5 grid lg:grid-cols-4 grid-cols-1 gap-4  ">
-          {
-            reasons.map(item => 
-              <div className="border border-green-600 rounded-lg text-center text-gray-700" key={item.title}>
-                <div className="flex justify-center items-center text-sm">
-                  <div className="flex mr-1">{item.icon}</div>
-                  <h3 className="text-xl py-2">{item.title}</h3>
-                </div>
-              </div>)
-          }
         </div>
       </SectionBlock>
 
@@ -310,7 +307,7 @@ const Home: NextPage = () => {
         <Link href="/docs" passHref><a >자료 더 보기</a></Link>
         </>
       </SectionBlock>
-    </>
+    </div>
   )
 }
 
