@@ -260,11 +260,11 @@
           "slug": "/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
           "meta": {
             "title": "국제재무보고기준(IFRS) 의 지속가능성 공시 표준(SDS) 발표",
-            "subtitle": "탄소회계금융협회(PCAF)의 목표, 기준, 데이터 수집법, 자산클래스",
+            "subtitle": "여러 다른 지속가능성 공시 표준을 통합하는 ISSB",
             "publishedAt": "2023-07-31",
             "description": "국제지속가능성위원회(ISSB)는 투자자와 이해관계자에게 유용한 일관되고 비교 가능하며 검증 가능한 지속가능성 보고서의 글로벌 수요에 대응하기 위해 설립. IFRS 지속가능성 공시 표준은 여러 다른 공시 표준(SASB, IR, CDSB)을 통합하고 상호 운용성을 유지하기 위해 다른 표준(GRI)과 적극적으로 협력중. 기업들은 ISSB 기준 준수를 위해 지배구조, 전략, 위험 관리, 성과 지표 및 목표 뿐만 아니라 기후를  위해 팀, 프로세스, 정책, 기술 등을 구축해야 함. ISSB 도입 시 기업의 투명성과 책임성을 확보하여 투자자, 인재, 신규 고객을 유치 가능",
             "summary": "국제지속가능성위원회(ISSB)는 투자자와 이해관계자에게 유용한 일관되고 비교 가능하며 검증 가능한 지속가능성 보고서의 글로벌 수요에 대응하기 위해 설립. IFRS 지속가능성 공시 표준은 여러 다른 공시 표준(SASB, IR, CDSB)을 통합하고 상호 운용성을 유지하기 위해 다른 표준(GRI)과 적극적으로 협력중. 기업들은 ISSB 기준 준수를 위해 지배구조, 전략, 위험 관리, 성과 지표 및 목표 뿐만 아니라 기후를  위해 팀, 프로세스, 정책, 기술 등을 구축해야 함. ISSB 도입 시 기업의 투명성과 책임성을 확보하여 투자자, 인재, 신규 고객을 유치 가능.",
-            "image": "/images/posting/environment-general/2022-03-06-HanaEco_PCAF.jpg",
+            "image": "/images/posting/environment-general/2023-07-31-IFRS-ISSB-sds-banner.jpeg",
             "imageHide": true,
             "imageCredits": null,
             "authors": "hana",
@@ -275,9 +275,9 @@
             ],
             "readingTime": {
               "text": "17 min read",
-              "minutes": 16.19,
-              "time": 971400,
-              "words": 3238
+              "minutes": 16.145,
+              "time": 968700,
+              "words": 3229
             }
           }
         }
