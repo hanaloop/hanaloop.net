@@ -5,6 +5,13 @@
 
 /* EcoLoop Styles {{ */
 
+body {
+  @apply leading-loose
+}
+
+p {
+  /* @apply mt-4  */
+}
 /* EcoLoop: Basic Elements */
 
 .el-heading {
