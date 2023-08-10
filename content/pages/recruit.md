@@ -28,7 +28,6 @@ import SectionBlock from "../components/theme/SectionBlock";
 <SectionBlock title='복지' >
 <div className="text-left">
 - 매월 유급 반차 제공
-- 식대 지원
 - 오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근
 - 업무 성격, 효율과 능력에 따라 원격업무 가능
 - 건강검진 지원

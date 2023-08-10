@@ -37,6 +37,11 @@ const config = {
           position: 'left'
         },
         {
+          to: '/partnership', 
+          label: '파트너십', 
+          position: 'left'
+        },
+        {
           to: '/company',
           label: '회사소개',
           position: 'left',
