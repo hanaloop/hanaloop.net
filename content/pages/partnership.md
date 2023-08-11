@@ -38,11 +38,17 @@ Solution providers with IT product that want to incorporate hana.eco to their so
     </div>
   </div>
   <div>
-  View document about the [partnership program details](https://docs.google.com/presentation/d/1OlRgTZ-0i3Qeo61PR-0wQHv7Pn8aiRXFmL25eiAi2TY/edit#slide=id.p).
   </div>
   </>
 </SectionBlock>
 
+<SectionBlock title='Strategic Alliances' containerStyle='bg-gray-100 flex justify-center'>
+  <div className="text-left">
+  - Korea Carbon Project (Project organized by SNU and sponsored by KEITI)
+  - [NetZero 2050](http://netzero2050.or.kr/)
+  - [International Centre for Hydropower (ICH)](https://ich.no/)
+  </div>
+</SectionBlock>
 
 <div className="flex justify-center" >
 <img src={contextualPath(siteConfig,"/images/banners/pyeongchanggun-windfarm.jpeg")} />
