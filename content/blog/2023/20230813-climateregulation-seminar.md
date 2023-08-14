@@ -8,7 +8,7 @@ tags: [세미나, 기후규제대응]
 publishedAt: "2023-08-13"
 ---
 
-### [신청서 작성](https://docs.google.com/forms/d/e/1FAIpQLSfjt-8kciQno7ai6idEjLrOYQaj6U8OJxYspn_Z-x4DzRxCZg/viewform?usp=sharing)
+### [신청서 작성](https://docs.google.com/forms/d/e/1FAIpQLSfjt-8kciQno7ai6idEjLrOYQaj6U8OJxYspn_Z-x4DzRxCZg/viewform)
 
 ### 일정
 <table className="el-table">
@@ -58,7 +58,7 @@ publishedAt: "2023-08-13"
 - 참가비:  무료
 - 신청자격: 기업 기후규제대응 담당자
   ※ 모집인원 초과시 제조업 중소.중견기업 담당자 우선 선정
-- 신청방법: [신청서 작성](https://docs.google.com/forms/d/e/1FAIpQLSfjt-8kciQno7ai6idEjLrOYQaj6U8OJxYspn_Z-x4DzRxCZg/viewform?usp=sharing)
+- 신청방법: [신청서 작성](https://docs.google.com/forms/d/e/1FAIpQLSfjt-8kciQno7ai6idEjLrOYQaj6U8OJxYspn_Z-x4DzRxCZg/viewform)
 - 문의: 0507-1337-9251 | info@hanaloop.com
 
 ### 후원
