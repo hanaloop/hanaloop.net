@@ -22,12 +22,13 @@ const frontMatter = {
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
-const announcement = {
-  initialOpen: true,
-  title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
-  link: "/blog/2023/20230813-climateregulation-seminar",
-  image: "/images/blog/20230831-climateregulation-seminar-thumb.jpg"
-}
+const announcement = null;
+// const announcement = {
+//   initialOpen: true,
+//   title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
+//   link: "/blog/2023/20230813-climateregulation-seminar",
+//   image: "/images/blog/20230831-climateregulation-seminar-thumb.jpg"
+// };
 
 const elements: DisplayItem[] = [
   {
@@ -132,12 +133,12 @@ const customers: DisplayItem[] = [
     imageUrl: "/images/partners/seokyungbuildng-logo.png",
     description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물"
   },
-  {
-    title: "플랜닥스",
-    sourceUrl: "https://plandocs.kr/",
-    imageUrl: "/images/partners/plandocs-logo.png",
-    description: "고객사 | 플랜닥스는 의료기기 및 의약품, 의료기구, 의료용품 등 다양한 미용성형 전문 제품 및 서비스를 제공하는 플랫폼 기업."
-  },
+  // {
+  //   title: "플랜닥스",
+  //   sourceUrl: "https://plandocs.kr/",
+  //   imageUrl: "/images/partners/plandocs-logo.png",
+  //   description: "고객사 | 플랜닥스는 의료기기 및 의약품, 의료기구, 의료용품 등 다양한 미용성형 전문 제품 및 서비스를 제공하는 플랫폼 기업."
+  // },
   
 ];
 
@@ -159,7 +160,7 @@ const partners: DisplayItem[] = [
 const Home: NextPage = () => {
 
   const siteContext = useContext(SiteContext);
-  const [fabActive, setFabActive] = useState<Boolean>(announcement.initialOpen);
+  const [fabActive, setFabActive] = useState<Boolean>(announcement?.initialOpen ?? false);
 
   // TODO: add meta description
   
