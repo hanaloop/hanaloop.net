@@ -144,6 +144,12 @@ const customers: DisplayItem[] = [
 
 const partners: DisplayItem[] = [
   {
+    title: "NET ZERO 2050 기후재단",
+    sourceUrl: "http://netzero2050.or.kr/",
+    imageUrl: "/images/partners/netzero2050_climatefoundation-logo.png",
+    description: "협력사 | 2050년까지 이산화탄소 배출을 완전히 제거하여 탄소중립을 달성하기 위한 국제사회, 정부와 기업, 지구촌 시민사회의 노력을 적극 지원하고 실천 동기를 부여하고 있음"
+  },
+  {
     title: "로엔 컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partners/partner-roen_logo.png",
@@ -205,7 +211,7 @@ const Home: NextPage = () => {
               {
                 partners.map(item => 
                   <div className="group" key={item.title}>
-                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
+                    <Link href={item.sourceUrl!} passHref><a target="_blank" ><Image className="h-8 rounded-md grayscale group-hover:grayscale-0 duration-200" src={item.imageUrl!} alt={item.title} /></a></Link>
                     <span className="p-2 -mt-20 -ml-6 rounded text-xs text-white text-left bg-black bg-opacity-60 border-lime-700 hidden group-hover:block absolute tooltip-text">{item.description}</span>
                   </div>)
               }
@@ -214,7 +220,7 @@ const Home: NextPage = () => {
               <div className="flex justify-center space-x-6 ">
                 <Image className="h-8 " src="/images/partners/korea-mss-gov.png" alt="중소벤처기업부" />
                 <Image className="h-8 " src="/images/partners/korea-tipa-gov.gif" alt="중소기업기술정보진흥원" />
-                <Image className="h-8 " src="/images/partners/seoulsocialventurehub-logo.png" alt="서울소셜벤처허브" />
+                <Link href={`https://svhc.or.kr/`}><a><Image className="h-8 " src="/images/partners/seoulsocialventurehub-logo2.png" alt="서울소셜벤처허브" /></a></Link>
               </div>
               <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
             </div>

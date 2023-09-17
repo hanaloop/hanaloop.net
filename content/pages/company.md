@@ -20,15 +20,17 @@ export const memberList = Object.values(members).filter(m => m.type !== 'system'
 
 <div className=""> 
 
-  <SectionBlock title='지속가능성을 위한 도전에 하나루프가 함께 합니다' containerStyle="flex justify-center" >
+  <SectionBlock title='하나의 연결로 큰 변화를 만들어갑니다.' containerStyle="flex justify-center" >
     <div className="p-4 text-lg max-w-3xl">
-    기후 변화의 주요 원인인 온실가스 배출로 무너져내린 지구 환경을 되살리기 위해 전세계, 국가, 사회가 필수불가결한 합의를 도출하는 등 우리 모두가 전방위적으로 힘을 모으고 있습니다. 그러나 구체적인 대안이나 해결 방법을 찾기란 쉽지 않습니다.
-
-특히 이윤의 창출과 지속적인 성장에 주요 가치를 두는 기업에게 정부, 투자자와 고객, 구성원 등 사회가 요구하는 환경 정책과 엄격한 규제는 이 시대에 피할 수 없는 중요 과제가 되었습니다.
-사회적 통념을 넘어 이제는 경제논리로도 환경을 대하는 태도가 진심으로 변화하고 있기 때문입니다.
-
-기업과 기관의 지속가능한 성장을 위해 하나루프가 함께 합니다.
-
+    (주)하나루프는 함께 살아가는 지구 환경을 위해 하나의 발걸음을 시작하였습니다.
+    우리는 산업과 기업 환경에 필요한 맞춤형 제안과 안정적인 탄소 중립 매니지먼트 핵심 기술로
+    지속가능한 생태계를 구축하기 위해 디지털 환경을 구현합니다.
+    사람들이 환경을 위한 일에 더 자율적이고 보편적인 기술에 접근 가능하도록
+    환경과 산업에 필요한 디지털 혁신 기술을 개발하고 지속가능한 넷제로 환경을 개척하고 있습니다.
+    하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로 모두의 삶이 지속가능하도록
+    하나의 연결로 더 큰 임팩트를 만들어가겠습니다.
+    
+    디지털 혁신 기술로 건강한 지구을 만들어가는 환경 파트너 하나루프.
     </div>
   </SectionBlock>
 
@@ -42,7 +44,7 @@ export const memberList = Object.values(members).filter(m => m.type !== 'system'
 
   <SectionBlock title='미션' >
     <div className="p-4">
-    <span className="text-lg">하나루프의 미션은 기술 융합을 통한 지속가능한 생태계 형성으로 고객의 가치를 높이고 산업의 탄력성을 향상시키는 것입니다.</span>
+    <span className="text-lg">디지털 혁신기술과 연결의 시너지로 건강한 지구 환경을 만들어갑니다.</span>
     </div>
   </SectionBlock>
 
@@ -54,12 +56,11 @@ export const memberList = Object.values(members).filter(m => m.type !== 'system'
 
   <SectionBlock title='핵심가치' >
     <div className="p-4 w-auto flex justify-center ">
-    <div className="w-60 text-left text-lg">
-      - 탁월함 추구
-      - 진정한 가치 창출
-      - 오래 지속되는 신뢰 구축
-      - 지속 가능한 성장
-    </div>
+      <div className="w-96 text-left text-lg">
+        - **SYNERGISTIC**한 협력으로
+        - **BOLD**한 임팩트와 감동을 선사하는
+        - **RELIABLE**한 파트너 
+      </div>
     </div>
   </SectionBlock>
 
