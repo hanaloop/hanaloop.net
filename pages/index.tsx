@@ -22,13 +22,13 @@ const frontMatter = {
 const MAX_DOCS = 4;
 const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompare(a.meta.publishedAt)).slice(0, MAX_DOCS);
 
-let announcement: any | undefined;
-// const announcement = {
-//   initialOpen: true,
-//   title: "8월 31 '탄소 규제대응 세미나' 내용 보기",
-//   link: "/blog/2023/20230813-climateregulation-seminar",
-//   image: "/images/blog/20230831-climateregulation-seminar-thumb.jpg"
-// };
+// let announcement: any | undefined;
+const announcement = {
+  initialOpen: true,
+  title: "2023년 11월 'CBAM 진단 지원' 내용 보기",
+  link: "/blog/2023/20231102-cbam-assessment_program",
+  image: "/images/blog/20231101-HanaLoop-CBAM-program-thumb.jpg"
+};
 
 const elements: DisplayItem[] = [
   {

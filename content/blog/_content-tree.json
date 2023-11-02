@@ -155,7 +155,7 @@
         },
         {
           "_type": "item",
-          "slug": "/blog/2023/20231014-esgexpo-hanaloop copy",
+          "slug": "/blog/2023/20231014-esgexpo-hanaloop",
           "meta": {
             "title": "탄소관리 소셜벤처 하나루프, 2023 대한민국 ESG 친환경대전 참여",
             "description": "국내 최초 ESG 친환경 박람회로 탄소중립, 녹색 산업, 순환경제로의 전환에 기여하는 기업들의 역량을 강화할 수 있는 비즈니스 행사에 참여",
@@ -178,24 +178,24 @@
         },
         {
           "_type": "item",
-          "slug": "/blog/2023/20231102-cbam-assessment",
+          "slug": "/blog/2023/20231102-cbam-assessment_program",
           "meta": {
-            "title": "EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
-            "description": "국내 최초 ESG 친환경 박람회로 탄소중립, 녹색 산업, 순환경제로의 전환에 기여하는 기업들의 역량을 강화할 수 있는 비즈니스 행사에 참여",
-            "keywords": "하나루프, ESG 친환경대전, 박람회",
+            "title": "하나루프 2023 EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
+            "description": "본 사업을 통해 기업의 내재 감축량 포함 온실가스 배출 수준을 정량화하고, 산정을 체계화하여 탄소국경조정제도에 원활히 대응할 수 있도록 전문가 그룹이 자문해드립니다.",
+            "keywords": "CBAM, 탄소국경조정제도",
             "authors": [
               "hana"
             ],
             "tags": [
-              "ESG친환경대전",
-              "행사"
+              "CBAM",
+              "탄소국경조정제도"
             ],
-            "publishedAt": "2023-10-14",
+            "publishedAt": "2023-11-02",
             "readingTime": {
               "text": "5 min read",
-              "minutes": 4.78,
-              "time": 286800,
-              "words": 956
+              "minutes": 4.955,
+              "time": 297300,
+              "words": 991
             }
           }
         }
