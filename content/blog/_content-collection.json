@@ -148,7 +148,7 @@
   },
   {
     "_type": "item",
-    "slug": "/blog/2023/20231014-esgexpo-hanaloop",
+    "slug": "/blog/2023/20231014-esgexpo-hanaloop copy",
     "meta": {
       "title": "탄소관리 소셜벤처 하나루프, 2023 대한민국 ESG 친환경대전 참여",
       "description": "국내 최초 ESG 친환경 박람회로 탄소중립, 녹색 산업, 순환경제로의 전환에 기여하는 기업들의 역량을 강화할 수 있는 비즈니스 행사에 참여",
@@ -168,6 +168,30 @@
         "words": 766
       },
       "contentTruncated": "import CaptionedImage from \"../components/theme/CaptionedImage\";\n\nESG와 탄소중립, 녹색산업, 순환경제의 핵심테마를 한자리에서 만날 수 있는 ‘2023 대한민국 ESG 친환경대전’이 환경부 주최, 한국산업기술원 (주)메쎄이상 공동주관으로 10월 11부터 13일까지 3일 동안 서울 코엑스에서 열렸습니다.\n\n<CaptionedImage \n  imageSrc=\"/images/blog/20231011-kesgexpo-1.jpg\"\n  caption=\"\"\n  containerClassName=\"w-96 \" \n  imageClassName=\"shadow-md border-8 border-gray-100\"\n/>\n\n\n"
+    }
+  },
+  {
+    "_type": "item",
+    "slug": "/blog/2023/20231102-cbam-assessment",
+    "meta": {
+      "title": "EU CBAM 대응 탄소다배출산업 기업 대상 온실가스 관리 현황 진단 및 관리 체계 구축 지원",
+      "description": "국내 최초 ESG 친환경 박람회로 탄소중립, 녹색 산업, 순환경제로의 전환에 기여하는 기업들의 역량을 강화할 수 있는 비즈니스 행사에 참여",
+      "keywords": "하나루프, ESG 친환경대전, 박람회",
+      "authors": [
+        "hana"
+      ],
+      "tags": [
+        "ESG친환경대전",
+        "행사"
+      ],
+      "publishedAt": "2023-10-14",
+      "readingTime": {
+        "text": "5 min read",
+        "minutes": 4.78,
+        "time": 286800,
+        "words": 956
+      },
+      "contentTruncated": "import CaptionedImage from \"../components/theme/CaptionedImage\";\n\n\n### 지원사업 개요 및 목표 \n\n(주)하나루프는 **EU 수출향 철강, 알루미늄 등** 탄소다배출산업 기업 대상으로 **온실가스 관리 현황 진단과 체계적인 대응을 위한 시스템 구축을 지원**합니다. \n\n> 이사업은 2023 KT 따뜻한 기술더하기 챌린지 재원을 지원받아 수행합니다. \n\n본 사업을 통해 기업의 내재 감축량 포함 온실가스 배출 수준을 정량화하고, 산정을 체계화하여 탄소국경조정제도에 원활히 대응할 수 있도록 전문가 그룹이 자문해드립니다.\n\n선정 기준은 기업의 대응 시급성과 참여의 적극성으로 정하고자 하오니 필요하신 기업에서는 문 두드려주시기 바랍니다.\n\n"
     }
   }
 ]

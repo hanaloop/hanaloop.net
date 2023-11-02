@@ -37,11 +37,13 @@ export function contentTreeToMenu(contentRoot: ContentTreeItem): MenuItem {
   return menuItem;
 }
 
-export function reverseMenuItemOrder(menuItem: MenuItem) {
+export function reverseMenuItemOrder(menuItem: MenuItem): MenuItem {
   if (menuItem.subItems) {
     for (let subMenuItem of menuItem.subItems) {
       reverseMenuItemOrder(subMenuItem);
     }
     menuItem.subItems.reverse();
   }
+
+  return menuItem;
 }
