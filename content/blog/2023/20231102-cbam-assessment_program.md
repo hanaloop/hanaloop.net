@@ -22,7 +22,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 
 **모집기간: 2023년 11월 1일(수) ~ 2023년 11월 17일(금) 까지**
 
-**지원대상: CBAM 대응 대상 철강, 알루미늄, 시멘트, 비료, 수소 업종 기업**
+**지원대상: CBAM 대응 대상 철강, 알루미늄, 시멘트, 비료, 수소 업종 기업. 중소기업 우선**
 
 <span className="font-bold text-blue-800">신청하기</span>: [참여 신청서 링크](https://docs.google.com/forms/d/e/1FAIpQLSd6wyqcwO6d2w2d2CHi4qfgNPy4g16N_pXWtDO9GgNv5eUdkg/viewform)
 
@@ -46,7 +46,7 @@ import CaptionedImage from "../components/theme/CaptionedImage";
 - 모집 공고 
 - (1차) 서면심사 - 신청서 제출 기업 검토
 - (2차) 원격 인터뷰
-- 선정 및 발표 > 모집 대상기업 기준에 충족하는 기업 선발 후 최종 발표 (5개 기업)
+- 선정 및 발표 > 모집 대상기업 기준에 충족하는 기업 선발 후 최종 발표 (5개 기업, **중소기업 우선**)
 
 ### 진행 절차 및 일정 
 
