@@ -25,7 +25,7 @@ const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompar
 // let announcement: any | undefined;
 const announcement = {
   initialOpen: true,
-  title: "2023년 12월 '하나루프와 기 인사이트 수요일' 등록하기",
+  title: "2023년 12월 '하나루프와 기후 인사이트 수요일' 등록하기",
   link: "https://docs.google.com/forms/d/e/1FAIpQLSev-ubKKT32aD-gqLHy0k56xyv-iBwiA5Z6jnMtqekdYmIcdA/viewform",
   image: "/images/blog/HanaLoop_climate_insight_wednesdays.jpg",
   dimensions: `w-[500px] md:w-[600px]`,
@@ -255,7 +255,7 @@ const Home: NextPage = () => {
               return (
                 
               <div className="group mt-3 pl-2 rounded-md border-l-4 hover:border-primary-700 lg:flex" key={ndx}>
-                <div className="lg:w-96 flex-none mb-2">
+                <div className="lg:w-[500px] flex-none mb-2">
                   <div className="text-3xl font-bold">
                     <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
                       
