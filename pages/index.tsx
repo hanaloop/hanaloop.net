@@ -15,8 +15,8 @@ import { Tags } from '../components/Tags';
 // For HTML meta & SEO 
 const frontMatter = {
   title: `탄소중립 플랫폼 및 솔루션`,
-  description: "지속가능한 디지털 전환 Sustainable Digital Transformation과 친환경 탄소관리 온실가스관리 플랫폼",
-  keywords: "공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, SBTi, IFRS, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 오염물질 관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, 원스톱 탄소관리 플랫폼, 탄소 회계, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop, hana.eco"
+  description: "기후규제 대응 탄소관리 온실가스관리 플랫폼. EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 1차 보고서 작성",
+  keywords: "CBAM, 공급망 탄소 관리, 스코프3 관리, 온실가스 관리, 탄소 관리, 오염물질 관리, 탄소중립 플랫폼, GRI, SASB, TCFD, SBTi, IFRS, 기후 디지털 변환, 환경규제 대응, 환경규제대응 DT, 환경규제대응 디지털 전환, 온실가스 관리 솔루션, 탄소관리 솔루션, 탄소중립 전략, 넷제로 전략, 공급망 내 기업들 간 탄소데이터 교환, 공급망 내 기업들 간 탄소발자국 교환, 환경 플랫폼, 원스톱 탄소관리 플랫폼, 탄소 회계, Platform, HanaLoop, Sustainability, Digital Transformation, EcoLoop, hana.eco"
 }
 
 const MAX_DOCS = 4;
@@ -25,7 +25,7 @@ const docsSorted = docsCollection.sort((a, b) => b.meta.publishedAt.localeCompar
 // let announcement: any | undefined;
 const announcement = {
   initialOpen: true,
-  title: "2023년 12월 '하나루프와 기 인사이트 수일' 등록하기",
+  title: "2023년 12월 '하나루프와 기 인사이트 수요일' 등록하기",
   link: "https://docs.google.com/forms/d/e/1FAIpQLSev-ubKKT32aD-gqLHy0k56xyv-iBwiA5Z6jnMtqekdYmIcdA/viewform",
   image: "/images/blog/HanaLoop_climate_insight_wednesdays.jpg",
   dimensions: `w-[500px] md:w-[600px]`,
@@ -33,28 +33,36 @@ const announcement = {
 
 const elements: DisplayItem[] = [
   {
-    title: "데이터 수집, 산정, 분석",
-    subtitle: "Collect, Quantify and Analyze",
-    imageUrl: "/images/platform/eco_accounting.png",
+    title: "EU 탄소국경조정제도 (CBAM)",
+    subtitle: "Carbon Border Adjustment Mechanism",
+    imageUrl: "/images/platform/card-cbam_pic.jpeg",
     description: [
-      <span key="1"><b>수집에서 분석까지 배출활동 데이터 처리 간소화</b> - 기업의 활동으로 인해 발생하는 온실가스 배출활동 데이터 수집을 간편하게 하고, 배출량을 산정하고 모니터링하며 배출량 추이를 분석합니다.</span>,
-      <span key="2"><b>기후 데이터에서 얻는 실행 가능한 통찰력</b> - 인공지능 기반 데이터 분석 및 예측을 통해 의사 결정을 위한 통찰력을 얻을 수 있습니다.</span>] 
+      <span key="1"><b>제품 관리</b> - CBAM에 해당되는 CN코드 및 파라미터를 관리하고, 제품 내재배출 (원단위)을 산정합니다. (Embedded Emission).</span>,
+      <span key="2"><b>원부자재 공급 관리</b> - 공급사의 전구물질(Precursor) SEE를 관리합니다.</span>,
+      <span key="3"><b>CBAM 보고서 내용</b> - 2024년 1월부터 분기별로 제출해야할 데이터를 체계적으로 관리하며 쉽게 보고합니다.</span>,
+      <span key="3"><b>배출계수 관리</b> - 기본값(Default values)을 관리합니다.</span>
+    ]
   },
   {
-    title: "전략",
-    subtitle: "Devise strategies",
-    imageUrl: "/images/platform/eco_strategy.png",
+    title: "IFRS(TCFD) / CDP / GRI",
+    subtitle: "Climate normatives, frameworks and standards",
+    imageUrl: "/images/platform/card-standards_pic.jpeg",
     description: [
-      <span key="1"><b>기후 탄력적인 전략을 수립하고 이행하기 위한 협력</b> - 에너지 효율 향상, 배출권거래제 대응, 공급망 포함 탄소감축 목표와 전략 수립 및 이행, 각종 공시요구 대응 등을 탄력적으로 실행할 수 있습니다.</span>,
-      <span key="2"><b>기후요소를 근거로 현명한 비즈니스 의사 결정이 가능해집니다.</b></span>] 
+      <span key="1"><b>표준 보고서에서 요구되는 리포팅</b> - 사업장 별, Scope 1, 2, 3별 에너지 사용량 등 데이터를 체계적으로 관리합니다.</span>,
+      <span key="2"><b>리스크 관리</b> - IFRS/TCFD에서 권장하는 리스크 관리가 용이합니다.</span>,
+      <span key="3"><b>시나리오 분석</b> - 배출원의 변경에 대해 What-if 시나리오 분석으로 전략적으로 기후리스크를 관리하고 준비할 수 있습니다.</span>
+    ] 
   },
   {
-    title: "임팩트",
+    title: "ESG & 스코프 3 관리",
     subtitle: "Make impact",
-    imageUrl: "/images/platform/eco_impact.png",
+    imageUrl: "/images/platform/card-scope3_pic.jpeg",
     description: [
-      <span key="1"><b>탈탄소화 임팩트 네트워크 형성</b> - 산업별 탄소감축 방법과 결과를 분석하고, 그 임팩트를 공유함으로써 기업 간 탈탄소화 네트워크를 형성하며, 임팩트를 증대시킬 수 있습니다.</span>,
-      <span key="2"><b>친환경 사업 모델 개발</b> - 비즈니스 효율성을 높이는 동시에 기후 친화적인 비즈니스 모델 개발을 통해 친환경 산업으로의 전환을 이끌 수 있습니다.</span>] 
+      <span key="1"><b>정성적인 데이터 관리</b> - 질문에 응답하는 형태의 정성적인 데이터 관리가 가능해집니다.</span>,
+      <span key="2"><b>협력사 관리</b> - Scope 3에 해당되는 공급자들의 탄소 배출 현황을 안전하게 관리할 수 있습니다.</span>,
+      <span key="3"><b>제품 관리</b> - 제품의 원단위를 파악하여 고객사와의 커뮤니케이션에 능동적으로 참여할 수 있습니다.</span>,
+      <span key="4"><b>Scope 3용 산업 표준 배출계수</b> - 실 데이터가 없을 경우에도 배출량 산정이 가능합니다.</span>,
+    ] 
   },
 ]
 
@@ -111,7 +119,7 @@ const reasons: DisplayItem[] = [
   { 
     // Material icon
     icon: <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" ><g><rect fill="none" height="24" width="24"/></g><g><g><circle cx="12" cy="6" r="2"/><path d="M21,16v-2c-2.24,0-4.16-0.96-5.6-2.68l-1.34-1.6C13.68,9.26,13.12,9,12.53,9h-1.05c-0.59,0-1.15,0.26-1.53,0.72l-1.34,1.6 C7.16,13.04,5.24,14,3,14v2c2.77,0,5.19-1.17,7-3.25V15l-3.88,1.55C5.45,16.82,5,17.48,5,18.21C5,19.2,5.8,20,6.79,20H9v-0.5 c0-1.38,1.12-2.5,2.5-2.5h3c0.28,0,0.5,0.22,0.5,0.5S14.78,18,14.5,18h-3c-0.83,0-1.5,0.67-1.5,1.5V20h7.21 C18.2,20,19,19.2,19,18.21c0-0.73-0.45-1.39-1.12-1.66L14,15v-2.25C15.81,14.83,18.23,16,21,16z"/></g></g></svg>,
-    title: '구매자와 소비자의 요구'
+    title: '고객사와 소비자의 요구'
   },
 ]
 
@@ -176,8 +184,8 @@ const Home: NextPage = () => {
       <Hero background={{
           imageUrl: contextualPath(siteConfig, '/images/bg-hero_jungle_coast.jpg'),
         }} 
-        header="맞춤형 탄소관리 플랫폼"
-        tagline="스코프 1, 2, 3 기업의 니즈에 맞추어 탄소 중립의 여정을 함께합니다."
+        header="기후규제 대응 탄소관리 솔루션"
+        tagline="CBAM 보고서 함께 작성해드립니다."
         button={
           {href: '/demo_request', label: '데모 요청'}
         }
@@ -265,7 +273,7 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className="flex-1 p-4">
-                  {item.imageUrl && <Image className="object-cover object-top h-40 w-full border group-hover:border-gray-300" src={item.imageUrl} alt={item.title} />}
+                  {item.imageUrl && <Image className="object-cover object-top h-60 w-full border group-hover:border-gray-300" src={item.imageUrl} alt={item.title} />}
                 </div>
               </div>)
             })
