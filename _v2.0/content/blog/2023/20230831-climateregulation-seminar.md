@@ -1,10 +1,8 @@
 ---
 title: "하나루프, 기후규제 대응 역량 강화 세미나 성료"
 description: "기후규제대응 역량 강화세미나."
-keywords: 하나루프, 기후규제대응, 역량 강화세미나
-authors:
-  - hana
-tags: [세미나, 기후규제대응]
+authors: [hana]
+tags: [하나루프, 기후규제대응, 역량 강화세미나]
 publishedAt: "2023-08-31"
 ---
 

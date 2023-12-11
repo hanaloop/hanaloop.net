@@ -1,10 +1,8 @@
 ---
 title: "탄소관리 소셜벤처 하나루프, 2023 대한민국 ESG 친환경대전 참여"
 description: "국내 최초 ESG 친환경 박람회로 탄소중립, 녹색 산업, 순환경제로의 전환에 기여하는 기업들의 역량을 강화할 수 있는 비즈니스 행사에 참여"
-keywords: 하나루프, ESG 친환경대전, 박람회 
-authors:
-  - hana
-tags: [ESG친환경대전, 행사]
+authors: [hana]
+tags: [하나루프, ESG 친환경대전, 박람회]
 publishedAt: "2023-10-14"
 ---
 import CaptionedImage from "../components/theme/CaptionedImage";
