@@ -22,8 +22,8 @@ Modify `docusaurus.config.js` to extend the `i18n` data:
 export default {
   ...
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr', 'fa'],
+    defaultLocale: 'ko',
+    locales: ['ko', 'en'],
   }
 }
 ```
