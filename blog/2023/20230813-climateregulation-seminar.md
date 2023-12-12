@@ -4,7 +4,7 @@ description: "기후규제대응 역량 강화세미나."
 authors:
   - hana
 tags: [하나루프, 기후규제대응, 역량 강화세미나]
-publishedAt: "2023-08-13"
+date: 2023-08-13
 ---
 
 ### [신청서 작성](https://docs.google.com/forms/d/e/1FAIpQLSfjt-8kciQno7ai6idEjLrOYQaj6U8OJxYspn_Z-x4DzRxCZg/viewform)
