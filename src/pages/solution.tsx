@@ -64,9 +64,9 @@ export default function Home(): JSX.Element {
           {data.benefits.map(benefit => 
           <div className="text-center" key={benefit.title}> 
             <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
-            <div className="h-32 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
+            <article className="h-32 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
               {benefit.description}
-            </div>
+            </article>
           </div>
           )}
         </div>

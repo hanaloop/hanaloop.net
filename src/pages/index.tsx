@@ -7,6 +7,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import Hero from '../components/hanaloop/Hero';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import SectionBlock from '../components/theme/SectionBlock';
+import useGlobalData from '@docusaurus/useGlobalData';
 
 // import { customers, elements, features, partners, reasons } from '../data/index.data';
 
@@ -23,11 +24,16 @@ const announcement = {
 
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
+  const globalData = useGlobalData();
+
+  console.log(JSON.stringify(globalData, null, 2));
+
 
   const data = require(`../data/${i18n.currentLocale}_index.data`);
 
   return (
     <Layout
+      wrapperClassName='text-gray-700 dark:text-red-400'
       title={`${siteConfig.title} | ${translate({message: "index.meta_title"})}`}
       description={translate({message: "index.meta_description"})}>
       <Hero background={{

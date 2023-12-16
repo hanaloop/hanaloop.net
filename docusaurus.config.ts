@@ -40,6 +40,7 @@ const config: Config = {
           // editUrl: 'https://github.com/hanaloop/hanaloop.com/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogSidebarCount: 10,
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.

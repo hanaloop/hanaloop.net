@@ -24,7 +24,7 @@ export default function Home(): JSX.Element {
   const data = require(`../data/${i18n.currentLocale}_platform.data`);
 
   return (
-    <Layout
+    <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
       title={`${siteConfig.title} | ${translate({message: "platform.meta_title"})}`}
       description={translate({message: "platform.meta_description"})}>
 
@@ -38,7 +38,7 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <SectionBlock title='데이터가 보이면 전략이 보입니다' containerStyle='bg-gray-100'>
+      <SectionBlock title='데이터가 보이면 전략이 보입니다' containerStyle=' bg-gray-100'>
       <div className="text-center">
         인류가 대면하고 있는 가장 큰 위기, 기후변화 <br/> 
         그의 주범인 온실가스 <br/>
@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
         <br/>
 
         <div className="md:flex justify-center ">
-          <div className="p-6 rounded border border-secondary md:flex items-center">
+          <div className="p-6 bg-white dark:bg-gray-600 rounded border border-secondary md:flex items-center">
             <div className="flex-1">
               <div className="p-6">
               <span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 하나에코</span>는<br /> 

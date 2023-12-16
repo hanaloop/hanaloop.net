@@ -33,21 +33,21 @@ export default function Home(): JSX.Element {
         <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
           <div className="p-4 group hover:bg-slate-100">
             <div className="text-lg font-bold group-hover:text-primary-700">SaaS Solution Partner Program</div>
-            <div>
-            **WHAT IS IT**
+            <article>
+            <em>WHAT IS IT</em>
       Program that enables companies to offer Hana.eco SaaS solution to their customers and receive commision on sales.<br />
-      **FOR WHOM**
-      Consulting service providers such as Business & Environment consulting firms, and Accounting and Law Firms.
-            </div>
+            <em>FOR WHOM</em>
+            Consulting service providers such as Business & Environment consulting firms, and Accounting and Law Firms.
+            </article>
           </div>
           <div className="p-4 group hover:bg-slate-100">
             <div className="text-lg font-bold group-hover:text-primary-700">Technology Partner Program</div>
-            <div>
-            **WHAT IS IT**
+            <article>
+            <em>WHAT IS IT</em>
       Program that enables companies to offer Hana.eco OnPrem system to their customers as standalone or part of their solution suite.<br />
-      **FOR WHOM**
-      Solution providers with IT product that want to incorporate hana.eco to their solution suite.
-            </div>
+            <em>FOR WHOM</em>
+            Solution providers with IT product that want to incorporate hana.eco to their solution suite.
+            </article>
           </div>
         </div>
         <div>
@@ -56,11 +56,13 @@ export default function Home(): JSX.Element {
       </SectionBlock>
 
       <SectionBlock title='Strategic Alliances' containerStyle='bg-gray-100 flex justify-center'>
-        <div className="text-left">
-        - Korea Carbon Project (Project organized by SNU and sponsored by KEITI)
-        - [NetZero 2050](http://netzero2050.or.kr/)
-        - [International Centre for Hydropower (ICH)](https://ich.no/)
-        </div>
+        <article className="text-left">
+        <ul>
+          <li>Korea Carbon Project (Project organized by SNU and sponsored by KEITI)</li>
+          <li><a href="http://netzero2050.or.kr/">NetZero 2050</a></li>
+          <li><a href="https://ich.no/">International Centre for Hydropower (ICH)</a></li>
+        </ul>
+        </article>
       </SectionBlock>
 
 
