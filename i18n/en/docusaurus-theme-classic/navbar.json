@@ -34,5 +34,9 @@
   "item.label.Recruit": {
     "message": "Recruit",
     "description": "Navbar item with label Recruit"
+  },
+  "item.label.Solution": {
+    "message": "Solution",
+    "description": "Navbar item with label Solution"
   }
 }

@@ -18,12 +18,11 @@ import Hero from '../components/hanaloop/Hero';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { DisplayItem } from '../libs/types';
 
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
-  const data = require(`../data/${i18n.currentLocale}_solution.data`);
+  const data = require(`../data/solution_${i18n.currentLocale}.data`);
 
   return (
     <Layout
@@ -41,25 +40,20 @@ export default function Home(): JSX.Element {
       />
 
 
-      <SectionBlock title='친환경 디지털화' >
+      <SectionBlock title={data.content.section1_title} >
         <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
-          <div className="p-4 group hover:bg-slate-100">
-            <div className="text-lg font-bold group-hover:text-primary-700">지속가능한 디지털 전환 </div><span className="text-base">Sustainable Digital Transformation</span>
-            <div>
-            급변하는 비즈니스 환경과 시장 요구에 맞추어 디지털 기술로 고객의 잠재력과 비즈니스 가치를 극대화합니다. 기술뿐만 아니라 기업 문화를 향상시켜 고객 조직의 만족도와 생산력을 높입니다.
+          {data.intro.map((item,idx) =>
+            <div className="p-4 group hover:bg-slate-100">
+              <div className="text-lg font-bold group-hover:text-primary-700">{item.title}</div>
+                <span className="text-base">{item.subtitle}</span>
+                <div>{item.description}</div>
             </div>
-          </div>
-          <div className="p-4 group hover:bg-slate-100">
-            <div className="text-lg font-bold group-hover:text-primary-700">친환경 하나에코 플랫폼 기반 솔루션</div>
-            <div>
-            플랫폼은 환경 규제에 대한 지침과 시장에 대한 통찰력을 제공하고 신속한 친환경 기술 검색 및 거래를 가능하게 하여 더욱 깨끗한 가치사슬을 생성시킴으로써 고객이 지속가능한 방식으로 성장할 수 있도록 도와줍니다. 결과적으로 보다 책임있고 윤리적인 산업으로 발전하는데 기여합니다.
-            </div>
-          </div>
+          )}
         </div>
       </SectionBlock>
 
 
-      <SectionBlock title='데이터가 보이면 전략이 보입니다!' containerStyle='bg-gray-100'>
+      <SectionBlock title={data.content.section2_title} containerStyle='bg-gray-100'>
         <div className="my-5 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
           {data.benefits.map(benefit => 
           <div className="text-center" key={benefit.title}> 

@@ -312,6 +312,41 @@
   },
   "partnership.hero_tagline": {
     "message": "HanaLoop Partner Program은 함께 더 큰 성공을 목표로 하는 상호 신뢰를 기반으로 하는 신뢰할 수 있는 파트너십 프로스램을 제공합니다"
+  },
+  "platform.meta_title": {
+    "message": "데이터기반 지속가능성 플랫폼 Hana.eco"
+  },
+  "platform.meta_description": {
+    "message": "platform.meta_description"
+  },
+  "platform.hero_header": {
+    "message": "데이터기반 지속가능성 플랫폼 Hana.eco"
+  },
+  "platform.hero_tagline": {
+    "message": "온실가스 및 대기오염 데이터 관리"
+  },
+  "recruit.meta_title": {
+    "message": "채용"
+  },
+  "recruit.meta_description": {
+    "message": "지속가능성 임팩트 프로젝트에 합류하세요"
+  },
+  "recruit.hero_header": {
+    "message": "채용"
+  },
+  "recruit.hero_tagline": {
+    "message": "지속가능성 임팩트 프로젝트에 합류하세요!"
+  },
+  "solution.meta_title": {
+    "message": "솔루션"
+  },
+  "solution.meta_description": {
+    "message": "solution.meta_description"
+  },
+  "solution.hero_header": {
+    "message": "솔루션"
+  },
+  "solution.hero_tagline": {
+    "message": "자원은 유한하지만 잠재력은 무한합니다"
   }
-
 }

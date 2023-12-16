@@ -21,7 +21,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
-  const data = require(`../data/${i18n.currentLocale}_platform.data`);
+  const data = require(`../data/platform_${i18n.currentLocale}.data`);
 
   return (
     <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
@@ -38,18 +38,14 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <SectionBlock title='데이터가 보이면 전략이 보입니다' containerStyle=' bg-gray-100'>
+      <SectionBlock title={data.content.section1_title} containerStyle=' bg-gray-100'>
       <div className="text-center">
-        인류가 대면하고 있는 가장 큰 위기, 기후변화 <br/> 
-        그의 주범인 온실가스 <br/>
-        하지만 눈에 보이지 않는 온실가스를 <br/> 
-        하나루프의 **SaaS형 지속가능성 플랫폼 하나에코**가 보여드리겠습니다.
+        {data.content.section1_body}
       <br/>
       <br/>
         <div className="flex justify-center">
           <div className="w-4/5 ">
-            <div className="text-center text-2xl italic  ">“측정할 수 없으면 관리할 수 없고, 
-            관리할 수 없으면 개선시킬 수도 없다”</div>
+            <div className="text-center text-2xl italic">section1_quote</div>
             <div className="text-right text-sm text-gray-600  whitespace-nowrap">- 피터 드러커 (Peter Drucker)</div>
           </div>
         </div>
@@ -60,16 +56,7 @@ export default function Home(): JSX.Element {
           <div className="p-6 bg-white dark:bg-gray-600 rounded border border-secondary md:flex items-center">
             <div className="flex-1">
               <div className="p-6">
-              <span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 하나에코</span>는<br /> 
-              온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. <br/>  
-              <ul>
-              하나에코를 통해 기관/기업은 <br/>
-              기후관련 규제에 대응하고, <br/>
-              기후 리스크를 줄이며,<br/> 
-              에너지 소비를 줄이고, <br/>
-              ESG 포트폴리오를 향상시킬 수 있습니다. <br/>
-              궁극적으로 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다.
-              </ul>
+              {data.content.section1_highlight}
               </div>
             </div>
             <div className="flex justify-center">
@@ -90,9 +77,9 @@ export default function Home(): JSX.Element {
             <div className="p-6 border-primary" >
               <h3 className="text-3xl font-bold inline">{feature.title}</h3>
               <span className="ml-1 inline text-gray-600 text-sm">{feature.subtitle}</span>
-              <div className="text-sm text-gray-600">
+              <article className="text-sm text-gray-600">
                 {feature.description}
-              </div>
+              </article>
             </div>
           </div>
           )}

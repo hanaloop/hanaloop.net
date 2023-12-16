@@ -22,5 +22,21 @@
   "sidebar.tutorialSidebar.category.환경 규제 관련.link.generated-index.description": {
     "message": "환경 규제 관련",
     "description": "The generated-index page description for category 환경 규제 관련 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Hana.eco": {
+    "message": "Hana.eco",
+    "description": "The label for category Hana.eco in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Hana.eco.link.generated-index.title": {
+    "message": "Hana.eco related",
+    "description": "The generated-index page title for category Hana.eco in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Engineering": {
+    "message": "Engineering",
+    "description": "The label for category Engineering in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Engineering.link.generated-index.title": {
+    "message": "Engineering related",
+    "description": "The generated-index page title for category Engineering in sidebar tutorialSidebar"
   }
 }

@@ -21,7 +21,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
-  const data = require(`../data/${i18n.currentLocale}_platform.data`);
+  const data = require(`../data/recruit_${i18n.currentLocale}.data`);
 
   return (
     <Layout
@@ -38,28 +38,30 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <div className="p-4 [word-break:keep-all]">
+      <article className="p-4 [word-break:keep-all]">
 
-      We are developing a **sustainability platform** that will become a stepping stone to a sustainable world.
+      We are developing a <b>sustainability platform</b> that will become a stepping stone to a sustainable world.
       An impact project for a world where the next generation can enjoy everything that the previous generations have enjoyed without compromise!
-      **Do you want to grow together partaking in impact projects for human life and the global environment**?
-      Come to **HanaLoop**!
+      <b>Do you want to grow together partaking in impact projects for human life and the global environment</b>?
+      Come to <b>HanaLoop</b>!
 
       "If you want to walk fast, walk alone. But if you want to walk far, walk together” - Ratan Tata
 
       <SectionBlock title='복지' >
       <div className="text-left">
-      - 매월 유급 반차 제공
-      - 오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근
-      - 업무 성격, 효율과 능력에 따라 원격업무 가능
-      - 건강검진 지원
-      - 각종 세미나, 포럼, 교육 참석 지원
-      - 업무 관련 도서구매 지원
-      - 3년 이상 함께하는 멤버에게 스톡옵션 지급
+      <ul>
+        <li>매월 유급 반차 제공</li>
+        <li>오전 7시~ 오전 10시 사이 자율 출근 후 자율 퇴근</li>
+        <li>업무 성격, 효율과 능력에 따라 원격업무 가능</li>
+        <li>건강검진 지원</li>
+        <li>각종 세미나, 포럼, 교육 참석 지원</li>
+        <li>업무 관련 도서구매 지원</li>
+        <li>3년 이상 함께하는 멤버에게 스톡옵션 지급</li>
+      </ul>
       </div>
       </SectionBlock>
 
-      <div className="my-2 ">
+      <div className="my-1 ">
         <div className="p-2 border text-xl text-center border-primary rounded-md ">
         지구환경을 위해, 미래를 위해 글로벌 일류 인재들과 함께하세요! 
         </div>
@@ -118,7 +120,6 @@ export default function Home(): JSX.Element {
           <li>3년 이상 함께하는 멤버의 공헌도에 따라 스톡옵션 지급</li>
         </ul>
 
-
         <br />
         <div className="mt-4 p-2 border border-primary rounded inline text-lg">[지원하기](recruit_apply)</div>
       </article>
@@ -126,7 +127,7 @@ export default function Home(): JSX.Element {
 
       email: joinus@hanaloop.com
 
-      </div>
+      </article>
  </Layout>
   );
 }

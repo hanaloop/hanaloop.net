@@ -29,7 +29,7 @@ export default function Home(): JSX.Element {
   console.log(JSON.stringify(globalData, null, 2));
 
 
-  const data = require(`../data/${i18n.currentLocale}_index.data`);
+  const data = require(`../data/index_${i18n.currentLocale}.data`);
 
   return (
     <Layout
@@ -47,7 +47,7 @@ export default function Home(): JSX.Element {
       />
       <main>
         {/* Climate strategy is essential */}
-        <SectionBlock title='오늘날 기업에게 탄소관리는 필수입니다' containerStyle='bg-gray-100'>
+        <SectionBlock title={data.content.section1_title} containerStyle='bg-gray-100'>
           <div className="px-10  my-5 grid lg:grid-cols-4 grid-cols-1 gap-4  ">
             {
               data.reasons.map(item => 
@@ -61,7 +61,7 @@ export default function Home(): JSX.Element {
           </div>
         </SectionBlock>
 
-        <SectionBlock title='Trusted by 고객 및 파트너' containerStyle="" >
+        <SectionBlock title={data.content.section2_title} containerStyle="" >
           <div className="space-y-10">
             <div className="mt-4 text-center items-center space-y-8 ">
               <div className="flex justify-center space-x-6 ">
@@ -88,7 +88,7 @@ export default function Home(): JSX.Element {
                   <img className="h-8 " src={useBaseUrl("/images/partners/korea-tipa-gov.gif")} alt="중소기업기술정보진흥원" />
                   <Link href={`https://svhc.or.kr/`}><a><img className="h-8 " src={useBaseUrl("/images/partners/seoulsocialventurehub-logo2.png")} alt="서울소셜벤처허브" /></a></Link>
                 </div>
-                <div className='text-xs'>창업성장기술개발 R&D사업 선정 기업</div>
+                <div className='text-xs'>{data.content.section2_subtitle}</div>
               </div>
             </div>
           </div>
@@ -98,10 +98,12 @@ export default function Home(): JSX.Element {
           <div className="px-10 space-y-20 ">
             <div >
               <div className="text-xl font-bold">
-              협업형 온실가스 관리로 귀사와 공급망의 온실가스 배출을 효율적으로 관리, 분석하고 감축하고 공시하세요!
+              {data.content.section3_title}
               </div>
               <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
-                <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}><a className='text-sx '>협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</a></Link>
+                <Link href={'https://docs.google.com/presentation/d/1FBvBwSz998JR_S_CKMQOPVkr3QXXQEjGyqLADDncrS8/edit?usp=sharing'}>
+                  <a className='text-sx '>{data.content.section3_link}</a>
+                </Link>
               </div>  
             </div>
             

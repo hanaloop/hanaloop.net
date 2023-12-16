@@ -312,5 +312,41 @@
   },
   "partnership.hero_tagline": {
     "message": "We grow together through the synergy of connection"
+  },
+  "platform.meta_title": {
+    "message": "Hana.eco Platform by HanaLoop"
+  },
+  "platform.meta_description": {
+    "message": "Advanced Climate Data and Strategy Platform"
+  },
+  "platform.hero_header": {
+    "message": "Hana.eco Platform"
+  },
+  "platform.hero_tagline": {
+    "message": "Advanced Climate Data and Strategy Platform"
+  },
+  "recruit.meta_title": {
+    "message": "Join Us, Hanaloop, carbon management and sustainability company"
+  },
+  "recruit.meta_description": {
+    "message": "Be a part of the Sustainability Impact Project"
+  },
+  "recruit.hero_header": {
+    "message": "Join Us"
+  },
+  "recruit.hero_tagline": {
+    "message": "Be a part of the Sustainability Impact Project"
+  },
+  "solution.meta_title": {
+    "message": "Carbon Management Solution"
+  },
+  "solution.meta_description": {
+    "message": "Strategic Carbon Management: Navigating Climate Regulations and Enhancing Company Competitiveness. Addressing CBAM, IFRS, CDP Compliance "
+  },
+  "solution.hero_header": {
+    "message": "Solution"
+  },
+  "solution.hero_tagline": {
+    "message": "Access Climate Insights at Your Fingertips"
   }
 }
