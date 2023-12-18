@@ -35,6 +35,10 @@
     "message": "파트너십",
     "description": "Navbar item with label Partnership"
   },
+  "item.label.Company": {
+    "message": "회사소개",
+    "description": "Navbar item with label Company"
+  },
   "item.label.Recruit": {
     "message": "채용",
     "description": "Navbar item with label Recruit"

@@ -26,8 +26,7 @@ export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
   const globalData = useGlobalData();
 
-  console.log(JSON.stringify(globalData, null, 2));
-
+  // console.log(JSON.stringify(globalData, null, 2));
 
   const data = require(`../data/index_${i18n.currentLocale}.data`);
 

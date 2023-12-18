@@ -66,6 +66,7 @@ const config: Config = {
         {to: '/platform', label: 'Platform', position: 'left'},
         {to: '/solution', label: 'Solution', position: 'left'},
         {to: '/partnership', label: 'Partnership', position: 'left'},
+        {to: '/company', label: 'Company', position: 'left'},
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
@@ -74,6 +75,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/recruit', label: 'Recruit', position: 'left'},
+        {href: 'https://www.hana.eco', label: 'Hana.eco', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
         //   label: 'GitHub',
@@ -93,11 +95,11 @@ const config: Config = {
           items: [
             {
               label: 'Company',
-              to: '/docs/intro',
+              to: '/company',
             },
             {
               label: 'Recruit',
-              to: '/docs/intro',
+              to: '/recruit',
             },
           ],
         },
@@ -105,15 +107,15 @@ const config: Config = {
           title: 'Resources',
           items: [
             {
-              label: 'Resource',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Resources',
+              to: '/docs/intro',
             },
             {
               label: 'Blog',
-              href: 'https://discordapp.com/invite/docusaurus',
+              to: '/blog',
             },
             {
-              label: 'Twitter',
+              label: 'YouTube',
               href: 'https://twitter.com/docusaurus',
             },
           ],
@@ -122,12 +124,12 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Docs',
-              to: '/docs/intro',
+              label: 'Privacy',
+              to: '/privacy',
             },
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Credits',
+              to: '/credits',
             },
           ],
         },

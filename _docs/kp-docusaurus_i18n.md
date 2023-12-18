@@ -86,4 +86,4 @@ cp -r src/pages/**.mdx i18n/en/docusaurus-plugin-content-pages
 See [Swizzling](https://docusaurus.io/docs/swizzling), and [how to remove locale dropdown icon](https://stackoverflow.com/questions/69824479/how-to-remove-locale-dropdown-iconicon-before-english-word)
 
 
-yarn swizzle @docusaurus/theme-classic IconLanguage -- --danger
+yarn swizzle @docusaurus/theme-classic Icon/Language --wrap

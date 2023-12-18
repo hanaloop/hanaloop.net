@@ -15,14 +15,6 @@
     "message": "Tutorial",
     "description": "The label of footer link with label=Tutorial linking to /docs/intro"
   },
-  "link.item.label.Stack Overflow": {
-    "message": "Stack Overflow",
-    "description": "The label of footer link with label=Stack Overflow linking to https://stackoverflow.com/questions/tagged/docusaurus"
-  },
-  "link.item.label.Discord": {
-    "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
-  },
   "link.item.label.Twitter": {
     "message": "Twitter",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
@@ -65,6 +57,10 @@
   },
   "link.item.label.Docs": {
     "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to /docs/intro"
+  },
+  "link.item.label.Privacy": {
+    "message": "Privacy",
     "description": "The label of footer link with label=Docs linking to /docs/intro"
   }
 }
