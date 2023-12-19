@@ -98,7 +98,7 @@ export const members = {
     "title": "금속 전문가",
     "tagline": "기후 위기에 도메인 지식 적용",
     "education": "인하대학교, 공학석사, 학사",
-    "description": "케이피씨엠, 동부메탈, 삼성전자 등"
+    "description": "케이피씨엠, 동부메탈"
   },
   "dionysios": {
     "name": "디오니시오스",
