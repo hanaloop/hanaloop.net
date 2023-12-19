@@ -89,6 +89,14 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'HanaLoop Logo',
+        src: 'images/hanaloop-logo.png',
+        // href: 'https://opensource.fb.com',
+        width: 70,
+        // height: 51,
+      },
+
       links: [
         {
           title: 'Company',
@@ -146,7 +154,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} HanaLoop Corp.`,
     },
     prism: {
       theme: prismThemes.github,
