@@ -6,17 +6,18 @@ export const content = {
   Greenhouse gases are the culprit, but they are invisible. <br />
   Hana Eco can help us to visualize them and take action.<br />
   </>,
-  section1_quote: <>“측정할 수 없으면 관리할 수 없고, 관리할 수 없으면 개선시킬 수도 없다”</>,
-  section1_highlight: <><span className="font-bold text-lg">SaaS형 지속가능성 플랫폼 하나에코</span>는<br /> 
-    온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. <br/>  
-    <ul>
-    하나에코를 통해 기관/기업은 <br/>
-    기후관련 규제에 대응하고, <br/>
-    기후 리스크를 줄이며,<br/> 
-    에너지 소비를 줄이고, <br/>
-    ESG 포트폴리오를 향상시킬 수 있습니다. <br/>
-    궁극적으로 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다.
-    </ul></>,
+  section1_quote: <>If You Can't Measure It, You Can't Improve It</>,
+  section1_highlight: <><span className="font-bold text-lg">Hana.eco, the Cloud-based Climate Compliance Platform</span>,<br /> 
+    efficiently oversees carbon emission activities, 
+    conducts comprehensive calculations, and 
+    analyzes emissions data. 
+    <br />
+    This platform empowers corporations to adhere to climate-related regulations, 
+    mitigate climate risks, lower energy consumption, and enhance their ESG portfolio. 
+    <br />
+    Ultimately, it plays a pivotal role in reducing carbon footprints and contributing to the global effort to address the climate crisis.
+
+</>,
   section2_title: "Hana.eco Features",
   section3_title: "Standard supported by Hana.eco",
   section4_title: "Benefits",
@@ -28,7 +29,7 @@ export const features: DisplayItem[] = [
     subtitle: "Flexible, Easy, Accurate",
     imageUrl: "/images/platform/ecoloop_accounting_scrn.png",
     description: <>
-      Hana.eco Makes it easy to collect, calculate, verify and report.
+      Hana.eco simplifies the entire process of managing carbon emissions by providing a user-friendly platform that facilitates effortless collection, precise calculation, rigorous verification, and streamlined reporting. 
         <ul>
         <li>Compliance Assurance</li>
         <li>AI-assisted data analytics. Bring climate insight to your fingertips</li>
@@ -92,7 +93,7 @@ export const benefits: DisplayItem[] = [
     </>
   }, 
   {
-    title: "Improved corporate image and competitiveness",
+    title: "Enhanced corporate image",
     subtitle: "3",
     description: <>
       <ul>
