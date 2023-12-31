@@ -20,7 +20,7 @@ export const intro: DisplayItem[] = [
 
 export const benefits: DisplayItem[] = [
   {
-    title: "Seamless data integration, automation, and in-depth analysis",
+    title: "Data integration, and automation",
     description: <>
         <ul>
         <li>Streamline and diminish manual data collection complexities </li>
@@ -41,7 +41,7 @@ export const benefits: DisplayItem[] = [
       </>
   },
   {
-    title: "Affordable for small and medium-sized enterprises (SMEs).",
+    title: "Affordable for SMEs.",
     description: <>
       <ul>
       <li>Manage emissions without high-cost investments</li>

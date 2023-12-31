@@ -93,73 +93,46 @@ export default function Home(): JSX.Element {
 
         <img src={useBaseUrl("/images/standards/tcfd-logo.png")} className="h-8" alt="TCFD logo"/>
 
-        <h3>Strategy</h3>
-        <ul>
-          <li>A) Describe the climate-related risks and opportunities the organization has identified over the short, medium, and long term.</li>
-          <li>B) Describe the impact of climate-related risks and opportunities on the organization’s businesses, strategy, and financial planning.</li>
-        </ul>
-            
-        <h3>Metrics and Targets</h3>
-        <ul>
-          <li>a) Disclose the metrics used by the company to assess climate-related risks and opportunities in line with its strategy and risk management process.</li>
-          <li>b) Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas (GHG) emissions, and the related risks.</li>
-          <li>c) Describe the targets used by the company to manage climate-related risks and opportunities and performance against targets.</li>
-        </ul>
+        {data.tcfd_topics.map(topic=>
+          <>
+          <h3>{topic.title}</h3>
+          <ul>
+          {topic.description.map(d=>
+            <li>{d}</li>
+          )}
+          </ul>
+          </>
+        )}
 
         <hr />
 
         <img src={useBaseUrl("/images/standards/cdp-logo.png")} className="mt-4 h-16" alt="CDP logo"/>
 
-        <h3 id="c4-targets-and-performance-목표-및-성과">C4	Targets and performance (목표 및 성과)</h3>
-        <ul>
-          <li>C4.1: Emissions targets</li>
-          <li>C4.3: Emissions reduction initiatives</li>
-        </ul>
-        <h3 id="c6--emissions-data-배출량-데이터">C6 Emissions data (배출량 데이터)</h3>
-        <ul>
-          <li>C6.1:  Scope 1 emissions data</li>
-          <li>C6.2:  Scope 2 emissions reporting</li>
-          <li>C6.3:  Scope 2 emissions data</li>
-          <li>C6.7:  Biogenic carbon data</li>
-          <li>C6.7a: Biogenic carbon data</li>
-          <li>C6.10: Emissions intensities</li>
-        </ul>
-        <h3 id="c7-emissions-breakdown-배출-내역">C7	Emissions breakdown (배출 내역)</h3>
-        <ul>
-          <li>C7.1: Scope 1 breakdown: GHGs</li>
-          <li>C7.2: Scope 1 breakdown: country/area/region</li>
-          <li>C7.3: Scope 1 breakdown: business breakdown</li>
-          <li>C7.5: Scope 2 breakdown: country/area/region</li>
-          <li>C7.6: Scope 2 breakdown: business breakdowns</li>
-          <li>C7.9: Emissions performance</li>
-        </ul>
-
-        <h3 id="c8---energy-에너지">C8 Energy (에너지)</h3>
-        <ul>
-          <li>C8.2:	Energy-related activities</li>
-        </ul>
+        {data.cdp_topics.map(topic=>
+          <>
+          <h3>{topic.title}</h3>
+          <ul>
+          {topic.description.map(d=>
+            <li>{d}</li>
+          )}
+          </ul>
+          </>
+        )}
 
         <hr />
 
         <img src={useBaseUrl("/images/standards/gri-logo.png")} className="mt-4 h-16" alt="GRI logo"/>
 
-        <h3 id="gri-302-energy-2016-에너지">GRI 302: Energy 2016 (에너지)</h3>
-        <ul>
-          <li>Disclosure 302-1: Energy consumption within the organization </li>
-          <li>Disclosure 302-2: Energy consumption outside of the organization <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2022-Q4)</span></li>
-          <li>Disclosure 302-3: Energy intensity </li>
-          <li>Disclosure 302-4: Reduction of energy consumption</li>
-        </ul>
-        <h3 id="gri-305-emissions-배출-내역">GRI 305: Emissions (배출 내역)</h3>
-        <ul>
-          <li>Disclosure 305-1: Direct (Scope 1) GHG emissions</li>
-          <li>Disclosure 305-2: Energy indirect (Scope 2) GHG emissions</li>
-          <li>Disclosure 305-3: Other indirect (Scope 3) GHG emissions <span className="p-1 text-xs rounded bg-slate-400 text-gray-100">(2023-Q2)</span></li>
-          <li>Disclosure 305-4: GHG emissions intensity</li>
-          <li>Disclosure 305-5: Reduction of GHG emissions</li>
-          <li>Disclosure 305-6: Emissions of ozone-depleting substances (ODS)</li>
-          <li>Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions</li>
-        </ul>
+        {data.gri_topics.map(topic=>
+          <>
+          <h3>{topic.title}</h3>
+          <ul>
+          {topic.description.map(d=>
+            <li>{d}</li>
+          )}
+          </ul>
+          </>
+        )}
 
       </article>
       </SectionBlock>
