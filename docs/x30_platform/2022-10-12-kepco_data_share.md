@@ -1,26 +1,26 @@
 ---
 title: "Hana.eco - 한전 전력사용량 정보제공 동의 절차"
 date: "2022-10-12"
-description: "EcoLoop 지속가능성 플랫폼은 고객의 한전 전력사용 데이터를 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석해 드립니다. 
+description: "Hana.eco 지속가능성 플랫폼은 고객의 한전 전력사용 데이터를 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석해 드립니다. 
 그 첫 절차는 고객의 한전 전력사용량 정보제공 동의입니다. 한전 전력사용량 정보제공 동의 절차를 설명합니다."
 image: "/images/posting/ecoloop/hero-ecoloop-kepco.jpeg"
 summary: 고객의 한전 전력사용량 데이터를 자동으로 수집하기 위한 첫 절차
 authors: "hykim"
-tags: [EcoLoop, 한전 전력사용량 데이터]
+tags: [Hana.eco, 커넥터, 전력 데이터, 한전]
 ---
 
 import CaptionedImage from "../../src/components/theme/CaptionedImage";
 
 
-하나루프의 EcoLoop 지속가능성 플랫폼으로 기업/시업장 전력사용량을 한전에서 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석할 수 있습니다. 
+하나루프의 하나에코 [Hana.eco](https://www.hana.eco) 플랫폼으로 기업/시업장 전력사용량을 한전에서 자동으로 수집하여 실시간으로 세밀하게 전력사용 추세를 분석할 수 있습니다. 
 실무자 입장에서는 데이터를 자동으로 수집하여 업무가 간소해집니다.
 
 <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop_electricity_chart.png" containerClassName="shadow-xl"
-caption="EcoLoop의 전력 분석" />
+caption="Hana.eco의 전력 분석" />
 
 <br/><br/>
 
-**EcoLoop 지속가능성 플랫폼을 한전과 연동하여 귀사의 전력사용 데이터를 자동으로 수집하려면 귀사의 정보제공 동의가 필요합니다. 동의는 1년간 유효합니다.**
+**하나에코 탄소관리 솔루션을 한전과 연동하여 귀사의 전력사용 데이터를 자동으로 수집하려면 귀사의 정보제공 동의가 필요합니다. 동의는 1년간 유효합니다.**
 
 <br/>
 
@@ -118,7 +118,7 @@ caption="EcoLoop의 전력 분석" />
   <div className="pl-4">
   “예” 버튼 클릭
 
-  <CaptionedImage imageSrc="/images/posting/ecoloop/ecoloop-kepco-connect_6.jpeg" caption="한전 https://en-ter.co.kr" />
+  <CaptionedImage imageSrc="/images/posting/platform/HanaEco-kepco_connect-6.jpeg" caption="한전 https://en-ter.co.kr" />
   </div>
 </div>
 <br/>
