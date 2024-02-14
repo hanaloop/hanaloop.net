@@ -12,7 +12,6 @@ import useGlobalData from '@docusaurus/useGlobalData';
 // import { customers, elements, features, partners, reasons } from '../data/index.data';
 
 
-
 // let announcement: any | undefined;
 const announcement = {
   initialOpen: true,
@@ -100,9 +99,9 @@ export default function Home(): JSX.Element {
         <SectionBlock title='' containerStyle="bg-gray-100" >
           <div className="px-10 space-y-20 ">
             <div >
-              <div className="text-xl font-bold">
+              <h3 className="text-xl font-bold">
               {data.content.section3_title}
-              </div>
+              </h3>
               <div className="mt-10 border border-primary-500 rounded p-2 hover:bg-primary-600 hover:text-gray-100">
                 <Link href={data.content.section3_href}>
                   <a className='text-sx '>{data.content.section3_link}</a>
@@ -120,13 +119,12 @@ export default function Home(): JSX.Element {
                   <div className="lg:w-[500px] flex-none mb-2">
                     <div className="text-3xl font-bold">
                       <div className="flex mr-1 items-baseline text-gray-700 group-hover:text-primary-700">
-                        
                         <span className="pr-4">{ndx + 1}.</span>
-                        <h4 className=" py-2 inline">{item.title}</h4>
+                        <h3 className=" py-2 inline">{item.title}</h3>
                       </div>
                     </div>
                     <div className="text-gray-700 [word-break:keep-all] ml-10" >
-                      <h5 className="pb-2 text-lg font-bold  text-gray-400">{item.subtitle}</h5>
+                      <h4 className="pb-2 text-lg font-bold  text-gray-400">{item.subtitle}</h4>
                       <ul className="ml-3 list-disc space-y-2">
                         {lines.map((line, ndx: number) => 
                           <li key={ndx}>{line}</li>

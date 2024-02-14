@@ -26,7 +26,7 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title={`${siteConfig.title} | ${translate({message: "solution.meta_title"})}`}
+      title={`${translate({message: "solution.meta_title"})}`}
       description={translate({message: "solution.meta_description"})}>
 
       <Hero background={{

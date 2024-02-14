@@ -287,10 +287,10 @@
     "description": "The unlisted content banner message"
   },
   "index.meta_title": {
-    "message": "탄소중립 플랫폼 및 솔루션, 기후규제 대응 탄소관리 플랫폼, 스코프3 관리 플랫폼"
+    "message": "기후규제 대응 탄소관리 플랫폼, 탄소회계 솔루션, 탄소중립 플랫폼 | 솔루션, 스코프3 관리, 제품 내재배출량, LCA"
   },
   "index.meta_description": {
-    "message": "기후규제 대응 탄소관리 플랫폼, 기후규제 대응 온실가스관리 플랫폼, EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 보고서, 탄소중립 AI"
+    "message": "기후규제 대응 탄소관리 플랫폼, 기후규제 대응 온실가스관리, 탄소회계 솔루션, EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 보고서, CBAM 보고서 컨설팅, CBAM 솔루션, 생성형 AI 탄소중립 챗봇, 탄소중립 디지털 코파일럿, 카본버디, LCA, 배출권거래제 대응 지원 솔루션, 목표관리제 대응 지원 솔루션, IFRS S1, S2 지원"
   },
   "index.hero_header": {
     "message": "기후규제 대응 탄소관리 솔루션"
@@ -300,6 +300,18 @@
   },
   "request_demo": {
     "message": "데모 요청"
+  },
+  "solution.meta_title": {
+    "message": "탄소관리 솔루션 | CBAM 보고서 작성 컨설팅| 배출권거래제 대응 솔루션 | 제품 탄소발자국 | LCA "
+  },
+  "solution.meta_description": {
+    "message": "CBAM 컨설팅과 보고서 작성. 재품 탄소 원단위와 고유내재배출 산정, LCA. 기업과 기업의 공급망 (scope 3) 배출 관리"
+  },
+  "solution.hero_header": {
+    "message": "솔루션"
+  },
+  "solution.hero_tagline": {
+    "message": "자원은 유한하지만 잠재력은 무한합니다."
   },
   "partnership.meta_title": {
     "message": "하나루프 파트너십 프로스램 - Partnership Program, 탄소중립 서비스 프로바이더 파트너십 프로그램"
@@ -314,10 +326,10 @@
     "message": "상호 신뢰를 기반으로 시너지를 낼 수 있는 파트너십 프로스램을 제공합니다."
   },
   "platform.meta_title": {
-    "message": "데이터기반 탄소중립 플랫폼 Hana.eco, 지속가능성 플랫폼, 기후규제대응 탄소관리 솔루션"
+    "message": "데이터기반 탄소중립 플랫폼 Hana.eco, 지속가능성 플랫폼,기후규제대응 탄소관리 솔루션"
   },
   "platform.meta_description": {
-    "message": "CBAM 등 기후규제 대응 탄소관리 솔루션을 제공합니다. 기후규제에 유연하며, 체계적인 데이터 관리를 통해 기업의 탄소경쟁력을 향상시킬 수 있습니다."
+    "message": "CBAM, 기후규제 대응 탄소관리 솔루션 제공. 기후규제에 유연하며, CBAM 보고서 생성, 체계적인 데이터 관리를 통해 기업의 탄소경쟁력을 향상시킬 수 있습니다."
   },
   "platform.hero_header": {
     "message": "데이터기반 탄소중립 플랫폼 Hana.eco"
@@ -336,17 +348,5 @@
   },
   "recruit.hero_tagline": {
     "message": "지구를 위한 임팩트 프로젝트에 열정을 발휘하실 분들을 초대합니다!"
-  },
-  "solution.meta_title": {
-    "message": "솔루션"
-  },
-  "solution.meta_description": {
-    "message": "solution.meta_description"
-  },
-  "solution.hero_header": {
-    "message": "솔루션"
-  },
-  "solution.hero_tagline": {
-    "message": "자원은 유한하지만 잠재력은 무한합니다."
   }
 }
