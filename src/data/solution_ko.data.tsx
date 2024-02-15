@@ -1,8 +1,8 @@
 import { DisplayItem } from "../libs/types"
 
 export const content = {
-  section1_title: "친환경 디지털화",
-  section2_title: "데이터가 보이면 전략이 보입니다!"
+  section1_title: "디지털 솔루션으로 환경적, 경제적, 사회적 이익을 동시에 실현!",
+  section2_title: "데이터가 보이면 탄소중립 전략이 보입니다!"
 }
 
 export const intro: DisplayItem[] = [
@@ -20,13 +20,13 @@ export const intro: DisplayItem[] = [
 
 export const benefits: DisplayItem[] = [
   {
-    title: "데이터 연동, 자동화 및 분석",
+    title: "데이터 연동, 생성형AI기반 분석",
     description: <>
         <ul>
-        <li>번거로운 수작업 데이터 수집 줄임 </li>
+        <li>자동 데이터 수집으로 번거로운 수작업 데이터 수집 줄임</li>
+        <li>생성형AI기반 규제 검색과 리포트 생성</li>
         <li>전사 배출 현황 및 추세 분석 제공</li>
-        <li>규제 변화에 대응 용이</li>
-        <li>안전하고 확장 가능</li>
+        <li>데이터 저장 및 전송 암호화 보완으로 안전성</li>
         </ul>
       </>
   },
@@ -34,20 +34,20 @@ export const benefits: DisplayItem[] = [
     title: "가치사슬망 스코프 3 관리",
     description: <>
       <ul>
-      <li>가치사슬 배출량 관리 </li>
-      <li>맞춤형 보고서</li>
+      <li>가치사슬 배출량 관리</li>
+      <li>협력사 관리</li>
       <li>다국어 지원</li>
       </ul>
       </>
   },
   {
-    title: "중소기업에게 부담 없는 가격",
+    title: "제품 LCA 지원",
     description: <>
       <ul>
-      <li>고비용 투자 없이 배출관리 가능</li>
-      <li>기업 규모에 따른 가격 체계</li>
-      <li>시스템 전담인력 필요 없음</li>
-      <li>별도 라이선스 비용 없음</li>
+      <li>제품의 원부자제(전구물질/Precursor) 관리</li>
+      <li>제품 생산 공정 설정과 내재배출 산정</li>
+      <li>업스트림(Upstream) 다운스림(Downstream) 배출 산정</li>
+      <li>제품 내재배출 분석 및 벤츠마킹</li>
       </ul>
     </>
   },
@@ -55,9 +55,9 @@ export const benefits: DisplayItem[] = [
     title: "OpenAPI - 플랫폼",
     description: <>
       <ul>
-      <li>창의적인 솔루션 구축시간 단축</li>
+      <li>확장 솔루션 구축시간 단축</li>
       <li>신사업 모델 창출 가능</li>
-      <li>온실가스 관리문화 형성 </li>
+      <li>저탄소 생태계 형성</li>
       </ul>
     </>
   }
