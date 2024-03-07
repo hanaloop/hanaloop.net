@@ -54,3 +54,6 @@ However, the complexity of measuring Scope 3 emissions should not be an excuse f
 
 Societies will increasingly face the challenges of more frequent droughts, while disruptions in global transit, such as those experienced at the Panama Canal last year, pose significant risks to supply chains. Furthermore, food supplies are vulnerable to the adverse impacts of severe climate conditions. **Policy makers must anticipate these challenges and implement robust rules and regulations as a pivotal element of the mitigation strategy**. This proactive approach is **imperative to safeguard the social fabric and maintaining the stability within the industry**.
 
+## References
+- [SEC Adopts Rules to Enhance and Standardize Climate-Related Disclosures for Investors, Press Release](https://www.sec.gov/news/press-release/2024-31), March 06, 2024
+- [The Enhancement and Standardization of Climate-Related Disclosures: Final Rules, FACT SHEET](https://www.sec.gov/files/33-11275-fact-sheet.pdf), March 06, 2024
