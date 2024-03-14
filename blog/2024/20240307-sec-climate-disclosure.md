@@ -34,6 +34,8 @@ import CaptionedImage from "../../src/components/theme/CaptionedImage";
 
 이 규칙은 대형 기업에게 2025 회계연도부터 시행됩니다.
 
+<!--truncate-->
+
 ## 스코프 3은 제외
 
 드디어 규칙이 확정되어 다행이라고 생각됩니다. 그러나 Scope 3 온실가스 배출량 공개가 의무에서 제외된 점은 개인적으로 아쉽습니다.
