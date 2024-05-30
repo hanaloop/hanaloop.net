@@ -28,6 +28,10 @@ const config: Config = {
     defaultLocale: 'ko',
     locales: ['ko', 'en'],
   },
+  // To disable the chatbox comment out the line below
+  clientModules: [
+    require.resolve('./static/plugins/chat-embedded.js'),
+  ],
 
   presets: [
     [
