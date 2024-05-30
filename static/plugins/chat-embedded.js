@@ -36,7 +36,7 @@ function init() {
   iframeContainer.classList.add("iframe-container");
   iframeContainer.id = "iframe-container";
   const iframe = document.createElement("iframe");
-  iframe.src = "http://hanademo.eco/knoa/chat_plugin";
+  iframe.src = "https://hanademo.eco/knoa/chat_plugin";
   iframeContainer.appendChild(iframe);
   iframe.frameBorder = 0;
   iframe.allow = "clipboard-read; clipboard-write";
