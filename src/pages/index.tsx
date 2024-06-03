@@ -45,13 +45,15 @@ export default function Home(): JSX.Element {
       />
       <main>
         <SectionBlock title={data.content.section0_title} containerStyle='bg-white'>
-          <div className="flex px-10 my-4 text-left">
-            <div className='flex-none w-64' ><img src="/images/partners/lrqa-logo.png" /></div>
+          <div className="lg:flex  px-10 my-4 text-left">
+            <div className='lg:flex-none mb-4' ><img className="w-64 mx-auto" src="/images/partners/lrqa-logo.png" /></div>
             <div className='w-full space-y-2'>
               <h2 className='text-3xl font-bold'>로이드인증원(LRQA) 배출권거래제 및 EU 탄소국경조정제도 플랫폼 적합성 국내 첫 검증의견서 획득</h2>
               <div className='text-lg' >(2024.05.30) 탄소관리 선도기업 ㈜하나루프는 자사의 기후규제 대응 탄소중립 플랫폼인 하나에코가 지난달 30일 국제공인 인증기관인 로이드인증원(LRQA)으로부터 
                 한국 배출권거래제 및 유럽연합(EU)의 탄소국경조정제도(CBAM) 지침에 부합한 것으로 적합성을 인정받았다고 밝혔다. 이는 국내 최초로 하나에코가 국내외적으로 신뢰할 수 있는 탄소관리 솔루션임을 공식 인정받은 것이다.
-                <a className="block text-right text-sm " href="https://news.tf.co.kr/read/economy/2103393.htm">BizFACT 기사 전문</a>
+                <div className="block text-right text-sm space-x-2"><a  href="https://blog.naver.com/hanaloop/223466187999">네이버 블로그</a>
+                <a href="https://news.tf.co.kr/read/economy/2103393.htm">BizFACT 기사 전문</a>
+                </div>
               </div>
             </div>
           </div>
