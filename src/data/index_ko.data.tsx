@@ -1,12 +1,12 @@
 import { DisplayItem } from "../libs/types";
 
 export const content = {
-  section0_title: "고객의 신뢰에 대한 보답",
+  section0_title: "",
   section1_title: "오늘날 기업에게 탄소관리는 필수입니다!",
-  section2_title: "Trusted by 고객과 파트너",
-  section2_subtitle: "창업성장기술개발 R&D사업 선정 기업",
+  section2_title: <div className="text-5xl mb-3">함께하는 고객사</div>,
+  section2_subtitle: "",
   section3_title: "기업활동 중에 발생하는 온실가스, 제품의 탄소관리를 AI 기반 탄소관리 플랫폼 하나에코로 간편하게 관리하세요!",
-  section3_link: <div>기후규제 대응, 협업형 스코프3 포함 탄소중립 플랫폼 <span className="font-bold">하나.에코</span> 소개</div>,
+  section3_link: <div><span className="font-bold text-white text-lg">하나에코 플랫폼 소개</span> </div>,
   section3_href: "https://docs.google.com/presentation/d/1c0EbuKa5Nk5cx06la44rjQFo7i5urNylCfij3ZQ5ukE/edit?usp=sharing"
 }
 
@@ -16,20 +16,20 @@ export const elements: DisplayItem[] = [
     subtitle: "Carbon Border Adjustment Mechanism",
     imageUrl: "/images/platform/card-cbam_pic.jpeg",
     description: [
-      <span key="1"><b>제품 관리</b> - CBAM에 해당되는 CN코드 및 파라미터를 관리하고, 제품 내재배출 (원단위)을 산정합니다. (Embedded Emission).</span>,
-      <span key="2"><b>원부자재 공급 관리</b> - 공급사의 전구물질(Precursor) SEE를 관리합니다.</span>,
-      <span key="3"><b>CBAM 보고서 출력</b> - 2024년 1월부터 분기별로 제출해야할 데이터를 체계적으로 관리하며 쉽게 보고합니다.</span>,
-      <span key="3"><b>배출계수 제공</b> - 기본값(Default values)을 제공합니다.</span>
-    ]
-  },
+      <span key="1"><b>제품 관리</b></span>,
+      <span key="2"><b>원부자재 공급 관리</b></span>,
+      <span key="3"><b>CBAM 보고서 출력</b> </span>,
+      <span key="3"><b>배출계수 제공</b> </span>
+    ] 
+  }, 
   {
     title: "IFRS(TCFD) / CDP / GRI 준수",
     subtitle: "Climate Normatives, Frameworks and Standards",
     imageUrl: "/images/platform/card-standards_pic.jpeg",
     description: [
-      <span key="1"><b>표준 보고서에서 요구되는 리포팅</b> - 사업장별, Scope 1, 2, 3별 에너지 사용량 등 데이터를 체계적으로 관리합니다.</span>,
-      <span key="2"><b>리스크 관리</b> - IFRS/TCFD에서 권장하는 리스크 관리가 용이합니다.</span>,
-      <span key="3"><b>시나리오 분석</b> - 배출원의 변경에 대해 What-if 시나리오 분석으로 기후리스크를 전략적으로 관리하고 대비할 수 있습니다.</span>
+      <span key="1"><b>표준 보고서에서 요구되는 리포팅</b> </span>,
+      <span key="2"><b>리스크 관리</b></span>,
+      <span key="3"><b>시나리오 분석</b> </span>
     ] 
   },
   {
@@ -37,9 +37,9 @@ export const elements: DisplayItem[] = [
     subtitle: "ESG Data Encompassing the Supply Chain",
     imageUrl: "/images/platform/card-scope3_pic.jpeg",
     description: [
-      <span key="1"><b>정성적인 데이터 관리</b> - 질문에 응답하는 형태의 정성적인 데이터를 관리합니다.</span>,
-      <span key="2"><b>협력사 관리</b> - Scope 3에 해당되는 공급자들의 탄소 배출 현황을 안전하게 관리합니다.</span>,
-      <span key="3"><b>Scope 3용 산업 표준 배출계수 제공</b> - 실 데이터가 없을 경우에도 배출량 산정이 가능합니다.</span>,
+      <span key="1"><b>정성적인 데이터 관리</b></span>,
+      <span key="2"><b>협력사 관리</b> </span>,
+      <span key="3"><b>Scope 3용 산업 표준 배출계수 제공</b></span>,
     ] 
   },
   {
@@ -47,20 +47,20 @@ export const elements: DisplayItem[] = [
     subtitle: "Product Carbon Footprint",
     imageUrl: "/images/platform/card-products.jpeg",
     description: [
-      <span key="0"><b>지구 온난화 카테고리의 LCA 산정</b> - 제품의 지구 온난화(Global Warming) 카테고리의 과정별 온실가스 배출량을 산정합니다.</span>,
-      <span key="1"><b>공정과정 탄소 내재배출 산정</b> - 제품의 공정과정을 설정하여 제품의 고유내재배출을 쉽고 정확하게 계산합니다.</span>,
-      <span key="2"><b>원부자재 내재배출 관리</b> - 일부 산업의 내재배출을 포함한 원부자재(전구물질)의 카탈로그를 포함합니다.</span>,
-      <span key="3"><b>비용 효율성 분석</b> - 제품의 생산과정에서 탄소 배출의 비용 효율성을 분석하며, 핫스팟 파악이 가능합니다.</span>,
+      <span key="0"><b>지구 온난화 카테고리의 LCA 산정</b></span>,
+      <span key="1"><b>공정과정 탄소 내재배출 산정</b> </span>,
+      <span key="2"><b>원부자재 내재배출 관리</b> </span>,
+      <span key="3"><b>비용 효율성 분석</b> </span>,
     ] 
-  },
+  }, 
   {
     title: "배출권거래제, 목표관리제 대응",
     subtitle: "Emissions Trading System",
     imageUrl: "/images/platform/card-ets.jpeg",
     description: [
-      <span key="0"><b>검증 수준 데이터 관리 </b> - 명세서 제출 후 검증 프로세스에 원활히 대응할 수 있습니다. </span>,
-      <span key="1"><b>배출권 장부 관리 </b> - 배출권 장부 관리로 미래 배출량을 관리하고 예측합니다.  </span>,
-      <span key="2"><b>배출량 목표 설정 및 배출 시나리오 분석</b> - 배출량 목표를 설정하고 감축 시나리오를 분석하며 이행할 수 있습니다. </span>,
+      <span key="0"><b>검증 수준 데이터 관리 </b></span>,
+      <span key="1"><b>배출권 장부 관리 </b>  </span>,
+      <span key="2"><b>배출량 목표 설정 및 배출 시나리오 분석</b></span>,
     ] 
   },
 ]
@@ -68,26 +68,23 @@ export const elements: DisplayItem[] = [
 // https://icons.getbootstrap.com/
 export const features: DisplayItem[] = [
   {
-    icon: <svg className="h-8 text-secondary " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 5H7V7H17V5Z" fill="currentColor" /><path d="M7 9H9V11H7V9Z" fill="currentColor" /><path d="M9 13H7V15H9V13Z" fill="currentColor" /><path d="M7 17H9V19H7V17Z" fill="currentColor" /><path d="M13 9H11V11H13V9Z" fill="currentColor" /><path d="M11 13H13V15H11V13Z" fill="currentColor" /><path d="M13 17H11V19H13V17Z" fill="currentColor" /><path d="M15 9H17V11H15V9Z" fill="currentColor" /><path d="M17 13H15V19H17V13Z" fill="currentColor" /><path fillRule="evenodd" clipRule="evenodd" d="M3 3C3 1.89543 3.89543 1 5 1H19C20.1046 1 21 1.89543 21 3V21C21 22.1046 20.1046 23 19 23H5C3.89543 23 3 22.1046 3 21V3ZM5 3H19V21H5V3Z" fill="currentColor" /></svg>,
-    title: "탄소 어카운팅 | 탄소회계",
+    icon: '',
+    title: "탄소 회계",
     description: "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다. 데이터 수집은 가능한 자동화하고, 휴먼에러 방지, 간편한 보고서 출력 등 실무자 편의를 제공합니다." 
   },
   {
     // https://fonts.google.com/icons?icon.query=diversity&icon.set=Material+Icons
-    icon: <svg className="h-8 text-secondary " stroke="currentColor" strokeWidth="1" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" >
-    <path d="M1.2 41.4v-8.5q0-1.65 1.175-2.825Q3.55 28.9 5.15 28.9h7.2q.9 0 1.6.375.7.375 1.2 1.075 1.5 2.15 3.85 3.35 2.35 1.2 5 1.2t5-1.2q2.35-1.2 3.9-3.35.45-.7 1.15-1.075t1.65-.375h7.15q1.65 0 2.825 1.175Q46.85 31.25 46.85 32.9v8.5H32.9v-6.15q-1.85 1.5-4.125 2.35-2.275.85-4.775.85-2.45 0-4.725-.825Q17 36.8 15.15 35.25v6.15ZM24 31.5q-1.65 0-3.175-.775T18.35 28.55q-.9-1.3-2.175-2T13.4 25.6q1.65-1.45 4.775-2.3 3.125-.85 5.825-.85 2.75 0 5.875.85t4.825 2.3q-1.55.25-2.825.95-1.275.7-2.175 2-.95 1.4-2.475 2.175Q25.7 31.5 24 31.5ZM8 24.6q-2.35 0-4.025-1.7Q2.3 21.2 2.3 18.85q0-2.35 1.675-4.025Q5.65 13.15 8 13.15q2.4 0 4.075 1.675Q13.75 16.5 13.75 18.85q0 2.35-1.675 4.05Q10.4 24.6 8 24.6Zm32 0q-2.35 0-4.025-1.7-1.675-1.7-1.675-4.05 0-2.35 1.675-4.025Q37.65 13.15 40 13.15q2.4 0 4.075 1.675Q45.75 16.5 45.75 18.85q0 2.35-1.675 4.05Q42.4 24.6 40 24.6Zm-16-6.5q-2.35 0-4.025-1.7-1.675-1.7-1.675-4.05 0-2.35 1.675-4.025Q21.65 6.65 24 6.65q2.4 0 4.075 1.675Q29.75 10 29.75 12.35q0 2.35-1.675 4.05Q26.4 18.1 24 18.1Z"/></svg>,
+    icon: '',
     title: "협업",
     description: "기업의 환경안전팀, ESG전략팀 등 관리자와 실무자, 컨설턴트과 검증심사관 간 원활한 협업이 가능해집니다."
   },
   {
-    icon: <svg className="h-8 text-secondary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" strokeWidth="4" stroke="currentColor" fill="none" ><path d="M17.94 54.81a.1.1 0 01-.14 0c-1-1.11-11.69-13.23-11.69-21.26 0-9.94 6.5-12.24 11.76-12.24 4.84 0 11.06 2.6 11.06 12.24 0 8.29-10.06 20.17-10.99 21.26z"></path><circle cx="17.52" cy="31.38" r="4.75"></circle><path d="M49.58 34.77a.11.11 0 01-.15 0c-.87-1-9.19-10.45-9.19-16.74 0-7.84 5.12-9.65 9.27-9.65 3.81 0 8.71 2 8.71 9.65 0 6.49-7.82 15.78-8.64 16.74z"></path><circle cx="49.23" cy="17.32" r="3.75"></circle><path d="M17.87 54.89a28.73 28.73 0 003.9.89"></path><path d="M24.68 56.07c2.79.12 5.85-.28 7.9-2.08 5.8-5.09 2.89-11.25 6.75-14.71a16.72 16.72 0 014.93-3" strokeDasharray="7.8 2.92"></path><path d="M45.63 35.8a23 23 0 013.88-.95"></path></svg>,
+    icon: '',
     title: "전략",
     description: "온실가스 배출량 시각화를 통해 인사이트를 제공하고, 통계 모델, 인공지능을 통해 목표를 관리합니다. 경제성 분석에 따른 감축전략 추천 및 실행 상황을 모니터링합니다."
   },
   {
-    icon: <svg className="h-8 text-secondary"  fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" >
-    <path d="M2.273 9.53a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.547Zm9.467-4.984a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.546ZM7.4 13.108a5.535 5.535 0 0 1-3.775-2.88 3.273 3.273 0 0 1-1.944.24 7.4 7.4 0 0 0 5.328 4.465c.53.113 1.072.169 1.614.166a3.253 3.253 0 0 1-.666-1.9 5.639 5.639 0 0 1-.557-.091Zm3.828 2.285a2.273 2.273 0 1 0 0-4.546 2.273 2.273 0 0 0 0 4.546Zm3.163-3.108a7.436 7.436 0 0 0 .373-8.726 3.276 3.276 0 0 1-1.278 1.498 5.573 5.573 0 0 1-.183 5.535 3.26 3.26 0 0 1 1.088 1.693ZM2.098 3.998a3.28 3.28 0 0 1 1.897.486 5.544 5.544 0 0 1 4.464-2.388c.037-.67.277-1.313.69-1.843a7.472 7.472 0 0 0-7.051 3.745Z"/>
-  </svg>,
+    icon: '',
     title: "가치사슬 관리",
     description: "Scope 1, 2와 원자재의 생산부터 유통, 폐기까지 모든 가치사슬 상에서 발생하는 배출인 Scope 3를 고려합니다."
   }

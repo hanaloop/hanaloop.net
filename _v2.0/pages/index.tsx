@@ -281,7 +281,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </SectionBlock>
-
       {/* Features */}
       <SectionBlock >
         <div className="px-10">
@@ -302,7 +301,6 @@ const Home: NextPage = () => {
         </div>
         </div>
       </SectionBlock>
-
       {/* Resources */}
       <SectionBlock title='자료' >
         <>
