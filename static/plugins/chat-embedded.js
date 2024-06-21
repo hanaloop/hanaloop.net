@@ -12,9 +12,9 @@ function init() {
   style.innerHTML = `
   .knoa-iframe-container {
     z-index: 199999999;
-    max-height: 800px;
+    // max-height: 800px;
     right: 12px;
-    bottom: 12px;
+    bottom: 80px;
     position: fixed;
     width: 110px;
     height: 110px;
@@ -24,10 +24,10 @@ function init() {
     z-index: 199999999;
     top: initial;
     width: 100%;
-    min-width: 400px;
+    min-width: 300px;
     max-width: 600px;
     left: initial;
-    height: calc(100vh - 12px);
+    height: calc(100vh - 80px);
     transition: height 0.2s ease-in-out;
   }
   .knoa-iframe {
