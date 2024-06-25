@@ -33,6 +33,7 @@ export default function Home(): JSX.Element {
       description={translate({ message: "index.meta_description" })}
     >
       <main>
+        {/* 1 */}
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }}
@@ -42,35 +43,45 @@ export default function Home(): JSX.Element {
             transition: { duration: 1 },
           }}
         >
-          <SectionBlock title={data.content.section3_title}>
-            <div className="px-1 mt-10">
-              <div className="flex gap-3 justify-center">
-                <button className="원border border-primary-500 rounded-xl pt-3 pb-3 pr-5 pl-5 hover:bg-primary-600 hover:text-gray-100 bg-blue-400 text-sm">
-                  <Link href={data.content.section3_href}>
-                    <a className="text-sm">{data.content.section3_link1}</a>
-                  </Link>
-                </button>
-                <button className="원border border-primary-500 rounded-xl pt-3 pb-3 pr-5 pl-5 hover:bg-primary-600 hover:text-gray-100 bg-blue-400 text-sm">
-                  <Link href={data.content.section3_href}>
-                    <a className="text-sm">{data.content.section3_link2}</a>
-                  </Link>
-                </button>
-              </div>
-
-              <div className="w-full flex flex-col items-center gap-[40px] justify-center">
-                <motion.div
-                  viewport={{ once: true }}
-                  initial={{ opacity: 0, y: 80 }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 1 },
-                  }}
-                >
-                  <div className="flex flex-col my-4 text-left shadow-lg rounded-md p-10 items-center">
+          <SectionBlock title={data.content.section1_title}>
+            <div className="w-full flex justify-center mt-10">
+              <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col md:w-[60%]">
+                <div className="px-1 flex flex-col items-start">
+                  <div className="font-bold flex flex-col items-start gap-3 text-left ">
+                    <p className="text-2xl font-semibold lg:text-4xl">
+                      기업활동 중 발생하는 온실가스
+                      <br />{" "}
+                      <span className="text-[#0094ff] font-bold">하나에코</span>
+                      로 간편하게 관리하세요!
+                    </p>
+                    <p className="text-gray-400">
+                      우리는 산업과 기업 환경에 필요한 맞춤형 제안과 안정적인
+                      탄소 중립 매니지먼트 핵심 기술로 지속 가능한 생태계 구축을
+                      위해 디지털 환경을 구현합니다.
+                    </p>
+                  </div>
+                  <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
+                    <button className="hover:no-underline border border-primary-500 rounded-xl px-3 py-3 bg-[#0094ff] ">
+                      <Link href={data.content.section1_href}>
+                        <a className="hover:no-underline">
+                          {data.content.section1_link1}
+                        </a>
+                      </Link>
+                    </button>
+                    <button className="border border-primary-500 rounded-xl px-3 py-3 bg-[#0094ff] ">
+                      <Link href={data.content.section1_href}>
+                        <a className="no-underline">
+                          {data.content.section1_link2}
+                        </a>
+                      </Link>
+                    </button>
+                  </div>
+                </div>
+                <div className="w-full flex flex-col items-center justify-center">
+                  <div className="flex flex-col text-left shadow-lg rounded-md items-center">
                     <div className="">
                       <img
-                        src="/images/hanaeco.png"
+                        src="https://www.hana.eco/images/hanaeco_dashboard1.png"
                         width={800}
                         height={500}
                         alt="hanaeco"
@@ -78,7 +89,24 @@ export default function Home(): JSX.Element {
                       />
                     </div>
                   </div>
-                </motion.div>
+                </div>
+              </div>
+            </div>
+          </SectionBlock>
+        </motion.div>
+        {/* 2 */}
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+          <SectionBlock title={data.content.section2_title}>
+            <div className="px-1">
+              <div className="w-full flex flex-col items-center justify-center">
                 <motion.div
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 80 }}
@@ -92,7 +120,7 @@ export default function Home(): JSX.Element {
                     <div>
                       <img
                         src="/images/figma.svg"
-                        width={500}
+                        width={400}
                         height={500}
                         alt="hanaeco"
                       />
@@ -102,12 +130,8 @@ export default function Home(): JSX.Element {
                       <ul>
                         <li>
                           1. Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
                         </li>
-                        <li>
-                          2. Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit.
-                        </li>
+                        <li></li>
                         <li>
                           3. Lorem ipsum dolor sit amet consectetur adipisicing
                           elit.
@@ -124,8 +148,8 @@ export default function Home(): JSX.Element {
             </div>
           </SectionBlock>
         </motion.div>
-
-        <SectionBlock title="">
+        {/* 3 */}
+        <SectionBlock title={data.content.section3_title}>
           <div className="px-10 mt-10">
             <div>
               <motion.div
@@ -137,9 +161,9 @@ export default function Home(): JSX.Element {
                   transition: { duration: 1 },
                 }}
               >
-                <h3 className="text-5xl font-bold text-black mb-8">
+                {/* <h3 className="text-5xl font-bold text-black mb-8">
                   Feature Heading
-                </h3>
+                </h3> */}
               </motion.div>
             </div>
             <motion.div
@@ -150,18 +174,19 @@ export default function Home(): JSX.Element {
                 y: 0,
                 transition: { duration: 1 },
               }}
+              className="w-full justify-center flex"
             >
-              <div className="flex flex-wrap justify-center ">
+              <div className="lg:grid lg:grid-cols-2 lg:gap- flex flex-col gap-3 w-[75%]">
                 {data.elements.map((item, ndx) => {
                   const lines = item.description as string[];
                   return (
                     <div
-                      className="group rounded-lg hover:border-primary-700 lg:flex mb-4"
+                      className="group rounded-lg hover:border-primary-700 flex justify-center mb-4"
                       key={ndx}
                     >
                       <div className="lg:w-[500px] flex-none mb-2 flex flex-col items-center">
-                        <div className="w-3 h-3 flex justify-center items-center font-bold text-white bg-blue-400 rounded-full text-[10px]"></div>
-                        <div className="text-xl font-bold">
+                        <div className="lg:w-3 lg:h-3 w-2 h-2 flex justify-center items-center font-bold text-white bg-[#0094ff] rounded-full text-[10px]"></div>
+                        <div className="lg:text-xl text-lg font-bold">
                           <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
                             <h3 className="py-2 inline">{item.title}</h3>
                           </div>
@@ -170,7 +195,7 @@ export default function Home(): JSX.Element {
                           <h4 className="pb-2 text-md font-semibold text-gray-400 ">
                             {item.subtitle}
                           </h4>
-                          <ul className="ml-3 list-none">
+                          <ul className="ml-3 list-none lg:text-md text-sm">
                             {lines.map((line, ndx: number) => (
                               <li key={ndx}>{line}</li>
                             ))}
@@ -185,9 +210,9 @@ export default function Home(): JSX.Element {
           </div>
         </SectionBlock>
 
-        {/* Features */}
+        {/* 4. Features */}
 
-        <SectionBlock>
+        <SectionBlock title={data.content.section4_title}>
           <motion.div
             className="modal"
             initial={{ opacity: 0, y: 80 }}
@@ -202,25 +227,25 @@ export default function Home(): JSX.Element {
               <h2 className="text-4xl font-extrabold text-center text-gray-400 hover:text-sky-700 duration-200">
                 {/* <Link href={'/platform'}><a>SaaS형 지속가능성 플랫폼 Hana.eco</a></Link> */}
               </h2>
-              <h3 className="text-5xl font-bold text-black leading-[60px] mb-8">
+              {/* <h3 className="text-5xl font-bold text-black leading-[60px] mb-8">
                 Feature Heading
-              </h3>
+              </h3> */}
               <div className="w-full flex justify-center ">
-                <div className="w-[50%]">
+                <div className="lg:w-[50%] w-[80%]">
                   <div className="flex  flex-wrap gap-5 justify-center">
                     {data.features.map((item, index) => (
                       // bg-blue-400
                       <div
-                        className={`text-center ${
+                        className={`flex flex-col items-start justify-center sm:w-[400px] lg:w-[250px] max-h-[200px] ${
                           index === 0 || index === 3
                             ? "bg-teal-400"
-                            : "bg-blue-400"
-                        } w-[300px] p-10 rounded-xl text-white`}
+                            : "bg-[#0094ff]"
+                        }  p-10 rounded-xl text-white`}
                         key={item.title}
                       >
-                        <div className="flex justify-center items-center">
+                        <div className="flex w-full justify-center items-center">
                           <div className="flex mr-1">{item.icon}</div>
-                          <h3 className="text-xl font-semibold py-2 ">
+                          <h3 className="text-xl text-center font-semibold py-2 ">
                             {item.title}
                           </h3>
                         </div>
@@ -235,7 +260,7 @@ export default function Home(): JSX.Element {
             </div>
           </motion.div>
         </SectionBlock>
-
+        {/* 5. 인증서 */}
         <motion.div
           className="modal"
           initial={{ opacity: 0, y: 80 }}
@@ -247,7 +272,7 @@ export default function Home(): JSX.Element {
           }}
         >
           <SectionBlock
-            title={data.content.section0_title}
+            title={data.content.section5_title}
             containerStyle="bg-whie"
           >
             <div className="w-full justify-center flex">
@@ -272,6 +297,8 @@ export default function Home(): JSX.Element {
             </div>
           </SectionBlock>
         </motion.div>
+
+        {/*6. 고객사 */}
         <motion.div
           className="modal"
           initial={{ opacity: 0, y: 80 }}
@@ -283,7 +310,7 @@ export default function Home(): JSX.Element {
           }}
         >
           <SectionBlock
-            title={data.content.section2_title}
+            title={data.content.section6_title}
             containerStyle="my-20"
           >
             <div className="space-y-10">
@@ -353,6 +380,31 @@ export default function Home(): JSX.Element {
             </div>
           </SectionBlock>
         </motion.div>
+        <div className="w-full flex justify-center my-20">
+          <div className="lg:w-[800px]  bg-blue-100 rounded-lg flex items-center flex-col p-10 gap-3 w-[400px] ">
+            <span className="font-bold lg:text-4xl text-3xl">
+              Feature Heading
+            </span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae, sint.
+            </p>
+            <div className="flex gap-3 justify-center  w-full ">
+              <button className="hover:no-underline border border-primary-500 rounded-xl px-3 py-3 bg-[#0094ff] ">
+                <Link href={data.content.section1_href}>
+                  <a className="hover:no-underline">
+                    {data.content.section1_link1}
+                  </a>
+                </Link>
+              </button>
+              <button className="border border-primary-500 rounded-xl px-3 py-3 bg-[#0094ff] ">
+                <Link href={data.content.section1_href}>
+                  <a className="no-underline">{data.content.section1_link2}</a>
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
       </main>
     </Layout>
   );

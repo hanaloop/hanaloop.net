@@ -1,26 +1,27 @@
 import { DisplayItem } from "../libs/types";
 export const content = {
-  section0_title: "Feature Heading",
-  section1_title: "오늘날 기업에게 탄소관리는 필수입니다!",
-  section2_title: "함께하는 고객사",
-  section2_subtitle: "",
-  section3_title: (
+  section1_title: (
     <span>
-      기업활동 중 발생하는 온실가스
-      <br /> 하나에코로 간편하게 관리하세요!
+      {/* 기업활동 중 발생하는 온실가스
+      <br /> 하나에코로 간편하게 관리하세요! */}
     </span>
   ),
-  section3_link1: (
+  section2_title: "Feature Heading2",
+  section3_title: "Feature Heading3",
+  section4_title: "Feature Heading4",
+  section5_title: "Feature Heading5",
+  section6_title: "Feature Heading6",
+  section1_link1: (
     <div>
-      <span className="font-bold text-white text-lg">솔루션 소개</span>{" "}
+      <span className="font-bold text-white ">솔루션 소개</span>{" "}
     </div>
   ),
-  section3_link2: (
+  section1_link2: (
     <div>
-      <span className="font-bold text-white text-lg">문의 하기</span>{" "}
+      <span className="font-bold text-white ">문의 하기</span>{" "}
     </div>
   ),
-  section3_href:
+  section1_href:
     "https://docs.google.com/presentation/d/1c0EbuKa5Nk5cx06la44rjQFo7i5urNylCfij3ZQ5ukE/edit?usp=sharing",
 };
 
@@ -95,22 +96,22 @@ export const elements: DisplayItem[] = [
       </span>,
     ],
   },
-  {
-    title: "배출권거래제, 목표관리제 대응",
-    subtitle: "Emissions Trading System",
-    imageUrl: "/images/platform/card-ets.jpeg",
-    description: [
-      <span key="0">
-        <b>검증 수준 데이터 관리 </b>
-      </span>,
-      <span key="1">
-        <b>배출권 장부 관리 </b>{" "}
-      </span>,
-      <span key="2">
-        <b>배출량 목표 설정 및 배출 시나리오 분석</b>
-      </span>,
-    ],
-  },
+  // {
+  //   title: "배출권거래제, 목표관리제 대응",
+  //   subtitle: "Emissions Trading System",
+  //   imageUrl: "/images/platform/card-ets.jpeg",
+  //   description: [
+  //     <span key="0">
+  //       <b>검증 수준 데이터 관리 </b>
+  //     </span>,
+  //     <span key="1">
+  //       <b>배출권 장부 관리 </b>{" "}
+  //     </span>,
+  //     <span key="2">
+  //       <b>배출량 목표 설정 및 배출 시나리오 분석</b>
+  //     </span>,
+  //   ],
+  // },
 ];
 
 // https://icons.getbootstrap.com/
@@ -119,7 +120,7 @@ export const features: DisplayItem[] = [
     icon: "",
     title: "탄소 회계",
     description:
-      "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다. 데이터 수집은 가능한 자동화하고, 휴먼에러 방지, 간편한 보고서 출력 등 실무자 편의를 제공합니다.",
+      "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다.",
   },
   {
     // https://fonts.google.com/icons?icon.query=diversity&icon.set=Material+Icons
