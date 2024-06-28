@@ -1,4 +1,8 @@
 import { DisplayItem } from "../libs/types";
+import DBIcon from "../../static/svg/DB.svg";
+import ReportIcon from "../../static/svg/Report.svg";
+import TrackIcon from "../../static/svg/Track.svg";
+import ManageIcon from "../../static/svg/Manage.svg";
 export const content = {
   section1_title: (
     <span>
@@ -9,8 +13,8 @@ export const content = {
   section2_title: "Feature Heading2",
   section3_title: "Feature Heading3",
   section4_title: "Feature Heading4",
-  section5_title: "Feature Heading5",
-  section6_title: "Feature Heading6",
+  section5_title: "국내 첫 검증의견서 획득",
+  section6_title: "함께하는 고객사",
   section1_link1: (
     <div>
       <span className="font-bold text-white ">솔루션 소개</span>{" "}
@@ -21,8 +25,14 @@ export const content = {
       <span className="font-bold text-white ">문의 하기</span>{" "}
     </div>
   ),
-  section1_href:
-    "https://docs.google.com/presentation/d/1c0EbuKa5Nk5cx06la44rjQFo7i5urNylCfij3ZQ5ukE/edit?usp=sharing",
+  section1_href: "/demo_request",
+
+  section3_svgs: {
+    section3_svg_1: <DBIcon />,
+    section3_svg_2: <ReportIcon />,
+    section3_svg_3: <ManageIcon />,
+    section3_svg_4: <TrackIcon />,
+  },
 };
 
 export const elements: DisplayItem[] = [
@@ -120,14 +130,13 @@ export const features: DisplayItem[] = [
     icon: "",
     title: "탄소 회계",
     description:
-      "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다.",
+      "기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 탄소로 환산합니다. 데이터 수집 자동화, 휴먼에러 방지, 보고서 출력 등 실무자의 편의를 제공합니다.",
   },
   {
     // https://fonts.google.com/icons?icon.query=diversity&icon.set=Material+Icons
     icon: "",
     title: "협업",
-    description:
-      "기업의 환경안전팀, ESG전략팀 등 관리자와 실무자, 컨설턴트과 검증심사관 간 원활한 협업이 가능해집니다.",
+    description: "기업의 환경안전팀, ESG전략팀 등 관리자와 실무자, 컨설턴트과 검증심사관 간 원활한 협업이 가능해집니다.",
   },
   {
     icon: "",
@@ -138,8 +147,7 @@ export const features: DisplayItem[] = [
   {
     icon: "",
     title: "가치사슬 관리",
-    description:
-      "Scope 1, 2와 원자재의 생산부터 유통, 폐기까지 모든 가치사슬 상에서 발생하는 배출인 Scope 3를 고려합니다.",
+    description: "Scope 1, 2와 원자재의 생산부터 유통, 폐기까지 모든 가치사슬 상에서 발생하는 배출인 Scope 3를 고려합니다.",
   },
 ];
 
@@ -147,14 +155,7 @@ export const reasons: DisplayItem[] = [
   {
     // Heroicon
     icon: (
-      <svg
-        className="w-6 h-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -167,14 +168,7 @@ export const reasons: DisplayItem[] = [
   {
     // Material icon
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -187,14 +181,7 @@ export const reasons: DisplayItem[] = [
   {
     // https://uxwing.com/svg-icon-editor/
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth="1.5"
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -207,12 +194,7 @@ export const reasons: DisplayItem[] = [
   {
     // Material icon
     icon: (
-      <svg
-        className="w-6 h-6"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <g>
           <rect fill="none" height="24" width="24" />
         </g>
@@ -239,8 +221,7 @@ export const customers: DisplayItem[] = [
     title: "벽산",
     sourceUrl: "http://www.byucksan.com/",
     imageUrl: "/images/partners/byucksan-logo.png",
-    description:
-      "고객사 | 늘 푸른 산처럼 아름다운 생활공간을 창조 | 지속가능경영 혁신기업",
+    description: "고객사 | 늘 푸른 산처럼 아름다운 생활공간을 창조 | 지속가능경영 혁신기업",
   },
   {
     title: "서경빌딩",
@@ -286,15 +267,13 @@ export const partners: DisplayItem[] = [
     title: "로엔컨설팅",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partners/partner-roen_logo.png",
-    description:
-      "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
+    description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
   },
   {
     title: "한컨설팅그룹",
     sourceUrl: "https://hcg.kr",
     imageUrl: "/images/partners/partner-hanconsulting_logo.png",
-    description:
-      "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅",
+    description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅",
   },
 ];
 
