@@ -7,6 +7,17 @@ import SectionBlock from "../components/theme/SectionBlock";
 import useGlobalData from "@docusaurus/useGlobalData";
 import { motion } from "framer-motion";
 import styles from "./index.module.css";
+import ArrowIcon from "../../static/svg/Arrow.svg";
+import { directory } from "../data/index_ko.data";
+import DBIcon from "../../static/svg/DB.svg";
+import ReportIcon from "../../static/svg/Report.svg";
+import TrackIcon from "../../static/svg/Track.svg";
+import ManageIcon from "../../static/svg/Manage.svg";
+import TeamIcon from "../../static/svg/Team.svg";
+import StrategyIcon from "../../static/svg/Strategy.svg";
+import ChartIcon from "../../static/svg/Chart.svg";
+import Chain from "../../static/svg/Chain.svg";
+import Board from "../../static/svg/Board.svg";
 // import { customers, elements, features, partners, reasons } from '../data/index.data';
 
 // let announcement: any | undefined;
@@ -16,6 +27,20 @@ const announcement = {
   link: "https://docs.google.com/forms/d/e/1FAIpQLSev-ubKKT32aD-gqLHy0k56xyv-iBwiA5Z6jnMtqekdYmIcdA/viewform",
   image: "/images/blog/HanaLoop_climate_insight_wednesdays.jpg",
   dimensions: `w-[500px] md:w-[600px]`,
+};
+
+const section3_svgs = {
+  section3_svg_1: <DBIcon />,
+  section3_svg_2: <ReportIcon />,
+  section3_svg_3: <ManageIcon />,
+  section3_svg_4: <TrackIcon />,
+};
+
+const section5_svgs = {
+  section5_svg_1: <ChartIcon />,
+  section5_svg_2: <StrategyIcon />,
+  section5_svg_3: <Board />,
+  section5_svg_4: <Chain />,
 };
 
 export default function Home(): JSX.Element {
@@ -90,7 +115,7 @@ export default function Home(): JSX.Element {
         </motion.div>
         {/* 2 */}
         <div className="w-screen bg-gray-100">
-          <SectionBlock title={data.content.section3_title}>
+          <SectionBlock title={data.content.section2_title}>
             <div className="px-10 mt-10">
               <div>
                 <motion.div
@@ -120,7 +145,7 @@ export default function Home(): JSX.Element {
                 <div className="lg:grid lg:grid-cols-2 gap-10 ">
                   {data.elements.map((item, ndx) => {
                     const svgKey = `section3_svg_${ndx + 1}`;
-                    const SvgComponent = data.content.section3_svgs[svgKey];
+                    const SvgComponent = section3_svgs[svgKey];
 
                     const lines = item.description as string[];
                     return (
@@ -129,7 +154,7 @@ export default function Home(): JSX.Element {
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
-                          <div className="w-12 h-12 bg-blue-300 rounded-md p-2">{SvgComponent}</div>
+                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
                           <div className="lg:text-xl text-lg font-bold">
                             <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
                               <h3 className="py-2 inline">{item.title}</h3>
@@ -163,8 +188,8 @@ export default function Home(): JSX.Element {
             transition: { duration: 1 },
           }}
         >
-          <SectionBlock title={data.content.section2_title}>
-            <div className="px-1">
+          <SectionBlock title={""}>
+            <div className="px-1 py-20">
               <div className="w-full flex flex-col items-center justify-center">
                 <motion.div
                   viewport={{ once: true }}
@@ -175,18 +200,35 @@ export default function Home(): JSX.Element {
                     transition: { duration: 1 },
                   }}
                 >
-                  <div className="flex flex-col items-center px-10 my-4 text-left shadow-lg rounded-md p-10 h-full gap-10">
-                    <div>
-                      <img src="/images/figma.svg" width={400} height={500} alt="hanaeco" />
+                  <div className="flex flex-col items-center w-full justify-center gap-10">
+                    <div className="flex w-[75%] text-left gap-5 flex-col lg:flex-row">
+                      <div className="lg:w-[40%] h-full flex-shrink-0 w-full">
+                        <h1 className="lg:text-5xl text-4xl font-semibold lg:leading-12 leading-8 ">The climate platform you in charge</h1>
+                      </div>
+                      <p className="text-xl sm:text-lg">
+                        Are you ready for rising carbon costs and disclosure requests? The economy is rewiring for a net-zero future, and your
+                        competitors are tapping into low-carbon demand. Get ahead with CarbonChain’s bulletproof carbon accounting software.
+                      </p>
                     </div>
-                    <div className="flex flex-col items-start w-full justify-start gap-3">
-                      <h1 className="font-semibold text-3xl">Sub Heading</h1>
-                      <ul>
-                        <li>1. Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                        <li></li>
-                        <li>3. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                        <li>4. Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                      </ul>
+                    <div className="w-[75%] grid lg:grid-cols-3 gap-5 md:grid-cols-2">
+                      {directory.map((item, ndx) => {
+                        return (
+                          <div className="bg-gray-100 p-5 rounded-lg flex flex-col gap-6 " key={ndx}>
+                            <div className="flex items-center justify-around">
+                              <div className="text-left w-[80%]">
+                                <h2 className="text-2xl font-semibold">{item.title}</h2>
+                                <p className="text-md text-gray-500">{item.subtitle}</p>
+                              </div>
+                              <div className="w-10 h-10 rounded-full bg-gray-400 flex justify-center items-center hover:bg-red-400 hover:cursor-pointer transition duration-300 ease-in-out">
+                                <ArrowIcon width={15} height={15} />
+                              </div>
+                            </div>
+                            <div className="w-full h-[200px] bg-white rounded-lg">
+                              <img src={item.img} className="w-full h-full rounded-lg" />
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 </motion.div>
@@ -227,8 +269,8 @@ export default function Home(): JSX.Element {
               >
                 <div className="lg:grid lg:grid-cols-2 gap-10">
                   {data.features.map((item, ndx) => {
-                    const svgKey = `section3_svg_${ndx + 1}`;
-                    const SvgComponent = data.content.section3_svgs[svgKey];
+                    const svgKey = `section5_svg_${ndx + 1}`;
+                    const SvgComponent = section5_svgs[svgKey];
 
                     const lines = item.description as string[];
                     return (
@@ -237,7 +279,7 @@ export default function Home(): JSX.Element {
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
-                          <div className="w-12 h-12 bg-blue-300 rounded-md p-2">{SvgComponent}</div>
+                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
                           <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
                             <h3 className="py-2 inline font-bold">{item.title}</h3>
                             <span className="text-md text-left">{item.description}</span>

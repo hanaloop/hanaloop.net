@@ -1,8 +1,5 @@
 import { DisplayItem } from "../libs/types";
-import DBIcon from "../../static/svg/DB.svg";
-import ReportIcon from "../../static/svg/Report.svg";
-import TrackIcon from "../../static/svg/Track.svg";
-import ManageIcon from "../../static/svg/Manage.svg";
+
 export const content = {
   section1_title: (
     <span>
@@ -10,9 +7,9 @@ export const content = {
       <br /> 하나에코로 간편하게 관리하세요! */}
     </span>
   ),
-  section2_title: "Feature Heading2",
+  section2_title: "탄소관리 왜 필요할까요?",
   section3_title: "Feature Heading3",
-  section4_title: "Feature Heading4",
+  section4_title: "탄소관리 하나에코와 함께하세요",
   section5_title: "국내 첫 검증의견서 획득",
   section6_title: "함께하는 고객사",
   section1_link1: (
@@ -26,14 +23,28 @@ export const content = {
     </div>
   ),
   section1_href: "/demo_request",
-
-  section3_svgs: {
-    section3_svg_1: <DBIcon />,
-    section3_svg_2: <ReportIcon />,
-    section3_svg_3: <ManageIcon />,
-    section3_svg_4: <TrackIcon />,
-  },
 };
+
+export const directory = [
+  {
+    title: "Directory_1",
+    subtitle: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://www.hanademo.eco/organization/search",
+    img: "/images/directory_1.jpg",
+  },
+  {
+    title: "Directory_2",
+    subtitle: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://www.hanademo.eco/organization/search",
+    img: "/images/directory_2.jpg",
+  },
+  {
+    title: "Directory_3",
+    subtitle: "Lorem ipsum dolor sit amet consectetur",
+    link: "https://www.hanademo.eco/organization/search",
+    img: "/images/directory_3.jpg",
+  },
+];
 
 export const elements: DisplayItem[] = [
   {
