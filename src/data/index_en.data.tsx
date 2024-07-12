@@ -2,20 +2,20 @@ import { DisplayItem } from "../libs/types";
 
 export const content = {
   title_1 : <p>Hana Loop Net-Zero network drives customers, partners, and collaborating organizations <br/>to accelerate their carbon neutrality.</p>,
-  title_2 : "Why your company need to manage carbon?",
-  title_3 : "Hana Eco, recognized for its compliance, supports you.",
-  title_4: "Manage your carbon emissions with Hana Eco.",
+  title_2 : "Why does your company need to manage carbon?",
+  title_3 : "Hana.eco, recognized for its compliance, supports you.",
+  title_4: "Manage your carbon emissions with Hana.eco.",
 };
 
 export const hero = {
   title_1 : "",
   title_2 : ": Simplify Business Carbon Footprint Management",
-  title_link : "Hana Eco",
+  title_link : "Hana.eco",
   subtitle_1 : "Proactive carbon management positions businesses for success.",
   subtitle_2 : "It streamlines compliance with tightening regulations like EU CBAM, IFRS ISSB, and ESG reporting, while reducing energy costs and mitigating climate risks.",
   button_1 : "Learn More",
   button_2 : "Contact Us",
-  link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw/edit#slide=id.g2e525c1f103_0_0",
+  link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw",
   link_2: "/demo_request",
 }
 
@@ -45,7 +45,7 @@ export const directory = {
 }
 
 export const request = {
-  title : "Start systematic carbon management with Hana Eco",
+  title : "Start systematic carbon management with Hana.eco",
   button_1 : "Learn More",
   button_2 : "Contact us",
 }

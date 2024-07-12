@@ -69,7 +69,7 @@ export default function Home(): JSX.Element {
       })}`}
       description={translate({ message: "index.meta_description" })}
     >
-      <main>
+      <main className="break-keep">
         <div className={styles.mainBanner}>
           <img src="/images/bg-hero-main.jpg" className="w-full h-full " />
         </div>
@@ -84,11 +84,11 @@ export default function Home(): JSX.Element {
             transition: { duration: 1 },
           }}
         >
-          <div className="w-screen h-screen flex justify-center items-center">
+          <div className=" w-screen h-screen flex justify-center items-center">
             <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
               <div className="px-1 flex flex-col items-start ">
                 <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
-                  <p className="text-3xl lg:text-4xl font-bold text-white">
+                  <p className="text-4xl lg:text-4.5xl/[3rem] font-bold text-white">
                     {data.hero.title_1}
                     <br />{" "}
                     <span className="text-[#0094ff] font-bold">
@@ -96,30 +96,22 @@ export default function Home(): JSX.Element {
                     </span>
                     {data.hero.title_2}
                   </p>
-                  <p className="text-white whitespace-normal break-keep">
+                  <p className="lg:text-xl text-white whitespace-normal ">
                     {data.hero.subtitle_1}<br/>
                     {data.hero.subtitle_2}
                   </p>
                 </div>
                 <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
-                  <button className="hover:no-underline  rounded-lg py-3 w-[120px] bg-[#0094ff] ">
-                    <Link href={data.hero.link_1}>
-                      <a>
-                        <div>
-                          <span className="font-bold text-white ">{data.hero.button_1}</span>{" "}
-                        </div>
-                      </a>
-                    </Link>
-                  </button>
-                  <button className=" rounded-lg py-3 w-[120px] bg-[#0094ff] ">
-                    <Link href={data.hero.link_2}>
-                      <a>
-                        <div>
-                          <span className="font-bold text-white ">{data.hero.button_2}</span>{" "}
-                        </div>
-                      </a>
-                    </Link>
-                  </button>
+                  <a href={data.hero.link_1} >
+                    <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4] ">
+                      {data.hero.button_1}
+                    </button>
+                  </a>
+                  <a href={data.hero.link_2}>
+                    <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
+                      {data.hero.button_2}
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="w-full flex flex-col items-center justify-center">
@@ -219,7 +211,9 @@ export default function Home(): JSX.Element {
             </SectionBlock>
           </div>
         </motion.div>
+
         {/* 4. 하나에코가 지원합니다. */}
+        
         <div className="w-screen bg-gray-50 justify-center flex">
           <motion.div
             viewport={{ once: true }}
@@ -232,7 +226,16 @@ export default function Home(): JSX.Element {
             className="w-[85%] flex justify-center"
           >
             <SectionBlock title={data.content.title_3}>
+              <>
+              <div className="px-10 mb-10 text-left">
+                <div className='mb-4' ><img className="w-48 mx-auto" src="/images/partners/lrqa-logo.png" /></div>
+                <div className='w-full space-y-2'>
+                  <h2 className='text-xl text-center'>로이드인증원(LRQA)으로부터 <span className="font-bold">하나에코</span>의 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득</h2>
+                </div>
+              </div>
+
               <div className="flex justify-center">
+                
                 <div className="flex flex-wrap gap-10 justify-center md:w-[90%] w-[80%]">
                   {data.elements_2.map((item, ndx) => {
                     const svgKey = `section2_svg_${ndx + 1}`;
@@ -264,6 +267,7 @@ export default function Home(): JSX.Element {
                   })}
                 </div>
               </div>
+              </>
             </SectionBlock>
           </motion.div>
         </div>
@@ -362,24 +366,16 @@ export default function Home(): JSX.Element {
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl lg:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 lg:justify-start">
-              <button className="hover:no-underline  rounded-lg py-3 w-[120px] bg-[#0094ff] ">
-                <Link href={data.request.link_1}>
-                    <a>
-                      <div>
-                        <span className="font-bold text-white">{data.hero.button_1}</span>{" "}
-                      </div>
-                    </a>
-                  </Link>
+              <a href={data.hero.link_1}>
+                <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
+                  {data.hero.button_1}
                 </button>
-                <button className=" rounded-lg py-3 w-[120px] bg-[#0094ff] ">
-                  <Link href={data.request.link_2}>
-                    <a>
-                      <div>
-                        <span className="font-bold text-white ">{data.hero.button_2}</span>{" "}
-                      </div>
-                    </a>
-                  </Link>
-              </button>
+              </a>
+              <a href={data.hero.link_2}>
+                <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
+                  {data.hero.button_2}
+                </button>
+              </a>
             </div>
           </div>
         </div>

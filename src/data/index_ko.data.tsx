@@ -1,7 +1,7 @@
 import { DisplayItem } from "../libs/types";
 
 export const content = {
-  title_1 : "디지털 파트너 하나루프는 고객, 파트너, 지원 기관의 탄소중립 여정에 힘을 실어드립니다.",
+  title_1 : "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다.",
   title_2 : "우리 회사도 탄소관리 필요할까요?",
   title_3 : <h1>적합성을 인정받은 하나에코가 지원합니다.</h1>,
   title_4: "탄소관리 하나에코와 함께하세요",
@@ -15,7 +15,7 @@ export const hero = {
   subtitle_2 : "EU CBAM, IFRS ISSB S1 S2 규제, EU 배터리 규제, ESG 공시 의무 등 지속적으로 강화되고 있는 국내외 기후 규제와 공시 의무를 신속히 준수하며 에너지 비용을 감축하고 기후 리스크를 완화시킬 수 있습니다.",
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
-  link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw/edit#slide=id.g2e525c1f103_0_0",
+  link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw",
   link_2: "/demo_request",
 }
 
