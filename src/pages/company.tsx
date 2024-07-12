@@ -13,119 +13,135 @@
 //   tagline: "Your trustworthy sustainability partner"
 
 // ---
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import Translate, {translate} from '@docusaurus/Translate';
-import Hero from '../components/hanaloop/Hero';
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import Translate, { translate } from "@docusaurus/Translate";
+import Hero from "../components/hanaloop/Hero";
 import SectionBlock from "../components/theme/SectionBlock";
-import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from "@theme/Layout";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 export default function Home(): JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+  const { siteConfig, i18n } = useDocusaurusContext();
 
   const data = require(`../data/company_${i18n.currentLocale}.data`);
 
   return (
     <Layout
       title={`${siteConfig.title} | ${data.content.meta_title}`}
-      description={data.content.meta_tagline}>
-
-      <Hero background={{
-          imageUrl: useBaseUrl('/images/bg-hero_pando.jpeg'),
-        }} 
+      description={data.content.meta_tagline}
+    >
+      <Hero
+        background={{
+          imageUrl: useBaseUrl("/images/bg-hero_pando.jpeg"),
+        }}
         header={data.content.hero_title}
         tagline={data.content.hero_tagline}
-        button={
-          {href: '/demo_request', label: translate({message: "request_demo"})}
-        }
+        button={{
+          href: "/demo_request",
+          label: translate({ message: "request_demo" }),
+        }}
       />
 
-      <SectionBlock title={data.content.hanaloop_title} containerStyle="flex justify-center" >
+      <SectionBlock
+        title={data.content.hanaloop_title}
+        containerStyle="flex justify-center"
+      >
         <div className="p-4 text-lg max-w-3xl">
-        {data.content.hanaloop_body}
+          {data.content.hanaloop_body}
         </div>
       </SectionBlock>
 
-
-      <SectionBlock title={data.content.vision_title} containerStyle='bg-gray-100'>
+      <SectionBlock
+        title={data.content.vision_title}
+        containerStyle="bg-gray-100"
+      >
         <div className="p-4">
-          <span className="text-lg">{data.content.vision_body}
-          </span>
-          
+          <span className="text-lg">{data.content.vision_body}</span>
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.mission_title} >
+      <SectionBlock title={data.content.mission_title}>
         <div className="p-4">
-        <span className="text-lg">{data.content.mission_body}</span>
+          <span className="text-lg">{data.content.mission_body}</span>
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.commitment_title} containerStyle='bg-gray-100'>
+      <SectionBlock
+        title={data.content.commitment_title}
+        containerStyle="bg-gray-100"
+      >
         <div className="p-4">
           <span className="text-lg">{data.content.commitment_body}</span>
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.corevalues_title} >
+      <SectionBlock title={data.content.corevalues_title}>
         <div className="p-4 w-auto flex justify-center ">
           <div className="w-96 text-left text-lg">
-          {data.content.corevalues_body}
+            {data.content.corevalues_body}
           </div>
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.culture_title} containerStyle='bg-gray-100'>
+      <SectionBlock
+        title={data.content.culture_title}
+        containerStyle="bg-gray-100"
+      >
         <div className="p-4">
-          <span className="text-lg">
-          {data.content.culture_body}
-          </span>
+          <span className="text-lg">{data.content.culture_body}</span>
         </div>
       </SectionBlock>
 
-      <SectionBlock title={data.content.team} >
+      <SectionBlock title={data.content.team}>
         <div className="p-4">
           <div className="my-5 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-            {
-              Object.values(data.members).map((m: any) => (
-                <figure className="bg-gray-100 rounded-md my-4 p-4 shadow " key={m.name}>
-                  <div className="w-auto flex justify-center">
-                  <img className="h-40 lg:h-32 rounded-full block grayscale" src={ useBaseUrl(m.image_url) } alt="" />
-                  </div>
-                  <div className="pt-6 space-y-4 block">
-                    <figcaption className="font-medium text-center">
-                      <div className="fond-semibold">
-                        <a className="no-underline  space-x-1" href={ m.profile_url }><span className="whitespace-nowrap">{ m.name }</span>
-                        <span className="whitespace-nowrap text-sm text-slate-700">{ m.name_alt }</span></a>
-                      </div>
-                      <div className="text-sm text-primary-dark">{ m.title }</div>
-                      <div className="mt-2 text-xs text-slate-500">{ m.education }</div>
-                    </figcaption>
-                    <p className="text-sm">
-                      { m.description }
-                    </p>
-                  </div>
-                </figure>
-                )
-              )
-            }
+            {Object.values(data.members).map((m: any) => (
+              <figure
+                className="bg-gray-100 rounded-md my-4 p-4 shadow "
+                key={m.name}
+              >
+                <div className="w-auto flex justify-center">
+                  <img
+                    className="h-40 lg:h-32 rounded-full block grayscale"
+                    src={useBaseUrl(m.image_url)}
+                    alt=""
+                  />
+                </div>
+                <div className="pt-6 space-y-4 block">
+                  <figcaption className="font-medium text-center">
+                    <div className="fond-semibold">
+                      <a
+                        className="no-underline  space-x-1"
+                        href={m.profile_url}
+                      >
+                        <span className="whitespace-nowrap">{m.name}</span>
+                        <span className="whitespace-nowrap text-sm text-slate-700">
+                          {m.name_alt}
+                        </span>
+                      </a>
+                    </div>
+                    <div className="text-sm text-primary-dark">{m.title}</div>
+                    <div className="mt-2 text-xs text-slate-500">
+                      {m.education}
+                    </div>
+                  </figcaption>
+                  <p className="text-sm">{m.description}</p>
+                </div>
+              </figure>
+            ))}
           </div>
         </div>
       </SectionBlock>
 
-      <SectionBlock title='하나루프 이름의 배경' containerStyle="flex justify-center" >
+      <SectionBlock
+        title="하나루프 이름의 배경"
+        containerStyle="flex justify-center"
+      >
         <div className="px-4">
-          <span className="text-xl">
-          하나루프 (Hana+Loop)
-          </span>
-        <div className="max-w-3xl">
-          {data.content.hanaloop_name}
-        </div>
+          <span className="text-xl">하나루프 (Hana+Loop)</span>
+          <div className="max-w-3xl">{data.content.hanaloop_name}</div>
         </div>
       </SectionBlock>
-
-  </Layout>
+    </Layout>
   );
 }
-
-

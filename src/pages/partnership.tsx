@@ -30,7 +30,7 @@ export default function Home(): JSX.Element {
 
       <SectionBlock title={data.content.section1_title} >
         <>
-        <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
+        <div className="my-5 border rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
           <div className="p-4 group hover:bg-slate-100">
             <div className="text-lg font-bold group-hover:text-primary-700">SaaS Solution Partner Program</div>
             <article>

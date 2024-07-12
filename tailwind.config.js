@@ -6,7 +6,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx,mdx}","./i18n/**/*.{js,jsx,ts,tsx,mdx}"],
   darkMode: ['class', '[data-theme="dark"]'], // hooks into docusaurus' dark mode settings
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '4.5xl': '2.7rem'
+      }
+    },
+    
   },
   plugins: [],
 }
