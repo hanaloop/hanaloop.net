@@ -71,8 +71,9 @@ export default function Home(): JSX.Element {
     >
       <main className="break-keep">
         {/* 1. Hero Section */}
-        <div className="w-screen py-5 bg-gray-300 flex xs:h-screen justify-center items-center bg-[url('/images/bg-hero-main.jpg')] bg-cover relative">
-            <div className="w-full h-full absolute left-0 top-0 bg-[#193233] opacity-20"></div>
+        <div className="w-screen py-5 flex xs:h-screen justify-center items-center relative">
+            <div className="-z-30 w-full h-full absolute left-0 top-0 bg-[url('/images/bg-hero-main.jpg')] bg-center bg-cover"></div>
+            <div className=" -z-20 w-full h-full absolute left-0 top-0 bg-[#193233] opacity-70"></div>
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 60 }}
@@ -87,7 +88,7 @@ export default function Home(): JSX.Element {
                 <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
                   <div className="px-1 flex flex-col items-start ">
                     <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
-                      <p className="text-3xl md:text-4xl font-bold text-white">
+                      <p className="text-3xl lg:text-4.5xl/[3rem]  md:text-4xl font-bold text-white">
                         {data.hero.title_1}
                         <br />{" "}
                         <span className="text-[#0094ff] font-bold">
