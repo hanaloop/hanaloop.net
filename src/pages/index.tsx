@@ -70,60 +70,59 @@ export default function Home(): JSX.Element {
       description={translate({ message: "index.meta_description" })}
     >
       <main className="break-keep">
-        <div className={styles.mainBanner}>
-          <img src="/images/bg-hero-main.jpg" className="w-full h-full " />
-        </div>
-        <div className="w-screen h-[1200px] absolute top-0 left-0  -z-50 bg-gray-50"></div>
         {/* 1. Hero Section */}
-        <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { duration: 1 },
-          }}
-        >
-          <div className=" w-screen h-screen flex justify-center items-center">
-            <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
-              <div className="px-1 flex flex-col items-start ">
-                <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
-                  <p className="text-4xl lg:text-4.5xl/[3rem] font-bold text-white">
-                    {data.hero.title_1}
-                    <br />{" "}
-                    <span className="text-[#0094ff] font-bold">
-                      <a href="https://www.hana.eco/">{data.hero.title_link}</a>
-                    </span>
-                    {data.hero.title_2}
-                  </p>
-                  <p className="lg:text-xl text-white whitespace-normal ">
-                    {data.hero.subtitle_1}<br/>
-                    {data.hero.subtitle_2}
-                  </p>
-                </div>
-                <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
-                  <a href={data.hero.link_1} >
-                    <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4] ">
-                      {data.hero.button_1}
-                    </button>
-                  </a>
-                  <a href={data.hero.link_2}>
-                    <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
-                      {data.hero.button_2}
-                    </button>
-                  </a>
-                </div>
-              </div>
-              <div className="w-full flex flex-col items-center justify-center">
-                <div className="flex flex-col text-left shadow-lg rounded-md items-center">
-                  <div className="">
-                    <img src="https://www.hana.eco/images/hanaeco_dashboard1.png" width={800} height={500} alt="hanaeco" className="rounded-xl" />
+        <div className="w-screen py-5 bg-gray-300 flex xs:h-screen justify-center items-center bg-[url('/images/bg-hero-main.jpg')] bg-cover relative">
+            <div className="w-full h-full absolute left-0 top-0 bg-[#193233] opacity-20"></div>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { duration: 1 },
+              }}
+              className="flex justify-center"
+            >
+        
+                <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
+                  <div className="px-1 flex flex-col items-start ">
+                    <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
+                      <p className="text-3xl md:text-4xl font-bold text-white">
+                        {data.hero.title_1}
+                        <br />{" "}
+                        <span className="text-[#0094ff] font-bold">
+                          <a href="https://www.hana.eco/">{data.hero.title_link}</a>
+                        </span>
+                        {data.hero.title_2}
+                      </p>
+                      <p className="lg:text-xl text-white whitespace-normal ">
+                        {data.hero.subtitle_1}<br/>
+                        {data.hero.subtitle_2}
+                      </p>
+                    </div>
+                    <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
+                      <a href={data.hero.link_1} >
+                        <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4] ">
+                          {data.hero.button_1}
+                        </button>
+                      </a>
+                      <a href={data.hero.link_2}>
+                        <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
+                          {data.hero.button_2}
+                        </button>
+                      </a>
+                    </div>
                   </div>
-                </div>
-              </div>
+                  <div className="w-full flex flex-col items-center justify-center">
+                    <div className="flex flex-col text-left shadow-lg rounded-md items-center">
+                      <div className="">
+                        <img src="https://www.hana.eco/images/hanaeco_dashboard1.png" width={800} height={500} alt="hanaeco" className="rounded-xl" />
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
         {/* 2. PARTNERS Section */}
         <div className="w-screen bg-gray-50 justify-center flex">
@@ -214,7 +213,7 @@ export default function Home(): JSX.Element {
 
         {/* 4. 하나에코가 지원합니다. */}
         
-        <div className="w-screen bg-gray-50 justify-center flex">
+        <div className="w-screen bg-gray-50">
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, y: 60 }}
@@ -223,7 +222,6 @@ export default function Home(): JSX.Element {
               y: 0,
               transition: { duration: 1 },
             }}
-            className="w-[85%] flex justify-center"
           >
             <SectionBlock title={data.content.title_3}>
               <>
@@ -236,7 +234,7 @@ export default function Home(): JSX.Element {
 
               <div className="flex justify-center">
                 
-                <div className="flex flex-wrap gap-10 justify-center md:w-[90%] w-[80%]">
+                <div className="flex flex-wrap gap-10 justify-center w-[85%]">
                   {data.elements_2.map((item, ndx) => {
                     const svgKey = `section2_svg_${ndx + 1}`;
                     const SvgComponent = section2_svgs[svgKey];
@@ -362,7 +360,7 @@ export default function Home(): JSX.Element {
             </SectionBlock>
           </motion.div>
         </div>
-        <div className="w-full h-[300px] bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl lg:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 lg:justify-start">
