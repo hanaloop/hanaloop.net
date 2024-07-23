@@ -14,7 +14,7 @@ function init() {
     z-index: 199999999;
     // max-height: 800px;
     right: 12px;
-    bottom: 80px;
+    bottom: 20px;
     position: fixed;
     width: 110px;
     height: 110px;
