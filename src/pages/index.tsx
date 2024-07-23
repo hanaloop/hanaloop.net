@@ -87,8 +87,8 @@ export default function Home(): JSX.Element {
         
                 <div className="lg:w-[80%] flex gap-10 lg:flex-row flex-col w-[70%]">
                   <div className="px-1 flex flex-col items-start ">
-                    <div className="font-bold flex flex-col gap-3 lg:text-left text-center">
-                      <p className="text-3xl lg:text-4.5xl/[3rem]  md:text-4xl font-bold text-white">
+                    <div className="flex flex-col gap-3 lg:text-left text-center">
+                      <p className="text-3xl lg:text-4.5xl  md:text-4xl font-bold text-white">
                         {data.hero.title_1}
                         <br />{" "}
                         <span className="text-[#0094ff] font-bold">
@@ -96,7 +96,7 @@ export default function Home(): JSX.Element {
                         </span>
                         {data.hero.title_2}
                       </p>
-                      <p className="lg:text-xl text-white whitespace-normal ">
+                      <p className="text-sm md:text-xl text-white whitespace-normal ">
                         {data.hero.subtitle_1}<br/>
                         {data.hero.subtitle_2}
                       </p>
