@@ -102,7 +102,7 @@ export default function Home(): JSX.Element {
                       </p>
                     </div>
                     <div className="flex gap-3 justify-center my-8 w-full lg:justify-start">
-                      <a href={data.hero.link_1} >
+                      <a href={data.hero.link_1} target="_blank">
                         <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4] ">
                           {data.hero.button_1}
                         </button>
@@ -365,7 +365,7 @@ export default function Home(): JSX.Element {
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl lg:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 lg:justify-start">
-              <a href={data.hero.link_1}>
+              <a href={data.hero.link_1} target="_blank">
                 <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
                   {data.hero.button_1}
                 </button>
