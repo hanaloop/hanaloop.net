@@ -4,6 +4,7 @@ export const content = {
   title_1 : <p>Hana Loop Net-Zero network drives customers, partners, and collaborating organizations <br/>to accelerate their carbon neutrality.</p>,
   title_2 : "Why does your company need to manage carbon?",
   title_3 : "Hana.eco, recognized for its compliance, supports you.",
+  subtitle_3: "Received the first domestic verification opinion from Lloyd's Register (LRQA) for compliance with the Emissions Trading Scheme and the EU Carbon Border Adjustment Mechanism.",
   title_4: "Manage your carbon emissions with Hana.eco.",
 };
 
@@ -17,6 +18,24 @@ export const hero = {
   button_2 : "Contact Us",
   link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw",
   link_2: "/demo_request",
+}
+
+export const carbon_buddy = {
+  title : "Hana.eco Leverages AI for Intuitive Carbon Management.",
+  contents : [
+    {
+      sub_title : "Rapid Regulatory Insight and Response",
+      sub_description : "Generative AI enables swift comprehension and reaction to the latest regulations.",
+    },
+    {
+      sub_title : "User-Friendly Data Analysis",
+      sub_description : "Deep learning-based methods simplify data understanding and utilization.",
+    },
+    {
+      sub_title : "Effortless Report Generation",
+      sub_description : "Instantly create necessary reports with ease in real time.",
+    },
+  ]
 }
 
 export const directory = {
