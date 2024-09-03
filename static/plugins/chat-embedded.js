@@ -45,7 +45,7 @@ function init() {
 
   const iframe = document.createElement("iframe");
   // iframe.src = "http://localhost:3000/knoa/chat_plugin";
-  iframe.src = "https://ggeea.hanademo.eco/knoa/chat_plugin";
+  iframe.src = "https://www.hana.eco/knoa/chat_plugin";
   iframeContainer.appendChild(iframe);
   iframe.classList.add("knoa-iframe");
   iframe.frameBorder = 0;
