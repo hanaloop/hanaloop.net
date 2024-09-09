@@ -399,7 +399,7 @@ export default function Home(): JSX.Element {
               </div>
             </SectionBlock>
           </motion.div>
-        </div>s
+        </div>
         <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col w-[80%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
