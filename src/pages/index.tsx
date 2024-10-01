@@ -347,7 +347,7 @@ export default function Home(): JSX.Element {
                               </div>
                             </div>
                             <div className="w-full h-[200px] bg-white rounded-lg">
-                              <img src={item.img} className="w-full h-full rounded-lg" />
+                              <img src={item.img} className="w-full h-full rounded-lg" alt={`${item.title} logo image`}/>
                             </div>
                           </div>
                         );
