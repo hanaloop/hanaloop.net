@@ -54,11 +54,11 @@ export default function Home(): JSX.Element {
 
 
       <SectionBlock title={data.content.section2_title} containerStyle='bg-gray-100'>
-        <div className="my-5 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
+        <div className="my-5 p-2 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
           {data.benefits.map(benefit => 
           <div className="text-center" key={benefit.title}> 
             <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
-            <article className="h-32 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
+            <article className="h-40 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
               {benefit.description}
             </article>
           </div>

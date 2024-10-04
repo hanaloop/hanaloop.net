@@ -1,7 +1,7 @@
 type SectionBlockProp = {
-  title?: string;
+  title?: React.ReactNode;
   containerStyle?: string;
-  children: JSX.Element;
+  children: React.ReactNode;
 };
 
 export default function SectionBlock({ title, containerStyle, children }: SectionBlockProp) {

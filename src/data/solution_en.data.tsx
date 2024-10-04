@@ -9,12 +9,12 @@ export const intro: DisplayItem[] = [
   {
     title: "Sustainable Digital Transformation",
     // subtitle: "Sustainable Digital Transformation",
-    description: "In sync with the swiftly evolving business landscape and market requirements, we harness digital technology to optimize our customers' potential and business value. Going beyond technology, we cultivate a positive corporate culture to enhance customer satisfaction and boost productivity within their organizations."
+    description: "Aligned with the rapidly changing business landscape and market demands, we leverage digital technology to maximize our customers' potential and enhance their business value. Beyond technology, we foster a positive corporate culture that elevates customer satisfaction and boosts productivity within their organizations."
   },
   {
     title: "Comprehensive Sustainability Solution",
     // subtitle: "Comprehensive Sustainability Solution",
-    description: "Through offering guidance on environmental regulations and market insights, our platform facilitates the rapid exploration and transactions of eco-friendly technologies. This, in turn, promotes the establishment of cleaner value chains, assisting our customers in achieving sustainable growth. Ultimately, our contribution aims to foster the evolution of a more responsible and ethical industry."
+    description: "By providing guidance on environmental regulations and market insights, our platform accelerates the exploration and adoption of eco-friendly technologies. This fosters the development of cleaner value chains, helping our customers achieve sustainable growth. Ultimately, our goal is to promote the evolution of a more responsible and ethical industry."
   }
 ]
 

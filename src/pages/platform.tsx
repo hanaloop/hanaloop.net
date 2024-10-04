@@ -46,7 +46,7 @@ export default function Home(): JSX.Element {
         <div className="flex justify-center">
           <div className="w-4/5 ">
             <div className="text-center text-2xl italic">{data.content.section1_quote}</div>
-            <div className="text-right text-sm text-gray-600  whitespace-nowrap">- 피터 드러커 (Peter Drucker)</div>
+            <div className="text-right text-sm text-gray-600  whitespace-nowrap">- Peter Drucker (피터 드러커)</div>
           </div>
         </div>
         <br/>
@@ -60,7 +60,7 @@ export default function Home(): JSX.Element {
               </div>
             </div>
             <div className="flex justify-center">
-              <img className="w-96 h-64 drop-shadow" src={useBaseUrl("/images/product-ecoloop.jpeg")} />
+              <img className="h-64 rounded-md drop-shadow-md" src={useBaseUrl("/images/product-ecoloop.jpg")} alt="Hana.eco dashboard" />
             </div>
 
           </div>

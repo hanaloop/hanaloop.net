@@ -1,4 +1,11 @@
 
+export interface PageSection {
+  title: string,
+  subtitle?: string,
+  icon?: React.ReactNode
+  items?: DisplayItem[]
+};
+
 export type DisplayItem = {
   icon?: any,
   imageUrl?: string,

@@ -7,11 +7,11 @@ export const content = {
   hero_tagline: "A Reliable and Agile Sustainability Partner",
 
   hanaloop_title: "Making a big difference with one connection",
-  hanaloop_body: `Hana Loop Co., Ltd. is actively contributing to the enhancement of the global environment. 
-  We are introducing a digital framework to establish a sustainable ecosystem, offering tailored solutions and incorporating stable carbon-neutral management technologies crucial for industrial and corporate settings. 
-  Our focus is on developing digital innovations essential for both the environment and industries, empowering individuals to autonomously contribute to environmental causes and providing access to universal technologies. 
-  At Hana Loop, we are at the forefront of pioneering a sustainable net-zero environment. As a digital technology service, Hana Loop benefits both people and nature, creating a significant impact through seamless connections to promote sustainable living for everyone. 
-  Hanaloop: Your environmental partner, fostering a healthier planet through digital innovation technology.`,
+  hanaloop_body: <><p>HanaLoop Co., Ltd. is actively contributing to the enhancement of the global environment. 
+  We are introducing a <em>digital framework to establish a sustainable ecosystem</em>, offering tailored solutions and incorporating stable carbon-neutral management technologies crucial for industrial and corporate settings. </p>
+  <p>Our focus is on developing digital innovations essential for both the environment and industries, empowering individuals to autonomously contribute to environmental causes and providing access to universal technologies. </p>
+  <p>At <em>HanaLoop</em>, we are at the forefront of pioneering a sustainable net-zero environment. As a digital technology service, Hana Loop benefits both people and nature, creating a significant impact through seamless connections to promote sustainable living for everyone. 
+  Hanaloop: Your environmental partner, fostering a healthier planet through digital innovation technology.</p></>,
 
   vision_title: "Vision",
   vision_body: "Our vision is to embody the principles of 'Hongik Ingan'(To broadly benefit the human world) by facilitating the transition to a clean and sustainable world.",
@@ -30,7 +30,8 @@ export const content = {
   </ul></>,
 
   culture_title: "Culture",
-  culture_body: "We consistently pursue growth to identify challenges, explore solutions, and deliver the most effective results using cutting-edge technologies. Our ambition is to take a leading role in fostering positive and healthy transformations within the society to which we belong.",
+  culture_body: <>We are dedicated to continuous growth, seeking out challenges, exploring innovative solutions, and delivering effective results through cutting-edge technologies. <br/> 
+  Our ambition is to lead positive and healthy transformations within the communities we serve.</>,
 
   team: "Team",
 
@@ -101,6 +102,14 @@ export const members = {
     "tagline": "To solve environmental problems with technology",
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming."
+  },
+  "jdpark": {
+    "name": "JD Park",
+    "name_alt": "박정도",
+    "image_url": "/images/hanaloop-logo.png",
+    "title": "Developer",
+    "tagline": "Addressing climate issue one at a time",
+    "education": "Incheon University"
   },
   "hana": {
     "type": "system",

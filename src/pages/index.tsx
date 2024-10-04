@@ -114,7 +114,7 @@ export default function Home(): JSX.Element {
                   <div className="w-[80%] md:w-[60%] xl:w-full flex flex-col items-center justify-center">
                     <div className="flex flex-col text-left shadow-lg rounded-md items-center">
                       <div className="">
-                        <img src="https://www.hana.eco/images/hanaeco_dashboard1.png" height="100px" alt="hanaeco" className="rounded-xl" />
+                        <img src="https://www.hana.eco/images/hanaeco_dashboard1.png" height="100px" alt="hana.eco main" className="rounded-md" />
                       </div>
                     </div>
                   </div>
@@ -202,56 +202,56 @@ export default function Home(): JSX.Element {
             </SectionBlock>
           </div>
         </motion.div>
-        {/* 3. 우리 회사도 탄소관리 필요할까요? */}
-          <div className="w-screen flex justify-center bg-gray-50">
-            <motion.div
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { duration: 1 },
-            }}
-          >
-                <SectionBlock title={data.content.title_2}>
-                  <div className="px-10 ">
-                    <div className="xl:grid xl:grid-cols-2 gap-10">
-                      {data.elements.map((item, ndx) => {
-                        const svgKey = `section3_svg_${ndx + 1}`;
-                        const SvgComponent = section3_svgs[svgKey];
 
-                        const lines = item.description as string[];
-                        return (
-                          <div
-                            className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
-                            key={ndx}
-                          >
-                            <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
-                              <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
-                              <div className="xl:text-xl text-lg font-bold">
-                                <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
-                                  <h3 className="py-2 inline ">{item.title}</h3>
-                                </div>
-                              </div>
-                              <div className="[word-break:keep-all] w-full">
-                                <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.subtitle}</h4>
-                                <ul className="list-none xl:text-md text-sm text-left">
-                                  {lines.map((line, ndx: number) => (
-                                    <li className="flex items-center gap-2" key={ndx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{line}</div></li>
-                                  ))}
-                                </ul>
+        {/* 3. 우리 회사도 탄소관리 필요할까요? */}
+        <div className="w-screen flex justify-center bg-gray-50">
+          <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+              <SectionBlock title={data.content.title_2}>
+                <div className="px-10 ">
+                  <div className="xl:grid xl:grid-cols-2 gap-10">
+                    {data.elements.map((item, ndx) => {
+                      const svgKey = `section3_svg_${ndx + 1}`;
+                      const SvgComponent = section3_svgs[svgKey];
+
+                      const lines = item.description as string[];
+                      return (
+                        <div
+                          className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                          key={ndx}
+                        >
+                          <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
+                            <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                            <div className="xl:text-xl text-lg font-bold">
+                              <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
+                                <h3 className="py-2 inline ">{item.title}</h3>
                               </div>
                             </div>
+                            <div className="[word-break:keep-all] w-full">
+                              <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.subtitle}</h4>
+                              <ul className="list-none xl:text-md text-sm text-left">
+                                {lines.map((line, ndx: number) => (
+                                  <li className="flex items-center gap-2" key={ndx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{line}</div></li>
+                                ))}
+                              </ul>
+                            </div>
                           </div>
-                        );
-                      })}
-                    </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                </SectionBlock>
-              </motion.div>
-          </div>
+                </div>
+              </SectionBlock>
+            </motion.div>
+        </div>
         
-
         {/* 4. 하나에코가 지원합니다. */}
         
         <div className="w-screen">

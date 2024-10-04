@@ -1,137 +1,86 @@
 import { DisplayItem } from "../libs/types";
 
-export const content = {
-  title_1 : <p>Hana Loop Net-Zero network drives customers, partners, and collaborating organizations <br/>to accelerate their carbon neutrality.</p>,
-  title_2 : "Why does your company need to manage carbon?",
-  title_3 : "Hana.eco, recognized for its compliance, supports you.",
-  subtitle_3: "Received the first domestic verification opinion from Lloyd's Register (LRQA) for compliance with the Emissions Trading Scheme and the EU Carbon Border Adjustment Mechanism.",
-  title_4: "Manage your carbon emissions with Hana.eco.",
-};
 
 export const hero = {
   title_1 : "",
   title_2 : "Optimize Carbon Footprint Management with AI-Powered ",
   title_link : "Hana.eco",
-  subtitle_1 : "Proactive carbon management positions businesses for success.",
-  subtitle_2 : "It streamlines compliance with tightening regulations like EU CBAM, IFRS ISSB, and ESG reporting, while reducing energy costs and mitigating climate risks.",
+  subtitle_1 : "Take proactive control of your carbon emissions, reduce energy costs, mitigate risks, and bolster your resilience to climate change.",
+  subtitle_2 : "Simplify compliance with EU CBAM, IFRS/ISSB, and ESG reporting requirements to stay competitive in a sustainable future.",
   button_1 : "Learn More",
   button_2 : "Contact Us",
   link_1: "https://docs.google.com/presentation/d/1tXsGFdsumpS7bB7SPkwSGpS4-9GcVWlGzMjRTCZRvNw",
   link_2: "/demo_request",
 }
 
+// TODO: Remove this, use Section instead
+export const content = {
+  title_1 : <span>The HanaLoop Net-Zero Network empowers customers, partners, and collaborators to accelerate their journey toward carbon neutrality</span>,
+  title_2 : "Why Does Your Company Need to Manage Carbon?",
+  title_3 : "Hana.eco: A trusted platform you can rely on!",
+  subtitle_3: "Hana.eco is a leader in carbon management, being the first company to receive verification from Lloyd's Register (LRQA) for compliance with both the Korea Emissions Trading Scheme and the EU Carbon Border Adjustment Mechanism.",
+  title_4: "Manage your carbon emissions with Hana.eco",
+};
+
+
 export const carbon_buddy = {
-  title : "Hana.eco Leverages AI for Intuitive Carbon Management.",
+  title : "Hana.eco Leverages AI for Intuitive Carbon Management",
   contents : [
     {
       sub_title : "Rapid Regulatory Insight and Response",
-      sub_description : "Generative AI enables swift comprehension and reaction to the latest regulations.",
+      sub_description : "Generative AI enables swift comprehension and reaction to the latest regulations",
     },
     {
       sub_title : "User-Friendly Data Analysis",
-      sub_description : "Deep learning-based methods simplify data understanding and utilization.",
+      sub_description : "Machine Learning-based methods simplify data understanding and utilization",
     },
     {
       sub_title : "Effortless Report Generation",
-      sub_description : "Instantly create necessary reports with ease in real time.",
+      sub_description : "Instantly create necessary reports with ease in real time",
     },
   ]
 }
 
-export const directory = {
-  title : "HanaLoop supports you on your journey to carbon neutrality.",
-  subtitle : "Navigate the evolving landscape of climate regulations and disclosure requirements with ease. HanaLoop's sustainability digital transformation solution together with specialist network will support you in streamlining compliance, future-proofing your business, and unlocking opportunities in the sustainable marketplace – all tailored to your company's unique needs.",
-  contents : [
-      {
-        title: "IFRS S1, S2",
-        subtitle: "ISSB, under the International Financial Reporting Standards Foundation (IFRS), has finalized global sustainability disclosure regulations through IFRS S1 (general) and S2 (climate). Companies need to establish and implement strategies to manage sustainability-related risks and achieve reduction goals in accordance with disclosure standards.",
-        link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
-        img: "/images/directory_1.jpg",
-      },
-      {
-        title: "CBAM",
-        subtitle: "The European Union has implemented the Carbon Border Adjustment Mechanism (CBAM) which affects business exporting to EU. Like the EU, other regions such as the US, the UK, and Japan are considering introducing similar systems. Consequently, the analysis and reduction of carbon emissions have become essential for international trade.",
-        link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
-        img: "/images/directory_2.jpg",
-      },
-      {
-        title: "Scope 3",
-        subtitle: "The scope of carbon emission management in business activities has expanded to encompass the entire value chain. It is now essential to consider the carbon emissions of partners, supply chains, and customers. To comply with various regulations and disclosure requirements aimed at carbon reduction, such as ESG, PCAF, IFRS, CDP, and CSDDD, calculating Scope 3 emissions is becoming increasingly important.",
-        link: "https://brunch.co.kr/@hanaloop/3",
-        img: "/images/directory_3.jpg",
-      },
-    ],
-}
-
-export const request = {
-  title : "Start systematic carbon management with Hana.eco",
-  button_1 : "Learn More",
-  button_2 : "Contact us",
-}
-
+// Todo: Use PageSection
 export const elements: DisplayItem[] = [
   {
-    title: "You are subject to climate and environmental regulations",
-    subtitle: "You must comply with increasingly stringent domestic and international regulations.",
+    title: "Compliance to Climate and Environmental Regulations",
+    subtitle: "Domestic and international climate regulations are becoming increasingly stringent",
     imageUrl: "/images/platform/card-cbam_pic.jpeg",
     description: [
-      <span key="1">
-        <b>Emissions Trading Scheme, Target Management System</b>
-      </span>,
-      <span key="2">
-        <b>EU Carbon Border Adjustment Mechanism (CBAM), Battery Regulation</b>
-      </span>,
-      <span key="3">
-        <b>Supply Chain Due Diligence (CSDDD)</b>{" "}
-      </span>,
+        <b>Emissions Trading Scheme, Target Management System</b>,
+        <b>EU Carbon Border Adjustment Mechanism (CBAM), Battery Regulation, Corporate Sustainability Due Diligence (CSDDD)</b>,
+        <b>California’s SB253/SB261</b>,
     ],
   },
   {
-    title: "Your customers are leading enterprise in ESG and carbon neutrality efforts",
-    subtitle: "Your customers are managing their supply chains (Scope 3), and you need to respond to their needs.",
+    title: "Requests from Customers Undergoing ESG and Carbon Neutrality Efforts",
+    subtitle: "Your customers are managing their supply chains (Scope 3), and you need to respond to their needs",
     imageUrl: "/images/platform/card-standards_pic.jpeg",
     description: [
-      <span key="1">
-        <b>Scope 1, Scope 2 data</b>{" "}
-      </span>,
-      <span key="2">
-        <b>Scope 3</b>
-      </span>,
-      <span key="3">
-        <b>Product Carbon Footprint (PCF)</b>{" "}
-      </span>,
+        <b>Scope 1, Scope 2 data</b>,
+        <b>Scope 3 and value chain emission data</b>,
+        <b>Product Carbon Footprint (PCF)</b>,
     ],
   },
   {
-    title: "Your investors and shareholders are demanding carbon disclosures",
-    subtitle: "You need to address double materiality disclosure requirements for investors, lenders, and board members.",
+    title: "Demands from Investors and Shareholders for Carbon Disclosures",
+    subtitle: "You need to address materiality disclosure requirements for investors, lenders, and board members",
     imageUrl: "/images/platform/card-scope3_pic.jpeg",
     description: [
-      <span key="1">
-        <b>CDP</b>
-      </span>,
-      <span key="2">
-        <b>IFRS S1, S2</b>{" "}
-      </span>,
-      <span key="3">
-        <b>GRI and other Sustainability Reports</b>
-      </span>,
+        <b>IFRS S1, S2</b>,
+        <b>CDP</b>,
+        <b>GRI and other Sustainability Reports</b>,
     ],
   },
   {
-    title: "Your company is leading sustainability initiative to improve branding",
-    subtitle: "There is a growing trend of eco-conscious consumers. Without proper data, greenwashing could negatively impact your business.",
+    title: "Improve Branding to Stay Competitive in the Market ",
+    subtitle: "There is a growing trend of eco-conscious consumers. Without proper data, greenwashing could negatively impact your business",
     imageUrl: "/images/platform/card-products.jpeg",
     description: [
-      <span key="0">
-        <b>Transparent Environmental Impact Disclosure</b>
-      </span>,
-      <span key="1">
-        <b>Sustainability Metrics Disclosure</b>{" "}
-      </span>,
-      <span key="2">
-        <b> Sustainability Report</b>{" "}
-      </span>,
+        <b>Transparent Environmental Impact Disclosure</b>,
+        <b>Sustainability Metrics Disclosure</b>,
+        <b>Commitment to SBTi</b>,
     ],
   },
 ];
@@ -143,50 +92,32 @@ export const elements_2: DisplayItem[] = [
     subtitle: "Carbon Border Adjustment Mechanism",
     imageUrl: "/images/platform/card-cbam_pic.jpeg",
     description: [
-      <span key="1">
-        <b>Product Management</b>
-      </span>,
-      <span key="2">
-        <b>Raw Material Supply Management</b>
-      </span>,
-      <span key="3">
-        <b>CBAM Report Generation</b>{" "}
-      </span>,
-      <span key="3">
-        <b>Emission Factor Catalog</b>{" "}
-      </span>,
+        <b>Product Management</b>,
+        <b>Precursor (Raw Material) Supply Management</b>,
+        <b>CBAM Report Generation</b>,
+        <b>Emission Factors Catalog</b>,
     ],
   },
   {
-    title: "Compliance with the Korea Emissions Trading Scheme",
+    title: "Compliance with the Korea ETS",
     subtitle: "Korea Emissions Trading System",
     imageUrl: "/images/platform/card-standards_pic.jpeg",
     description: [
-      <span key="1">
-        <b>Verification-Grade Data & Evidence Sata</b>
-      </span>,
-      <span key="2">
-        <b>Carbon Accounting</b>
-      </span>,
-      <span key="3">
-        <b>Emission Target Setting Scenario Analysis</b>{" "}
-      </span>,
+        <b>Verification-Grade Data & Evidence Data</b>,
+        <b>Carbon Accounting</b>,
+        <b>Emission Target Setting</b>,
+        <b>Target Management</b>,
     ],
   },
   {
-    title: "Support for IFRS(TCFD) / CDP / GRI ",
+    title: "Support for IFRS(TCFD) ISSB / CDP / GRI ",
     subtitle: "Climate Normatives, Frameworks and Standards",
     imageUrl: "/images/platform/card-scope3_pic.jpeg",
     description: [
-      <span key="1">
-        <b>Data Required in Standard Reports</b>
-      </span>,
-      <span key="2">
-        <b>Risk Management</b>{" "}
-      </span>,
-      <span key="3">
+        <b>Management of Data Required in Standard</b>,
+        <b>Environment Management Governance</b>,
+        <b>Risk Management</b>,
         <b>Emission Scenario Analysis</b>
-      </span>,
     ],
   },
   {
@@ -194,37 +125,50 @@ export const elements_2: DisplayItem[] = [
     subtitle: "ESG Data Including the Value Chain",
     imageUrl: "/images/platform/card-products.jpeg",
     description: [
-      <span key="0">
-        <b>Qualitative Data Management</b>
-      </span>,
-      <span key="1">
-        <b>Partner Management and Supply Chain Tracking</b>{" "}
-      </span>,
-      <span key="2">
-        <b>Provision of Industry Standard Emission Factors for Scope 3</b>{" "}
-      </span>,
+        <b>Qualitative Data Management</b>,
+        <b>Partner (Supplier) Management</b>,
+        <b>Industry Standard Emission Factors</b>,
+        <b>Supplier specific, Hybrid, and Spend-based calculation methods</b>,
     ],
   },
   {
-    title: "Product Carbon Footprint Management",
+    title: "PCF Management",
     subtitle: "Product Carbon Footprint",
     imageUrl: "/images/platform/card-products.jpeg",
     description: [
-      <span key="0">
-        <b>Calculation of LCA Carbon Footprint</b>
-      </span>,
-      <span key="1">
-        <b>Calculation of Emission in Processes</b>
-      </span>,
-      <span key="2">
-        <b>Management of Embedded Emissions in Raw Materials</b>
-      </span>,
-      <span key="3">
-        <b>Cost Efficiency Analysis</b>
-      </span>,
+        <b>Calculation of LCA Carbon Footprint</b>,
+        <b>Calculation of Emission in Processes</b>,
+        <b>Management of Embedded Emissions in Raw Materials</b>,
+        <b>Cost Efficiency Analysis</b>,
     ],
   },
 ];
+
+
+export const directory = {
+  title : "HanaLoop, your trusted partner in climate compliance",
+  subtitle : "We help you navigate the complex and evolving landscape of climate regulations and disclosure requirements with confidence. HanaLoop’s digital sustainability solution, backed by our network of specialists, streamlines compliance, future-proofs your business, and unlocks opportunities in the sustainable marketplace—all tailored to meet your company’s unique needs.",
+  contents : [
+      {
+        title: "IFRS/ISSB S1, S2",
+        subtitle: "Numerous reporting standards—such as TCFD, SASB, CDSB, Integrated Reporting (IR), and Value Reporting (VR)—have been consolidated into the International Financial Reporting Standards (IFRS) Foundation’s ISSB S1 and S2. Starting in 2025, companies in various jurisdictions will be required to implement these standards.",
+        link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
+        img: "/images/directory_1.jpg",
+      },
+      {
+        title: "CBAM",
+        subtitle: "The EU’s Carbon Border Adjustment Mechanism (CBAM) came into effect in late 2023, initially targeting steel, aluminum, and four other key sectors. Other regions, including the US, UK, and Japan, are considering similar systems. As a result, analyzing and reducing carbon emissions has become essential for businesses engaged in international trade.",
+        link: "https://www.hanaloop.com/docs/x20_environment-general/2024-01-20-cbam-compliance",
+        img: "/images/directory_2.jpg",
+      },
+      {
+        title: "Scope 3",
+        subtitle: "The scope of carbon emissions management in business activities has expanded to cover the entire value chain, making it essential to account for the emissions of partners, supply chains, and customers. To comply with regulations and disclosure requirements aimed at carbon reduction—such as IFRS, CDP, PCAF, and CSDDD—accurately calculating Scope 3 emissions is becoming increasingly important.",
+        link: "https://brunch.co.kr/@hanaloop/3",
+        img: "/images/directory_3.jpg",
+      },
+    ],
+}
 
 export const features: DisplayItem[] = [
   {
@@ -241,7 +185,7 @@ export const features: DisplayItem[] = [
   {
     icon: "",
     title: "Strategy",
-    description: "Manage targets by visualizing greenhouse gas emissions and utilizing artificial intelligence. Adopt reduction strategies based on cost-effectiveness analysis, and monitor and track climate actions.",
+    description: "Manage targets by visualizing greenhouse gas emissions and utilizing artificial intelligence. Adopt reduction strategies based on cost-effectiveness analysis, and identify, monitor and track climate risk and opportunities.",
   },
   {
     icon: "",
@@ -252,49 +196,49 @@ export const features: DisplayItem[] = [
 
 export const customers: DisplayItem[] = [
   {
-    title: "이마트",
+    title: "Emart",
     sourceUrl: "https://store.emart.com/main/main.do",
     imageUrl: "/images/partners/partner-emart_logo.png",
     description: "고객사 | ESG경영 선도기업 이마트",
     imgHeight: 4
   },
   {
-    title: "벽산",
+    title: "Byucksan",
     sourceUrl: "http://www.byucksan.com/",
     imageUrl: "/images/partners/byucksan-logo.png",
     description: "고객사 | 늘 푸른 산처럼 아름다운 생활공간을 창조 | 지속가능경영 혁신기업",
     imgHeight: 6
   },
   {
-    title: "서경빌딩",
+    title: "Seokyung BUilding",
     sourceUrl: "https://naver.me/FKKMDLip",
     imageUrl: "/images/partners/seokyungbuildng-logo.png",
     description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물",
     imgHeight: 6
   },
   {
-    title: "삼아알미늄",
+    title: "SAMA Aluminium",
     sourceUrl: "https://www.sama-al.com/",
     imageUrl: "/images/partners/samaalminum-logo.png",
     description: "고객사 | 고품질의 알루미늄 호일 및 포장재 생산 기술",
     imgHeight: 4
   },
   {
-    title: "대호에이엘",
+    title: "Daeho Aluminium",
     sourceUrl: "http://www.daeho-al.com/",
     imageUrl: "/images/partners/daehoal-logo.png",
     description: "고객사 | 알루미늄, 철도자량, 청정환기시스템",
     imgHeight: 4
   },
   {
-    title: "삼양스틸",
+    title: "Samyang Steel",
     sourceUrl: "https://www.samyangchem.co.kr/better/steel.php",
     imageUrl: "https://www.samyangchem.co.kr/images/common/logo.svg",
     description: "고객사 | 고품질 라미네이팅 강판 생산",
     imgHeight: 4
   },
   {
-    title: "동인화학",
+    title: "Dongin Chemical",
     sourceUrl: "https://www.donginchem.co.kr/",
     imageUrl: "https://www.donginchem.co.kr/imz/mainlogo2.jpg?v=1",
     description: "고객사 | 항공우주 산업 및 위성사업",
@@ -308,28 +252,28 @@ export const customers: DisplayItem[] = [
     imgHeight: 7
   },
   {
-    title: "넷제로 2050 기후재단",
+    title: "Net Zero 2050 Foundation",
     sourceUrl: "http://netzero2050.or.kr/",
     imageUrl: "/images/partners/netzero2050_climatefoundation-logo.png",
     description: "파트너사 | 2050년까지 이산화탄소 배출을 완전히 제거하여 탄소중립을 달성하기 위한 국제사회, 정부와 기업, 지구촌 시민사회의 노력을 적극 지원하고 실천 동기를 부여하고 있음",
     imgHeight: 6
   },
   {
-    title: "(주)켐토피아",
+    title: "Chemtopia",
     sourceUrl: "http://www.chemtopia.net/",
     imageUrl: "/images/partners/partner-chemtopia_logo.png",
     description: "파트너사 | Korea's Leading Regulatory compliance company",
     imgHeight: 6
   },
   {
-    title: "로엔컨설팅",
+    title: "Roen Consulting",
     sourceUrl: "http://www.roenconsulting.com/main/index.html",
     imageUrl: "/images/partners/partner-roen_logo.png",
     description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
     imgHeight: 8
   },
   {
-    title: "한컨설팅그룹",
+    title: "Han Consulting",
     sourceUrl: "https://hcg.kr",
     imageUrl: "/images/partners/partner-hanconsulting_logo.png",
     description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅",
@@ -343,56 +287,56 @@ export const customers: DisplayItem[] = [
     imgHeight: 12
   },
   {
-    title: "지속가능발전경영센터",
+    title: "k-SDMI",
     sourceUrl: "http://k-sdmi.co.kr/",
     imageUrl: "/images/partners/SDMI.jpeg",
     description: "파트너사 | 지속가능발전에 관한 정책과 기업의 지속가능성장에 필요한 컨설팅 제공",
     imgHeight: 6
   },
   {
-    title: "미래이앤아이",
+    title: "Mirae E&I",
     sourceUrl: "http://www.fa119.com/main",
     imageUrl: "/images/partners/FA119.png",
     description: "파트너사 | 공장자동제어 센서신호처리 분야의 전문 제조업체",
     imgHeight: 8
   },
   {
-    title: "아이이에스지",
+    title: "I-ESG",
     sourceUrl: "https://i-esg.io/",
     imageUrl: "/images/partners/IESG-logo.png",
     description: "파트너사 | 데이터 기반 ESG 특화 통합 디지털 솔루션 제공",
     imgHeight: 4
   },
   {
-    title: "슬록",
+    title: "SLOC",
     sourceUrl: "http://www.sloc.or.kr/",
     imageUrl: "/images/partners/SLOC.png",
     description: "파트너사 | 뷰티기업 지속가능성 검증 및 컨설팅 제공",
     imgHeight: 4
   },
   {
-    title: "샘물터",
+    title: "Saemmulter",
     sourceUrl: "https://saemmulter.com/",
     imageUrl: "https://saemmulter.com/images/logo.svg",
     description: "파트너사 | 지하수 솔루션 전문 회사",
     imgHeight: 10
   },
   {
-    title: "휙페이",
+    title: "Hwikpay",
     sourceUrl: "https://hwikpay.com/",
     imageUrl: "/images/partners/hwikpay.png",
     description: "파트너사 | 스마트 공유 경제 플랫폼인 TAGLO는 멀티 레이어를 통해 휙 생태계를 확장합니다. ",
     imgHeight: 8
   },
   {
-    title: "디토이에스지",
+    title: "Dito ESG",
     sourceUrl: "https://www.ditoesg.ai/",
     imageUrl: "/images/partners/DITOESG.jpeg",
     description: "파트너사 | 사회적 가치와 재무적 성과를 연계한 ESG 솔루션 제공",
     imgHeight: 8
   },
   {
-    title: "로이드인증원",
+    title: "LRQA (Lloyd)",
     sourceUrl: "https://www.lrqa.com/ko-kr/",
     imageUrl: "/images/partners/LRQA.jpg",
     description: "파트너사 | 글로벌 인증 및 검증 서비스를 제공",
@@ -427,3 +371,10 @@ export const customers: DisplayItem[] = [
     imgHeight: 10
   },
 ]
+
+
+export const request = {
+  title : "Take Your Carbon Management to the Next Level with Hana.eco",
+  button_1 : "Learn More",
+  button_2 : "Contact us",
+}
