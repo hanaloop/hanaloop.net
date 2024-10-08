@@ -5,6 +5,8 @@
  */
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 svg {
   @apply inline
@@ -64,12 +66,11 @@ article a {
 }
 
 article a:hover {
-  @apply underline text-blue-500;
+  @apply underline text-blue-700;
 }
 
 
-@tailwind components;
-@tailwind utilities;
+
 
 /* You can override the default Infima variables here. */
 :root {
