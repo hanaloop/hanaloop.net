@@ -250,6 +250,13 @@ export const customers: PageSection = {
       imgHeight: 7
     },
     {
+      title: "두산에너지빌리티",
+      sourceUrl: "https://www.doosanenerbility.com/kr",
+      imageUrl: "/images/partners/DOOSAN_Enerbility.png",
+      description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급하고 있다.",
+      imgHeight: 7
+    },
+    {
       title: "넷제로 2050 기후재단",
       sourceUrl: "http://netzero2050.or.kr/",
       imageUrl: "/images/partners/netzero2050_climatefoundation-logo.png",
@@ -268,7 +275,7 @@ export const customers: PageSection = {
       sourceUrl: "http://www.roenconsulting.com/main/index.html",
       imageUrl: "/images/partners/partner-roen_logo.png",
       description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
-      imgHeight: 8
+      imgHeight: 7
     },
     {
       title: "한컨설팅그룹",
