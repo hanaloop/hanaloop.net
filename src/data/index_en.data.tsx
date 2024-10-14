@@ -249,13 +249,13 @@ export const customers: PageSection = {
       description: "고객사 | 환경분야 전문 기관 설립을 통한 환경 사업의 공공성과 도민에게 제공되는 환경서비스 질 제고",
       imgHeight: 7
     },
-    {
-      title: "Doosan Enerbility",
-      sourceUrl: "https://www.doosanenerbility.com/kr",
-      imageUrl: "/images/partners/DOOSAN_Enerbility.png",
-      description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급하고 있다.",
-      imgHeight: 7
-    },
+    // {
+    //   title: "Doosan Enerbility",
+    //   sourceUrl: "https://www.doosanenerbility.com/kr",
+    //   imageUrl: "/images/partners/DOOSAN_Enerbility.png",
+    //   description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급하고 있다.",
+    //   imgHeight: 7
+    // },
     {
       title: "Net Zero 2050 Foundation",
       sourceUrl: "http://netzero2050.or.kr/",
