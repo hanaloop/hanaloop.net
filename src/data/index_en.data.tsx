@@ -243,10 +243,17 @@ export const customers: PageSection = {
       imgHeight: 6
     },
     {
-      title: "경기환경에너지진흥원",
+      title: "Gyeonggi Environmental Energy Agency",
       sourceUrl: "https://www.ggeea.or.kr/index.php",
       imageUrl: "https://www.ggeea.or.kr/theme/ggeea/img/logo.png",
       description: "고객사 | 환경분야 전문 기관 설립을 통한 환경 사업의 공공성과 도민에게 제공되는 환경서비스 질 제고",
+      imgHeight: 7
+    },
+    {
+      title: "Doosan Enerbility",
+      sourceUrl: "https://www.doosanenerbility.com/kr",
+      imageUrl: "/images/partners/DOOSAN_Enerbility.png",
+      description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급하고 있다.",
       imgHeight: 7
     },
     {
@@ -341,28 +348,28 @@ export const customers: PageSection = {
       imgHeight: 4
     },
     {
-      title: "중소벤처기업부",
+      title: "Ministry of SMEs and Startups",
       sourceUrl: "https://www.mss.go.kr/site/smba/main.do",
       imageUrl: "/images/partners/korea-mss-gov.png",
       description: "지원 기관 | 활력 중소기업, 함께 잘사는 나라",
       imgHeight: 6
     },
     {
-      title: "중소기업기술정보진흥원",
+      title: "Korea Technology and Information Promotion Agency for SMEs",
       sourceUrl: "https://www.tipa.or.kr/",
       imageUrl: "/images/partners/TIPA.png",
       description: "지원 기관 | 중소기업의 R&D 파트너",
       imgHeight: 10
     },
     {
-      title: "서울소셜벤처허브",
+      title: "SEOUL SOCIAL VENTURE HUB",
       sourceUrl: "https://svhc.or.kr/",
       imageUrl: "/images/partners/seoulsocialventurehub-logo.png",
       description: "지원 기관 | 소셜벤처를 지원",
       imgHeight: 6
     },
     {
-      title: "하이서울기업협회",
+      title: "Hi-Seoul Biz company Association",
       sourceUrl: "https://www.hiseoulbiz.org/",
       imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
       description: "협력 기관 | 기업 성장 지원",
