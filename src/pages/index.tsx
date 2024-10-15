@@ -144,7 +144,7 @@ export default function Home(): JSX.Element {
                         <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
                           <Link href={item.sourceUrl!}>
                             <a target="_blank">
-                              <img className={`h-${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
+                              <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
                             </a>
                           </Link>
                         </div>
