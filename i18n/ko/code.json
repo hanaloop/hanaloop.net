@@ -287,10 +287,10 @@
     "description": "The unlisted content banner message"
   },
   "index.meta_title": {
-    "message": "기후규제 대응 탄소관리 플랫폼, 탄소회계 솔루션, 탄소중립 플랫폼 | 솔루션, 스코프3 관리, 제품 내재배출량, LCA"
+    "message": "기후규제 대응 탄소관리 플랫폼, 기후 경영, 탄소중립, 탄소회계 솔루션, 탄소발자국, 스코프3 관리, CBAM 준수, LCA"
   },
   "index.meta_description": {
-    "message": "기후규제 대응 탄소관리 플랫폼, 기후규제 대응 온실가스관리, 탄소회계 솔루션, EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 보고서, CBAM 보고서 컨설팅, CBAM 솔루션, 생성형 AI 탄소중립 챗봇, 탄소중립 디지털 코파일럿, 카본버디, LCA, 배출권거래제 대응 지원 솔루션, 목표관리제 대응 지원 솔루션, IFRS S1, S2 지원"
+    "message": "기후규제 대응 탄소관리 플랫폼, 온실가스관리, 기후 경영, 탄소회계 솔루션, CBAM 컨설팅, EU 탄소국경조정제도(CBAM, Carbon Border Adjustment Mechanism) 보고서, CBAM 보고서 컨설팅, CBAM 솔루션, IFRS S1, S2 지원, CDP 컨설팅, 생성형 AI 탄소중립 챗봇, 카본버디, LCA, 배출권거래제 대응 지원 솔루션, 목표관리제 대응 지원 솔루션"
   },
   "index.hero_header": {
     "message": "기후규제 대응 탄소관리 솔루션"

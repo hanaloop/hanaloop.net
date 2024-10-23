@@ -97,6 +97,11 @@ export default function Home(): JSX.Element {
                         {data.hero.subtitle_1}<br/>
                         {data.hero.subtitle_2}
                       </p>
+                      
+                      { data.hero.news && <div className="pt-4">
+                        <a className="text-xl p-2 text-gray-800 rounded-md bg-yellow-300 hover:text-gray-800 hover:bg-yellow-400" href={data.hero.news_link}>{data.hero.news} </a>
+                      </div>}
+                      
                     </div>
                     <div className="flex gap-3 justify-center my-8 w-full xl:justify-start">
                       <a href={data.hero.link_1} target="_blank">
