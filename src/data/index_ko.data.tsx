@@ -210,6 +210,13 @@ export const customers: PageSection = {
       imgHeight: 'h-[25px]'
     },
     {
+      title: "두산에너지빌리티",
+      sourceUrl: "https://www.doosanenerbility.com/kr",
+      imageUrl: "/images/partners/DOOSAN_Enerbility.png",
+      description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급",
+      imgHeight: 'h-[40px]'
+    },
+    {
       title: "서경빌딩",
       sourceUrl: "https://naver.me/FKKMDLip",
       imageUrl: "/images/partners/seokyungbuildng-logo.png",
@@ -251,13 +258,41 @@ export const customers: PageSection = {
       description: "고객사 | 환경분야 전문 기관 설립을 통한 환경 사업의 공공성과 도민에게 제공되는 환경서비스 질 제고",
       imgHeight: 'h-[25px]'
     },
-    // {
-    //   title: "두산에너지빌리티",
-    //   sourceUrl: "https://www.doosanenerbility.com/kr",
-    //   imageUrl: "/images/partners/DOOSAN_Enerbility.png",
-    //   description: "고객사 | 산업의 기초 소재인 주단조에서부터 원자력, 화력 등의 발전 설비, 해수 담수화 플랜트, 환경 설비, 운반 설비 등을 제작하여 국내외 플랜트 시장에 공급하고 있다.",
-    //   imgHeight: 'h-[35px]'
-    // },
+    {
+      title: "아폴로산업",
+      sourceUrl: "https://www.apolloind.co.kr/beauty/kor/main/",
+      imageUrl: "/images/partners/apollo.png",
+      description: "고객사 | 4대 주요 펌프인 Foaming, Dispenser, Mist, Trigger 생산",
+      imgHeight: 'h-[20px]'
+    },
+    {
+      title: "동일알루미늄",
+      sourceUrl: "https://www.dongilal.com/main/main.php",
+      imageUrl: "/images/partners/dongilal.jpeg",
+      description: "고객사 | 식품, 약품 포장재, 냉동공조용 알루미늄 호일 및 차세대 배터리인 2차 전지용 알루미늄 생산",
+      imgHeight: 'h-[40px]'
+    },
+    {
+      title: "JKC",
+      sourceUrl: "https://www.jkccorp.co.kr/main",
+      imageUrl: "/images/partners/JKC-logo.png",
+      description: "고객사 | ISO 9001/14001 certified manufacturer, specializes in producing a diverse range of film products with fully owned facilities and a hands-on approach to manufacturing and converting",
+      imgHeight: 'h-[60px]'
+    },
+    {
+      title: "SHL",
+      sourceUrl: "https://www.smarthl.co.kr/",
+      imageUrl: "/images/partners/SHL-logo.png",
+      description: "고객사 | 2차전지, 반도체 검사 설비 및 자동화 설비를 개발·생산하며 고객 맞춤형 솔루션 제공",
+      imgHeight: 'h-[30px]'
+    },
+    {
+      title: "컴퓨매스에이아이",
+      sourceUrl: "https://www.compumathai.com/",
+      imageUrl: "https://www.compumathai.com/images/ci_kr.svg",
+      description: "파트너사 | AI, Chatbot, and Data Analysis Products Service. Revolutionizing the Future. concept. A symbol of practice AI. Practice AI. A symbol of build AI. Build AI.",
+      imgHeight: 'h-[35px]'
+    },
     {
       title: "넷제로 2050 기후재단",
       sourceUrl: "http://netzero2050.or.kr/",
@@ -332,7 +367,7 @@ export const customers: PageSection = {
       title: "휙페이",
       sourceUrl: "https://hwikpay.com/",
       imageUrl: "/images/partners/hwikpay.png",
-      description: "파트너사 | 스마트 공유 경제 플랫폼인 TAGLO는 멀티 레이어를 통해 휙 생태계를 확장합니다. ",
+      description: "파트너사 | 스마트 공유 경제 플랫폼인 TAGLO는 멀티 레이어를 통해 휙 생태계를 확장합니다",
       imgHeight: 'h-[35px]'
     },
     {
