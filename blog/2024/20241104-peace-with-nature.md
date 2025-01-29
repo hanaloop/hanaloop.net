@@ -5,6 +5,14 @@ authors: [jcburrel]
 tags: [자연, 생태계]
 date: 2024-11-04
 ---
+import CaptionedImage from "../../src/components/theme/CaptionedImage";
+
+<CaptionedImage 
+  imageSrc="https://media.licdn.com/dms/image/v2/D4E12AQHVqPwpekm_zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1730654944880?e=1743638400&v=beta&t=Y7Fx_K2THusKpPY-9eBYsDC2NRJw1wsKw-W4JK4fc-w"
+  caption="자연과의 화해"
+  containerClassName="w-[80%]" 
+  imageClassName="shadow-md border-8 border-gray-100"
+/>
 
 
 현대 세계의 복잡성 속에서 우리는 자연과 얼마나 밀접하게 연결되어 있는지를 잊기 쉽습니다. 그러나 우리의 생존과 복지는 생물학적 질서를 유지하고 지구 생명을 지탱하는 자연 생태계를 보호하는 데 달려 있습니다.
