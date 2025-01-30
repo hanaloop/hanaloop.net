@@ -23,7 +23,7 @@ export const content = {
 export const features: PageSection = {
   title: "Hana.eco Features",
   items: [{
-    title: "탄소 어카운팅",
+    title: "탄소 회계",
     subtitle: "Carbon Accounting",
     imageUrl: "/images/platform/ecoloop_accounting_scrn.png",
     description: <>하나에코(hana.eco)는 기업의 활동으로 인해 발생하는 온실가스 배출량과 감축량을 손쉽고 정확하게 탄소로 환산합니다.

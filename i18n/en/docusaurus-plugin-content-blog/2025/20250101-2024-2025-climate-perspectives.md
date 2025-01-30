@@ -6,6 +6,15 @@ tags: [EU 탄소국경조정제도, CBAM]
 date: 2025-01-01
 ---
 
+import CaptionedImage from "../../../../src/components/theme/CaptionedImage";
+
+<CaptionedImage 
+  imageSrc="/images/blog/2025/20250101-2024-2025.png"
+  caption="자연과의 화해"
+  containerClassName="w-full" 
+  imageClassName="shadow-md border-8 border-gray-100"
+/>
+
 ## 2024: A Record-Breaking Year for Climate Change
 
 The year 2024 has officially been recorded as the hottest in history, with global average temperatures surpassing 1.5°C above pre-industrial levels—a critical milestone, even when accounting for the El Niño phenomenon. Human-induced climate change contributed to an alarming increase of 41 additional days of extreme heat worldwide, further stressing ecosystems and communities.

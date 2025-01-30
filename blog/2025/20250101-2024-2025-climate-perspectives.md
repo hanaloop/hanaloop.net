@@ -6,6 +6,16 @@ tags: [2025]
 date: 2025-01-01
 ---
 
+import CaptionedImage from "../../src/components/theme/CaptionedImage";
+
+<CaptionedImage 
+  imageSrc="/images/blog/2025/20250101-2024-2025.png"
+  caption="자연과의 화해"
+  containerClassName="w-full" 
+  imageClassName="shadow-md border-8 border-gray-100"
+/>
+
+
 ## 2024년: 기후 변화의 기록적인 해
 
 2024년은 역사상 가장 더운 해로 공식 기록되었으며, 전 세계 평균 기온이 산업화 이전 대비 1.5°C 이상 상승하는 중요한 임계점을 넘었습니다. 이는 엘니뇨 현상을 고려하더라도 매우 심각한 변화입니다. 인간이 유발한 기후 변화로 인해 전 세계적으로 극심한 폭염일이 41일이나 증가하여 생태계와 지역사회에 큰 부담을 주었습니다.

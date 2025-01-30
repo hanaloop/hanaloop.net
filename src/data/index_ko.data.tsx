@@ -7,7 +7,7 @@ export const hero = {
   title_3 : <h1 className="inline">로 스마트하게 관리하세요!</h1>,
   title_link : "하나에코",
   subtitle_1 : "오늘날 체계적인 탄소 관리는 기업의 경쟁력입니다.",
-  subtitle_2 : "EU CBAM, IFRS ISSB S1 S2 규제, EU 배터리 규제, ESG 공시 의무 등 지속적으로 강화되고 있는 국내외 기후 규제와 공시 의무를 신속히 준수하며 에너지 비용을 감축하고 기후 리스크를 완화시킬 수 있습니다.",
+  subtitle_2 : "EU CBAM, IFRS ISSB S1·S2, EU 배터리 규제, EU CSDDD, ESG 공시 의무 등 지속적으로 강화되는 국내외 기후 규제와 CDP, GRI 등 공시 요구 사항을 신속히 준수하고 효과적으로 대응하며, 동시에 에너지 비용을 절감하고 기후 리스크를 완화하세요.",
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
   news : "CBAM 컨설팅 및 CBAM 보고서 작성 문의하기",
@@ -43,7 +43,7 @@ export const why_need: PageSection = {
       imageUrl: "/images/platform/card-cbam_pic.jpeg",
       description: [
           <b>배출권거래제, 목표관리제</b>,
-          <b>EU 탄소국경조정제도, 배터리 규제</b>,
+          <b>EU 탄소국경조정제도 (CBAM), 배터리 규제, EU Ecodesign (ESPR)</b>,
           <b>공급망 실사 CSDDD</b>
       ],
     },
