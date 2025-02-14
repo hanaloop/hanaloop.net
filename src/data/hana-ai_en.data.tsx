@@ -9,7 +9,7 @@ export const hero = {
 export const features_1 = [
     {
         title: 'Anomaly Detection',
-        imageUrl: '/images/hanaAI/detection.png',
+        imageUrl: '/images/hana-ai/detection.png',
         descriptions: [
             {
                 subTitle: "Detection of Data Anomalies",
@@ -19,7 +19,7 @@ export const features_1 = [
     },
     {
         title: 'Data Prediction',
-        imageUrl: '/images/hanaAI/prediction.png',
+        imageUrl: '/images/hana-ai/prediction.png',
         descriptions: [
             {
                 subTitle: "Cost Reduction and Revenue Maximization",
@@ -33,7 +33,7 @@ export const features_1 = [
     },
     {
         title: 'CarbonBuddy AI Assistant',
-        imageUrl: '/images/hanaAI/carbonbuddy.png',
+        imageUrl: '/images/hana-ai/carbonbuddy.png',
         descriptions: [
             {
                 subTitle: "Climate Regulation Compliance through Carbon Management",

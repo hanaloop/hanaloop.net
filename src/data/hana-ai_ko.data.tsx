@@ -11,7 +11,7 @@ export const hero = {
 export const features_1 = [
     {
         title: '이상 감지',
-        imageUrl: '/images/hanaAI/detection.png',
+        imageUrl: '/images/hana-ai/detection.png',
         descriptions: [
             {
                 subTitle: "데이터 이상값 감지",
@@ -21,7 +21,7 @@ export const features_1 = [
     },
     {
         title: '데이터 예측',
-        imageUrl: '/images/hanaAI/prediction.png',
+        imageUrl: '/images/hana-ai/prediction.png',
         descriptions: [
             {
                 subTitle: "비용 절감과 수익 극대화",
@@ -35,7 +35,7 @@ export const features_1 = [
     },
     {
         title: '카본버디 AI 어시스턴트',
-        imageUrl: '/images/hanaAI/carbonbuddy.png',
+        imageUrl: '/images/hana-ai/carbonbuddy.png',
         descriptions: [
             {
                 subTitle: "탄소 경영으로 해결하는 기후 규제 대응",

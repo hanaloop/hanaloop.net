@@ -82,7 +82,7 @@ const config: Config = {
               label: '탄소회계',
             },
             {
-              to: '/hanaAI',
+              to: '/hana-ai',
               label: 'Hanaeco.AI',
             }
           ]
@@ -185,6 +185,22 @@ const config: Config = {
     },
   } satisfies Preset.ThemeConfig,
   plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',  
+      {
+        redirects: [
+          {
+            from: '/hanaAI',
+            to: '/hana-ai'
+          }
+        ],
+        createRedirects: path => {
+          if (path === "/hanaAI") {
+            return ["/hana-ai"];
+          }
+        }
+      },
+    ],
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
