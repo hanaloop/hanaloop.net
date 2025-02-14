@@ -3,6 +3,7 @@ export const hero = {
     subtitle : 'Hana.eco AI assists companies with carbon management.',
     link_1: "/company_profile_request",
     link_2: "/demo_request",
+    second_title: "AI-based Hana.eco"
 }
 
 export const features_1 = [
@@ -62,7 +63,7 @@ export const features_2 = [
 ]
 
 export const request = {
-    title : "Start systematic carbon management with Hana.eco.",
+    title : "Start systematic carbon management with Hana.eco",
     button_1 : "Solution Overview",
     button_2 : "Contact Us",
 }

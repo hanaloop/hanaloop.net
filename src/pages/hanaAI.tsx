@@ -16,11 +16,9 @@ const svgs = {
 
 
 export default function HanaAI(): JSX.Element {
-  
   const {siteConfig, i18n} = useDocusaurusContext();
-
   const data = require(`../data/hanaAI_${i18n.currentLocale}.data`);
-  console.log(data)
+
   return (
     <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
       title={`${siteConfig.title} | ${translate({message: "hanaAI.meta_title"})}`}
@@ -37,24 +35,18 @@ export default function HanaAI(): JSX.Element {
       <main className="break-keep w-screen">
         <div className="w-full flex justify-center">
             <div className='w-screen'>
-                <SectionBlock title={'Hana.eco AI Features'}>
-                  {
-                    data.features_1.map((feature, idx) => (
-                        <div key={idx}><CardMediaImage title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>
-                    ))
-                  }
-
-                  <motion.div
-                      viewport={{ once: true }}
-                      initial={{ opacity: 0, y: 60 }}
-                      whileInView={{
-                        opacity: 1,
-                        y: 0,
-                        transition: { duration: 1 },
-                      }}
-                      className="w-full justify-center"
-                    >
-                      <div className='w-screen'>
+              <SectionBlock title={'AI 기반 Hana.eco '}>
+                <motion.div
+                    viewport={{ once: true }}
+                    initial={{ opacity: 0, y: 60 }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 1 },
+                    }}
+                    className="w-full justify-center"
+                  >
+                    <div className='w-screen'>
                       <div className='flex w-full justify-center'>
                         <div className="sm:w-[80%] w-[90%] gap-10 flex md:flex-row flex-col md:justify-center items-center">
                             {data.features_2.map((item, ndx) => {
@@ -73,7 +65,7 @@ export default function HanaAI(): JSX.Element {
                                         item.descriptions.map((description) => {
                                           return (
                                             <div className='flex gap-4 items-center'>
-                                              <span className="md:text-base text-left text-sm">{description}</span>
+                                              <span className="lg:text-base text-left text-sm">{description}</span>
                                             </div>
                                           )
                                         })
@@ -87,6 +79,13 @@ export default function HanaAI(): JSX.Element {
                       </div>
                     </div>
                   </motion.div>
+                </SectionBlock>
+                <SectionBlock title={'Hana.eco AI Features'}>
+                  {
+                    data.features_1.map((feature, idx) => (
+                        <div key={idx}><CardMediaImage title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>
+                    ))
+                  }
               </SectionBlock>
             </div>
         </div>

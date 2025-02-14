@@ -2,9 +2,10 @@
 
 export const hero = {
     title : 'Hana.eco AI',
-    subtitle : '기업의 탄소관리 Hana.eco AI가 도와드립니다.',
+    subtitle : '기업의 탄소관리 Hana.eco AI가 도와드립니다',
     link_1: "/company_profile_request",
     link_2: "/demo_request",
+    second_title: "AI 기반 Hana.eco"
 }
 
 export const features_1 = [
@@ -57,7 +58,7 @@ export const features_2 = [
         ]
     },
     {
-        title: 'LLM 신뢰도 높은 정보 제공',
+        title: 'LLM 환각을 최소화한 신뢰도 높은 정보 제공',
         descriptions: [
             'Hana.eco는 LLM이 외부의 불확실한 정보에 의존하여 잘못된 답변을 생성하는 문제를 줄이기 위해, Index DB와 RAG 기법을 도입하였습니다. 이를 통해 규제 동향, 배출권 거래 등에 관한 질의에 대해서도 보다 신뢰할 수 있는 정보를 제공합니다.'
         ]
@@ -65,7 +66,7 @@ export const features_2 = [
 ]
 
 export const request = {
-    title : "체계적인 탄소관리, 하나에코와 시작하세요.",
+    title : "체계적인 탄소관리, 하나에코와 시작하세요",
     button_1 : "솔루션 소개",
     button_2 : "문의하기",
   }

@@ -416,7 +416,7 @@ export const customers: PageSection = {
 }
 
 export const request = {
-  title : "체계적인 탄소관리, 하나에코와 시작하세요.",
+  title : "체계적인 탄소관리, 하나에코와 시작하세요",
   button_1 : "솔루션 소개",
   button_2 : "문의하기",
 }
