@@ -17,17 +17,17 @@ const svgs = {
 
 export default function HanaAI(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
-  const data = require(`../data/hanaAI_${i18n.currentLocale}.data`);
+  const data = require(`../data/hana-ai_${i18n.currentLocale}.data`);
 
   return (
     <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
-      title={`${siteConfig.title} | ${translate({message: "hanaAI.meta_title"})}`}
-      description={translate({message: "hanaAI.meta_description"})}>
+      title={`${siteConfig.title} | ${translate({message: "hana-ai.meta_title"})}`}
+      description={translate({message: "hana-ai.meta_description"})}>
       <Hero background={{
           imageUrl: useBaseUrl('/images/bg-hero_ai.webp'),
         }} 
-        header={translate({message: "hanaAI.hero_header"})}
-        tagline={translate({message: "hanaAI.hero_tagline"})}
+        header={translate({message: "hana-ai.hero_header"})}
+        tagline={translate({message: "hana-ai.hero_tagline"})}
         button={
           {href: '/demo_request', label: translate({message: "request_demo"})}
         }
@@ -107,7 +107,6 @@ export default function HanaAI(): JSX.Element {
           </div>
         </div>
       </main>
-     
     </Layout>
   );
 }
