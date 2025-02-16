@@ -17,7 +17,7 @@ export const hero = {
 }
 
 export const carbon_buddy: PageSection = {
-  title : "AI 기술을 활용하여 탄소 관리를 보다 직관적으로 할 수 있도록 돕습니다.",
+  title : "AI 기술을 활용하여 탄소 관리를 보다 직관적으로 할 수 있도록 돕습니다",
   items : [
     {
       title : "빠른 규제 이해와 대응",
@@ -141,7 +141,7 @@ export const reliable: PageSection = {
 
 
 export const journey: PageSection = {
-  title : <p>차근차근 준비해 가는 탄소중립 여정에 <br/>하나루프가 함께합니다.</p>,
+  title : <p>차근차근 준비해 가는 탄소중립 여정에 <br/>하나루프가 함께합니다</p>,
   subtitle : <p>지속적으로 강화되고 있는 기후환경규제와 공시 요구. 겁내지 마세요! <br/> 하나루프의 산업 디지털 전환 전문팀과 환경 전문가 네트워크가 함께 기업의 형편에 맞게 <br/> 지속가능성을 내재화하실 수 있도록 힘을 실어드리겠습니다.</p>,
   items : [
       {
@@ -192,8 +192,144 @@ export const features: PageSection = {
   ]
 };
 
+export const partner = [
+  {
+    title: "OPUS M",
+    sourceUrl: "https://www.opusm.io/",
+    imageUrl: "/images/partners/OPUSM.jpeg",
+    description: "파트너사 | 국내 유일의 범용 블록체인 미들웨어 솔루션인 LedgerMaster3.0부터 토큰증권 플랫폼까지, Web3 기반의 다양한 블록체인 솔루션과 서비스를 제공합니다. ",
+    imgHeight: 'h-[45px]'
+  },
+  {
+    title: "컴퓨매스에이아이",
+    sourceUrl: "https://www.compumathai.com/",
+    imageUrl: "https://www.compumathai.com/images/ci_kr.svg",
+    description: "파트너사 | AI, Chatbot, and Data Analysis Products Service. Revolutionizing the Future. concept. A symbol of practice AI. Practice AI. A symbol of build AI. Build AI.",
+    imgHeight: 'h-[35px]'
+  },
+  {
+    title: "넷제로 2050 기후재단",
+    sourceUrl: "http://netzero2050.or.kr/",
+    imageUrl: "/images/partners/netzero2050_climatefoundation-logo.png",
+    description: "파트너사 | 2050년까지 이산화탄소 배출을 완전히 제거하여 탄소중립을 달성하기 위한 국제사회, 정부와 기업, 지구촌 시민사회의 노력을 적극 지원하고 실천 동기를 부여하고 있음",
+    imgHeight: 'h-[30px]'
+  },
+  {
+    title: "(주)켐토피아",
+    sourceUrl: "http://www.chemtopia.net/",
+    imageUrl: "/images/partners/partner-chemtopia_logo.png",
+    description: "파트너사 | Korea's Leading Regulatory compliance company",
+    imgHeight: 'h-[25px]'
+  },
+  {
+    title: "로엔컨설팅",
+    sourceUrl: "http://www.roenconsulting.com/main/index.html",
+    imageUrl: "/images/partners/partner-roen_logo.png",
+    description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
+    imgHeight: 'h-[35px]'
+  },
+  {
+    title: "한컨설팅그룹",
+    sourceUrl: "https://hcg.kr",
+    imageUrl: "/images/partners/partner-hanconsulting_logo.png",
+    description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅",
+    imgHeight: 'h-[20px]'
+  },
+  {
+    title: "ICH(International Centre for Hydropower)",
+    sourceUrl: "https://ich.no/",
+    imageUrl: "https://www.norwep.com/partners/international-centre-for-hydropower-ich/_/image/b4146fa1-b991-4341-948a-f27eea36d681:30fc4c589b594ed01e0afba64b7bfe16ea1804ee/width-340/International-Centre-for-Hydropower-ICH_large.png",
+    description: "파트너사 | The purpose of ICH is to raise the standards of competence of the industry personnel and promote the sustainable development of hydropower.",
+    imgHeight: 'h-[40px]'
+  },
+  {
+    title: "지속가능발전경영센터",
+    sourceUrl: "http://k-sdmi.co.kr/",
+    imageUrl: "/images/partners/SDMI.jpeg",
+    description: "파트너사 | 지속가능발전에 관한 정책과 기업의 지속가능성장에 필요한 컨설팅 제공",
+    imgHeight: 'h-[30px]'
+  },
+  {
+    title: "미래이앤아이",
+    sourceUrl: "http://www.fa119.com/main",
+    imageUrl: "/images/partners/FA119.png",
+    description: "파트너사 | 공장자동제어 센서신호처리 분야의 전문 제조업체",
+    imgHeight: 'h-[30px]'
+  },
+  {
+    title: "아이이에스지",
+    sourceUrl: "https://i-esg.io/",
+    imageUrl: "/images/partners/IESG-logo.png",
+    description: "파트너사 | 데이터 기반 ESG 특화 통합 디지털 솔루션 제공",
+    imgHeight: 'h-[20px]'
+  },
+  {
+    title: "슬록",
+    sourceUrl: "http://www.sloc.or.kr/",
+    imageUrl: "/images/partners/SLOC.png",
+    description: "파트너사 | 뷰티기업 지속가능성 검증 및 컨설팅 제공",
+    imgHeight: 'h-[18px]'
+  },
+  {
+    title: "샘물터",
+    sourceUrl: "https://saemmulter.com/",
+    imageUrl: "https://saemmulter.com/images/logo.svg",
+    description: "파트너사 | 지하수 솔루션 전문 회사",
+    imgHeight: 'h-[35px]'
+  },
+  {
+    title: "휙페이",
+    sourceUrl: "https://hwikpay.com/",
+    imageUrl: "/images/partners/hwikpay.png",
+    description: "파트너사 | 스마트 공유 경제 플랫폼인 TAGLO는 멀티 레이어를 통해 휙 생태계를 확장합니다",
+    imgHeight: 'h-[35px]'
+  },
+  {
+    title: "디토이에스지",
+    sourceUrl: "https://www.ditoesg.ai/",
+    imageUrl: "/images/partners/DITOESG.jpeg",
+    description: "파트너사 | 사회적 가치와 재무적 성과를 연계한 ESG 솔루션 제공",
+    imgHeight: 'h-[35px]'
+  },
+  {
+    title: "로이드인증원",
+    sourceUrl: "https://www.lrqa.com/ko-kr/",
+    imageUrl: "/images/partners/LRQA.jpg",
+    description: "파트너사 | 글로벌 인증 및 검증 서비스를 제공",
+    imgHeight: 'h-[20px]'
+  },
+  {
+    title: "중소벤처기업부",
+    sourceUrl: "https://www.mss.go.kr/site/smba/main.do",
+    imageUrl: "/images/partners/korea-mss-gov.png",
+    description: "지원 기관 | 활력 중소기업, 함께 잘사는 나라",
+    imgHeight: 'h-[20px]'
+  },
+  {
+    title: "중소기업기술정보진흥원",
+    sourceUrl: "https://www.tipa.or.kr/",
+    imageUrl: "/images/partners/TIPA.png",
+    description: "지원 기관 | 중소기업의 R&D 파트너",
+    imgHeight: 'h-[40px]'
+  },
+  {
+    title: "서울소셜벤처허브",
+    sourceUrl: "https://svhc.or.kr/",
+    imageUrl: "/images/partners/seoulsocialventurehub-logo.png",
+    description: "지원 기관 | 소셜벤처를 지원",
+    imgHeight: 'h-[25px]'
+  },
+  {
+    title: "하이서울기업협회",
+    sourceUrl: "https://www.hiseoulbiz.org/",
+    imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
+    description: "협력 기관 | 기업 성장 지원",
+    imgHeight: 'h-[40px]'
+  },
+]
+
 export const customers: PageSection = {
-  title: "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다.",
+  title: "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다",
   subtitle:"",
   items: [{
       title: "이마트",
@@ -286,132 +422,7 @@ export const customers: PageSection = {
       description: "고객사 | 2차전지, 반도체 검사 설비 및 자동화 설비를 개발·생산하며 고객 맞춤형 솔루션 제공",
       imgHeight: 'h-[30px]'
     },
-    {
-      title: "컴퓨매스에이아이",
-      sourceUrl: "https://www.compumathai.com/",
-      imageUrl: "https://www.compumathai.com/images/ci_kr.svg",
-      description: "파트너사 | AI, Chatbot, and Data Analysis Products Service. Revolutionizing the Future. concept. A symbol of practice AI. Practice AI. A symbol of build AI. Build AI.",
-      imgHeight: 'h-[35px]'
-    },
-    {
-      title: "넷제로 2050 기후재단",
-      sourceUrl: "http://netzero2050.or.kr/",
-      imageUrl: "/images/partners/netzero2050_climatefoundation-logo.png",
-      description: "파트너사 | 2050년까지 이산화탄소 배출을 완전히 제거하여 탄소중립을 달성하기 위한 국제사회, 정부와 기업, 지구촌 시민사회의 노력을 적극 지원하고 실천 동기를 부여하고 있음",
-      imgHeight: 'h-[30px]'
-    },
-    {
-      title: "(주)켐토피아",
-      sourceUrl: "http://www.chemtopia.net/",
-      imageUrl: "/images/partners/partner-chemtopia_logo.png",
-      description: "파트너사 | Korea's Leading Regulatory compliance company",
-      imgHeight: 'h-[25px]'
-    },
-    {
-      title: "로엔컨설팅",
-      sourceUrl: "http://www.roenconsulting.com/main/index.html",
-      imageUrl: "/images/partners/partner-roen_logo.png",
-      description: "파트너사 | 환경 토탈솔루션 컨설팅 | 정책 연구, 온실가스 감축, 탄소자산관리, 신재생에너지사업 등 기후변화 대응 컨설팅",
-      imgHeight: 'h-[35px]'
-    },
-    {
-      title: "한컨설팅그룹",
-      sourceUrl: "https://hcg.kr",
-      imageUrl: "/images/partners/partner-hanconsulting_logo.png",
-      description: "파트너사 | ESG 경영 성공파트너 | 차별화된 ESG경영 컨설팅과 탄소중립 컨설팅",
-      imgHeight: 'h-[20px]'
-    },
-    {
-      title: "ICH(International Centre for Hydropower)",
-      sourceUrl: "https://ich.no/",
-      imageUrl: "https://www.norwep.com/partners/international-centre-for-hydropower-ich/_/image/b4146fa1-b991-4341-948a-f27eea36d681:30fc4c589b594ed01e0afba64b7bfe16ea1804ee/width-340/International-Centre-for-Hydropower-ICH_large.png",
-      description: "파트너사 | The purpose of ICH is to raise the standards of competence of the industry personnel and promote the sustainable development of hydropower.",
-      imgHeight: 'h-[40px]'
-    },
-    {
-      title: "지속가능발전경영센터",
-      sourceUrl: "http://k-sdmi.co.kr/",
-      imageUrl: "/images/partners/SDMI.jpeg",
-      description: "파트너사 | 지속가능발전에 관한 정책과 기업의 지속가능성장에 필요한 컨설팅 제공",
-      imgHeight: 'h-[30px]'
-    },
-    {
-      title: "미래이앤아이",
-      sourceUrl: "http://www.fa119.com/main",
-      imageUrl: "/images/partners/FA119.png",
-      description: "파트너사 | 공장자동제어 센서신호처리 분야의 전문 제조업체",
-      imgHeight: 'h-[30px]'
-    },
-    {
-      title: "아이이에스지",
-      sourceUrl: "https://i-esg.io/",
-      imageUrl: "/images/partners/IESG-logo.png",
-      description: "파트너사 | 데이터 기반 ESG 특화 통합 디지털 솔루션 제공",
-      imgHeight: 'h-[20px]'
-    },
-    {
-      title: "슬록",
-      sourceUrl: "http://www.sloc.or.kr/",
-      imageUrl: "/images/partners/SLOC.png",
-      description: "파트너사 | 뷰티기업 지속가능성 검증 및 컨설팅 제공",
-      imgHeight: 'h-[18px]'
-    },
-    {
-      title: "샘물터",
-      sourceUrl: "https://saemmulter.com/",
-      imageUrl: "https://saemmulter.com/images/logo.svg",
-      description: "파트너사 | 지하수 솔루션 전문 회사",
-      imgHeight: 'h-[35px]'
-    },
-    {
-      title: "휙페이",
-      sourceUrl: "https://hwikpay.com/",
-      imageUrl: "/images/partners/hwikpay.png",
-      description: "파트너사 | 스마트 공유 경제 플랫폼인 TAGLO는 멀티 레이어를 통해 휙 생태계를 확장합니다",
-      imgHeight: 'h-[35px]'
-    },
-    {
-      title: "디토이에스지",
-      sourceUrl: "https://www.ditoesg.ai/",
-      imageUrl: "/images/partners/DITOESG.jpeg",
-      description: "파트너사 | 사회적 가치와 재무적 성과를 연계한 ESG 솔루션 제공",
-      imgHeight: 'h-[35px]'
-    },
-    {
-      title: "로이드인증원",
-      sourceUrl: "https://www.lrqa.com/ko-kr/",
-      imageUrl: "/images/partners/LRQA.jpg",
-      description: "파트너사 | 글로벌 인증 및 검증 서비스를 제공",
-      imgHeight: 'h-[20px]'
-    },
-    {
-      title: "중소벤처기업부",
-      sourceUrl: "https://www.mss.go.kr/site/smba/main.do",
-      imageUrl: "/images/partners/korea-mss-gov.png",
-      description: "지원 기관 | 활력 중소기업, 함께 잘사는 나라",
-      imgHeight: 'h-[20px]'
-    },
-    {
-      title: "중소기업기술정보진흥원",
-      sourceUrl: "https://www.tipa.or.kr/",
-      imageUrl: "/images/partners/TIPA.png",
-      description: "지원 기관 | 중소기업의 R&D 파트너",
-      imgHeight: 'h-[40px]'
-    },
-    {
-      title: "서울소셜벤처허브",
-      sourceUrl: "https://svhc.or.kr/",
-      imageUrl: "/images/partners/seoulsocialventurehub-logo.png",
-      description: "지원 기관 | 소셜벤처를 지원",
-      imgHeight: 'h-[25px]'
-    },
-    {
-      title: "하이서울기업협회",
-      sourceUrl: "https://www.hiseoulbiz.org/",
-      imageUrl: "/images/partners/hiseoulbizassoc-logo.png",
-      description: "협력 기관 | 기업 성장 지원",
-      imgHeight: 'h-[40px]'
-    },
+    
   ]
 }
 
