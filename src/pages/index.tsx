@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
@@ -70,8 +71,7 @@ export default function Home(): JSX.Element {
       <main className="break-keep">
         {/* 1. Hero Section */}
         <div className="w-screen py-5 flex min-h-screen justify-center items-center relative">
-            <div className="-z-30 w-full h-full absolute left-0 top-0 bg-[url('/images/bg-hero-main.jpg')] bg-center bg-cover"></div>
-            <div className=" -z-20 w-full h-full absolute left-0 top-0 bg-[#193233] opacity-70"></div>
+            <div className="-z-30 w-full h-full absolute left-0 top-0 bg-[url('/images/bg-hero-main.webp')] bg-center bg-cover bg-blend-overlay bg-[#193233] opacity-90"></div>
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, y: 60 }}
@@ -143,22 +143,45 @@ export default function Home(): JSX.Element {
               <div className="w-full justify-center flex">
                 <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
                   {/* CUSTOMERS */}
-                  <div className="flex justify-center gap-3 flex-wrap">
-                    {data.customers.items.map((item) => (
-                      <span className="group flex justify-center" key={item.title}>
-                        <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
-                          <Link href={item.sourceUrl!}>
-                            <a target="_blank">
-                              <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
-                            </a>
-                          </Link>
-                        </div>
-                        <span className="p-2 -mt-3 -ml-3 rounded text-xs text-white text-left bg-black bg-opacity-50 border-lime-700 hidden group-hover:block absolute tooltip-text">
-                          {item.description}
+                  <Marquee
+                    gradient={true}
+                    gradientColor="rgb(248 251 253)"
+                    gradientWidth={200}
+                  >
+                    <div className="flex justify-center gap-3 flex-wrap">
+                      {data.customers.items.map((item) => (
+                        <span className="group flex justify-center" key={item.title}>
+                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
+                            <Link href={item.sourceUrl!}>
+                              <a target="_blank">
+                                <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
+                              </a>
+                            </Link>
+                          </div>
                         </span>
-                      </span>
-                    ))}
-                  </div>
+                      ))}
+                    </div>
+                  </Marquee>
+                  <Marquee
+                    gradient={true}
+                    gradientColor="rgb(248 251 253)"
+                    gradientWidth={200}
+                    delay={1.5}
+                  >
+                    <div className="flex justify-center gap-3 flex-wrap">
+                      {data.partner.map((item) => (
+                        <span className="group flex justify-center" key={item.title}>
+                          <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] h-[70px]">
+                            <Link href={item.sourceUrl!}>
+                              <a target="_blank">
+                                <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
+                              </a>
+                            </Link>
+                          </div>
+                        </span>
+                      ))}
+                    </div>
+                  </Marquee>
                   <div className="text-xs">{data.customers.subtitle}</div>
                 </div>
               </div>
@@ -183,7 +206,7 @@ export default function Home(): JSX.Element {
                         className="w-[85%] group rounded-xl hover:border-primary-700 mb-4 py-7 flex justify-between items-center"
                       >
                         <div className="mb-2 flex flex-col gap-5 justify-around sm:flex-row items-center text-left h-full w-full">
-                          <img className="h-[450px] duration-200" src="/images/chatbot.png" alt="carbon buddy" />
+                          <img className="h-[450px] duration-200" src="/images/chatbot_2.png" alt="carbon buddy" />
                           <div className="flex flex-col gap-5">
                             {
                               data.carbon_buddy.items.map((item, ndx) => {
