@@ -195,17 +195,16 @@ const config: Config = {
           },
           {
             from: '/docs/x20_environment-general/2023-09-28-CBAM-reporting',
-            to: '.docs/x20_environment-general/CBAM/2023-09-28-CBAM-reporting'
+            to: 'https://hanaloop.com/docs/x20_environment-general/CBAM/2023-09-28-CBAM-reporting'
           },
           {
             from: '/docs/x20_environment-general/2022-12-14-CBAM',
-            to: '/docs/x20_environment-general/CBAM/2022-12-14-CBAM'
+            to: 'https://hanaloop.com/docs/x20_environment-general/CBAM/2022-12-14-CBAM'
           },
           {
             from: '/docs/x20_environment-general/2024-01-20-cbam-compliance',
-            to: '/docs/x20_environment-general/CBAM/2024-01-20-cbam-compliance'
+            to: 'https://hanaloop.com/docs/x20_environment-general/CBAM/2024-01-20-cbam-compliance'
           }
-
         ],
         createRedirects: path => {
           if (path === "/hanaAI") {
