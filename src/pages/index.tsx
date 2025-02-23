@@ -206,7 +206,7 @@ export default function Home(): JSX.Element {
                         className="w-[85%] group rounded-xl hover:border-primary-700 mb-4 py-7 flex justify-between items-center"
                       >
                         <div className="mb-2 flex flex-col gap-5 justify-around sm:flex-row items-center text-left h-full w-full">
-                          <img className="h-[450px] duration-200" src="/images/chatbot_2.png" alt="carbon buddy" />
+                          <img className="h-[600px] duration-200" src="/images/chatbot_1.png" alt="carbon buddy" />
                           <div className="flex flex-col gap-5">
                             {
                               data.carbon_buddy.items.map((item, ndx) => {
