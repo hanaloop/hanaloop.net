@@ -1,27 +1,28 @@
-// ---
-// title: "HanaEco by 하나루프 | SaaS형 데이터기반 지속가능성 플랫폼 | 공급망 탄소관리 플랫폼"
-// description: "SaaS형 온실가스 관리 플랫폼, HanaEco(하나에코)는 온실가스 배출활동을 관리하며, 배출량을 계산하고 분석합니다. hana.eco를 통해 기관, 기업은 기후관련 규제에 대응하고, 기후 리스크를 줄이며, 에너지 소비를 줄이고, ESG 포트폴리오를 향상시킬 수 있습니다. 궁극적으로 기관, 기업은 탄소발자국을 줄이며, 기후위기 완화에 기여할 수 있습니다. 탄소 회계, 환경 업무 협업, 탄소 전략, 전략적 시각화, 가치사슬 탄소관리, 스코프3 관리, 공급망 탄소 관리, 온실가스를 보여주는 지속가능성 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업 이미지 및 경쟁력 향상"
-// tags: [에코루프, HanaEco, EcoLoop, SaaS형 지속가능성 플랫폼, 공급망 탄소관리 플랫폼, 스코프3 관리 플랫폼, 가치사슬 탄소관리 플랫폼, 온실가스 관리, 탄소 관리, 탄소중립 플랫폼, 넷제로 플랫폼, ESG 향상 플랫폼, 환경데이터 관리 비용 절감, 환경위험요소 감소, 기업이미지 향상, 기업 경쟁력 향상]
-
-// publishedAt: "2022-10-06"
-
-// headerBackground:
-//   imageUrl: "/images/bg-hero_platform.jpeg"
-// hero:
-//   header: "Hana.eco, a Flexible Sustainability Platform"
-//   tagline: "Carbon and air pollution data management"
-// ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Translate, {translate} from '@docusaurus/Translate';
 import Hero from '../components/hanaloop/Hero';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { motion } from "framer-motion";
+import GlobeIcon from "../../static/svg/Globe.svg"; 
+import FlagIcon from "../../static/svg/Flag.svg"; 
+import SproutIcon from "../../static/svg/Sprout.svg"; 
+import HandshakeIcon from "../../static/svg/Handshake.svg"; 
+import { DisplayItem } from '../libs/types';
 
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
   const data = require(`../data/platform_${i18n.currentLocale}.data`);
+  
+  const section3_svgs = {
+    section3_svg_1: <GlobeIcon />,
+    section3_svg_2: <FlagIcon />,
+    section3_svg_3: <HandshakeIcon />,
+    section3_svg_4: <SproutIcon />,
+  };
+  
 
   return (
     <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
@@ -29,7 +30,7 @@ export default function Home(): JSX.Element {
       description={translate({message: "platform.meta_description"})}>
 
       <Hero background={{
-          imageUrl: useBaseUrl('/images/bg-hero_platform.jpeg'),
+          imageUrl: useBaseUrl('/images/platform/banner.jpg'),
         }} 
         header={translate({message: "platform.hero_header"})}
         tagline={translate({message: "platform.hero_tagline"})}
@@ -38,99 +39,136 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <SectionBlock title={data.content.section1_title} containerStyle=' bg-gray-100'>
-      <div className="text-center">
-        {data.content.section1_body}
-      <br/>
-      <br/>
-        <div className="flex justify-center">
-          <div className="w-4/5 ">
-            <div className="text-center text-2xl italic">{data.content.section1_quote}</div>
-            <div className="text-right text-sm text-gray-600  whitespace-nowrap">- Peter Drucker (피터 드러커)</div>
-          </div>
-        </div>
-        <br/>
-        <br/>
+      <div className="w-screen flex justify-center bg-gray-50">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }} 
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+          <SectionBlock title={data.content.section2_title}>
+            <div className="px-10 ">
+              <div className="xl:grid xl:grid-cols-2 gap-10">
+                {data.features?.map((item, ndx) => {
+                  const svgKey = `section3_svg_${ndx + 1}`;
+                  const SvgComponent = section3_svgs[svgKey];
 
-        <div className="md:flex justify-center ">
-          <div className="p-6 bg-white dark:bg-gray-600 rounded border border-secondary md:flex items-center">
-            <div className="flex-1">
-              <div className="p-6">
-              {data.content.section1_highlight}
+                  // const lines = item.description as string[];
+                  return (
+                    <div
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      key={ndx}
+                    >
+                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
+                        <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                        <div className="xl:text-xl text-lg font-bold">
+                          <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
+                            <h3 className="py-2 inline ">{item.title}</h3>
+                          </div>
+                        </div>
+                        <div className="[word-break:keep-all] w-full">
+                          <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>
+                          <ul className="list-none xl:text-md text-sm text-left">
+                            {item.expected?.map((expect, ndx: number) => (
+                              <li className="flex gap-2 items-center" key={ndx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{expect}</div></li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
-            <div className="flex justify-center">
-              <img className="h-64 rounded-md drop-shadow-md" src={useBaseUrl("/images/product-ecoloop.jpg")} alt="Hana.eco dashboard" />
-            </div>
+          </SectionBlock>
+        </motion.div>
+      </div> 
 
+      <SectionBlock title={data.content.section3_title} >
+        <div className='w-full flex justify-center'>
+          <div className='lg:w-[55%] w-[80%] items-center flex-wrap justify-center gap-10 flex flex-col'>
+            {
+              data.topics?.map((topic: DisplayItem[], index) => {
+                return(
+                  <motion.div
+                    viewport={{ once: true }}
+                    initial={{ opacity: 0, y: 60 }} 
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 1 },
+                    }}
+                  >
+                    <div className='w-full flex lg:flex-row flex-col gap-6  p-10 rounded-lg bg-gray-100 lg:items-start items-center'>
+                      <img src={useBaseUrl(`/images/standards/logo-0${index+1}.png`)} className="p-5 sm:w-[200px] sm:h-[200px] w-[185px] h-[185px] object-contain rounded-lg bg-white " alt="standard logo"/>
+                      <div className='w-full flex flex-wrap text-left gap-6 bg-white rounded-md p-4'>
+                        {topic?.map(element=>
+                          <div>
+                            <h3 className='font-bold sm:text-xl text-lg'>{element.title}</h3>
+                            <ul className='text-left'>
+                            {element.description?.map(d=>
+                              <li className='sm:text-base text-sm'>{d}</li>
+                            )}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </motion.div>
+                ) 
+              })
+            }
+            </div>
           </div>
-        </div>
+      </SectionBlock>
+
+      <div className="w-screen flex justify-center bg-gray-50">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }} 
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+          <SectionBlock title={data.content.section4_title}>
+            <div className="px-10 ">
+              <div className="flex justify-center gap-10 flex-wrap">
+                {data.benefits?.map((benefit, ndx) => {
+                  const svgKey = `section3_svg_${ndx + 1}`;
+                  const SvgComponent = section3_svgs[svgKey];
+
+                  // const lines = item.description as string[];
+                  return (
+                    <div
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm flex justify-center"
+                      key={ndx}
+                    >
+                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
+                        <div className="xl:text-xl text-lg font-bold">
+                          <div className="flex mr-1 gap-3 group-hover:text-primary-700 justify-center items-center">
+                            <div className=' flex justify-center items-center w-5 h-5 rounded-md text-sm bg-blue-500 text-white p-3'>{benefit.subtitle}</div>
+                            <h3 className="py-2 inline ">{benefit.title}</h3>
+                          </div>
+                        </div>
+                        <div className="[word-break:keep-all] w-full">
+                          <span className="list-none lg:text-base text-sm text-left">
+                            {benefit.description}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </SectionBlock>
+        </motion.div>
       </div>
-      </SectionBlock>
-
-      <SectionBlock title={data.features.title} >
-        <div className="flex justify-center">
-        <div className="text-left max-w-4xl space-y-6">
-          {data.features.items.map(feature => 
-          <div className="md:flex pt-2 rounded-lg border border-slate-200" key={feature.title}>
-            <img className="h-64 w-64 rounded-lg drop-shadow mx-auto md:rounded-none md:drop-shadow-none" src={useBaseUrl(feature.imageUrl)} />
-            <div className="p-6 border-primary" >
-              <h3 className="text-3xl font-bold inline">{feature.title}</h3>
-              <span className="ml-1 inline text-gray-600 text-sm">{feature.subtitle}</span>
-              <article className="text-sm text-gray-600">
-                {feature.description}
-              </article>
-            </div>
-          </div>
-          )}
-        </div>
-        </div>
-      </SectionBlock>
-
-      <SectionBlock title={data.standards_title} containerStyle='bg-gray-100 flex justify-center'>
-      <article className="p-4 max-w-3xl text-left">
-        { data.standards.map((standard, idx) => 
-        <>
-        <img src={useBaseUrl(standard.imageUrl)} className="mt-4 h-16" alt={`${standard.title} logo`}/>
-
-        {standard.items.map(item=>
-          <>
-          <h3>{item.title}</h3>
-          <ul>
-          {item.description.map(d=>
-            <li>{d}</li>
-          )}
-          </ul>
-          </>
-        )}
-        <hr />
-        </>
-        )}
-      </article>
-      </SectionBlock>
-
-
-      <SectionBlock title={data.benefits.title}>
-      <div className="text-left flex justify-center">
-        <div className="space-y-4 ">
-        {data.benefits.items.map( (benefit, idx) => 
-        <div className="block " key={idx}> 
-          <div className="p-2 min-w-0 rounded-l-full rounded-r-lg bg-sky-600 flex items-center">
-            <div className="ml-0 w-20 h-20 rounded-full bg-gray-100 text-4xl font-bold text-gray-600 dark:text-gray-200  dark:bg-gray-600  items-center inline-block text-center">
-              <div className="pt-3 ">{benefit.subtitle}</div>
-            </div>
-            <div className="pl-3 text-2xl w-40  flex-none text-white ">{benefit.title}</div>
-            <div className="flex-1 p-3 rounded-md text-left bg-white  dark:bg-gray-600">
-              {benefit.description}
-            </div>
-          </div>
-        </div>
-        )}
-        </div>
-      </div>
-      </SectionBlock>
-
     </Layout>
   );
 }
-
