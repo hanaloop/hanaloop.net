@@ -1,115 +1,111 @@
-import { DisplayItem, PageSection } from "../libs/types"
+import { DisplayItem } from "../libs/types"
 
 export const content = {
-  section1_title: "Data-driven decision-making is crucial for achieving success. ",
-  section1_body: <>Climate change represents the greatest crisis facing humanity, primarily driven by invisible greenhouse gases.<br />
-  Hana Eco can help us quantify and visualize these emissions and empower us to take meaningful action.
+  section1_title: "Data-driven decision-making is essential for success",
+  section1_body: <>Climate change is the greatest crisis facing humanity. <br />
+  Greenhouse gases are the culprit, but they are invisible. <br />
+  Hana Eco can help us to visualize them and take action.<br />
   </>,
   section1_quote: <>If You Can't Measure It, You Can't Improve It</>,
   section1_highlight: <><span className="font-bold text-lg">Hana.eco, the Cloud-based Climate Compliance Platform</span>,<br /> 
-    efficiently manages carbon emission activities, performs comprehensive calculations, and analyzes emissions data. 
-    This platform enables corporations to comply with climate-related regulations, mitigate climate risks, reduce energy consumption, and enhance their ESG portfolios. <br />
-    Ultimately, it plays a crucial role in lowering carbon footprints and supporting global efforts to tackle the climate crisis.
-  </>,
-  section3_title: "Standards supported by Hana.eco",
+    efficiently oversees carbon emission activities, 
+    conducts comprehensive calculations, and 
+    analyzes emissions data. 
+    <br />
+    This platform empowers corporations to adhere to climate-related regulations, 
+    mitigate climate risks, lower energy consumption, and enhance their ESG portfolio. 
+    <br />
+    Ultimately, it plays a pivotal role in reducing carbon footprints and contributing to the global effort to address the climate crisis.
+
+</>,
+  section2_title: "Hana.eco Features",
+  section3_title: "Standard supported by Hana.eco",
+  section4_title: "Benefits",
 }
 
-export const features: PageSection = {
-  title: "Hana.eco Features",
-  items: [{
+export const features: DisplayItem[] = [
+  {
     title: "Carbon Accounting",
     subtitle: "Flexible, Easy, Accurate",
     imageUrl: "/images/platform/ecoloop_accounting_scrn.png",
-    description: <>
+    description: [<>
       Hana.eco simplifies the entire process of managing carbon emissions by providing a user-friendly platform that facilitates effortless collection, precise calculation, rigorous verification, and streamlined reporting. 
         <ul>
         <li>Compliance Assurance</li>
-        <li>AI-Powered Data Analytics: Gain Climate Insights at Your Fingertips</li>
+        <li>AI-assisted data analytics. Bring climate insight to your fingertips</li>
         <li>Automation and Integration</li>
         </ul>
-      </>
+      </>]
   },
   {
     title: "Collaboration",
-    subtitle: "High Team Productivity",
+    subtitle: "Increasing Team Productivity",
     imageUrl: "/images/platform/ecoloop_collab_scrn.png",
-    description: <>
+    description: [<>
       Personnel across diverse units and hierarchical levels can effortlessly exchange and convey climate insights and strategies, fostering collaborative action.
       <ul>
       <li>Role and permission management</li>
       <li>Communication tool</li>
-      <li>Tasks and scheduling</li>
+      <li>Customizable tools and options</li>
       </ul>
-      </>
+      </>]
   },
   {
     title: "Strategy",
     subtitle: "Decarbonization",
     imageUrl: "/images/platform/ecoloop_strategy_scrn.png",
-    description: <>
+    description: [<>
       Hana.eco facilitates companies on their path to carbon neutrality by leveraging advanced data analysis. Our platform enables the efficient implementation of reduction projects for a more effective and sustainable impact.
       <ul>
       <li>Energy consumption and carbon emission prediction</li>
       <li>Climate Risk management</li>
       <li>What-if scenario analysis</li>
       </ul>
-    </>
+    </>]
   },
   {
     title: "Value Chain Management",
     subtitle: "Effectively managed Scope 3",
     imageUrl: "/images/platform/ecoloop_valuechain_scrn.png",
-    description: <>We establish links across the value chain by analyzing emission intensity with industry average data. Our platform's multilingual support ensures seamless usability for overseas partners.
-      <ul>
-      <li>Partner Management</li>
-      <li>Multilingual support</li>
-      <li>Product Carbon Footprint Management</li>
-      </ul>
-    </>
-  }]
-}
+    description: [<>We establish links across the value chain by analyzing emission intensity with industry average data. Our platform's multilingual support ensures seamless usability for overseas partners.    </>]
+  }
+]
 
-export const benefits: PageSection = {
-  title: "Benefits",
-  items: [{
+export const benefits: DisplayItem[] = [
+  {
     title: "Cost Reduction",
     subtitle: "1",
-    description: <>
+    description: [<>
       <ul>
       <li>Up to ~70% operational efficiency managing climate data</li>
       <li>Up to ~15% energy savings</li>
       </ul>
-    </>
+    </>]
   },
   {
     title: "Risk Reduction",
     subtitle: "2",
-    description: <>
+    description: [<>
       <ul>
       <li>Responsive agility in addressing climate regulations</li>
       <li>Optimized strategies for buying and selling emissions permits</li>
       </ul>
-    </>
+    </>]
   }, 
   {
-    title: "Enhanced Corporate Image",
+    title: "Enhanced corporate image",
     subtitle: "3",
-    description: <>
+    description:[ <>
       <ul>
-      <li>Elevate Your ESG Score: Combat Greenwashing Effectively.</li>
+      <li>Higher ESG level</li>
       <li>Better partner management</li>
       </ul>
-    </>
-  }]
-}
+    </>]
+  },
+]
 
-export const standards_title = "Standards supported by Hana.eco";
-
-export let standards: PageSection[] = []; 
-standards.push({
-  title: "TCFD",
-  imageUrl: "/images/standards/tcfd-logo.png",
-  items: [{
+export const tcfd_topics: DisplayItem[] = [
+  {
     title: "Strategy",
     description: [
       "A) Describe the climate-related risks and opportunities the organization has identified over the short, medium, and long term.",
@@ -123,13 +119,10 @@ standards.push({
       "b) Disclose Scope 1, Scope 2, and, if appropriate, Scope 3 greenhouse gas (GHG) emissions, and the related risks.",
       "c) Describe the targets used by the company to manage climate-related risks and opportunities and performance against targets."
     ]
-  }]
-});
+  }
+]
 
-standards.push({
-  title: "CDP",
-  imageUrl: "/images/standards/cdp-logo.png",
-  items: [
+export const cdp_topics: DisplayItem[] = [
   {
     title: "C4 Targets and performance",
     description: [
@@ -164,13 +157,11 @@ standards.push({
     description: [
       "C8.2: Energy-related activities"
     ]
-  }]
-});
+  }
+]
 
-standards.push({
-  title: "GRI",
-  imageUrl: "/images/standards/gri-logo.png",
-  items: [{
+export const gri_topics: DisplayItem[] = [
+  {
     title: "GRI 302: Energy 2016",
     description: [
       "Disclosure 302-1: Energy consumption within the organization",
@@ -190,5 +181,5 @@ standards.push({
       "Disclosure 305-6: Emissions of ozone-depleting substances (ODS)",
       "Disclosure 305-7: Nitrogen oxides (NOx), sulfur oxides (SOx), and other significant air emissions",
     ]
-  }]
-});
+  }
+]

@@ -82,7 +82,7 @@ export default function Home(): JSX.Element {
               }}
               className="flex justify-center"
             >
-                <div className="xl:w-[80%] flex gap-10 xl:flex-row items-center flex-col w-[90%] pt-10">
+                <div className="xl:w-[85%] flex gap-10 xl:flex-row items-center flex-col w-[90%]">
                   <div className="px-1 flex flex-col items-start">
                     <div className="flex flex-col gap-3 xl:text-left text-center">
                       <p className="text-2xl sm:text-4xl xl:text-4.5xl font-bold text-white">
@@ -93,13 +93,12 @@ export default function Home(): JSX.Element {
                         </h1>
                         {data.hero.title_3}
                       </p>
-                      <p className="text-sm md:text-xl text-white whitespace-normal ">
+                      <p className="text-sm md:text-lg text-white whitespace-normal ">
                         {data.hero.subtitle_1}<br/>
                         {data.hero.subtitle_2}
                       </p>
-                      
                       { data.hero.news && <div className="pt-4">
-                        <a className="text-xl p-2 text-gray-800 rounded-md bg-yellow-300 hover:text-gray-800 hover:bg-yellow-400" href={data.hero.news_link}>{data.hero.news} </a>
+                        <a className="px-5 font-bold py-3 text-gray-800 rounded-lg bg-yellow-300 hover:text-gray-800 hover:bg-yellow-400" href={data.hero.news_link}>{data.hero.news} </a>
                       </div>}
                       
                     </div>
@@ -116,7 +115,7 @@ export default function Home(): JSX.Element {
                       </a>
                     </div>
                   </div>
-                  <div className="w-[80%] md:w-[60%] xl:w-full flex flex-col items-center justify-center">
+                  <div className="w-[80%] md:w-[70%] xl:w-full flex flex-col items-center justify-center">
                     <div className="flex flex-col text-left shadow-lg rounded-md items-center">
                       <div className="">
                         <img src="https://www.hana.eco/images/hanaeco_dashboard1.png" height="100px" alt="hana.eco main" className="rounded-md" />
