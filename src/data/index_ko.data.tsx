@@ -171,7 +171,7 @@ export const features: PageSection = {
       icon: "",
       title: "탄소 회계",
       description:
-        <p>온실가스 배출량과 감축량을 탄소로 환산합니다. <br/>데이터 수집 자동화, 휴먼에러 방지, 보고서 출력 등 실무자의 편의를 제공합니다.</p>,
+        [<p>온실가스 배출량과 감축량을 탄소로 환산합니다. <br/>데이터 수집 자동화, 휴먼에러 방지, 보고서 출력 등 실무자의 편의를 제공합니다.</p>],
     },
     {
       icon: "",
@@ -182,7 +182,7 @@ export const features: PageSection = {
       icon: "",
       title: "전략",
       description:
-        <p>온실가스 배출량 시각화 및 인공지능을 통해 목표를 관리합니다.<br/> 경제성 분석에 따른 감축 전략 추천 및 실행 상황을 모니터링합니다.</p>,
+        [<p>온실가스 배출량 시각화 및 인공지능을 통해 목표를 관리합니다.<br/> 경제성 분석에 따른 감축 전략 추천 및 실행 상황을 모니터링합니다.</p>],
     },
     {
       icon: "",
@@ -193,6 +193,13 @@ export const features: PageSection = {
 };
 
 export const partner = [
+  {
+    title: "Futuris Consulting",
+    sourceUrl: "https://futurisconsulting.com/",
+    imageUrl: "/images/partners/Futuris-logo.png",
+    description: "파트너사 | Futuris Consulting is a sustainability consulting company that provides services for Latin America in environmental, social, health, and safety matters.",
+    imgHeight: 'h-[45px]'
+  },
   {
     title: "OPUS M",
     sourceUrl: "https://www.opusm.io/",
