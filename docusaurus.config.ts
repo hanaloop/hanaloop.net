@@ -204,10 +204,15 @@ const config: Config = {
           {
             from: '/docs/x20_environment-general/2024-01-20-cbam-compliance',
             to: '/docs/x20_environment-general/CBAM/2024-01-20-cbam-compliance'
+          },
+          {
+            from: '/docs/x20_environment-general/2025-02-20-new-battery-regulation',
+            to: '/docs/x20_environment-general/EU-regulations/2025-02-20-new-battery-regulation'
           }
         ],
       },
     ],
+
     async function myPlugin(context, options) {
       return {
         name: "docusaurus-tailwindcss",
