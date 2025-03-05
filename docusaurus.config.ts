@@ -2,6 +2,33 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+function extractDate(id) {
+  // ID에서 마지막 부분(파일 이름)을 추출
+  const fileName = id.split('/').pop();
+  // 파일 이름에서 날짜 부분 추출 (YYYY-MM-DD 형식)
+  const dateMatch = fileName.match(/(\d{4}-\d{2}-\d{2})/);
+  return dateMatch ? dateMatch[1] : '1970-01-01'; // 날짜가 없으면 기본값 반환
+}
+
+function reverseSidebarItems(items) {
+  return items.map((item) => {
+    if (item.type === 'category') {
+      // 카테고리 내부의 항목들에 대해 재귀적으로 함수 적용
+      return {...item, items: reverseSidebarItems(item.items)};
+    }
+    return item;
+  }).sort((a, b) => {
+    // doc 타입 항목만 정렬
+    if (a.type === 'doc' && b.type === 'doc') {
+      // 문서 파일 이름에서 날짜를 추출하여 비교
+      const dateA = extractDate(a.id);
+      const dateB = extractDate(b.id);
+      return Number(new Date(dateB)) - Number(new Date(dateA));
+    }
+    return 0; // doc 타입이 아니면 순서 변경 없음
+  });
+}
+
 const config: Config = {
   title: 'HanaLoop',
   tagline: 'Carbon Management and Climate Compliance Platform',
@@ -39,6 +66,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarItemsGenerator: async function ({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            return reverseSidebarItems(sidebarItems);
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/hanaloop/hanaloop.com/tree/main/packages/create-docusaurus/templates/shared/',
