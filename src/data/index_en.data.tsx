@@ -192,6 +192,20 @@ export const features: PageSection = {
 
 export const partner = [
   {
+    title: "carbonaccountingalliance",
+    sourceUrl: "https://www.carbonaccountingalliance.com/",
+    imageUrl: "/images/partners/CAA.jpeg",
+    description: "파트너사 | We founded the Carbon Accounting Alliance as a place for alignment and collaboration in the carbon accounting industry. In the ethos of “collaboration over competition” we believe that our industry working together is critical for us to collectively solve the climate crisis. ",
+    imgHeight: 'h-[85px]'
+  },
+  {
+    title: "Futuris Consulting",
+    sourceUrl: "https://futurisconsulting.com/",
+    imageUrl: "/images/partners/Futuris-logo.png",
+    description: "파트너사 | Futuris Consulting is a sustainability consulting company that provides services for Latin America in environmental, social, health, and safety matters.",
+    imgHeight: 'h-[45px]'
+  },
+  {
     title: "OPUS M",
     sourceUrl: "https://www.opusm.io/",
     imageUrl: "/images/partners/OPUSM.jpeg",
