@@ -148,7 +148,7 @@ export const journey: PageSection = {
         title: "IFRS S1, S2",
         subtitle: "국제재무보고기준재단(IFRS) 산하 ISSB는 IFRS S1(일반)과 S2(기후)를 통해 글로벌 지속가능성 공시 규제를 확정했습니다. 기업은 공시기준에 따라 지속가능성 관련 위험을 관리하고 감축 목표를 달성하기 위한 전략 수립과 이행이 필요합니다.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
-        imageUrl: "/images/directory_1.jpg",
+        imageUrl: "/images/directory_1.png",
       },
       {
         title: "CBAM",
@@ -160,7 +160,7 @@ export const journey: PageSection = {
         title: "Scope 3",
         subtitle: "기업 활동의 탄소배출관리 범위가 가치사슬망으로 확대되었습니다. 이제는 협력사와 공급망, 고객의 탄소 배출까지 고려해야 합니다. ESG, PCAF, IFRS, CDP, CSDDD 등 탄소 감축을 목표로 하는 다양한 규제와 공시 요구에 응하기 위해 Scope 3 배출량 산정은 선택이 아닌 필수 과제입니다.",
         link: "https://brunch.co.kr/@hanaloop/3",
-        imageUrl: "/images/directory_3.jpg",
+        imageUrl: "/images/directory_3.png",
       },
     ],
 }

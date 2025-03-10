@@ -147,7 +147,7 @@ export const journey: PageSection = {
         title: "IFRS/ISSB S1, S2",
         subtitle: "Numerous reporting standards—such as TCFD, SASB, CDSB, Integrated Reporting (IR), and Value Reporting (VR)—have been consolidated into the International Financial Reporting Standards (IFRS) Foundation’s ISSB S1 and S2. Starting in 2025, companies in various jurisdictions will be required to implement these standards.",
         link: "https://www.hanaloop.com/docs/x20_environment-general/2023-07-31-IFRS-ISSB-sustainability-disclosure-standards",
-        imageUrl: "/images/directory_1.jpg",
+        imageUrl: "/images/directory_1.png",
       },
       {
         title: "CBAM",
@@ -159,7 +159,7 @@ export const journey: PageSection = {
         title: "Scope 3",
         subtitle: "The scope of carbon emissions management in business activities has expanded to cover the entire value chain, making it essential to account for the emissions of partners, supply chains, and customers. To comply with regulations and disclosure requirements aimed at carbon reduction—such as IFRS, CDP, PCAF, and CSDDD—accurately calculating Scope 3 emissions is becoming increasingly important.",
         link: "https://brunch.co.kr/@hanaloop/3",
-        imageUrl: "/images/directory_3.jpg",
+        imageUrl: "/images/directory_3.png",
       },
     ],
 }
