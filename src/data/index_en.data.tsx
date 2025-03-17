@@ -195,27 +195,27 @@ export const partner = [
     title: "MarinaChain",
     sourceUrl: "https://www.marinachain.io/ko",
     imageUrl: "/images/partners/MarinaChain.png",
-    imgHeight: 'h-[55px]'
+    imgHeight: 'h-[25px]'
   },
   {
-    title: "서울대학교 환경대학원",
-    sourceUrl: "https://gses.snu.ac.kr/",
-    imageUrl: "/images/partners/SNU.png",
-    imgHeight: 'h-[55px]'
+    title: "서울대학교 기후테크센터",
+    sourceUrl: "https://climate-tech.kr/",
+    imageUrl: "/images/partners/ClimateTechCenter.png",
+    imgHeight: 'h-[35px]'
   },
   {
     title: "carbonaccountingalliance",
     sourceUrl: "https://www.carbonaccountingalliance.com/",
     imageUrl: "/images/partners/CAA.jpeg",
     description: "파트너사 | We founded the Carbon Accounting Alliance as a place for alignment and collaboration in the carbon accounting industry. In the ethos of “collaboration over competition” we believe that our industry working together is critical for us to collectively solve the climate crisis. ",
-    imgHeight: 'h-[85px]'
+    imgHeight: 'h-[65px]'
   },
   {
     title: "Futuris Consulting",
     sourceUrl: "https://futurisconsulting.com/",
     imageUrl: "/images/partners/Futuris-logo.png",
     description: "파트너사 | Futuris Consulting is a sustainability consulting company that provides services for Latin America in environmental, social, health, and safety matters.",
-    imgHeight: 'h-[45px]'
+    imgHeight: 'h-[25px]'
   },
   {
     title: "OPUS M",
@@ -229,7 +229,7 @@ export const partner = [
     sourceUrl: "https://www.compumathai.com/",
     imageUrl: "https://www.compumathai.com/images/ci_kr.svg",
     description: "파트너사 | AI, Chatbot, and Data Analysis Products Service. Revolutionizing the Future. concept. A symbol of practice AI. Practice AI. A symbol of build AI. Build AI.",
-    imgHeight: 'h-[35px]'
+    imgHeight: 'h-[15px]'
   },
   {
     title: "넷제로 2050 기후재단",
@@ -353,7 +353,7 @@ export const partner = [
 ]
 
 export const customers: PageSection = {
-  title: "Digital Partner HanaLoop empowers your temporary travel",
+  title: "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다",
   subtitle:"",
   items: [{
       title: "이마트",
@@ -437,14 +437,14 @@ export const customers: PageSection = {
       sourceUrl: "https://www.jkccorp.co.kr/main",
       imageUrl: "/images/partners/JKC-logo.png",
       description: "고객사 | ISO 9001/14001 certified manufacturer, specializes in producing a diverse range of film products with fully owned facilities and a hands-on approach to manufacturing and converting",
-      imgHeight: 'h-[60px]'
+      imgHeight: 'h-[40px]'
     },
     {
       title: "SHL",
       sourceUrl: "https://www.smarthl.co.kr/",
       imageUrl: "/images/partners/SHL-logo.png",
       description: "고객사 | 2차전지, 반도체 검사 설비 및 자동화 설비를 개발·생산하며 고객 맞춤형 솔루션 제공",
-      imgHeight: 'h-[30px]'
+      imgHeight: 'h-[20px]'
     },
     
   ]

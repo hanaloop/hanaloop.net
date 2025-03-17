@@ -148,7 +148,7 @@ export default function Home(): JSX.Element {
                     gradientColor="rgb(248 251 253)"
                     gradientWidth={200}
                   >
-                    <div className="flex justify-center gap-3 flex-wrap">
+                    <div className="flex justify-center gap-3 flex-wrap h-[75px]">
                       {data.customers.items.map((item) => (
                         <span className="group flex justify-center" key={item.title}>
                           <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px] ">
@@ -169,7 +169,7 @@ export default function Home(): JSX.Element {
                     delay={1.5}
                     pauseOnHover={true}
                   >
-                    <div className="flex justify-center gap-3 flex-wrap">
+                    <div className="flex justify-center gap-3 flex-wrap h-[75px]">
                       {data.partner.map((item) => (
                         <span className="group flex justify-center" key={item.title}>
                           <div className="flex justify-center items-center border border-gray-200 p-1 rounded-lg shadow-sm w-[150px]">
