@@ -18,11 +18,22 @@ import Hero from '../components/hanaloop/Hero';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { motion } from "framer-motion";
+import GlobeIcon from "../../static/svg/Globe.svg"; 
+import FlagIcon from "../../static/svg/Flag.svg"; 
+import SproutIcon from "../../static/svg/Sprout.svg"; 
+import HandshakeIcon from "../../static/svg/Handshake.svg"; 
 
 export default function Home(): JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
 
   const data = require(`../data/solution_${i18n.currentLocale}.data`);
+  const section3_svgs = {
+    section3_svg_1: <GlobeIcon />,
+    section3_svg_2: <FlagIcon />,
+    section3_svg_3: <HandshakeIcon />,
+    section3_svg_4: <SproutIcon />,
+  };
 
   return (
     <Layout
@@ -39,35 +50,94 @@ export default function Home(): JSX.Element {
         }
       />
 
+      <div className="w-screen flex justify-center bg-gray-50">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }} 
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+          <SectionBlock title={data.intro.title}>
+            <div className="px-10 ">
+              <div className="xl:grid xl:grid-cols-2 gap-10">
+                {data.intro.items.map((item, ndx) => {
+                  const svgKey = `section3_svg_${ndx + 1}`;
+                  const SvgComponent = section3_svgs[svgKey];
 
-      <SectionBlock title={data.intro.title} >
-        <div className="my-5 border border-2 rounded-lg grid grid-cols-1  md:grid-cols-2 gap-2">
-          {data.intro.items.map((item,idx) =>
-            <div className="p-4 group hover:bg-slate-100">
-              <div className="text-lg font-bold group-hover:text-primary-700">{item.title}</div>
-                <span className="text-base">{item.subtitle}</span>
-                <div>{item.description}</div>
+                  // const lines = item.description as string[];
+                  return (
+                    <div
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      key={ndx}
+                    >
+                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
+                        <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                        <div className="xl:text-xl text-lg font-bold">
+                          <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
+                            <h3 className="py-2 inline ">{item.title}</h3>
+                          </div>
+                        </div>
+                        <div className="[word-break:keep-all] w-full">
+                          <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          )}
-        </div>
-      </SectionBlock>
+          </SectionBlock>
+        </motion.div>
+      </div>
 
+      <div className="w-screen flex justify-center bg-gray-50">
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: 60 }} 
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 1 },
+          }}
+        >
+          <SectionBlock title={data.benefits.title}>
+            <div className="px-10 ">
+              <div className="xl:grid xl:grid-cols-2 gap-10">
+                {data.benefits.items.map((item, ndx) => {
+                  const svgKey = `section3_svg_${ndx + 1}`;
+                  const SvgComponent = section3_svgs[svgKey];
 
-      <SectionBlock title={data.benefits.title} containerStyle='bg-gray-100'>
-        <div className="my-5 p-2 grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2">
-          {data.benefits.items.map(benefit => 
-          <div className="text-center" key={benefit.title}> 
-            <div className="font-extrabold text-lg text-secondary text-left">{benefit.title}</div>
-            <article className="h-40 text-gray-600 bg-white text-left border border-secondary-100 rounded-b-md">
-              {benefit.description}
-            </article>
-          </div>
-          )}
-        </div>
-      </SectionBlock>
-
-      <div className="flex justify-center" >
-        <img src={useBaseUrl("/images/banner-carbon_disclosure.jpeg")} />
+                  // const lines = item.description as string[];
+                  return (
+                    <div
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      key={ndx}
+                    >
+                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
+                        <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                        <div className="xl:text-xl text-lg font-bold">
+                          <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
+                            <h3 className="py-2 inline ">{item.title}</h3>
+                          </div>
+                        </div>
+                        <div className="[word-break:keep-all] w-full">
+                          <ul className="list-none xl:text-md text-sm text-left">
+                            {item.description?.map((expect, ndx: number) => (
+                              <li className="flex gap-2 items-center" key={ndx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{expect}</div></li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </SectionBlock>
+        </motion.div>
       </div>
     </Layout>
   );

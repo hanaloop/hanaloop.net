@@ -18,44 +18,36 @@ export const benefits: PageSection = {
   title: "데이터가 보이면 탄소중립 전략이 보입니다!",
   items: [{
     title: "데이터 연동, 생성형AI기반 분석",
-    description: <>
-        <ul>
-        <li>자동 데이터 수집으로 번거로운 수작업 데이터 수집 줄임</li>
-        <li>생성형AI기반 규제 검색과 리포트 생성</li>
-        <li>전사 배출 현황 및 추세 분석 제공</li>
-        <li>데이터 저장 및 전송 암호화 보완으로 안전성</li>
-        </ul>
-      </>
+    description: [
+        '자동 데이터 수집으로 번거로운 수작업 데이터 수집 줄임',
+        '생성형AI기반 규제 검색과 리포트 생성',
+        '전사 배출 현황 및 추세 분석 제공',
+        '데이터 저장 및 전송 암호화 보완으로 안전성',
+    ]
   },
   {
     title: "가치사슬망 스코프 3 관리",
-    description: <>
-      <ul>
-      <li>가치사슬 배출량 관리</li>
-      <li>협력사 관리</li>
-      <li>다국어 지원</li>
-      </ul>
-      </>
+    description:[
+      '가치사슬 배출량 관리',
+      '협력사 관리',
+      '다국어 지원'
+    ]
   },
   {
     title: "제품 LCA 지원",
-    description: <>
-      <ul>
-      <li>제품의 원부자제(전구물질/Precursor) 관리</li>
-      <li>제품 생산 공정 설정과 내재배출 산정</li>
-      <li>업스트림(Upstream) 다운스림(Downstream) 배출 산정</li>
-      <li>제품 내재배출 분석 및 벤츠마킹</li>
-      </ul>
-    </>
+    description:[
+      '제품의 원부자제(전구물질/Precursor) 관리',
+      '제품 생산 공정 설정과 내재배출 산정',
+      '업스트림(Upstream) 다운스림(Downstream) 배출 산정',
+      '제품 내재배출 분석 및 벤츠마킹'
+    ]
   },
   {
     title: "OpenAPI - 플랫폼",
-    description: <>
-      <ul>
-      <li>확장 솔루션 구축시간 단축</li>
-      <li>신사업 모델 창출 가능</li>
-      <li>저탄소 생태계 형성</li>
-      </ul>
-    </>
+    description:[
+      '확장 솔루션 구축시간 단축',
+      '신사업 모델 창출 가능',
+      '저탄소 생태계 형성'
+    ]
   }]
 }
