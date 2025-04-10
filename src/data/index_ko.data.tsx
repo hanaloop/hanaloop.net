@@ -194,6 +194,12 @@ export const features: PageSection = {
 
 export const partner = [
   {
+    title: "Korea ESG COMMITTEE",
+    sourceUrl: "https://www.koreaesgcommittee.com/",
+    imageUrl: "/images/partners/koreaESGcommittee.png",
+    imgHeight: 'h-[75px]'
+  },
+  {
     title: "MarinaChain",
     sourceUrl: "https://www.marinachain.io/ko",
     imageUrl: "/images/partners/MarinaChain.png",

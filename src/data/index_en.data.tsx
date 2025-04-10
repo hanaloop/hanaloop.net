@@ -355,7 +355,14 @@ export const partner = [
 export const customers: PageSection = {
   title: "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다",
   subtitle:"",
-  items: [{
+  items: [
+    {
+      title: "Korea ESG COMMITTEE",
+      sourceUrl: "https://www.koreaesgcommittee.com/",
+      imageUrl: "/images/partners/koreaESGcommittee.png",
+      imgHeight: 'h-[75px]'
+    },
+    {
       title: "이마트",
       sourceUrl: "https://store.emart.com/main/main.do",
       imageUrl: "/images/partners/partner-emart_logo.png",
