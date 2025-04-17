@@ -19,44 +19,36 @@ export const benefits: PageSection = {
   title:"When data is transparent, strategy becomes evident!",
   items: [{
     title: "Data integration, and automation",
-    description: <>
-        <ul>
-        <li>Streamline and diminish manual data collection complexities </li>
-        <li>Delivers comprehensive company-wide emissions status and trend analysis</li>
-        <li>Effortlessly adapt to regulatory changes</li>
-        <li>Secure and scalable</li>
-        </ul>
-      </>
+    description: [
+        'Streamline and diminish manual data collection complexities',
+        'Delivers comprehensive company-wide emissions status and trend analysis',
+        'Effortlessly adapt to regulatory changes',
+        'Secure and scalable',
+    ]
   },
   {
     title: "Scope 3 management",
-    description: <>
-      <ul>
-      <li>Holistic management of value chain emissions</li>
-      <li>Tailored and relevant reporting solutions</li>
-      <li>Multilingual Support</li>
-      </ul>
-      </>
+    description: [
+      'Holistic management of value chain emissions',
+      'Tailored and relevant reporting solutions',
+      'Multilingual Support'
+    ]
   },
   {
     title: "Affordable for SMEs.",
-    description: <>
-      <ul>
-      <li>Manage emissions without high-cost investments</li>
-      <li>Tailored pricing based on the size and requirements of the company</li>
-      <li>No dedicated personnel required for system management</li>
-      <li>No additional licensing costs</li>
-      </ul>
-    </>
+    description: [
+      'Manage emissions without high-cost investments',
+      'Tailored pricing based on the size and requirements of the company',
+      'No dedicated personnel required for system management',
+      'No additional licensing costs',
+    ]
   },
   {
     title: "OpenAPI - Platform",
-    description: <>
-      <ul>
-      <li>Streamlined implementation timeframe for innovative solution development</li>
-      <li>Opportunity to forge a novel business model</li>
-      <li>Cultivating a corporate culture focused on greenhouse gas management </li>
-      </ul>
-    </>
+    description: [
+      'Streamlined implementation timeframe for innovative solution development',
+      'Opportunity to forge a novel business model',
+      'Cultivating a corporate culture focused on greenhouse gas management'
+    ]
   }]
 }
