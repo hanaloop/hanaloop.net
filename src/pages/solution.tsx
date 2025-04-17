@@ -61,8 +61,8 @@ export default function Home(): JSX.Element {
           }}
         >
           <SectionBlock title={data.intro.title}>
-            <div className="px-10 ">
-              <div className="xl:grid xl:grid-cols-2 gap-10">
+            <div className="px-10 w-full flex justify-center">
+              <div className="w-[55%] flex flex-col gap-10 items-center">
                 {data.intro.items.map((item, ndx) => {
                   const svgKey = `section3_svg_${ndx + 1}`;
                   const SvgComponent = section3_svgs[svgKey];
@@ -70,18 +70,25 @@ export default function Home(): JSX.Element {
                   // const lines = item.description as string[];
                   return (
                     <div
-                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-7 bg-white shadow-sm xl:h-[300px] flex justify-center"
+                      className="group min-w-[400px] rounded-xl hover:border-primary-700 mb-4 py-5 bg-white shadow-sm flex justify-center"
                       key={ndx}
                     >
-                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
-                        <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
-                        <div className="xl:text-xl text-lg font-bold">
-                          <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
-                            <h3 className="py-2 inline ">{item.title}</h3>
+                      <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[90%]">
+                        <div className='flex lg:flex-row flex-col-reverse items-center gap-4'>
+                          <div className='flex flex-col items-start'>
+                            <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                            <div className="xl:text-xl text-lg font-bold">
+                              <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
+                                <h3 className="py-2 inline ">{item.title}</h3>
+                              </div>
+                            </div>
+                            <div className="[word-break:keep-all] w-full">
+                              <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>
+                            </div>
                           </div>
-                        </div>
-                        <div className="[word-break:keep-all] w-full">
-                          <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>
+                          <div className='w-[200px] h-[200px] flex-shrink-0 rounded-md flex justify-center items-center'>
+                            <img src={`/images/solution_${ndx+1}.png`} height="200px" width="200px" className='rouneded-md' />
+                          </div>
                         </div>
                       </div>
                     </div>
