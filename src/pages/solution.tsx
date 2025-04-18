@@ -50,7 +50,7 @@ export default function Home(): JSX.Element {
         }
       />
 
-      <div className="w-screen flex justify-center bg-gray-50">
+      <div className="w-screen flex justify-center">
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: 60 }} 
@@ -76,11 +76,9 @@ export default function Home(): JSX.Element {
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[90%]">
                         <div className='flex lg:flex-row flex-col-reverse items-center gap-4'>
                           <div className='flex flex-col items-start'>
-                            <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
-                            <div className="xl:text-xl text-lg font-bold">
-                              <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
-                                <h3 className="py-2 inline ">{item.title}</h3>
-                              </div>
+                            <div className='flex items-center xl:text-xl text-lg font-bold'>
+                              <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                              <h3 className="py-2 inline ">{item.title}</h3>
                             </div>
                             <div className="[word-break:keep-all] w-full">
                               <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>

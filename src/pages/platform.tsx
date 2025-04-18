@@ -63,11 +63,9 @@ export default function Home(): JSX.Element {
                       key={ndx}
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
-                        <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
-                        <div className="xl:text-xl text-lg font-bold">
-                          <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
-                            <h3 className="py-2 inline ">{item.title}</h3>
-                          </div>
+                        <div className='flex items-center'>
+                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                          <h3 className="py-2 inline  xl:text-xl text-lg font-bold">{item.title}</h3>
                         </div>
                         <div className="[word-break:keep-all] w-full">
                           <h4 className="pb-2 text-md font-semibold text-gray-500 text-left">{item.description}</h4>

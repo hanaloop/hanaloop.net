@@ -5,7 +5,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitle: string; content:string}[]}) => {
     return (
       <div className='flex flex-col items-start gap-4 xl:w-[50%]'>
-        <span className='font-bold sm:text-xl text-lg'>{title}</span>
+        <h2 className='font-bold sm:text-xl text-lg'>{title}</h2>
         <div className='flex flex-col gap-4 items-start'>
           {
             descriptions.map((description) => {
@@ -13,7 +13,7 @@ const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitl
                 <>
                   <div className='flex items-center gap-3'>
                   <div className="w-3 rounded-md"><CheckIcon/></div>
-                  <span className='sm:text-lg text-base font-semibold'>{description.subTitle}</span>
+                  <h3 className='sm:text-lg text-base font-semibold'>{description.subTitle}</h3>
                   </div>
                   <div className='text-start sm:text-base text-sm'>{description.content}</div>     
                 </>
@@ -25,13 +25,15 @@ const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitl
     )
   }
   
-  const MediaImage = ({imageUrl}: {imageUrl:string}) => {
+  const MediaImage = ({imageUrl, imgSize}: {imageUrl:string, imgSize:string}) => {
+    
     return (
-      <div className='xl:w-[400px] w-full sm:h-[350px] min-h-[200px] h-full rounded-md xl:flex-1 bg-contain bg-center bg-no-repeat z-10' style={{backgroundImage: `url(${useBaseUrl(imageUrl)})`}}></div>
+      <div className={`xl:w-[400px] w-full ${imgSize} min-h-[150px] rounded-md xl:flex-1 bg-contain bg-center bg-no-repeat z-10`} style={{backgroundImage: `url(${useBaseUrl(imageUrl)})`}}></div>
     )
   }
 
-  export const CardMediaImage = ({title, descriptions, imageUrl}: {title: string, descriptions: {subTitle: string; content:string}[], imageUrl: string}) => {
+  export const CardMediaImage = ({size="l", title, descriptions, imageUrl}: { size: "m" | 'l', title: string, descriptions: {subTitle: string; content:string}[], imageUrl: string}) => {
+    const imgSize = size === "m" ? 'sm:h-[270px]' : 'sm:h-[300px]'
     return (
         <motion.div
             viewport={{ once: true }}
@@ -42,9 +44,9 @@ const MediaText = ({title, descriptions}: {title: string, descriptions: {subTitl
             transition: { duration: 1 },
             }}
         >
-            <div className="flex justify-center w-full h-full mb-[150px]">
-                <div className='sm:w-[80%] w-[90%] bg-gray-100 rounded-md px-10 py-6 flex gap-8 xl:flex-row-reverse flex-col xl:h-[400px] h-full'>  
-                    <MediaImage imageUrl={imageUrl}/>
+            <div className="flex justify-center w-full h-full space-y-[100px]">
+                <div className='sm:w-[70%] w-[90%] rounded-md px-10 py-6 flex gap-8 xl:flex-row-reverse flex-col xl:h-[400px] h-full justify-center'>  
+                    <MediaImage imageUrl={imageUrl} imgSize={imgSize}/>
                     <MediaText title={title} descriptions={descriptions}/>
                 </div>
             </div>
