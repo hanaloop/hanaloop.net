@@ -58,9 +58,11 @@ export default function HanaAI(): JSX.Element {
                                   key={ndx}
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
-                                    <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
-                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
+                                    <div className='flex items-center'>
+                                      <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
                                       <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
+                                    </div>
+                                    <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
                                       {
                                         item.descriptions.map((description) => {
                                           return (
@@ -80,7 +82,7 @@ export default function HanaAI(): JSX.Element {
                     </div>
                   </motion.div>
                 </SectionBlock>
-                <SectionBlock title={'Hana.eco AI Features'}>
+                <SectionBlock title={'Hana.eco AI Features'} containerStyle='bg-gray-50'>
                   {
                     data.features_1.map((feature, idx) => (
                         <div key={idx}><CardMediaImage title={feature.title} descriptions={feature.descriptions} imageUrl={feature.imageUrl}/></div>
