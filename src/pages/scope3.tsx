@@ -137,23 +137,28 @@ export default function Scope3(): JSX.Element {
                         }}
                         className="w-full flex justify-center"
                     >
-                      <div className=' grid lg:grid-cols-3 lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4 justify-items-center sm:w-[80%] w-[90%]'>
-                      {
-                        data.articles.map((article, idx) => (
-                          
-                              <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
-                                  <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
-                                  <div className="h-[0.5px] w-full bg-black my-2"></div>
-                                  <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
-                                  <div className='w-full flex justify-end'>
-                                      <Link to={article.link} aria-label={`Go to TEST posting`}>
-                                          <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-gray-50'><ArrowIcon width={20} height={20}/></button>
-                                      </Link>
+                       <div className='flex flex-col items-center gap-10'>
+                        <div className=' grid lg:grid-cols-3 lg:gap-10 sm:grid-cols-2 grid-cols-1 gap-4 justify-items-center sm:w-[80%] w-[90%]'>
+                          {
+                            data.articles.map((article, idx) => (
+                              
+                                  <div className='xs:w-full w-[90%] rounded-md p-2 flex flex-col bg-white justify-between px-4'>
+                                      <span className='font-bold h-[50px] break-keep flex items-center text-start'>{article.title}</span>
+                                      <div className="h-[0.5px] w-full bg-black my-2"></div>
+                                      <div className="xs:text-sm break-keep text-start">{truncate(article.description, 100)}</div>
+                                      <div className='w-full flex justify-end'>
+                                          <Link to={article.link} aria-label={`Go to TEST posting`}>
+                                              <button aria-label={`Go to TEST posting`} className=' border-none w-[80px] h-[40px] rounded-md cursor-pointer hover:bg-blue-400 transition-all ease-linear duration-100 bg-gray-50'><ArrowIcon width={20} height={20}/></button>
+                                          </Link>
+                                      </div>
                                   </div>
-                              </div>
-                          
-                        ))                        
-                      }
+                              
+                            ))                        
+                          }
+                        </div>
+                        <div className='py-8 px-6 bg-white  sm:w-[80%] w-[90%] flex items-center justify-center word-breaks rounded-sm'>
+                          <span>(재)한국품질재단, 서울대학교 환경계획학과, 하나루프가 공동으로 수행한 <a className='border-b border-blue-400 font-bold' target="_blank" href="https://ecolibrary.me.go.kr/nier/#/search/detail/5921697?offset=1">「Scope 3 온실가스 배출량 산정 및 보고 가이드라인(v1.0)」</a>이 발간되었습니다.</span>
+                        </div>
                       </div>
                     </motion.div>
                 </SectionBlock>
@@ -163,7 +168,7 @@ export default function Scope3(): JSX.Element {
         <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col sm:w-[80%] w-[95%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
-            <div className="flex gap-3 justify-center my-8 xl:justify-start">
+            <div className="flex gap-3 justify-center my-8 xl:justify-start mb-12">
               <a href={data.hero.link_1} target="_blank">
                 <button className="rounded-lg py-3 w-[120px] font-bold text-white bg-[#0094ff] hover:bg-[#017cd4]">
                   {data.request.button_1}
