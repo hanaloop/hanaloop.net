@@ -53,7 +53,7 @@ const config = {
         },
         {
           to: '/docs/_index',
-          label: '자료',
+          label: '탄소중립 인사이트',
           position: 'left',
         },
         {
@@ -109,7 +109,7 @@ const config = {
               to: '/search',
             },
             {
-              label: '자료',
+              label: '탄소중립 인사이트',
               to: '/docs/_index',
             },
           ],

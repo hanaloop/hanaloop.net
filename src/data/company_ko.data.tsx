@@ -94,6 +94,7 @@ export const members = {
     "education": "Carnegie Mellon University 석사, 고려대 학사",
     "description": "Walt Disney, Pearson, Wayfair, Altenia 등. 프로젝트: 이마트 DT, 디즈니 미디어 플랫폼, LG 콜센터, 신공항고속도로 통합, 한국통신 MMS 등 20년 이상 IT 업계에서 팀과 조직을 성공적으로 이끌며 대규모 엔터프라이즈 어플리케이션 개발. 보안 및 생물정보학 논문 저자.",
     "linkedin": "https://www.linkedin.com/in/ysahn/",
+    "webpage": "https://youngsukahn.com/ko/pages/resume/"
   },
   "saeahn": {
     "name": "안새애",
@@ -114,7 +115,6 @@ export const members = {
     "tagline": "기후 위기에 도메인 지식 적용",
     "education": "인하대학교, 금속공학 석사, 신소재공학 학사",
     "description": "케이피씨엠, 동부메탈. 정부 연구과제 수행, 금속 제련 및 정련 공정기술 개발, 산업 공정 분석 및 개선",
-    "linkedin": "https://www.linkedin.com/in/%ED%8F%89%ED%9C%98-%EC%9D%B4-836314201/",
   },
   "dionysios": {
     "name": "디오니시오스",
@@ -124,7 +124,6 @@ export const members = {
     "tagline": "환경 문제를 기술로 풀기위해",
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming.",
-    "linkedin": "https://www.linkedin.com/in/dionysios-tsouchlakis/",
   },
   "jdpark": {
     "name": "박정도",
@@ -134,7 +133,6 @@ export const members = {
     "tagline": "기후 위기에 도메인 지식 적용",
     "education": "인천대학교, 전자공학 학사",
     "description": "Scope3 산정 및 시스템 개발",
-    "linkedin": "https://www.linkedin.com/in/%EC%A0%95%EB%8F%84-%EB%B0%95-1a177a289/",
   },
   // "hana": {
   //   "type": "system",

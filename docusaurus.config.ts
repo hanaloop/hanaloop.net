@@ -202,10 +202,6 @@ const config: Config = {
               href: 'https://www.youtube.com/@hanaloop',
             },
             {
-              label: 'Instagram',
-              href: 'https://www.instagram.com/hana.loop/',
-            },
-            {
               label: 'Brunch',
               href: 'https://brunch.co.kr/@hanaloop',
             },

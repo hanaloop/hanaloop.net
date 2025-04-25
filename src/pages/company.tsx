@@ -6,6 +6,7 @@ import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { motion } from "framer-motion";
 import LinkedInIcon from "../../static/svg/LinkedIn.svg";
+import WebIcon from "../../static/svg/Web.svg";
 import Link from "@docusaurus/Link";
 
 export default function Home(): JSX.Element {
@@ -145,9 +146,19 @@ export default function Home(): JSX.Element {
                           </a>
                         </div>
                         <div className="text-sm text-primary-dark flex items-center justify-center gap-1">
-                          <Link href={m.linkedin}>
-                            <LinkedInIcon/>
-                          </Link>
+                          {
+                            m.webpage && 
+                            <Link href={m.webpage}>
+                              <WebIcon width={15} height={15}/>
+                            </Link>
+                          }
+                          {
+                            m.linkedin && 
+                            <Link href={m.linkedin}>
+                              <LinkedInIcon/>
+                            </Link>
+                            
+                          }
                           {m.title}
                         </div>
                         <div className="mt-2 text-xs text-slate-500">

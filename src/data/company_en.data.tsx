@@ -87,6 +87,7 @@ export const members = {
     "education": "Carnegie Mellon University MSEng, Korea Univ. Undergrad",
     "description": "Walt Disney, Pearson, Wayfair, Altenia. Projects: Emart DT, Disney Digital Media Distribution Platform, LG Call-center system, Incheon Airport Integration, Over 20 years in the IT industry, successfully leading teams and organizations to develop large-scale enterprise applications. Author of Security and bioinformatics papers.",
     "linkedin": "https://www.linkedin.com/in/ysahn/",
+    "webpage": "https://youngsukahn.com/ko/pages/resume/"
   },
   "saeahn": {
     "name": "Sae Ahn",
@@ -107,7 +108,6 @@ export const members = {
     "tagline": "Applying domain knowledge to climate crisis",
     "education": "Inha Univ., Masters and Undergraduate",
     "description": "KPCM, Dongbu Metal, Samsung Electronics",
-    "linkedin": "https://www.linkedin.com/in/%ED%8F%89%ED%9C%98-%EC%9D%B4-836314201/",
   },
   "dionysios": {
     "name": "Dionysios Tsouchlakis",
@@ -117,7 +117,6 @@ export const members = {
     "tagline": "To solve environmental problems with technology",
     "education": "University of Western Macedonia, Greece",
     "description": "Prior analyst at Aurora Energy Research (Germany), Vertis Environmental Finance (Hungary). Experienced energy economist with a passion for programming.",
-    "linkedin": "https://www.linkedin.com/in/dionysios-tsouchlakis/",
   },
   "jdpark": {
     "name": "Jeongdo Park",
@@ -127,7 +126,6 @@ export const members = {
     "tagline": "Addressing climate issue one at a time",
     "education": "Incheon University",
     "description": "Calculate Scope3 and System develope",
-    "linkedin": "https://www.linkedin.com/in/%EC%A0%95%EB%8F%84-%EB%B0%95-1a177a289/",
   },
 }
 
