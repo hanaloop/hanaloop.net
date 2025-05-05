@@ -2,14 +2,13 @@
 const CBAMBanner = () => {
     return (
         <div className="w-full p-5 mt-10 rounded-lg text-center text-base border ">
-            <h2 className="text-2xl font-bold text-blue-500 my-4">하나루프 Special Offer</h2>
-            EU 탄소국경조정제도(CBAM) 시행으로 수출기업 보고서 부담, 더는 고민하지 마세요. <br/>
-            <b>선정된 기업을 대상으로 무상 진단!</b> <br/>
-            누락된 부분까지 꼼꼼하게 점검해드립니다.
+            <h2 className="text-2xl font-bold text-blue-500 my-4">하나루프, 중소벤처기업부 CBAM 인프라구축 사업 참여기업을 모집합니다</h2>
+            CBAM 대응 컨설팅 + 검증과 함께 하나에코 CBAM 솔루션을  정부 지원으로! <br/>
+            <a href="/blog/2025/20250405-cbam-program#지원조건-및-자격">하나루프 X (주)로엔컨설팅과 함께하는 정부지원사업 상세내용 링크</a><br/>
 
             <div className="w-full h-full flex justify-center p-6">
                 <button className="hover:text-white bg-blue-500 text-white rounded-md p-3">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSct04RcNKwwkGC1DKiqhXgzLG77tXjetV1NJL9prE4pJ-vpnw/viewform" target="_blank" className="no-underline">CBAM 보고서 진단 신청</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSelfVDwZQvntubPe__5fbxvGFtavpuxJ7HjTkMIKVWllkh10g/viewform" target="_blank" className="no-underline">CBAM 보고서 진단 신청</a>
                 </button>
             </div>
         </div>

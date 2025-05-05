@@ -4,9 +4,9 @@ import CBAMBanner from '@site/src/components/theme/CBAMBanner';
 
 export default function ContentWrapper(props) {
   return (
-    <>
+    <div className='break-keep'>
       <Content {...props} />
       <CBAMBanner/>
-    </>
+    </div>
   );
 }
