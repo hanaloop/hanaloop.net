@@ -55,7 +55,7 @@ export default function PCF(): JSX.Element {
       title={`${siteConfig.title} | ${translate({message: "pcf.meta_title"})}`}
       description={translate({message: "pcf.meta_description"})}>
       <Hero background={{
-          imageUrl: useBaseUrl('/images/bg-hero-cbam.jpg'),
+          imageUrl: useBaseUrl('/images/bg-hero-pcf.jpg'),
         }}
         header={translate({message: "pcf.hero_header"})}
         tagline={translate({message: "pcf.hero_tagline"})}
