@@ -103,16 +103,16 @@ export default function Scope3(): JSX.Element {
                       <div className='grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 lg:w-[70%] w-[90%]'>
                         {
                           data.management_process.map((process, idx) => (
-                                <div className='w-full rounded-md p-2 flex flex-col bg-white justify-between px-4'>
-                                    <span className='font-bold text-lg  h-[50px] break-keep flex items-center text-start'>{process.title}</span>
-                                    <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
-                                    <div className="h-[100px] xs:text-sm break-keep text-start">{
-                                      process.descriptions.map((description, idx) => (
-                                        <li className="flex gap-2 items-center" key={idx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{description}</div></li>
-                                      ))
-                                      }
-                                    </div>
+                            <div className='w-full rounded-md p-2 flex flex-col bg-white px-4'>
+                                <span className='font-bold text-lg  min-h-[50px] break-keep flex items-center text-start'>{process.title}</span>
+                                <div className="h-[0.5px] w-full bg-blue-500 my-2"></div>
+                                <div className="xs:text-sm break-keep text-start flex flex-col justify-start mt-2">{
+                                  process.descriptions.map((description, idx) => (
+                                    <li className="flex gap-2 items-center" key={idx}><div className="w-1 h-1 rounded-full bg-blue-500"></div><div>{description}</div></li>
+                                  ))
+                                  }
                                 </div>
+                            </div>
                             
                           ))                        
                         }

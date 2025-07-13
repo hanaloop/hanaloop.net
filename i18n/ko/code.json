@@ -309,7 +309,7 @@
   },
   "solution.hero_header": {
     "message": "기후 경영"
-  },
+  }, 
   "solution.hero_tagline": {
     "message": "자원은 유한하지만 잠재력은 무한합니다."
   },
@@ -401,3 +401,4 @@
     "message": "지속가능한 제품 개발을 위한 체계적인 탄소발자국 관리"
   }
 }
+

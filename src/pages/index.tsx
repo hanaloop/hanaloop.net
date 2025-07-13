@@ -22,15 +22,6 @@ import FlagIcon from "../../static/svg/Flag.svg";
 import SproutIcon from "../../static/svg/Sprout.svg"; 
 import HandshakeIcon from "../../static/svg/Handshake.svg"; 
 
-// let announcement: any | undefined;
-const announcement = {
-  initialOpen: true,
-  title: "2023년 12월 '하나루프와 기후 인사이트 수요일' 등록하기",
-  link: "https://docs.google.com/forms/d/e/1FAIpQLSev-ubKKT32aD-gqLHy0k56xyv-iBwiA5Z6jnMtqekdYmIcdA/viewform",
-  image: "/images/blog/HanaLoop_climate_insight_wednesdays.jpg",
-  dimensions: `w-[500px] md:w-[600px]`,
-};
-
 const section2_svgs = {
   section2_svg_1 : <ClipboardCheckIcon/>,
   section2_svg_2 : <FileCheckIcon/>,
@@ -86,7 +77,7 @@ export default function Home(): JSX.Element {
                   <div className="px-1 flex flex-col items-start">
                     <div className="flex flex-col gap-3 xl:text-left text-center">
                       <p className="text-2xl sm:text-4xl xl:text-4.5xl font-bold text-white">
-                        {data.hero.title_1}
+                      {data.hero.title_1}
                         {data.hero.title_2}
                         <h1 className="text-[#0094ff] font-bold inline">
                           <a href="https://www.hana.eco/">{data.hero.title_link}</a>
