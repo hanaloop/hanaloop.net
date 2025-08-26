@@ -395,13 +395,13 @@ export const customers: PageSection = {
       description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물",
       imgHeight: 'h-[20px]'
     },
-    {
-      title: "삼아알미늄",
-      sourceUrl: "https://www.sama-al.com/",
-      imageUrl: "/images/partners/samaalminum-logo.png",
-      description: "고객사 | 고품질의 알루미늄 호일 및 포장재 생산 기술",
-      imgHeight: 'h-[18px]'
-    },
+    // {
+    //   title: "삼아알미늄",
+    //   sourceUrl: "https://www.sama-al.com/",
+    //   imageUrl: "/images/partners/samaalminum-logo.png",
+    //   description: "고객사 | 고품질의 알루미늄 호일 및 포장재 생산 기술",
+    //   imgHeight: 'h-[18px]'
+    // },
     {
       title: "대호에이엘",
       sourceUrl: "http://www.daeho-al.com/",

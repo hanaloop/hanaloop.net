@@ -54,7 +54,7 @@ export default function Home(): React.JSX.Element {
 
   return (
     <Layout
-      wrapperClassName="text-gray-700 dark:text-gray-100 "
+      wrapperClassName="text-gray-700 dark:text-gray-100"
       title={`${siteConfig.title} | ${translate({
         message: "index.meta_title",
       })}`}
@@ -137,7 +137,7 @@ export default function Home(): React.JSX.Element {
                   <div className="flex justify-center gap-3 flex-wrap h-[150px]">
                     {data.customers.items.map((item) => (
                       <span className="group flex justify-center" key={item.title}>
-                                                  <div className="flex justify-center items-center border border-gray-200 dark:border-gray-600 p-1 rounded-lg shadow-sm w-[150px] dark:bg-gray-800">
+                        <div className="flex justify-center items-center border border-gray-200 dark:border-gray-600 p-1 rounded-lg shadow-sm w-[150px] dark:bg-gray-800">
                           <Link href={item.sourceUrl!}>
                             <a target="_blank">
                               <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
@@ -232,7 +232,7 @@ export default function Home(): React.JSX.Element {
                     const lines = item.description as string[];
                     return (
                       <div
-                        className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 dark:bg-gray-900 shadow-sm xl:h-[300px] w-[400px] flex justify-center"
+                        className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-gray-50 dark:bg-gray-700 shadow-sm xl:h-[300px] w-[400px] flex justify-center"
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
@@ -263,9 +263,9 @@ export default function Home(): React.JSX.Element {
         
 
         {/* 5. 하나루프가 함께합니다. */}
-        <div className="w-screen bg-gray-50 dark:bg-gray-900">
           <SectionBlock title={""}>
-              <div className="w-full flex flex-col items-center justify-center">
+            <div className="px-1">
+              <div className="w-full flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 py-[100px]">
                 <motion.div
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 60 }}
@@ -287,7 +287,7 @@ export default function Home(): React.JSX.Element {
                     <div className="w-[80%] grid xl:grid-cols-3 gap-5 md:grid-cols-2">
                       {data.journey.items.map((item, ndx) => {
                         return (
-                                                      <div className="bg-white dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
+                          <div className="bg-white dark:bg-gray-700 p-5 rounded-lg flex flex-col justify-between gap-5" key={ndx}>
                             <div className="flex items-center justify-around flex-1">
                               <div className="text-left w-[80%] h-full">
                                 <div className="text-2xl font-semibold text-start mb-1">{item.title}</div>
@@ -307,8 +307,9 @@ export default function Home(): React.JSX.Element {
                   </div>
                 </motion.div>
               </div>
+            </div>
           </SectionBlock>
-        </div>
+        
 
         {/* 6. 하나에코와 함께하세요 */}
         <div className="w-screen bg-white dark:bg-gray-800">
@@ -332,7 +333,7 @@ export default function Home(): React.JSX.Element {
                     const lines = item.description as string[];
                     return (
                       <div
-                        className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-50 dark:bg-gray-900 shadow-sm flex justify-center items-start"
+                        className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-50 dark:bg-gray-700 shadow-sm flex justify-center items-start"
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">

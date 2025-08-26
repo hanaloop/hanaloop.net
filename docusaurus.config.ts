@@ -108,27 +108,12 @@ const config: Config = {
       items: [
         {
           type: 'dropdown',
-          label: 'Platform', 
-          position: 'left',
-          items: [
-            {
-              to: '/platform',
-              label: 'CarbonAccounting',
-            },
-            {
-              to: '/hana-ai',
-              label: 'HanaecoAI',
-            }
-          ]
-        },
-        {
-          type: 'dropdown',
           label: 'Solution', 
           position: 'left',
           items: [
             {
-              to: '/solution',
-              label: 'ClimateManagement',
+              to: '/cbam',
+              label: 'CBAM',
             },
             {
               to: '/pcf',
@@ -139,21 +124,44 @@ const config: Config = {
               label: 'Scope3',
             },
             {
-              to: '/cbam',
-              label: 'CBAM',
-            }
+              to: '/hana-ai',
+              label: 'HanaecoAI',
+            },
+            {
+              to: '/platform',
+              label: 'CarbonAccounting',
+            },
+            {
+              to: '/solution',
+              label: 'ClimateManagement',
+            },
           ]
         },
-        {to: '/partnership', label: 'Partnership', position: 'left'},
-        {to: '/company', label: 'Company', position: 'left'},
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
+          type: 'dropdown',
           label: 'Resources',
+          position: 'left',
+          items: [
+            {
+              to: '/docs/intro',
+              label: 'Resources',
+            },
+            {
+              to: '/blog',
+              label: 'Blog',
+            },
+          ]
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/recruit', label: 'Recruit', position: 'left'},
+        {
+          type: 'dropdown',
+          label: 'Company',
+          position: 'left',
+          items: [
+            {to: '/partnership', label: 'Partnership'},
+            {to: '/company', label: 'Company'},
+            {to: '/recruit', label: 'Recruit'},
+          ]
+        },
         {href: 'https://www.hana.eco', label: 'Hana.eco', position: 'left'},
         // {
         //   href: 'https://github.com/facebook/docusaurus',
