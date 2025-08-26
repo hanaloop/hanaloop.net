@@ -1,3 +1,4 @@
+import React from 'react';
 import {translate} from '@docusaurus/Translate';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
@@ -43,7 +44,7 @@ const section2_svgs = {
 
 
 
-export default function PCF(): JSX.Element {
+export default function PCF(): React.JSX.Element {
   const {siteConfig, i18n} = useDocusaurusContext();
   const data = require(`../data/pcf_${i18n.currentLocale}.data`);
   const truncate = (str:string, limit_length: number) => {
@@ -64,7 +65,7 @@ export default function PCF(): JSX.Element {
         }
       />
       <main className="break-keep">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center dark:bg-gray-800">
             <div className='w-screen'>
               <SectionBlock title={data.hero.second_title}>
                 <motion.div
@@ -85,7 +86,7 @@ export default function PCF(): JSX.Element {
                   </div>
                 </motion.div>
               </SectionBlock>
-              <SectionBlock title={data.section_title.section_2} containerStyle='bg-gray-50'>
+              <SectionBlock title={data.section_title.section_2} containerStyle='bg-gray-50 dark:bg-gray-900'>
                 <motion.div
                   viewport={{ once: true }}
                   initial={{ opacity: 0, y: 60 }}
@@ -104,7 +105,7 @@ export default function PCF(): JSX.Element {
                             const SvgComponent = svgs[svgKey];
                             return (
                               <div
-                                className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 shadow-sm flex justify-center items-start w-full"
+                                className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 dark:bg-gray-800 shadow-sm flex justify-center items-start w-full"
                                 key={ndx}
                               >
                                 <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
@@ -155,7 +156,7 @@ export default function PCF(): JSX.Element {
             </div>
         </div>
 
-        <div className="w-full h-[300px] text-center bg-blue-50 flex flex-col gap-4 justify-center items-center">
+        <div className="w-full h-[300px] text-center bg-blue-50 dark:bg-gray-900 flex flex-col gap-4 justify-center items-center">
           <div className="flex flex-col sm:w-[80%] w-[95%] justify-center items-center">
             <span className="text-2xl md:text-3xl xl:text-4xl font-semibold  whitespace-normal break-keep">{data.request.title}</span>
             <div className="flex gap-3 justify-center my-8 xl:justify-start">

@@ -2,7 +2,7 @@ import { PageSection } from "../libs/types";
 
 
 export const hero = {
-  title_1 : <h1>기업 활동 중 발생하는 온실가스</h1>,
+  title_1 : <h1>기후규제 대응을 넘어 탄소중립 실현,</h1>,
   title_2: "AI기반 ",
   title_3 : <h1 className="inline">로 스마트하게 관리하세요!</h1>,
   title_link : "하나에코",
@@ -390,13 +390,13 @@ export const customers: PageSection = {
       description: "고객사 | 고객의 윤택(潤澤)함을 책임지는 산업 건물",
       imgHeight: 'h-[20px]'
     },
-    {
-      title: "삼아알미늄",
-      sourceUrl: "https://www.sama-al.com/",
-      imageUrl: "/images/partners/samaalminum-logo.png",
-      description: "고객사 | 고품질의 알루미늄 호일 및 포장재 생산 기술",
-      imgHeight: 'h-[18px]'
-    },
+    // {
+    //   title: "삼아알미늄",
+    //   sourceUrl: "https://www.sama-al.com/",
+    //   imageUrl: "/images/partners/samaalminum-logo.png",
+    //   description: "고객사 | 고품질의 알루미늄 호일 및 포장재 생산 기술",
+    //   imgHeight: 'h-[18px]'
+    // },
     {
       title: "대호에이엘",
       sourceUrl: "http://www.daeho-al.com/",
