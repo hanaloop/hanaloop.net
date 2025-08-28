@@ -134,15 +134,15 @@ export default function Home(): React.JSX.Element {
               <div className="w-full justify-center flex">
                 <div className="text-center items-center w-full md:w-[75%] flex flex-col gap-3 justify-center">
                   {/* CUSTOMERS */}
-                  <div className="flex justify-center gap-3 flex-wrap h-[150px]">
+                  <div className="flex justify-center gap-3 flex-wrap">
                     {data.customers.items.map((item) => (
                       <span className="group flex justify-center" key={item.title}>
                                                   <div className="flex justify-center items-center border border-gray-200 dark:border-gray-600 p-1 rounded-lg shadow-sm w-[150px] dark:bg-gray-800">
-                          <Link href={item.sourceUrl!}>
+                          <div>
                             <a target="_blank">
                               <img className={`${item.imgHeight} duration-200`} src={useBaseUrl(item.imageUrl!)} alt={item.title} />
                             </a>
-                          </Link>
+                          </div>
                         </div>
                       </span>
                     ))}
@@ -171,9 +171,8 @@ export default function Home(): React.JSX.Element {
                     {data.why_need.items.map((item, ndx) => {
                       const svgKey = `section3_svg_${ndx + 1}`;
                       const SvgComponent = section3_svgs[svgKey];
-
                       const lines = item.description as string[];
-                      return (
+                      return (  
                         <div
                           className="group rounded-xl hover:border-primary-700 mb-4 py-7 bg-white dark:bg-gray-700 shadow-sm xl:h-[300px] flex justify-center"
                           key={ndx}
