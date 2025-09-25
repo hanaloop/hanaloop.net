@@ -6,7 +6,7 @@ export default function ContentWrapper(props) {
   return (
     <div className='break-keep'>
       <Content {...props} />
-      <CBAMBanner />
+      {/* <CBAMBanner /> */}
     </div>
   );
 }
