@@ -58,7 +58,7 @@ article td {
 }
 
 article blockquote {
-  @apply px-4 border border-lime-600 rounded-md;
+  @apply py-2 px-4 border border-lime-600 rounded-md;
 }
 
 article a {
@@ -67,6 +67,10 @@ article a {
 
 article a:hover {
   @apply underline text-blue-700;
+}
+
+article .highlighted {
+  @apply py-2 px-4 border border-blue-500 bg-sky-100 rounded-md;
 }
 
 
