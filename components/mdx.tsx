@@ -62,7 +62,7 @@ function normalizeBlockquoteChildren(children: ReactNode) {
       (child) =>
         isValidElement(child) &&
         typeof child.type === 'string' &&
-        ['div', 'table', 'section', 'article', 'blockquote', 'ul', 'ol', 'pre'].includes(child.type),
+        ['div', 'table', 'section', 'article', 'blockquote', 'ul', 'ol', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(child.type),
     );
 
     if (!hasBlockChild) return node;
@@ -75,6 +75,21 @@ function normalizeBlockquoteChildren(children: ReactNode) {
   });
 }
 
+function normalizeParagraphChildren(children: ReactNode) {
+  const nodes = flattenTableNodes(children);
+  const hasBlockChild = nodes.some(
+    (child) =>
+      isValidElement(child) &&
+      typeof child.type === 'string' &&
+      ['div', 'table', 'section', 'article', 'blockquote', 'ul', 'ol', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(child.type),
+  );
+
+  return {
+    hasBlockChild,
+    nodes,
+  };
+}
+
 export function getMDXComponents(components?: MDXComponents) {
   return {
     ...defaultMdxComponents,
@@ -82,6 +97,14 @@ export function getMDXComponents(components?: MDXComponents) {
     CBAMBanner,
     CaptionedImage,
     SectionBlock,
+    p: ({ children, ...props }) => {
+      const { hasBlockChild, nodes } = normalizeParagraphChildren(children);
+      if (hasBlockChild) {
+        return <div {...props}>{nodes}</div>;
+      }
+
+      return <p {...props}>{children}</p>;
+    },
     table: ({ children, ...props }) => <table {...props}>{normalizeTableChildren(children)}</table>,
     tbody: ({ children, ...props }) => <tbody {...props}>{children}</tbody>,
     blockquote: ({ children, ...props }) => <blockquote {...props}>{normalizeBlockquoteChildren(children)}</blockquote>,
