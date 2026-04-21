@@ -6,7 +6,7 @@ export default function ContentWrapper(props) {
   return (
     <div className='break-keep'>
       <Content {...props} />
-      <NoticePane disable={false} />
+      <NoticePane disable={true} />
     </div>
   );
 }
