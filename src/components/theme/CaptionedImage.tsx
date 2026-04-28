@@ -1,4 +1,6 @@
 
+import { withBasePath } from '@/lib/locales';
+
 type CaptionedImageProps = {
   imageSrc: string, 
   caption: any, 
@@ -16,7 +18,7 @@ export default function CaptionedImage({imageSrc, caption, containerClassName, i
   return (
     <div className={`${containerClass} ${float}`}>
       <div className={containerClassName}>
-      <img className={`${imgClass}`} src={imageSrc} />
+      <img className={`${imgClass}`} src={withBasePath(imageSrc)} />
       <div className="text-xs text-center text-gray-600">{caption}</div>
       </div>
     </div>

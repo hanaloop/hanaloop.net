@@ -68,7 +68,7 @@ export default function Home({ locale }: Props): React.JSX.Element {
                             </div>
                           </div>
                           <div className='w-[200px] h-[200px] flex-shrink-0 rounded-md flex justify-center items-center'>
-                            <img src={`/images/partnership_${ndx+1}.png`} height="200px" width="200px" className='rouneded-md' />
+                            <img src={useBaseUrl(`/images/partnership_${ndx+1}.png`)} height="200px" width="200px" className='rouneded-md' />
                           </div>
                         </div>
                       </div>

@@ -71,7 +71,7 @@ export default function Home({ locale }: Props): React.JSX.Element {
                 {data.content.hanaloop_body}
               </div>
               <div className="flex items-center ">
-                <img src="/images/who-we-are/logo.png" height="150px" width="150px"/>
+                <img src={useBaseUrl('/images/who-we-are/logo.png')} height="150px" width="150px"/>
               </div>
             </div>
           </div>

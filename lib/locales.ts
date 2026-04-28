@@ -40,7 +40,7 @@ export function withLocalePath(locale: AppLocale, href: string) {
 }
 
 export function withBasePath(href: string) {
-  if (!href.startsWith('/') || !basePath) return href;
+  if (!href.startsWith('/') || !basePath || isExternalHref(href) || href.startsWith('#')) return href;
   if (href.startsWith(basePath)) return href;
 
   return `${basePath}${href}`;

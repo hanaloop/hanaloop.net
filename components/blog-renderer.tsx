@@ -11,7 +11,7 @@ import { LocalizedMDXLink } from '@/components/localized-mdx-link';
 import { SiteShell } from '@/components/site-shell';
 import { getMDXComponents } from '@/components/mdx';
 import { getBlogLocale, getBlogPost, getBlogPosts, getBlogSlug, resolveAuthors } from '@/lib/blog';
-import { type AppLocale, withLocalePath } from '@/lib/locales';
+import { type AppLocale, withBasePath, withLocalePath } from '@/lib/locales';
 import { buildBlogMobileContextualNav } from '@/lib/mobile-nav';
 import { siteConfig } from '@/lib/site-config';
 
@@ -167,20 +167,20 @@ function getAuthorImage(author: Record<string, unknown>) {
   const imageUrl = typeof author.image_url === 'string' ? author.image_url : undefined;
   if (!imageUrl) {
     return {
-      src: '/images/hanaloop-logo.png',
+      src: withBasePath('/images/hanaloop-logo.png'),
       className: 'h-8 w-auto object-contain',
     };
   }
 
   if (author.type === 'system' || imageUrl.endsWith('/images/hanaloop-logo.png')) {
     return {
-      src: '/images/hanaloop-logo.png',
+      src: withBasePath('/images/hanaloop-logo.png'),
       className: 'h-8 w-auto object-contain',
     };
   }
 
   return {
-    src: imageUrl,
+    src: withBasePath(imageUrl),
     className: 'h-12 w-12 rounded-full object-cover',
   };
 }

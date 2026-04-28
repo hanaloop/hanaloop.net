@@ -68,7 +68,7 @@ export default function Home({ locale }: Props): React.JSX.Element {
           className="w-screen py-5 flex min-h-screen justify-center items-center relative bg-center bg-cover bg-blend-overlay bg-[rgb(25,50,51,0.85)] opacity-94"
           style={{
             backgroundImage:
-              "url('/images/bg-hero-main.webp')",
+              `url('${useBaseUrl('/images/bg-hero-main.webp')}')`,
           }}
         >
             <motion.div
@@ -226,7 +226,7 @@ export default function Home({ locale }: Props): React.JSX.Element {
             <SectionBlock title={data.reliable.title}>
               <>
               <div className="px-10 mb-10 text-left">
-                <div className='mb-4' ><img className="w-48 mx-auto" src="/images/partners/lrqa-logo.png" /></div>
+                <div className='mb-4' ><img className="w-48 mx-auto" src={useBaseUrl('/images/partners/lrqa-logo.png')} /></div>
                 <div className='w-full space-y-2'>
                   <h2 className='text-xl text-center'>{data.reliable.subtitle}</h2>
                 </div>
@@ -308,7 +308,7 @@ export default function Home({ locale }: Props): React.JSX.Element {
                               </div>
                             </div>
                             <div className="w-full h-[150px] bg-white dark:bg-gray-600 rounded-lg flex justify-center items-center">
-                              <img src={item.imageUrl} className="rounded-lg max-w-full max-h-full object-contain" alt={`${item.title} logo image`}/>
+                              <img src={useBaseUrl(item.imageUrl)} className="rounded-lg max-w-full max-h-full object-contain" alt={`${item.title} logo image`}/>
                             </div>
                           </div>
                         );

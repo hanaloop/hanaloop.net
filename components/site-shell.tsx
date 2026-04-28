@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ChevronDown, ChevronLeft, ExternalLink, Globe2, Menu, MoonStar, SunMedium, X } from 'lucide-react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { getLocaleFromPathname, locales, switchLocalePath, type AppLocale, withLocalePath } from '@/lib/locales';
+import { getLocaleFromPathname, locales, switchLocalePath, type AppLocale, withBasePath, withLocalePath } from '@/lib/locales';
 import type { MobileContextualNav, MobileContextualNavItem } from '@/lib/mobile-nav';
 import { getFooterMessage, getNavbarMessage } from '@/lib/translations';
 
@@ -397,7 +397,7 @@ function MobileDrawer({
           >
             <div className="flex items-center justify-between border-b border-gray-200 px-4 py-4 dark:border-white/10">
               <Link href={withLocalePath(locale, '/')} className="flex items-center gap-3 font-semibold" onClick={() => setOpen(false)}>
-                <img src="/images/hanaloop-logo.png" alt="HanaLoop Logo" className="h-8 w-auto" />
+                <img src={withBasePath('/images/hanaloop-logo.png')} alt="HanaLoop Logo" className="h-8 w-auto" />
                 <span>HanaLoop</span>
               </Link>
               <div className="flex items-center gap-2">
@@ -646,7 +646,7 @@ export function SiteShell({ children, wrapperClassName, mobileContextualNav }: S
           <div className="flex items-center gap-6">
             <MobileDrawer locale={locale} pathname={currentPath} menus={menus} contextualNav={mobileContextualNav} />
             <Link href={withLocalePath(locale, '/')} className="flex items-center gap-3 font-semibold">
-              <img src="/images/hanaloop-logo.png" alt="HanaLoop Logo" className="h-8 w-auto" />
+              <img src={withBasePath('/images/hanaloop-logo.png')} alt="HanaLoop Logo" className="h-8 w-auto" />
               <span>HanaLoop</span>
             </Link>
             <nav className="hidden items-center gap-6 lg:flex">
@@ -714,7 +714,7 @@ export function SiteShell({ children, wrapperClassName, mobileContextualNav }: S
           ))}
         </div>
         <div className="px-4 pb-10 text-center text-gray-300">
-          <img src="/images/hanaloop-logo.png" alt="HanaLoop Logo" className="mx-auto mb-4 h-8 w-auto" />
+          <img src={withBasePath('/images/hanaloop-logo.png')} alt="HanaLoop Logo" className="mx-auto mb-4 h-8 w-auto" />
           <div className="text-[1.05rem]">
             Copyright © {currentYear} 주식회사 하나루프 | HanaLoop Corp., Seoul Korea
           </div>

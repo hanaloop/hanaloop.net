@@ -1,10 +1,11 @@
 import defaultMdxComponents from 'fumadocs-ui/mdx';
 import type { MDXComponents } from 'mdx/types';
-import { Children, Fragment, isValidElement, type ReactNode } from 'react';
+import { Children, Fragment, isValidElement, type ComponentPropsWithoutRef, type ReactNode } from 'react';
 import IFrame from '@/src/components/IFrame';
 import CBAMBanner from '@/src/components/theme/CBAMBanner';
 import CaptionedImage from '@/src/components/theme/CaptionedImage';
 import SectionBlock from '@/src/components/theme/SectionBlock';
+import { withBasePath } from '@/lib/locales';
 
 function flattenTableNodes(children: ReactNode): ReactNode[] {
   const nodes = Children.toArray(children);
@@ -108,6 +109,9 @@ export function getMDXComponents(components?: MDXComponents) {
     table: ({ children, ...props }) => <table {...props}>{normalizeTableChildren(children)}</table>,
     tbody: ({ children, ...props }) => <tbody {...props}>{children}</tbody>,
     blockquote: ({ children, ...props }) => <blockquote {...props}>{normalizeBlockquoteChildren(children)}</blockquote>,
+    img: ({ src, ...props }: ComponentPropsWithoutRef<'img'>) => (
+      <img src={typeof src === 'string' ? withBasePath(src) : src} {...props} />
+    ),
     ...components,
   } satisfies MDXComponents;
 }
