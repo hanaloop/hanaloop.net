@@ -19,14 +19,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Hero from '../components/hanaloop/Hero';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
-export default function Home(): React.JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function Home({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('recruit', i18n.currentLocale);
+  const data = getPageData('recruit', locale);
 
   return (
     <Layout

@@ -9,7 +9,7 @@ import type { AppLocale } from '@/lib/locales';
 
 export function renderSiteRoute(locale: AppLocale, slug: string) {
   const MarketingPage = getMarketingPage(slug);
-  if (MarketingPage) return <MarketingPage />;
+  if (MarketingPage) return <MarketingPage locale={locale} />;
 
   const standalonePage = getStandalonePage(slug);
   if (!standalonePage) notFound();

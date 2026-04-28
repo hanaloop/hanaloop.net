@@ -5,18 +5,22 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Hero from "../components/hanaloop/Hero";
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from "@theme/Layout";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import { motion } from "framer-motion";
 import LinkedInIcon from "../../static/svg/LinkedIn.svg";
 import WebIcon from "../../static/svg/Web.svg";
 import Link from "@docusaurus/Link";
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
-export default function Home(): React.JSX.Element {
-  const { siteConfig, i18n } = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function Home({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('company', i18n.currentLocale);
+  const data = getPageData('company', locale);
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 40 },

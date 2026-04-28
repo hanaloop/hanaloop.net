@@ -4,7 +4,6 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { motion } from "framer-motion";
 import Board from "../../static/svg/Board.svg";
 import { CardMediaImage } from '../components/theme/CardMedia';
@@ -15,18 +14,23 @@ import ClipboardCheckIcon from "../../static/svg/ClipboardCheck.svg";
 import ListCheckIcon from "../../static/svg/ListCheck.svg"; 
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
 const svgs = {
-  svg_1: <Board />,
-  svg_2: <ClipboardCheckIcon />,
-  svg_3: <ListCheckIcon />,
+  svg_1: Board,
+  svg_2: ClipboardCheckIcon,
+  svg_3: ListCheckIcon,
 };
 
 
-export default function Scope3(): React.JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function Scope3({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('scope3', i18n.currentLocale);
+  const data = getPageData('scope3', locale);
   const truncate = (str:string, limit_length: number) => {
     return str.length > limit_length ? str.substring(0, limit_length) + '...' : str;
 }
@@ -69,9 +73,11 @@ export default function Scope3(): React.JSX.Element {
                                   className="group rounded-xl hover:border-primary-700 mb-4 py-8 bg-gray-100 dark:bg-gray-900 shadow-sm flex justify-center items-start w-full"
                                   key={ndx}
                                 >
-                                  <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
+                                  <div className="mb-2 flex flex-col justify-c items-start gap-3 h-full sm:w-[80%] w-[90%]">
                                     <div className='flex items-center'>
-                                      <div className="w-12 h-12 rounded-md p-2">{SvgComponent} </div>
+                                      <div className="size-12 rounded-md flex justify-center items-center">
+                                        <SvgComponent className="size-8" />
+                                      </div>
                                       <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
                                     </div>
                                     <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">

@@ -3,7 +3,7 @@ import { homePage as HomePage } from '@/lib/site-pages';
 import { getHomeMetadataText, siteConfig } from '@/lib/site-config';
 
 export default function Page() {
-  return <HomePage />;
+  return <HomePage locale="ko" />;
 }
 
 export function generateMetadata(): Metadata {

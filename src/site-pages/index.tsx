@@ -3,7 +3,6 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import SectionBlock from "../components/theme/SectionBlock";
@@ -24,33 +23,38 @@ import SproutIcon from "../../static/svg/Sprout.svg";
 import HandshakeIcon from "../../static/svg/Handshake.svg"; 
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
 const section2_svgs = {
-  section2_svg_1 : <ClipboardCheckIcon/>,
-  section2_svg_2 : <FileCheckIcon/>,
-  section2_svg_3 : <ListCheckIcon/>,
-  section2_svg_4: <LayerIcon />,
-  section2_svg_5: <SearchIcon />,
+  section2_svg_1 : ClipboardCheckIcon,
+  section2_svg_2 : FileCheckIcon,
+  section2_svg_3 : ListCheckIcon,
+  section2_svg_4: LayerIcon,
+  section2_svg_5: SearchIcon,
 }
 
 const section3_svgs = {
-  section3_svg_1: <GlobeIcon />,
-  section3_svg_2: <FlagIcon />,
-  section3_svg_3: <HandshakeIcon />,
-  section3_svg_4: <SproutIcon />,
+  section3_svg_1: GlobeIcon,
+  section3_svg_2: FlagIcon,
+  section3_svg_3: HandshakeIcon,
+  section3_svg_4: SproutIcon,
 };
 
 const section5_svgs = {
-  section5_svg_1: <ChartIcon />,
-  section5_svg_2: <StrategyIcon />,
-  section5_svg_3: <Board />,
-  section5_svg_4: <Chain />,
+  section5_svg_1: ChartIcon,
+  section5_svg_2: StrategyIcon,
+  section5_svg_3: Board,
+  section5_svg_4: Chain,
 };
 
-export default function Home(): React.JSX.Element {
-  const { siteConfig, i18n } = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function Home({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('index', i18n.currentLocale);
+  const data = getPageData('index', locale);
 
   return (
     <Layout
@@ -181,7 +185,9 @@ export default function Home(): React.JSX.Element {
                           key={ndx}
                         >
                           <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
-                            <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                            <div className="size-8 rounded-md ml-2">
+                              <SvgComponent className="size-full" />
+                            </div>
                             <div className="xl:text-xl text-lg font-bold">
                               <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center">
                                 <h3 className="py-2 inline ">{item.title}</h3>
@@ -238,7 +244,9 @@ export default function Home(): React.JSX.Element {
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
-                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                          <div className="size-12 rounded-md">
+                            <SvgComponent className="size-full" />
+                          </div>
                           <div className="xl:text-xl text-lg font-bold">
                             <div className="flex mr-1 items-baseline group-hover:text-primary-700 justify-center text-start">
                               <h3 className="py-2 inline">{item.title}</h3>
@@ -338,7 +346,9 @@ export default function Home(): React.JSX.Element {
                         key={ndx}
                       >
                         <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full w-[80%]">
-                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                          <div className="size-12 rounded-md">
+                            <SvgComponent className="size-full" />
+                          </div>
                           <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
                             <h3 className="py-2 inline font-bold">{item.title}</h3>
                             <span className="text-md text-left">{item.description}</span>

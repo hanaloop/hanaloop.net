@@ -1,11 +1,9 @@
 'use client';
 
-import React from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import Hero from '../components/hanaloop/Hero';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { motion } from "framer-motion";
 import GlobeIcon from "../../static/svg/Globe.svg"; 
 import FlagIcon from "../../static/svg/Flag.svg"; 
@@ -14,17 +12,23 @@ import HandshakeIcon from "../../static/svg/Handshake.svg";
 import { DisplayItem } from '../libs/types';
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
-export default function Home(): React.JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+
+export default function Home({ locale }: Props) {
   const t = useTranslate();
-  const data = getPageData('platform', i18n.currentLocale);
+  const data = getPageData('platform', locale);
   
   const section3_svgs = {
-    section3_svg_1: <GlobeIcon />,
-    section3_svg_2: <FlagIcon />,
-    section3_svg_3: <HandshakeIcon />,
-    section3_svg_4: <SproutIcon />,
+    section3_svg_1: GlobeIcon,
+    section3_svg_2: FlagIcon,
+    section3_svg_3: HandshakeIcon,
+    section3_svg_4: SproutIcon,
   };
   
 
@@ -68,7 +72,9 @@ export default function Home(): React.JSX.Element {
                     >
                       <div className="mb-2 flex flex-col justify-start items-start text-left gap-3 h-full w-[80%]">
                         <div className='flex items-center'>
-                          <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                          <div className="size-12 rounded-md flex justify-center items-center">
+                            <SvgComponent className="size-8" />
+                          </div>
                           <h3 className="py-2 inline  xl:text-xl text-lg font-bold">{item.title}</h3>
                         </div>
                         <div className="[word-break:keep-all] w-full">

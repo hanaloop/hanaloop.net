@@ -4,7 +4,6 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { motion } from "framer-motion";
 import ChartIcon from "../../static/svg/Chart.svg";
 import Board from "../../static/svg/Board.svg";
@@ -13,17 +12,22 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Hero from '../components/hanaloop/Hero';
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
 const svgs = {
-  svg_1: <ChartIcon />,
-  svg_2: <Board />,
+  svg_1: ChartIcon,
+  svg_2: Board,
 };
 
 
-export default function HanaAI(): React.JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function HanaAI({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('hana-ai', i18n.currentLocale);
+  const data = getPageData('hana-ai', locale);
 
   return (
     <Layout wrapperClassName='text-gray-700 dark:text-gray-100'
@@ -65,7 +69,9 @@ export default function HanaAI(): React.JSX.Element {
                                 >
                                   <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
                                     <div className='flex items-center'>
-                                      <div className="w-12 h-12 rounded-md p-2">{SvgComponent}</div>
+                                      <div className="size-12 rounded-md flex justify-center items-center">
+                                        <SvgComponent className="size-8" />
+                                      </div>
                                       <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
                                     </div>
                                     <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700">

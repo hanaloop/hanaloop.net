@@ -1,4 +1,5 @@
 import type { ComponentType } from 'react';
+import type { AppLocale } from '@/lib/locales';
 import HomePage from '@/src/site-pages/index';
 import CbamPage from '@/src/site-pages/cbam';
 import CompanyPage from '@/src/site-pages/company';
@@ -15,6 +16,10 @@ import DemoRequestPage from '@/content/standalone-pages/demo_request.mdx';
 import PrivacyPage from '@/content/standalone-pages/privacy.mdx';
 import RecruitApplyPage from '@/content/standalone-pages/recruit_apply.md';
 
+export type MarketingPageProps = {
+  locale: AppLocale;
+};
+
 const legacyPages = {
   cbam: CbamPage,
   company: CompanyPage,
@@ -25,7 +30,7 @@ const legacyPages = {
   recruit: RecruitPage,
   scope3: Scope3Page,
   solution: SolutionPage,
-} satisfies Record<string, ComponentType>;
+} satisfies Record<string, ComponentType<any>>;
 
 const standalonePages = {
   company_profile_request: {
@@ -68,7 +73,7 @@ export const standalonePageSlugs = Object.keys(standalonePages);
 export const routePageSlugs = [...marketingPageSlugs, ...standalonePageSlugs];
 
 export function getMarketingPage(slug: string) {
-  return legacyPages[slug as keyof typeof legacyPages];
+  return legacyPages[slug as keyof typeof legacyPages] as ComponentType<MarketingPageProps> | undefined;
 }
 
 export function getStandalonePage(slug: string) {

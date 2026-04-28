@@ -16,7 +16,7 @@ export default async function Page({ params }: Props) {
   const { locale } = await params;
   if (!isLocale(locale) || locale === defaultLocale) notFound();
 
-  return <HomePage />;
+  return <HomePage locale={locale} />;
 }
 
 export function generateStaticParams() {

@@ -4,7 +4,6 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import SectionBlock from "../components/theme/SectionBlock";
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { motion } from "framer-motion";
 import Board from "../../static/svg/Board.svg";
 import { CardMediaImage } from '../components/theme/CardMedia';
@@ -22,35 +21,40 @@ import LayerIcon from "../../static/svg/Layer.svg";
 import SearchIcon from "../../static/svg/Search.svg"; 
 import { getPageData } from '@/lib/page-data';
 import { useTranslate } from '@/lib/use-translate';
+import { siteConfig } from '@/lib/site-config';
+import type { AppLocale } from '@/lib/locales';
 
 
 const svgs = {
-  svg_1: <Board />,
-  svg_2: <ClipboardCheckIcon />,
-  svg_3: <ListCheckIcon />,
+  svg_1: Board,
+  svg_2: ClipboardCheckIcon,
+  svg_3: ListCheckIcon,
 };
 
 const section3_svgs = {
-  section3_svg_1: <GlobeIcon />,
-  section3_svg_2: <FlagIcon />,
-  section3_svg_3: <HandshakeIcon />,
-  section3_svg_4: <SproutIcon />,
+  section3_svg_1: GlobeIcon,
+  section3_svg_2: FlagIcon,
+  section3_svg_3: HandshakeIcon,
+  section3_svg_4: SproutIcon,
 };
 
 const section2_svgs = {
-  section2_svg_1 : <ClipboardCheckIcon/>,
-  section2_svg_2 : <FileCheckIcon/>,
-  section2_svg_3 : <ListCheckIcon/>,
-  section2_svg_4: <LayerIcon />,
-  section2_svg_5: <SearchIcon />,
+  section2_svg_1: ClipboardCheckIcon,
+  section2_svg_2: FileCheckIcon,
+  section2_svg_3: ListCheckIcon,
+  section2_svg_4: LayerIcon,
+  section2_svg_5: SearchIcon,
 }
 
 
 
-export default function PCF(): React.JSX.Element {
-  const {siteConfig, i18n} = useDocusaurusContext();
+type Props = {
+  locale: AppLocale;
+};
+
+export default function PCF({ locale }: Props): React.JSX.Element {
   const t = useTranslate();
-  const data = getPageData('pcf', i18n.currentLocale);
+  const data = getPageData('pcf', locale);
   const truncate = (str:string, limit_length: number) => {
     return str.length > limit_length ? str.substring(0, limit_length) + '...' : str;
 }
@@ -114,7 +118,9 @@ export default function PCF(): React.JSX.Element {
                               >
                                 <div className="mb-2 flex flex-col justify-start items-start gap-3 h-full sm:w-[80%] w-[90%]">
                                   <div className='flex items-center'>
-                                    <div className="w-12 h-12 rounded-md p-2">{SvgComponent} </div>
+                                    <div className="size-12 rounded-md">
+                                      <SvgComponent className="size-full" />
+                                    </div>
                                     <h3 className="py-2 inline font-bold text-lg">{item.title}</h3>
                                   </div>
                                   <div className="flex flex-col mr-1 items-baseline group-hover:text-primary-700 ">
