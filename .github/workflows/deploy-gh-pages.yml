@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          WEB_PATH_PREFIX: ${{ steps.pages.outputs.base_path }}
+          WEB_PATH_PREFIX: /${{ github.event.repository.name }}
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
