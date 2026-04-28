@@ -32,6 +32,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Remove archived folders from CI build
+        run: rm -rf _1.0 _2.0 _3.0 _poc _v1.0 _v2.0 .codex
+
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 

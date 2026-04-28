@@ -34,5 +34,14 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "_1.0",
+    "_2.0",
+    "_3.0",
+    "_poc",
+    "_v1.0",
+    "_v2.0",
+    ".codex"
+  ]
 }
