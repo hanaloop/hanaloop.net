@@ -11,6 +11,7 @@
     "types:check": "yarn prepare:content && next typegen && tsc --noEmit",
     "postinstall": "yarn prepare:content",
     "prepare:docs": "node scripts/generate-docs-meta.mjs",
+    "sync:main-content": "node scripts/sync-main-content.mjs",
     "lint": "eslint"
   },
   "dependencies": {
