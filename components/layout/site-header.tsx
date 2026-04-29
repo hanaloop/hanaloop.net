@@ -48,8 +48,8 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
     const normalizedPath = useMemo(() => stripBasePath(pathname ?? '/'), [pathname]);
     const pathSegments = useMemo(() => normalizedPath.split('/').filter(Boolean), [normalizedPath]);
     const isHome = pathSegments.length === 0 || (pathSegments.length === 1 && isLocale(pathSegments[0]));
-    const desktopSolid = scrolled || !isHome;
-    const mobileSolid = scrolled || !isHome;
+    const desktopSolid = scrolled;
+    const mobileSolid = scrolled;
     const overlayBg = desktopSolid ? '#1c1c1e' : 'transparent';
     const mobileHeaderClassName = mobileSolid ? 'bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]' : 'bg-transparent';
 
@@ -64,7 +64,9 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
         <>
             <input id="mobile-menu-toggle" type="checkbox" className="mobile-menu-toggle sr-only lg:hidden" />
 
-            <header className={`fixed inset-x-0 top-0 z-50 h-[56px] overflow-hidden transition-all duration-300 lg:hidden ${mobileHeaderClassName}`}>
+            <header
+                className={`fixed inset-x-0 top-0 z-50 h-[56px] overflow-hidden transition-all duration-300 lg:hidden ${mobileHeaderClassName}`}
+            >
                 <div className="mx-auto flex h-[56px] w-full items-center justify-between px-6">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 inline-flex h-[56px] items-center">
                         <Image src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} style={{ height: '19px', width: 'auto' }} priority={isHome} />
