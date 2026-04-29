@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { getBlogMetadata, getBlogStaticParams, renderBlogRoute } from '@/legacy/components/blog-renderer';
 
 type Props = {

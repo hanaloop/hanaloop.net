@@ -9,7 +9,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import readingTime from 'reading-time';
 import { LocalizedMDXLink } from '@/legacy/components/localized-mdx-link';
 import { SiteShell } from '@/components/layout/site-shell';
-import { BlogHeroSection } from '@/components/sections/blog-hero-section';
+import { BlogHeroSection } from '@/components/sections/blog/hero-section';
+import { BlogListSection } from '@/components/sections/blog/list-section';
 import { getMDXComponents } from '@/legacy/components/mdx';
 import { getBlogLocale, getBlogPost, getBlogPosts, getBlogSlug, resolveAuthors } from '@/lib/blog';
 import { type AppLocale, withLocalePath } from '@/lib/locales';
@@ -214,114 +215,10 @@ export function renderBlogRoute(locale: AppLocale, slug?: string[]) {
   const mobileContextualNav = buildBlogMobileContextualNav(locale);
 
   if (!slug || slug.length === 0) {
-    const posts = getBlogPosts(locale);
-    const labels = getArchiveLabels(locale);
-    const featuredPosts = posts.slice(0, 10);
-
     return (
       <SiteShell mobileContextualNav={mobileContextualNav}>
         <BlogHeroSection />
-        <div className="hanaloop-blog-archive mx-auto max-w-[1500px] px-2 py-10 md:px-6">
-          <div className="grid gap-8 lg:grid-cols-[220px_minmax(0,1fr)] xl:grid-cols-[280px_minmax(0,1fr)]">
-            <aside className="lg:sticky lg:top-24 lg:self-start">
-              <h1 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{labels.sidebarTitle}</h1>
-              <nav className="space-y-1 pr-2" aria-label={labels.sidebarTitle}>
-                {featuredPosts.map((post) => {
-                  const href = withLocalePath(locale, `/blog/${getBlogSlug(post).join('/')}`);
-
-                  return (
-                    <Link
-                      key={post.info.path}
-                      href={href}
-                      className="block py-1 text-[15px] leading-6 text-gray-800 transition hover:text-sky-700 dark:text-gray-200 dark:hover:text-sky-300"
-                    >
-                      {String(post.title ?? '')}
-                    </Link>
-                  );
-                })}
-              </nav>
-            </aside>
-            <section className="space-y-20">
-              {posts.map((post) => {
-                const href = withLocalePath(locale, `/blog/${getBlogSlug(post).join('/')}`);
-                const authors = resolveAuthors(locale, post.authors as string | string[] | undefined);
-                const primaryAuthor = authors[0];
-                const authorImage = primaryAuthor ? getAuthorImage(primaryAuthor) : null;
-                const source = getPostSource(locale, post as unknown as BlogSourcePost);
-                const excerptSource = getExcerptSource(source);
-                const plainText = getPlainText(source);
-                const dateText = formatDate(String(post.date ?? post.publishedAt ?? ''), locale);
-                const readTimeText = estimateReadingTime(plainText, locale);
-                const excerptComponents = getMDXComponents({
-                  a: (props) => <LocalizedMDXLink locale={locale} {...props} />,
-                });
-
-                return (
-                  <article key={post.info.path} className="border-b border-gray-200 pb-14 last:border-b-0 dark:border-white/10">
-                    <Link href={href} className="group inline-block">
-                      <h2 className="text-3xl font-semibold leading-tight text-[#435b7a] underline decoration-1 underline-offset-8 transition group-hover:text-sky-700 dark:text-[#b8c6db] dark:group-hover:text-sky-300 md:text-5xl">
-                        {String(post.title ?? '')}
-                      </h2>
-                    </Link>
-                    <div className="mt-7 flex flex-wrap items-center gap-x-3 gap-y-2 text-base text-gray-700 dark:text-gray-300">
-                      {dateText ? <span>{dateText}</span> : null}
-                      {dateText && readTimeText ? <span>·</span> : null}
-                      {readTimeText ? <span>{readTimeText}</span> : null}
-                    </div>
-                    {primaryAuthor ? (
-                      <div className="mt-5 flex items-center gap-4">
-                        {authorImage ? (
-                          <img
-                            src={authorImage.src}
-                            alt={String(primaryAuthor.name ?? primaryAuthor.id)}
-                            className={authorImage.className}
-                          />
-                        ) : null}
-                        <div className="text-left">
-                          <div className="text-xl font-semibold text-gray-900 dark:text-white">
-                            {String(primaryAuthor.name ?? primaryAuthor.id)}
-                          </div>
-                          {primaryAuthor.title ? (
-                            <div className="text-base text-gray-600 dark:text-gray-400">{String(primaryAuthor.title)}</div>
-                          ) : null}
-                        </div>
-                      </div>
-                    ) : null}
-                    {excerptSource ? (
-                      <div className="mt-8 max-w-5xl space-y-6 text-base leading-9 text-gray-800 dark:text-gray-200 md:text-[1.05rem]">
-                        <MDXRemote source={excerptSource} components={excerptComponents} />
-                      </div>
-                    ) : null}
-                    <div className="mt-10 flex flex-wrap items-center justify-between gap-6">
-                      <div className="flex flex-wrap items-center gap-3">
-                        {post.tags && Array.isArray(post.tags) && post.tags.length > 0 ? (
-                          <span className="text-base font-semibold text-gray-900 dark:text-white">{labels.tags}:</span>
-                        ) : null}
-                        {Array.isArray(post.tags)
-                          ? post.tags.map((tag) => (
-                              <Link
-                                key={`${post.info.path}-${String(tag)}`}
-                                href={withLocalePath(locale, `/blog/tags/${encodeURIComponent(String(tag))}`)}
-                                className="rounded-lg border border-gray-300 px-3 py-1 text-sm text-gray-700 dark:border-white/15 dark:text-gray-300"
-                              >
-                                {String(tag)}
-                              </Link>
-                            ))
-                          : null}
-                      </div>
-                      <Link
-                        href={href}
-                        className="text-base font-semibold text-gray-900 underline decoration-1 underline-offset-4 transition hover:text-sky-700 dark:text-white dark:hover:text-sky-300"
-                      >
-                        {labels.readMore}
-                      </Link>
-                    </div>
-                  </article>
-                );
-              })}
-            </section>
-          </div>
-        </div>
+        <BlogListSection locale={locale} />
       </SiteShell>
     );
   }
