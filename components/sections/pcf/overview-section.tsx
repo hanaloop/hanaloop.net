@@ -44,7 +44,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
     const text = copy[locale];
 
     return (
-        <section className="bg-[#ebebeb] px-4 pb-16 pt-14 sm:px-6 md:px-8 lg:pb-[120px] lg:pt-[108px] xl:px-0" aria-label={text.title}>
+        <section className="px-4 pb-16 pt-14 sm:px-6 md:px-8 lg:pb-[120px] lg:pt-[108px] xl:px-0" aria-label={text.title}>
             <div className="mx-auto w-full max-w-[1440px]">
                 <h2
                     className="text-black"

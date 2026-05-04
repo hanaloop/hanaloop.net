@@ -64,13 +64,13 @@ export function PcfWhyNeededSection({ locale }: PcfWhyNeededSectionProps) {
     const text = copy[locale];
 
     return (
-        <section className="bg-[#ebebeb] px-5 pb-20 pt-8 md:px-8 lg:px-10 lg:pb-[132px] lg:pt-[46px] xl:px-0" aria-label={text.title}>
+        <section className="px-5 pb-20 pt-8 md:px-8 lg:px-10 lg:pb-[132px] lg:pt-[46px] xl:px-0" aria-label={text.title}>
             <div className="mx-auto w-full max-w-[1440px] min-[1440px]:px-[44px]">
                 <h2
                     className="text-black"
                     style={{
                         fontWeight: 700,
-                        fontSize: 'clamp(36px, calc(30.77px + 1.09vw), 48px)',
+                        fontSize: 'clamp(34px, 2.5vw, 48px)',
                         letterSpacing: '-1px',
                         lineHeight: 1.2,
                     }}

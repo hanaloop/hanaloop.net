@@ -30,13 +30,13 @@ export function PcfMainFeaturesSection({ locale }: PcfMainFeaturesSectionProps) 
     const text = copy[locale];
 
     return (
-        <section className="bg-[#ebebeb] px-4 pb-20 pt-20 sm:px-6 md:px-8 lg:pb-[128px] lg:pt-[146px] xl:px-0" aria-label={text.title}>
+        <section className="px-4 pb-20 pt-20 sm:px-6 md:px-8 lg:pb-[128px] lg:pt-[146px] xl:px-0" aria-label={text.title}>
             <div className="mx-auto w-full max-w-[1440px]">
                 <h2
                     className="text-center text-black"
                     style={{
                         fontWeight: 500,
-                        fontSize: 'clamp(36px, calc(30.77px + 1.09vw), 48px)',
+                        fontSize: 'clamp(34px, 2.5vw, 48px)',
                         letterSpacing: '-1px',
                         lineHeight: 1.2,
                     }}
