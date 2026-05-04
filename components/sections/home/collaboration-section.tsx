@@ -72,8 +72,8 @@ const collaborations: CollaborationItem[] = [
             en: ['Emissions Trading Scheme', '75% effort reduction across multiple sites'],
             es: ['Sistema de comercio de emisiones', 'Reducción del 75% en múltiples sitios'],
         },
-        cardImage: '/images/revamp/collaboration/sama_img.png',
-        logoImage: '/images/revamp/collaboration/sama.png',
+        cardImage: '/images/revamp/home/collaboration/sama-img.png',
+        logoImage: '/images/revamp/home/collaboration/sama.png',
     },
     {
         id: 'daehoal',
@@ -85,8 +85,8 @@ const collaborations: CollaborationItem[] = [
             en: ['K-ETS compliance', 'CBAM compliance'],
             es: ['Cumplimiento K-ETS', 'Cumplimiento CBAM'],
         },
-        cardImage: '/images/revamp/collaboration/daehoal_img.png',
-        logoImage: '/images/revamp/collaboration/daehoal.png',
+        cardImage: '/images/revamp/home/collaboration/daehoal-img.png',
+        logoImage: '/images/revamp/home/collaboration/daehoal.png',
     },
     {
         id: 'samyang',
@@ -98,8 +98,8 @@ const collaborations: CollaborationItem[] = [
             en: ['CBAM: easy for non-experts', 'Export site compliance'],
             es: ['CBAM: fácil para no expertos', 'Cumplimiento en sitios de exportación'],
         },
-        cardImage: '/images/revamp/collaboration/samyang_img.png',
-        logoImage: '/images/revamp/collaboration/samyang.png',
+        cardImage: '/images/revamp/home/collaboration/samyang-img.png',
+        logoImage: '/images/revamp/home/collaboration/samyang.png',
     },
     {
         id: 'doosan',
@@ -111,8 +111,8 @@ const collaborations: CollaborationItem[] = [
             en: ['Scope 3 management for fuller sustainability', 'CDP reporting improvement'],
             es: ['Gestión Scope 3 para mayor sostenibilidad', 'Mejora de informes CDP'],
         },
-        cardImage: '/images/revamp/collaboration/doosan_img.png',
-        logoImage: '/images/revamp/collaboration/doosan.png',
+        cardImage: '/images/revamp/home/collaboration/doosan-img.png',
+        logoImage: '/images/revamp/home/collaboration/doosan.png',
     },
 ];
 

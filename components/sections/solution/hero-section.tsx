@@ -37,7 +37,7 @@ export function SolutionHeroSection({ locale }: SolutionHeroSectionProps) {
         <PlatformHero
             locale={locale}
             ariaLabel="Solution Hero"
-            backgroundImageUrl="/images/revamp/scope3-hero.png"
+            backgroundImageUrl="/images/revamp/scope3/hero.png"
             copy={copy}
             relatedLinks={relatedLinks}
         />

@@ -160,7 +160,7 @@ export function Scope3OverviewSection({ locale }: Scope3OverviewSectionProps) {
                     aria-label={text.imageAlt}
                     className="relative lg:h-[695px]"
                     style={{
-                        backgroundImage: "url('/images/revamp/scope3-overview-bg.png')",
+                        backgroundImage: "url('/images/revamp/scope3/overview-bg.png')",
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                     }}

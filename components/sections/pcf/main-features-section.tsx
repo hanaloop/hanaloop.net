@@ -58,7 +58,7 @@ export function PcfMainFeaturesSection({ locale }: PcfMainFeaturesSectionProps) 
 
                 <div className="mt-16 overflow-hidden rounded-[18px] lg:mt-[74px]">
                     <Image
-                        src="/images/revamp/pcf-main-features-example.png"
+                        src="/images/revamp/pcf/main-features-example.png"
                         alt={text.imageAlt}
                         width={1440}
                         height={786}

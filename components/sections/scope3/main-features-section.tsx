@@ -111,7 +111,7 @@ export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionP
                 </div>
                 <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
                     <Image
-                        src="/images/revamp/scope3-main-features-bg.png"
+                        src="/images/revamp/scope3/main-features-bg.png"
                         alt={text.imageAlt}
                         width={940}
                         height={969}
@@ -147,7 +147,7 @@ export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionP
 
                 <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
                     <Image
-                        src="/images/revamp/scope3-main-features-bg.png"
+                        src="/images/revamp/scope3/main-features-bg.png"
                         alt={text.imageAlt}
                         width={940}
                         height={969}

@@ -79,7 +79,7 @@ export function HomeOurMissionSection({ locale }: HomeOurMissionSectionProps) {
 
                 <div className="relative mt-5 overflow-hidden rounded-[14px] md:mt-8 md:rounded-[18px] lg:mt-12 lg:h-[446px] lg:rounded-[22px]">
                     <Image
-                        src="/images/revamp/mission/home-mission-img.jpg"
+                        src="/images/revamp/home/mission-img.jpg"
                         alt="Wind turbines by a road at sunset"
                         width={2048}
                         height={1152}

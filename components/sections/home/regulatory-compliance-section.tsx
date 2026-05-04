@@ -168,13 +168,13 @@ export function HomeRegulatoryComplianceSection({ locale }: HomeRegulatoryCompli
     return (
         <section className="mt-28 pb-6 lg:pb-10">
             <div className="relative min-h-[968px] w-full overflow-hidden rounded-t-[50px]">
-                <Image src="/images/revamp/regulatory/home-regulatory-bg.jpg" alt="City buildings" fill className="object-cover" sizes="100vw" />
+                <Image src="/images/revamp/home/regulatory-bg.jpg" alt="City buildings" fill className="object-cover" sizes="100vw" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(45,66,99,0.62)_0%,rgba(6,39,71,0.68)_56%,rgba(4,28,57,0.82)_100%)]" />
 
                 <div className="relative z-[2] mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                     <div className="relative z-[2] px-0 pb-[34px] pt-5 text-white lg:pb-[66px] lg:pt-[88px]">
                         <div className="lg:hidden">
-                            <Image src="/images/revamp/regulatory/lrqa.png" alt="LRQA" width={207} height={62} className="h-auto w-[110px]" />
+                            <Image src="/images/revamp/home/lrqa.png" alt="LRQA" width={207} height={62} className="h-auto w-[110px]" />
                             <p className="mt-8 max-w-[340px] text-[11px] font-medium leading-[1.45]">{sectionCopy.eyebrow}</p>
                             <h2 className="mt-3 max-w-[340px] text-[57px] font-medium leading-[1.08] tracking-[-0.6px]">{sectionCopy.heading}</h2>
                         </div>
@@ -184,7 +184,7 @@ export function HomeRegulatoryComplianceSection({ locale }: HomeRegulatoryCompli
                                 <p className="lg:max-w-none lg:text-[21px] lg:font-semibold lg:leading-[1.3] lg:tracking-[0.5px]">{sectionCopy.eyebrow}</p>
                                 <h2 className="lg:mt-[7px] lg:max-w-none lg:text-[48px] lg:font-medium lg:leading-[1.2]">{sectionCopy.heading}</h2>
                             </div>
-                            <Image src="/images/revamp/regulatory/lrqa.png" alt="LRQA" width={207} height={62} className="lg:mt-1 lg:h-[52px] lg:w-auto" />
+                            <Image src="/images/revamp/home/lrqa.png" alt="LRQA" width={207} height={62} className="lg:mt-1 lg:h-[52px] lg:w-auto" />
                         </div>
 
                         <div className="mt-4 block lg:hidden">

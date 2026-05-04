@@ -18,7 +18,7 @@ export function BlogHeroSection({ locale }: BlogHeroSectionProps) {
 
     return (
         <section className="relative h-[160px] overflow-hidden md:h-[280px] lg:h-[360px] xl:h-[420px] 2xl:h-[480px]" aria-label="HanaLoop Blog Hero">
-            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/revamp/blog-hero-bg.png')" }} />
+            <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/revamp/blog/hero-bg.png')" }} />
             <div className="absolute inset-0 bg-black/35" />
 
             <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-white">

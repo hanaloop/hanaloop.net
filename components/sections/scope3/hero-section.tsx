@@ -37,7 +37,7 @@ export function Scope3HeroSection({ locale }: Scope3HeroSectionProps) {
         <PlatformHero
             locale={locale}
             ariaLabel="Scope 3 Hero"
-            backgroundImageUrl="/images/revamp/scope3-hero.png"
+            backgroundImageUrl="/images/revamp/scope3/hero.png"
             copy={copy}
             relatedLinks={relatedLinks}
         />

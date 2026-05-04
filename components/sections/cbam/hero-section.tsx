@@ -37,7 +37,7 @@ export function CbamHeroSection({ locale }: CbamHeroSectionProps) {
         <PlatformHero
             locale={locale}
             ariaLabel="CBAM Hero"
-            backgroundImageUrl="/images/revamp/cbam-hero.png"
+            backgroundImageUrl="/images/revamp/cbam/hero.png"
             copy={copy}
             relatedLinks={relatedLinks}
         />

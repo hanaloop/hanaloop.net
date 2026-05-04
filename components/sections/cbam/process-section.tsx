@@ -115,7 +115,7 @@ export function CbamProcessSection({ locale }: CbamProcessSectionProps) {
     return (
         <section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 overflow-hidden" aria-label={text.sectionAriaLabel}>
             <div className="relative min-h-[920px] w-full md:min-h-[980px] lg:min-h-0 lg:aspect-[1920/673]">
-                <Image src="/images/revamp/cbam-process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
+                <Image src="/images/revamp/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
                 <div className="absolute inset-0 px-5 pt-10 sm:px-8 md:pt-14 lg:hidden">
                     <h2 className="text-center text-white" style={TITLE_STYLE}>
                         {text.title}
@@ -129,7 +129,7 @@ export function CbamProcessSection({ locale }: CbamProcessSectionProps) {
                                         {step.heading}
                                     </p>
                                     <div className="-mt-1">
-                                        <Image src="/images/revamp/cbam-process-line.png" alt="" aria-hidden="true" width={340} height={22} className="h-auto w-full max-w-[260px] object-contain" sizes="260px" />
+                                        <Image src="/images/revamp/cbam/process-line.png" alt="" aria-hidden="true" width={340} height={22} className="h-auto w-full max-w-[260px] object-contain" sizes="260px" />
                                     </div>
                                     <ul className="mt-2 list-disc space-y-1.5 pl-5 text-white marker:text-[16px] md:space-y-2">
                                         {step.items.map((item) => (
@@ -157,7 +157,7 @@ export function CbamProcessSection({ locale }: CbamProcessSectionProps) {
                                         {step.heading}
                                     </p>
                                     <div className="-mt-1 hidden lg:block">
-                                        <Image src="/images/revamp/cbam-process-line.png" alt="" aria-hidden="true" width={340} height={22} className="h-auto w-full max-w-[17vw] object-contain" sizes="(min-width: 1920px) 326px, 17vw" />
+                                        <Image src="/images/revamp/cbam/process-line.png" alt="" aria-hidden="true" width={340} height={22} className="h-auto w-full max-w-[17vw] object-contain" sizes="(min-width: 1920px) 326px, 17vw" />
                                     </div>
                                 </div>
                             ))}

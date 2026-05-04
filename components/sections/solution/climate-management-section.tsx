@@ -3,7 +3,7 @@ import Image from 'next/image';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
-import bgImage from '@/public/images/revamp/climate-management-bg.png';
+import bgImage from '@/public/images/revamp/solution/climate-management-bg.png';
 
 const GRADIENT_TEXT_STYLE: CSSProperties = {
     background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)',
@@ -66,7 +66,7 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
                     {text.heading}
                 </h2>
                 <p
-                    className="mt-5 text-[#4c4c4c]"
+                    className="mt-5 text-[var(--color-text-subtle)]"
                     style={{
                         fontSize: 'clamp(16px, calc(13.81px + 0.46vw), 21px)',
                         fontWeight: 600,
@@ -111,7 +111,7 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
                     <RoundedArrowButton
                         href={withLocalePath(locale, '/demo_request')}
                         label={text.contactLabel}
-                        className="h-[52px] w-full max-w-[320px] px-8 md:h-[56px] md:w-[279px] md:px-12"
+                        className="w-full max-w-[320px] px-8 md:w-[279px] md:px-12"
                     />
                 </div>
 

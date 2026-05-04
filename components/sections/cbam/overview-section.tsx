@@ -102,7 +102,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                     </div>
 
                     <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
-                        <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1200px) 49.84vw, (min-width: 1024px) 50vw, 100vw" />
+                        <Image src="/images/revamp/cbam/overview-cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1200px) 49.84vw, (min-width: 1024px) 50vw, 100vw" />
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                 </div>
 
                 <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
-                    <Image src="/images/revamp/cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1024px) 50vw, 100vw" />
+                    <Image src="/images/revamp/cbam/overview-cars.png" alt={text.imageAlt} width={957} height={707} className="h-auto w-full object-cover" sizes="(min-width: 1920px) 957px, (min-width: 1024px) 50vw, 100vw" />
                 </div>
             </div>
         </section>

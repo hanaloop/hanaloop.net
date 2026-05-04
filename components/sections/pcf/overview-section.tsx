@@ -6,11 +6,11 @@ type PcfOverviewSectionProps = {
 };
 
 const processItems = [
-    { label: 'Extraction', icon: '/images/revamp/pcf-process-icon1.png' },
-    { label: 'Production', icon: '/images/revamp/pcf-process-icon2.png' },
-    { label: 'Transportation', icon: '/images/revamp/pcf-process-icon3.png' },
-    { label: 'Use', icon: '/images/revamp/pcf-process-icon4.png' },
-    { label: 'Disposal', icon: '/images/revamp/pcf-process-icon5.png' },
+    { label: 'Extraction', icon: '/images/revamp/pcf/process-icon-1.png' },
+    { label: 'Production', icon: '/images/revamp/pcf/process-icon-2.png' },
+    { label: 'Transportation', icon: '/images/revamp/pcf/process-icon-3.png' },
+    { label: 'Use', icon: '/images/revamp/pcf/process-icon-4.png' },
+    { label: 'Disposal', icon: '/images/revamp/pcf/process-icon-5.png' },
 ];
 
 const copy = {
@@ -72,7 +72,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                 <h3 className="mt-20 lg:mt-30 text-[32px] font-bold leading-[1.22] tracking-[-0.25px] text-black lg:text-[48px]">{text.title}</h3>
 
                 <div className="relative mt-[26px] hidden w-full overflow-hidden rounded-t-[14px] xl:block">
-                    <Image src="/images/revamp/pcf-overview-bg.png" alt={text.imageAlt} width={1440} height={240} className="h-[240px] w-full object-cover" sizes="(min-width: 1440px) 1440px, 100vw" />
+                    <Image src="/images/revamp/pcf/overview-bg.png" alt={text.imageAlt} width={1440} height={240} className="h-[240px] w-full object-cover" sizes="(min-width: 1440px) 1440px, 100vw" />
 
                     <div className="absolute inset-0 flex items-center justify-center px-[20px] py-5">
                         <div className="flex w-full items-center justify-center gap-[14px]">
@@ -89,7 +89,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                                         <Image src={item.icon} alt="" width={32} height={32} className="h-8 w-8 shrink-0" />
                                         <span className="flex-1 text-center text-[18px] font-semibold leading-[1.2] tracking-[-0.25px] text-white">{item.label}</span>
                                     </div>
-                                    {index < processItems.length - 1 && <Image src="/images/revamp/pcf-process-right.png" alt="" width={6} height={19} className="h-[19px] w-[6px] shrink-0" />}
+                                    {index < processItems.length - 1 && <Image src="/images/revamp/pcf/process-right.png" alt="" width={6} height={19} className="h-[19px] w-[6px] shrink-0" />}
                                 </div>
                             ))}
                         </div>
@@ -97,7 +97,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                 </div>
 
                 <div className="relative mt-[26px] w-full overflow-hidden rounded-[14px] xl:hidden">
-                    <Image src="/images/revamp/pcf-overview-bg.png" alt={text.imageAlt} fill className="object-cover" sizes="100vw" />
+                    <Image src="/images/revamp/pcf/overview-bg.png" alt={text.imageAlt} fill className="object-cover" sizes="100vw" />
                     <div className="absolute inset-0 bg-black/10" />
                     <div className="relative z-10 flex flex-col justify-center px-3 py-5 sm:px-4 sm:py-6 md:px-8 md:py-8">
                         {processItems.map((item, index) => (
@@ -113,7 +113,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                                     <Image src={item.icon} alt="" width={32} height={32} className="h-8 w-8 shrink-0" />
                                     <span className="flex-1 text-center text-[18px] font-semibold leading-[1.2] tracking-[-0.25px] text-white">{item.label}</span>
                                 </div>
-                                {index < processItems.length - 1 && <Image src="/images/revamp/pcf-process-right.png" alt="" width={6} height={19} className="my-2 h-[19px] w-[6px] rotate-90 shrink-0" />}
+                                {index < processItems.length - 1 && <Image src="/images/revamp/pcf/process-right.png" alt="" width={6} height={19} className="my-2 h-[19px] w-[6px] rotate-90 shrink-0" />}
                             </div>
                         ))}
                     </div>

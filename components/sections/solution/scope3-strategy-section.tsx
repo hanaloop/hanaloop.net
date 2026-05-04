@@ -1,8 +1,8 @@
 import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import type { AppLocale } from '@/lib/locales';
-import bgImage from '@/public/images/revamp/scope3-strategy-bg.png';
-import logoImage from '@/docs/figma/export/lb.png';
+import bgImage from '@/public/images/revamp/scope3/strategy-bg.png';
+import logoImage from '@/public/images/revamp/scope3/lb.png';
 
 type Scope3StrategySectionProps = {
     locale: AppLocale;
@@ -16,7 +16,6 @@ type Scope3StrategyCopy = {
         bullets: string[];
     }>;
     imageAlt: string;
-    logoAlt: string;
 };
 
 const titleGradientStyle: CSSProperties = {
@@ -57,7 +56,6 @@ const koCopy: Scope3StrategyCopy = {
         },
     ],
     imageAlt: '숲 배경 이미지',
-    logoAlt: 'HanaLoop 로고',
 };
 
 const copy: Record<AppLocale, Scope3StrategyCopy> = {
@@ -120,7 +118,7 @@ export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {
 
                 <div className="relative mt-14 overflow-hidden rounded-[20px] lg:mt-[74px]">
                     <Image src={bgImage} alt={text.imageAlt} width={1920} height={400} className="h-[240px] w-full object-cover md:h-[320px] lg:h-[400px]" sizes="(min-width: 1920px) 1440px, (min-width: 1024px) calc(100vw - 88px), 100vw" />
-                    <Image src={logoImage} alt={text.logoAlt} className="absolute bottom-6 left-6 h-[34px] w-auto opacity-60 md:bottom-8 md:left-8 md:h-[42px] lg:bottom-10 lg:left-10 lg:h-[53px]" />
+                    <Image src={logoImage} alt="" aria-hidden="true" className="absolute bottom-6 left-6 h-[34px] w-auto opacity-60 md:bottom-8 md:left-8 md:h-[42px] lg:bottom-10 lg:left-10 lg:h-[53px]" />
                 </div>
             </div>
         </section>

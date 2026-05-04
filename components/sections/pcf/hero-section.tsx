@@ -37,7 +37,7 @@ export function PcfHeroSection({ locale }: PcfHeroSectionProps) {
         <PlatformHero
             locale={locale}
             ariaLabel="PCF Hero"
-            backgroundImageUrl="/images/revamp/pcf-hero.png"
+            backgroundImageUrl="/images/revamp/pcf/hero.png"
             copy={copy}
             relatedLinks={relatedLinks}
         />

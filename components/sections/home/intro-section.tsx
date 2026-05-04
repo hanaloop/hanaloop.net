@@ -86,8 +86,8 @@ const introCopy: Record<AppLocale, IntroCopy> = {
     },
 };
 
-const desktopCardImages = ['/images/revamp/home-intro/pc1.png', '/images/revamp/home-intro/pc2.png', '/images/revamp/home-intro/pc3.png'] as const;
-const mobileCardImages = ['/images/revamp/home-intro/mobile1.png', '/images/revamp/home-intro/mobile2.png', '/images/revamp/home-intro/mobile3.png'] as const;
+const desktopCardImages = ['/images/revamp/home/intro/pc-1.png', '/images/revamp/home/intro/pc-2.png', '/images/revamp/home/intro/pc-3.png'] as const;
+const mobileCardImages = ['/images/revamp/home/intro/mobile-1.png', '/images/revamp/home/intro/mobile-2.png', '/images/revamp/home/intro/mobile-3.png'] as const;
 
 function CardAction({ title }: { title: string }) {
     return (
