@@ -114,9 +114,9 @@ export function CbamProcessSection({ locale }: CbamProcessSectionProps) {
 
     return (
         <section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 overflow-hidden" aria-label={text.sectionAriaLabel}>
-            <div className="relative min-h-[920px] w-full md:min-h-[980px] lg:min-h-0 lg:aspect-[1920/673]">
+            <div className="relative w-full lg:hidden">
                 <Image src="/images/revamp/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
-                <div className="absolute inset-0 px-5 pt-10 sm:px-8 md:pt-14 lg:hidden">
+                <div className="relative px-5 py-10 sm:px-8 md:py-14">
                     <h2 className="text-center text-white" style={TITLE_STYLE}>
                         {text.title}
                     </h2>
@@ -143,8 +143,11 @@ export function CbamProcessSection({ locale }: CbamProcessSectionProps) {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className="absolute inset-0 hidden px-5 pt-10 sm:px-8 md:pt-14 lg:block lg:px-[8.4375vw] lg:pt-[6vw]">
+            <div className="relative hidden w-full lg:block lg:aspect-[1920/673]">
+                <Image src="/images/revamp/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
+                <div className="absolute inset-0 px-5 pt-10 sm:px-8 md:pt-14 lg:px-[8.4375vw] lg:pt-[6vw]">
                     <h2 className="text-center text-white" style={TITLE_STYLE}>
                         {text.title}
                     </h2>

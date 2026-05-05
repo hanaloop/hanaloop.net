@@ -150,7 +150,7 @@ export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {
                     {text.heading}
                 </h2>
 
-                <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
+                <div className="px-11 mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
                     {text.columns.map((column) => (
                         <article key={column.title} className="min-w-0">
                             <h3

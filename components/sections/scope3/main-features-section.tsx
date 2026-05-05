@@ -1,12 +1,5 @@
-import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import type { AppLocale } from '@/lib/locales';
-
-const GRADIENT_TEXT_STYLE: CSSProperties = {
-    background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-};
 
 type Scope3MainFeaturesSectionProps = {
     locale: AppLocale;
@@ -164,8 +157,8 @@ export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionP
                 <div className="space-y-14 px-5 md:px-8">
                     {text.items.map((item) => (
                         <article key={item.index}>
-                            <p style={{ fontSize: '28px', fontWeight: 700, lineHeight: 1.15, ...GRADIENT_TEXT_STYLE }}>{item.index}</p>
-                            <h3 className="mt-3" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>
+                            <p className="text-gradient-brand" style={{ fontSize: '28px', fontWeight: 700, lineHeight: 1.15 }}>{item.index}</p>
+                            <h3 className="mt-3 text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>
                                 {item.title}
                             </h3>
                             <div className="mt-8 space-y-10">
@@ -199,8 +192,8 @@ export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionP
                 <div className="max-w-[640px] flex-1 space-y-24 pt-2 pl-11">
                     {text.items.map((item) => (
                         <article key={item.index}>
-                            <p style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.15, ...GRADIENT_TEXT_STYLE }}>{item.index}</p>
-                            <h3 className="mt-3" style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>
+                            <p className="text-gradient-brand" style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.15 }}>{item.index}</p>
+                            <h3 className="mt-3 text-gradient-brand" style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28 }}>
                                 {item.title}
                             </h3>
                             <div className="mt-14 space-y-12">

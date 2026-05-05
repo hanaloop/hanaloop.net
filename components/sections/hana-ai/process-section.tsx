@@ -163,7 +163,7 @@ export function HanaAiProcessSection({ locale }: HanaAiProcessSectionProps) {
                     {text.heading}
                 </h2>
 
-                <div className="mt-12 space-y-[180px] sm:space-y-[200px] md:space-y-[220px] lg:mt-[78px] lg:space-y-[108px]">
+                <div className="mt-12 space-y-[100px] sm:space-y-[120px] md:space-y-[140px] lg:mt-[78px] lg:space-y-[108px]">
                     {text.items.map((item, index) => {
                         const imageLeft = index % 2 === 0;
 
@@ -184,7 +184,7 @@ export function HanaAiProcessSection({ locale }: HanaAiProcessSectionProps) {
                                     </div>
                                 </div>
 
-                                <div className={imageLeft ? 'order-2' : 'order-2 lg:order-1'}>
+                                <div className={imageLeft ? 'order-2 px-11 pt-8 lg:pt-0' : 'order-2 lg:order-1 px-11 pt-8 lg:pt-0'}>
                                     <span
                                         className="inline-flex h-[46px] items-center rounded-full px-[18px] text-[21px] font-semibold leading-none text-white"
                                         style={{ background: 'linear-gradient(106.7deg, rgba(31, 189, 125, 0.7) 26.33%, rgba(1, 148, 255, 0.7) 75.4%)' }}

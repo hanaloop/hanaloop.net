@@ -1,15 +1,8 @@
-import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
 import bgImage from '@/public/images/revamp/solution/climate-management-bg.png';
-
-const GRADIENT_TEXT_STYLE: CSSProperties = {
-    background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)',
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-};
 
 type SolutionClimateManagementSectionProps = {
     locale: AppLocale;
@@ -121,14 +114,14 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
             <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden">
                 <div className="space-y-14 px-5 md:px-8">
                     <article>
-                        <h3 style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>{text.itemOneTitle}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>{text.itemOneTitle}</h3>
                         <p className="mt-4" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {text.itemOneBody}
                         </p>
                     </article>
 
                     <article>
-                        <h3 style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>{text.itemTwoTitle}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>{text.itemTwoTitle}</h3>
                         <p className="mt-4" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {text.itemTwoBody}
                         </p>
@@ -149,14 +142,14 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
             <div className="mt-18 hidden items-center justify-between gap-10 lg:flex lg:pl-[calc((100vw-1440px)/2)]">
                 <div className="max-w-[640px] flex-1 space-y-24 pt-2 pl-11">
                     <article>
-                        <h3 style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>{text.itemOneTitle}</h3>
+                        <h3 className='text-gradient-brand' style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28,  }}>{text.itemOneTitle}</h3>
                         <p className="mt-6" style={{ fontSize: '18px', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {text.itemOneBody}
                         </p>
                     </article>
 
                     <article>
-                        <h3 style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28, ...GRADIENT_TEXT_STYLE }}>{text.itemTwoTitle}</h3>
+                        <h3 className='text-gradient-brand' style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28,  }}>{text.itemTwoTitle}</h3>
                         <p className="mt-6" style={{ fontSize: '18px', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {text.itemTwoBody}
                         </p>
