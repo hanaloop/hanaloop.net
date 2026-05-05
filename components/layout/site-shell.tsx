@@ -11,15 +11,16 @@ type SiteShellProps = {
   children?: ReactNode;
   wrapperClassName?: string;
   mobileContextualNav?: MobileContextualNav;
+  headerDark?: boolean;
 };
 
-export function SiteShell({ children, wrapperClassName, mobileContextualNav }: SiteShellProps) {
+export function SiteShell({ children, wrapperClassName, mobileContextualNav, headerDark }: SiteShellProps) {
   const pathname = usePathname();
   const locale = getLocaleFromPathname(pathname);
 
   return (
     <div className={`min-h-screen bg-white text-[#131313] ${wrapperClassName ?? ''}`}>
-      <SiteHeader locale={locale} pathname={pathname ?? '/'} mobileContextualNav={mobileContextualNav} />
+      <SiteHeader locale={locale} pathname={pathname ?? '/'} mobileContextualNav={mobileContextualNav} initialDark={headerDark} />
       <main>{children}</main>
       <SiteFooter locale={locale} />
     </div>

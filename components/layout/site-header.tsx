@@ -40,17 +40,19 @@ type SiteHeaderProps = {
     locale: AppLocale;
     pathname: string;
     mobileContextualNav?: MobileContextualNav;
+    initialDark?: boolean;
 };
 
-export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav }: SiteHeaderProps) {
+export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav, initialDark }: SiteHeaderProps) {
     const menus = buildMenus(locale);
     const [scrolled, setScrolled] = useState(false);
     const [menuHovered, setMenuHovered] = useState(false);
+    const [localeMenuOpen, setLocaleMenuOpen] = useState(false);
     const normalizedPath = useMemo(() => stripBasePath(pathname ?? '/'), [pathname]);
     const pathSegments = useMemo(() => normalizedPath.split('/').filter(Boolean), [normalizedPath]);
     const isHome = pathSegments.length === 0 || (pathSegments.length === 1 && isLocale(pathSegments[0]));
-    const desktopSolid = scrolled || menuHovered;
-    const mobileSolid = scrolled;
+    const desktopSolid = initialDark || scrolled || menuHovered || localeMenuOpen;
+    const mobileSolid = initialDark || scrolled;
     const overlayBg = desktopSolid ? '#1c1c1e' : 'transparent';
     const mobileHeaderClassName = mobileSolid ? 'bg-white shadow-[0_4px_20px_rgba(0,0,0,0.08)]' : 'bg-transparent';
 
@@ -122,7 +124,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                             <Image src={ICON.link} alt="" width={8} height={8} aria-hidden="true" className="h-2 w-2" />
                         </a>
                     </nav>
-                    <LocaleSwitcher locale={locale} pathname={pathname} dropdownBackgroundColor={overlayBg} />
+                    <LocaleSwitcher locale={locale} pathname={pathname} dropdownBackgroundColor={overlayBg} onOpenChange={setLocaleMenuOpen} />
                 </div>
             </header>
         </>
