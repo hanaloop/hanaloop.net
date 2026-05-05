@@ -35,8 +35,6 @@ function getTexts(locale: string) {
   };
 }
 
-export const dynamicParams = false;
-
 export default async function Page({ params }: Props) {
   const { locale, tag } = await params;
   if (!isLocale(locale) || locale === defaultLocale) notFound();
@@ -68,10 +66,18 @@ export default async function Page({ params }: Props) {
   );
 }
 
-export function generateStaticParams() {
-  return locales
+export async function generateStaticParams() {
+  const params = locales
     .filter((locale) => locale !== defaultLocale)
-    .flatMap((locale) => getBlogTags(locale).map((tag) => ({ locale, tag })));
+    .flatMap((locale) => {
+      const tags = getBlogTags(locale);
+      // If no tags, return dummy entry
+      if (tags.length === 0) {
+        return [{ locale, tag: '__no_tags__' }];
+      }
+      return tags.map((tag) => ({ locale, tag }));
+    });
+  return params.length > 0 ? params : [{ locale: 'en', tag: '__no_tags__' }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

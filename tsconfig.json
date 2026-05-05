@@ -33,6 +33,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
-  "exclude": ["node_modules", "legacy"]
+, "app/blog/[[...slug]]/page.tsx"  ],
+  "exclude": ["node_modules"]
 }

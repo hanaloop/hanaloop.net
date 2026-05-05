@@ -12,6 +12,8 @@ type Props = {
   }>;
 };
 
+export const dynamicParams = false;
+
 export default async function Page({ params }: Props) {
   const { tag } = await params;
   const decodedTag = decodeURIComponent(tag);
@@ -44,7 +46,12 @@ export default async function Page({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  return getDocsTags('ko').map((tag) => ({ tag }));
+  const tags = getDocsTags('ko');
+  // Return at least one placeholder if no tags exist to satisfy static export
+  if (tags.length === 0) {
+    return [{ tag: '__no_tags__' }];
+  }
+  return tags.map((tag) => ({ tag }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -14,6 +14,8 @@ type Props = {
   }>;
 };
 
+export const dynamicParams = false;
+
 function getTexts(locale: string) {
   if (locale === 'es') {
     return {
@@ -70,9 +72,17 @@ export default async function Page({ params }: Props) {
 }
 
 export function generateStaticParams() {
-  return locales
+  const params = locales
     .filter((locale) => locale !== defaultLocale)
-    .flatMap((locale) => getDocsTags(locale).map((tag) => ({ locale, tag })));
+    .flatMap((locale) => {
+      const tags = getDocsTags(locale);
+      // Return at least one placeholder if no tags exist
+      if (tags.length === 0) {
+        return [{ locale, tag: '__no_tags__' }];
+      }
+      return tags.map((tag) => ({ locale, tag }));
+    });
+  return params;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

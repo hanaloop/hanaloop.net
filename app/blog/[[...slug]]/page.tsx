@@ -14,6 +14,8 @@ export default async function Page({ params }: Props) {
   return renderBlogRoute('ko', slug);
 }
 
+
+
 export function generateStaticParams() {
   return getBlogStaticParams('ko');
 }

@@ -12,8 +12,6 @@ type Props = {
   }>;
 };
 
-export const dynamicParams = false;
-
 export default async function Page({ params }: Props) {
   const { tag } = await params;
   const decodedTag = decodeURIComponent(tag);
@@ -40,8 +38,19 @@ export default async function Page({ params }: Props) {
   );
 }
 
-export function generateStaticParams() {
-  return getBlogTags('ko').map((tag) => ({ tag }));
+export async function generateStaticParams() {
+  try {
+    const tags = getBlogTags('ko');
+    console.log('[DEBUG] getBlogTags returned:', tags);
+    // If no tags exist, return a dummy entry to satisfy Next.js
+    if (tags.length === 0) {
+      return [{ tag: '__no_tags__' }];
+    }
+    return tags.map((tag) => ({ tag }));
+  } catch (error) {
+    console.error('[ERROR] getBlogTags failed:', error);
+    return [{ tag: '__error__' }];
+  }
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
