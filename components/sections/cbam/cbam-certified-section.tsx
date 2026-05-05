@@ -54,10 +54,82 @@ const koCopy: CertifiedCopy = {
     ],
 };
 
+const enCopy: CertifiedCopy = {
+    sectionAriaLabel: 'LRQA-Certified CBAM Solution',
+    title: 'LRQA-Certified CBAM Solution',
+    subtitle: 'First in Korea to receive a verification statement of conformity for the EU Emissions Trading System and the EU Carbon Border Adjustment Mechanism from Lloyd\'s Register Quality Assurance (LRQA)',
+    cards: [
+        {
+            index: '01.',
+            title: 'Product & Precursor Management (CN Code Management)',
+            description: 'Manage products and precursors in an integrated manner, and systematically register and track the CN codes required for CBAM-regulated goods. This enables you to easily obtain the foundational data needed for carbon emission analysis and reporting by product.',
+            imageSrc: '/images/revamp/cbam/certified-1.png',
+            imageAlt: 'Product and precursor management visualization',
+        },
+        {
+            index: '02.',
+            title: 'Installation Setup & Process Management',
+            description: 'Configure and manage information for each manufacturing facility and the production process flow. This plays a key role in improving the accuracy of emission data and process-level emission calculations required for CBAM reports.',
+            imageSrc: '/images/revamp/cbam/certified-2.png',
+            imageAlt: 'Installation setup and process management visualization',
+        },
+        {
+            index: '03.',
+            title: 'Embedded Emissions Calculation & Analysis',
+            description: 'Calculate direct and indirect emissions generated during product manufacturing on a per-product basis. The results allow you to analyze carbon intensity, high-emission factors, and areas for improvement by product — useful not only for regulatory compliance but also for developing carbon reduction strategies.',
+            imageSrc: '/images/revamp/cbam/certified-3.png',
+            imageAlt: 'Embedded emissions calculation and analysis visualization',
+        },
+        {
+            index: '04.',
+            title: 'CBAM Report Generation',
+            description: 'Automatically generate reports compliant with CBAM regulations based on collected activity data and emission information. Efficiently support European exporters in meeting their CBAM reporting obligations — without complex regulatory interpretation or manual effort.',
+            imageSrc: '/images/revamp/cbam/certified-4.png',
+            imageAlt: 'CBAM report generation visualization',
+        },
+    ],
+};
+
+const esCopy: CertifiedCopy = {
+    sectionAriaLabel: 'Solución CBAM Certificada por LRQA',
+    title: 'Solución CBAM Certificada por LRQA',
+    subtitle: 'Primera empresa en Corea en obtener una declaración de verificación de conformidad para el Sistema de Comercio de Emisiones de la UE y el Mecanismo de Ajuste en Frontera por Carbono de Lloyd\'s Register Quality Assurance (LRQA)',
+    cards: [
+        {
+            index: '01.',
+            title: 'Gestión de Productos y Precursores (Gestión de Códigos CN)',
+            description: 'Gestione productos y precursores de forma integrada, y registre y rastree sistemáticamente los códigos CN requeridos para los bienes regulados por CBAM. Esto le permite obtener fácilmente los datos fundamentales necesarios para el análisis y reporte de emisiones de carbono por producto.',
+            imageSrc: '/images/revamp/cbam/certified-1.png',
+            imageAlt: 'Visualización de gestión de productos y precursores',
+        },
+        {
+            index: '02.',
+            title: 'Configuración de Instalaciones y Gestión de Procesos',
+            description: 'Configure y gestione la información de cada instalación de fabricación y el flujo del proceso de producción. Esto desempeña un papel clave en mejorar la precisión de los datos de emisiones y los cálculos de emisiones por proceso requeridos para los informes CBAM.',
+            imageSrc: '/images/revamp/cbam/certified-2.png',
+            imageAlt: 'Visualización de configuración de instalaciones y gestión de procesos',
+        },
+        {
+            index: '03.',
+            title: 'Cálculo y Análisis de Emisiones Incorporadas',
+            description: 'Calcule las emisiones directas e indirectas generadas durante la fabricación del producto por unidad de producto. Los resultados le permiten analizar la intensidad de carbono, los factores de alta emisión y las áreas de mejora por producto, útiles tanto para el cumplimiento normativo como para desarrollar estrategias de reducción de carbono.',
+            imageSrc: '/images/revamp/cbam/certified-3.png',
+            imageAlt: 'Visualización del cálculo y análisis de emisiones incorporadas',
+        },
+        {
+            index: '04.',
+            title: 'Generación de Informes CBAM',
+            description: 'Genere automáticamente informes conformes con las regulaciones CBAM basándose en datos de actividad e información de emisiones recopilados. Apoye eficientemente a los exportadores europeos en el cumplimiento de sus obligaciones de reporte CBAM, sin interpretación normativa compleja ni esfuerzo manual.',
+            imageSrc: '/images/revamp/cbam/certified-4.png',
+            imageAlt: 'Visualización de generación de informes CBAM',
+        },
+    ],
+};
+
 const copy: Record<AppLocale, CertifiedCopy> = {
     ko: koCopy,
-    en: koCopy,
-    es: koCopy,
+    en: enCopy,
+    es: esCopy,
 };
 
 export function CbamCertifiedSection({ locale }: CbamCertifiedSectionProps) {

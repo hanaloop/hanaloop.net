@@ -58,10 +58,78 @@ const koCopy: Scope3StrategyCopy = {
     imageAlt: '숲 배경 이미지',
 };
 
+const enCopy: Scope3StrategyCopy = {
+    sectionAriaLabel: 'Data-Driven Carbon Neutrality Strategy for Scope 3',
+    heading: 'When you see the data, the path to carbon neutrality becomes clear!',
+    columns: [
+        {
+            title: 'Data Integration & Generative AI Analytics',
+            bullets: [
+                'Reduce tedious manual data collection with automated data gathering',
+                'Generative AI-powered regulatory search and report generation',
+                'Enterprise-wide emission status and trend analysis',
+                'Secure data storage and transmission with encryption',
+            ],
+        },
+        {
+            title: 'Value Chain Scope 3 Management',
+            bullets: ['Value chain emission management', 'Supplier management', 'Multilingual support'],
+        },
+        {
+            title: 'Product LCA Support',
+            bullets: [
+                'Management of raw materials and precursors for products',
+                'Product manufacturing process setup and embedded emission calculation',
+                'Upstream and downstream emission calculation',
+                'Product embedded emission analysis and benchmarking',
+            ],
+        },
+        {
+            title: 'OpenAPI – Platform',
+            bullets: ['Reduce time to build extended solutions', 'Enable new business model creation', 'Foster a low-carbon ecosystem'],
+        },
+    ],
+    imageAlt: 'Forest background image',
+};
+
+const esCopy: Scope3StrategyCopy = {
+    sectionAriaLabel: 'Estrategia de Neutralidad de Carbono Basada en Datos para Alcance 3',
+    heading: '¡Cuando ves los datos, la estrategia de neutralidad de carbono se vuelve clara!',
+    columns: [
+        {
+            title: 'Integración de Datos y Análisis con IA Generativa',
+            bullets: [
+                'Reducir la tediosa recopilación manual de datos con recopilación automatizada',
+                'Búsqueda regulatoria y generación de informes impulsadas por IA generativa',
+                'Análisis del estado y tendencias de emisiones a nivel empresarial',
+                'Seguridad mediante cifrado en el almacenamiento y transmisión de datos',
+            ],
+        },
+        {
+            title: 'Gestión de Alcance 3 en la Cadena de Valor',
+            bullets: ['Gestión de emisiones en la cadena de valor', 'Gestión de proveedores', 'Soporte multilingüe'],
+        },
+        {
+            title: 'Soporte de ACV de Productos',
+            bullets: [
+                'Gestión de materias primas y precursores de productos',
+                'Configuración del proceso de fabricación y cálculo de emisiones incorporadas',
+                'Cálculo de emisiones aguas arriba y aguas abajo',
+                'Análisis y benchmarking de emisiones incorporadas en productos',
+            ],
+        },
+        {
+            title: 'OpenAPI – Plataforma',
+            bullets: ['Reducir el tiempo para crear soluciones extendidas', 'Posibilitar la creación de nuevos modelos de negocio', 'Fomentar un ecosistema bajo en carbono'],
+        },
+    ],
+    imageAlt: 'Imagen de fondo de bosque',
+};
+
 const copy: Record<AppLocale, Scope3StrategyCopy> = {
     ko: koCopy,
-    en: koCopy,
-    es: koCopy,
+    en: enCopy,
+    es: esCopy,
 };
 
 export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {

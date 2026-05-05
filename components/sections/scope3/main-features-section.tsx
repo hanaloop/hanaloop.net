@@ -66,10 +66,84 @@ const koCopy: MainFeaturesCopy = {
     imageAlt: 'Scope3 기능 대시보드 예시 배경 이미지',
 };
 
+const enCopy: MainFeaturesCopy = {
+    sectionAriaLabel: 'Key Features of Scope 3 Solution',
+    heading: 'Key Features of Scope 3 Solution',
+    subheading: 'Explore the key features of the Hana.eco Scope 3 solution.',
+    items: [
+        {
+            index: '01.',
+            title: 'Effortless Management of Large-Scale Activity Data',
+            details: [
+                {
+                    lead: 'Bulk Update of Activity Data',
+                    body: 'Supports category classification, emission factor mapping, unit conversion, and emission calculation for large volumes of activity data.',
+                },
+                {
+                    lead: 'Grouped Management of Similar Activities',
+                    body: 'Group similar activity items to streamline emission factor management and tracking.',
+                },
+            ],
+        },
+        {
+            index: '02.',
+            title: 'Emission Trend Visualization Across Multiple Dimensions',
+            details: [
+                {
+                    lead: 'Intuitive Understanding of Carbon Emission Flows',
+                    body: 'Visualize data across various analysis dimensions — activity data groups, calculation methods, and supplier-level emissions — for easy understanding of carbon flow.',
+                },
+                {
+                    lead: 'Identify High-Emission Areas and Derive Reduction Strategies',
+                    body: 'Use Scope 3 emission statistics to identify carbon emission trends and high-emission areas across the supply chain, and develop targeted reduction activities.',
+                },
+            ],
+        },
+    ],
+    imageAlt: 'Scope 3 feature dashboard example background image',
+};
+
+const esCopy: MainFeaturesCopy = {
+    sectionAriaLabel: 'Funciones Principales de la Solución de Alcance 3',
+    heading: 'Funciones Principales de la Solución de Alcance 3',
+    subheading: 'Explore las funciones principales de la solución de Alcance 3 de Hana.eco.',
+    items: [
+        {
+            index: '01.',
+            title: 'Gestión Eficiente de Grandes Volúmenes de Datos de Actividad',
+            details: [
+                {
+                    lead: 'Actualización Masiva de Datos de Actividad',
+                    body: 'Admite la clasificación por categorías, el mapeo de factores de emisión, la conversión de unidades y el cálculo de emisiones para grandes volúmenes de datos de actividad.',
+                },
+                {
+                    lead: 'Gestión Agrupada de Actividades Similares',
+                    body: 'Agrupe elementos de actividad similares para agilizar la gestión y el seguimiento de los factores de emisión.',
+                },
+            ],
+        },
+        {
+            index: '02.',
+            title: 'Visualización de Tendencias de Emisiones en Múltiples Dimensiones',
+            details: [
+                {
+                    lead: 'Comprensión Intuitiva de los Flujos de Emisiones de Carbono',
+                    body: 'Visualice los datos en diversas dimensiones de análisis — grupos de datos de actividad, métodos de cálculo y emisiones por proveedor — para comprender fácilmente el flujo de carbono.',
+                },
+                {
+                    lead: 'Identificación de Áreas de Alta Emisión y Desarrollo de Estrategias de Reducción',
+                    body: 'Utilice las estadísticas de emisiones de Alcance 3 para identificar tendencias de emisiones de carbono y áreas de alta emisión en toda la cadena de suministro, y desarrolle actividades de reducción focalizadas.',
+                },
+            ],
+        },
+    ],
+    imageAlt: 'Imagen de fondo del panel de funciones de Alcance 3',
+};
+
 const copy: Record<AppLocale, MainFeaturesCopy> = {
     ko: koCopy,
-    en: koCopy,
-    es: koCopy,
+    en: enCopy,
+    es: esCopy,
 };
 
 export function Scope3MainFeaturesSection({ locale }: Scope3MainFeaturesSectionProps) {

@@ -41,10 +41,36 @@ const koCopy: ClimateManagementCopy = {
     imageAlt: '친환경 모빌리티 컨셉 이미지',
 };
 
+const enCopy: ClimateManagementCopy = {
+    sectionAriaLabel: 'Introduction to Climate Management',
+    heading: 'Climate Management',
+    subheading: 'Resources are finite, but potential is limitless.',
+    message: 'Realize environmental, economic,\nand social benefits simultaneously with digital solutions!',
+    itemOneTitle: 'Sustainable Digital Transformation',
+    itemOneBody: 'Aligned with rapidly changing business environments and market demands, we leverage digital technology to maximize our clients\' potential and business value. Beyond technology, we elevate corporate culture to enhance satisfaction and productivity within client organizations.',
+    itemTwoTitle: 'Eco-Friendly Solutions Built on the Hana.eco Platform',
+    itemTwoBody: 'The platform provides guidance on environmental regulations and market insights, enables rapid discovery and trading of eco-friendly technologies, and helps create a cleaner value chain — empowering clients to grow in a sustainable way. Ultimately, it contributes to the development of a more responsible and ethical industry.',
+    contactLabel: 'Contact Us',
+    imageAlt: 'Eco-friendly mobility concept image',
+};
+
+const esCopy: ClimateManagementCopy = {
+    sectionAriaLabel: 'Introducción a la Gestión Climática',
+    heading: 'Gestión Climática',
+    subheading: 'Los recursos son finitos, pero el potencial es ilimitado.',
+    message: '¡Logra beneficios ambientales, económicos\ny sociales simultáneamente con soluciones digitales!',
+    itemOneTitle: 'Transformación Digital Sostenible',
+    itemOneBody: 'Alineados con los entornos empresariales en rápida evolución y las demandas del mercado, aprovechamos la tecnología digital para maximizar el potencial y el valor empresarial de nuestros clientes. Más allá de la tecnología, elevamos la cultura corporativa para mejorar la satisfacción y la productividad en las organizaciones de nuestros clientes.',
+    itemTwoTitle: 'Soluciones Ecológicas Basadas en la Plataforma Hana.eco',
+    itemTwoBody: 'La plataforma ofrece orientación sobre regulaciones ambientales e información del mercado, permite descubrir y comercializar rápidamente tecnologías ecológicas, y ayuda a crear una cadena de valor más limpia, impulsando a los clientes a crecer de manera sostenible. En última instancia, contribuye al desarrollo de una industria más responsable y ética.',
+    contactLabel: 'Contáctenos',
+    imageAlt: 'Imagen conceptual de movilidad ecológica',
+};
+
 const copy: Record<AppLocale, ClimateManagementCopy> = {
     ko: koCopy,
-    en: koCopy,
-    es: koCopy,
+    en: enCopy,
+    es: esCopy,
 };
 
 export function SolutionClimateManagementSection({ locale }: SolutionClimateManagementSectionProps) {
