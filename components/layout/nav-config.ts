@@ -35,7 +35,7 @@ export function buildMenus(locale: AppLocale): MenuGroup[] {
     {
       label: g.insight,
       items: [
-        { label: getNavbarMessage(locale, 'item.label.Resources', 'Resources'), href: '/docs/intro' },
+        { label: getNavbarMessage(locale, 'item.label.Insight', 'Insight'), href: '/insight' },
         { label: getNavbarMessage(locale, 'item.label.Blog', 'Blog'), href: '/blog' },
       ],
     },
