@@ -1,12 +1,5 @@
-﻿import { notFound } from 'next/navigation';
-
-export const dynamicParams = false;
+import { UnderConstruction } from '@/components/features/under-construction';
 
 export default function Page() {
-  notFound();
+  return <UnderConstruction />;
 }
-
-export function generateStaticParams() {
-  return [];
-}
-
