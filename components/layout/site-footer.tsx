@@ -84,8 +84,18 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                         </div>
 
                         <div className="mt-[34px] space-y-2">
-                            <p className={bodyText}>Email : info@hanaloop.com</p>
-                            <p className={bodyText}>Phone : +82 0507-1337-9251</p>
+                            <p className={bodyText}>
+                                Email :{' '}
+                                <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
+                                    info@hanaloop.com
+                                </a>
+                            </p>
+                            <p className={bodyText}>
+                                Phone :{' '}
+                                <a href="tel:+82050713379251" className="transition hover:text-white/80">
+                                    +82 0507-1337-9251
+                                </a>
+                            </p>
                         </div>
 
                         <p className="mt-[26px] text-[14px] leading-none font-normal text-white/45">© {CURRENT_YEAR} HANALOOP, all rights reserved.</p>
@@ -117,8 +127,18 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                     <div>
                         <p className="mb-[30px] text-[30px] leading-none font-medium text-white">Contact</p>
                         <ul className="space-y-[26px]">
-                            <li className={bodyText}>Email: info@hanaloop.com</li>
-                            <li className={bodyText}>Phone: +82 0507-1337-9251</li>
+                            <li className={bodyText}>
+                                Email:{' '}
+                                <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
+                                    info@hanaloop.com
+                                </a>
+                            </li>
+                            <li className={bodyText}>
+                                Phone:{' '}
+                                <a href="tel:+82050713379251" className="transition hover:text-white/80">
+                                    +82 0507-1337-9251
+                                </a>
+                            </li>
                         </ul>
                     </div>
 

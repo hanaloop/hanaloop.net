@@ -71,7 +71,7 @@ export function HomeCtaSection({ locale }: HomeCtaSectionProps) {
 
                 <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-4 sm:flex-row sm:justify-center lg:mt-16 lg:max-w-none lg:gap-6">
                     <CtaButton href="/solution" label={text.solutionLabel} locale={locale} />
-                    <CtaButton href="/demo_request" label={text.contactLabel} locale={locale} />
+                    <CtaButton href="/partnership" label={text.contactLabel} locale={locale} />
                 </div>
             </div>
         </section>

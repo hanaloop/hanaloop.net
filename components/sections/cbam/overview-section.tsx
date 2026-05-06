@@ -95,7 +95,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                         <p className="mt-4 text-[16px] font-medium leading-[1.6] tracking-[-0.25px] text-black md:mt-5 md:text-[17px]">{text.solutionBody}</p>
 
                         <RoundedArrowButton
-                            href={withLocalePath(locale, '/demo_request')}
+                            href={withLocalePath(locale, '/partnership')}
                             label={text.contactLabel}
                             className="mt-10 h-[52px] w-full max-w-[320px] px-8 md:mt-12 md:h-[56px] md:w-[279px] md:px-12"
                         />
@@ -115,7 +115,7 @@ export function CbamOverviewSection({ locale }: CbamOverviewSectionProps) {
                     <h3 className="mt-22 text-[36px] font-bold leading-[1.35] tracking-[-0.25px] text-black">{text.solutionTitle}</h3>
                     <p className="mt-6 text-[18px] font-medium leading-[1.65] tracking-[-0.25px] text-black">{text.solutionBody}</p>
 
-                    <RoundedArrowButton href={withLocalePath(locale, '/demo_request')} label={text.contactLabel} className="mt-16" />
+                    <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={text.contactLabel} className="mt-16" />
                 </div>
 
                 <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">

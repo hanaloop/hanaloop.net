@@ -128,7 +128,7 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
                     </article>
 
                     <RoundedArrowButton
-                        href={withLocalePath(locale, '/demo_request')}
+                        href={withLocalePath(locale, '/partnership')}
                         label={text.contactLabel}
                         className="w-full max-w-[320px] px-8 md:w-[279px] md:px-12"
                     />
@@ -155,7 +155,7 @@ export function SolutionClimateManagementSection({ locale }: SolutionClimateMana
                         </p>
                     </article>
 
-                    <RoundedArrowButton href={withLocalePath(locale, '/demo_request')} label={text.contactLabel} />
+                    <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={text.contactLabel} />
                 </div>
 
                 <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">

@@ -138,7 +138,7 @@ export function HomeIntroSection({ locale }: HomeIntroSectionProps) {
                     </h2>
 
                     <Link
-                        href={withLocalePath(locale, '/demo_request')}
+                        href={withLocalePath(locale, '/partnership')}
                         className="absolute right-0 xl:bottom-30 2xl:bottom-12 hidden h-[128px] w-[128px] flex-col items-center justify-center rounded-full text-white xl:flex"
                         style={{ background: 'linear-gradient(149deg, #59c98a 0%, #3cb2ea 100%)' }}
                     >

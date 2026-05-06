@@ -30,7 +30,7 @@ export function ContactCtaButton({
 }: ContactCtaButtonProps) {
   return (
     <Link
-      href={withLocalePath(locale, '/demo_request')}
+      href={withLocalePath(locale, '/partnership')}
       className={`inline-flex h-12 items-center gap-2 rounded-[50px] px-6 text-sm font-medium text-white transition hover:opacity-90 ${className}`}
       style={{ background: 'linear-gradient(to right, #1FBD7D, #0194FF)', ...style }}
     >
