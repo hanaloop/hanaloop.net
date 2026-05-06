@@ -19,7 +19,7 @@ export function SiteShell({ children, wrapperClassName, mobileContextualNav, hea
     const locale = getLocaleFromPathname(pathname);
 
     return (
-        <div className={`min-h-screen text-[var(--color-text-default)] bg-[#F0EBF8] ${wrapperClassName ?? ''}`}>
+        <div className={`min-h-screen ${wrapperClassName ?? ''}`}>
             <SiteHeader locale={locale} pathname={pathname ?? '/'} mobileContextualNav={mobileContextualNav} initialDark={headerDark} />
             <main>{children}</main>
             <SiteFooter locale={locale} />
