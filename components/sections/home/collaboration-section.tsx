@@ -61,6 +61,14 @@ const introCopy: Record<AppLocale, IntroCopy> = {
     },
 };
 
+function makeSlides(sourceIndices: number[]): LoopSlide[] {
+    return sourceIndices.map((sourceIndex, fixedIndex) => ({
+        item: collaborations[sourceIndex],
+        sourceIndex,
+        fixedIndex,
+    }));
+}
+
 const collaborations: CollaborationItem[] = [
     {
         id: 'sama',
@@ -122,39 +130,9 @@ export function HomeCollaborationSection({ locale }: HomeCollaborationSectionPro
     const [viewportMode, setViewportMode] = useState<'mobile' | 'lg' | 'desktop'>('desktop');
     const [activeIndex, setActiveIndex] = useState(3);
 
-    const desktopSlides = useMemo<LoopSlide[]>(
-        () => [
-            { item: collaborations[0], sourceIndex: 0, fixedIndex: 0 },
-            { item: collaborations[1], sourceIndex: 1, fixedIndex: 1 },
-            { item: collaborations[2], sourceIndex: 2, fixedIndex: 2 },
-            { item: collaborations[3], sourceIndex: 3, fixedIndex: 3 },
-            { item: collaborations[0], sourceIndex: 0, fixedIndex: 4 },
-            { item: collaborations[1], sourceIndex: 1, fixedIndex: 5 },
-            { item: collaborations[2], sourceIndex: 2, fixedIndex: 6 },
-        ],
-        [],
-    );
-
-    const mobileSlides = useMemo<LoopSlide[]>(
-        () => [
-            { item: collaborations[0], sourceIndex: 0, fixedIndex: 0 },
-            { item: collaborations[1], sourceIndex: 1, fixedIndex: 1 },
-            { item: collaborations[2], sourceIndex: 2, fixedIndex: 2 },
-            { item: collaborations[3], sourceIndex: 3, fixedIndex: 3 },
-        ],
-        [],
-    );
-
-    const lgSlides = useMemo<LoopSlide[]>(
-        () => [
-            { item: collaborations[0], sourceIndex: 0, fixedIndex: 0 },
-            { item: collaborations[1], sourceIndex: 1, fixedIndex: 1 },
-            { item: collaborations[2], sourceIndex: 2, fixedIndex: 2 },
-            { item: collaborations[3], sourceIndex: 3, fixedIndex: 3 },
-            { item: collaborations[0], sourceIndex: 0, fixedIndex: 4 },
-        ],
-        [],
-    );
+    const desktopSlides = useMemo(() => makeSlides([0, 1, 2, 3, 0, 1, 2]), []);
+    const mobileSlides = useMemo(() => makeSlides([0, 1, 2, 3]), []);
+    const lgSlides = useMemo(() => makeSlides([0, 1, 2, 3, 0]), []);
 
     const visibleSlides = useMemo(() => {
         if (viewportMode === 'mobile') return mobileSlides;

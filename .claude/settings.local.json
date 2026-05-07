@@ -42,7 +42,13 @@
       "Bash(npm install *)",
       "Bash(yarn *)",
       "Bash(npm show *)",
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\" -Recurse -Directory -Name)",
+      "Bash(Select-Object -First 50)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\" -Directory -Depth 1 | Where-Object { $_.Name -notmatch \"node_modules|\\\\.next|\\\\.git\" } | Select-Object Name)",
+      "PowerShell(ls \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\" | Where-Object { $_.PSIsContainer } | Select-Object Name)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\\\\components\\\\sections\" -Recurse)",
+      "Bash(Select-Object FullName)"
     ]
   }
 }
