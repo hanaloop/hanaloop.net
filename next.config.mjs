@@ -18,16 +18,6 @@ const config = {
   },
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
   webpack: (config, { isServer }) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@docusaurus/Link': path.resolve(process.cwd(), 'legacy/compat/docusaurus/Link.tsx'),
-      '@docusaurus/useBaseUrl': path.resolve(process.cwd(), 'legacy/compat/docusaurus/useBaseUrl.ts'),
-      '@docusaurus/useDocusaurusContext': path.resolve(process.cwd(), 'legacy/compat/docusaurus/useDocusaurusContext.ts'),
-      '@docusaurus/Translate': path.resolve(process.cwd(), 'legacy/compat/docusaurus/Translate.tsx'),
-      '@docusaurus/useGlobalData': path.resolve(process.cwd(), 'legacy/compat/docusaurus/useGlobalData.ts'),
-      '@theme/Layout': path.resolve(process.cwd(), 'legacy/compat/theme/Layout.tsx'),
-    };
-    
     // Add SVGR loader for SVG files
     config.module.rules.push({
       test: /\.svg$/,

@@ -88,7 +88,13 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                         token === '...' ? (
                             <span key={`ellipsis-${idx}`}>...</span>
                         ) : (
-                            <button key={token} type="button" className={token === currentPage ? 'font-semibold cursor-default' : 'font-normal cursor-pointer hover:underline'} onClick={token === currentPage ? undefined : () => setCurrentPage(token)} aria-current={token === currentPage ? 'page' : undefined}>
+                            <button
+                                key={token}
+                                type="button"
+                                className={token === currentPage ? 'font-semibold cursor-default' : 'font-normal cursor-pointer hover:underline'}
+                                onClick={token === currentPage ? undefined : () => setCurrentPage(token)}
+                                aria-current={token === currentPage ? 'page' : undefined}
+                            >
                                 {token}
                             </button>
                         ),
@@ -102,7 +108,7 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                 {viewMoreHref && viewMoreLabel ? (
                     <Link href={viewMoreHref} className="inline-flex items-center gap-2 text-[24px] font-medium leading-none text-[var(--color-text-default)]">
                         <span>{viewMoreLabel}</span>
-                        <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" width={27} height={27} className="h-[27px] w-[27px]" />
+                        <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" width={17} height={17} className="h-[17px] w-[17px]" />
                     </Link>
                 ) : null}
             </div>

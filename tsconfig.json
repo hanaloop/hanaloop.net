@@ -20,8 +20,6 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@docusaurus/*": ["./legacy/compat/docusaurus/*"],
-      "@theme/*": ["./legacy/compat/theme/*"],
       "@site/*": ["./*"],
       "collections/*": ["./.source/*"]
     }

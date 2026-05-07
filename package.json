@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "normalize:content": "node scripts/normalize-content.mjs",
-    "prepare:content": "yarn normalize:content && yarn prepare:docs && fumadocs-mdx",
+    "prepare:content": "yarn normalize:content && yarn prepare:docs && yarn prepare:blog-list && fumadocs-mdx",
+    "prepare:blog-list": "node scripts/generate-blog-list-json.mjs",
     "dev": "yarn prepare:content && next dev --turbo",
     "build": "yarn prepare:content && next build",
     "start": "serve out",
@@ -26,6 +27,7 @@
     "lucide-react": "^1.7.0",
     "mdast-util-to-string": "^4.0.0",
     "next": "^16.2.2",
+    "next-intl": "^4.11.0",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",

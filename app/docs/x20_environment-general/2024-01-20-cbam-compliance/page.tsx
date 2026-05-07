@@ -1,13 +1,5 @@
-import type { Metadata } from 'next';
-import { StaticRedirect } from '@/legacy/components/static-redirect';
-
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
+﻿import { redirect } from 'next/navigation';
 
 export default function Page() {
-  return <StaticRedirect to="/docs/x20_environment-general/CBAM/2024-01-20-cbam-compliance" />;
+  redirect('/docs/x20_environment-general/CBAM/2024-01-20-cbam-compliance');
 }

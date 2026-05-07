@@ -1,70 +1,11 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { DocsPage, DocsTitle, DocsDescription, DocsBody } from 'fumadocs-ui/layouts/docs/page';
-import { DocsBreadcrumb } from '@/legacy/components/docs-breadcrumb';
-import { getDocsByTag, getDocsTags } from '@/lib/docs-tags';
-import { siteConfig } from '@/lib/site-config';
-
-type Props = {
-  params: Promise<{
-    tag: string;
-  }>;
-};
+﻿import { UnderConstruction } from '@/components/features/under-construction';
 
 export const dynamicParams = false;
 
-export default async function Page({ params }: Props) {
-  const { tag } = await params;
-  const decodedTag = decodeURIComponent(tag);
-  const items = getDocsByTag('ko', decodedTag);
-
-  if (items.length === 0) notFound();
-
-  return (
-    <DocsPage
-      toc={[]}
-      breadcrumb={{ component: <DocsBreadcrumb locale="ko" /> }}
-      tableOfContent={{ enabled: false }}
-      tableOfContentPopover={{ enabled: false }}
-      footer={{ enabled: false }}
-    >
-      <DocsTitle>태그: {decodedTag}</DocsTitle>
-      <DocsDescription>{decodedTag} 태그가 포함된 문서 목록입니다.</DocsDescription>
-      <DocsBody>
-        <div className="mt-2 flex flex-col gap-4">
-          {items.map((item) => (
-            <Link key={item.href} href={item.href} className="rounded-lg border p-4 no-underline transition hover:bg-gray-50">
-              <div className="text-xl font-semibold text-gray-900">{item.title}</div>
-              {item.description ? <div className="mt-2 text-sm text-gray-600">{item.description}</div> : null}
-            </Link>
-          ))}
-        </div>
-      </DocsBody>
-    </DocsPage>
-  );
-}
-
 export function generateStaticParams() {
-  const tags = getDocsTags('ko');
-  // Return at least one placeholder if no tags exist to satisfy static export
-  if (tags.length === 0) {
-    return [{ tag: '__no_tags__' }];
-  }
-  return tags.map((tag) => ({ tag }));
+  return [{ tag: '__placeholder__' }];
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { tag } = await params;
-  const decodedTag = decodeURIComponent(tag);
-
-  return {
-    title: `태그: ${decodedTag}`,
-    description: `${decodedTag} 태그가 포함된 문서 목록`,
-    openGraph: {
-      title: `태그: ${decodedTag}`,
-      description: `${decodedTag} 태그가 포함된 문서 목록`,
-      images: [siteConfig.image],
-    },
-  };
+export default function Page() {
+  return <UnderConstruction />;
 }

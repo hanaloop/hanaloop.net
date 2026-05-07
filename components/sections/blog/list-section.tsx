@@ -1,4 +1,4 @@
-import { ListTable } from '@/components/features/list-table';
+﻿import { ListTable } from '@/components/features/list-table';
 import type { AppLocale } from '@/lib/locales';
 import { getBlogListItems } from '@/lib/blog-utils';
 
@@ -8,7 +8,7 @@ type BlogListSectionProps = {
 
 const sectionText: Record<AppLocale, string> = {
     ko: '🗞️ 하나루프의 다양하고 유익한 최신 소식을 확인해보세요.',
-    en: '🗞️ Check out HanaLoop's latest useful updates.',
+    en: "🗞️ Check out HanaLoop's latest useful updates.",
     es: '🗞️ Consulta las ultimas novedades utiles de HanaLoop.',
 };
 
