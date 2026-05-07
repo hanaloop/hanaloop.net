@@ -1,44 +1,26 @@
-import { PlatformHero, type PlatformHeroCopy, type PlatformHeroRelatedLink } from '@/components/features/platform-hero';
-import type { AppLocale } from '@/lib/locales';
+import { getTranslations } from 'next-intl/server';
+import { PlatformHero } from '@/components/features/platform-hero';
 
-type CbamHeroSectionProps = {
-    locale: AppLocale;
-};
+export async function CbamHeroSection() {
+    const t = await getTranslations('PlatformHero');
+    const tNav = await getTranslations('PlatformNav');
 
-const relatedLinks: PlatformHeroRelatedLink[] = [
-    { label: { ko: 'CBAM', en: 'CBAM', es: 'CBAM' }, href: '/cbam', current: true },
-    { label: { ko: '제품탄소발자국', en: 'PCF', es: 'PCF' }, href: '/pcf' },
-    { label: { ko: 'Scope 3', en: 'Scope 3', es: 'Scope 3' }, href: '/scope3' },
-    { label: { ko: 'Hana.eco AI', en: 'Hana.eco AI', es: 'Hana.eco AI' }, href: '/hana-ai' },
-    { label: { ko: '탄소회계', en: 'Carbon Accounting', es: 'Contabilidad de Carbono' }, href: '/platform' },
-    { label: { ko: '기후 경영', en: 'Climate Strategy', es: 'Estrategia Climatica' }, href: '/solution' },
-];
+    const relatedLinks = [
+        { label: tNav('cbam'), href: '/cbam', current: true },
+        { label: tNav('pcf'), href: '/pcf' },
+        { label: tNav('scope3'), href: '/scope3' },
+        { label: tNav('hanaAi'), href: '/hana-ai' },
+        { label: tNav('carbonAccounting'), href: '/platform' },
+        { label: tNav('climateStrategy'), href: '/solution' },
+    ];
 
-const copy: Record<AppLocale, PlatformHeroCopy> = {
-    ko: {
-        heading: 'Carbon management platform',
-        description: '하나루프의 탄소경영 플랫폼 Hana.eco와 다양한 솔루션을 확인해보세요.',
-        navAriaLabel: '관련 페이지 이동',
-    },
-    en: {
-        heading: 'Carbon management platform',
-        description: "Discover HanaLoop's carbon management platform Hana.eco and our range of solutions.",
-        navAriaLabel: 'Related pages',
-    },
-    es: {
-        heading: 'Carbon management platform',
-        description: 'Descubra la plataforma de gestion de carbono Hana.eco de HanaLoop y nuestras soluciones.',
-        navAriaLabel: 'Paginas relacionadas',
-    },
-};
-
-export function CbamHeroSection({ locale }: CbamHeroSectionProps) {
     return (
         <PlatformHero
-            locale={locale}
             ariaLabel="CBAM Hero"
             backgroundImageUrl="/images/revamp/cbam/hero.png"
-            copy={copy}
+            heading={t('heading')}
+            description={t('description')}
+            navAriaLabel={t('navAriaLabel')}
             relatedLinks={relatedLinks}
         />
     );

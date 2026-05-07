@@ -2,37 +2,13 @@
 
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
-import type { AppLocale } from '@/lib/locales';
+import { useTranslations, useLocale } from 'next-intl';
 import faqItems from '@/lib/data/home-faqs.json';
-
-type HomeFaqSectionProps = {
-    locale: AppLocale;
-};
 
 type FaqItem = {
     id: string;
-    question: Record<AppLocale, string>;
-    answer: Record<AppLocale, string>;
-};
-
-type SectionCopy = {
-    eyebrow: string;
-    heading: string;
-};
-
-const copy: Record<AppLocale, SectionCopy> = {
-    ko: {
-        eyebrow: '많이 묻는 질문들의 내용을 확인해보세요.',
-        heading: 'Common questions',
-    },
-    en: {
-        eyebrow: 'Explore answers to frequently asked questions.',
-        heading: 'Common questions',
-    },
-    es: {
-        eyebrow: 'Consulta respuestas a las preguntas mas frecuentes.',
-        heading: 'Common questions',
-    },
+    question: Record<string, string>;
+    answer: Record<string, string>;
 };
 
 function FaqRow({ question, answer, expanded, onToggle }: { question: string; answer: string; expanded: boolean; onToggle: () => void }) {
@@ -51,8 +27,9 @@ function FaqRow({ question, answer, expanded, onToggle }: { question: string; an
     );
 }
 
-export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
-    const text = copy[locale];
+export function HomeFaqSection() {
+    const t = useTranslations('HomeFaq');
+    const locale = useLocale();
     const items = faqItems as FaqItem[];
     const [openDesktop, setOpenDesktop] = useState<string | null>(null);
     const [openMobile, setOpenMobile] = useState<string | null>(items[3]?.id ?? null);
@@ -66,8 +43,8 @@ export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
         <section className="mt-28 px-0 pb-5 pt-0 md:px-8 md:pb-8 lg:px-0 lg:pb-10">
             <div className="mx-auto w-full max-w-[1440px] overflow-hidden rounded-t-[34px] bg-[var(--color-mobile-dark-bg)] px-6 md:px-11 pb-9 pt-[62px] md:rounded-t-[42px] lg:pb-[58px] lg:pt-[92px]">
                 <header className="text-center lg:text-left px-11">
-                    <p className="text-[21px] font-semibold leading-[1.3] tracking-[0.5px] text-white">{text.eyebrow}</p>
-                    <h2 className="mt-1 text-[56px] font-medium leading-[1.08] tracking-[-1px] text-white lg:text-[64px]">{text.heading}</h2>
+                    <p className="text-[21px] font-semibold leading-[1.3] tracking-[0.5px] text-white">{t('eyebrow')}</p>
+                    <h2 className="mt-1 text-[56px] font-medium leading-[1.08] tracking-[-1px] text-white lg:text-[64px]">{t('heading')}</h2>
                 </header>
 
                 <div className="mt-9 lg:mt-10" />
@@ -75,7 +52,7 @@ export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
                 <div className="mt-0 lg:hidden">
                     {items.map((item) => {
                         const expanded = openMobile === item.id;
-                        return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenMobile(expanded ? null : item.id)} />;
+                        return <FaqRow key={item.id} question={item.question[locale] ?? item.question.ko} answer={item.answer[locale] ?? item.answer.ko} expanded={expanded} onToggle={() => setOpenMobile(expanded ? null : item.id)} />;
                     })}
                 </div>
 
@@ -83,13 +60,13 @@ export function HomeFaqSection({ locale }: HomeFaqSectionProps) {
                     <div>
                             {leftItems.map((item) => {
                             const expanded = openDesktop === item.id;
-                            return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
+                            return <FaqRow key={item.id} question={item.question[locale] ?? item.question.ko} answer={item.answer[locale] ?? item.answer.ko} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
                         })}
                     </div>
                     <div>
                             {rightItems.map((item) => {
                             const expanded = openDesktop === item.id;
-                            return <FaqRow key={item.id} question={item.question[locale]} answer={item.answer[locale]} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
+                            return <FaqRow key={item.id} question={item.question[locale] ?? item.question.ko} answer={item.answer[locale] ?? item.answer.ko} expanded={expanded} onToggle={() => setOpenDesktop(expanded ? null : item.id)} />;
                         })}
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 ﻿import type { ReactNode } from 'react';
 import { notFound } from 'next/navigation';
-import { defaultLocale, isLocale } from '@/lib/locales';
+import { isLocale } from '@/lib/locales';
 
 type Props = {
   children: ReactNode;
@@ -9,7 +9,7 @@ type Props = {
 
 export default async function Layout({ children, params }: Props) {
   const { locale } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
 
   return <>{children}</>;
 }

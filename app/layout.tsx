@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { NextIntlClientProvider } from 'next-intl';
+import { getLocale, getMessages } from 'next-intl/server';
 import { siteConfig } from '@/lib/site-config';
 import './globals.css';
 
@@ -15,6 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  manifest: '/images/favicon_io/site.webmanifest',
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.title}`,
@@ -22,12 +25,11 @@ export const metadata: Metadata = {
   description: siteConfig.tagline,
   icons: {
     icon: [
-      { url: '/favicon.ico' },
       { url: '/images/favicon_io/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/images/favicon_io/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
     ],
     apple: [{ url: '/images/favicon_io/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
-    shortcut: ['/favicon.ico'],
+    shortcut: ['/images/favicon_io/favicon-32x32.png'],
   },
   openGraph: {
     title: siteConfig.title,
@@ -46,16 +48,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale();
+  const messages = await getMessages();
+
   return (
     <html
-      lang="ko"
+      lang={locale}
       suppressHydrationWarning
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-white text-gray-800" suppressHydrationWarning>
-        {children}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

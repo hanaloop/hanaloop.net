@@ -7,7 +7,7 @@ import { SiteShell } from '@/components/layout/site-shell';
 import { BlogHeroSection } from '@/components/sections/blog/hero-section';
 import { BlogListSection } from '@/components/sections/blog/list-section';
 import { getBlogPostContent, getBlogPostSlugs } from '@/lib/blog-content';
-import { defaultLocale, isLocale, locales, withLocalePath } from '@/lib/locales';
+import { isLocale, locales, withLocalePath } from '@/lib/locales';
 
 type Props = {
   params: Promise<{
@@ -20,13 +20,13 @@ export const dynamicParams = false;
 
 export default async function Page({ params }: Props) {
   const { locale, slug } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
 
   if (!slug || slug.length === 0) {
     return (
       <SiteShell>
-        <BlogHeroSection locale={locale} />
-        <BlogListSection locale={locale} />
+        <BlogHeroSection />
+        <BlogListSection />
       </SiteShell>
     );
   }
@@ -59,13 +59,13 @@ export default async function Page({ params }: Props) {
 
 export function generateStaticParams() {
   return locales
-    .filter((locale) => locale !== defaultLocale)
+    
     .flatMap((locale) => [{ locale, slug: [] as string[] }, ...getBlogPostSlugs(locale).map((slug) => ({ locale, slug }))]);
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
 
   if (!slug || slug.length === 0) {
     return {

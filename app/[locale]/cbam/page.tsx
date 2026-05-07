@@ -6,25 +6,25 @@ import { CbamInsightCardsSection } from '@/components/sections/cbam/insight-card
 import { CbamOverviewSection } from '@/components/sections/cbam/overview-section';
 import { CbamPlanSection } from '@/components/sections/cbam/cbam-plan-section';
 import { CbamProcessSection } from '@/components/sections/cbam/process-section';
-import { defaultLocale, isLocale, locales } from '@/lib/locales';
+import { isLocale, locales } from '@/lib/locales';
 
 type Props = { params: Promise<{ locale: string }> };
 
 export default async function Page({ params }: Props) {
   const { locale } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
   return (
     <SiteShell>
-      <CbamHeroSection locale={locale} />
-      <CbamOverviewSection locale={locale} />
-      <CbamProcessSection locale={locale} />
+      <CbamHeroSection />
+      <CbamOverviewSection />
+      <CbamProcessSection />
       <CbamCertifiedSection locale={locale} />
       <CbamPlanSection locale={locale} />
-      <CbamInsightCardsSection locale={locale} />
+      <CbamInsightCardsSection />
     </SiteShell>
   );
 }
 
 export function generateStaticParams() {
-  return locales.filter((l) => l !== defaultLocale).map((locale) => ({ locale }));
+  return locales.map((locale) => ({ locale }));
 }

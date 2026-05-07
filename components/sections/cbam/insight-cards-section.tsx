@@ -1,13 +1,10 @@
-﻿import Image from 'next/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
+import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
-
-type CbamInsightCardsSectionProps = {
-    locale: AppLocale;
-};
 
 type InsightItem = {
     id: string;
@@ -15,13 +12,6 @@ type InsightItem = {
     subtitle: string;
     body: string;
     href: string;
-};
-
-type InsightSectionCopy = {
-    sectionAriaLabel: string;
-    heading: string;
-    moreInsightLabel: string;
-    items: InsightItem[];
 };
 
 const HEADING_STYLE: CSSProperties = {
@@ -53,165 +43,16 @@ const BODY_CLAMP_STYLE: CSSProperties = {
     textOverflow: 'ellipsis',
 };
 
-const copy: Record<AppLocale, InsightSectionCopy> = {
-    ko: {
-        sectionAriaLabel: 'CBAM 인사이트 카드',
-        heading: 'CBAM 이해를 위한 하나루프의 인사이트 모음',
-        moreInsightLabel: 'More Insight',
-        items: [
-            {
-                id: 'cbam-01',
-                title: 'EU 옴니버스 패키지(Omnibus Package)',
-                subtitle: 'CBAM 개편안 설명',
-                body: '유럽연합 집행위원회(EU COMMISSION)는 2025년 OMNIBUS 패키지의 일환으로 탄소국경조정제도(CBAM)의 간소화 제안을 발표하였습니다. 이번 개편안은 절차를 보다 효율적으로 정비하는 데 목적이 있습니다.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-02',
-                title: 'EU 옴니버스 패키지(Omnibus Package)',
-                subtitle: 'CBAM 개편안 설명',
-                body: '본 문서는 2024년 12월 17일 CBAM 공식 웹사이트에 게재된 문서의 번역본입니다. 철강, 알루미늄 등 금속 산업에 종사하는 기업에서는 업데이트를 숙지하시기를 권장합니다.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-03',
-                title: '탄소 국경 조정 메커니즘(CBAM)',
-                subtitle: '질의응답 (FAQ)',
-                body: '본 문서는 2024년 10월 24일 CBAM 공식 웹사이트에 게재된 문서의 번역본입니다. 철강, 알루미늄 등 금속 산업에 종사하는 기업에서는 업데이트를 숙지하시기를 권장합니다.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-04',
-                title: 'EU CBAM(탄소국경조정제도)에',
-                subtitle: '하나에코로 신속히 대응하기',
-                body: '유럽연합 집행위원회(EU COMMISSION)는 2025년 OMNIBUS 패키지의 일환으로 탄소국경조정제도(CBAM)의 간소화 제안을 발표하였습니다. 이번 개편안은 절차를 보다 효율적으로 정비하는 데 목적이 있습니다.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-05',
-                title: '탄소국경조정 메커니즘(CBAM)',
-                subtitle: '보고서에서 포함할 내용',
-                body: '본 문서는 2024년 12월 17일 CBAM 공식 웹사이트에 게재된 문서의 번역본입니다. 철강, 알루미늄 등 금속 산업에 종사하는 기업에서는 업데이트를 숙지하시기를 권장합니다.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-06',
-                title: 'CBAM 첫 보고서 컨설팅과 솔루션 도입 중',
-                subtitle: '고객들에게 받은 질문과 답변 | CBAM Q&A',
-                body: '본 문서는 2024년 10월 24일 CBAM 공식 웹사이트에 게재된 문서의 번역본입니다. 철강, 알루미늄 등 금속 산업에 종사하는 기업에서는 업데이트를 숙지하시기를 권장합니다.',
-                href: '/blog',
-            },
-        ],
-    },
-    en: {
-        sectionAriaLabel: 'CBAM insight cards',
-        heading: 'Insights from HanaLoop to Understand CBAM',
-        moreInsightLabel: 'More Insight',
-        items: [
-            {
-                id: 'cbam-01',
-                title: 'EU Omnibus Package',
-                subtitle: 'Overview of the CBAM Reform Proposal',
-                body: 'The European Commission announced a simplification proposal for the Carbon Border Adjustment Mechanism (CBAM) as part of the 2025 Omnibus Package. The reform aims to streamline procedures and make compliance more efficient.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-02',
-                title: 'EU Omnibus Package',
-                subtitle: 'CBAM Reform Proposal Explained',
-                body: 'This document is a translation of the material published on the official CBAM website on December 17, 2024. Companies operating in the steel, aluminum, and other metals industries are encouraged to review the latest updates.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-03',
-                title: 'Carbon Border Adjustment Mechanism (CBAM)',
-                subtitle: 'Frequently Asked Questions (FAQ)',
-                body: 'This document is a translation of the material published on the official CBAM website on October 24, 2024. Companies in the steel, aluminum, and other metals sectors are advised to familiarize themselves with the updates.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-04',
-                title: 'Responding to EU CBAM',
-                subtitle: 'with Hana.eco — Fast and Efficiently',
-                body: 'The European Commission announced a simplification proposal for CBAM as part of the 2025 Omnibus Package. The reform is designed to streamline procedures and reduce the compliance burden for exporters to the EU.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-05',
-                title: 'Carbon Border Adjustment Mechanism (CBAM)',
-                subtitle: 'What to Include in Your Report',
-                body: 'This document is a translation of the material published on the official CBAM website on December 17, 2024. Businesses in the steel, aluminum, and related metals industries are encouraged to stay up to date with the latest requirements.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-06',
-                title: 'CBAM Consulting & Solution Onboarding',
-                subtitle: 'Q&A from Our Customers',
-                body: 'This document is a translation of the material published on the official CBAM website on October 24, 2024. Companies in the steel, aluminum, and other metals sectors are advised to review the updates carefully.',
-                href: '/blog',
-            },
-        ],
-    },
-    es: {
-        sectionAriaLabel: 'Tarjetas de insights CBAM',
-        heading: 'Insights de HanaLoop para Comprender CBAM',
-        moreInsightLabel: 'More Insight',
-        items: [
-            {
-                id: 'cbam-01',
-                title: 'Paquete Ómnibus de la UE',
-                subtitle: 'Descripción de la Propuesta de Reforma CBAM',
-                body: 'La Comisión Europea anunció una propuesta de simplificación para el Mecanismo de Ajuste en Frontera por Carbono (CBAM) como parte del Paquete Ómnibus 2025. La reforma tiene como objetivo agilizar los procedimientos y facilitar el cumplimiento normativo.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-02',
-                title: 'Paquete Ómnibus de la UE',
-                subtitle: 'Propuesta de Reforma CBAM Explicada',
-                body: 'Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 17 de diciembre de 2024. Se recomienda a las empresas del sector del acero, aluminio y otros metales revisar las actualizaciones.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-03',
-                title: 'Mecanismo de Ajuste en Frontera por Carbono (CBAM)',
-                subtitle: 'Preguntas Frecuentes (FAQ)',
-                body: 'Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 24 de octubre de 2024. Se aconseja a las empresas de los sectores del acero, aluminio y metales relacionados que se familiaricen con las actualizaciones.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-04',
-                title: 'Respuesta al CBAM de la UE',
-                subtitle: 'con Hana.eco — Rápido y Eficiente',
-                body: 'La Comisión Europea anunció una propuesta de simplificación del CBAM como parte del Paquete Ómnibus 2025. La reforma está diseñada para agilizar los procedimientos y reducir la carga de cumplimiento para los exportadores a la UE.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-05',
-                title: 'Mecanismo de Ajuste en Frontera por Carbono (CBAM)',
-                subtitle: 'Qué Incluir en su Informe',
-                body: 'Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 17 de diciembre de 2024. Se recomienda a las empresas del acero, aluminio y metales relacionados mantenerse al día con los últimos requisitos.',
-                href: '/blog',
-            },
-            {
-                id: 'cbam-06',
-                title: 'Consultoría CBAM e Incorporación de Soluciones',
-                subtitle: 'Preguntas y Respuestas de Nuestros Clientes',
-                body: 'Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 24 de octubre de 2024. Se aconseja a las empresas del sector del acero, aluminio y otros metales revisar las actualizaciones con atención.',
-                href: '/blog',
-            },
-        ],
-    },
-};
-
-export function CbamInsightCardsSection({ locale }: CbamInsightCardsSectionProps) {
-    const text = copy[locale];
-    const items = text.items.length > 0 ? text.items : copy.ko.items;
+export async function CbamInsightCardsSection() {
+    const t = await getTranslations('CbamInsightCards');
+    const locale = await getLocale() as AppLocale;
+    const items = t.raw('items') as InsightItem[];
 
     return (
-        <section className="px-5 pb-16 pt-16 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={text.sectionAriaLabel}>
+        <section className="px-5 pb-16 pt-16 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <h2 className="text-center text-black" style={HEADING_STYLE}>
-                    {text.heading}
+                    {t('heading')}
                 </h2>
 
         <div className="mt-20 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-[28px]">
@@ -240,7 +81,7 @@ export function CbamInsightCardsSection({ locale }: CbamInsightCardsSectionProps
                 </div>
 
                 <div className="mt-[34px] flex justify-center">
-                    <RoundedArrowButton href={withLocalePath(locale, '/blog')} label={text.moreInsightLabel} />
+                    <RoundedArrowButton href={withLocalePath(locale, '/blog')} label={t('moreInsightLabel')} />
                 </div>
             </div>
         </section>

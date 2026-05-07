@@ -82,5 +82,6 @@ function buildMeta(dir, isRoot = false) {
 }
 
 for (const root of docsRoots) {
+  if (!fs.existsSync(root)) continue;
   buildMeta(root, true);
 }

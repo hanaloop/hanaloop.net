@@ -1,4 +1,3 @@
-import { getNavbarMessage } from '@/lib/translations';
 import type { AppLocale } from '@/lib/locales';
 
 export type MenuItem = {
@@ -12,39 +11,32 @@ export type MenuGroup = {
     items: MenuItem[];
 };
 
-const navGroupLabels: Record<AppLocale, { platform: string; insight: string; about: string }> = {
-    ko: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
-    en: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
-    es: { platform: 'Nuestra Plataforma', insight: 'Insight & Blog', about: 'Nosotros' },
-};
-
-export function buildMenus(locale: AppLocale): MenuGroup[] {
-    const g = navGroupLabels[locale];
+export function buildMenus(locale: AppLocale, t: (key: string) => string): MenuGroup[] {
     return [
         {
-            label: g.platform,
+            label: t('platform'),
             items: [
-                { label: getNavbarMessage(locale, 'item.label.CBAM', 'CBAM'), href: '/cbam' },
-                { label: getNavbarMessage(locale, 'item.label.ProductCarbonFootprint', 'PCF'), href: '/pcf' },
-                { label: getNavbarMessage(locale, 'item.label.Scope3', 'Scope3'), href: '/scope3' },
-                { label: getNavbarMessage(locale, 'item.label.HanaecoAI', 'Hanaeco.AI'), href: '/hana-ai' },
-                { label: getNavbarMessage(locale, 'item.label.CarbonAccounting', 'Carbon Accounting'), href: '/platform' },
-                { label: getNavbarMessage(locale, 'item.label.ClimateManagement', 'Climate Management'), href: '/solution' },
+                { label: t('items.CBAM'), href: '/cbam' },
+                { label: t('items.ProductCarbonFootprint'), href: '/pcf' },
+                { label: t('items.Scope3'), href: '/scope3' },
+                { label: t('items.HanaecoAI'), href: '/hana-ai' },
+                { label: t('items.CarbonAccounting'), href: '/platform' },
+                { label: t('items.ClimateManagement'), href: '/solution' },
             ],
         },
         {
-            label: g.insight,
+            label: t('insight'),
             items: [
-                { label: getNavbarMessage(locale, 'item.label.Insight', 'Insight'), href: '/insight' },
-                { label: getNavbarMessage(locale, 'item.label.Blog', 'Blog'), href: '/blog' },
+                { label: t('items.Insight'), href: '/insight' },
+                { label: t('items.Blog'), href: '/blog' },
             ],
         },
         {
-            label: g.about,
+            label: t('about'),
             items: [
-                { label: getNavbarMessage(locale, 'item.label.Partnership', 'Partnership'), href: '/partnership' },
-                { label: getNavbarMessage(locale, 'item.label.Company', 'Company'), href: '/company' },
-                { label: getNavbarMessage(locale, 'item.label.Recruit', 'Recruit'), href: '/recruit' },
+                { label: t('items.Partnership'), href: '/partnership' },
+                { label: t('items.Company'), href: '/company' },
+                { label: t('items.Recruit'), href: '/recruit' },
             ],
         },
     ];

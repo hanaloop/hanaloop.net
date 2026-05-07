@@ -1,20 +1,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
-type BlogHeroSectionProps = {
-    locale: AppLocale;
-};
-
-const copy: Record<AppLocale, { contactLabel: string }> = {
-    ko: { contactLabel: 'Contact Us' },
-    en: { contactLabel: 'Contact Us' },
-    es: { contactLabel: 'Contáctenos' },
-};
-
-export function BlogHeroSection({ locale }: BlogHeroSectionProps) {
-    const text = copy[locale];
+export async function BlogHeroSection() {
+    const t = await getTranslations('BlogHero');
+    const locale = await getLocale() as AppLocale;
 
     return (
         <section className="relative h-[160px] overflow-hidden md:h-[280px] lg:h-[360px] xl:h-[420px] 2xl:h-[480px]" aria-label="HanaLoop Blog Hero">
@@ -27,7 +19,7 @@ export function BlogHeroSection({ locale }: BlogHeroSectionProps) {
                     href={withLocalePath(locale, '/partnership')}
                     className="mt-6 h-8 lg:mt-12 inline-flex lg:h-12 min-w-[176px] items-center justify-center gap-3 rounded-full border border-white px-6 text-base font-medium leading-none text-white transition hover:bg-white/10"
                 >
-                    <span>{text.contactLabel}</span>
+                    <span>{t('contactLabel')}</span>
                     <Image src="/icons/revamp/ic-arrow-up-right.png" alt="" width={20} height={20} className="h-5 w-5" aria-hidden />
                 </Link>
             </div>

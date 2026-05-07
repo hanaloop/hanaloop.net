@@ -1,62 +1,13 @@
-﻿import Image from 'next/image';
-import type { AppLocale } from '@/lib/locales';
-
-type HomeOurMissionSectionProps = {
-    locale: AppLocale;
-};
+import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 
 const BADGE = 'OUR MISSION';
 
-type MissionCopy = {
-    heading: string;
-    desktopLead: string[];
-    paragraphs: string[];
-};
+export async function HomeOurMissionSection() {
+    const t = await getTranslations('HomeOurMission');
 
-const copy: Record<AppLocale, MissionCopy> = {
-    ko: {
-        heading: '하나루프는 함께 살아가는 지구 환경을 위해 하나의 발걸음을 시작하였습니다.',
-        desktopLead: [
-            '우리는 산업과 기업 환경에 맞춘 탄소 중립 매니지먼트 기술과 디지털 혁신을 통해 지속가능한 생태계를',
-            '구축합니다. 누구나 환경을 위한 기술에 쉽게 접근할 수 있도록, 환경과 산업에 필요한 디지털 솔루션을',
-            '개발하며, 넷제로 실현을 앞당기고 있습니다. 하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로',
-            '모두의 삶이 지속가능하도록 하나의 연결로 더 큰 임팩트를 만들어가겠습니다.',
-        ],
-        paragraphs: [
-            '우리는 산업과 기업 환경에 맞춘 탄소 중립 매니지먼트 기술과 디지털 혁신을 통해 지속가능한 생태계를 구축합니다. 누구나 환경을 위한 기술에 쉽게 접근할 수 있도록, 환경과 산업에 필요한 디지털 솔루션을 개발하며, 넷제로 실현을 앞당기고 있습니다.',
-            '하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로 모두의 삶이 지속가능하도록 하나의 연결로 더 큰 임팩트를 만들어가겠습니다.',
-        ],
-    },
-    en: {
-        heading: 'HanaLoop has taken the first step toward a sustainable planet where we live together.',
-        desktopLead: [
-            'We build sustainable ecosystems through carbon neutrality management technology and digital innovation',
-            'tailored to industrial and corporate environments. We are developing digital solutions that make',
-            'environmental technology accessible to everyone and accelerating net-zero implementation.',
-            'HanaLoop will create greater impact through meaningful connections so everyone can live sustainably.',
-        ],
-        paragraphs: [
-            'We build sustainable ecosystems through carbon neutrality management technology and digital innovation tailored to industrial and corporate environments. We are developing digital solutions that make environmental technology accessible to everyone and accelerating net-zero implementation.',
-            'HanaLoop will create greater impact through meaningful connections so that everyone can live sustainably with digital services that benefit both people and nature.',
-        ],
-    },
-    es: {
-        heading: 'HanaLoop ha dado el primer paso hacia un planeta sostenible en el que vivimos juntos.',
-        desktopLead: [
-            'Construimos ecosistemas sostenibles mediante tecnología de gestión de neutralidad de carbono',
-            'e innovación digital adaptadas a los entornos industriales y empresariales.',
-            'Desarrollamos soluciones digitales que facilitan el acceso a tecnologías ambientales',
-            'y aceleramos la implementación del net-zero.',
-        ],
-        paragraphs: [
-            'Construimos ecosistemas sostenibles mediante tecnología de gestión de neutralidad de carbono e innovación digital adaptadas a los entornos industriales y empresariales. Desarrollamos soluciones digitales que facilitan el acceso a tecnologías ambientales y aceleramos la implementación del net-zero.',
-            'HanaLoop generará un mayor impacto a través de conexiones significativas para que la vida de todos sea sostenible, con servicios digitales beneficiosos para las personas y la naturaleza.',
-        ],
-    },
-};
-
-export function HomeOurMissionSection({ locale }: HomeOurMissionSectionProps) {
-    const { heading, desktopLead, paragraphs } = copy[locale];
+    const desktopLead = t.raw('desktopLead') as string[];
+    const paragraphs = t.raw('paragraphs') as string[];
 
     return (
         <section className="px-5 pb-12 pt-10 md:px-8 md:pb-16 md:pt-16 lg:px-[64px] lg:pb-20 lg:pt-28">
@@ -65,9 +16,9 @@ export function HomeOurMissionSection({ locale }: HomeOurMissionSectionProps) {
                     <p className="mx-auto max-w-[680px] font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,4vw,48px)] lg:mx-0 lg:text-left">{BADGE}</p>
                     <div className="space-y-5 lg:space-y-0">
                         <div className="inline-flex items-center rounded-full bg-[var(--gradient-badge)] px-3 py-1.5 text-[18px] font-semibold leading-none text-white lg:hidden">{BADGE}</div>
-                        <h2 className="max-w-[660px] text-[42px] font-semibold leading-[1.35] tracking-[-0.02em] text-[var(--color-mission-text)] [font-size:clamp(22px,5vw,42px)] lg:hidden">{heading}</h2>
+                        <h2 className="max-w-[660px] text-[42px] font-semibold leading-[1.35] tracking-[-0.02em] text-[var(--color-mission-text)] [font-size:clamp(22px,5vw,42px)] lg:hidden">{t('heading')}</h2>
                         <div className="hidden max-w-[720px] space-y-2 text-[18px] font-medium leading-[1.9] text-[var(--color-text-muted)] lg:block">
-                            <h2 className="whitespace-nowrap font-bold">{heading}</h2>
+                            <h2 className="whitespace-nowrap font-bold">{t('heading')}</h2>
                             {desktopLead.map((line) => (
                                 <p key={line} className="whitespace-nowrap">
                                     {line}

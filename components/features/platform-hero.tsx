@@ -1,29 +1,27 @@
+'use client';
+
 import Link from 'next/link';
+import { useLocale } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
 export type PlatformHeroRelatedLink = {
-    label: Record<AppLocale, string>;
+    label: string;
     href: string;
     current?: boolean;
 };
 
-export type PlatformHeroCopy = {
+type PlatformHeroProps = {
+    ariaLabel: string;
+    backgroundImageUrl: string;
     heading: string;
     description: string;
     navAriaLabel: string;
-};
-
-type PlatformHeroProps = {
-    locale: AppLocale;
-    ariaLabel: string;
-    backgroundImageUrl: string;
-    copy: Record<AppLocale, PlatformHeroCopy>;
     relatedLinks: PlatformHeroRelatedLink[];
 };
 
-export function PlatformHero({ locale, ariaLabel, backgroundImageUrl, copy, relatedLinks }: PlatformHeroProps) {
-    const text = copy[locale];
+export function PlatformHero({ ariaLabel, backgroundImageUrl, heading, description, navAriaLabel, relatedLinks }: PlatformHeroProps) {
+    const locale = useLocale() as AppLocale;
 
     return (
         <>
@@ -32,19 +30,19 @@ export function PlatformHero({ locale, ariaLabel, backgroundImageUrl, copy, rela
                 <div className="absolute inset-0 bg-black/30" />
 
                 <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-center">
-                    <h1 className="text-[42px] font-semibold leading-none tracking-[-0.02em] lg:text-[56px] 2xl:text-[64px]">{text.heading}</h1>
-                    <p className="mt-4 text-[16px] font-medium leading-[1.45] text-white/95 lg:text-[18px]">{text.description}</p>
+                    <h1 className="text-[42px] font-semibold leading-none tracking-[-0.02em] lg:text-[56px] 2xl:text-[64px]">{heading}</h1>
+                    <p className="mt-4 text-[16px] font-medium leading-[1.45] text-white/95 lg:text-[18px]">{description}</p>
 
-                    <nav className="gradient-border mt-12 hidden h-[52px] items-center rounded-full bg-white/12 px-8 backdrop-blur-[8px] lg:flex" aria-label={text.navAriaLabel}>
+                    <nav className="gradient-border mt-12 hidden h-[52px] items-center rounded-full bg-white/12 px-8 backdrop-blur-[8px] lg:flex" aria-label={navAriaLabel}>
                         {relatedLinks.map((item, index) => (
                             <div key={item.href} className="flex items-center">
                                 {item.current ? (
                                     <span className="inline-flex h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 text-[21px] font-semibold tracking-[-0.25px] text-white" aria-current="page">
-                                        {item.label[locale]}
+                                        {item.label}
                                     </span>
                                 ) : (
                                     <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center text-[21px] tracking-[-0.25px] text-white/95 transition hover:text-white">
-                                        {item.label[locale]}
+                                        {item.label}
                                     </Link>
                                 )}
                                 {index < relatedLinks.length - 1 ? <span className="mx-4 text-white/55">|</span> : null}
@@ -54,15 +52,15 @@ export function PlatformHero({ locale, ariaLabel, backgroundImageUrl, copy, rela
                 </div>
             </section>
 
-            <nav className="flex flex-wrap justify-center gap-2 bg-[#07090c] px-5 py-4 lg:hidden" aria-label={text.navAriaLabel}>
+            <nav className="flex flex-wrap justify-center gap-2 bg-[#07090c] px-5 py-4 lg:hidden" aria-label={navAriaLabel}>
                 {relatedLinks.map((item) =>
                     item.current ? (
                         <span key={item.href} className="inline-flex h-8 items-center rounded-full border border-white/35 px-4 text-[15px] font-semibold tracking-[-0.25px] text-white" aria-current="page">
-                            {item.label[locale]}
+                            {item.label}
                         </span>
                     ) : (
                         <Link key={item.href} href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center rounded-full px-4 text-[15px] tracking-[-0.25px] text-white/65 transition hover:text-white">
-                            {item.label[locale]}
+                            {item.label}
                         </Link>
                     )
                 )}

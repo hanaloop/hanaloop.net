@@ -1,9 +1,5 @@
 import Image from 'next/image';
-import type { AppLocale } from '@/lib/locales';
-
-type PcfOverviewSectionProps = {
-    locale: AppLocale;
-};
+import { getTranslations } from 'next-intl/server';
 
 const processItems = [
     { label: 'Extraction', icon: '/images/revamp/pcf/process-icon-1.png' },
@@ -13,38 +9,11 @@ const processItems = [
     { label: 'Disposal', icon: '/images/revamp/pcf/process-icon-5.png' },
 ];
 
-const copy = {
-    ko: {
-        heading: 'Hana.eco CBAM 솔루션',
-        subheading: '지속가능한 제품 개발을 위한 체계적인 탄소발자국 관리',
-        title: '제품탄소발자국(PCF)이란 무엇인가?',
-        imageAlt: '제품 탄소 발자국 프로세스 시각화',
-        lead: '제품 탄소 발자국(Product Carbon Footprint, PCF)는 제품의 원자재 채굴부터\n생산, 유통, 사용, 처리까지 전 과정에서 발생하는 온실가스 배출량을 정량화한 지표입니다.',
-        body: '이는 ISO 14067 및 온실가스 프로토콜(GHG Protocol)에 따른 국제 표준에 따라 산정되며,\n제품의 환경 영향을 투명하고 체계적으로 관리하는 데 필수적인 지표입니다.',
-    },
-    en: {
-        heading: 'Hana.eco CBAM Solution',
-        subheading: 'Systematic carbon footprint management for sustainable product development',
-        title: 'What is Product Carbon Footprint (PCF)?',
-        imageAlt: 'Product carbon footprint process overview',
-        lead: 'Product Carbon Footprint (PCF) quantifies greenhouse gas emissions\nacross the full lifecycle from raw materials to disposal.',
-        body: 'It is calculated under standards such as ISO 14067 and the GHG Protocol,\nand is essential for transparent environmental impact management.',
-    },
-    es: {
-        heading: 'Solucion CBAM de Hana.eco',
-        subheading: 'Gestion sistematica de huella de carbono para el desarrollo sostenible de productos',
-        title: 'Que es la Huella de Carbono de Producto (PCF)?',
-        imageAlt: 'Resumen del proceso de huella de carbono de producto',
-        lead: 'La huella de carbono de producto (PCF) cuantifica las emisiones de GEI\nen todo el ciclo de vida del producto.',
-        body: 'Se calcula con estandares como ISO 14067 y GHG Protocol,\ny es clave para una gestion ambiental transparente.',
-    },
-} as const;
-
-export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
-    const text = copy[locale];
+export async function PcfOverviewSection() {
+    const t = await getTranslations('PcfOverview');
 
     return (
-        <section className="px-4 pb-16 pt-14 sm:px-6 md:px-8 lg:pb-[120px] lg:pt-[108px] xl:px-0" aria-label={text.title}>
+        <section className="px-4 pb-16 pt-14 sm:px-6 md:px-8 lg:pb-[120px] lg:pt-[108px] xl:px-0" aria-label={t('title')}>
             <div className="mx-auto w-full max-w-[1440px]">
                 <h2
                     className="text-black"
@@ -55,7 +24,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                         lineHeight: 1.13,
                     }}
                 >
-                    {text.heading}
+                    {t('heading')}
                 </h2>
                 <p
                     className="mt-5 text-[#4c4c4c]"
@@ -66,13 +35,13 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                         lineHeight: 1.48,
                     }}
                 >
-                    {text.subheading}
+                    {t('subheading')}
                 </p>
 
-                <h3 className="mt-20 lg:mt-30 text-[32px] font-bold leading-[1.22] tracking-[-0.25px] text-black lg:text-[48px]">{text.title}</h3>
+                <h3 className="mt-20 lg:mt-30 text-[32px] font-bold leading-[1.22] tracking-[-0.25px] text-black lg:text-[48px]">{t('title')}</h3>
 
                 <div className="relative mt-[26px] hidden w-full overflow-hidden rounded-t-[14px] xl:block">
-                    <Image src="/images/revamp/pcf/overview-bg.png" alt={text.imageAlt} width={1440} height={240} className="h-[240px] w-full object-cover" sizes="(min-width: 1440px) 1440px, 100vw" />
+                    <Image src="/images/revamp/pcf/overview-bg.png" alt={t('imageAlt')} width={1440} height={240} className="h-[240px] w-full object-cover" sizes="(min-width: 1440px) 1440px, 100vw" />
 
                     <div className="absolute inset-0 flex items-center justify-center px-[20px] py-5">
                         <div className="flex w-full items-center justify-center gap-[14px]">
@@ -97,7 +66,7 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                 </div>
 
                 <div className="relative mt-[26px] w-full overflow-hidden rounded-[14px] xl:hidden">
-                    <Image src="/images/revamp/pcf/overview-bg.png" alt={text.imageAlt} fill className="object-cover" sizes="100vw" />
+                    <Image src="/images/revamp/pcf/overview-bg.png" alt={t('imageAlt')} fill className="object-cover" sizes="100vw" />
                     <div className="absolute inset-0 bg-black/10" />
                     <div className="relative z-10 flex flex-col justify-center px-3 py-5 sm:px-4 sm:py-6 md:px-8 md:py-8">
                         {processItems.map((item, index) => (
@@ -119,8 +88,8 @@ export function PcfOverviewSection({ locale }: PcfOverviewSectionProps) {
                     </div>
                 </div>
 
-                <p className="mt-[34px] whitespace-pre-line text-[21px] font-bold leading-[1.5] tracking-[-0.25px] text-[#1f1f1f]">{text.lead}</p>
-                <p className="mt-[22px] whitespace-pre-line text-[21px] font-medium leading-[1.5] tracking-[-0.25px] text-[#3f3f3f]">{text.body}</p>
+                <p className="mt-[34px] whitespace-pre-line text-[21px] font-bold leading-[1.5] tracking-[-0.25px] text-[#1f1f1f]">{t('lead')}</p>
+                <p className="mt-[22px] whitespace-pre-line text-[21px] font-medium leading-[1.5] tracking-[-0.25px] text-[#3f3f3f]">{t('body')}</p>
             </div>
         </section>
     );

@@ -16,7 +16,7 @@ type SiteShellProps = {
 
 export function SiteShell({ children, wrapperClassName, mobileContextualNav, headerDark }: SiteShellProps) {
     const pathname = usePathname();
-    const locale = getLocaleFromPathname(pathname);
+    const locale = getLocaleFromPathname(pathname ?? '/');
 
     return (
         <div className={`min-h-screen ${wrapperClassName ?? ''}`}>

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { ContactCtaButton } from '@/components/ui/contact-cta-button';
@@ -17,12 +18,6 @@ const ICON = {
   chevronDown: '/icons/revamp/ic-chevron-down.png',
 } as const;
 
-const copy: Record<AppLocale, { closeOverlay: string; closeMenu: string; hanaEco: string; copyright: string }> = {
-  ko: { closeOverlay: 'Close mobile menu overlay', closeMenu: 'Close menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
-  en: { closeOverlay: 'Close mobile menu overlay', closeMenu: 'Close menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
-  es: { closeOverlay: 'Cerrar capa del menu movil', closeMenu: 'Cerrar menu', hanaEco: 'Hana.eco', copyright: 'HanaLoop, all rights reserved.' },
-};
-
 type MobileDrawerProps = {
   locale: AppLocale;
   groups: MenuGroup[];
@@ -30,13 +25,13 @@ type MobileDrawerProps = {
 };
 
 export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }: MobileDrawerProps) {
+  const t = useTranslations('MobileDrawer');
   const currentYear = new Date().getFullYear();
   const [openGroup, setOpenGroup] = useState<number | null>(0);
-  const text = copy[locale];
 
   return (
     <div className="mobile-menu-layer fixed inset-0 z-[60] lg:hidden">
-      <label htmlFor={toggleId} className="mobile-menu-overlay absolute inset-0 cursor-pointer bg-black/24" aria-label={text.closeOverlay} />
+      <label htmlFor={toggleId} className="mobile-menu-overlay absolute inset-0 cursor-pointer bg-black/24" aria-label={t('closeOverlay')} />
 
       <aside id="mobile-menu-drawer" className="mobile-menu-panel absolute inset-y-0 right-0 flex h-full w-full flex-col overflow-y-auto bg-[var(--color-mobile-dark-bg)] text-white">
         <div className="flex h-full flex-col px-[37px] pb-[52px] pt-[28px]">
@@ -45,7 +40,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
               <Image src={ICON.logoDrawer} alt="HanaLoop" width={130} height={19} className="h-[19px] w-auto" />
             </Link>
 
-            <label htmlFor={toggleId} className="inline-flex h-6 w-6 cursor-pointer items-center justify-center" aria-label={text.closeMenu}>
+            <label htmlFor={toggleId} className="inline-flex h-6 w-6 cursor-pointer items-center justify-center" aria-label={t('closeMenu')}>
               <Image src={ICON.close} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6" />
             </label>
           </div>
@@ -89,7 +84,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
                   className="inline-flex items-center gap-3 text-white"
                   style={{ fontSize: '24px', fontWeight: 500, lineHeight: 1, letterSpacing: '-0.54px' }}
                 >
-                  <span>{text.hanaEco}</span>
+                  <span>{t('hanaEco')}</span>
                   <Image src={ICON.external} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6 brightness-0 invert" />
                 </a>
               </li>
@@ -117,7 +112,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
             </div>
 
             <p className="text-[14px] leading-none tracking-[-0.28px] text-white/45" style={{ marginTop: '18px' }}>
-              (c) {currentYear} {text.copyright}
+              (c) {currentYear} {t('copyright')}
             </p>
           </div>
         </div>

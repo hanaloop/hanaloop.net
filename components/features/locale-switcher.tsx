@@ -40,6 +40,7 @@ export function LocaleSwitcher({ locale, pathname, dropdownBackgroundColor, onOp
                 onOpenChange?.(false);
             }
         }
+
         function onEscape(e: KeyboardEvent) {
             clearCloseTimer();
             if (e.key === 'Escape') {
@@ -47,8 +48,10 @@ export function LocaleSwitcher({ locale, pathname, dropdownBackgroundColor, onOp
                 onOpenChange?.(false);
             }
         }
+
         document.addEventListener('mousedown', onPointerDown);
         document.addEventListener('keydown', onEscape);
+
         return () => {
             clearCloseTimer();
             document.removeEventListener('mousedown', onPointerDown);
@@ -81,7 +84,7 @@ export function LocaleSwitcher({ locale, pathname, dropdownBackgroundColor, onOp
                 aria-haspopup="menu"
                 aria-label="Open language menu"
             >
-                <Image src="/globe.svg" alt="" aria-hidden="true" width={20} height={20} className="h-5 w-5 brightness-0 invert" />
+                <Image src="/images/revamp/icons/globe.svg" alt="" aria-hidden="true" width={20} height={20} className="h-5 w-5 brightness-0 invert" />
             </button>
             {open && (
                 <div
@@ -93,13 +96,17 @@ export function LocaleSwitcher({ locale, pathname, dropdownBackgroundColor, onOp
                     {locales.map((item) => {
                         const href = switchLocalePath(pathname, item);
                         const active = item === locale;
+
                         return (
                             <Link
                                 key={item}
                                 href={href}
-                                onClick={() => {
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    document.cookie = `NEXT_LOCALE=${item}; path=/; max-age=31536000; samesite=lax`;
                                     setOpen(false);
                                     onOpenChange?.(false);
+                                    window.location.assign(href);
                                 }}
                                 className={`block px-4 py-2 text-sm transition ${active ? 'font-medium text-white' : 'text-white/75 hover:bg-white/10 hover:text-white'}`}
                             >

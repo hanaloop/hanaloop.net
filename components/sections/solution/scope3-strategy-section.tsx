@@ -1,21 +1,12 @@
 import type { CSSProperties } from 'react';
 import Image from 'next/image';
-import type { AppLocale } from '@/lib/locales';
+import { getTranslations } from 'next-intl/server';
 import bgImage from '@/public/images/revamp/scope3/strategy-bg.png';
 import logoImage from '@/public/images/revamp/scope3/lb.png';
 
-type Scope3StrategySectionProps = {
-    locale: AppLocale;
-};
-
-type Scope3StrategyCopy = {
-    sectionAriaLabel: string;
-    heading: string;
-    columns: Array<{
-        title: string;
-        bullets: string[];
-    }>;
-    imageAlt: string;
+type StrategyColumn = {
+    title: string;
+    bullets: string[];
 };
 
 const titleGradientStyle: CSSProperties = {
@@ -24,119 +15,12 @@ const titleGradientStyle: CSSProperties = {
     WebkitTextFillColor: 'transparent',
 };
 
-const koCopy: Scope3StrategyCopy = {
-    sectionAriaLabel: 'Scope3 데이터 기반 탄소중립 전략',
-    heading: '데이터가 보이면 탄소중립 전략이 보입니다!',
-    columns: [
-        {
-            title: '데이터 연동, 생성형AI기반 분석',
-            bullets: [
-                '자동 데이터 수집으로 번거로운 수작업 데이터 수집 줄임',
-                '생성형AI기반 규제 검색과 리포트 생성',
-                '전사 배출 현황 및 추세 분석 제공',
-                '데이터 저장 및 전송 암호화 보안으로 안전성',
-            ],
-        },
-        {
-            title: '가치사슬망 스코프 3 관리',
-            bullets: ['가치사슬 배출량 관리', '협력사 관리', '다국어 지원'],
-        },
-        {
-            title: '제품 LCA 지원',
-            bullets: [
-                '제품의 원부자재(전구물질/PRECURSOR) 관리',
-                '제품 생산 공정 설정과 내재배출 산정',
-                '업스트림(UPSTREAM)·다운스트림(DOWNSTREAM) 배출 산정',
-                '제품 내재배출 분석 및 벤츠마킹',
-            ],
-        },
-        {
-            title: 'OpenAPI - 플랫폼',
-            bullets: ['확장 솔루션 구축시간 단축', '신사업 모델 창출 가능', '저탄소 생태계 형성'],
-        },
-    ],
-    imageAlt: '숲 배경 이미지',
-};
-
-const enCopy: Scope3StrategyCopy = {
-    sectionAriaLabel: 'Data-Driven Carbon Neutrality Strategy for Scope 3',
-    heading: 'When you see the data, the path to carbon neutrality becomes clear!',
-    columns: [
-        {
-            title: 'Data Integration & Generative AI Analytics',
-            bullets: [
-                'Reduce tedious manual data collection with automated data gathering',
-                'Generative AI-powered regulatory search and report generation',
-                'Enterprise-wide emission status and trend analysis',
-                'Secure data storage and transmission with encryption',
-            ],
-        },
-        {
-            title: 'Value Chain Scope 3 Management',
-            bullets: ['Value chain emission management', 'Supplier management', 'Multilingual support'],
-        },
-        {
-            title: 'Product LCA Support',
-            bullets: [
-                'Management of raw materials and precursors for products',
-                'Product manufacturing process setup and embedded emission calculation',
-                'Upstream and downstream emission calculation',
-                'Product embedded emission analysis and benchmarking',
-            ],
-        },
-        {
-            title: 'OpenAPI – Platform',
-            bullets: ['Reduce time to build extended solutions', 'Enable new business model creation', 'Foster a low-carbon ecosystem'],
-        },
-    ],
-    imageAlt: 'Forest background image',
-};
-
-const esCopy: Scope3StrategyCopy = {
-    sectionAriaLabel: 'Estrategia de Neutralidad de Carbono Basada en Datos para Alcance 3',
-    heading: '¡Cuando ves los datos, la estrategia de neutralidad de carbono se vuelve clara!',
-    columns: [
-        {
-            title: 'Integración de Datos y Análisis con IA Generativa',
-            bullets: [
-                'Reducir la tediosa recopilación manual de datos con recopilación automatizada',
-                'Búsqueda regulatoria y generación de informes impulsadas por IA generativa',
-                'Análisis del estado y tendencias de emisiones a nivel empresarial',
-                'Seguridad mediante cifrado en el almacenamiento y transmisión de datos',
-            ],
-        },
-        {
-            title: 'Gestión de Alcance 3 en la Cadena de Valor',
-            bullets: ['Gestión de emisiones en la cadena de valor', 'Gestión de proveedores', 'Soporte multilingüe'],
-        },
-        {
-            title: 'Soporte de ACV de Productos',
-            bullets: [
-                'Gestión de materias primas y precursores de productos',
-                'Configuración del proceso de fabricación y cálculo de emisiones incorporadas',
-                'Cálculo de emisiones aguas arriba y aguas abajo',
-                'Análisis y benchmarking de emisiones incorporadas en productos',
-            ],
-        },
-        {
-            title: 'OpenAPI – Plataforma',
-            bullets: ['Reducir el tiempo para crear soluciones extendidas', 'Posibilitar la creación de nuevos modelos de negocio', 'Fomentar un ecosistema bajo en carbono'],
-        },
-    ],
-    imageAlt: 'Imagen de fondo de bosque',
-};
-
-const copy: Record<AppLocale, Scope3StrategyCopy> = {
-    ko: koCopy,
-    en: enCopy,
-    es: esCopy,
-};
-
-export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {
-    const text = copy[locale];
+export async function Scope3StrategySection() {
+    const t = await getTranslations('Scope3Strategy');
+    const columns = t.raw('columns') as StrategyColumn[];
 
     return (
-        <section className="px-5 pb-16 pt-12 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={text.sectionAriaLabel}>
+        <section className="px-5 pb-16 pt-12 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] lg:px-11">
                 <h2
                     className="text-black"
@@ -147,11 +31,11 @@ export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {
                         lineHeight: 1.2,
                     }}
                 >
-                    {text.heading}
+                    {t('heading')}
                 </h2>
 
                 <div className="px-11 mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
-                    {text.columns.map((column) => (
+                    {columns.map((column) => (
                         <article key={column.title} className="min-w-0">
                             <h3
                                 style={{
@@ -185,7 +69,9 @@ export function Scope3StrategySection({ locale }: Scope3StrategySectionProps) {
                 </div>
 
                 <div className="relative mt-14 overflow-hidden rounded-[20px] lg:mt-[74px]">
-                    <Image src={bgImage} alt={text.imageAlt} width={1920} height={400} className="h-[240px] w-full object-cover md:h-[320px] lg:h-[400px]" sizes="(min-width: 1920px) 1440px, (min-width: 1024px) calc(100vw - 88px), 100vw" />
+                    <div className="relative h-[240px] w-full md:h-[320px] lg:h-[400px]">
+                        <Image src={bgImage} alt={t('imageAlt')} fill className="object-cover" sizes="(min-width: 1920px) 1440px, (min-width: 1024px) calc(100vw - 88px), 100vw" />
+                    </div>
                     <Image src={logoImage} alt="" aria-hidden="true" className="absolute bottom-6 left-6 h-[34px] w-auto opacity-60 md:bottom-8 md:left-8 md:h-[42px] lg:bottom-10 lg:left-10 lg:h-[53px]" />
                 </div>
             </div>

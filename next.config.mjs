@@ -1,7 +1,9 @@
 import path from 'node:path';
 import { createMDX } from 'fumadocs-mdx/next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const withMDX = createMDX();
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const isProduction = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
@@ -32,4 +34,4 @@ if (process.env.WEB_PATH_PREFIX) {
   config.basePath = process.env.WEB_PATH_PREFIX;
 }
 
-export default withMDX(config);
+export default withNextIntl(withMDX(config));

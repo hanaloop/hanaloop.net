@@ -1,13 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
+import { useTranslations } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
-
-const contactLabel: Record<AppLocale, string> = {
-  ko: 'Contact Us',
-  en: 'Contact Us',
-  es: 'Contacto',
-};
 
 type ContactCtaButtonProps = {
   locale: AppLocale;
@@ -28,13 +25,15 @@ export function ContactCtaButton({
   iconClassName = 'h-4 w-4',
   style,
 }: ContactCtaButtonProps) {
+  const t = useTranslations('ContactCtaButton');
+
   return (
     <Link
       href={withLocalePath(locale, '/partnership')}
       className={`inline-flex h-12 items-center gap-2 rounded-[50px] px-6 text-sm font-medium text-white transition hover:opacity-90 ${className}`}
       style={{ background: 'linear-gradient(to right, #1FBD7D, #0194FF)', ...style }}
     >
-      {contactLabel[locale]}
+      {t('label')}
       <img src={iconSrc} alt="" aria-hidden="true" style={{ width: iconWidth, height: iconHeight }} className={iconClassName} />
     </Link>
   );

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SiteShell } from '@/components/layout/site-shell';
 import { getBlogByTag, getBlogTags } from '@/lib/blog-tags';
-import { defaultLocale, isLocale, locales } from '@/lib/locales';
+import { isLocale, locales } from '@/lib/locales';
 import { buildBlogMobileContextualNav } from '@/lib/mobile-nav';
 import { siteConfig } from '@/lib/site-config';
 
@@ -37,7 +37,7 @@ function getTexts(locale: string) {
 
 export default async function Page({ params }: Props) {
   const { locale, tag } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
 
   const decodedTag = decodeURIComponent(tag);
   const items = getBlogByTag(locale, decodedTag);
@@ -68,7 +68,7 @@ export default async function Page({ params }: Props) {
 
 export async function generateStaticParams() {
   const params = locales
-    .filter((locale) => locale !== defaultLocale)
+    
     .flatMap((locale) => {
       const tags = getBlogTags(locale);
       // If no tags, return dummy entry
@@ -82,7 +82,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, tag } = await params;
-  if (!isLocale(locale) || locale === defaultLocale) notFound();
+  if (!isLocale(locale)) notFound();
 
   const decodedTag = decodeURIComponent(tag);
   const texts = getTexts(locale);

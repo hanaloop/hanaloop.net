@@ -1,0 +1,537 @@
+{
+  "HomeHero": {
+    "title": "Smarter Carbon Management with AI-powered Hana Eco",
+    "mobileDescription": "La gestión de carbono es una ventaja competitiva.\nReduce costos de energía y riesgos climáticos\ncon HanaLoop.",
+    "desktopDescription": "La gestión de carbono es una ventaja competitiva. Cumple rápidamente con EU CBAM, ISSB S1·S2,\nregulaciones de baterías, CSDDD y requisitos de divulgación CDP·GRI, mientras reduces costos de energía\ny mitigas riesgos climáticos al mismo tiempo.",
+    "solutionLabel": "Solution Overview",
+    "contactLabel": "Contact Us"
+  },
+  "HomeIntro": {
+    "eyebrowDesktop": "HanaLoop impulsa su camino hacia la neutralidad de carbono como socio digital.",
+    "eyebrowMobileLines": ["HanaLoop impulsa su camino hacia la neutralidad", "de carbono como socio digital."],
+    "titleDesktopLines": ["HanaLoop supports and empowers your journey", "toward carbon neutrality."],
+    "titleMobileLines": ["HanaLoop supports", "and empowers your journey", "toward carbon neutrality."],
+    "descriptionDesktop": "Descubra las soluciones de HanaLoop para CBAM, gestión de huella PCF y cálculo de emisiones Scope 3.",
+    "descriptionMobileLines": ["Descubra las soluciones de HanaLoop para CBAM,", "gestión de huella PCF y cálculo de", "emisiones Scope 3."],
+    "contactLabel": "Contact Us",
+    "cards": [
+      { "title": "CBAM Solution", "href": "/cbam" },
+      { "title": "PCF management", "href": "/pcf" },
+      { "title": "Scope3 Solution", "href": "/scope3" }
+    ],
+    "metrics": [
+      { "value": "4.0M+", "label": "Carbono gestionado acumulado: 4M tCO2eq+" },
+      { "value": "87%+", "label": "Reducción del tiempo operativo" },
+      { "value": "15%+", "label": "Ahorro energético (aprox. KRW 3.3B)" },
+      { "value": "1598H", "label": "Más de 1,598 horas ahorradas al año" }
+    ],
+    "footnote": "* Fabricante A: 90 mil tCO2eq, ingresos KRW 300 mil millones, costo energético KRW 22 mil millones"
+  },
+  "HomeCollaboration": {
+    "badge": "Our Partners",
+    "titleLines": ["A lot of companies are", "working together."],
+    "description": "Muchas empresas colaboran con HanaLoop.",
+    "viewMore": "View more collaboration",
+    "collaborations": [
+      { "subtitle": "", "summary": "Materiales de Construcción", "points": ["Sistema de comercio de emisiones", "Reducción del 75% en múltiples sitios"] },
+      { "subtitle": "", "summary": "Industria No Ferrosa", "points": ["Cumplimiento K-ETS", "Cumplimiento CBAM"] },
+      { "subtitle": "", "summary": "Industria Metalúrgica", "points": ["CBAM: fácil para no expertos", "Cumplimiento en sitios de exportación"] },
+      { "subtitle": "Doosan Enerbility", "summary": "Energía Renovable", "points": ["Gestión Scope 3 para mayor sostenibilidad", "Mejora de informes CDP"] }
+    ]
+  },
+  "HomeOurMission": {
+    "heading": "HanaLoop ha dado el primer paso hacia un planeta sostenible en el que vivimos juntos.",
+    "desktopLead": [
+      "Construimos ecosistemas sostenibles mediante tecnología de gestión de neutralidad de carbono",
+      "e innovación digital adaptadas a los entornos industriales y empresariales.",
+      "Desarrollamos soluciones digitales que facilitan el acceso a tecnologías ambientales",
+      "y aceleramos la implementación del net-zero."
+    ],
+    "paragraphs": [
+      "Construimos ecosistemas sostenibles mediante tecnología de gestión de neutralidad de carbono e innovación digital adaptadas a los entornos industriales y empresariales. Desarrollamos soluciones digitales que facilitan el acceso a tecnologías ambientales y aceleramos la implementación del net-zero.",
+      "HanaLoop generará un mayor impacto a través de conexiones significativas para que la vida de todos sea sostenible, con servicios digitales beneficiosos para las personas y la naturaleza."
+    ]
+  },
+  "HomeRegulatoryCompliance": {
+    "eyebrow": "Primer informe de verificación en Corea de LRQA para cumplimiento del ETS y del CBAM de la UE",
+    "heading": "Regulatory Compliance Approved: hana.eco",
+    "reasonEyebrow": "Por qué elegir HanaLoop",
+    "reasonHeading": ["Why you should choose", "HanaLoop"],
+    "cards": [
+      {
+        "title": "Cumplimiento del CBAM de la UE",
+        "subtitle": "Carbon Border Adjustment Mechanism",
+        "items": ["Gestión de productos", "Gestión del suministro de materias primas", "Exportación de reportes CBAM", "Soporte de factores de emisión"]
+      },
+      {
+        "title": "Cumplimiento ETS y gestión por objetivos",
+        "subtitle": "Korea Emissions Trading System",
+        "items": ["Gestión de datos con nivel de verificación", "Gestión de libro de derechos", "Definición de objetivos y análisis de escenarios"]
+      },
+      {
+        "title": "Cumplimiento IFRS (TCFD) / CDP / GRI",
+        "subtitle": "Climate Normatives, Frameworks And Standards",
+        "items": ["Gestión de recursos para reportes estándar", "Análisis de escenarios de emisiones"]
+      },
+      {
+        "title": "Cumplimiento del CBAM de la UE",
+        "subtitle": "Carbon Border Adjustment Mechanism",
+        "items": ["Gestión de productos", "Gestión del suministro de materias primas", "Exportación de reportes CBAM", "Soporte de factores de emisión"]
+      }
+    ],
+    "reasons": [
+      {
+        "title": "Customized Partnership",
+        "body": "Con tecnología validada ante regulaciones globales, entramos en mercados a medida mediante alianzas con consultoría ambiental y proveedores de transición energética.",
+        "desktopLines": ["Con tecnología validada ante regulaciones globales,", "entramos en mercados a medida mediante alianzas con", "consultoría ambiental y proveedores de transición energética."]
+      },
+      {
+        "title": "Everything with Hanaeco",
+        "body": "Administra toda la gestión de carbono de empresa y cadena de suministro en un solo lugar con Hanaeco.",
+        "desktopLines": ["Administra toda la gestión de carbono de empresa y", "cadena de suministro en un solo lugar con Hanaeco.", "Haz la gestión de carbono más fácil con Hanaeco."]
+      },
+      {
+        "title": "Select the right pricing plan",
+        "body": "Ofrecemos planes y precios flexibles para que cada empresa elija la opción adecuada.",
+        "desktopLines": ["Ofrecemos planes y precios flexibles para que", "cada empresa elija la opción adecuada", "a sus necesidades."]
+      }
+    ]
+  },
+  "HomeFaq": {
+    "eyebrow": "Consulta respuestas a las preguntas más frecuentes.",
+    "heading": "Common questions"
+  },
+  "HomeCta": {
+    "eyebrow": "Comienza la gestión sistemática de carbono con Hana Eco.",
+    "heading": "Start Systematic Carbon Management with Hana Eco.",
+    "mobileHeadingLines": ["Start Systematic", "Carbon Management", "with Hana Eco."],
+    "solutionLabel": "Solution Overview",
+    "contactLabel": "Contact Us"
+  },
+  "HomeInsight": {
+    "heading": "Insight LIST",
+    "viewMoreLabel": "Ver más"
+  },
+  "BlogHero": {
+    "contactLabel": "Contáctenos"
+  },
+  "BlogList": {
+    "sectionText": "🗞️ Consulta las últimas novedades útiles de HanaLoop."
+  },
+  "InsightHero": {
+    "contactLabel": "Contáctenos"
+  },
+  "InsightList": {
+    "sectionText": "🗞️ Explora los últimos insights y perspectivas de HanaLoop."
+  },
+  "PlatformHero": {
+    "heading": "Carbon management platform",
+    "description": "Descubra la plataforma de gestión de carbono Hana.eco de HanaLoop y nuestras soluciones.",
+    "navAriaLabel": "Páginas relacionadas"
+  },
+  "PlatformNav": {
+    "cbam": "CBAM",
+    "pcf": "PCF",
+    "scope3": "Scope 3",
+    "hanaAi": "Hana.eco AI",
+    "carbonAccounting": "Contabilidad de Carbono",
+    "climateStrategy": "Estrategia Climática"
+  },
+  "CbamOverview": {
+    "sectionAriaLabel": "Resumen de CBAM",
+    "heading": "Solución CBAM de Hana.eco",
+    "subheading": "HanaLoop apoya a las empresas en el cumplimiento eficiente de CBAM mediante consultoría especializada y Hana.eco.",
+    "whatTitle": "¿Qué es CBAM?",
+    "whatBody": "CBAM (Carbon Border Adjustment Mechanism) es el mecanismo de ajuste en frontera por carbono de la UE, que aplica costos a productos importados según sus emisiones de carbono incorporadas. Es esencial gestionar los datos de emisiones con precisión.",
+    "solutionTitle": "Consultoría y Solución CBAM",
+    "solutionBody": "HanaLoop apoya el cumplimiento eficiente de CBAM mediante consultoría especializada y la solución Hana.eco. El módulo CBAM de Hana.eco automatiza la gestión de datos complejos y simplifica la preparación de reportes y la respuesta regulatoria.",
+    "contactLabel": "Contáctenos",
+    "imageAlt": "Vista portuaria relacionada con la logística de CBAM"
+  },
+  "CbamProcess": {
+    "sectionAriaLabel": "Implementación de Infraestructura CBAM",
+    "title": "Implementación de Infraestructura CBAM",
+    "steps": [
+      {
+        "heading": "1. Diagnóstico y Consultoría",
+        "items": ["Definir límites del producto", "Revisar puntos de monitoreo", "Evaluar estado de recopilación y mejoras", "Analizar integridad y precisión del inventario"]
+      },
+      {
+        "heading": "2. Configuración de Plataforma",
+        "items": ["Recolectar datos", "Configurar fuentes de emisión por proceso", "Normalizar datos requeridos", "Ingresar datos históricos", "Definir proceso operativo"]
+      },
+      {
+        "heading": "3. Instalación e Integración",
+        "items": ["Personalizar recopilación automática", "Definir uso de ERP/MES y proveer conectores"]
+      },
+      {
+        "heading": "4. Transición",
+        "items": ["Entregar manual de uso", "Capacitar al equipo para internalizar el proceso"]
+      }
+    ]
+  },
+  "CbamInsightCards": {
+    "sectionAriaLabel": "Tarjetas de insights CBAM",
+    "heading": "Insights de HanaLoop para Comprender CBAM",
+    "moreInsightLabel": "More Insight",
+    "items": [
+      {
+        "id": "cbam-01",
+        "title": "Paquete Ómnibus de la UE",
+        "subtitle": "Descripción de la Propuesta de Reforma CBAM",
+        "body": "La Comisión Europea anunció una propuesta de simplificación para el Mecanismo de Ajuste en Frontera por Carbono (CBAM) como parte del Paquete Ómnibus 2025. La reforma tiene como objetivo agilizar los procedimientos y facilitar el cumplimiento normativo.",
+        "href": "/blog"
+      },
+      {
+        "id": "cbam-02",
+        "title": "Paquete Ómnibus de la UE",
+        "subtitle": "Propuesta de Reforma CBAM Explicada",
+        "body": "Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 17 de diciembre de 2024. Se recomienda a las empresas del sector del acero, aluminio y otros metales revisar las actualizaciones.",
+        "href": "/blog"
+      },
+      {
+        "id": "cbam-03",
+        "title": "Mecanismo de Ajuste en Frontera por Carbono (CBAM)",
+        "subtitle": "Preguntas Frecuentes (FAQ)",
+        "body": "Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 24 de octubre de 2024. Se aconseja a las empresas de los sectores del acero, aluminio y metales relacionados que se familiaricen con las actualizaciones.",
+        "href": "/blog"
+      },
+      {
+        "id": "cbam-04",
+        "title": "Respuesta al CBAM de la UE",
+        "subtitle": "con Hana.eco — Rápido y Eficiente",
+        "body": "La Comisión Europea anunció una propuesta de simplificación del CBAM como parte del Paquete Ómnibus 2025. La reforma está diseñada para agilizar los procedimientos y reducir la carga de cumplimiento para los exportadores a la UE.",
+        "href": "/blog"
+      },
+      {
+        "id": "cbam-05",
+        "title": "Mecanismo de Ajuste en Frontera por Carbono (CBAM)",
+        "subtitle": "Qué Incluir en su Informe",
+        "body": "Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 17 de diciembre de 2024. Se recomienda a las empresas del acero, aluminio y metales relacionados mantenerse al día con los últimos requisitos.",
+        "href": "/blog"
+      },
+      {
+        "id": "cbam-06",
+        "title": "Consultoría CBAM e Incorporación de Soluciones",
+        "subtitle": "Preguntas y Respuestas de Nuestros Clientes",
+        "body": "Este documento es una traducción del material publicado en el sitio web oficial de CBAM el 24 de octubre de 2024. Se aconseja a las empresas del sector del acero, aluminio y otros metales revisar las actualizaciones con atención.",
+        "href": "/blog"
+      }
+    ]
+  },
+  "HanaAiOverview": {
+    "sectionAriaLabel": "Resumen de Hana.eco AI",
+    "heading": "Plataforma de Gestión de Carbono con IA Hana.eco",
+    "subheading": "Hana.eco AI ayuda a su empresa a gestionar el carbono con confianza.",
+    "aiHeading": "Hana.eco con IA",
+    "leftTitle": "Soporte para el Cálculo de Huella de Carbono",
+    "leftBody": "Seleccionar factores de emisión durante el cálculo de la huella de carbono requiere conocimiento especializado. Hana.eco usa IA para agrupar datos de actividad y asignar automáticamente factores adecuados, simplificando el proceso y mejorando la precisión.",
+    "rightTitle": "Información Confiable con Menor Alucinación de LLM",
+    "rightBody": "Para reducir respuestas incorrectas causadas por fuentes externas inciertas, Hana.eco adopta un enfoque de Index DB y RAG. Así ofrece respuestas más confiables sobre tendencias regulatorias, comercio de emisiones y temas relacionados."
+  },
+  "HanaAiProcess": {
+    "sectionAriaLabel": "Hana.eco AI Features",
+    "heading": "Hana.eco AI Features",
+    "items": [
+      {
+        "badge": "Detección de Anomalías",
+        "title": "Detección de Valores Atípicos",
+        "body": ["La precisión es uno de los principios clave en la contabilidad de carbono.", "Durante la recopilación y gestión masiva de datos de emisiones, pueden surgir anomalías por diversos factores y afectar la fiabilidad.", "Hana.eco detecta estas anomalías para mantener eficazmente la precisión de los datos."],
+        "bgSrc": "/images/revamp/hana-ai/1-bg.png",
+        "bgAlt": "Fondo de la función de detección de anomalías"
+      },
+      {
+        "badge": "Predicción de Datos",
+        "title": "Reducción de Costos y Maximización de Ingresos",
+        "body": "Hoy, el carbono representa valor económico directo. En ETS, CBAM y otros marcos, predecir con precisión las emisiones ayuda a maximizar ingresos y reducir costos.",
+        "extraTitle": "Análisis del Impacto de Reducción con Predicción",
+        "extraBody": ["Hana.eco usa IA para predecir emisiones y analizar el impacto de reducción según cambios operativos, apoyando decisiones estratégicas."],
+        "bgSrc": "/images/revamp/hana-ai/2-bg.png",
+        "bgAlt": "Fondo de la función de predicción"
+      },
+      {
+        "badge": "Asistente de IA Carbon Buddy",
+        "title": "Respuesta Regulatoria con Gestión de Carbono",
+        "body": ["Una gestión de carbono efectiva requiere integrar conocimiento experto y estrategia empresarial.", "Así se pueden definir estrategias óptimas y responder rápidamente a regulaciones cambiantes."],
+        "extraTitle": "Comprensión Regulatoria Rápida y Clara",
+        "extraBody": ["Hana.eco aprovecha IA generativa y NLP para que incluso no especialistas comprendan regulaciones complejas y respondan con eficiencia."],
+        "bgSrc": "/images/revamp/hana-ai/3-bg.png",
+        "bgAlt": "Fondo de la función de asistente Carbon Buddy AI"
+      }
+    ]
+  },
+  "PcfOverview": {
+    "heading": "Solución PCF de Hana.eco",
+    "subheading": "Gestión sistemática de huella de carbono para el desarrollo sostenible de productos",
+    "title": "¿Qué es la Huella de Carbono de Producto (PCF)?",
+    "imageAlt": "Resumen del proceso de huella de carbono de producto",
+    "lead": "La huella de carbono de producto (PCF) cuantifica las emisiones de GEI\nen todo el ciclo de vida del producto.",
+    "body": "Se calcula con estándares como ISO 14067 y GHG Protocol,\ny es clave para una gestión ambiental transparente."
+  },
+  "PcfWhyNeeded": {
+    "title": "¿Por qué es necesaria la gestión de PCF?",
+    "itemOneNumber": "01.",
+    "itemOneTitle": "Respuesta a regulaciones globales",
+    "itemOneBody": "PCF es una métrica esencial para responder a regulaciones globales como CBAM,\ny proporciona datos de emisiones a nivel de producto requeridos.\nLa certificación basada en ISO 14067 mejora la fiabilidad y el cumplimiento regulatorio,\npermitiendo gestionar proactivamente los riesgos comerciales.",
+    "itemTwoNumber": "02.",
+    "itemTwoTitle": "Base para estrategia de reducción",
+    "itemTwoBody": "Cuantificar emisiones por producto permite identificar qué procesos, materiales\no elementos de la cadena de suministro son factores de alto carbono,\ny definir estrategias concretas de reducción (materiales alternativos, eficiencia energética, proveedores de bajo carbono).",
+    "imageAlt": "Necesidad de gestión de PCF"
+  },
+  "PcfMainFeatures": {
+    "title": "Funciones Clave de la Solución PCF",
+    "body": "Cuantifica emisiones por producto con base en flujo de procesos, gestiona emisiones incorporadas con datos directos e indirectos, e identifica prioridades de reducción mediante visualización. Apoya eficazmente el cumplimiento regulatorio global y el desarrollo de estrategias de reducción de carbono.",
+    "caption": "*Pantalla de ejemplo de la solución PCF de Hana.eco.",
+    "imageAlt": "Vista de ejemplo de funciones de la solución PCF"
+  },
+  "Scope3Overview": {
+    "sectionAriaLabel": "Importancia de Scope 3",
+    "heading": "Solución de Cálculo de Emisiones Scope 3",
+    "subheading": "Gestione las emisiones Scope 3 de forma sistemática con Hana.eco.",
+    "whyTitle": "¿Por qué es importante gestionar Scope 3?",
+    "whySubheading": "Revise las razones por las que Scope 3 es necesario.",
+    "imageAlt": "Planta de energía con emisiones",
+    "cards": [
+      {
+        "number": "01.",
+        "title": "Regulación climática y demanda de clientes",
+        "body": "Estándares globales como IFRS S2, TCFD, CDP y SBTI exigen divulgación de Scope 3. Los clientes globales también solicitan datos Scope 3 a sus proveedores."
+      },
+      {
+        "number": "02.",
+        "title": "Prevención del greenwashing y mayor transparencia",
+        "body": "Sin una gestión adecuada de Scope 3, la información incompleta o distorsionada puede generar controversias de greenwashing. Organismos como SBTI y CDP consideran la calidad de divulgación de Scope 3 como criterio clave de confianza."
+      },
+      {
+        "number": "03.",
+        "title": "Gestión de riesgos en la cadena de valor",
+        "body": "Scope 3 incluye emisiones indirectas de la cadena de suministro y puede derivar en múltiples riesgos. Para responder de forma proactiva al riesgo climático, es clave gestionar las emisiones en toda la cadena de valor."
+      }
+    ]
+  },
+  "Scope3Process": {
+    "sectionAriaLabel": "Proceso de Gestión de Alcance 3",
+    "title": "Proceso de Gestión de Alcance 3",
+    "subtitle": "Explore el proceso de gestión de Alcance 3 impulsado por Hana.eco.",
+    "cards": [
+      {
+        "index": "01.",
+        "title": "Evaluación de Capacidades de Alcance 3",
+        "description": ["Análisis de capacidades internas", "Definición de categorías de Alcance 3 gestionables", "Establecimiento del alcance de categorías de emisiones"],
+        "imageSrc": "/images/revamp/scope3/overview-1.png",
+        "imageAlt": "Imagen de evaluación de capacidades de Alcance 3"
+      },
+      {
+        "index": "02.",
+        "title": "Cálculo de Emisiones de Alcance 3",
+        "description": ["Recopilación de datos hasta el cálculo", "Verificación de los resultados del cálculo", "Construcción de un proceso de cálculo de emisiones personalizado"],
+        "imageSrc": "/images/revamp/scope3/overview-2.png",
+        "imageAlt": "Imagen de cálculo de emisiones de Alcance 3"
+      },
+      {
+        "index": "03.",
+        "title": "Análisis Preliminar de Emisiones y Riesgos de Alcance 3",
+        "description": ["Análisis de la intensidad de emisiones y principales fuentes de Alcance 3", "Evaluación de la contribución de emisiones por categoría", "Análisis preliminar de riesgos basado en datos de la cadena de suministro"],
+        "imageSrc": "/images/revamp/scope3/overview-3.png",
+        "imageAlt": "Imagen de análisis preliminar de emisiones y riesgos de Alcance 3"
+      },
+      {
+        "index": "04.",
+        "title": "Estrategia de Respuesta Regulatoria y Gestión de Riesgos",
+        "description": ["Planes de respuesta a los requisitos de clientes y partes interesadas", "Aplicación de estándares globales de reporte como IFRS y CDP", "Estrategias de gestión de riesgos"],
+        "imageSrc": "/images/revamp/scope3/overview-4.png",
+        "imageAlt": "Imagen de estrategia de respuesta regulatoria y gestión de riesgos"
+      }
+    ]
+  },
+  "Scope3MainFeatures": {
+    "sectionAriaLabel": "Funciones Principales de la Solución de Alcance 3",
+    "heading": "Funciones Principales de la Solución de Alcance 3",
+    "subheading": "Explore las funciones principales de la solución de Alcance 3 de Hana.eco.",
+    "items": [
+      {
+        "index": "01.",
+        "title": "Gestión Eficiente de Grandes Volúmenes de Datos de Actividad",
+        "details": [
+          { "lead": "Actualización Masiva de Datos de Actividad", "body": "Admite la clasificación por categorías, el mapeo de factores de emisión, la conversión de unidades y el cálculo de emisiones para grandes volúmenes de datos de actividad." },
+          { "lead": "Gestión Agrupada de Actividades Similares", "body": "Agrupe elementos de actividad similares para agilizar la gestión y el seguimiento de los factores de emisión." }
+        ]
+      },
+      {
+        "index": "02.",
+        "title": "Visualización de Tendencias de Emisiones en Múltiples Dimensiones",
+        "details": [
+          { "lead": "Comprensión Intuitiva de los Flujos de Emisiones de Carbono", "body": "Visualice los datos en diversas dimensiones de análisis — grupos de datos de actividad, métodos de cálculo y emisiones por proveedor — para comprender fácilmente el flujo de carbono." },
+          { "lead": "Identificación de Áreas de Alta Emisión y Desarrollo de Estrategias de Reducción", "body": "Utilice las estadísticas de emisiones de Alcance 3 para identificar tendencias de emisiones de carbono y áreas de alta emisión en toda la cadena de suministro, y desarrolle actividades de reducción focalizadas." }
+        ]
+      }
+    ],
+    "imageAlt": "Imagen de fondo del panel de funciones de Alcance 3"
+  },
+  "Scope3Strategy": {
+    "sectionAriaLabel": "Estrategia de Neutralidad de Carbono Basada en Datos para Alcance 3",
+    "heading": "¡Cuando ves los datos, la estrategia de neutralidad de carbono se vuelve clara!",
+    "columns": [
+      {
+        "title": "Integración de Datos y Análisis con IA Generativa",
+        "bullets": ["Reducir la tediosa recopilación manual de datos con recopilación automatizada", "Búsqueda regulatoria y generación de informes impulsadas por IA generativa", "Análisis del estado y tendencias de emisiones a nivel empresarial", "Seguridad mediante cifrado en el almacenamiento y transmisión de datos"]
+      },
+      {
+        "title": "Gestión de Alcance 3 en la Cadena de Valor",
+        "bullets": ["Gestión de emisiones en la cadena de valor", "Gestión de proveedores", "Soporte multilingüe"]
+      },
+      {
+        "title": "Soporte de ACV de Productos",
+        "bullets": ["Gestión de materias primas y precursores de productos", "Configuración del proceso de fabricación y cálculo de emisiones incorporadas", "Cálculo de emisiones aguas arriba y aguas abajo", "Análisis y benchmarking de emisiones incorporadas en productos"]
+      },
+      {
+        "title": "OpenAPI – Plataforma",
+        "bullets": ["Reducir el tiempo para crear soluciones extendidas", "Posibilitar la creación de nuevos modelos de negocio", "Fomentar un ecosistema bajo en carbono"]
+      }
+    ],
+    "imageAlt": "Imagen de fondo de bosque"
+  },
+  "SolutionClimateManagement": {
+    "sectionAriaLabel": "Introducción a la Gestión Climática",
+    "heading": "Gestión Climática",
+    "subheading": "Los recursos son finitos, pero el potencial es ilimitado.",
+    "message": "¡Logra beneficios ambientales, económicos\ny sociales simultáneamente con soluciones digitales!",
+    "itemOneTitle": "Transformación Digital Sostenible",
+    "itemOneBody": "Alineados con los entornos empresariales en rápida evolución y las demandas del mercado, aprovechamos la tecnología digital para maximizar el potencial y el valor empresarial de nuestros clientes. Más allá de la tecnología, elevamos la cultura corporativa para mejorar la satisfacción y la productividad en las organizaciones de nuestros clientes.",
+    "itemTwoTitle": "Soluciones Ecológicas Basadas en la Plataforma Hana.eco",
+    "itemTwoBody": "La plataforma ofrece orientación sobre regulaciones ambientales e información del mercado, permite descubrir y comercializar rápidamente tecnologías ecológicas, y ayuda a crear una cadena de valor más limpia, impulsando a los clientes a crecer de manera sostenible. En última instancia, contribuye al desarrollo de una industria más responsable y ética.",
+    "contactLabel": "Contáctenos",
+    "imageAlt": "Imagen conceptual de movilidad ecológica"
+  },
+  "PartnershipHero": {
+    "heading": "Reliable and Agile Sustainability Partner"
+  },
+  "PartnershipConsultation": {
+    "heading": "Solicitud de Consultoría\nHana.eco Solution",
+    "descriptionLines": [
+      "Ofrecemos consultoría adaptada a la situación de su empresa.",
+      "Al solicitar una consulta, incluya el nombre de su organización y la persona de contacto.",
+      "Nos pondremos en contacto con usted a la brevedad.",
+      "",
+      "Gracias."
+    ]
+  },
+  "PartnershipContact": {
+    "slogan": "Socio de Sostenibilidad Confiable y Ágil",
+    "address": "4F, 545, Bongcheon-ro, Gwanak-gu, Seúl, República de Corea",
+    "contactPrefix": "CONTACTO :",
+    "companyIntroLink": "Descargar presentación de la empresa",
+    "localAddressLines": ["4F, Seoul Startup Center Gwanak,", "545 Bongcheon-ro, Gwanak-gu, Seúl (08789)"],
+    "formLabel": "Nombre de Empresa / Institución",
+    "placeholders": {
+      "name": "Nombre del solicitante (Departamento / Cargo)",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "inquiry": "¿Qué servicios desea recibir a través de Hana.eco, la plataforma de respuesta a regulaciones climáticas de HanaLoop?"
+    },
+    "agreePrivacy": "Estoy de acuerdo con la política de privacidad.",
+    "submit": "Enviar"
+  },
+  "SiteHeader": {
+    "openMenu": "Abrir menú",
+    "hanaEco": "Hana.eco"
+  },
+  "MobileDrawer": {
+    "closeOverlay": "Cerrar capa del menú móvil",
+    "closeMenu": "Cerrar menú",
+    "hanaEco": "Hana.eco",
+    "copyright": "HanaLoop, all rights reserved."
+  },
+  "ContactCtaButton": {
+    "label": "Contáctenos"
+  },
+  "SiteFooter": {
+    "mobilePrimary": {
+      "platform": "Nuestra Plataforma",
+      "insight": "Insights y Blog",
+      "about": "Sobre Nosotros"
+    },
+    "hanaEco": "Hana.eco",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "copyright": "(c) {year} HANALOOP, all rights reserved.",
+    "insightTitle": "Insights y Blog",
+    "insight": "Insights",
+    "contactTitle": "Contacto",
+    "address": "4F, Seoul Startup Center Gwanak, 545 Bongcheon-ro, Gwanak-gu, Seúl",
+    "privacy": "Política de privacidad",
+    "terms": "Términos y condiciones"
+  },
+  "Nav": {
+    "platform": "Nuestra Plataforma",
+    "insight": "Insight & Blog",
+    "about": "Nosotros",
+    "items": {
+      "CBAM": "CBAM",
+      "ProductCarbonFootprint": "PCF",
+      "Scope3": "Scope 3",
+      "HanaecoAI": "Hana.eco AI",
+      "CarbonAccounting": "Contabilidad de Carbono",
+      "ClimateManagement": "Estrategia Climática",
+      "Insight": "Insight",
+      "Blog": "Blog",
+      "Partnership": "Partnership",
+      "Company": "Company",
+      "Recruit": "Recruit"
+    }
+  },
+  "CbamCertified": {
+    "sectionAriaLabel": "Solución CBAM Certificada por LRQA",
+    "title": "Solución CBAM Certificada por LRQA",
+    "subtitle": "Primera empresa en Corea en obtener una declaración de verificación de conformidad para el Sistema de Comercio de Emisiones de la UE y el Mecanismo de Ajuste en Frontera por Carbono de Lloyd's Register Quality Assurance (LRQA)",
+    "cards": [
+      {
+        "index": "01.",
+        "title": "Gestión de Productos y Precursores (Gestión de Códigos CN)",
+        "description": "Gestione productos y precursores de forma integrada, y registre y rastree sistemáticamente los códigos CN requeridos para los bienes regulados por CBAM. Esto le permite obtener fácilmente los datos fundamentales necesarios para el análisis y reporte de emisiones de carbono por producto.",
+        "imageSrc": "/images/revamp/cbam/certified-1.png",
+        "imageAlt": "Visualización de gestión de productos y precursores"
+      },
+      {
+        "index": "02.",
+        "title": "Configuración de Instalaciones y Gestión de Procesos",
+        "description": "Configure y gestione la información de cada instalación de fabricación y el flujo del proceso de producción. Esto desempeña un papel clave en mejorar la precisión de los datos de emisiones y los cálculos de emisiones por proceso requeridos para los informes CBAM.",
+        "imageSrc": "/images/revamp/cbam/certified-2.png",
+        "imageAlt": "Visualización de configuración de instalaciones y gestión de procesos"
+      },
+      {
+        "index": "03.",
+        "title": "Cálculo y Análisis de Emisiones Incorporadas",
+        "description": "Calcule las emisiones directas e indirectas generadas durante la fabricación del producto por unidad de producto. Los resultados le permiten analizar la intensidad de carbono, los factores de alta emisión y las áreas de mejora por producto, útiles tanto para el cumplimiento normativo como para desarrollar estrategias de reducción de carbono.",
+        "imageSrc": "/images/revamp/cbam/certified-3.png",
+        "imageAlt": "Visualización del cálculo y análisis de emisiones incorporadas"
+      },
+      {
+        "index": "04.",
+        "title": "Generación de Informes CBAM",
+        "description": "Genere automáticamente informes conformes con las regulaciones CBAM basándose en datos de actividad e información de emisiones recopilados. Apoye eficientemente a los exportadores europeos en el cumplimiento de sus obligaciones de reporte CBAM, sin interpretación normativa compleja ni esfuerzo manual.",
+        "imageSrc": "/images/revamp/cbam/certified-4.png",
+        "imageAlt": "Visualización de generación de informes CBAM"
+      }
+    ]
+  },
+  "CbamPlan": {
+    "sectionAriaLabel": "Plan CBAM de Hana.eco",
+    "heading": "Plan CBAM de Hana.eco",
+    "imageAlt": "Imagen de fondo del plan CBAM de Hana.eco",
+    "cards": [
+      {
+        "title": "Estándar",
+        "items": ["Para empresas de acero y aluminio que deben cumplir CBAM", "Gestión de carbono para una o varias plantas y gestión de huella de carbono del producto según criterios CBAM"]
+      },
+      {
+        "title": "Cadena de Suministro - LITE",
+        "items": ["Para centros de distribución que deben cumplir CBAM", "Recopilar, rastrear y gestionar emisiones embebidas de múltiples proveedores"]
+      },
+      {
+        "title": "Cadena de Suministro - ENTERPRISE",
+        "items": ["Cumplimiento CBAM con decenas de proveedores", "Funciones LITE + funciones Estándar"]
+      }
+    ]
+  }
+}

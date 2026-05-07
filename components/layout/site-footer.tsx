@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { ContactCtaButton } from '@/components/ui/contact-cta-button';
@@ -10,7 +13,6 @@ const insightLinks = [
     { label: 'Naver Blog', href: 'https://blog.naver.com/hanaloop' },
 ] as const;
 
-const CURRENT_YEAR = new Date().getFullYear();
 const ICON = {
     link: '/icons/revamp/ic-link.png',
     linkedin: '/icons/revamp/ic-linkedin-white.png',
@@ -20,65 +22,9 @@ const ICON = {
 
 const bodyText = 'text-[16px] leading-none font-normal text-white';
 
-const copy: Record<
-    AppLocale,
-    {
-        mobilePrimary: { platform: string; insight: string; about: string };
-        hanaEco: string;
-        email: string;
-        phone: string;
-        copyright: string;
-        insightTitle: string;
-        insight: string;
-        contactTitle: string;
-        address: string;
-        privacy: string;
-        terms: string;
-    }
-> = {
-    ko: {
-        mobilePrimary: { platform: 'Platform', insight: 'Insight & Blog', about: 'About Us' },
-        hanaEco: 'Hana.eco',
-        email: 'Email',
-        phone: 'Phone',
-        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
-        insightTitle: 'Insight & Blog',
-        insight: 'Insight',
-        contactTitle: 'Contact',
-        address: '서울특별시 관악구 봉천로 545, 서울창업센터 관악 4층',
-        privacy: 'Privacy policy',
-        terms: 'Terms and conditions',
-    },
-    en: {
-        mobilePrimary: { platform: 'Our Platform', insight: 'Insight & Blog', about: 'About Us' },
-        hanaEco: 'Hana.eco',
-        email: 'Email',
-        phone: 'Phone',
-        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
-        insightTitle: 'Insight & Blog',
-        insight: 'Insight',
-        contactTitle: 'Contact',
-        address: '4F, Seoul Startup Center Gwanak, 545 Bongcheon-ro, Gwanak-gu, Seoul',
-        privacy: 'Privacy policy',
-        terms: 'Terms and conditions',
-    },
-    es: {
-        mobilePrimary: { platform: 'Nuestra Plataforma', insight: 'Insights y Blog', about: 'Sobre Nosotros' },
-        hanaEco: 'Hana.eco',
-        email: 'Correo',
-        phone: 'Telefono',
-        copyright: `(c) ${CURRENT_YEAR} HANALOOP, all rights reserved.`,
-        insightTitle: 'Insights y Blog',
-        insight: 'Insights',
-        contactTitle: 'Contacto',
-        address: '4F, Seoul Startup Center Gwanak, 545 Bongcheon-ro, Gwanak-gu, Seul',
-        privacy: 'Politica de privacidad',
-        terms: 'Terminos y condiciones',
-    },
-};
-
 export function SiteFooter({ locale }: { locale: AppLocale }) {
-    const text = copy[locale];
+    const t = useTranslations('SiteFooter');
+    const copyright = t('copyright', { year: new Date().getFullYear() });
 
     return (
         <footer className="bg-[var(--color-mobile-dark-bg)] text-white lg:bg-[var(--color-footer-bg)]">
@@ -87,7 +33,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                     <div>
                         <div className="flex items-center justify-between gap-2 sm:gap-4">
                             <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
-                                <Image src={ICON.logo} alt="HanaLoop" width={136} height={24} className="h-5 sm:h-6" style={{ width: 'auto' }} />
+                                <Image src={ICON.logo} alt="HanaLoop" width={136} height={24} />
                             </Link>
                             <ContactCtaButton
                                 locale={locale}
@@ -102,22 +48,22 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                         <ul className="mt-[44px] space-y-[28px]">
                             <li>
                                 <Link href={withLocalePath(locale, '/platform')} className={bodyText}>
-                                    {text.mobilePrimary.platform}
+                                    {t('mobilePrimary.platform')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={withLocalePath(locale, '/docs/intro')} className={bodyText}>
-                                    {text.mobilePrimary.insight}
+                                <Link href={withLocalePath(locale, '/insight')} className={bodyText}>
+                                    {t('mobilePrimary.insight')}
                                 </Link>
                             </li>
                             <li>
                                 <Link href={withLocalePath(locale, '/company')} className={bodyText}>
-                                    {text.mobilePrimary.about}
+                                    {t('mobilePrimary.about')}
                                 </Link>
                             </li>
                             <li>
                                 <a href="https://www.hana.eco" target="_blank" rel="noreferrer" className="inline-flex items-center gap-[10px] text-[16px] leading-none font-semibold text-white">
-                                    <span>{text.hanaEco}</span>
+                                    <span>{t('hanaEco')}</span>
                                     <Image src={ICON.link} alt="" width={24} height={24} aria-hidden="true" className="h-6 w-6 brightness-0 invert" />
                                 </a>
                             </li>
@@ -136,20 +82,20 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
 
                         <div className="mt-[34px] space-y-2">
                             <p className={bodyText}>
-                                {text.email} :{' '}
+                                {t('email')} :{' '}
                                 <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
                                     info@hanaloop.com
                                 </a>
                             </p>
                             <p className={bodyText}>
-                                {text.phone} :{' '}
+                                {t('phone')} :{' '}
                                 <a href="tel:+82050713379251" className="transition hover:text-white/80">
                                     +82 0507-1337-9251
                                 </a>
                             </p>
                         </div>
 
-                        <p className="mt-[26px] text-[14px] leading-none font-normal text-white/45">{text.copyright}</p>
+                        <p className="mt-[26px] text-[14px] leading-none font-normal text-white/45">{copyright}</p>
                     </div>
                 </div>
             </div>
@@ -157,11 +103,11 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
             <div className="mx-auto hidden max-w-[1440px] lg:block lg:min-h-[520px] lg:px-[64px] lg:pb-[46px] lg:pt-[98px]">
                 <div className="grid grid-cols-[260px_260px_1fr] items-start gap-x-[48px] desktop:grid-cols-[300px_320px_1fr] desktop:gap-x-[76px]">
                     <div>
-                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{text.insightTitle}</p>
+                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{t('insightTitle')}</p>
                         <ul className="space-y-[18px]">
                             <li>
-                                <Link href={withLocalePath(locale, '/docs/intro')} className={`${bodyText} transition hover:text-white/80`}>
-                                    {text.insight}
+                                <Link href={withLocalePath(locale, '/insight')} className={`${bodyText} transition hover:text-white/80`}>
+                                    {t('insight')}
                                 </Link>
                             </li>
                             {insightLinks.map((item) => (
@@ -176,16 +122,16 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                     </div>
 
                     <div>
-                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{text.contactTitle}</p>
+                        <p className="mb-[30px] text-[30px] leading-none font-medium text-white">{t('contactTitle')}</p>
                         <ul className="space-y-[26px]">
                             <li className={bodyText}>
-                                {text.email}:{' '}
+                                {t('email')}:{' '}
                                 <a href="mailto:info@hanaloop.com" className="transition hover:text-white/80">
                                     info@hanaloop.com
                                 </a>
                             </li>
                             <li className={bodyText}>
-                                {text.phone}:{' '}
+                                {t('phone')}:{' '}
                                 <a href="tel:+82050713379251" className="transition hover:text-white/80">
                                     +82 0507-1337-9251
                                 </a>
@@ -195,7 +141,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
 
                     <div className="flex flex-col items-end gap-[40px]">
                         <Link href={withLocalePath(locale, '/')} className="inline-flex items-center">
-                            <Image src={ICON.logo} alt="HanaLoop" width={224} height={40} className="h-[40px]" style={{ width: 'auto' }} />
+                            <Image src={ICON.logo} alt="HanaLoop" width={224} height={40} />
                         </Link>
                         <ContactCtaButton
                             locale={locale}
@@ -209,15 +155,15 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                 </div>
 
                 <div className="mt-16 flex flex-col gap-8 lg:mt-[148px] lg:grid lg:grid-cols-[1fr_auto] lg:items-end">
-                    <p className={bodyText}>{text.address}</p>
+                    <p className={bodyText}>{t('address')}</p>
                     <div className="flex flex-col items-start gap-[18px] lg:items-end">
                         <Link href={withLocalePath(locale, '/privacy')} className={`${bodyText} transition hover:text-white/80`}>
-                            {text.privacy}
+                            {t('privacy')}
                         </Link>
                         <Link href={withLocalePath(locale, '/credits')} className={`${bodyText} transition hover:text-white/80`}>
-                            {text.terms}
+                            {t('terms')}
                         </Link>
-                        <p className={bodyText}>{text.copyright}</p>
+                        <p className={bodyText}>{copyright}</p>
                     </div>
                 </div>
             </div>

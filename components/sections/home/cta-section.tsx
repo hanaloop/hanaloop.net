@@ -1,43 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
-
-type HomeCtaSectionProps = {
-    locale: AppLocale;
-};
-
-type CtaCopy = {
-    eyebrow: string;
-    heading: string;
-    mobileHeadingLines: [string, string, string];
-    solutionLabel: string;
-    contactLabel: string;
-};
-
-const copy: Record<AppLocale, CtaCopy> = {
-    ko: {
-        eyebrow: '체계적인 탄소 관리, 하나에코와 함께하세요.',
-        heading: 'Start Systematic Carbon Management with Hana Eco.',
-        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
-        solutionLabel: 'Solution Overview',
-        contactLabel: 'Contact Us',
-    },
-    en: {
-        eyebrow: 'Start systematic carbon management with Hana Eco.',
-        heading: 'Start Systematic Carbon Management with Hana Eco.',
-        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
-        solutionLabel: 'Solution Overview',
-        contactLabel: 'Contact Us',
-    },
-    es: {
-        eyebrow: 'Comienza la gestión sistemática de carbono con Hana Eco.',
-        heading: 'Start Systematic Carbon Management with Hana Eco.',
-        mobileHeadingLines: ['Start Systematic', 'Carbon Management', 'with Hana Eco.'],
-        solutionLabel: 'Solution Overview',
-        contactLabel: 'Contact Us',
-    },
-};
 
 function CtaButton({ href, label, locale }: { href: string; label: string; locale: AppLocale }) {
     return (
@@ -52,26 +17,29 @@ function CtaButton({ href, label, locale }: { href: string; label: string; local
     );
 }
 
-export function HomeCtaSection({ locale }: HomeCtaSectionProps) {
-    const text = copy[locale];
+export async function HomeCtaSection() {
+    const t = await getTranslations('HomeCta');
+    const locale = await getLocale() as AppLocale;
+
+    const mobileHeadingLines = t.raw('mobileHeadingLines') as string[];
 
     return (
         <section className="px-5 pb-[80px] pt-[72px] md:px-8 md:pb-[100px] md:pt-[90px] lg:px-[64px] lg:pb-[140px] lg:pt-[120px]">
             <div className="mx-auto w-full max-w-[1440px] text-center">
-                <p className="text-[16px] font-semibold leading-[1.3] tracking-[-0.01em] text-[#222222] lg:hidden">{text.eyebrow}</p>
+                <p className="text-[16px] font-semibold leading-[1.3] tracking-[-0.01em] text-[#222222] lg:hidden">{t('eyebrow')}</p>
                 <h2
                     className="mx-auto mt-5 font-medium leading-[1.06] tracking-[-0.03em] text-[#202124] [font-size:clamp(28px,12vw,72px)] lg:mt-0 lg:tracking-[-0.02em]"
                     style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 500, letterSpacing: '-0.25px' }}
                 >
-                    {text.mobileHeadingLines.map((line) => (
+                    {mobileHeadingLines.map((line) => (
                         <span key={line} className="block lg:hidden">{line}</span>
                     ))}
-                    <span className="hidden lg:inline lg:text-[42px]">{text.heading}</span>
+                    <span className="hidden lg:inline lg:text-[42px]">{t('heading')}</span>
                 </h2>
 
                 <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-4 sm:flex-row sm:justify-center lg:mt-16 lg:max-w-none lg:gap-6">
-                    <CtaButton href="/solution" label={text.solutionLabel} locale={locale} />
-                    <CtaButton href="/partnership" label={text.contactLabel} locale={locale} />
+                    <CtaButton href="/solution" label={t('solutionLabel')} locale={locale} />
+                    <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} />
                 </div>
             </div>
         </section>

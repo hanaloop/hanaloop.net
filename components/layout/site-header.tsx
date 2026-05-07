@@ -1,8 +1,9 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useMemo, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { isLocale, stripBasePath, withLocalePath } from '@/lib/locales';
 import type { MobileContextualNav } from '@/lib/mobile-nav';
@@ -18,12 +19,6 @@ const ICON = {
     menuLight: '/icons/revamp/ic-menu-white.png',
     menuDark: '/icons/revamp/ic-menu-dark.png',
 } as const;
-
-const headerCopy: Record<AppLocale, { openMenu: string; hanaEco: string }> = {
-    ko: { openMenu: '메뉴 열기', hanaEco: 'Hana.eco' },
-    en: { openMenu: 'Open menu', hanaEco: 'Hana.eco' },
-    es: { openMenu: 'Abrir menu', hanaEco: 'Hana.eco' },
-};
 
 function NavDropdownItem({ item, locale }: { item: MenuItem; locale: AppLocale }) {
     if (item.external) {
@@ -50,8 +45,9 @@ type SiteHeaderProps = {
 };
 
 export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav, initialDark }: SiteHeaderProps) {
-    const text = headerCopy[locale];
-    const menus = buildMenus(locale);
+    const t = useTranslations('SiteHeader');
+    const tNav = useTranslations('Nav');
+    const menus = buildMenus(locale, tNav);
     const [scrolled, setScrolled] = useState(false);
     const [menuHovered, setMenuHovered] = useState(false);
     const [localeMenuOpen, setLocaleMenuOpen] = useState(false);
@@ -79,10 +75,10 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
             >
                 <div className="mx-auto flex h-[56px] w-full items-center justify-between px-6">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 inline-flex h-[56px] items-center">
-                        <Image src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} style={{ height: '19px', width: 'auto' }} priority={isHome} />
+                        <Image src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} priority={isHome} />
                     </Link>
 
-                    <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label={text.openMenu}>
+                    <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label={t('openMenu')}>
                         <span className="inline-flex h-10 w-10 items-center justify-center">
                             <Image src={mobileSolid ? ICON.menuDark : ICON.menuLight} alt="" width={40} height={40} aria-hidden="true" className="h-10 w-10" />
                         </span>
@@ -104,7 +100,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
             >
                 <div className="flex items-center gap-5">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 flex items-center">
-                        <Image src={ICON.logoLight} alt="HanaLoop" width={168} height={34} style={{ height: '20px', width: 'auto' }} className="brightness-0 invert" />
+                        <Image src={ICON.logoLight} alt="HanaLoop" width={168} height={20} className="brightness-0 invert" />
                     </Link>
                 </div>
 
@@ -127,7 +123,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
                             </div>
                         ))}
                         <a href="https://www.hana.eco" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md px-3 py-2 text-[14px] font-medium leading-none text-white transition">
-                            <span>{text.hanaEco}</span>
+                            <span>{t('hanaEco')}</span>
                             <Image src={ICON.link} alt="" width={8} height={8} aria-hidden="true" className="h-2 w-2" />
                         </a>
                     </nav>

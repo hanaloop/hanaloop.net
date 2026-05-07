@@ -2,7 +2,8 @@ import { SiteShell } from '@/components/layout/site-shell';
 import { HanaAiHeroSection } from '@/components/sections/hana-ai/hero-section';
 import { HanaAiOverviewSection } from '@/components/sections/hana-ai/overview-section';
 import { HanaAiProcessSection } from '@/components/sections/hana-ai/process-section';
-import { defaultLocale, isLocale, locales } from '@/lib/locales';
+import { notFound } from 'next/navigation';
+import { isLocale, locales } from '@/lib/locales';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -10,19 +11,17 @@ type Props = {
 
 export default async function Page({ params }: Props) {
     const { locale } = await params;
-    const resolvedLocale = isLocale(locale) ? locale : defaultLocale;
+    if (!isLocale(locale)) notFound();
 
     return (
         <SiteShell>
-            <HanaAiHeroSection locale={resolvedLocale} />
-            <HanaAiOverviewSection locale={resolvedLocale} />
-            <HanaAiProcessSection locale={resolvedLocale} />
+            <HanaAiHeroSection />
+            <HanaAiOverviewSection />
+            <HanaAiProcessSection />
         </SiteShell>
     );
 }
 
 export function generateStaticParams() {
-    return locales
-        .filter((locale) => locale !== defaultLocale)
-        .map((locale) => ({ locale }));
+    return locales.map((locale) => ({ locale }));
 }

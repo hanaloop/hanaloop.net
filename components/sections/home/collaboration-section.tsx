@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
@@ -6,6 +6,7 @@ import Link from 'next/link';
 import type { Swiper as SwiperType } from 'swiper';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslations, useLocale } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import 'swiper/css';
@@ -13,25 +14,20 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './CollaborationSlider.css';
 
-type HomeCollaborationSectionProps = {
-    locale: AppLocale;
-};
-
 type CollaborationItem = {
     id: string;
     title: string;
-    subtitle: Record<AppLocale, string>;
-    summary: Record<AppLocale, string>;
-    points: Record<AppLocale, string[]>;
+    subtitle: string;
+    summary: string;
+    points: string[];
     cardImage: string;
     logoImage: string;
 };
 
-type IntroCopy = {
-    badge: string;
-    titleLines: [string, string];
-    description: string;
-    viewMore: string;
+type CollaborationTranslation = {
+    subtitle: string;
+    summary: string;
+    points: string[];
 };
 
 type LoopSlide = {
@@ -40,28 +36,14 @@ type LoopSlide = {
     fixedIndex: number;
 };
 
-const introCopy: Record<AppLocale, IntroCopy> = {
-    ko: {
-        badge: 'Our Partners',
-        titleLines: ['A lot of companies are', 'working together.'],
-        description: '많은 기업들이 하나루프와 함께하고있습니다.',
-        viewMore: 'View more collaboration',
-    },
-    en: {
-        badge: 'Our Partners',
-        titleLines: ['A lot of companies are', 'working together.'],
-        description: 'Many companies are collaborating with HanaLoop.',
-        viewMore: 'View more collaboration',
-    },
-    es: {
-        badge: 'Our Partners',
-        titleLines: ['A lot of companies are', 'working together.'],
-        description: 'Muchas empresas colaboran con HanaLoop.',
-        viewMore: 'View more collaboration',
-    },
-};
+const staticCollaborations = [
+    { id: 'sama', title: 'SamA', cardImage: '/images/revamp/home/collaboration/sama-img.png', logoImage: '/images/revamp/home/collaboration/sama.png' },
+    { id: 'daehoal', title: 'DAEHOAL', cardImage: '/images/revamp/home/collaboration/daehoal-img.png', logoImage: '/images/revamp/home/collaboration/daehoal.png' },
+    { id: 'samyang', title: 'SAMYANG', cardImage: '/images/revamp/home/collaboration/samyang-img.png', logoImage: '/images/revamp/home/collaboration/samyang.png' },
+    { id: 'doosan', title: 'DOOSAN', cardImage: '/images/revamp/home/collaboration/doosan-img.png', logoImage: '/images/revamp/home/collaboration/doosan.png' },
+] as const;
 
-function makeSlides(sourceIndices: number[]): LoopSlide[] {
+function makeSlides(collaborations: CollaborationItem[], sourceIndices: number[]): LoopSlide[] {
     return sourceIndices.map((sourceIndex, fixedIndex) => ({
         item: collaborations[sourceIndex],
         sourceIndex,
@@ -69,70 +51,25 @@ function makeSlides(sourceIndices: number[]): LoopSlide[] {
     }));
 }
 
-const collaborations: CollaborationItem[] = [
-    {
-        id: 'sama',
-        title: 'SamA',
-        subtitle: { ko: '', en: '', es: '' },
-        summary: { ko: '건설자재', en: 'Construction Materials', es: 'Materiales de Construcción' },
-        points: {
-            ko: ['배출권거래제', '다수 사업장 75% 노력 감축'],
-            en: ['Emissions Trading Scheme', '75% effort reduction across multiple sites'],
-            es: ['Sistema de comercio de emisiones', 'Reducción del 75% en múltiples sitios'],
-        },
-        cardImage: '/images/revamp/home/collaboration/sama-img.png',
-        logoImage: '/images/revamp/home/collaboration/sama.png',
-    },
-    {
-        id: 'daehoal',
-        title: 'DAEHOAL',
-        subtitle: { ko: '', en: '', es: '' },
-        summary: { ko: '비철산업', en: 'Non-ferrous Industry', es: 'Industria No Ferrosa' },
-        points: {
-            ko: ['배출권 거래제 대응', 'CBAM 대응'],
-            en: ['K-ETS compliance', 'CBAM compliance'],
-            es: ['Cumplimiento K-ETS', 'Cumplimiento CBAM'],
-        },
-        cardImage: '/images/revamp/home/collaboration/daehoal-img.png',
-        logoImage: '/images/revamp/home/collaboration/daehoal.png',
-    },
-    {
-        id: 'samyang',
-        title: 'SAMYANG',
-        subtitle: { ko: '', en: '', es: '' },
-        summary: { ko: '금속산업', en: 'Metal Industry', es: 'Industria Metalúrgica' },
-        points: {
-            ko: ['CBAM대상, 비전문가도 쉽게', '수출 사업장 대응'],
-            en: ['CBAM: easy for non-experts', 'Export site compliance'],
-            es: ['CBAM: fácil para no expertos', 'Cumplimiento en sitios de exportación'],
-        },
-        cardImage: '/images/revamp/home/collaboration/samyang-img.png',
-        logoImage: '/images/revamp/home/collaboration/samyang.png',
-    },
-    {
-        id: 'doosan',
-        title: 'DOOSAN',
-        subtitle: { ko: '두산에너빌리티', en: 'Doosan Enerbility', es: 'Doosan Enerbility' },
-        summary: { ko: '재생에너지', en: 'Renewable Energy', es: 'Energía Renovable' },
-        points: {
-            ko: ['스코프3 관리, 더 완전한 지속 가능성', '보고와 CDP 개선'],
-            en: ['Scope 3 management for fuller sustainability', 'CDP reporting improvement'],
-            es: ['Gestión Scope 3 para mayor sostenibilidad', 'Mejora de informes CDP'],
-        },
-        cardImage: '/images/revamp/home/collaboration/doosan-img.png',
-        logoImage: '/images/revamp/home/collaboration/doosan.png',
-    },
-];
+export function HomeCollaborationSection() {
+    const t = useTranslations('HomeCollaboration');
+    const locale = useLocale() as AppLocale;
+    const collaborationTranslations = t.raw('collaborations') as CollaborationTranslation[];
 
-export function HomeCollaborationSection({ locale }: HomeCollaborationSectionProps) {
-    const copy = introCopy[locale];
+    const collaborations: CollaborationItem[] = staticCollaborations.map((item, i) => ({
+        ...item,
+        subtitle: collaborationTranslations[i]?.subtitle ?? '',
+        summary: collaborationTranslations[i]?.summary ?? '',
+        points: collaborationTranslations[i]?.points ?? [],
+    }));
+
     const cardSwiperRef = useRef<SwiperType | null>(null);
     const [viewportMode, setViewportMode] = useState<'mobile' | 'lg' | 'desktop'>('desktop');
     const [activeIndex, setActiveIndex] = useState(3);
 
-    const desktopSlides = useMemo(() => makeSlides([0, 1, 2, 3, 0, 1, 2]), []);
-    const mobileSlides = useMemo(() => makeSlides([0, 1, 2, 3]), []);
-    const lgSlides = useMemo(() => makeSlides([0, 1, 2, 3, 0]), []);
+    const desktopSlides = useMemo(() => makeSlides(collaborations, [0, 1, 2, 3, 0, 1, 2]), [collaborations]);
+    const mobileSlides = useMemo(() => makeSlides(collaborations, [0, 1, 2, 3]), [collaborations]);
+    const lgSlides = useMemo(() => makeSlides(collaborations, [0, 1, 2, 3, 0]), [collaborations]);
 
     const visibleSlides = useMemo(() => {
         if (viewportMode === 'mobile') return mobileSlides;
@@ -187,13 +124,14 @@ export function HomeCollaborationSection({ locale }: HomeCollaborationSectionPro
             <div className="mx-auto w-full max-w-[1440px]">
                 <div className="px-11 mx-auto text-center lg:text-left">
                     <div className="mb-5 flex justify-center lg:hidden">
-                        <span className="home-collaboration-badge">{copy.badge}</span>
+                        <span className="home-collaboration-badge">{t('badge')}</span>
                     </div>
                     <h2 className="mx-auto max-w-[680px] font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,4vw,48px)] lg:mx-0 lg:text-left">
-                        <span className="block whitespace-nowrap">{copy.titleLines[0]}</span>
-                        <span className="block whitespace-nowrap">{copy.titleLines[1]}</span>
+                        {(t.raw('titleLines') as string[]).map((line: string) => (
+                            <span key={line} className="block whitespace-nowrap">{line}</span>
+                        ))}
                     </h2>
-                    <p className="mt-4 lg:text-[21px] font-medium leading-[1.5] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,1.4vw,30px)]">{copy.description}</p>
+                    <p className="mt-4 lg:text-[21px] font-medium leading-[1.5] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,1.4vw,30px)]">{t('description')}</p>
                 </div>
 
                 <div className="collaboration-center-stack">
@@ -227,10 +165,10 @@ export function HomeCollaborationSection({ locale }: HomeCollaborationSectionPro
                                         <div className="collaboration-card-overlay" />
                                         <div className="collaboration-card-content">
                                             <Image src={slide.item.logoImage} alt={`${slide.item.title} logo`} width={110} height={34} className="collaboration-card-logo" />
-                                            <p className="collaboration-card-subtitle">{slide.item.subtitle[locale]}</p>
+                                            <p className="collaboration-card-subtitle">{slide.item.subtitle}</p>
                                             <div className="collaboration-card-copy">
-                                                <p className="collaboration-card-summary">{slide.item.summary[locale]}</p>
-                                                {slide.item.points[locale].map((point) => (
+                                                <p className="collaboration-card-summary">{slide.item.summary}</p>
+                                                {slide.item.points.map((point) => (
                                                     <p key={`${slide.fixedIndex}-${point}`} className="collaboration-card-point">
                                                         {point}
                                                     </p>
@@ -267,7 +205,7 @@ export function HomeCollaborationSection({ locale }: HomeCollaborationSectionPro
                     <div className="mt-18 flex justify-center">
                         <div className="collaboration-cta-group">
                             <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-text text-[15px] lg:text-[20px]">
-                                <span>{copy.viewMore}</span>
+                                <span>{t('viewMore')}</span>
                             </Link>
                             <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-arrow" aria-label="Open collaboration">
                                 <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" aria-hidden="true" width={20} height={20} className="h-4 w-4 shrink-0 lg:h-5 lg:w-5" />
