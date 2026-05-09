@@ -53,10 +53,10 @@ export function HomeRegulatoryComplianceSection() {
                                 slidesPerView={'auto'}
                                 spaceBetween={12}
                                 pagination={{ clickable: true }}
-                                className="regulatory-mobile-swiper overflow-visible pb-10 [&_.swiper-pagination]:!-bottom-1 [&_.swiper-pagination-bullet]:!mx-[3px] [&_.swiper-pagination-bullet]:!h-[7px] [&_.swiper-pagination-bullet]:!w-[7px] [&_.swiper-pagination-bullet]:!rounded-full [&_.swiper-pagination-bullet]:!bg-[rgba(182,193,211,0.64)] [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:!transition-all [&_.swiper-pagination-bullet-active]:!w-[34px] [&_.swiper-pagination-bullet-active]:!bg-[rgba(198,213,238,0.95)]"
+                                className="regulatory-mobile-swiper overflow-visible pb-12 [&_.swiper-pagination]:!-bottom-0.5 [&_.swiper-pagination-bullet]:!mx-[3px] [&_.swiper-pagination-bullet]:!h-[7px] [&_.swiper-pagination-bullet]:!w-[7px] [&_.swiper-pagination-bullet]:!rounded-full [&_.swiper-pagination-bullet]:!bg-[rgba(182,193,211,0.64)] [&_.swiper-pagination-bullet]:!opacity-100 [&_.swiper-pagination-bullet]:!transition-all [&_.swiper-pagination-bullet-active]:!w-[34px] [&_.swiper-pagination-bullet-active]:!bg-[rgba(198,213,238,0.95)]"
                             >
                                 {cards.map((card, index) => (
-                                    <SwiperSlide key={`mobile-${card.title}-${index}`} className="!w-[226px]">
+                                    <SwiperSlide key={`mobile-${card.title}-${index}`} className="!w-[226px] pb-7">
                                         <article className="min-h-[249px] rounded-[14px] border border-white/20 bg-[rgba(228,236,245,0.2)] p-[14px_14px_12px] text-[#eaf1f7] backdrop-blur-[3px]">
                                             <h3 className="text-[18px] font-semibold leading-[1.45] tracking-[-0.01em]">{card.title}</h3>
                                             <p className="mt-1.5 text-[13px] font-medium leading-[1.5] opacity-90">{card.subtitle}</p>

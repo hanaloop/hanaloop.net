@@ -7,7 +7,7 @@ import bgImage from '@/public/site/solution/climate-management-bg.png';
 
 export async function SolutionClimateManagementSection() {
     const t = await getTranslations('SolutionClimateManagement');
-    const locale = await getLocale() as AppLocale;
+    const locale = (await getLocale()) as AppLocale;
     const [messageFirstLine, messageSecondLine] = t('message').split('\n');
 
     return (
@@ -17,7 +17,7 @@ export async function SolutionClimateManagementSection() {
                     className="text-black"
                     style={{
                         fontSize: 'clamp(34px, calc(24.54px + 1.97vw), 60px)',
-                        fontWeight: 500,
+                        fontWeight: 700,
                         letterSpacing: '-1px',
                         lineHeight: 1.13,
                     }}
@@ -54,24 +54,24 @@ export async function SolutionClimateManagementSection() {
             <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden">
                 <div className="space-y-14 px-5 md:px-8">
                     <article>
-                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>{t('itemOneTitle')}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>
+                            {t('itemOneTitle')}
+                        </h3>
                         <p className="mt-4" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {t('itemOneBody')}
                         </p>
                     </article>
 
                     <article>
-                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>{t('itemTwoTitle')}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: 'clamp(32px, calc(22.55px + 1.97vw), 42px)', fontWeight: 700, lineHeight: 1.28 }}>
+                            {t('itemTwoTitle')}
+                        </h3>
                         <p className="mt-4" style={{ fontSize: 'clamp(16px, calc(14.12px + 0.39vw), 18px)', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {t('itemTwoBody')}
                         </p>
                     </article>
 
-                    <RoundedArrowButton
-                        href={withLocalePath(locale, '/partnership')}
-                        label={t('contactLabel')}
-                        className="w-full max-w-[320px] px-8 md:w-[279px] md:px-12"
-                    />
+                    <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={t('contactLabel')} className="w-full max-w-[320px] px-8 md:w-[279px] md:px-12" />
                 </div>
 
                 <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
@@ -82,14 +82,18 @@ export async function SolutionClimateManagementSection() {
             <div className="mt-18 hidden items-center justify-between gap-10 lg:flex lg:pl-[calc((100vw-1440px)/2)]">
                 <div className="max-w-[640px] flex-1 space-y-24 pt-2 pl-11">
                     <article>
-                        <h3 className='text-gradient-brand' style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28,  }}>{t('itemOneTitle')}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28 }}>
+                            {t('itemOneTitle')}
+                        </h3>
                         <p className="mt-6" style={{ fontSize: '18px', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {t('itemOneBody')}
                         </p>
                     </article>
 
                     <article>
-                        <h3 className='text-gradient-brand' style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28,  }}>{t('itemTwoTitle')}</h3>
+                        <h3 className="text-gradient-brand" style={{ fontSize: '42px', fontWeight: 700, lineHeight: 1.28 }}>
+                            {t('itemTwoTitle')}
+                        </h3>
                         <p className="mt-6" style={{ fontSize: '18px', fontWeight: 500, letterSpacing: '0.5px', lineHeight: 1.58 }}>
                             {t('itemTwoBody')}
                         </p>

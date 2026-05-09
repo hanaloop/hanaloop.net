@@ -246,6 +246,7 @@
     }
 
     .collaboration-logo-button .collaboration-logo-image {
+        object-fit: contain;
         max-height: 24px;
     }
 

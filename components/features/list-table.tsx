@@ -67,12 +67,12 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                     {currentItems.map((item) => (
                         <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-6 border-b border-[#d0d0d0] px-6 py-4">
                             <div className="min-w-0">
-                                <h4 className="truncate text-[12px] md:text-[18px] lg:text-[24px] font-medium leading-[1.3] text-[var(--color-text-default)]">
+                                <h4 className="truncate text-[14px] md:text-[18px] lg:text-[24px] font-medium leading-[1.3] text-[var(--color-text-default)]">
                                     <Link href={item.href} className="hover:underline">
                                         {item.title}
                                     </Link>
                                 </h4>
-                                <p className="mt-2 text-[10px] md:text-[14px] lg:text-[18px] font-normal leading-none text-[#6a6a6a]">
+                                <p className="mt-2 text-[14px] lg:text-[18px] font-normal leading-none text-[#6a6a6a]">
                                     {item.dateText}, by {item.author}
                                 </p>
                             </div>

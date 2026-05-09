@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useMemo, useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import faqItems from '@/lib/data/home-faqs.json';
@@ -16,7 +15,7 @@ function FaqRow({ question, answer, expanded, onToggle }: { question: string; an
         <article className="border-b border-[rgba(255,255,255,0.2)] lg:px-11">
             <button type="button" className="flex w-full cursor-pointer items-center justify-between gap-5 py-6 text-left lg:py-7" onClick={onToggle} aria-expanded={expanded}>
                 <h3 className="text-[18px] font-semibold leading-[1.5] tracking-[0.5px] text-white">{question}</h3>
-                <Image src={expanded ? '/site/icons/minus.png' : '/site/icons/plus.png'} alt={expanded ? 'collapse' : 'expand'} width={11} height={11} className="shrink-0" />
+                <img src={expanded ? '/site/icons/minus.png' : '/site/icons/plus.png'} alt={expanded ? 'collapse' : 'expand'} width={11} height={11} className="shrink-0" />
             </button>
             <div className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${expanded ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}>
                 <div className="overflow-hidden">
@@ -43,8 +42,8 @@ export function HomeFaqSection() {
         <section className="mt-28 px-0 pb-5 pt-0 md:px-8 md:pb-8 lg:px-0 lg:pb-10">
             <div className="mx-auto w-full max-w-[1440px] overflow-hidden rounded-t-[34px] bg-[var(--color-mobile-dark-bg)] px-6 md:px-11 pb-9 pt-[62px] md:rounded-t-[42px] lg:pb-[58px] lg:pt-[92px]">
                 <header className="text-center lg:text-left lg:px-11">
-                    <p className="text-[21px] font-semibold leading-[1.3] tracking-[0.5px] text-white">{t('eyebrow')}</p>
-                    <h2 className="mt-1 text-[56px] font-medium leading-[1.08] tracking-[-1px] text-white lg:text-[64px]">{t('heading')}</h2>
+                    <p className="[font-size:clamp(13px,4vw,21px)] font-semibold leading-[1.3] tracking-[0.5px] text-white">{t('eyebrow')}</p>
+                    <h2 className="mt-1 lg:font-medium leading-[1.08] tracking-[-1px] text-white [font-size:clamp(28px,8vw,64px)]">{t('heading')}</h2>
                 </header>
 
                 <div className="mt-9 lg:mt-10" />

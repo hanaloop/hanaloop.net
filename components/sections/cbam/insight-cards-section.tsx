@@ -19,13 +19,13 @@ export async function CbamInsightCardsSection() {
     const items = t.raw('items') as InsightItem[];
 
     return (
-        <section className="px-5 pb-16 pt-16 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={t('sectionAriaLabel')}>
+        <section className="lg:px-5 py-10 lg:py-16 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <h2 className="text-center text-black [font-size:clamp(24px,6vw,48px)] font-medium leading-[1.25] tracking-[-1px]">{t('heading')}</h2>
 
-                <div className="mt-20 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-[28px]">
+                <div className="mt-10 lg:mt-20 grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-[28px]">
                     {items.map((item) => (
-                        <Link key={item.id} href={withLocalePath(locale, item.href)} className="group relative flex h-[320px] w-full flex-col rounded-[14px] bg-[#07090c] px-[22px] pb-[26px] pt-[28px] transition hover:brightness-110">
+                        <Link key={item.id} href={withLocalePath(locale, item.href)} className="group relative flex w-full flex-col rounded-[14px] bg-[#07090c] px-[22px] pb-[26px] pt-[28px] transition hover:brightness-110">
                             <h3 className="[font-size:clamp(18px,2.5vw,21px)] font-semibold leading-[1.45] tracking-[-0.25px] text-white">{item.title}</h3>
                             <p className="mt-[2px] [font-size:clamp(14px,2.5vw,18px)] font-semibold leading-[1.45] tracking-[-0.25px] text-white">{item.subtitle}</p>
 

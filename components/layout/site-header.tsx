@@ -73,7 +73,7 @@ export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileConte
             <header className={`fixed inset-x-0 top-0 z-50 h-[56px] overflow-hidden transition-all duration-300 lg:hidden ${mobileHeaderClassName}`}>
                 <div className="mx-auto flex h-[56px] w-full items-center justify-between px-6">
                     <Link href={withLocalePath(locale, '/')} className="relative z-10 inline-flex h-[56px] items-center">
-                        <img src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={143} height={19} className="h-auto w-[143px]" />
+                        <img src={mobileSolid ? ICON.logoDark : ICON.logoLight} alt="HanaLoop" width={130} height={19} />
                     </Link>
 
                     <label htmlFor="mobile-menu-toggle" className="relative z-10 inline-flex h-[56px] cursor-pointer items-center justify-center" aria-label={t('openMenu')}>

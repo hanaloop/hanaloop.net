@@ -17,7 +17,7 @@ export async function Scope3OverviewSection() {
                     className="text-black"
                     style={{
                         fontSize: 'clamp(34px, calc(24.54px + 1.97vw), 60px)',
-                        fontWeight: 500,
+                        fontWeight: 700,
                         letterSpacing: '-1px',
                         lineHeight: 1.13,
                     }}
@@ -77,10 +77,7 @@ export async function Scope3OverviewSection() {
                     <div className="mx-auto flex h-full w-full max-w-[1440px] items-center px-5 py-20 md:px-8 lg:px-12">
                         <div className="grid w-full items-stretch gap-5 lg:grid-cols-3">
                             {cards.map((card) => (
-                                <article
-                                    key={card.number}
-                                    className="h-full rounded-[18px] border border-white/10 bg-[rgba(0,0,0,0.42)] px-7 py-7 backdrop-blur-[2px] lg:min-h-[376px] lg:px-8 lg:py-10"
-                                >
+                                <article key={card.number} className="h-full rounded-[18px] border border-white/10 bg-[rgba(0,0,0,0.42)] px-7 py-7 backdrop-blur-[2px] lg:min-h-[376px] lg:px-8 lg:py-10">
                                     <p
                                         style={{
                                             background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)',

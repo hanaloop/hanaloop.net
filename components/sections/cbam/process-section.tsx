@@ -22,7 +22,7 @@ export async function CbamProcessSection() {
                             {steps.map((step) => (
                                 <div key={`${step.heading}-mobile`}>
                                     <p className="text-white font-medium tracking-[-0.25px] [font-size:clamp(16px,4vw,24px)]">{step.heading}</p>
-                                    <div className="mt-2 flex w-full items-end">
+                                    <div className="flex w-full items-end">
                                         <span className="block h-px flex-1 bg-white/80" />
                                         <span
                                             className="relative block h-[17px] w-[17px] shrink-0 border-b border-white/80"

@@ -10,7 +10,7 @@ export async function HanaAiOverviewSection() {
                     className="text-black"
                     style={{
                         fontSize: 'clamp(34px, calc(24.54px + 1.97vw), 60px)',
-                        fontWeight: 500,
+                        fontWeight: 700,
                         letterSpacing: '-1px',
                         lineHeight: 1.13,
                     }}

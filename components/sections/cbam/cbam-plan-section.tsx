@@ -1,4 +1,3 @@
-import type { CSSProperties } from 'react';
 import type { AppLocale } from '@/lib/locales';
 
 type CbamPlanSectionProps = {
@@ -13,27 +12,6 @@ type PlanCopy = {
         items: string[];
     }>;
     imageAlt: string;
-};
-
-const HEADING_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 6vw, 48px)',
-    fontWeight: 500,
-    letterSpacing: '-1px',
-    lineHeight: 1.2,
-};
-
-const CARD_TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 4vw, 28px)',
-    fontWeight: 600,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.35,
-};
-
-const CARD_ITEM_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 4vw, 18px)',
-    fontWeight: 500,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.55,
 };
 
 const copy: Record<AppLocale, PlanCopy> = {
@@ -102,20 +80,16 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
     return (
         <section className="px-5 pb-16 pt-22 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[110px]" aria-label={text.sectionAriaLabel}>
             <div className="mx-auto w-full max-w-[1440px] lg:px-[80px]">
-                <h2 className="text-center text-black" style={HEADING_STYLE}>
-                    {text.heading}
-                </h2>
+                <h2 className="text-center text-[clamp(24px,6vw,48px)] font-bold leading-[1.2] tracking-[-1px] text-black">{text.heading}</h2>
 
                 <div className="mt-12 grid grid-cols-1 gap-9 lg:mt-[86px] lg:grid-cols-3 lg:gap-10">
                     {text.cards.map((card) => (
                         <article key={card.title}>
-                            <h3 className="text-black" style={CARD_TITLE_STYLE}>
-                                {card.title}
-                            </h3>
+                            <h3 className="text-[clamp(18px,4vw,28px)] font-semibold leading-[1.35] tracking-[-0.25px] text-black">{card.title}</h3>
                             <div className="mt-3 h-px w-full bg-black/45 lg:mt-4" />
-                            <ul className="mt-5 list-disc space-y-2 pl-5 text-[#535353] lg:mt-7">
+                            <ul className="mt-5 list-disc space-y-2 pl-5 text-[#4C4C4C] lg:mt-7">
                                 {card.items.map((item) => (
-                                    <li key={item} style={CARD_ITEM_STYLE}>
+                                    <li key={item} className="text-[clamp(14px,4vw,18px)] font-medium leading-[1.55] tracking-[-0.25px]">
                                         {item}
                                     </li>
                                 ))}
@@ -125,7 +99,8 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
                 </div>
 
                 <div className="mt-12 overflow-hidden rounded-[20px] lg:mt-[58px]">
-                    <img src="/site/cbam/plan-bg.png" alt={text.imageAlt} className="h-auto w-full" loading="eager" />
+                    <img src="/site/cbam/plan-bg-mobile.jpg" alt={text.imageAlt} className="h-auto w-full lg:hidden" loading="eager" />
+                    <img src="/site/cbam/plan-bg.png" alt={text.imageAlt} className="hidden h-auto w-full lg:block" loading="eager" />
                 </div>
             </div>
         </section>
