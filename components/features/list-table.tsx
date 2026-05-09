@@ -57,7 +57,7 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
     const pagination = useMemo(() => getPaginationRange(currentPage, totalPages), [currentPage, totalPages]);
 
     return (
-        <div className="mt-10 border-t border-[#bdbdbd] max-w-[1440px] mx-auto px-11">
+        <div className="mt-10 border-t border-[#bdbdbd] max-w-[1440px] mx-auto px-4">
             <div className="border-b border-[#d0d0d0] px-6 py-4">
                 <h3 className="text-[16px] md:text-[24px] lg:text-[32px] font-medium leading-none text-[var(--color-text-default)]">{heading}</h3>
             </div>
@@ -89,21 +89,28 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                                     First
                                 </button>
                             )}
-                            {pagination.map((token, idx) =>
-                                token === '...' ? (
-                                    <span key={`ellipsis-${idx}`}>...</span>
-                                ) : (
-                                    <button
-                                        key={token}
-                                        type="button"
-                                        className={token === currentPage ? 'font-semibold cursor-default' : 'font-normal cursor-pointer hover:underline'}
-                                        onClick={token === currentPage ? undefined : () => setCurrentPage(token)}
-                                        aria-current={token === currentPage ? 'page' : undefined}
-                                    >
-                                        {token}
-                                    </button>
-                                ),
-                            )}
+                            {pagination.map((token, idx) => {
+                                const next = pagination[idx + 1];
+                                const showDotSeparator = typeof token === 'number' && typeof next === 'number';
+                                const tokenLabel = token === '...' ? '...' : `${token}${showDotSeparator ? '.' : ''}`;
+
+                                return (
+                                    <span key={`page-token-${idx}`} className="inline-flex items-center">
+                                        {token === '...' ? (
+                                            <span>{tokenLabel}</span>
+                                        ) : (
+                                            <button
+                                                type="button"
+                                                className={token === currentPage ? 'font-semibold cursor-default' : 'font-normal cursor-pointer hover:underline'}
+                                                onClick={token === currentPage ? undefined : () => setCurrentPage(token)}
+                                                aria-current={token === currentPage ? 'page' : undefined}
+                                            >
+                                                {tokenLabel}
+                                            </button>
+                                        )}
+                                    </span>
+                                );
+                            })}
                             {currentPage < totalPages && (
                                 <button type="button" className="cursor-pointer hover:underline" onClick={() => setCurrentPage(totalPages)}>
                                     Last
@@ -113,19 +120,15 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                         {viewMoreHref && viewMoreLabel ? (
                             <Link href={viewMoreHref} className="inline-flex items-center gap-2 text-[24px] font-medium leading-none text-[var(--color-text-default)]">
                                 <span>{viewMoreLabel}</span>
-                                <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" width={17} height={17} className="h-[17px] w-[17px]" />
+                                <Image src="/site/icons/ic-arrow-right-black.png" alt="" width={17} height={17} className="h-[17px] w-[17px]" />
                             </Link>
                         ) : null}
                     </div>
                 </>
             ) : (
                 <div className="border-b border-[#d0d0d0] px-6 py-14 text-center">
-                    <p className="text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-[1.4] text-[var(--color-text-default)]">
-                        {emptyTitle ?? 'No posts yet'}
-                    </p>
-                    <p className="mt-3 text-[13px] md:text-[15px] lg:text-[16px] leading-[1.6] text-[#6a6a6a]">
-                        {emptyDescription ?? 'There are no published items at the moment. Please check back soon.'}
-                    </p>
+                    <p className="text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-[1.4] text-[var(--color-text-default)]">{emptyTitle ?? 'No posts yet'}</p>
+                    <p className="mt-3 text-[13px] md:text-[15px] lg:text-[16px] leading-[1.6] text-[#6a6a6a]">{emptyDescription ?? 'There are no published items at the moment. Please check back soon.'}</p>
                 </div>
             )}
         </div>

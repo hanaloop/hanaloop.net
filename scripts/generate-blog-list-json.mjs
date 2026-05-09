@@ -5,7 +5,7 @@ import YAML from 'yaml';
 
 const LOCALES = ['ko', 'en', 'es'];
 const DEFAULT_LOCALE = 'ko';
-const FALLBACK_THUMBNAIL = '/images/revamp/home-feature-bg-01.png';
+const FALLBACK_THUMBNAIL = '/site/home/hero-bg-main.png';
 
 function walkMarkdownFiles(rootDir) {
   if (!fs.existsSync(rootDir)) return [];

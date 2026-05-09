@@ -50,7 +50,7 @@ export async function Scope3MainFeaturesSection() {
                 </div>
                 <div className="mt-10 overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
                     <Image
-                        src="/images/revamp/scope3/main-features-bg.png"
+                        src="/site/scope3/main-features-bg.png"
                         alt={t('imageAlt')}
                         width={940}
                         height={969}
@@ -86,7 +86,7 @@ export async function Scope3MainFeaturesSection() {
 
                 <div className="overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:w-[min(957px,50vw)] lg:shrink-0">
                     <Image
-                        src="/images/revamp/scope3/main-features-bg.png"
+                        src="/site/scope3/main-features-bg.png"
                         alt={t('imageAlt')}
                         width={940}
                         height={969}

@@ -14,10 +14,10 @@ const insightLinks = [
 ] as const;
 
 const ICON = {
-    link: '/icons/revamp/ic-link.png',
-    linkedin: '/icons/revamp/ic-linkedin-white.png',
-    x: '/icons/revamp/ic-x-white.png',
-    logo: '/icons/revamp/logo-white-ci.png',
+    link: '/site/icons/ic-link.png',
+    linkedin: '/site/icons/ic-linkedin-white.png',
+    x: '/site/icons/ic-x-white.png',
+    logo: '/site/icons/logo-white-ci.png',
 } as const;
 
 const bodyText = 'text-[16px] leading-none font-normal text-white';
@@ -38,7 +38,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                             <ContactCtaButton
                                 locale={locale}
                                 className="h-[40px] min-w-[148px] justify-center gap-2 px-4 text-[14px] leading-none font-medium sm:min-w-[172px] sm:gap-3 sm:px-5 sm:text-[16px]"
-                                iconSrc="/icons/revamp/ic-arrow-up-right.png"
+                                iconSrc="/site/icons/ic-arrow-up-right.png"
                                 iconWidth={20}
                                 iconHeight={20}
                                 iconClassName="h-5 w-5"
@@ -145,7 +145,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                         </Link>
                         <ContactCtaButton
                             locale={locale}
-                            iconSrc="/icons/revamp/ic-arrow-up-right.png"
+                            iconSrc="/site/icons/ic-arrow-up-right.png"
                             iconWidth={20}
                             iconHeight={20}
                             iconClassName="h-[20px] w-[20px]"

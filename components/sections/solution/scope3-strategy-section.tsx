@@ -1,8 +1,8 @@
 import type { CSSProperties } from 'react';
 import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
-import bgImage from '@/public/images/revamp/scope3/strategy-bg.png';
-import logoImage from '@/public/images/revamp/scope3/lb.png';
+import bgImage from '@/public/site/scope3/strategy-bg.png';
+import logoImage from '@/public/site/scope3/lb.png';
 
 type StrategyColumn = {
     title: string;

@@ -27,7 +27,7 @@ export async function PcfWhyNeededSection() {
 
     return (
         <section className="px-5 pb-20 pt-8 md:px-8 lg:px-10 lg:pb-[132px] lg:pt-[46px] xl:px-0" aria-label={t('title')}>
-            <div className="mx-auto w-full max-w-[1440px] min-[1440px]:px-[44px]">
+            <div className="mx-auto w-full max-w-[1440px]">
                 <h2
                     className="text-black"
                     style={{
@@ -101,7 +101,7 @@ export async function PcfWhyNeededSection() {
 
                     <div className="relative mx-auto w-full max-w-[724px] overflow-hidden rounded-[18px] min-[1440px]:h-[676px] min-[1440px]:w-[724px] min-[1440px]:max-w-none">
                         <Image
-                            src="/images/revamp/pcf/why-right.png"
+                            src="/site/pcf/why-right.png"
                             alt={t('imageAlt')}
                             width={724}
                             height={676}

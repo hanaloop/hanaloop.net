@@ -35,7 +35,7 @@ export function HeroCtaButton({ locale, href, label, variant, className = '', st
         >
             <span className="whitespace-nowrap">{label}</span>
             <Image
-                src="/icons/revamp/ic-arrow-up-right.png"
+                src="/site/icons/ic-arrow-up-right.png"
                 alt=""
                 aria-hidden="true"
                 width={20}

@@ -17,7 +17,7 @@ function HeroButton({ href, label, locale, mobileWidthClassName }: { href: strin
             }}
         >
             <span className="whitespace-nowrap">{label}</span>
-            <Image src="/icons/revamp/ic-arrow-up-right.png" alt="" aria-hidden="true" width={20} height={20} className="h-4 w-4 shrink-0 lg:h-5 lg:w-5" />
+            <Image src="/site/icons/ic-arrow-up-right.png" alt="" aria-hidden="true" width={20} height={20} className="h-4 w-4 shrink-0 lg:h-5 lg:w-5" />
         </Link>
     );
 }
@@ -29,7 +29,7 @@ export async function HomeHeroSection() {
     return (
         <section className="relative isolate overflow-x-hidden text-white">
             <div className="relative overflow-hidden bg-[var(--color-hero-bg)]" style={{ height: 'clamp(620px, calc(620px + 16vw), 958px)' }}>
-                <Image src="/images/revamp/home/hero-bg-main.png" alt="" fill priority className="object-cover object-center" sizes="100vw" />
+                <Image src="/site/home/hero-bg-main.png" alt="" fill priority className="object-cover object-center" sizes="100vw" />
                 <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-8 lg:px-[64px]" style={{ paddingTop: 'clamp(92px, calc(54.14px + 10.10vw), 248px)' }}>
                     <div className="max-w-[780px]">
                         <h1 className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-white" style={{ fontSize: 'clamp(28px, calc(20.24px + 2.07vw), 60px)' }}>
@@ -70,7 +70,7 @@ export async function HomeHeroSection() {
                             width: 'clamp(296px, calc(154px + 40vw), 800px)',
                         }}
                     >
-                        <Image src="/images/revamp/home/macbook-mockup.png" alt="Hana Eco dashboard preview on laptop" width={1362} height={682} className="h-auto w-full object-contain" sizes="(max-width: 1920px) 41.67vw, 800px" />
+                        <Image src="/site/home/macbook-mockup.png" alt="Hana Eco dashboard preview on laptop" width={1362} height={682} className="h-auto w-full object-contain" sizes="(max-width: 1920px) 41.67vw, 800px" />
                     </div>
                 </div>
             </div>

@@ -1,12 +1,12 @@
 import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { ListTable } from '@/components/features/list-table';
-import { getBlogListItems } from '@/lib/blog-utils';
+import { getInsightListItems } from '@/lib/insight-utils';
 
 export async function InsightListSection() {
     const t = await getTranslations('InsightList');
     const locale = await getLocale() as AppLocale;
-    const items = getBlogListItems(locale);
+    const items = getInsightListItems(locale);
     const emptyState = locale === 'ko'
         ? {
             title: '등록된 인사이트가 아직 없습니다.',

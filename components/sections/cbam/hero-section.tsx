@@ -17,7 +17,7 @@ export async function CbamHeroSection() {
     return (
         <PlatformHero
             ariaLabel="CBAM Hero"
-            backgroundImageUrl="/images/revamp/cbam/hero.png"
+            backgroundImageUrl="/site/cbam/hero.png"
             heading={t('heading')}
             description={t('description')}
             navAriaLabel={t('navAriaLabel')}

@@ -4,8 +4,8 @@ import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
-const desktopCardImages = ['/images/revamp/home/intro/pc-1.png', '/images/revamp/home/intro/pc-2.png', '/images/revamp/home/intro/pc-3.png'] as const;
-const mobileCardImages = ['/images/revamp/home/intro/mobile-1.png', '/images/revamp/home/intro/mobile-2.png', '/images/revamp/home/intro/mobile-3.png'] as const;
+const desktopCardImages = ['/site/home/intro/pc-1.png', '/site/home/intro/pc-2.png', '/site/home/intro/pc-3.png'] as const;
+const mobileCardImages = ['/site/home/intro/mobile-1.png', '/site/home/intro/mobile-2.png', '/site/home/intro/mobile-3.png'] as const;
 
 function CardAction({ title }: { title: string }) {
     return (
@@ -14,7 +14,7 @@ function CardAction({ title }: { title: string }) {
                 {title}
             </div>
             <div className="gradient-border relative flex h-10 w-10 items-center justify-center rounded-full bg-black/10 backdrop-blur-[4px] md:h-12 md:w-12">
-                <Image src="/icons/revamp/ic-arrow-up-right.png" alt="" aria-hidden="true" width={20} height={20} />
+                <Image src="/site/icons/ic-arrow-up-right.png" alt="" aria-hidden="true" width={20} height={20} />
             </div>
         </div>
     );
@@ -22,7 +22,7 @@ function CardAction({ title }: { title: string }) {
 
 export async function HomeIntroSection() {
     const t = await getTranslations('HomeIntro');
-    const locale = await getLocale() as AppLocale;
+    const locale = (await getLocale()) as AppLocale;
 
     const eyebrowMobileLines = t.raw('eyebrowMobileLines') as string[];
     const titleDesktopLines = t.raw('titleDesktopLines') as string[];
@@ -35,7 +35,7 @@ export async function HomeIntroSection() {
         <section className="px-5 pb-10 pt-8 text-[#131313] md:px-8 md:pb-14 md:pt-10 lg:px-[64px] lg:pb-16 lg:pt-20">
             <div className="mx-auto w-full max-w-[1440px]">
                 <div className="relative">
-                    <p className="mx-auto max-w-[780px] text-center text-[13px] font-medium leading-[1.45] text-[var(--color-text-eyebrow)] md:text-[15px] lg:hidden">
+                    <p className="mx-auto max-w-[780px] text-center font-medium leading-[1.45] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,4vw,15px)] lg:hidden">
                         {eyebrowMobileLines.map((line) => (
                             <span key={line} className="block whitespace-nowrap">
                                 {line}
@@ -46,7 +46,7 @@ export async function HomeIntroSection() {
                         <span className="whitespace-nowrap">{t('eyebrowDesktop')}</span>
                     </p>
 
-                    <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,4vw,48px)] lg:mt-4">
+                    <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(24px,4vw,48px)] lg:mt-4">
                         <span className="lg:hidden">
                             {titleMobileLines.map((line) => (
                                 <span key={line} className="block whitespace-nowrap">
@@ -68,16 +68,20 @@ export async function HomeIntroSection() {
                         className="absolute right-0 xl:bottom-30 2xl:bottom-12 hidden h-[128px] w-[128px] flex-col items-center justify-center rounded-full text-white xl:flex"
                         style={{ background: 'linear-gradient(149deg, #59c98a 0%, #3cb2ea 100%)' }}
                     >
-                        <Image src="/icons/revamp/home-intro-arrow.png" alt="" aria-hidden="true" width={34} height={10} className="mb-2 h-auto w-[34px]" style={{ height: 'auto' }} />
+                        <Image src="/site/icons/home-intro-arrow.png" alt="" aria-hidden="true" width={34} height={10} className="mb-2 h-auto w-[34px]" style={{ height: 'auto' }} />
                         <span className="text-center text-[21px] font-medium leading-[1.05]">
-                            {t('contactLabel').split(' ').map((word) => (
-                                <span key={word} className="block">{word}</span>
-                            ))}
+                            {t('contactLabel')
+                                .split(' ')
+                                .map((word) => (
+                                    <span key={word} className="block">
+                                        {word}
+                                    </span>
+                                ))}
                         </span>
                     </Link>
                 </div>
 
-                <p className="mx-auto mt-9 hidden max-w-[1040px] text-center text-[13px] font-medium leading-[1.55] text-[var(--color-text-subtle)] md:text-[14px] lg:mt-16 lg:block lg:text-[16px]">
+                <p className="mx-auto mt-9 hidden max-w-[1040px] text-center [font-size:clamp(13px,4vw,16px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:mt-16 lg:block">
                     <span className="whitespace-nowrap">{t('descriptionDesktop')}</span>
                 </p>
 
@@ -91,7 +95,7 @@ export async function HomeIntroSection() {
                     ))}
                 </div>
 
-                <p className="mx-auto mt-9 max-w-[700px] text-center text-[13px] font-medium leading-[1.55] text-[var(--color-text-subtle)] md:text-[15px] lg:hidden">
+                <p className="mx-auto mt-9 max-w-[700px] text-center [font-size:clamp(13px,4vw,15px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:hidden">
                     {descriptionMobileLines.map((line) => (
                         <span key={line} className="block whitespace-nowrap">
                             {line}
@@ -118,7 +122,7 @@ export async function HomeIntroSection() {
                 </div>
 
                 <p className="mt-3 text-center text-[12px] leading-[1.5] text-[var(--color-text-note)] lg:mt-8 lg:text-right lg:text-[14px]">{t('footnote')}</p>
-                <div className="mt-8 border-b border-black/15 lg:mt-16" />
+                <div className="mt-8 hidden border-b border-black/15 lg:mt-16 lg:block" />
             </div>
         </section>
     );

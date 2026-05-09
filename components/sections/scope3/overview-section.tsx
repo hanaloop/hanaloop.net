@@ -69,7 +69,7 @@ export async function Scope3OverviewSection() {
                     aria-label={t('imageAlt')}
                     className="relative lg:h-[695px]"
                     style={{
-                        backgroundImage: "url('/images/revamp/scope3/overview-bg.png')",
+                        backgroundImage: "url('/site/scope3/overview-bg.png')",
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                     }}

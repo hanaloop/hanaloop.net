@@ -18,14 +18,14 @@ type AlternatingImageProcessSectionProps = {
 };
 
 const TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(34px, 2.5vw, 48px)',
+    fontSize: 'clamp(24px, 2.5vw, 48px)',
     fontWeight: 700,
     letterSpacing: '-1px',
     lineHeight: 1.2,
 };
 
 const SUBTITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 2.5vw, 21px)',
+    fontSize: 'clamp(14px, 2.5vw, 21px)',
     fontWeight: 600,
     letterSpacing: '0.5px',
     lineHeight: 1.5,
@@ -39,14 +39,14 @@ const INDEX_STYLE: CSSProperties = {
 };
 
 const CARD_TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(28px, 2.5vw, 36px)',
+    fontSize: 'clamp(24px, 2.5vw, 36px)',
     fontWeight: 700,
     letterSpacing: '-0.25px',
     lineHeight: 1.35,
 };
 
 const CARD_BODY_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 2.5vw, 20px)',
+    fontSize: 'clamp(14px, 2.5vw, 20px)',
     fontWeight: 400,
     letterSpacing: '-0.25px',
     lineHeight: 1.6,
@@ -57,9 +57,7 @@ export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, car
         <section className={className} aria-label={ariaLabel}>
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <header>
-                    <h2 style={TITLE_STYLE}>
-                        {title}
-                    </h2>
+                    <h2 style={TITLE_STYLE}>{title}</h2>
                     <p className="mt-4 text-[#4C4C4C]" style={SUBTITLE_STYLE}>
                         {subtitle}
                     </p>

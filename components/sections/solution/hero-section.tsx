@@ -17,7 +17,7 @@ export async function SolutionHeroSection() {
     return (
         <PlatformHero
             ariaLabel="Solution Hero"
-            backgroundImageUrl="/images/revamp/scope3/hero.png"
+            backgroundImageUrl="/site/scope3/hero.png"
             heading={t('heading')}
             description={t('description')}
             navAriaLabel={t('navAriaLabel')}

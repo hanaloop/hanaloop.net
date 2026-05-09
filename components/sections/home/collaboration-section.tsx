@@ -37,10 +37,10 @@ type LoopSlide = {
 };
 
 const staticCollaborations = [
-    { id: 'sama', title: 'SamA', cardImage: '/images/revamp/home/collaboration/sama-img.png', logoImage: '/images/revamp/home/collaboration/sama.png' },
-    { id: 'daehoal', title: 'DAEHOAL', cardImage: '/images/revamp/home/collaboration/daehoal-img.png', logoImage: '/images/revamp/home/collaboration/daehoal.png' },
-    { id: 'samyang', title: 'SAMYANG', cardImage: '/images/revamp/home/collaboration/samyang-img.png', logoImage: '/images/revamp/home/collaboration/samyang.png' },
-    { id: 'doosan', title: 'DOOSAN', cardImage: '/images/revamp/home/collaboration/doosan-img.png', logoImage: '/images/revamp/home/collaboration/doosan.png' },
+    { id: 'sama', title: 'SamA', cardImage: '/site/home/collaboration/sama-img.png', logoImage: '/site/home/collaboration/sama.png' },
+    { id: 'daehoal', title: 'DAEHOAL', cardImage: '/site/home/collaboration/daehoal-img.png', logoImage: '/site/home/collaboration/daehoal.png' },
+    { id: 'samyang', title: 'SAMYANG', cardImage: '/site/home/collaboration/samyang-img.png', logoImage: '/site/home/collaboration/samyang.png' },
+    { id: 'doosan', title: 'DOOSAN', cardImage: '/site/home/collaboration/doosan-img.png', logoImage: '/site/home/collaboration/doosan.png' },
 ] as const;
 
 function makeSlides(collaborations: CollaborationItem[], sourceIndices: number[]): LoopSlide[] {
@@ -208,7 +208,7 @@ export function HomeCollaborationSection() {
                                 <span>{t('viewMore')}</span>
                             </Link>
                             <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-arrow" aria-label="Open collaboration">
-                                <Image src="/icons/revamp/ic-arrow-right-black.png" alt="" aria-hidden="true" width={20} height={20} className="h-4 w-4 shrink-0 lg:h-5 lg:w-5" />
+                                <Image src="/site/icons/ic-arrow-right-black.png" alt="" aria-hidden="true" width={20} height={20} className="h-4 w-4 shrink-0 lg:h-5 lg:w-5" />
                             </Link>
                         </div>
                     </div>

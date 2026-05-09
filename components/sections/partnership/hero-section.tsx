@@ -8,7 +8,7 @@ export async function PartnershipHeroSection() {
         <section aria-label="Partnership Hero" className="relative overflow-hidden text-white">
             <div className="relative min-h-[420px] lg:min-h-[564px]">
                 <Image
-                    src="/images/revamp/partnership/hero.png"
+                    src="/site/partnership/hero.png"
                     alt=""
                     fill
                     priority

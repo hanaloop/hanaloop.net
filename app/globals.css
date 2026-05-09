@@ -57,7 +57,7 @@
     --color-footer-bg: #222222;
     --color-mobile-dark-bg: #1c1c1e;
     --gradient-badge: linear-gradient(106.7deg, rgba(31, 189, 125, 0.7) 26.33%, rgba(1, 148, 255, 0.7) 75.4%);
-    --gradient-brand: linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%);
+    --gradient-brand: linear-gradient(90deg, #1fbd7d 0%, #0194ff 100%);
     --color-text-eyebrow: #464b53;
     --color-metric-value: #17191f;
     --color-metric-label: #666666;
@@ -153,4 +153,8 @@ svg {
         mask-composite: exclude;
         pointer-events: none;
     }
+}
+
+.prose {
+    font-size: 1.2rem;
 }

@@ -41,7 +41,7 @@ export async function HanaAiProcessSection() {
                                     <div className="relative w-full overflow-visible rounded-[24px] [aspect-ratio:700/410]">
                                         <Image src={item.bgSrc} alt={item.bgAlt} fill className="rounded-[24px] object-cover" sizes="(min-width: 1920px) 700px, (min-width: 1024px) calc((100vw - 220px) / 2), 100vw" />
                                         <Image
-                                            src="/images/revamp/hana-ai/pc.png"
+                                            src="/site/hana-ai/pc.png"
                                             alt=""
                                             aria-hidden
                                             width={940}

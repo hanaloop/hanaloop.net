@@ -2,12 +2,12 @@ import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { ListTable } from '@/components/features/list-table';
-import { getBlogListItems } from '@/lib/blog-utils';
+import { getInsightListItems } from '@/lib/insight-utils';
 
 export async function HomeInsightSection() {
     const t = await getTranslations('HomeInsight');
     const locale = await getLocale() as AppLocale;
-    const items = getBlogListItems(locale);
+    const items = getInsightListItems(locale);
     const emptyState = locale === 'ko'
         ? {
             title: '아직 표시할 인사이트가 없습니다.',
@@ -30,7 +30,7 @@ export async function HomeInsightSection() {
                     heading={t('heading')}
                     items={items}
                     itemsPerPage={4}
-                    viewMoreHref={withLocalePath(locale, '/blog')}
+                    viewMoreHref={withLocalePath(locale, '/insight')}
                     viewMoreLabel={t('viewMoreLabel')}
                     emptyTitle={emptyState.title}
                     emptyDescription={emptyState.description}

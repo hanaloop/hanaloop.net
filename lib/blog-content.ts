@@ -39,6 +39,13 @@ function getDateText(value: unknown, locale: AppLocale): string {
   return date.toLocaleDateString(dateLocale, { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
+function stripMdxImports(content: string): string {
+  return content
+    .replace(/^import\s+.*?from\s+['"][^'"]+['"]\s*;?\s*$/gm, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .trimStart();
+}
+
 function findBlogFile(locale: AppLocale, slug: string[]) {
   const base = path.join(process.cwd(), 'content', locale, 'blog', ...slug);
   const mdxPath = `${base}.mdx`;
@@ -71,6 +78,6 @@ export function getBlogPostContent(locale: AppLocale, slug: string[]): BlogPostC
     description: String(parsed.data.description ?? parsed.data.summary ?? ''),
     dateText: getDateText(parsed.data.date ?? parsed.data.publishedAt, locale),
     image: parsed.data.image ? String(parsed.data.image) : undefined,
-    content: parsed.content,
+    content: stripMdxImports(parsed.content),
   };
 }

@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import type { AppLocale } from '@/lib/locales';
@@ -22,16 +23,26 @@ type PlatformHeroProps = {
 
 export function PlatformHero({ ariaLabel, backgroundImageUrl, heading, description, navAriaLabel, relatedLinks }: PlatformHeroProps) {
     const locale = useLocale() as AppLocale;
+    const [mobileColumns, setMobileColumns] = useState<2 | 3>(2);
+
+    useEffect(() => {
+        const updateColumns = () => {
+            setMobileColumns(window.innerWidth >= 520 ? 3 : 2);
+        };
+        updateColumns();
+        window.addEventListener('resize', updateColumns);
+        return () => window.removeEventListener('resize', updateColumns);
+    }, []);
 
     return (
         <>
-            <section className="relative h-[330px] overflow-hidden text-white lg:h-[420px] xl:h-[480px]" aria-label={ariaLabel}>
+            <section className="relative h-[566px] overflow-hidden text-white lg:h-[420px] xl:h-[480px]" aria-label={ariaLabel}>
                 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${backgroundImageUrl}')` }} />
                 <div className="absolute inset-0 bg-black/30" />
 
                 <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-center">
-                    <h1 className="text-[42px] font-semibold leading-none tracking-[-0.02em] lg:text-[56px] 2xl:text-[64px]">{heading}</h1>
-                    <p className="mt-4 text-[16px] font-medium leading-[1.45] text-white/95 lg:text-[18px]">{description}</p>
+                    <h1 className="[font-size:clamp(28px,6vw,64px)] font-semibold leading-none tracking-[-0.02em]">{heading}</h1>
+                    <p className="[font-size:clamp(14px,4vw,18px)] mt-8 lg:mt-4 font-medium leading-[1.45] text-white/95 px-11">{description}</p>
 
                     <nav className="gradient-border mt-12 hidden h-[52px] items-center rounded-full bg-white/12 px-8 backdrop-blur-[8px] lg:flex" aria-label={navAriaLabel}>
                         {relatedLinks.map((item, index) => (
@@ -49,22 +60,33 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, heading, descripti
                             </div>
                         ))}
                     </nav>
+
+                    <nav className="mt-10 w-full max-w-[452px] rounded-[34px] border border-white/30 bg-white/10 px-6 py-7 backdrop-blur-[8px] lg:hidden" aria-label={navAriaLabel}>
+                        <div className={`grid ${mobileColumns === 3 ? 'grid-cols-3' : 'grid-cols-2'} gap-y-6`}>
+                            {relatedLinks.map((item, index) => (
+                                <div key={item.href} className="relative flex min-h-10 items-center justify-center px-4">
+                                    {index % mobileColumns !== 0 ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-7 -translate-y-1/2 border-l border-white/55" /> : null}
+                                    {item.current ? (
+                                        <span
+                                            className="inline-flex h-9 w-full max-w-[140px] items-center justify-center rounded-full border border-white/40 px-3 text-[16px] font-semibold leading-none tracking-[-0.25px] text-white"
+                                            aria-current="page"
+                                        >
+                                            {item.label}
+                                        </span>
+                                    ) : (
+                                        <Link
+                                            href={withLocalePath(locale, item.href)}
+                                            className="inline-flex h-10 items-center justify-center text-center text-[16px] font-semibold leading-none tracking-[-0.25px] text-white/95 transition hover:text-white"
+                                        >
+                                            {item.label}
+                                        </Link>
+                                    )}
+                                </div>
+                            ))}
+                        </div>
+                    </nav>
                 </div>
             </section>
-
-            <nav className="flex flex-wrap justify-center gap-2 bg-[#07090c] px-5 py-4 lg:hidden" aria-label={navAriaLabel}>
-                {relatedLinks.map((item) =>
-                    item.current ? (
-                        <span key={item.href} className="inline-flex h-8 items-center rounded-full border border-white/35 px-4 text-[15px] font-semibold tracking-[-0.25px] text-white" aria-current="page">
-                            {item.label}
-                        </span>
-                    ) : (
-                        <Link key={item.href} href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center rounded-full px-4 text-[15px] tracking-[-0.25px] text-white/65 transition hover:text-white">
-                            {item.label}
-                        </Link>
-                    )
-                )}
-            </nav>
         </>
     );
 }

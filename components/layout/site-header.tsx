@@ -12,12 +12,12 @@ import { buildMenus, type MenuItem, type MenuGroup } from './nav-config';
 import { MobileDrawer } from './mobile-drawer';
 
 const ICON = {
-    logoLight: '/icons/revamp/logo-white-ci.png',
-    logoDark: '/icons/revamp/logo-color-ci.png',
-    chevronDown: '/icons/revamp/ic-chevron-down.png',
-    link: '/icons/revamp/ic-arrow.png',
-    menuLight: '/icons/revamp/ic-menu-white.png',
-    menuDark: '/icons/revamp/ic-menu-dark.png',
+    logoLight: '/site/icons/logo-white-ci.png',
+    logoDark: '/site/icons/logo-color-ci.png',
+    chevronDown: '/site/icons/ic-chevron-down.png',
+    link: '/site/icons/ic-arrow.png',
+    menuLight: '/site/icons/ic-menu-white.png',
+    menuDark: '/site/icons/ic-menu-dark.png',
 } as const;
 
 function NavDropdownItem({ item, locale }: { item: MenuItem; locale: AppLocale }) {

@@ -17,7 +17,7 @@ export async function PcfHeroSection() {
     return (
         <PlatformHero
             ariaLabel="PCF Hero"
-            backgroundImageUrl="/images/revamp/pcf/hero.png"
+            backgroundImageUrl="/site/pcf/hero.png"
             heading={t('heading')}
             description={t('description')}
             navAriaLabel={t('navAriaLabel')}

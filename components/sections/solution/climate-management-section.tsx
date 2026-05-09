@@ -3,7 +3,7 @@ import { getTranslations, getLocale } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
-import bgImage from '@/public/images/revamp/solution/climate-management-bg.png';
+import bgImage from '@/public/site/solution/climate-management-bg.png';
 
 export async function SolutionClimateManagementSection() {
     const t = await getTranslations('SolutionClimateManagement');

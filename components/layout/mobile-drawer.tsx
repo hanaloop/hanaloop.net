@@ -10,12 +10,12 @@ import { ContactCtaButton } from '@/components/ui/contact-cta-button';
 import type { MenuGroup } from './nav-config';
 
 const ICON = {
-  logoDrawer: '/icons/revamp/logo-half-ci.png',
-  close: '/icons/revamp/ic-close-white.png',
-  linkedin: '/icons/revamp/ic-linkedin-white.png',
-  x: '/icons/revamp/ic-x-white.png',
-  external: '/icons/revamp/ic-link.png',
-  chevronDown: '/icons/revamp/ic-chevron-down.png',
+  logoDrawer: '/site/icons/logo-half-ci.png',
+  close: '/site/icons/ic-close-white.png',
+  linkedin: '/site/icons/ic-linkedin-white.png',
+  x: '/site/icons/ic-x-white.png',
+  external: '/site/icons/ic-link.png',
+  chevronDown: '/site/icons/ic-chevron-down.png',
 } as const;
 
 type MobileDrawerProps = {
@@ -96,7 +96,7 @@ export function MobileDrawer({ locale, groups, toggleId = 'mobile-menu-toggle' }
               locale={locale}
               className="justify-center gap-3 px-0 text-[16px] font-medium leading-none"
               style={{ height: '56px', width: '240px' }}
-              iconSrc="/icons/revamp/ic-arrow-up-right.png"
+              iconSrc="/site/icons/ic-arrow-up-right.png"
               iconWidth={24}
               iconHeight={24}
               iconClassName="h-6 w-6"

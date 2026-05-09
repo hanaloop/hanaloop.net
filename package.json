@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "normalize:content": "node scripts/normalize-content.mjs",
-    "prepare:content": "yarn normalize:content && yarn prepare:docs && yarn prepare:blog-list && fumadocs-mdx",
+    "prepare:content": "yarn normalize:content && yarn prepare:docs && yarn prepare:blog-list && yarn prepare:insight-list && fumadocs-mdx",
     "prepare:blog-list": "node scripts/generate-blog-list-json.mjs",
+    "prepare:insight-list": "node scripts/generate-insight-list-json.mjs",
     "dev": "yarn prepare:content && next dev --turbo",
     "build": "yarn prepare:content && next build",
     "start": "serve out",

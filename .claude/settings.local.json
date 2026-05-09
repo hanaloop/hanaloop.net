@@ -48,7 +48,21 @@
       "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\" -Directory -Depth 1 | Where-Object { $_.Name -notmatch \"node_modules|\\\\.next|\\\\.git\" } | Select-Object Name)",
       "PowerShell(ls \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\" | Where-Object { $_.PSIsContainer } | Select-Object Name)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\logae\\\\OneDrive\\\\문서\\\\dev_projects\\\\hanaloop.com\\\\components\\\\sections\" -Recurse)",
-      "Bash(Select-Object FullName)"
+      "Bash(Select-Object FullName)",
+      "Bash(grep \"\\\\.mdx$\")",
+      "Bash(xargs sed -i 's|/images/revamp/|/site/|g')",
+      "Bash(Get-Content \"C:\\\\Users\\\\logae\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-logae-OneDrive----dev-projects-hanaloop-com\\\\d6dd7b4c-f753-482e-a7f2-cadc49a9b697\\\\tasks\\\\b910r2ore.output\")",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_console_messages",
+      "Bash(grep -E \"\\\\.\\(md|mdx\\)$\")",
+      "Bash(mkdir -p \"app/[locale]/insight/[[...slug]]\")",
+      "Bash(mv \"app/[locale]/insight/page.tsx\" \"app/[locale]/insight/[[...slug]]/page.tsx\")",
+      "Bash(find app/insight app/blog/[[...slug]] -type f)",
+      "Bash(taskkill /PID 8452 /F)",
+      "Bash(taskkill /IM node.exe /F)",
+      "PowerShell(Stop-Process *)",
+      "Bash(curl *)"
     ]
   }
 }

@@ -17,21 +17,21 @@ type PlanCopy = {
 };
 
 const HEADING_STYLE: CSSProperties = {
-    fontSize: 'clamp(32px, 2.5vw, 48px)',
+    fontSize: 'clamp(24px, 6vw, 48px)',
     fontWeight: 500,
     letterSpacing: '-1px',
     lineHeight: 1.2,
 };
 
 const CARD_TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 1.4583vw, 28px)',
+    fontSize: 'clamp(24px, 4vw, 28px)',
     fontWeight: 600,
     letterSpacing: '-0.25px',
     lineHeight: 1.35,
 };
 
 const CARD_ITEM_STYLE: CSSProperties = {
-    fontSize: 'clamp(16px, 0.9375vw, 18px)',
+    fontSize: 'clamp(16px, 4vw, 18px)',
     fontWeight: 500,
     letterSpacing: '-0.25px',
     lineHeight: 1.55,
@@ -126,7 +126,16 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
                 </div>
 
                 <div className="mt-12 overflow-hidden rounded-[20px] lg:mt-[58px]">
-                    <Image src="/images/revamp/cbam/plan-bg.png" alt={text.imageAlt} width={1280} height={720} className="h-auto w-full" style={{ height: 'auto' }} sizes="(min-width: 1920px) 1280px, (min-width: 1440px) calc(100vw - 160px), 100vw" priority />
+                    <Image
+                        src="/site/cbam/plan-bg.png"
+                        alt={text.imageAlt}
+                        width={1280}
+                        height={720}
+                        className="h-auto w-full"
+                        style={{ height: 'auto' }}
+                        sizes="(min-width: 1920px) 1280px, (min-width: 1440px) calc(100vw - 160px), 100vw"
+                        priority
+                    />
                 </div>
             </div>
         </section>
