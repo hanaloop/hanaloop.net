@@ -126,12 +126,12 @@ export function HomeCollaborationSection() {
                     <div className="mb-5 flex justify-center lg:hidden">
                         <span className="home-collaboration-badge">{t('badge')}</span>
                     </div>
-                    <h2 className="mx-auto max-w-[680px] font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,4vw,48px)] lg:mx-0 lg:text-left">
+                    <h2 className="mx-auto max-w-[680px] font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(22px,calc(13.01px+2.43vw),48px)] lg:mx-0 lg:text-left">
                         {(t.raw('titleLines') as string[]).map((line: string) => (
                             <span key={line} className="block whitespace-nowrap">{line}</span>
                         ))}
                     </h2>
-                    <p className="mt-4 lg:text-[21px] font-medium leading-[1.5] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,1.4vw,30px)]">{t('description')}</p>
+                    <p className="mt-4 font-medium leading-[1.5] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,calc(7.12px+1.59vw),30px)]">{t('description')}</p>
                 </div>
 
                 <div className="collaboration-center-stack">
@@ -204,7 +204,7 @@ export function HomeCollaborationSection() {
 
                     <div className="mt-18 flex justify-center">
                         <div className="collaboration-cta-group">
-                            <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-text text-[15px] lg:text-[20px]">
+                            <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-text [font-size:clamp(15px,calc(13.27px+0.47vw),20px)]">
                                 <span>{t('viewMore')}</span>
                             </Link>
                             <Link href={withLocalePath(locale, '/partnership')} className="collaboration-cta-arrow" aria-label="Open collaboration">

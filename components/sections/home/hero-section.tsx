@@ -32,7 +32,7 @@ export async function HomeHeroSection() {
                 <Image src="/site/home/hero-bg-main.png" alt="" fill priority className="object-cover object-center" sizes="100vw" />
                 <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-8 lg:px-[64px]" style={{ paddingTop: 'clamp(92px, calc(54.14px + 10.10vw), 248px)' }}>
                     <div className="max-w-[780px]">
-                        <h1 className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-white" style={{ fontSize: 'clamp(28px, calc(20.24px + 2.07vw), 60px)' }}>
+                        <h1 className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-white [font-size:clamp(28px,calc(16.94px+2.99vw),60px)]">
                             <span className="lg:hidden">
                                 <span className="block">Smarter</span>
                                 <span className="block">Carbon Management</span>
@@ -45,7 +45,7 @@ export async function HomeHeroSection() {
                             </span>
                         </h1>
 
-                        <p className="mt-8 whitespace-pre-line font-semibold tracking-[0] text-white md:mt-8 lg:hidden" style={{ fontFamily: 'Pretendard', fontSize: 'clamp(13px, calc(10.7px + 0.6vw), 17px)', lineHeight: 1.62 }}>
+                        <p className="mt-8 whitespace-pre-line font-semibold tracking-[0] text-white md:mt-8 lg:hidden [font-size:clamp(13px,calc(11.62px+0.37vw),17px)] leading-[1.62]" style={{ fontFamily: 'Pretendard' }}>
                             {t('mobileDescription')}
                         </p>
                         <p className="mt-6 hidden whitespace-pre-line text-[18px] font-semibold leading-[32px] tracking-[0] text-white/90 md:mt-8 lg:block" style={{ fontFamily: 'Pretendard' }}>

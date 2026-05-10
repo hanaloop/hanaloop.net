@@ -62,7 +62,8 @@
       "Bash(taskkill /PID 8452 /F)",
       "Bash(taskkill /IM node.exe /F)",
       "PowerShell(Stop-Process *)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(findstr /r /s \"lg:text\\\\[\\\\|md:text\\\\[\\\\|sm:text\\\\[\" components\\\\*.tsx)"
     ]
   }
 }

@@ -39,11 +39,11 @@ export function HomeFaqSection() {
     }, [items]);
 
     return (
-        <section className="mt-28 px-0 pb-5 pt-0 md:px-8 md:pb-8 lg:px-0 lg:pb-10">
+        <section className="mt-10 lg:mt-20 px-0 pb-5 pt-0 md:px-8 md:pb-8 lg:px-0 lg:pb-10">
             <div className="mx-auto w-full max-w-[1440px] overflow-hidden rounded-t-[34px] bg-[var(--color-mobile-dark-bg)] px-6 md:px-11 pb-9 pt-[62px] md:rounded-t-[42px] lg:pb-[58px] lg:pt-[92px]">
                 <header className="text-center lg:text-left lg:px-11">
-                    <p className="[font-size:clamp(13px,4vw,21px)] font-semibold leading-[1.3] tracking-[0.5px] text-white">{t('eyebrow')}</p>
-                    <h2 className="mt-1 lg:font-medium leading-[1.08] tracking-[-1px] text-white [font-size:clamp(28px,8vw,64px)]">{t('heading')}</h2>
+                    <p className="[font-size:clamp(13px,calc(10.23px+0.75vw),21px)] font-semibold leading-[1.3] tracking-[0.5px] text-white">{t('eyebrow')}</p>
+                    <h2 className="mt-1 lg:font-medium leading-[1.08] tracking-[-1px] text-white [font-size:clamp(28px,calc(15.55px+3.36vw),64px)]">{t('heading')}</h2>
                 </header>
 
                 <div className="mt-9 lg:mt-10" />

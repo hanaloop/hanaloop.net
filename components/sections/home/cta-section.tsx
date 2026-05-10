@@ -8,8 +8,7 @@ function CtaButton({ href, label, locale }: { href: string; label: string; local
     return (
         <Link
             href={withLocalePath(locale, href)}
-            className="inline-flex h-[36px] lg:h-[50px] w-full items-center justify-center gap-2 lg:gap-4 rounded-full lg:px-6 text-[12px] lg:text-[16px] font-medium leading-none text-white transition hover:opacity-90 lg:w-auto lg:min-w-[170px] lg:px-8"
-            style={{ background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)' }}
+            className="bg-gradient-brand inline-flex h-[48px] w-full items-center justify-center gap-2 rounded-full [font-size:clamp(12px,calc(10.62px+0.37vw),16px)] font-medium leading-none text-white transition hover:opacity-90 lg:min-w-[170px] lg:w-auto lg:gap-4 lg:px-8"
         >
             <span>{label}</span>
             <Image src="/site/icons/ic-arrow-up-right.png" alt="" aria-hidden="true" width={20} height={20} className="h-[20px] w-[20px]" />
@@ -26,9 +25,9 @@ export async function HomeCtaSection() {
     return (
         <section className="px-5 pb-[80px] pt-[72px] md:px-8 md:pb-[100px] md:pt-[90px] lg:px-[64px] lg:pb-[140px] lg:pt-[120px]">
             <div className="mx-auto w-full max-w-[1440px] text-center">
-                <p className="text-[16px] lg:font-semibold leading-[1.3] tracking-[-0.01em] text-[#222222] lg:hidden">{t('eyebrow')}</p>
+                <p className="text-[16px] leading-[1.3] tracking-[-0.01em] text-[var(--color-text-default)] lg:hidden">{t('eyebrow')}</p>
                 <h2
-                    className="mx-auto mt-5 font-medium leading-[1.06] tracking-[-0.03em] text-[#202124] [font-size:clamp(28px,8vw,72px)] lg:mt-0 lg:tracking-[-0.02em]"
+                    className="mx-auto mt-5 [font-size:clamp(28px,calc(12.79px+4.11vw),72px)] font-medium tracking-[-0.03em] text-[var(--color-text-default)] lg:mt-0 lg:tracking-[-0.02em]"
                     style={{ fontFamily: 'Poppins, sans-serif', fontWeight: 500, letterSpacing: '-0.25px' }}
                 >
                     {mobileHeadingLines.map((line) => (

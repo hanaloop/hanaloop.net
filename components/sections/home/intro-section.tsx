@@ -10,7 +10,7 @@ const mobileCardImages = ['/site/home/intro/mobile-1.png', '/site/home/intro/mob
 function CardAction({ title }: { title: string }) {
     return (
         <div className="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-center gap-2 xl:px-10 md:bottom-4 md:left-4 md:right-4">
-            <div className="gradient-border relative flex w-[200px] h-10 md:flex-1 items-center justify-center rounded-full bg-black/10 px-4 text-[14px] font-medium leading-none text-white backdrop-blur-[4px] md:h-12 md:text-[20px]">
+            <div className="gradient-border relative flex w-[200px] h-10 md:flex-1 items-center justify-center rounded-full bg-black/10 px-4 [font-size:clamp(14px,calc(11.93px+0.56vw),20px)] font-medium leading-none text-white backdrop-blur-[4px] md:h-12">
                 {title}
             </div>
             <div className="gradient-border relative flex h-10 w-10 items-center justify-center rounded-full bg-black/10 backdrop-blur-[4px] md:h-12 md:w-12">
@@ -35,7 +35,7 @@ export async function HomeIntroSection() {
         <section className="px-5 pb-10 pt-8 text-[#131313] md:px-8 md:pb-14 md:pt-10 lg:px-[64px] lg:pb-16 lg:pt-20">
             <div className="mx-auto w-full max-w-[1440px]">
                 <div className="relative">
-                    <p className="mx-auto max-w-[780px] text-center font-medium leading-[1.45] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,4vw,15px)] lg:hidden">
+                    <p className="mx-auto max-w-[780px] text-center font-medium leading-[1.45] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,calc(12.31px+0.19vw),15px)] lg:hidden">
                         {eyebrowMobileLines.map((line) => (
                             <span key={line} className="block whitespace-nowrap">
                                 {line}
@@ -46,7 +46,7 @@ export async function HomeIntroSection() {
                         <span className="whitespace-nowrap">{t('eyebrowDesktop')}</span>
                     </p>
 
-                    <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(24px,4vw,48px)] lg:mt-4">
+                    <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] lg:mt-4">
                         <span className="lg:hidden">
                             {titleMobileLines.map((line) => (
                                 <span key={line} className="block whitespace-nowrap">
@@ -81,7 +81,7 @@ export async function HomeIntroSection() {
                     </Link>
                 </div>
 
-                <p className="mx-auto mt-9 hidden max-w-[1040px] text-center [font-size:clamp(13px,4vw,16px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:mt-16 lg:block">
+                <p className="mx-auto mt-9 hidden max-w-[1040px] text-center [font-size:clamp(13px,calc(11.96px+0.28vw),16px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:mt-16 lg:block">
                     <span className="whitespace-nowrap">{t('descriptionDesktop')}</span>
                 </p>
 
@@ -95,7 +95,7 @@ export async function HomeIntroSection() {
                     ))}
                 </div>
 
-                <p className="mx-auto mt-9 max-w-[700px] text-center [font-size:clamp(13px,4vw,15px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:hidden">
+                <p className="mx-auto mt-9 max-w-[700px] text-center [font-size:clamp(13px,calc(12.31px+0.19vw),15px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:hidden">
                     {descriptionMobileLines.map((line) => (
                         <span key={line} className="block whitespace-nowrap">
                             {line}
@@ -115,13 +115,13 @@ export async function HomeIntroSection() {
                 <div className="mt-8 lg:hidden">
                     {metrics.map((metric) => (
                         <div key={metric.value} className="flex items-end justify-between border-b border-black/15 py-4">
-                            <p className="text-[56px] leading-none tracking-[-0.02em] text-[var(--color-metric-value)] md:text-[62px]">{metric.value}</p>
-                            <p className="max-w-[172px] text-right text-[14px] font-medium leading-[1.35] text-[var(--color-metric-label)] md:max-w-[240px] md:text-[16px]">{metric.label}</p>
+                            <p className="[font-size:clamp(56px,calc(53.93px+0.56vw),62px)] leading-none tracking-[-0.02em] text-[var(--color-metric-value)]">{metric.value}</p>
+                            <p className="max-w-[172px] text-right [font-size:clamp(14px,calc(10.62px+0.37vw),16px)] font-medium leading-[1.35] text-[var(--color-metric-label)] md:max-w-[240px]">{metric.label}</p>
                         </div>
                     ))}
                 </div>
 
-                <p className="mt-3 text-center text-[12px] leading-[1.5] text-[var(--color-text-note)] lg:mt-8 lg:text-right lg:text-[14px]">{t('footnote')}</p>
+                <p className="mt-3 text-center [font-size:clamp(12px,calc(11.31px+0.19vw),14px)] leading-[1.5] text-[var(--color-text-note)] lg:mt-8 lg:text-right">{t('footnote')}</p>
                 <div className="mt-8 hidden border-b border-black/15 lg:mt-16 lg:block" />
             </div>
         </section>

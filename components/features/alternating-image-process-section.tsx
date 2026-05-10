@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import type { CSSProperties } from 'react';
 
 export type AlternatingImageProcessCard = {
     index: string;
@@ -17,50 +16,13 @@ type AlternatingImageProcessSectionProps = {
     className?: string;
 };
 
-const TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 2.5vw, 48px)',
-    fontWeight: 700,
-    letterSpacing: '-1px',
-    lineHeight: 1.2,
-};
-
-const SUBTITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(14px, 2.5vw, 21px)',
-    fontWeight: 600,
-    letterSpacing: '0.5px',
-    lineHeight: 1.5,
-};
-
-const INDEX_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 2.5vw, 28px)',
-    fontWeight: 600,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.35,
-};
-
-const CARD_TITLE_STYLE: CSSProperties = {
-    fontSize: 'clamp(24px, 2.5vw, 36px)',
-    fontWeight: 700,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.35,
-};
-
-const CARD_BODY_STYLE: CSSProperties = {
-    fontSize: 'clamp(14px, 2.5vw, 20px)',
-    fontWeight: 400,
-    letterSpacing: '-0.25px',
-    lineHeight: 1.6,
-};
-
 export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, cards, className = 'mt-10 md:py-20 lg:mt-30' }: AlternatingImageProcessSectionProps) {
     return (
         <section className={className} aria-label={ariaLabel}>
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <header>
-                    <h2 style={TITLE_STYLE}>{title}</h2>
-                    <p className="mt-4 text-[#4C4C4C]" style={SUBTITLE_STYLE}>
-                        {subtitle}
-                    </p>
+                    <h2 className="[font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-bold tracking-[-1px] leading-[1.2]">{title}</h2>
+                    <p className="mt-4 text-[#4C4C4C] [font-size:clamp(14px,calc(11.58px+0.65vw),21px)] font-semibold tracking-[0.5px] leading-[1.5]">{subtitle}</p>
                 </header>
 
                 <div className="mt-14 space-y-12 lg:mt-26 lg:space-y-24">
@@ -70,23 +32,17 @@ export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, car
                         return (
                             <article key={card.index} className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[1fr_1fr] lg:gap-[80px]">
                                 <div className={isImageLeft ? 'order-2 lg:px-11' : 'order-2 lg:order-1 lg:px-11'}>
-                                    <p className="text" style={INDEX_STYLE}>
-                                        {card.index}
-                                    </p>
-                                    <h3 className="mt-1" style={CARD_TITLE_STYLE}>
-                                        {card.title}
-                                    </h3>
+                                    <p className="text [font-size:clamp(24px,calc(22.62px+0.37vw),28px)] font-semibold tracking-[-0.25px] leading-[1.35]">{card.index}</p>
+                                    <h3 className="mt-1 [font-size:clamp(24px,calc(21.23px+0.75vw),32px)] font-bold tracking-[-0.25px] leading-[1.35]">{card.title}</h3>
 
                                     {Array.isArray(card.description) ? (
-                                        <ul className="mt-4 list-disc space-y-1 pl-8" style={CARD_BODY_STYLE}>
+                                        <ul className="mt-4 list-disc space-y-1 pl-8 [font-size:clamp(14px,calc(11.93px+0.56vw),20px)] font-normal tracking-[-0.25px] leading-[1.6]">
                                             {card.description.map((item) => (
                                                 <li key={item}>{item}</li>
                                             ))}
                                         </ul>
                                     ) : (
-                                        <p className="mt-4" style={CARD_BODY_STYLE}>
-                                            {card.description}
-                                        </p>
+                                        <p className="mt-4 [font-size:clamp(14px,calc(11.93px+0.56vw),20px)] font-normal tracking-[-0.25px] leading-[1.6]">{card.description}</p>
                                     )}
                                 </div>
 

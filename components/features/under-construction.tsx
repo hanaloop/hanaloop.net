@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
@@ -32,29 +32,22 @@ export function UnderConstruction({ locale = 'ko' }: UnderConstructionProps) {
 
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-5 py-24 text-center md:px-8 lg:px-16">
-      <p
-        className="text-[13px] font-semibold uppercase tracking-[0.12em] text-[#1FBD7D]"
-        style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
-      >
+      <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-[#1FBD7D]" style={{ fontFamily: 'TT Fors Trial, sans-serif' }}>
         {text.eyebrow}
       </p>
       <h1
-        className="mt-5 text-[32px] font-medium leading-[1.15] tracking-[-0.03em] text-[#131313] md:text-[48px] lg:text-[56px]"
+        className="mt-5 [font-size:clamp(32px,calc(23.70px+2.24vw),56px)] font-medium leading-[1.15] tracking-[-0.03em] text-[var(--color-text-default)]"
         style={{ fontFamily: 'TT Fors Trial, sans-serif' }}
       >
         {text.heading}
       </h1>
       <p
-        className="mt-5 max-w-[480px] whitespace-pre-line text-[15px] leading-[1.7] text-[#646464] md:text-[16px]"
+        className="mt-5 max-w-[480px] whitespace-pre-line [font-size:clamp(15px,calc(14.65px+0.09vw),16px)] leading-[1.7] text-[var(--color-text-muted)]"
         style={{ fontFamily: 'Pretendard, sans-serif' }}
       >
         {text.description}
       </p>
-      <Link
-        href={withLocalePath(locale, '/')}
-        className="mt-10 inline-flex h-[50px] items-center gap-2 rounded-full px-8 text-[15px] font-medium text-white transition hover:opacity-90"
-        style={{ background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)' }}
-      >
+      <Link href={withLocalePath(locale, '/')} className="bg-gradient-brand mt-10 inline-flex h-[48px] items-center gap-2 rounded-full px-8 text-[15px] font-medium text-white transition hover:opacity-90">
         {text.cta}
       </Link>
     </section>

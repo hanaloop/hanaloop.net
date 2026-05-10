@@ -57,22 +57,22 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
     const pagination = useMemo(() => getPaginationRange(currentPage, totalPages), [currentPage, totalPages]);
 
     return (
-        <div className="mt-10 border-t border-[#bdbdbd] max-w-[1440px] mx-auto px-4">
-            <div className="border-b border-[#d0d0d0] px-6 py-4">
-                <h3 className="text-[16px] md:text-[24px] lg:text-[32px] font-medium leading-none text-[var(--color-text-default)]">{heading}</h3>
+        <div className="mx-auto mt-10 max-w-[1440px] border-t border-[var(--color-border)] px-4">
+            <div className="border-b border-[var(--color-border)] px-6 py-4">
+                <h3 className="[font-size:clamp(16px,calc(10.47px+1.50vw),32px)] font-medium leading-none text-[var(--color-text-default)]">{heading}</h3>
             </div>
 
             {hasItems ? (
                 <>
                     {currentItems.map((item) => (
-                        <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-6 border-b border-[#d0d0d0] px-6 py-4">
+                        <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-6 border-b border-[var(--color-border)] px-6 py-4">
                             <div className="min-w-0">
-                                <h4 className="truncate text-[14px] md:text-[18px] lg:text-[24px] font-medium leading-[1.3] text-[var(--color-text-default)]">
+                                <h4 className="truncate [font-size:clamp(14px,calc(10.54px+0.93vw),24px)] font-medium leading-[1.3] text-[var(--color-text-default)]">
                                     <Link href={item.href} className="hover:underline">
                                         {item.title}
                                     </Link>
                                 </h4>
-                                <p className="mt-2 text-[14px] lg:text-[18px] font-normal leading-none text-[#6a6a6a]">
+                                <p className="mt-2 [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-normal leading-none text-[var(--color-text-muted)]">
                                     {item.dateText}, by {item.author}
                                 </p>
                             </div>
@@ -83,7 +83,7 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                     ))}
 
                     <div className="px-6 py-4 flex items-end justify-between gap-6">
-                        <nav className="flex flex-wrap items-center gap-2 text-[16px] md:text-[20px] lg:text-[24px] leading-none text-[var(--color-text-default)]" aria-label="Blog list pagination">
+                        <nav className="flex flex-wrap items-center gap-2 [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] leading-none text-[var(--color-text-default)]" aria-label="Blog list pagination">
                             {currentPage > 1 && (
                                 <button type="button" className="cursor-pointer hover:underline" onClick={() => setCurrentPage(1)}>
                                     First
@@ -126,9 +126,9 @@ export function ListTable({ heading, items, itemsPerPage = 10, viewMoreHref, vie
                     </div>
                 </>
             ) : (
-                <div className="border-b border-[#d0d0d0] px-6 py-14 text-center">
-                    <p className="text-[16px] md:text-[20px] lg:text-[24px] font-medium leading-[1.4] text-[var(--color-text-default)]">{emptyTitle ?? 'No posts yet'}</p>
-                    <p className="mt-3 text-[13px] md:text-[15px] lg:text-[16px] leading-[1.6] text-[#6a6a6a]">{emptyDescription ?? 'There are no published items at the moment. Please check back soon.'}</p>
+                <div className="border-b border-[var(--color-border)] px-6 py-14 text-center">
+                    <p className="[font-size:clamp(16px,calc(13.23px+0.75vw),24px)] font-medium leading-[1.4] text-[var(--color-text-default)]">{emptyTitle ?? 'No posts yet'}</p>
+                    <p className="mt-3 [font-size:clamp(13px,calc(11.96px+0.28vw),16px)] leading-[1.6] text-[var(--color-text-muted)]">{emptyDescription ?? 'There are no published items at the moment. Please check back soon.'}</p>
                 </div>
             )}
         </div>

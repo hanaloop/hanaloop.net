@@ -37,7 +37,7 @@ export function SiteFooter({ locale }: { locale: AppLocale }) {
                             </Link>
                             <ContactCtaButton
                                 locale={locale}
-                                className="h-[40px] min-w-[148px] justify-center gap-2 px-4 text-[14px] leading-none font-medium sm:min-w-[172px] sm:gap-3 sm:px-5 sm:text-[16px]"
+                                className="h-[48px] min-w-[148px] justify-center gap-2 px-4 [font-size:clamp(14px,calc(10.62px+0.37vw),16px)] leading-none font-medium sm:min-w-[172px] sm:gap-3 sm:px-5"
                                 iconSrc="/site/icons/ic-arrow-up-right.png"
                                 iconWidth={20}
                                 iconHeight={20}

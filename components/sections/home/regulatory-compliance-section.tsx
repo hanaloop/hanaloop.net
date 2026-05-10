@@ -26,7 +26,7 @@ export function HomeRegulatoryComplianceSection() {
     const reasonHeading = t.raw('reasonHeading') as [string, string];
 
     return (
-        <section className="mt-28 pb-6 lg:pb-10">
+        <section className="mt-10 lg:mt-28 pb-6 lg:pb-10">
             <div className="relative min-h-[968px] w-full overflow-hidden rounded-t-[50px]">
                 <Image src="/site/home/regulatory-bg.jpg" alt="City buildings" fill className="object-cover" sizes="100vw" />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(45,66,99,0.62)_0%,rgba(6,39,71,0.68)_56%,rgba(4,28,57,0.82)_100%)]" />
@@ -93,8 +93,8 @@ export function HomeRegulatoryComplianceSection() {
                         </div>
 
                         <div className="mt-14 lg:mt-[78px]">
-                            <p className="text-[13px] leading-[1.5] lg:text-[21px] lg:font-medium lg:leading-[1.3] lg:tracking-[0.5px]">{t('reasonEyebrow')}</p>
-                            <h3 className="mt-[3px] text-[28px] font-medium leading-[1.1] tracking-[-0.015em] lg:mt-1.5 lg:text-[48px] lg:leading-[1.14] lg:tracking-[-1px]">
+                            <p className="[font-size:clamp(13px,calc(10.23px+0.75vw),21px)] leading-[1.5] lg:font-medium lg:leading-[1.3] lg:tracking-[0.5px]">{t('reasonEyebrow')}</p>
+                            <h3 className="mt-[3px] [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-medium leading-[1.1] tracking-[-0.015em] lg:mt-1.5 lg:leading-[1.14] lg:tracking-[-1px]">
                                 <span className="block">{reasonHeading[0]}</span>
                                 <span className="block">{reasonHeading[1]}</span>
                             </h3>
@@ -102,9 +102,9 @@ export function HomeRegulatoryComplianceSection() {
                             <div className="mt-[26px] grid grid-cols-1 gap-6 lg:mt-[58px] lg:grid-cols-3 lg:gap-7">
                                 {reasons.map((reason) => (
                                     <article key={reason.title}>
-                                        <h4 className="text-[18px] font-medium lg:text-[24px] lg:leading-[1.3] lg:tracking-[-1px]">{reason.title}</h4>
+                                        <h4 className="[font-size:clamp(18px,calc(15.93px+0.56vw),24px)] font-medium lg:leading-[1.3] lg:tracking-[-1px]">{reason.title}</h4>
                                         <div className="mt-2 h-px w-full bg-white/50 lg:mt-4" />
-                                        <p className="mt-2 text-[12px] leading-[1.7] lg:mt-[10px] lg:text-[16px] lg:font-medium lg:tracking-[0.5px]">
+                                        <p className="mt-2 [font-size:clamp(12px,calc(10.62px+0.37vw),16px)] leading-[1.7] lg:mt-[10px] lg:font-medium lg:tracking-[0.5px]">
                                             <span className="lg:hidden">{reason.body}</span>
                                             <span className="hidden lg:block">
                                                 {(reason.desktopLines ?? [reason.body, '', '']).map((line, idx) => (

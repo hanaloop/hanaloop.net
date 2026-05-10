@@ -22,44 +22,18 @@ export async function Scope3StrategySection() {
     return (
         <section className="px-5 pb-16 pt-12 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[92px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] lg:px-11">
-                <h2
-                    className="text-black"
-                    style={{
-                        fontWeight: 700,
-                        fontSize: 'clamp(34px, calc(23.81px + 2.12vw), 60px)',
-                        letterSpacing: '-0.25px',
-                        lineHeight: 1.2,
-                    }}
-                >
-                    {t('heading')}
-                </h2>
+                <h2 className="text-black [font-size:clamp(24px,calc(11.57px+3.36vw),60px)] font-bold tracking-[-0.25px] leading-[1.2]">{t('heading')}</h2>
 
-                <div className="px-11 mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
+                <div className="lg:px-11 mt-14 grid grid-cols-1 gap-10 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-6">
                     {columns.map((column) => (
                         <article key={column.title} className="min-w-0">
-                            <h3
-                                style={{
-                                    ...titleGradientStyle,
-                                    fontWeight: 600,
-                                    fontSize: 'clamp(20px, calc(18.43px + 0.33vw), 24px)',
-                                    letterSpacing: '-0.25px',
-                                    lineHeight: 1.35,
-                                }}
-                            >
+                            <h3 className="[font-size:clamp(18px,calc(15.93px+0.56vw),24px)] font-semibold tracking-[-0.25px] leading-[1.35]" style={titleGradientStyle}>
                                 {column.title}
                             </h3>
                             <div className="mt-6 h-px bg-black/40" />
                             <ul className="mt-7 list-disc space-y-2 pl-6 text-black">
                                 {column.bullets.map((bullet) => (
-                                    <li
-                                        key={bullet}
-                                        style={{
-                                            fontWeight: 500,
-                                            fontSize: 'clamp(16px, calc(15.22px + 0.16vw), 18px)',
-                                            letterSpacing: '-0.25px',
-                                            lineHeight: 1.6,
-                                        }}
-                                    >
+                                    <li key={bullet} className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium tracking-[-0.25px] leading-[1.6] text-[#4C4C4C]">
                                         {bullet}
                                     </li>
                                 ))}

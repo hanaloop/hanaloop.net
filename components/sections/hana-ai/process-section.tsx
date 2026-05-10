@@ -19,17 +19,7 @@ export async function HanaAiProcessSection() {
     return (
         <section className="px-5 pb-20 pt-8 md:px-8 lg:px-0 lg:pb-[140px] lg:pt-[56px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-0 lg:px-11">
-                <h2
-                    className="text-black"
-                    style={{
-                        fontSize: 'clamp(34px, calc(24.54px + 1.97vw), 60px)',
-                        fontWeight: 700,
-                        letterSpacing: '-1px',
-                        lineHeight: 1.2,
-                    }}
-                >
-                    {t('heading')}
-                </h2>
+                <h2 className="text-black [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px] leading-[1.2]">{t('heading')}</h2>
 
                 <div className="mt-12 space-y-[100px] sm:space-y-[120px] md:space-y-[140px] lg:mt-[78px] lg:space-y-[108px]">
                     {items.map((item, index) => {
@@ -53,14 +43,9 @@ export async function HanaAiProcessSection() {
                                 </div>
 
                                 <div className={imageLeft ? 'order-2 px-11 pt-8 lg:pt-0' : 'order-2 lg:order-1 px-11 pt-8 lg:pt-0'}>
-                                    <span
-                                        className="inline-flex h-[46px] items-center rounded-full px-[18px] text-[21px] font-semibold leading-none text-white"
-                                        style={{ background: 'linear-gradient(106.7deg, rgba(31, 189, 125, 0.7) 26.33%, rgba(1, 148, 255, 0.7) 75.4%)' }}
-                                    >
-                                        {item.badge}
-                                    </span>
-                                    <h3 className="mt-5 text-[30px] font-bold leading-[1.35] tracking-[-0.25px] text-black lg:text-[36px]">{item.title}</h3>
-                                    <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[20px]">
+                                    <span className="inline-flex h-[48px] items-center rounded-full bg-[var(--gradient-badge)] px-[18px] text-[21px] font-semibold leading-none text-white">{item.badge}</span>
+                                    <h3 className="mt-5 [font-size:clamp(30px,calc(27.93px+0.56vw),36px)] font-bold leading-[1.35] tracking-[-0.25px] text-black">{item.title}</h3>
+                                    <div className="mt-6 space-y-1 [font-size:clamp(17px,calc(15.96px+0.28vw),20px)] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)]">
                                         {(Array.isArray(item.body) ? item.body : [item.body])
                                             .flatMap((block) => splitByPeriod(block))
                                             .map((line) => (
@@ -68,9 +53,9 @@ export async function HanaAiProcessSection() {
                                             ))}
                                     </div>
 
-                                    {item.extraTitle ? <h4 className="mt-10 text-[30px] font-bold leading-[1.35] tracking-[-0.25px] text-black lg:mt-[72px] lg:text-[36px]">{item.extraTitle}</h4> : null}
+                                    {item.extraTitle ? <h4 className="mt-10 [font-size:clamp(30px,calc(27.93px+0.56vw),36px)] font-bold leading-[1.35] tracking-[-0.25px] text-black lg:mt-[72px]">{item.extraTitle}</h4> : null}
                                     {item.extraBody ? (
-                                        <div className="mt-6 space-y-1 text-[17px] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)] lg:text-[20px]">
+                                        <div className="mt-6 space-y-1 [font-size:clamp(17px,calc(15.96px+0.28vw),20px)] font-normal leading-[1.9] tracking-[-0.25px] text-[var(--color-text-subtle)]">
                                             {item.extraBody
                                                 .flatMap((block) => splitByPeriod(block))
                                                 .map((line) => (

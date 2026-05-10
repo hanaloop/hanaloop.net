@@ -80,16 +80,16 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
     return (
         <section className="px-5 pb-16 pt-22 md:px-8 lg:px-0 lg:pb-[120px] lg:pt-[110px]" aria-label={text.sectionAriaLabel}>
             <div className="mx-auto w-full max-w-[1440px] lg:px-[80px]">
-                <h2 className="text-center text-[clamp(24px,6vw,48px)] font-bold leading-[1.2] tracking-[-1px] text-black">{text.heading}</h2>
+                <h2 className="text-center [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-bold leading-[1.2] tracking-[-1px] text-black">{text.heading}</h2>
 
                 <div className="mt-12 grid grid-cols-1 gap-9 lg:mt-[86px] lg:grid-cols-3 lg:gap-10">
                     {text.cards.map((card) => (
                         <article key={card.title}>
-                            <h3 className="text-[clamp(18px,4vw,28px)] font-semibold leading-[1.35] tracking-[-0.25px] text-black">{card.title}</h3>
+                            <h3 className="[font-size:clamp(18px,calc(14.54px+0.93vw),28px)] font-semibold leading-[1.35] tracking-[-0.25px] text-black">{card.title}</h3>
                             <div className="mt-3 h-px w-full bg-black/45 lg:mt-4" />
                             <ul className="mt-5 list-disc space-y-2 pl-5 text-[#4C4C4C] lg:mt-7">
                                 {card.items.map((item) => (
-                                    <li key={item} className="text-[clamp(14px,4vw,18px)] font-medium leading-[1.55] tracking-[-0.25px]">
+                                    <li key={item} className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium leading-[1.55] tracking-[-0.25px]">
                                         {item}
                                     </li>
                                 ))}

@@ -34,28 +34,28 @@ export async function HomeInsightSection() {
                 <div className="lg:hidden">
                     <div className="mx-auto ">
                         <div className="px-[10px] pb-6 pt-8 text-center">
-                            <p className="[font-size:clamp(13px,4vw,15px)] font-medium tracking-[-0.25px]">다양한 탄소중립 인사이트를 확인해보세요.</p>
-                            <h3 className="mt-1 [font-size:clamp(28px,5vw,48px)] font-medium leading-[1.15] tracking-[-1px]">Check out Carbon Neutral Insights.</h3>
+                            <p className="[font-size:clamp(13px,calc(12.31px+0.19vw),15px)] font-medium tracking-[-0.25px]">다양한 탄소중립 인사이트를 확인해보세요.</p>
+                            <h3 className="mt-1 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-medium leading-[1.15] tracking-[-1px]">Check out Carbon Neutral Insights.</h3>
                         </div>
 
-                        <div className="border-t border-[#545454] px-[10px] py-5 mt-4">
+                        <div className="mt-4 border-t border-[var(--color-text-subtle)] px-[10px] py-5">
                             <div className="flex items-center justify-between">
-                                <h4 className="[font-size:clamp(16px,4vw,20px)] font-medium leading-none">Insight LIST</h4>
-                                <Image src="/site/icons/up.png" alt="Expand" width={17} height={9} />
+                                <p className="[font-size:clamp(16px,calc(14.62px+0.37vw),20px)] font-medium leading-none">Insight LIST</p>
+                                <Image src="/site/icons/up.png" alt="" aria-hidden="true" width={17} height={9} />
                             </div>
                         </div>
 
                         {topItems.length > 0 ? (
                             <>
                                 {topItems.map((item) => (
-                                    <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-4 border-t border-[#d0d0d0] px-[10px] py-8">
+                                    <article key={item.id} className="grid grid-cols-[1fr_auto] items-center gap-4 border-t border-[var(--color-border)] px-[10px] py-8">
                                         <div className="min-w-0">
-                                            <h5 className="[font-size:clamp(14px,4vw,18px)] font-medium leading-[1.3]">
+                                            <h5 className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium leading-[1.3]">
                                                 <Link href={item.href} className="hover:underline">
                                                     {item.title}
                                                 </Link>
                                             </h5>
-                                            <p className="mt-2 [font-size:clamp(14px,4vw,18px)] font-normal leading-none text-[#6a6a6a]">
+                                            <p className="mt-2 [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-normal leading-none text-[var(--color-text-muted)]">
                                                 {item.dateText}, by {item.author}
                                             </p>
                                         </div>
@@ -65,17 +65,17 @@ export async function HomeInsightSection() {
                                     </article>
                                 ))}
 
-                                <div className="border-t border-[#545454] px-[10px] py-6 text-center">
-                                    <Link href={insightHref} className="mx-auto inline-flex h-[44px] min-w-[168px] items-center justify-center gap-2 rounded-full bg-black px-6 text-[14px] font-medium leading-none text-white">
+                                <div className="border-t border-[var(--color-text-subtle)] px-[10px] py-6 text-center">
+                                    <Link href={insightHref} className="mx-auto inline-flex h-[48px] min-w-[168px] items-center justify-center gap-2 rounded-full bg-black px-6 text-[14px] font-medium leading-none text-white">
                                         <span>{t('viewMoreLabel')}</span>
-                                        <Image src="/site/icons/ic-arrow-up-right.png" alt="" width={16} height={16} />
+                                        <Image src="/site/icons/ic-arrow-up-right.png" alt="" aria-hidden="true" width={16} height={16} />
                                     </Link>
                                 </div>
                             </>
                         ) : (
-                            <div className="border-t border-[#d0d0d0] px-[10px] py-14 text-center">
-                                <p className="[font-size:clamp(16px,4vw,18px)] font-medium leading-[1.4]">{emptyState.title}</p>
-                                <p className="mt-3 [font-size:clamp(13px,4vw,15px)] leading-[1.6] text-[#6a6a6a]">{emptyState.description}</p>
+                            <div className="border-t border-[var(--color-border)] px-[10px] py-14 text-center">
+                                <p className="[font-size:clamp(16px,calc(15.31px+0.19vw),18px)] font-medium leading-[1.4]">{emptyState.title}</p>
+                                <p className="mt-3 [font-size:clamp(13px,calc(12.31px+0.19vw),15px)] leading-[1.6] text-[var(--color-text-muted)]">{emptyState.description}</p>
                             </div>
                         )}
                     </div>

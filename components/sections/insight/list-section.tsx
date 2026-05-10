@@ -25,7 +25,7 @@ export async function InsightListSection() {
     return (
         <section className="px-4 pb-20 pt-16 text-[var(--color-text-default)] lg:px-6 lg:pb-28 lg:pt-20">
             <div className="mx-auto w-full max-w-[1920px]">
-                <p className="text-center text-[18px] lg:text-[32px] font-semibold leading-[1.35]">{t('sectionText')}</p>
+                <p className="text-center [font-size:clamp(18px,calc(13.16px+1.31vw),32px)] font-semibold leading-[1.35]">{t('sectionText')}</p>
                 <ListTable heading="Insight LIST" items={items} itemsPerPage={10} emptyTitle={emptyState.title} emptyDescription={emptyState.description} />
             </div>
         </section>
