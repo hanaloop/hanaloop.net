@@ -11,7 +11,7 @@ export async function CbamProcessSection() {
     const steps = t.raw('steps') as ProcessStep[];
 
     return (
-        <section className="relative left-1/2 right-1/2 w-screen -translate-x-1/2 overflow-hidden" aria-label={t('sectionAriaLabel')}>
+        <section className="relative w-full overflow-hidden" aria-label={t('sectionAriaLabel')}>
             <div className="relative w-full lg:hidden">
                 <Image src="/site/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
                 <div className="relative px-5 py-10 sm:px-8 md:py-14">

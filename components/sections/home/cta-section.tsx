@@ -38,7 +38,7 @@ export async function HomeCtaSection() {
                     <span className="hidden lg:inline lg:text-[42px]">{t('heading')}</span>
                 </h2>
 
-                <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-4 flex-row justify-center lg:mt-16 lg:max-w-none lg:gap-6">
+                <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-2 md:gap-4 lg:mt-16 lg:max-w-none flex-row justify-center lg:gap-6">
                     <CtaButton href="/solution" label={t('solutionLabel')} locale={locale} />
                     <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} />
                 </div>

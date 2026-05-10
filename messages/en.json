@@ -109,6 +109,8 @@
         "contactLabel": "Contact Us"
     },
     "HomeInsight": {
+        "mobileEyebrow": "Explore a range of carbon-neutral insights.",
+        "mobileHeading": "Check out Carbon Neutral Insights.",
         "heading": "Insight LIST",
         "viewMoreLabel": "View more"
     },

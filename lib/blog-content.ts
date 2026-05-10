@@ -56,23 +56,35 @@ function findBlogFile(locale: AppLocale, slug: string[]) {
   return null;
 }
 
+const slugCache = new Map<string, string[][]>();
+const contentCache = new Map<string, BlogPostContent | null>();
+
 export function getBlogPostSlugs(locale: AppLocale): string[][] {
+  if (slugCache.has(locale)) return slugCache.get(locale)!;
   const blogRoot = path.join(process.cwd(), 'content', locale, 'blog');
-  return walkMarkdownFiles(blogRoot).map((filePath) => {
+  const result = walkMarkdownFiles(blogRoot).map((filePath) => {
     const relative = path.relative(blogRoot, filePath).replaceAll('\\', '/');
     const clean = relative.replace(/\.(md|mdx)$/i, '');
     return clean.split('/');
   });
+  slugCache.set(locale, result);
+  return result;
 }
 
 export function getBlogPostContent(locale: AppLocale, slug: string[]): BlogPostContent | null {
+  const key = `${locale}:${slug.join('/')}`;
+  if (contentCache.has(key)) return contentCache.get(key)!;
+
   const filePath = findBlogFile(locale, slug);
-  if (!filePath) return null;
+  if (!filePath) {
+    contentCache.set(key, null);
+    return null;
+  }
 
   const raw = fs.readFileSync(filePath, 'utf8');
   const parsed = matter(raw);
 
-  return {
+  const result: BlogPostContent = {
     slug,
     title: String(parsed.data.title ?? ''),
     description: String(parsed.data.description ?? parsed.data.summary ?? ''),
@@ -80,4 +92,6 @@ export function getBlogPostContent(locale: AppLocale, slug: string[]): BlogPostC
     image: parsed.data.image ? String(parsed.data.image) : undefined,
     content: stripMdxImports(parsed.content),
   };
+  contentCache.set(key, result);
+  return result;
 }

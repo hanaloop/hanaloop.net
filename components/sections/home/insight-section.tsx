@@ -34,8 +34,8 @@ export async function HomeInsightSection() {
                 <div className="lg:hidden">
                     <div className="mx-auto ">
                         <div className="px-[10px] pb-6 pt-8 text-center">
-                            <p className="[font-size:clamp(13px,calc(12.31px+0.19vw),15px)] font-medium tracking-[-0.25px]">다양한 탄소중립 인사이트를 확인해보세요.</p>
-                            <h3 className="mt-1 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-medium leading-[1.15] tracking-[-1px]">Check out Carbon Neutral Insights.</h3>
+                            <p className="[font-size:clamp(13px,calc(12.31px+0.19vw),15px)] font-medium tracking-[-0.25px]">{t('mobileEyebrow')}</p>
+                            <h3 className="mt-1 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-medium leading-[1.15] tracking-[-1px]">{t('mobileHeading')}</h3>
                         </div>
 
                         <div className="mt-4 border-t border-[var(--color-text-subtle)] px-[10px] py-5">

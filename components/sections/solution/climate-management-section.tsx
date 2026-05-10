@@ -25,8 +25,7 @@ export async function SolutionClimateManagementSection() {
 
             <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden">
                 <div className="mt-12 overflow-hidden rounded-[20px] lg:mt-[58px]">
-                    <img src="/site/cbam/plan-bg-mobile.jpg" alt="" className="h-auto w-full lg:hidden" loading="eager" />
-                    <img src="/site/cbam/plan-bg.png" alt="" className="hidden h-auto w-full lg:block" loading="eager" />
+                    <img src="/site/cbam/plan-bg-mobile.jpg" alt="" className="h-auto w-full" loading="eager" />
                 </div>
                 <div className="space-y-14 md:px-8 mt-10">
                     <article>

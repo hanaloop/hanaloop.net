@@ -56,11 +56,15 @@ function stripMdxImports(content: string): string {
     .trimStart();
 }
 
+const slugCache = new Map<string, string[][]>();
+const contentCache = new Map<string, InsightPostContent | null>();
+
 export function getInsightPostSlugs(locale: AppLocale): string[][] {
+  if (slugCache.has(locale)) return slugCache.get(locale)!;
   const docsRoot = path.join(process.cwd(), 'content', locale, 'docs');
   const excluded = new Set(['glossary', 'intro', 'meta', '_meta', 'current']);
 
-  return walkMarkdownFiles(docsRoot)
+  const result = walkMarkdownFiles(docsRoot)
     .filter((filePath) => {
       const baseName = path.basename(filePath, path.extname(filePath));
       return !excluded.has(baseName) && !filePath.endsWith('.data.mdx');
@@ -69,16 +73,24 @@ export function getInsightPostSlugs(locale: AppLocale): string[][] {
       const relative = path.relative(docsRoot, filePath).replaceAll('\\', '/');
       return relative.replace(/\.(md|mdx)$/i, '').split('/');
     });
+  slugCache.set(locale, result);
+  return result;
 }
 
 export function getInsightPostContent(locale: AppLocale, slug: string[]): InsightPostContent | null {
+  const key = `${locale}:${slug.join('/')}`;
+  if (contentCache.has(key)) return contentCache.get(key)!;
+
   const filePath = findInsightFile(locale, slug);
-  if (!filePath) return null;
+  if (!filePath) {
+    contentCache.set(key, null);
+    return null;
+  }
 
   const raw = fs.readFileSync(filePath, 'utf8');
   const parsed = matter(raw);
 
-  return {
+  const result: InsightPostContent = {
     slug,
     title: String(parsed.data.title ?? ''),
     description: String(parsed.data.description ?? parsed.data.summary ?? ''),
@@ -86,4 +98,6 @@ export function getInsightPostContent(locale: AppLocale, slug: string[]): Insigh
     image: parsed.data.image ? String(parsed.data.image) : undefined,
     content: stripMdxImports(parsed.content),
   };
+  contentCache.set(key, result);
+  return result;
 }

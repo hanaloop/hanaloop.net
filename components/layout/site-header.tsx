@@ -47,7 +47,7 @@ type SiteHeaderProps = {
 export function SiteHeader({ locale, pathname, mobileContextualNav: _mobileContextualNav, initialDark }: SiteHeaderProps) {
     const t = useTranslations('SiteHeader');
     const tNav = useTranslations('Nav');
-    const menus = buildMenus(locale, tNav);
+    const menus = useMemo(() => buildMenus(locale, tNav), [locale, tNav]);
     const [scrolled, setScrolled] = useState(false);
     const [menuHovered, setMenuHovered] = useState(false);
     const [localeMenuOpen, setLocaleMenuOpen] = useState(false);
