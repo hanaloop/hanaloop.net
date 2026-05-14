@@ -14,7 +14,7 @@ export async function BlogHeroSection() {
             <div className="absolute inset-0 bg-black/35" />
 
             <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-white">
-                <h1 className="text-center [font-size:clamp(28px,calc(15.55px+3.36vw),64px)] font-semibold leading-none">HanaLoop Blog</h1>
+                <h1 className="text-center [font-size:clamp(28px,calc(15.55px+3.36vw),64px)] font-semibold leading-none">{t('heading')}</h1>
                 <Link
                     href={withLocalePath(locale, '/partnership')}
                     className="mt-6 h-8 lg:mt-12 inline-flex lg:h-12 min-w-[176px] items-center justify-center gap-3 rounded-full border border-white px-6 text-base font-medium leading-none text-white transition hover:bg-white/10"

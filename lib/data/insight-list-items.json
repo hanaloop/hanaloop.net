@@ -233,7 +233,15 @@
       "href": "/insight/x20_environment-general/2022-10-12-net-zero"
     },
     {
-      "id": "insight-29-x40_engineering-2023-12-16-homepage-v3",
+      "id": "insight-29-glossary",
+      "title": "환경용어사전",
+      "dateText": "2022년 10월 11일",
+      "author": "HanaLoop",
+      "thumbnail": "/images/bg-hero_book.jpeg",
+      "href": "/insight/glossary"
+    },
+    {
+      "id": "insight-30-x40_engineering-2023-12-16-homepage-v3",
       "title": "HanaLoop website 3.0!",
       "dateText": "2022년 10월 10일",
       "author": "HanaLoop",
@@ -241,12 +249,20 @@
       "href": "/insight/x40_engineering/2023-12-16-homepage-v3"
     },
     {
-      "id": "insight-30-x40_engineering-2022-10-10-homepage_v2",
+      "id": "insight-31-x40_engineering-2022-10-10-homepage_v2",
       "title": "HanaLoop website 2.0!",
       "dateText": "2022년 10월 10일",
       "author": "HanaLoop",
       "thumbnail": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "href": "/insight/x40_engineering/2022-10-10-homepage_v2"
+    },
+    {
+      "id": "insight-32-intro",
+      "title": "하나루프 | 자료",
+      "dateText": "",
+      "author": "HanaLoop",
+      "thumbnail": "/site/home/hero-bg-main.png",
+      "href": "/insight/intro"
     }
   ],
   "en": [
@@ -483,7 +499,15 @@
       "href": "/en/insight/x20_environment-general/2022-10-12-net-zero"
     },
     {
-      "id": "insight-29-x40_engineering-2023-12-16-homepage-v3",
+      "id": "insight-29-glossary",
+      "title": "환경용어사전",
+      "dateText": "Oct 11, 2022",
+      "author": "HanaLoop",
+      "thumbnail": "/images/bg-hero_book.jpeg",
+      "href": "/en/insight/glossary"
+    },
+    {
+      "id": "insight-30-x40_engineering-2023-12-16-homepage-v3",
       "title": "HanaLoop website 3.0!",
       "dateText": "Oct 10, 2022",
       "author": "HanaLoop",
@@ -491,12 +515,20 @@
       "href": "/en/insight/x40_engineering/2023-12-16-homepage-v3"
     },
     {
-      "id": "insight-30-x40_engineering-2022-10-10-homepage_v2",
+      "id": "insight-31-x40_engineering-2022-10-10-homepage_v2",
       "title": "HanaLoop website 2.0!",
       "dateText": "Oct 10, 2022",
       "author": "HanaLoop",
       "thumbnail": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "href": "/en/insight/x40_engineering/2022-10-10-homepage_v2"
+    },
+    {
+      "id": "insight-32-intro",
+      "title": "하나루프 | 자료",
+      "dateText": "",
+      "author": "HanaLoop",
+      "thumbnail": "/site/home/hero-bg-main.png",
+      "href": "/en/insight/intro"
     }
   ],
   "es": [
@@ -733,7 +765,15 @@
       "href": "/es/insight/x20_environment-general/2022-10-12-net-zero"
     },
     {
-      "id": "insight-29-x40_engineering-2023-12-16-homepage-v3",
+      "id": "insight-29-glossary",
+      "title": "환경용어사전",
+      "dateText": "11 oct 2022",
+      "author": "HanaLoop",
+      "thumbnail": "/images/bg-hero_book.jpeg",
+      "href": "/es/insight/glossary"
+    },
+    {
+      "id": "insight-30-x40_engineering-2023-12-16-homepage-v3",
       "title": "HanaLoop website 3.0!",
       "dateText": "10 oct 2022",
       "author": "HanaLoop",
@@ -741,12 +781,20 @@
       "href": "/es/insight/x40_engineering/2023-12-16-homepage-v3"
     },
     {
-      "id": "insight-30-x40_engineering-2022-10-10-homepage_v2",
+      "id": "insight-31-x40_engineering-2022-10-10-homepage_v2",
       "title": "HanaLoop website 2.0!",
       "dateText": "10 oct 2022",
       "author": "HanaLoop",
       "thumbnail": "https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "href": "/es/insight/x40_engineering/2022-10-10-homepage_v2"
+    },
+    {
+      "id": "insight-32-intro",
+      "title": "하나루프 | 자료",
+      "dateText": "",
+      "author": "HanaLoop",
+      "thumbnail": "/site/home/hero-bg-main.png",
+      "href": "/es/insight/intro"
     }
   ]
 }

@@ -1,33 +1,85 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+﻿import { getLocale } from 'next-intl/server';
+import type { ComponentType } from 'react';
+import { InsightDetailLayout } from '@/components/sections/insight/detail-layout';
+import { buildInsightNavTree } from '@/lib/insight-navigation';
 import type { AppLocale } from '@/lib/locales';
-import { ListTable } from '@/components/features/list-table';
-import { getInsightListItems } from '@/lib/insight-utils';
+import { withLocalePath } from '@/lib/locales';
+import { getDocsSource } from '@/lib/source';
 
-export async function InsightListSection() {
-    const t = await getTranslations('InsightList');
-    const locale = await getLocale() as AppLocale;
-    const items = getInsightListItems(locale);
-    const emptyState = locale === 'ko'
-        ? {
-            title: '등록된 인사이트가 아직 없습니다.',
-            description: '현재 공개된 인사이트가 없습니다. 새로운 콘텐츠를 곧 업데이트하겠습니다.',
-        }
-        : locale === 'es'
-            ? {
-                title: 'Aún no hay insights publicados.',
-                description: 'No hay insights publicados por ahora. Pronto compartiremos nuevo contenido.',
-            }
-            : {
-                title: 'No insights yet.',
-                description: 'There are no published insights at the moment. Please check back soon.',
-            };
+const LABELS = {
+  ko: { board: '게시판', toc: '목차', archiveTitle: '하나루프 - 자료', backToInsight: '인사이트로 돌아가기', close: '닫기' },
+  es: { board: 'Lista', toc: 'Índice', archiveTitle: 'HanaLoop - Recursos', backToInsight: 'Volver a insight', close: 'Cerrar' },
+  en: { board: 'Board', toc: 'Contents', archiveTitle: 'HanaLoop - Resources', backToInsight: 'Back to insight', close: 'Close' },
+} as const;
 
-    return (
-        <section className="px-4 pb-20 pt-16 text-[var(--color-text-default)] lg:px-6 lg:pb-28 lg:pt-20">
-            <div className="mx-auto w-full max-w-[1920px]">
-                <p className="text-center [font-size:clamp(18px,calc(13.16px+1.31vw),32px)] font-semibold leading-[1.35]">{t('sectionText')}</p>
-                <ListTable heading="Insight LIST" items={items} itemsPerPage={10} emptyTitle={emptyState.title} emptyDescription={emptyState.description} />
-            </div>
-        </section>
-    );
+type InsightListSectionProps = {
+  selectedSlug?: string[];
+};
+
+function formatDate(value: unknown, locale: AppLocale): string {
+  if (!value) return '';
+  const date = new Date(String(value));
+  if (Number.isNaN(date.getTime())) return '';
+  const dateLocale = locale === 'ko' ? 'ko-KR' : locale === 'es' ? 'es-ES' : 'en-US';
+  return date.toLocaleDateString(dateLocale, { year: 'numeric', month: 'short', day: 'numeric' });
 }
+
+function mapToc(tocValue: unknown): { id: string; text: string }[] {
+  if (!Array.isArray(tocValue)) return [];
+  return tocValue
+    .map((item) => {
+      const entry = item as { url?: string; title?: string };
+      const id = entry.url?.startsWith('#') ? entry.url.slice(1) : '';
+      return id && entry.title ? { id, text: entry.title } : null;
+    })
+    .filter((item): item is { id: string; text: string } => item !== null);
+}
+
+export async function InsightListSection({ selectedSlug }: InsightListSectionProps) {
+  const locale = (await getLocale()) as AppLocale;
+  const labels = LABELS[locale];
+
+  const navTree = buildInsightNavTree(locale);
+  const slug = selectedSlug?.length ? selectedSlug : [];
+
+  if (!slug.length) {
+    return (
+      <InsightDetailLayout navTree={navTree} currentPath="" title="" dateText="" toc={[]} backHref={withLocalePath(locale, '/insight')} showBackLink={false} labels={labels}>
+        <div />
+      </InsightDetailLayout>
+    );
+  }
+
+  const source = getDocsSource(locale);
+  const page = source.getPage(slug);
+  if (!page) return null;
+
+  const pageData = page.data as {
+    title?: string;
+    date?: string;
+    publishedAt?: string;
+    image?: string;
+    toc?: unknown;
+    body: ComponentType;
+  };
+  const MDX = pageData.body;
+  const currentPath = withLocalePath(locale, `/insight/${slug.join('/')}`);
+  const toc = mapToc(pageData.toc);
+
+  return (
+    <InsightDetailLayout
+      navTree={navTree}
+      currentPath={currentPath}
+      title={String(pageData.title ?? '')}
+      dateText={formatDate(pageData.date ?? pageData.publishedAt, locale)}
+      image={typeof pageData.image === 'string' ? pageData.image : undefined}
+      toc={toc}
+      backHref={withLocalePath(locale, '/insight')}
+      showBackLink={false}
+      labels={labels}
+    >
+      <MDX />
+    </InsightDetailLayout>
+  );
+}
+

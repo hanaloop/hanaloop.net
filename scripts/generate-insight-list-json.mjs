@@ -6,7 +6,7 @@ const LOCALES = ['ko', 'en', 'es'];
 const DEFAULT_LOCALE = 'ko';
 const FALLBACK_THUMBNAIL = '/site/home/hero-bg-main.png';
 
-const EXCLUDE_NAMES = new Set(['glossary', 'intro', 'meta', '_meta', 'current']);
+const EXCLUDE_NAMES = new Set(['meta', '_meta', 'current']);
 const EXCLUDE_EXTS = new Set(['.tsx', '.ts', '.json', '.yaml', '.yml', '.txt']);
 
 function walkMarkdownFiles(rootDir) {

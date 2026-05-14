@@ -62,7 +62,7 @@ const contentCache = new Map<string, InsightPostContent | null>();
 export function getInsightPostSlugs(locale: AppLocale): string[][] {
   if (slugCache.has(locale)) return slugCache.get(locale)!;
   const docsRoot = path.join(process.cwd(), 'content', locale, 'docs');
-  const excluded = new Set(['glossary', 'intro', 'meta', '_meta', 'current']);
+  const excluded = new Set(['meta', '_meta', 'current']);
 
   const result = walkMarkdownFiles(docsRoot)
     .filter((filePath) => {

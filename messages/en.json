@@ -115,12 +115,14 @@
         "viewMoreLabel": "View more"
     },
     "BlogHero": {
+        "heading": "HanaLoop Blog",
         "contactLabel": "Contact Us"
     },
     "BlogList": {
         "sectionText": "🗞️ Check out HanaLoop's latest useful updates."
     },
     "InsightHero": {
+        "heading": "Insight",
         "contactLabel": "Contact Us"
     },
     "InsightList": {

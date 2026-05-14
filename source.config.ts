@@ -2,7 +2,7 @@ import { defineConfig, defineDocs, defineCollections } from 'fumadocs-mdx/config
 import { metaSchema, pageSchema } from 'fumadocs-core/source/schema';
 import { z } from 'zod';
 
-const contentEnabled = process.env.HANALOOP_ENABLE_CONTENT === '1';
+const contentEnabled = process.env.HANALOOP_ENABLE_CONTENT !== '0';
 const disabledDocsDir = 'content/_disabled/docs';
 const disabledBlogDir = 'content/_disabled/blog';
 
