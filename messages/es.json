@@ -8,35 +8,101 @@
     },
     "HomeIntro": {
         "eyebrowDesktop": "HanaLoop impulsa su camino hacia la neutralidad de carbono como socio digital.",
-        "eyebrowMobileLines": ["HanaLoop impulsa su camino hacia la neutralidad", "de carbono como socio digital."],
-        "titleDesktopLines": ["HanaLoop supports and empowers your journey", "toward carbon neutrality."],
-        "titleMobileLines": ["HanaLoop supports", "and empowers your journey", "toward carbon neutrality."],
+        "eyebrowMobileLines": [
+            "HanaLoop impulsa su camino hacia la neutralidad",
+            "de carbono como socio digital."
+        ],
+        "titleDesktopLines": [
+            "HanaLoop supports and empowers your journey",
+            "toward carbon neutrality."
+        ],
+        "titleMobileLines": [
+            "HanaLoop supports",
+            "and empowers your journey",
+            "toward carbon neutrality."
+        ],
         "descriptionDesktop": "Descubra las soluciones de HanaLoop para CBAM, gestión de huella PCF y cálculo de emisiones Scope 3.",
-        "descriptionMobileLines": ["Descubra las soluciones de HanaLoop para CBAM,", "gestión de huella PCF y cálculo de", "emisiones Scope 3."],
+        "descriptionMobileLines": [
+            "Descubra las soluciones de HanaLoop para CBAM,",
+            "gestión de huella PCF y cálculo de",
+            "emisiones Scope 3."
+        ],
         "contactLabel": "Contact Us",
         "cards": [
-            { "title": "CBAM Solution", "href": "/cbam" },
-            { "title": "PCF management", "href": "/pcf" },
-            { "title": "Scope3 Solution", "href": "/scope3" }
+            {
+                "title": "CBAM Solution",
+                "href": "/cbam"
+            },
+            {
+                "title": "PCF management",
+                "href": "/pcf"
+            },
+            {
+                "title": "Scope3 Solution",
+                "href": "/scope3"
+            }
         ],
         "metrics": [
-            { "value": "4.0M+", "label": "Carbono gestionado acumulado: 4M tCO2eq+" },
-            { "value": "87%+", "label": "Reducción del tiempo operativo" },
-            { "value": "15%+", "label": "Ahorro energético (aprox. KRW 3.3B)" },
-            { "value": "1598H", "label": "Más de 1,598 horas ahorradas al año" }
+            {
+                "value": "4.0M+",
+                "label": "Carbono gestionado acumulado: 4M tCO2eq+"
+            },
+            {
+                "value": "87%+",
+                "label": "Reducción del tiempo operativo"
+            },
+            {
+                "value": "15%+",
+                "label": "Ahorro energético (aprox. KRW 3.3B)"
+            },
+            {
+                "value": "1598H",
+                "label": "Más de 1,598 horas ahorradas al año"
+            }
         ],
         "footnote": "* Fabricante A: 90 mil tCO2eq, ingresos KRW 300 mil millones, costo energético KRW 22 mil millones"
     },
     "HomeCollaboration": {
         "badge": "Our Partners",
-        "titleLines": ["A lot of companies are", "working together."],
+        "titleLines": [
+            "A lot of companies are",
+            "working together."
+        ],
         "description": "Muchas empresas colaboran con HanaLoop.",
         "viewMore": "View more collaboration",
         "collaborations": [
-            { "subtitle": "", "summary": "Materiales de Construcción", "points": ["Sistema de comercio de emisiones", "Reducción del 75% en múltiples sitios"] },
-            { "subtitle": "", "summary": "Industria No Ferrosa", "points": ["Cumplimiento K-ETS", "Cumplimiento CBAM"] },
-            { "subtitle": "", "summary": "Industria Metalúrgica", "points": ["CBAM: fácil para no expertos", "Cumplimiento en sitios de exportación"] },
-            { "subtitle": "Doosan Enerbility", "summary": "Energía Renovable", "points": ["Gestión Scope 3 para mayor sostenibilidad", "Mejora de informes CDP"] }
+            {
+                "subtitle": "",
+                "summary": "Materiales de Construcción",
+                "points": [
+                    "Sistema de comercio de emisiones",
+                    "Reducción del 75% en múltiples sitios"
+                ]
+            },
+            {
+                "subtitle": "",
+                "summary": "Industria No Ferrosa",
+                "points": [
+                    "Cumplimiento K-ETS",
+                    "Cumplimiento CBAM"
+                ]
+            },
+            {
+                "subtitle": "",
+                "summary": "Industria Metalúrgica",
+                "points": [
+                    "CBAM: fácil para no expertos",
+                    "Cumplimiento en sitios de exportación"
+                ]
+            },
+            {
+                "subtitle": "Doosan Enerbility",
+                "summary": "Energía Renovable",
+                "points": [
+                    "Gestión Scope 3 para mayor sostenibilidad",
+                    "Mejora de informes CDP"
+                ]
+            }
         ]
     },
     "HomeOurMission": {
@@ -56,44 +122,76 @@
         "eyebrow": "Primer informe de verificación en Corea de LRQA para cumplimiento del ETS y del CBAM de la UE",
         "heading": "Regulatory Compliance Approved: hana.eco",
         "reasonEyebrow": "Por qué elegir HanaLoop",
-        "reasonHeading": ["Why you should choose", "HanaLoop"],
+        "reasonHeading": [
+            "Why you should choose",
+            "HanaLoop"
+        ],
         "cards": [
             {
                 "title": "Cumplimiento del CBAM de la UE",
                 "subtitle": "Carbon Border Adjustment Mechanism",
-                "items": ["Gestión de productos", "Gestión del suministro de materias primas", "Exportación de reportes CBAM", "Soporte de factores de emisión"]
+                "items": [
+                    "Gestión de productos",
+                    "Gestión del suministro de materias primas",
+                    "Exportación de reportes CBAM",
+                    "Soporte de factores de emisión"
+                ]
             },
             {
                 "title": "Cumplimiento ETS y gestión por objetivos",
                 "subtitle": "Korea Emissions Trading System",
-                "items": ["Gestión de datos con nivel de verificación", "Gestión de libro de derechos", "Definición de objetivos y análisis de escenarios"]
+                "items": [
+                    "Gestión de datos con nivel de verificación",
+                    "Gestión de libro de derechos",
+                    "Definición de objetivos y análisis de escenarios"
+                ]
             },
             {
                 "title": "Cumplimiento IFRS (TCFD) / CDP / GRI",
                 "subtitle": "Climate Normatives, Frameworks And Standards",
-                "items": ["Gestión de recursos para reportes estándar", "Análisis de escenarios de emisiones"]
+                "items": [
+                    "Gestión de recursos para reportes estándar",
+                    "Análisis de escenarios de emisiones"
+                ]
             },
             {
                 "title": "Cumplimiento del CBAM de la UE",
                 "subtitle": "Carbon Border Adjustment Mechanism",
-                "items": ["Gestión de productos", "Gestión del suministro de materias primas", "Exportación de reportes CBAM", "Soporte de factores de emisión"]
+                "items": [
+                    "Gestión de productos",
+                    "Gestión del suministro de materias primas",
+                    "Exportación de reportes CBAM",
+                    "Soporte de factores de emisión"
+                ]
             }
         ],
         "reasons": [
             {
                 "title": "Customized Partnership",
                 "body": "Con tecnología validada ante regulaciones globales, entramos en mercados a medida mediante alianzas con consultoría ambiental y proveedores de transición energética.",
-                "desktopLines": ["Con tecnología validada ante regulaciones globales,", "entramos en mercados a medida mediante alianzas con", "consultoría ambiental y proveedores de transición energética."]
+                "desktopLines": [
+                    "Con tecnología validada ante regulaciones globales,",
+                    "entramos en mercados a medida mediante alianzas con",
+                    "consultoría ambiental y proveedores de transición energética."
+                ]
             },
             {
                 "title": "Everything with Hanaeco",
                 "body": "Administra toda la gestión de carbono de empresa y cadena de suministro en un solo lugar con Hanaeco.",
-                "desktopLines": ["Administra toda la gestión de carbono de empresa y", "cadena de suministro en un solo lugar con Hanaeco.", "Haz la gestión de carbono más fácil con Hanaeco."]
+                "desktopLines": [
+                    "Administra toda la gestión de carbono de empresa y",
+                    "cadena de suministro en un solo lugar con Hanaeco.",
+                    "Haz la gestión de carbono más fácil con Hanaeco."
+                ]
             },
             {
                 "title": "Select the right pricing plan",
                 "body": "Ofrecemos planes y precios flexibles para que cada empresa elija la opción adecuada.",
-                "desktopLines": ["Ofrecemos planes y precios flexibles para que", "cada empresa elija la opción adecuada", "a sus necesidades."]
+                "desktopLines": [
+                    "Ofrecemos planes y precios flexibles para que",
+                    "cada empresa elija la opción adecuada",
+                    "a sus necesidades."
+                ]
             }
         ]
     },
@@ -104,7 +202,11 @@
     "HomeCta": {
         "eyebrow": "Comienza la gestión sistemática de carbono con Hana Eco.",
         "heading": "Start Systematic Carbon Management with Hana Eco.",
-        "mobileHeadingLines": ["Start Systematic", "Carbon Management", "with Hana Eco."],
+        "mobileHeadingLines": [
+            "Start Systematic",
+            "Carbon Management",
+            "with Hana Eco."
+        ],
         "solutionLabel": "Solution Overview",
         "contactLabel": "Contact Us"
     },
@@ -117,6 +219,17 @@
     "BlogHero": {
         "heading": "HanaLoop Blog",
         "contactLabel": "Contáctenos"
+    },
+    "CompanyHero": {
+        "heading": "Reliable and Agile Sustainability Partner",
+        "contactLabel": "Contáctenos"
+    },
+    "CompanyMission": {
+        "title": "Nuestra misión",
+        "paragraphs": [
+            "Construimos ecosistemas sostenibles mediante tecnología de gestión de neutralidad de carbono e innovación digital adaptadas a los entornos industriales y empresariales. Desarrollamos soluciones digitales que facilitan el acceso a tecnologías ambientales y aceleramos la implementación del net-zero.",
+            "HanaLoop generará un mayor impacto a través de conexiones significativas para que la vida de todos sea sostenible, con servicios digitales beneficiosos para las personas y la naturaleza."
+        ]
     },
     "BlogList": {
         "sectionText": "🗞️ Consulta las últimas novedades útiles de HanaLoop."
@@ -158,19 +271,36 @@
         "steps": [
             {
                 "heading": "1. Diagnóstico y Consultoría",
-                "items": ["Definir límites del producto", "Revisar puntos de monitoreo", "Evaluar estado de recopilación y mejoras", "Analizar integridad y precisión del inventario"]
+                "items": [
+                    "Definir límites del producto",
+                    "Revisar puntos de monitoreo",
+                    "Evaluar estado de recopilación y mejoras",
+                    "Analizar integridad y precisión del inventario"
+                ]
             },
             {
                 "heading": "2. Configuración de Plataforma",
-                "items": ["Recolectar datos", "Configurar fuentes de emisión por proceso", "Normalizar datos requeridos", "Ingresar datos históricos", "Definir proceso operativo"]
+                "items": [
+                    "Recolectar datos",
+                    "Configurar fuentes de emisión por proceso",
+                    "Normalizar datos requeridos",
+                    "Ingresar datos históricos",
+                    "Definir proceso operativo"
+                ]
             },
             {
                 "heading": "3. Instalación e Integración",
-                "items": ["Personalizar recopilación automática", "Definir uso de ERP/MES y proveer conectores"]
+                "items": [
+                    "Personalizar recopilación automática",
+                    "Definir uso de ERP/MES y proveer conectores"
+                ]
             },
             {
                 "heading": "4. Transición",
-                "items": ["Entregar manual de uso", "Capacitar al equipo para internalizar el proceso"]
+                "items": [
+                    "Entregar manual de uso",
+                    "Capacitar al equipo para internalizar el proceso"
+                ]
             }
         ]
     },
@@ -253,16 +383,23 @@
                 "title": "Reducción de Costos y Maximización de Ingresos",
                 "body": "Hoy, el carbono representa valor económico directo. En ETS, CBAM y otros marcos, predecir con precisión las emisiones ayuda a maximizar ingresos y reducir costos.",
                 "extraTitle": "Análisis del Impacto de Reducción con Predicción",
-                "extraBody": ["Hana.eco usa IA para predecir emisiones y analizar el impacto de reducción según cambios operativos, apoyando decisiones estratégicas."],
+                "extraBody": [
+                    "Hana.eco usa IA para predecir emisiones y analizar el impacto de reducción según cambios operativos, apoyando decisiones estratégicas."
+                ],
                 "bgSrc": "/site/hana-ai/2-bg.png",
                 "bgAlt": "Fondo de la función de predicción"
             },
             {
                 "badge": "Asistente de IA Carbon Buddy",
                 "title": "Respuesta Regulatoria con Gestión de Carbono",
-                "body": ["Una gestión de carbono efectiva requiere integrar conocimiento experto y estrategia empresarial.", "Así se pueden definir estrategias óptimas y responder rápidamente a regulaciones cambiantes."],
+                "body": [
+                    "Una gestión de carbono efectiva requiere integrar conocimiento experto y estrategia empresarial.",
+                    "Así se pueden definir estrategias óptimas y responder rápidamente a regulaciones cambiantes."
+                ],
                 "extraTitle": "Comprensión Regulatoria Rápida y Clara",
-                "extraBody": ["Hana.eco aprovecha IA generativa y NLP para que incluso no especialistas comprendan regulaciones complejas y respondan con eficiencia."],
+                "extraBody": [
+                    "Hana.eco aprovecha IA generativa y NLP para que incluso no especialistas comprendan regulaciones complejas y respondan con eficiencia."
+                ],
                 "bgSrc": "/site/hana-ai/3-bg.png",
                 "bgAlt": "Fondo de la función de asistente Carbon Buddy AI"
             }
@@ -325,14 +462,22 @@
             {
                 "index": "01.",
                 "title": "Evaluación de Capacidades de Alcance 3",
-                "description": ["Análisis de capacidades internas", "Definición de categorías de Alcance 3 gestionables", "Establecimiento del alcance de categorías de emisiones"],
+                "description": [
+                    "Análisis de capacidades internas",
+                    "Definición de categorías de Alcance 3 gestionables",
+                    "Establecimiento del alcance de categorías de emisiones"
+                ],
                 "imageSrc": "/site/scope3/overview-1.png",
                 "imageAlt": "Imagen de evaluación de capacidades de Alcance 3"
             },
             {
                 "index": "02.",
                 "title": "Cálculo de Emisiones de Alcance 3",
-                "description": ["Recopilación de datos hasta el cálculo", "Verificación de los resultados del cálculo", "Construcción de un proceso de cálculo de emisiones personalizado"],
+                "description": [
+                    "Recopilación de datos hasta el cálculo",
+                    "Verificación de los resultados del cálculo",
+                    "Construcción de un proceso de cálculo de emisiones personalizado"
+                ],
                 "imageSrc": "/site/scope3/overview-2.png",
                 "imageAlt": "Imagen de cálculo de emisiones de Alcance 3"
             },
@@ -350,7 +495,11 @@
             {
                 "index": "04.",
                 "title": "Estrategia de Respuesta Regulatoria y Gestión de Riesgos",
-                "description": ["Planes de respuesta a los requisitos de clientes y partes interesadas", "Aplicación de estándares globales de reporte como IFRS y CDP", "Estrategias de gestión de riesgos"],
+                "description": [
+                    "Planes de respuesta a los requisitos de clientes y partes interesadas",
+                    "Aplicación de estándares globales de reporte como IFRS y CDP",
+                    "Estrategias de gestión de riesgos"
+                ],
                 "imageSrc": "/site/scope3/overview-4.png",
                 "imageAlt": "Imagen de estrategia de respuesta regulatoria y gestión de riesgos"
             }
@@ -369,7 +518,10 @@
                         "lead": "Actualización Masiva de Datos de Actividad",
                         "body": "Admite la clasificación por categorías, el mapeo de factores de emisión, la conversión de unidades y el cálculo de emisiones para grandes volúmenes de datos de actividad."
                     },
-                    { "lead": "Gestión Agrupada de Actividades Similares", "body": "Agrupe elementos de actividad similares para agilizar la gestión y el seguimiento de los factores de emisión." }
+                    {
+                        "lead": "Gestión Agrupada de Actividades Similares",
+                        "body": "Agrupe elementos de actividad similares para agilizar la gestión y el seguimiento de los factores de emisión."
+                    }
                 ]
             },
             {
@@ -404,7 +556,11 @@
             },
             {
                 "title": "Gestión de Alcance 3 en la Cadena de Valor",
-                "bullets": ["Gestión de emisiones en la cadena de valor", "Gestión de proveedores", "Soporte multilingüe"]
+                "bullets": [
+                    "Gestión de emisiones en la cadena de valor",
+                    "Gestión de proveedores",
+                    "Soporte multilingüe"
+                ]
             },
             {
                 "title": "Soporte de ACV de Productos",
@@ -417,7 +573,11 @@
             },
             {
                 "title": "OpenAPI – Plataforma",
-                "bullets": ["Reducir el tiempo para crear soluciones extendidas", "Posibilitar la creación de nuevos modelos de negocio", "Fomentar un ecosistema bajo en carbono"]
+                "bullets": [
+                    "Reducir el tiempo para crear soluciones extendidas",
+                    "Posibilitar la creación de nuevos modelos de negocio",
+                    "Fomentar un ecosistema bajo en carbono"
+                ]
             }
         ],
         "imageAlt": "Imagen de fondo de bosque"
@@ -452,7 +612,10 @@
         "address": "4F, 545, Bongcheon-ro, Gwanak-gu, Seúl, República de Corea",
         "contactPrefix": "CONTACTO :",
         "companyIntroLink": "Descargar presentación de la empresa",
-        "localAddressLines": ["4F, Seoul Startup Center Gwanak,", "545 Bongcheon-ro, Gwanak-gu, Seúl (08789)"],
+        "localAddressLines": [
+            "4F, Seoul Startup Center Gwanak,",
+            "545 Bongcheon-ro, Gwanak-gu, Seúl (08789)"
+        ],
         "formLabel": "Nombre de Empresa / Institución",
         "placeholders": {
             "name": "Nombre del solicitante (Departamento / Cargo)",
@@ -553,15 +716,200 @@
         "cards": [
             {
                 "title": "Estándar",
-                "items": ["Para empresas de acero y aluminio que deben cumplir CBAM", "Gestión de carbono para una o varias plantas y gestión de huella de carbono del producto según criterios CBAM"]
+                "items": [
+                    "Para empresas de acero y aluminio que deben cumplir CBAM",
+                    "Gestión de carbono para una o varias plantas y gestión de huella de carbono del producto según criterios CBAM"
+                ]
             },
             {
                 "title": "Cadena de Suministro - LITE",
-                "items": ["Para centros de distribución que deben cumplir CBAM", "Recopilar, rastrear y gestionar emisiones embebidas de múltiples proveedores"]
+                "items": [
+                    "Para centros de distribución que deben cumplir CBAM",
+                    "Recopilar, rastrear y gestionar emisiones embebidas de múltiples proveedores"
+                ]
             },
             {
                 "title": "Cadena de Suministro - ENTERPRISE",
-                "items": ["Cumplimiento CBAM con decenas de proveedores", "Funciones LITE + funciones Estándar"]
+                "items": [
+                    "Cumplimiento CBAM con decenas de proveedores",
+                    "Funciones LITE + funciones Estándar"
+                ]
+            }
+        ]
+    },
+    "CompanyValue": {
+        "title": "Our Value",
+        "items": {
+            "synergistic": {
+                "title": "SYNERGISTIC",
+                "description": "Creamos sinergia m?s all? de la colaboraci?n.\nUniendo la experiencia y capacidad de cada persona,\nconstruimos un valor mayor juntos."
+            },
+            "venture": {
+                "title": "VENTURE",
+                "description": "Desafiamos sin miedo y ejecutamos con audacia.\nCon iniciativas adelantadas y una fuerte ejecuci?n,\ngeneramos cambios significativos."
+            },
+            "reliable": {
+                "title": "RELIABLE",
+                "description": "Aspiramos a ser un socio confiable.\nCon constancia y responsabilidad,\nconstruimos confianza con nuestros clientes y cumplimos nuestras promesas."
+            }
+        }
+    },
+    "CompanyLife": {
+        "title": "Life at HanaLoop",
+        "items": [
+            {
+                "title": "Programas de formacion para el crecimiento individual y la mejora de capacidades del equipo",
+                "descriptions": [
+                    "- Apoyo para participar en seminarios, foros y capacitaciones",
+                    "- Apoyo para la compra de libros relacionados con el trabajo"
+                ]
+            },
+            {
+                "title": "Bienestar para recargar energia y mantener una vida equilibrada",
+                "descriptions": [
+                    "- Medio dia libre pagado cada mes",
+                    "- Trabajo remoto segun el tipo de trabajo y la productividad",
+                    "- Apoyo para chequeos de salud",
+                    "- Stock options para miembros con mas de 3 anos en la empresa"
+                ]
+            }
+        ]
+    },
+    "CompanyTeam": {
+        "title": "Nuestro equipo",
+        "members": [
+            {
+                "name": "Hyeyeon Kim",
+                "role": "CEO / co-founder",
+                "bio": "Samsung Electronics, Altenia, Arteplus, KOWORC y otras organizaciones.\nProyectos: optimizaci?n de reconocimiento de voz, desarrollo de aplicaciones m?viles y estudios globales de tendencias cient?ficas y tecnol?gicas para NIA.\nGestora de Gases de Efecto Invernadero. LEED Green Associate. Desarrollo de software embebido. Gesti?n de organizaciones sin fines de lucro.\nInvestigaci?n en industria y pol?ticas p?blicas. Autora de art?culos de IA.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            },
+            {
+                "name": "Junho Park",
+                "role": "CTO / co-founder",
+                "bio": "Construcci?n y operaci?n de pipelines de datos a gran escala.\nProyectos: automatizaci?n de datos de emisiones de carbono, optimizaci?n de infraestructura cloud y dise?o de arquitectura de plataforma.\nAsesor? transformaciones digitales en energ?a y manufactura. Lider? equipos de desarrollo de producto.\nImpuls? estrategia tecnol?gica e investigaci?n de mejora de servicios.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            },
+            {
+                "name": "Sumin Lee",
+                "role": "Lead Researcher",
+                "bio": "An?lisis de datos clim?ticos y regulatorios con investigaci?n de insights.\nProyectos: monitoreo de regulaciones globales, generaci?n autom?tica de reportes y an?lisis de factores de emisi?n por industria.\nColaboraci?n internacional con grupos de inter?s y comunicaci?n de pol?ticas.\nInvestigaci?n cuantitativa y cualitativa para estrategias de gesti?n de carbono.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            }
+        ]
+    },
+    "CompanyRole": {
+        "title": "Encuentra tu rol",
+        "labels": {
+            "recruitments": "Reclutamiento",
+            "quota": "Vacantes",
+            "dueDate": "Fecha l?mite",
+            "jobDescription": "Descripci?n del puesto",
+            "responsibilities": "Responsabilidades",
+            "requirements": "Requisitos",
+            "condition": "Condiciones",
+            "employmentType": "Tipo de empleo",
+            "location": "Ubicaci?n",
+            "preferred": "Preferido",
+            "technologyStack": "Stack tecnol?gico",
+            "applicationAndSelection": "Solicitud y proceso de selecci?n",
+            "howToApply": "C?mo postular",
+            "selectionProcess": "Proceso de selecci?n"
+        },
+        "sections": [
+            {
+                "id": "experienced",
+                "title": "Frontend / Backend Web de Plataforma (Ingeniero/a de Software)",
+                "badge": "Con experiencia",
+                "recruitments": "Los/las ingenieros/as full-stack de HanaLoop desarrollan productos de tecnolog?a clim?tica junto a personas que comparten la misi?n de acelerar la acci?n clim?tica y ofrecer soluciones pr?cticas.",
+                "quota": "1 vacante",
+                "dueDate": "Abierto hasta cubrirse",
+                "jobDescription": {
+                    "responsibilities": [
+                        "Desarrollar funciones frontend/backend de la plataforma y participar en ceremonias de desarrollo de producto",
+                        "Trabajar con el Product Manager y el CTO para mejorar continuamente el producto"
+                    ],
+                    "requirements": [
+                        "T?tulo en inform?tica o m?s de 2 a?os de experiencia en desarrollo de aplicaciones web",
+                        "Aprendizaje r?pido y mentalidad pr?ctica",
+                        "Fuerte sentido de ownership y responsabilidad en la entrega del producto",
+                        "Est?ndares altos de calidad de c?digo"
+                    ]
+                },
+                "condition": {
+                    "employmentType": [
+                        "Contrato de 3 meses con conversi?n a tiempo completo"
+                    ],
+                    "location": [
+                        "Se?l, HanaLoop"
+                    ],
+                    "preferred": [
+                        "Experiencia comunic?ndose en idiomas extranjeros y trabajando con frameworks",
+                        "Excelentes habilidades de comunicaci?n y mentalidad de trabajo en equipo",
+                        "Conocimiento pr?ctico de DevSecOps: gitops, docker, kubernetes",
+                        "Experiencia en dise?o/arquitectura de producto",
+                        "Experiencia con SQL y NoSQL",
+                        "Experiencia en despliegue cloud y operaci?n de plataformas"
+                    ]
+                },
+                "stack": [
+                    "TypeScript, Python",
+                    "Nextjs, Nestjs",
+                    "React",
+                    "Postgres, Redis, Elasticsearch"
+                ],
+                "process": {
+                    "howToApply": [
+                        "Env?a tu CV y resumen de experiencia al correo de abajo.",
+                        "joinus@hanaloop.com"
+                    ],
+                    "steps": [
+                        "Revisi?n de CV y prueba de c?digo > 1? entrevista > evaluaci?n personal y 2? entrevista > chequeo m?dico > incorporaci?n",
+                        "El proceso puede cambiar seg?n el calendario y las circunstancias.",
+                        "Los horarios confirmados se informar?n individualmente.",
+                        "Incluye el nombre del puesto y tu nombre en el asunto del correo."
+                    ]
+                }
+            },
+            {
+                "id": "entry",
+                "title": "Frontend / Backend Web de Plataforma (Ingeniero/a de Software)",
+                "badge": "Junior",
+                "recruitments": "Buscamos desarrolladores/as junior con ganas de crecer junto a HanaLoop en tecnolog?a clim?tica.",
+                "quota": "0 vacantes",
+                "dueDate": "Abierto hasta cubrirse",
+                "jobDescription": {
+                    "responsibilities": [
+                        "La descripci?n detallada se compartir? cuando haya vacantes junior disponibles."
+                    ],
+                    "requirements": [
+                        "Fundamentos s?lidos y capacidad de resoluci?n de problemas"
+                    ]
+                },
+                "condition": {
+                    "employmentType": [
+                        "Tiempo completo (puede aplicarse periodo de prueba)"
+                    ],
+                    "location": [
+                        "Se?l, HanaLoop"
+                    ],
+                    "preferred": [
+                        "Experiencia de colaboraci?n y fuerte mentalidad de crecimiento"
+                    ]
+                },
+                "stack": [
+                    "TypeScript",
+                    "React"
+                ],
+                "process": {
+                    "howToApply": [
+                        "Env?a tu CV al correo de abajo.",
+                        "joinus@hanaloop.com"
+                    ],
+                    "steps": [
+                        "Revisi?n de CV > entrevista > conversaci?n de oferta > incorporaci?n"
+                    ]
+                }
             }
         ]
     }

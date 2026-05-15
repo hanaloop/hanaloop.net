@@ -6,10 +6,10 @@ import { withLocalePath } from '@/lib/locales';
 
 export async function BlogHeroSection() {
     const t = await getTranslations('BlogHero');
-    const locale = await getLocale() as AppLocale;
+    const locale = (await getLocale()) as AppLocale;
 
     return (
-        <section className="relative h-[160px] overflow-hidden md:h-[280px] lg:h-[360px] xl:h-[420px] 2xl:h-[480px]" aria-label="HanaLoop Blog Hero">
+        <section className="relative h-[300px] overflow-hidden md:h-[400px] lg:h-[480px] xl:h-[480px] 2xl:h-[480px]" aria-label="HanaLoop Blog Hero">
             <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/site/blog/hero-bg.png')" }} />
             <div className="absolute inset-0 bg-black/35" />
 

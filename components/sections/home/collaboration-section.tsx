@@ -131,7 +131,7 @@ export function HomeCollaborationSection() {
                             <span key={line} className="block whitespace-nowrap">{line}</span>
                         ))}
                     </h2>
-                    <p className="mt-4 font-medium leading-[1.5] text-[var(--color-text-eyebrow)] [font-size:clamp(13px,calc(7.12px+1.59vw),30px)]">{t('description')}</p>
+                    <p className="mx-auto mt-4 max-w-[680px] font-medium leading-[1.5] text-[var(--color-text-eyebrow)] lg:mx-0 [font-size:clamp(13px,calc(7.12px+1.59vw),30px)]">{t('description')}</p>
                 </div>
 
                 <div className="collaboration-center-stack">
