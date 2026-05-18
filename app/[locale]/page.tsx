@@ -7,7 +7,7 @@ import { HomeCollaborationSection } from '@/components/sections/home/collaborati
 import { HomeOurMissionSection } from '@/components/sections/home/our-mission-section';
 import { HomeInsightSection } from '@/components/sections/home/insight-section';
 import { HomeFaqSection } from '@/components/sections/home/faq-section';
-import { HomeCtaSection } from '@/components/sections/home/cta-section';
+import { CtaSection } from '@/components/sections/home/cta-section';
 import { HomeRegulatoryComplianceSection } from '@/components/sections/home/regulatory-compliance-section';
 import { isLocale, locales } from '@/lib/locales';
 import { getHomeMetadataText, siteConfig } from '@/lib/site-config';
@@ -31,7 +31,7 @@ export default async function Page({ params }: Props) {
       <HomeRegulatoryComplianceSection />
       <HomeInsightSection />
       <HomeFaqSection />
-      <HomeCtaSection />
+      <CtaSection isHome={true} />
     </SiteShell>
   );
 }
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
 
-  const meta = getHomeMetadataText(locale);
+  const meta = getHomeMetadataText();
   const title = `${siteConfig.title} | ${meta.title}`;
   return {
     title,

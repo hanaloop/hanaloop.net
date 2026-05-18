@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { SiteShell } from '@/components/layout/site-shell';
 import { InsightHeroSection } from '@/components/sections/insight/hero-section';
 import { InsightListSection } from '@/components/sections/insight/list-section';
@@ -19,6 +20,7 @@ export const dynamicParams = false;
 export default async function Page({ params }: Props) {
     const { locale, slug } = await params;
     if (!isLocale(locale)) notFound();
+    setRequestLocale(locale);
     if (!slug || slug.length === 0) redirect(withLocalePath(locale, '/insight/intro'));
 
     const page = getDocsSource(locale).getPage(slug);
@@ -26,8 +28,8 @@ export default async function Page({ params }: Props) {
 
     return (
         <SiteShell>
-            <InsightHeroSection />
-            <InsightListSection selectedSlug={slug} />
+            <InsightHeroSection locale={locale} />
+            <InsightListSection locale={locale} selectedSlug={slug} />
         </SiteShell>
     );
 }

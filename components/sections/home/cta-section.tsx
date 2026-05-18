@@ -16,7 +16,7 @@ function CtaButton({ href, label, locale }: { href: string; label: string; local
     );
 }
 
-export async function HomeCtaSection() {
+export async function CtaSection({ isHome = false }: { isHome?: boolean }) {
     const t = await getTranslations('HomeCta');
     const locale = (await getLocale()) as AppLocale;
 
@@ -39,8 +39,14 @@ export async function HomeCtaSection() {
                 </h2>
 
                 <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-2 md:gap-4 lg:mt-16 lg:max-w-none flex-row justify-center lg:gap-6">
-                    <CtaButton href="/solution" label={t('solutionLabel')} locale={locale} />
-                    <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} />
+                    {isHome ? (
+                        <>
+                            <CtaButton href="/demo_request" label={t('demoLabel')} locale={locale} />
+                            <CtaButton href="https://docs.google.com/presentation/d/1fNDHGk5kAEI_JigpLZ5yKbHd9uBvoRg4d-S7Nb5YyYo/present?slide=id.p" label={t('solutionLabel')} locale={locale} />
+                        </>
+                    ) : (
+                        <CtaButton href="/partnership" label={t('contactLabel')} locale={locale} />
+                    )}
                 </div>
             </div>
         </section>

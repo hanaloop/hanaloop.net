@@ -21,7 +21,7 @@ export async function PartnershipContactApplicationSection() {
 
     return (
         <section aria-label="Partnership Contact Application">
-            <div className="mx-auto w-full max-w-[1440px] px-6 pb-24 pt-14 lg:px-11 lg:pb-40 lg:pt-20">
+            <div className="mx-auto w-full max-w-[1440px] px-6 pb-[120px] pt-14 lg:px-11 lg:pb-40 lg:pt-20">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_551px] lg:gap-[78px]">
                     <div>
                         <img src="/site/partnership/logo.png" alt="HanaLoop logo" width={180} height={30} className="h-[30px] w-auto" />

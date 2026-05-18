@@ -140,33 +140,58 @@
     width: 56px;
 }
 
-.collaboration-logo-strip {
-    align-items: end;
+.partner-logo-grid {
+    -webkit-overflow-scrolling: touch;
     display: flex;
     flex-wrap: nowrap;
-    gap: 0;
-    justify-content: center;
-    padding: 0;
+    gap: 12px;
+    overflow-x: auto;
+    padding-inline: 4px;
+    scrollbar-width: none;
 }
 
-.collaboration-logo-strip::-webkit-scrollbar {
+.partner-logo-grid::-webkit-scrollbar {
     display: none;
 }
 
-.collaboration-logo-button {
+.partner-logo-item {
     align-items: center;
-    background: transparent;
-    border: none;
-    cursor: pointer;
     display: flex;
+    flex: 0 0 auto;
     justify-content: center;
-    padding: 6px 24px;
-    transform: scale(1);
-    transition: transform 220ms ease;
+    min-width: 130px;
+    padding: 10px 8px;
 }
 
-.collaboration-logo-button.is-active {
-    transform: scale(1.05);
+.partner-logo-image {
+    height: clamp(18px, calc(14.54px + 0.93vw), 28px);
+    object-fit: contain;
+    width: 100%;
+    max-width: clamp(96px, calc(66.96px + 7.85vw), 180px);
+}
+
+@media (min-width: 1024px) {
+    .partner-logo-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: clamp(18px, calc(-50.92px + 6.73vw), 46px) clamp(20px, calc(-58.77px + 7.69vw), 52px);
+        justify-items: center;
+        max-width: 1440px;
+        margin-inline: auto;
+        overflow: hidden;
+        padding-inline: 0;
+    }
+
+    .partner-logo-item {
+        min-width: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .partner-logo-image {
+        height: clamp(24px, calc(-15.38px + 3.85vw), 40px);
+        max-width: clamp(150px, 12.2vw, 1800px);
+    }
 }
 
 .collaboration-cta-group {
@@ -234,20 +259,6 @@
     .collaboration-card-swiper {
         max-width: 100%;
         padding: 0 0 24px;
-    }
-
-    .collaboration-logo-strip {
-        justify-content: flex-start;
-        max-width: 100%;
-    }
-
-    .collaboration-logo-button {
-        padding: 6px 12px;
-    }
-
-    .collaboration-logo-button .collaboration-logo-image {
-        object-fit: contain;
-        max-height: 24px;
     }
 
     .collaboration-card-swiper .swiper-pagination {

@@ -6,22 +6,13 @@ export async function PcfHeroSection() {
     const tNav = await getTranslations('PlatformNav');
 
     const relatedLinks = [
+        { label: tNav('carbonAccounting'), href: '/platform' },
         { label: tNav('cbam'), href: '/cbam' },
         { label: tNav('pcf'), href: '/pcf', current: true },
-        { label: tNav('scope3'), href: '/scope3' },
+        { label: tNav('supplyChain'), href: '/supply' },
         { label: tNav('hanaAi'), href: '/hana-ai' },
-        { label: tNav('carbonAccounting'), href: '/platform' },
-        { label: tNav('climateStrategy'), href: '/solution' },
+        { label: tNav('cases'), href: '/cases' },
     ];
 
-    return (
-        <PlatformHero
-            ariaLabel="PCF Hero"
-            backgroundImageUrl="/site/pcf/hero.png"
-            heading={t('heading')}
-            description={t('description')}
-            navAriaLabel={t('navAriaLabel')}
-            relatedLinks={relatedLinks}
-        />
-    );
+    return <PlatformHero ariaLabel="PCF Hero" backgroundImageUrl="/site/pcf/hero.png" heading={t('heading')} description={t('description')} navAriaLabel={t('navAriaLabel')} relatedLinks={relatedLinks} />;
 }

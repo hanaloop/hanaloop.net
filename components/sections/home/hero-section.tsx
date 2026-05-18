@@ -24,14 +24,14 @@ function HeroButton({ href, label, locale, mobileWidthClassName }: { href: strin
 
 export async function HomeHeroSection() {
     const t = await getTranslations('HomeHero');
-    const locale = await getLocale() as AppLocale;
+    const locale = (await getLocale()) as AppLocale;
 
     return (
         <section className="relative isolate overflow-x-hidden text-white">
             <div className="relative overflow-hidden bg-[var(--color-hero-bg)]" style={{ height: 'clamp(620px, calc(620px + 16vw), 958px)' }}>
                 <Image src="/site/home/hero-bg-main.png" alt="" fill priority className="object-cover object-center" sizes="100vw" />
                 <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-8 lg:px-[64px]" style={{ paddingTop: 'clamp(92px, calc(54.14px + 10.10vw), 248px)' }}>
-                    <div className="max-w-[780px]">
+                    <div className="max-w-[800px]">
                         <h1 className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-white [font-size:clamp(28px,calc(16.94px+2.99vw),60px)]">
                             <span className="block">{t('title')}</span>
                         </h1>

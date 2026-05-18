@@ -2,7 +2,7 @@ import { UnderConstruction } from '@/components/features/under-construction';
 import { notFound } from 'next/navigation';
 import { isLocale, locales } from '@/lib/locales';
 
-const slugs = ['company', 'partnership', 'platform', 'recruit', 'privacy', 'credits', 'recruit_apply', 'docs'];
+const slugs = ['company', 'partnership', 'privacy', 'credits', 'docs'];
 
 type Props = {
     params: Promise<{ locale: string; slug: string }>;

@@ -13,7 +13,7 @@ export async function PcfOverviewSection() {
     const t = await getTranslations('PcfOverview');
 
     return (
-        <section className="px-4 pb-16 pt-14 sm:px-6 md:px-8 lg:pb-[120px] lg:pt-[108px] lg:px-11" aria-label={t('title')}>
+        <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px]">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
                 <p className="mt-5 text-[#4c4c4c] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>

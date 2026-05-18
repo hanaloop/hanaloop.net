@@ -1,11 +1,10 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { ListTable } from '@/components/features/list-table';
 import { getBlogListItems } from '@/lib/blog-utils';
 
-export async function BlogListSection() {
-    const t = await getTranslations('BlogList');
-    const locale = await getLocale() as AppLocale;
+export async function BlogListSection({ locale }: { locale: AppLocale }) {
+    const t = await getTranslations({ locale, namespace: 'BlogList' });
     const items = getBlogListItems(locale);
     const emptyState = locale === 'ko'
         ? {

@@ -1,45 +1,43 @@
 {
     "HomeHero": {
-        "title": "Smarter Carbon Management with AI-powered Hana Eco",
-        "mobileDescription": "오늘날 탄소 관리는 기업 경쟁력입니다.\n하나루프와 함께 에너지 비용 절감과\n기후 리스크 완화를 동시에 실현하세요.",
-        "desktopDescription": "오늘날 탄소 관리는 기업 경쟁력입니다. EU CBAM, ISSB S1·S2, 배터리 규제,\nCSDDD 등 강화되는 기후 규제와 CDP·GRI 공시 요구를 신속히 준수하고,\n에너지 비용 절감과 기후 리스크 완화를 동시에 실현하세요.",
+        "title": "AI로 완성하는 스마트한 탄소경영, Hana.eco",
+        "mobileDescription": "K-ETS·EU CBAM·ISSB S1·S2·CSDDD 등 글로벌 규제를,\n하나에코(Hana.eco) 하나로 대응하세요.\n비용 절감과 기후 리스크 관리를 동시에 실현합니다.",
+        "desktopDescription": "K-ETS·EU CBAM·ISSB S1·S2·CSDDD 등 글로벌 규제를,\n하나에코(Hana.eco) 하나로 대응하세요.\n비용 절감과 기후 리스크 관리를 동시에 실현합니다.",
         "solutionLabel": "Solution Overview",
         "contactLabel": "Contact Us"
     },
     "HomeIntro": {
-        "eyebrowDesktop": "디지털 파트너 하나루프는 귀사의 탄소중립 여정에 힘을 실어드립니다.",
+        "eyebrowDesktop": "복잡한 탄소 관리를 하나의 플랫폼으로",
         "eyebrowMobileLines": [
-            "디지털 파트너 하나루프는",
-            "귀사의 탄소중립 여정에 힘을 실어드립니다."
+            "복잡한 탄소 관리를 하나의 플랫폼으로"
         ],
         "titleDesktopLines": [
-            "HanaLoop supports and empowers your journey",
-            "toward carbon neutrality."
+            "탄소중립 디지털 파트너 하나루프는 귀사의 탄소중립",
+            "여정에 힘을 실어드립니다."
         ],
         "titleMobileLines": [
-            "HanaLoop supports",
-            "and empowers your journey",
-            "toward carbon neutrality."
+            "탄소중립 디지털 파트너 하나루프는",
+            "귀사의 탄소중립 여정에 힘을 실어드립니다."
         ],
-        "descriptionDesktop": "CBAM 솔루션, PCF 탄소발자국 관리, Scope3 배출량 산정솔루션등 하나루프의 다양한 솔루션을 확인해보세요.",
+        "descriptionDesktop": "CBAM 솔루션, PCF/LCA 탄소발자국 관리, Scope1,2,3 통합 솔루션 등 하나루프의 다양한 규제대응 자동화 솔루션을 확인해보세요.",
         "descriptionMobileLines": [
-            "CBAM 솔루션, PCF 탄소발자국 관리,",
-            "Scope3 배출량 산정솔루션등",
-            "하나루프의 다양한 솔루션을 확인해보세요."
+            "CBAM 솔루션, PCF/LCA 탄소발자국 관리,",
+            "Scope1,2,3 통합 솔루션 등",
+            "하나루프의 다양한 규제대응 자동화 솔루션을 확인해보세요."
         ],
         "contactLabel": "Contact Us",
         "cards": [
             {
-                "title": "CBAM Solution",
+                "title": "CBAM 솔루션",
                 "href": "/cbam"
             },
             {
-                "title": "PCF management",
+                "title": "제품탄소발자국 솔루션",
                 "href": "/pcf"
             },
             {
-                "title": "Scope3 Solution",
-                "href": "/scope3"
+                "title": "Scope1,2,3 통합 솔루션",
+                "href": "/platform"
             }
         ],
         "metrics": [
@@ -48,16 +46,16 @@
                 "label": "누적 탄소 관리 400만t CO2eq+"
             },
             {
-                "value": "87%+",
-                "label": "실무자 작업시간 단축"
+                "value": "87%",
+                "label": "실무 작업시간 87% 단축"
             },
             {
-                "value": "15%+",
-                "label": "에너지 절약 (약 33억원)"
+                "value": "15%",
+                "label": "에너지 사용량 15% 절약"
             },
             {
-                "value": "1598H",
-                "label": "연간 1,598시간 이상 절약"
+                "value": "LRQA",
+                "label": "적합성 인증 획득 (배출권거래제·CBAM)"
             }
         ],
         "footnote": "* 제조사 A 배출규모 9만톤CO2eq, 매출규모 3천억, 에너지사용료 220억원"
@@ -65,10 +63,9 @@
     "HomeCollaboration": {
         "badge": "Our Partners",
         "titleLines": [
-            "A lot of companies are",
-            "working together."
+            "탄소 경영, 검증된 파트너와 시작하세요."
         ],
-        "description": "많은 기업들이 하나루프와 함께하고있습니다.",
+        "description": "금속·비철금속, 자동차, 중공업, 화학 등 제조 기업들이 하나루프와 함께\n기후 규제를 넘어 지속가능성을 혁신하고 있습니다.",
         "viewMore": "View more collaboration",
         "collaborations": [
             {
@@ -107,24 +104,14 @@
     },
     "HomeOurMission": {
         "heading": "하나루프는 함께 살아가는 지구 환경을 위해 하나의 발걸음을 시작하였습니다.",
-        "desktopLead": [
-            "우리는 산업과 기업 환경에 맞춘 탄소 중립 매니지먼트 기술과 디지털 혁신을 통해 지속가능한 생태계를",
-            "구축합니다. 누구나 환경을 위한 기술에 쉽게 접근할 수 있도록, 환경과 산업에 필요한 디지털 솔루션을",
-            "개발하며, 넷제로 실현을 앞당기고 있습니다. 하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로",
-            "모두의 삶이 지속가능하도록 하나의 연결로 더 큰 임팩트를 만들어가겠습니다."
-        ],
-        "paragraphs": [
-            "우리는 산업과 기업 환경에 맞춘 탄소 중립 매니지먼트 기술과 디지털 혁신을 통해 지속가능한 생태계를 구축합니다. 누구나 환경을 위한 기술에 쉽게 접근할 수 있도록, 환경과 산업에 필요한 디지털 솔루션을 개발하며, 넷제로 실현을 앞당기고 있습니다.",
-            "하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로 모두의 삶이 지속가능하도록 하나의 연결로 더 큰 임팩트를 만들어가겠습니다."
-        ]
+        "body": "우리는 산업과 기업 환경에 맞춘 탄소 중립 매니지먼트 기술과 디지털 혁신을 통해 지속가능한 생태계를 구축합니다. 누구나 환경을 위한 기술에 쉽게 접근할 수 있도록, 환경과 산업에 필요한 디지털 솔루션을 개발하며, 넷제로 실현을 앞당기고 있습니다. 하나루프는 사람과 자연에게 이로운 디지털 기술 서비스로 모두의 삶이 지속가능하도록 하나의 연결로 더 큰 임팩트를 만들어가겠습니다."
     },
     "HomeRegulatoryCompliance": {
         "eyebrow": "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득",
-        "heading": "Regulatory Compliance Approved: hana.eco",
+        "heading": "국제 기준 맞춤 솔루션: Hana.eco",
         "reasonEyebrow": "하나루프를 선택해야하는 이유",
         "reasonHeading": [
-            "Why you should choose",
-            "HanaLoop"
+            "왜 하나루프인가요?"
         ],
         "cards": [
             {
@@ -134,7 +121,8 @@
                     "제품 관리",
                     "원부자재 공급 관리",
                     "CBAM 보고서 출력",
-                    "배출계수 제공"
+                    "배출계수 제공",
+                    "CBAM인증서 비용 절감 시뮬레이션"
                 ]
             },
             {
@@ -143,54 +131,57 @@
                 "items": [
                     "검증 수준의 데이터 관리",
                     "배출권 장부 관리",
-                    "배출량 목표 설정과 배출 시나리오 분석"
+                    "배출량 목표 설정과 배출",
+                    "배출시나리오 분석"
                 ]
             },
             {
                 "title": "IFRS(TCFD) / CDP / GRI 준수",
                 "subtitle": "Climate Normatives, Frameworks And Standards",
                 "items": [
-                    "표준 보고서에서 요구되는 리포팅 리소스 관리",
+                    "표준 보고서에서 요구되는 리포팅",
+                    "리스크 관리",
                     "배출 시나리오 분석"
                 ]
             },
             {
-                "title": "EU 탄소국경조정제도 (CBAM) 준수",
-                "subtitle": "Carbon Border Adjustment Mechanism",
+                "title": "SBTi Scope 3 & ESG 관리",
+                "subtitle": "ESG Data Including the Value Chain",
                 "items": [
-                    "제품 관리",
-                    "원부자재 공급 관리",
-                    "CBAM 보고서 출력",
-                    "배출계수 제공"
+                    "협력사, 공급망 관리",
+                    "Scope 3용 산업 표준 배출계수 제공"
+                ]
+            },
+            {
+                "title": "제품 탄소발자국 (PCF) 관리",
+                "subtitle": "Product Carbon Footprint",
+                "items": [
+                    "지구 온난화 카테고리의 LCA 산정",
+                    "공정 과정 탄소 내재배출량 산정",
+                    "원부자재 내재 배출 관리"
                 ]
             }
         ],
         "reasons": [
             {
-                "title": "Customized Partnership",
-                "body": "글로벌 규제에 검증된 기술로 환경 컨설팅, 에너지전환 프로바이더 등과의 파트너십으로 맞춤형 시장에 진입합니다.",
+                "title": "검증된 맞춤형 솔루션",
+                "body": "LRQA 인증, 글로벌 규제 대응, 환경 컨설팅 파트너십.",
                 "desktopLines": [
-                    "글로벌 규제에 검증된 기술로 환경 컨설팅,",
-                    "에너지전환 프로바이더 등과의 파트너십으로",
-                    "맞춤형 시장에 진입합니다."
+                    "LRQA 인증, 글로벌 규제 대응, 환경 컨설팅 파트너십."
                 ]
             },
             {
-                "title": "Everything with Hanaeco",
-                "body": "기업, 제품 공급망 등 모든 탄소관리를 하나에코 한곳에서 할 수 있습니다. 하나에코를 통해 편하게 관리하세요.",
+                "title": "데이터부터 보고, 감축까지",
+                "body": "Scope 1·2·3, CBAM, PCF, LCA, 공급망까지 Hana.eco 하나로.",
                 "desktopLines": [
-                    "기업, 제품 공급망 등 모든 탄소관리를",
-                    "하나에코 한곳에서 할 수 있습니다.",
-                    "하나에코를 통해 편하게 관리하세요."
+                    "Scope 1·2·3, CBAM, PCF, LCA, 공급망까지 Hana.eco 하나로."
                 ]
             },
             {
-                "title": "Select the right pricing plan",
-                "body": "다양한 플랜과 가격옵션으로 각 기업사에 맞는 플랜을 추천하고 선택할 수 있도록 서비스를 제공하고있습니다.",
+                "title": "기업에 맞는 유연한 요금제",
+                "body": "사업장 단위부터 제품 단위 탄소경영까지 목적에 따라 유연한 플랜 선택.",
                 "desktopLines": [
-                    "다양한 플랜과 가격옵션으로 각 기업사에 맞는",
-                    "플랜을 추천하고 선택할 수 있도록 서비스를",
-                    "제공하고있습니다."
+                    "사업장 단위부터 제품 단위 탄소경영까지 목적에 따라 유연한 플랜 선택."
                 ]
             }
         ]
@@ -200,19 +191,19 @@
         "heading": "Common questions"
     },
     "HomeCta": {
-        "eyebrow": "체계적인 탄소 관리, 하나에코와 함께하세요.",
-        "heading": "Start Systematic Carbon Management with Hana Eco.",
+        "eyebrow": "",
+        "heading": "지금, Hana.eco로 탄소 경영을 시작하세요.",
         "mobileHeadingLines": [
-            "Start Systematic",
-            "Carbon Management",
-            "with Hana Eco."
+            "지금, Hana.eco로",
+            "탄소 경영을 시작하세요."
         ],
-        "solutionLabel": "Solution Overview",
-        "contactLabel": "Contact Us"
+        "demoLabel": "무료 데모 신청",
+        "solutionLabel": "솔루션 소개서 다운로드",
+        "contactLabel": "서비스 문의의하기"
     },
     "HomeInsight": {
-        "mobileEyebrow": "다양한 탄소중립 인사이트를 확인해보세요.",
-        "mobileHeading": "Check out Carbon Neutral Insights.",
+        "mobileEyebrow": "최신 탄소 규제와 인사이트를 확인하세요.",
+        "mobileHeading": "탄소중립 인사이트를 확인하세요.",
         "heading": "Insight LIST",
         "viewMoreLabel": "View more"
     },
@@ -241,27 +232,96 @@
     "InsightList": {
         "sectionText": "🗞️ 하나루프의 다양하고 유익한 인사이트를 확인해보세요."
     },
+    "CasesOverview": {
+        "sectionAriaLabel": "검증된 성과, 실제 도입 사례",
+        "heading": "검증된 성과, 실제 도입 사례",
+        "subheading": "하나루프와 함께한 기업들의 실질적 탄소경영 성과를 업종별로 확인하세요."
+    },
     "PlatformHero": {
         "heading": "Carbon management platform",
         "description": "하나루프의 탄소경영 플랫폼 Hana.eco와 다양한 솔루션을 확인해보세요.",
         "navAriaLabel": "관련 페이지 이동"
     },
+    "PlatformOverview": {
+        "sectionAriaLabel": "Hana.eco 탄소회계 솔루션",
+        "heading": "Hana.eco 탄소회계 솔루션",
+        "subheading": "온실가스 배출량을 체계적으로 측정·보고·검증하여 글로벌 공시 의무에 대응하세요.",
+        "whatTitle": "탄소회계란?",
+        "whatBody": "탄소회계(Carbon Accounting)는 기업이 직접 배출하거나 간접적으로 유발하는 온실가스 전체를 측정·기록·보고하는 체계입니다. GHG Protocol 국제 표준에 따라 Scope 1(직접 배출), Scope 2(구매 에너지), Scope 3(가치사슬 전체)으로 구분합니다.",
+        "contactLabel": "Contact Us",
+        "imageAlt": "탄소회계 관련 항만 전경"
+    },
+    "PlatformWhyNeed": {
+        "sectionAriaLabel": "왜 탄소회계가 필요한가요?",
+        "heading": "",
+        "subheading": "",
+        "whyTitle": "왜 탄소회계가 필요한가요?",
+        "whySubheading": "탄소회계가 필요한 이유를 확인해보세요.",
+        "imageAlt": "발전소와 배출가스 배경",
+        "cards": [
+            {
+                "number": "01.",
+                "title": "규제 준수",
+                "body": "K-ETS(배출권거래제), 목표관리제 등 국내 규제와 IFRS S1·S2, CDP, GRI 등 글로벌 공시 의무 대응"
+            },
+            {
+                "number": "02.",
+                "title": "경영 의사결정",
+                "body": "배출량 데이터를 기반으로 감축 목표 수립, 비용 절감, 기후 리스크 관리"
+            }
+        ]
+    },
+    "PlatformMainFeatures": {
+        "sectionAriaLabel": "주요 기능",
+        "title": "주요 기능",
+        "subtitle": "Hana.eco의 탄소회계 프로세스를 확인해보세요.",
+        "cards": [
+            {
+                "index": "01",
+                "title": "검증 수준의 데이터 관리",
+                "description": "K-ETS·목표관리제 기준 충족하는 데이터 수집·관리",
+                "imageSrc": "/site/platform/overview-1.png",
+                "imageAlt": "검증 수준의 데이터 관리"
+            },
+            {
+                "index": "02",
+                "title": "배출권 장부 관리",
+                "description": "배출권 보유·거래·이월 현황 통합 관리",
+                "imageSrc": "/site/platform/overview-2.png",
+                "imageAlt": "배출권 장부 관리"
+            },
+            {
+                "index": "03",
+                "title": "목표 설정 & 시나리오 분석",
+                "description": "감축 목표 수립 및 시나리오별 배출량 예측",
+                "imageSrc": "/site/platform/overview-3.png",
+                "imageAlt": "목표 설정 & 시나리오 분석"
+            },
+            {
+                "index": "04",
+                "title": "ESG·CDP·GRI·IFRS 보고",
+                "description": "표준 보고서 자동 생성, 리스크 관리 데이터 제공",
+                "imageSrc": "/site/platform/overview-4.png",
+                "imageAlt": "ESG·CDP·GRI·IFRS 보고"
+            }
+        ]
+    },
     "PlatformNav": {
-        "cbam": "CBAM",
-        "pcf": "제품탄소발자국",
-        "scope3": "Scope 3",
+        "carbonAccounting": "탄소회계 솔루션",
+        "cbam": "CBAM 솔루션",
+        "pcf": "PCF/LCA 솔루션",
+        "supplyChain": "공급망 PCF 솔루션",
         "hanaAi": "Hana.eco AI",
-        "carbonAccounting": "탄소회계",
-        "climateStrategy": "기후 경영"
+        "cases": "고객사례"
     },
     "CbamOverview": {
         "sectionAriaLabel": "CBAM 개요",
         "heading": "Hana.eco CBAM 솔루션",
-        "subheading": "HanaLoop는 CBAM 전문 컨설팅과 Hana.eco를 통해 기업의 효율적인 CBAM 대응을 지원합니다.",
+        "subheading": "EU로 수출하는 기업이라면 이제 제품의 탄소 데이터가 경쟁력입니다.",
         "whatTitle": "CBAM 이란?",
-        "whatBody": "CBAM(Carbon Border Adjustment Mechanism)은 EU의 탄소국경조정제도로, 수입 제품의 내재 탄소배출량을 기준으로 비용을 부과합니다. 탄소배출 데이터의 정밀한 관리가 핵심입니다.",
-        "solutionTitle": "CBAM 컨설팅 및 솔루션",
-        "solutionBody": "HanaLoop는 CBAM 전문 컨설팅과 Hana.eco 솔루션을 통해 기업의 효율적인 CBAM 대응을 지원합니다. Hana.eco의 CBAM 모듈은 복잡한 데이터 관리를 자동화해 보고서 작성과 규제 대응을 간편하게 만듭니다.",
+        "whatBody": "EU 탄소국경조정제도(CBAM)는 EU로 수입되는 제품에 내재된 탄소배출량에 탄소 비용을 부과하는 제도입니다. 철·알루미늄 등 소재를 사용하는 수출 기업은 제품의 탄소 데이터를 정밀하게 관리해야 합니다.",
+        "solutionTitle": "왜 CBAM 대응이 필요한가요?",
+        "solutionBody": "수출 경쟁력\nCBAM 인증서 비용은 제품 수익성에 직접 영향을 미칩니다.\n탄소 데이터를 정밀하게 관리할수록 불필요한 비용을 줄일 수 있습니다.\n\n규제 의무\nEU 수출 기업은 제품 단위의 내재배출량을 의무적으로 보고해야 합니다.\n미준수 시 수출 제한 및 과태료 위험이 있습니다.",
         "contactLabel": "Contact Us",
         "imageAlt": "CBAM 물류 관련 항만 전경"
     },
@@ -354,14 +414,14 @@
         ]
     },
     "HanaAiOverview": {
-        "sectionAriaLabel": "Hana.eco AI 개요",
-        "heading": "AI 기반 탄소관리 플랫폼 Hana.eco",
-        "subheading": "귀사의 탄소관리 Hana.eco AI가 도와드립니다.",
-        "aiHeading": "AI 기반 Hana.eco",
-        "leftTitle": "탄소발자국 산정 지원",
-        "leftBody": "탄소 배출량을 산정하는 과정에서 배출계수를 지정하는 일은 전문적인 지식을 요구합니다. Hana.eco는 AI를 활용해 활동 데이터를 클러스터링하고, 적합한 배출계수를 자동 매핑하여 산정 과정을 간소화하고 정확성을 높입니다.",
-        "rightTitle": "LLM 환각을 최소화한 신뢰도 높은 정보 제공",
-        "rightBody": "Hana.eco는 LLM이 외부의 불확실한 정보에 의존하여 잘못된 답변을 생성하는 문제를 줄이기 위해, Index DB와 RAG 기법을 도입하였습니다. 이를 통해 규제 동향, 배출권 거래 등에 관한 질의에 대해서도 보다 신뢰할 수 있는 정보를 제공합니다."
+        "sectionAriaLabel": "Hana.eco AI - 탄소 데이터를 행동으로 바꾸는 AI",
+        "heading": "Hana.eco AI - 탄소 데이터를 행동으로 바꾸는 AI",
+        "subheading": "복잡한 탄소 규제 해석과 데이터 분석을 AI가 자동화합니다. 더 빠르고 정확한 의사결정을 경험하세요.",
+        "message": "",
+        "itemOneTitle": "HANA.ECO AI란?",
+        "itemOneBody": "Hana.eco AI는 탄소 데이터 분석, 규제 해석, 보고서 작성을 자동화하는 AI 기반 탄소경영 어시스턴트입니다. 방대한 탄소 규제 데이터와 기업 배출 데이터를 학습해 실무자가 더 빠르고 정확하게 의사결정을 내릴 수 있도록 돕습니다.",
+        "contactLabel": "Contact Us",
+        "imageAlt": "친환경 컨셉 이미지"
     },
     "HanaAiProcess": {
         "sectionAriaLabel": "Hana.eco AI Features",
@@ -405,143 +465,123 @@
             }
         ]
     },
-    "PcfOverview": {
-        "heading": "제품탄소발자국 관리",
-        "subheading": "지속가능한 제품 개발을 위한 체계적인 탄소발자국 관리",
-        "title": "제품탄소발자국(PCF)란 무엇일까요?",
-        "imageAlt": "제품 탄소 발자국 프로세스 시각화",
-        "lead": "제품 탄소 발자국(Product Carbon Footprint, PCF)는 제품의 원자재 채굴부터 생산, 유통, 사용, 처리까지 전 과정에서 발생하는 온실가스 배출량을 정량화한 지표입니다.",
-        "body": "이는 ISO 14067 및 온실가스 프로토콜(GHG Protocol)에 따른 국제 표준에 따라 산정되며, 제품의 환경 영향을 투명하고 체계적으로 관리하는 데 필수적인 지표입니다."
-    },
-    "PcfWhyNeeded": {
-        "title": "PCF관리 왜 필요할까요?",
-        "itemOneNumber": "01.",
-        "itemOneTitle": "글로벌 규제 대응",
-        "itemOneBody": "PCF는 CBAM 등 글로벌 규제에 대응하기 위한 필수 지표로, 제품 단위의 탄소 배출량을 정확하게 산출 시 요구되는 데이터를 제공합니다. ISO 14067 등 국제 표준 기반 산정은 신뢰성과 규제 적합성을 높이며, 무역 리스크를 사전에 관리할 수 있게 합니다.",
-        "itemTwoNumber": "02.",
-        "itemTwoTitle": "감축 전략 수립의 기반",
-        "itemTwoBody": "제품 단위의 배출량을 정량화하면 어떤 공정, 소재, 공급망 요소가 고탄소 요인인지 식별할 수 있으며, 이를 기반으로 구체적인 탄소 감축 전략(대체 소재 적용, 에너지 효율 개선, 저탄소 공급처 전환 등)을 수립할 수 있습니다.",
-        "imageAlt": "PCF 관리 필요성 이미지"
-    },
-    "PcfMainFeatures": {
-        "title": "PCF 솔루션 주요 기능",
-        "body": "제품 단위의 배출량을 공정 흐름 기반으로 정량화하고 직접 및 간접 배출 데이터를 통해 내재배출량을 관리하며, 시각화를 통해 감축 우선순위를 파악할 수 있습니다. 글로벌 규제 대응과 탄소 감축 전략 수립을 효과적으로 지원합니다.",
-        "caption": "*하나에코 플랫폼 PCF솔루션의 예시화면입니다.",
-        "imageAlt": "PCF 솔루션 주요 기능 예시 화면"
-    },
-    "Scope3Overview": {
-        "sectionAriaLabel": "Scope3 필요성 안내",
-        "heading": "Scope3 배출량 산정 솔루션",
-        "subheading": "Hana.eco의 Scope3 배출량 산정 솔루션을 통해 체계적으로 관리해보세요.",
-        "whyTitle": "Scope3 관리, 왜 필요할까요?",
-        "whySubheading": "Scope3 관리가 필요한 이유를 확인해보세요.",
+    "HanaAiWhyNeed": {
+        "sectionAriaLabel": "왜 Hana.eco AI가 필요한가요?",
+        "heading": "",
+        "subheading": "",
+        "whyTitle": "왜 Hana.eco AI가 필요한가요?",
+        "whySubheading": "Hana.eco AI가 필요한 이유를 확인해보세요.",
         "imageAlt": "발전소와 배출가스 배경",
         "cards": [
             {
                 "number": "01.",
-                "title": "기후규제와 고객사 대응",
-                "body": "IFRS S2, TCFD, CDP, SBTI 등 Scope3 배출량 공개를 요구하는 글로벌 공시 표준이 있습니다. 또한 글로벌 고객사는 납품업체의 Scope3 데이터 제공을 요구하고 있습니다."
+                "title": "규제 복잡성 해소",
+                "body": "끊임없이 바뀌는 글로벌 탄소 규제를 실무자가 직접 모두 추적하는 것은 현실적으로 불가능합니다."
             },
             {
                 "number": "02.",
-                "title": "그린워싱 방지 및 투명성 강화",
-                "body": "Scope3 배출량을 제대로 관리하지 않으면 불완전하거나 왜곡된 정보로 인해 그린워싱 논란이 발생할 수 있습니다. SBTI, CDP 등 글로벌 평가기관은 Scope3의 공개 여부와 정합성을 기업의 투명성 및 신뢰도 평가의 핵심 기준으로 삼고 있습니다."
-            },
-            {
-                "number": "03.",
-                "title": "가치사슬에서 발생하는 리스크 관리",
-                "body": "Scope3는 공급망 내의 간접배출을 포함하므로 다양한 리스크로 이어질 수 있습니다. 기후 리스크에 선제적으로 대응하기 위해서는 가치사슬 전반의 탄소배출 현황을 체계적으로 파악하고 관리하는 것이 중요합니다."
+                "title": "데이터 처리 효율화",
+                "body": "수천 개 데이터 포인트를 수동으로 분석하던 작업을 AI가 자동화하여 실무 시간을 대폭 단축합니다."
             }
         ]
     },
-    "Scope3Process": {
-        "sectionAriaLabel": "Scope3 관리 프로세스",
-        "title": "Scope3 관리 프로세스",
-        "subtitle": "Hana.eco의 Scope3의 관리프로세스를 확인해보세요.",
+    "HanaAiMainFeatures": {
+        "sectionAriaLabel": "주요 기능",
+        "title": "주요 기능",
+        "subtitle": "Hana.eco AI의 주요기능을 확인해보세요.",
+        "cards": [
+            {
+                "index": "01",
+                "title": "AI 탄소 데이터 분석",
+                "description": "배출 패턴 자동 감지, 이상치 알림, 감축 기회 추천",
+                "imageSrc": "/site/hana-ai/f-1.png",
+                "imageAlt": "AI 탄소 데이터 분석"
+            },
+            {
+                "index": "02",
+                "title": "규제 자동 업데이트",
+                "description": "글로벌 탄소 규제 변경사항을 자동으로 반영하여 항상 최신 기준 유지",
+                "imageSrc": "/site/hana-ai/f-2.png",
+                "imageAlt": "규제 자동 업데이트"
+            },
+            {
+                "index": "03",
+                "title": "자연어 탄소 Q&A (카본버디)",
+                "description": "규제·데이터에 대한 질문을 대화형 AI로 즉시 해결",
+                "imageSrc": "/site/hana-ai/f-3.png",
+                "imageAlt": "자연어 탄소 Q&A (카본버디)"
+            },
+            {
+                "index": "04",
+                "title": "보고서 초안 자동 생성",
+                "description": "CDP·GRI·ISSB 등 공시용 보고서 초안을 AI가 자동 작성",
+                "imageSrc": "/site/hana-ai/f-4.png",
+                "imageAlt": "보고서 초안 자동 생성"
+            }
+        ]
+    },
+    "PcfOverview": {
+        "sectionAriaLabel": "PCF/LCA 개요",
+        "heading": "Hana.eco PCF/LCA 솔루션",
+        "subheading": "제품 한 개가 지구에 미치는 탄소 영향, 정확하게 계산하고 전략적으로 줄이세요.",
+        "title": "PCF/LCA란?",
+        "imageAlt": "프로세스 시각화",
+        "lead": "제품 탄소발자국(PCF)은 원재료 채취 → 생산 → 유통 → 사용 → 폐기까지 전 과정의 온실가스 배출량을 정량화한 지표입니다.",
+        "body": "ISO 14067, GHG Protocol 국제 표준 기반으로 산정됩니다."
+    },
+    "PcfWhyNeeded": {
+        "title": "왜 PCF/LCA 관리가 필요한가요?",
+        "itemOneNumber": "01.",
+        "itemOneTitle": "글로벌 규제 대응",
+        "itemOneBody": "CBAM 등 수출 규제에서 제품 단위 탄소 데이터 요구, ISO 14067 기반 신뢰성 확보",
+        "itemTwoNumber": "02.",
+        "itemTwoTitle": "감축 전략 수립",
+        "itemTwoBody": "공정·소재·공급망 중 탄소 집약 요인을 식별하여 구체적 감축 실행 가능.",
+        "imageAlt": "PCF 관리 필요성 이미지"
+    },
+    "PcfMainFeatures": {
+        "sectionAriaLabel": "주요 기능",
+        "title": "주요 기능",
+        "subtitle": "배출권거래제와 EU 탄소국경조정제도 동시 적합성 인증 획득",
         "cards": [
             {
                 "index": "01.",
-                "title": "Scope3 관리 역량 진단",
-                "description": [
-                    "기업의 내부 역량 분석",
-                    "기업이 관리할 수 있는 Scope3",
-                    "배출 카테고리 범위 정의"
-                ],
-                "imageSrc": "/site/scope3/overview-1.png",
-                "imageAlt": "Scope3 관리 역량 진단 이미지"
+                "title": "제품·BOM 데이터 관리",
+                "description": "제품 구조와 원재료를 통합 관리하여 탄소 산정 기반 데이터 구축",
+                "imageSrc": "/site/pcf/certified-1.png",
+                "imageAlt": "제품·BOM 데이터 관리"
             },
             {
                 "index": "02.",
-                "title": "Scope3 배출량 산정",
-                "description": [
-                    "데이터 수집부터 산정",
-                    "산정 결과 검증",
-                    "기업 맞춤형 Scope3 배출 산정 프로세스 수립"
-                ],
-                "imageSrc": "/site/scope3/overview-2.png",
-                "imageAlt": "Scope3 배출량 산정 이미지"
+                "title": "공정·생산 데이터 관리",
+                "description": "실제 제조 환경 기반 활동 데이터 연결 관리",
+                "imageSrc": "/site/pcf/certified-2.png",
+                "imageAlt": "공정·생산 데이터 관리"
             },
             {
                 "index": "03.",
-                "title": "Scope3 배출량 및 리스크 예비 분석",
-                "description": [
-                    "Scope3 배출 집약도 및 주요 배출원 분석",
-                    "카테고리별 배출 기여도 평가",
-                    "공급망 기반 리스크 예비 분석"
-                ],
-                "imageSrc": "/site/scope3/overview-3.png",
-                "imageAlt": "Scope3 배출량 및 리스크 예비 분석 이미지"
+                "title": "PCF 산정·분석",
+                "description": "제품 단위 배출량 정밀 산정, 탄소 집약도·주요 배출 요인 분석",
+                "imageSrc": "/site/pcf/certified-3.png",
+                "imageAlt": "PCF 산정·분석"
             },
             {
                 "index": "04.",
-                "title": "규제 대응 전략, 리스크 관리 방안",
-                "description": [
-                    "고객사 및 이해관계자 요구대응 방안",
-                    "IFRS, CDP 등 글로벌 보고 표준 적용 방안",
-                    "리스크 관리 방안"
-                ],
-                "imageSrc": "/site/scope3/overview-4.png",
-                "imageAlt": "규제 대응 전략 및 리스크 관리 방안 이미지"
+                "title": "PCF 보고서 자동 생성",
+                "description": "국제 기준 보고서 자동 출력, 고객사 요청 빠른 대응",
+                "imageSrc": "/site/pcf/certified-4.png",
+                "imageAlt": "PCF 보고서 자동 생성"
+            },
+            {
+                "index": "05.",
+                "title": "탄소 비용 시뮬레이션",
+                "description": "예상 탄소 비용 및 제품별 수익성 영향 분석",
+                "imageSrc": "/site/pcf/certified-5.png",
+                "imageAlt": "탄소 비용 시뮬레이션"
             }
         ]
     },
-    "Scope3MainFeatures": {
-        "sectionAriaLabel": "Scope3 솔루션 주요 기능",
-        "heading": "Scope3 솔루션 주요 기능",
-        "subheading": "Hana.eco의 Scope3 솔루션의 주요기능을 확인해보세요.",
-        "items": [
-            {
-                "index": "01.",
-                "title": "대량의 활동데이터 간편한 관리",
-                "details": [
-                    {
-                        "lead": "활동데이터 일괄 업데이트",
-                        "body": "대량의 활동 데이터에 대해 범주 분류, 배출계수 매핑, 단위 변환, 배출량 산정을 지원합니다."
-                    },
-                    {
-                        "lead": "유사활동 그룹화 관리",
-                        "body": "유사활동 항목을 그룹화하여 배출계수 관리 및 추적을 효율화합니다."
-                    }
-                ]
-            },
-            {
-                "index": "02.",
-                "title": "다양한 기준의 배출량 추이 시각화",
-                "details": [
-                    {
-                        "lead": "직관적인 탄소배출 흐름 파악",
-                        "body": "활동데이터 그룹, 산정 방식, 공급사별 배출량 등 다양한 분석 기준으로 시각화하여 탄소배출의 흐름을 손쉽게 파악할 수 있습니다."
-                    },
-                    {
-                        "lead": "고배출 파트 식별과 감축 전략 도출",
-                        "body": "SCOPE3 배출 통계를 통해 공급망 전반의 탄소 배출 경향과 고배출 파트를 식별하고 감축활동을 도출할 수 있습니다."
-                    }
-                ]
-            }
-        ],
-        "imageAlt": "Scope3 기능 대시보드 예시 배경 이미지"
-    },
-    "Scope3Strategy": {
+    "SolutionStrategy": {
         "sectionAriaLabel": "Scope3 데이터 기반 탄소중립 전략",
         "heading": "데이터가 보이면 탄소중립 전략이 보입니다!",
         "columns": [
@@ -582,17 +622,59 @@
         ],
         "imageAlt": "숲 배경 이미지"
     },
-    "SolutionClimateManagement": {
-        "sectionAriaLabel": "기후 경영 소개",
-        "heading": "기후 경영",
-        "subheading": "자원은 유한하지만 잠재력은 무한합니다.",
-        "message": "디지털 솔루션으로 환경적, 경제적,\n사회적 이익을 동시에 실현!",
-        "itemOneTitle": "지속가능한 디지털 전환",
-        "itemOneBody": "급변하는 비즈니스 환경과 시장 요구에 맞추어 디지털 기술로 고객의 잠재력과 비즈니스 가치를 극대화합니다. 기술뿐만 아니라 기업 문화를 향상시켜 고객 조직의 만족도와 생산력을 높입니다.",
-        "itemTwoTitle": "친환경 하나에코 플랫폼 기반 솔루션",
-        "itemTwoBody": "플랫폼은 환경 규제에 대한 지침과 시장에 대한 통찰력을 제공하고 신속한 친환경 기술 검색 및 거래를 가능하게 하여 더욱 깨끗한 가치사슬을 생성시킴으로써 고객이 지속가능한 방식으로 성장할 수 있도록 도와줍니다. 결과적으로 보다 책임있고 윤리적인 산업으로 발전하는데 기여합니다.",
+    "SupplyChainOverview": {
+        "sectionAriaLabel": "Hana.eco 공급망 PCF 솔루션 소개",
+        "heading": "Hana.eco 공급망 PCF 솔루션",
+        "subheading": "협력사의 탄소 데이터를 수집하고 가치사슬 전체의 탄소발자국을 투명하게 관리하세요.",
+        "message": "",
+        "itemOneTitle": "공급망 PCF란?",
+        "itemOneBody": "공급망 PCF(Supply Chain PCF)는 직접 생산 활동을 넘어 원자재 공급부터 물류·유통까지 가치사슬 전반의 탄소 배출량을 추적·관리하는 방식입니다. GHG Protocol Scope 3 기준에 따라 협력사로부터 실측 데이터를 수집해 산정 정확도를 높입니다.",
+        "itemTwoTitle": "왜 공급망 PCF 관리가 필요한가요?",
+        "itemTwoBody": "Scope 3 공시 의무 강화\nISSB S2, CDP, CSDDD 등에서 가치사슬 배출량 보고 요구가 점점 강화되고 있습니다.\n\n고객사·바이어 요구 대응\n대기업·글로벌 바이어가 협력사에게 탄소 데이터 제출을 요구하는 사례가 급증하고 있습니다.",
         "contactLabel": "Contact Us",
         "imageAlt": "친환경 모빌리티 컨셉 이미지"
+    },
+    "SupplyChainMainFeatures": {
+        "sectionAriaLabel": "주요 기능",
+        "title": "주요 기능",
+        "subtitle": "Hana.eco의 공급망 PCF솔루션의 프로세스를 확인해보세요.",
+        "cards": [
+            {
+                "index": "01.",
+                "title": "협력사 초대·데이터 요청",
+                "description": "협력사에게 PCF 데이터 요청을 자동 발송하고 응답을 추적",
+                "imageSrc": "/site/supply/certified-1.png",
+                "imageAlt": "협력사 초대·데이터 요청"
+            },
+            {
+                "index": "02.",
+                "title": "고유 내재배출량 수집",
+                "description": "표준 배출계수가 아닌 실제 공급사 데이터 기반 산정으로 정확도 향상",
+                "imageSrc": "/site/supply/certified-2.png",
+                "imageAlt": "고유 내재배출량 수집"
+            },
+            {
+                "index": "03.",
+                "title": "자사 CBAM, PCF, LCA 관리",
+                "description": "규제, 목적별 제품 탄소발자국과 활동데이터 관리",
+                "imageSrc": "/site/supply/certified-3.png",
+                "imageAlt": "자사 CBAM, PCF, LCA 관리"
+            },
+            {
+                "index": "04.",
+                "title": "Scope 3 카테고리 관리",
+                "description": "15개 Scope 3 카테고리별 공급망 데이터 구조화 관리",
+                "imageSrc": "/site/supply/certified-4.png",
+                "imageAlt": "Scope 3 카테고리 관리"
+            },
+            {
+                "index": "05.",
+                "title": "공급망 탄소 리포트",
+                "description": "가치사슬 탄소 현황 보고서 자동 생성",
+                "imageSrc": "/site/supply/certified-3.png",
+                "imageAlt": "공급망 탄소 리포트"
+            }
+        ]
     },
     "PartnershipHero": {
         "heading": "Reliable and Agile Sustainability Partner"
@@ -661,51 +743,57 @@
         "insight": "Insight & Blog",
         "about": "About Us",
         "items": {
-            "CBAM": "CBAM",
-            "ProductCarbonFootprint": "제품탄소발자국",
-            "Scope3": "Scope3",
+            "carbonAccounting": "탄소회계 솔루션",
+            "CBAM": "CBAM 솔루션",
+            "ProductCarbonFootprint": "PCF/LCA 솔루션",
+            "SupplyChain": "공급망 PCF 솔루션",
             "HanaecoAI": "Hana.eco AI",
-            "CarbonAccounting": "탄소회계",
-            "ClimateManagement": "기후 경영",
+            "Cases": "고객사례",
             "Insight": "Insight",
             "Blog": "Blog",
             "Partnership": "Partnership",
-            "Company": "Company",
-            "Recruit": "Recruit"
+            "Company": "Company"
         }
     },
     "CbamCertified": {
-        "sectionAriaLabel": "적합성 인증받은 CBAM 솔루션",
-        "title": "적합성 인증받은 CBAM 솔루션",
-        "subtitle": "로이드인증원(LRQA)으로부터 배출권거래제와 EU 탄소국경조정제도 적합성 국내 첫 검증의견서 획득",
+        "sectionAriaLabel": "주요 기능 / Hana.eco CBAM Solution 5 Features",
+        "title": "주요 기능 / Hana.eco CBAM Solution 5 Features",
+        "subtitle": "배출권거래제와 EU 탄소국경조정제도 동시 적합성 인증 획득",
         "cards": [
             {
                 "index": "01.",
-                "title": "제품 및 전구물질 관리(CN 코드 관리)",
+                "title": "제품·전구물질 관리 (CN 코드)",
                 "description": "제품과 전구물질을 통합적으로 관리하고, CBAM 규제 대상 품목에 필요한 CN 코드를 체계적으로 등록 및 추적할 수 있습니다. 이를 통해 제품별 탄소배출 분석 및 보고에 필요한 기초 데이터를 손쉽게 확보할 수 있습니다.",
                 "imageSrc": "/site/cbam/certified-1.png",
-                "imageAlt": "제품 및 전구물질 관리 시각화 이미지"
+                "imageAlt": "제품·전구물질 관리"
             },
             {
                 "index": "02.",
-                "title": "Installation 설정, 공정 관리",
+                "title": "제조시설 설정·공정 관리",
                 "description": "각 제조시설의 정보와 생산 공정 흐름을 설정하고 관리할 수 있습니다. 이는 CBAM 보고서에 요구되는 배출 정보 및 공정별 배출 산정의 정확성을 높이는 데 중요한 역할을 합니다.",
                 "imageSrc": "/site/cbam/certified-2.png",
-                "imageAlt": "Installation 설정 및 공정 관리 시각화 이미지"
+                "imageAlt": "제조시설 설정·공정 관리"
             },
             {
                 "index": "03.",
-                "title": "제품 내재배출 산정 및 분석",
-                "description": "제품 생산 과정에서 발생하는 직접 및 간접 배출량을 제품 단위로 산정합니다. 산정 결과를 바탕으로 제품별 탄소 집약도, 고배출 요소, 개선 포인트 등을 분석할 수 있어, 규제 대응은 물론 탄소감축 전략 수립에도 유용합니다.",
+                "title": "내재배출량 산정·분석",
+                "description": "직·간접 배출량 제품 단위 산정, 탄소 집약도·감축 기회 분석.",
                 "imageSrc": "/site/cbam/certified-3.png",
-                "imageAlt": "제품 내재배출 산정 및 분석 시각화 이미지"
+                "imageAlt": "내재배출량 산정·분석"
             },
             {
                 "index": "04.",
-                "title": "CBAM 보고서 생성",
-                "description": "수집된 활동 데이터와 배출 정보를 기반으로, CBAM 규정에 맞는 보고서를 자동 생성할 수 있습니다. 복잡한 규정 해석과 수작업 없이, 유럽 수출 기업의 CBAM 보고 의무 이행을 효율적으로 지원합니다.",
+                "title": "CBAM 보고서 자동 생성",
+                "description": "규정 준수 보고서 원클릭 출력, 수작업 제거",
                 "imageSrc": "/site/cbam/certified-4.png",
-                "imageAlt": "CBAM 보고서 생성 시각화 이미지"
+                "imageAlt": "CBAM 보고서 자동 생성"
+            },
+            {
+                "index": "05.",
+                "title": "CBAM 인증서 비용 시뮬레이션",
+                "description": "탄소 비용 예측, 제품별 수익성 분석, 선제적 전략 수립",
+                "imageSrc": "/site/cbam/certified-5.png",
+                "imageAlt": "CBAM 인증서 비용 시뮬레이션"
             }
         ]
     },
@@ -785,15 +873,33 @@
                 "imageSrc": "/site/company/team-hyeyeon.jpg"
             },
             {
-                "name": "박준호 Junho Park",
+                "name": "안영석 Young-Suk Ahn Park",
                 "role": "CTO / co-founder",
-                "bio": "대규모 데이터 파이프라인 구축 및 운영.\n프로젝트: 탄소배출 데이터 수집 자동화, 클라우드 인프라 최적화, 플랫폼 아키텍처 설계.\n에너지·제조 도메인 디지털 전환 자문. 제품 개발 조직 리딩.\n기술 전략 수립 및 서비스 고도화 연구 수행.",
+                "bio": "Carnegie Mellon University 소프트웨어공학 석사, 고려대학교 컴퓨터과학과 출신으로, Walt Disney, Pearson, Wayfair 등 글로벌 기업에서 20년 이상 소프트웨어 아키텍트로 활동했습니다. 현재 하나루프의 탄소관리 SaaS 및 디지털 MRV 플랫폼 개발을 총괄하고 있습니다.",
                 "imageSrc": "/site/company/team-hyeyeon.jpg"
             },
             {
-                "name": "이수민 Sumin Lee",
-                "role": "Lead Researcher",
-                "bio": "기후·규제 데이터 분석 및 인사이트 리서치.\n프로젝트: 글로벌 규제 모니터링, 보고서 자동 생성, 산업별 배출계수 분석.\n국내외 이해관계자 협업 및 정책 커뮤니케이션 수행.\n탄소관리 전략 수립을 위한 정량·정성 연구 진행.",
+                "name": "안새애 Sae Ahn",
+                "role": "General Counsel",
+                "bio": "Tulane University Law School LL.M. 및 뉴욕주 변호사 자격을 보유하고 있으며, 삼성전자, LG전자, Microsoft Korea 등 글로벌 기업에서 국제법무와 컴플라이언스 업무를 수행했습니다. 하나루프에서는 글로벌 기후규제 및 CBAM 대응 법률 자문을 담당하고 있습니다.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            },
+            {
+                "name": "이평휘 PyoungHwe Lee",
+                "role": "Metal & Manufacturing Specialist",
+                "bio": "인하대학교 금속공학 석사 출신으로, 동부메탈과 KPCM에서 금속 제련·정련 공정기술 개발과 제조 공정 개선 프로젝트를 수행했습니다. 하나루프에서는 철강·알루미늄 산업 중심의 CBAM 배출량 산정과 공정 기반 탄소감축 전략을 지원하고 있습니다.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            },
+            {
+                "name": "Dionysios Tsouklakis",
+                "role": "Climate Researcher & Developer",
+                "bio": "그리스 University of Western Macedonia 환경공학 전공으로, Aurora Energy Research와 Vertis Environmental Finance에서 EU ETS 및 글로벌 탄소시장 분석 업무를 수행했습니다. 하나루프에서는 EU CBAM 연구와 탄소관리 솔루션 개발을 담당하고 있습니다.",
+                "imageSrc": "/site/company/team-hyeyeon.jpg"
+            },
+            {
+                "name": "김현일 Hyeon-il Kim",
+                "role": "Researcher",
+                "bio": "연세대학교 건축공학 전공으로, 건축 및 산업 데이터 분석 경험을 바탕으로 CBAM 활동데이터 분석, 공급망 데이터 온보딩, Scope 3 산정 및 탄소회계 시스템 운영을 지원하고 있습니다.",
                 "imageSrc": "/site/company/team-hyeyeon.jpg"
             }
         ]
@@ -805,51 +911,51 @@
             "quota": "Quota",
             "dueDate": "Due date",
             "jobDescription": "Job description",
-            "responsibilities": "Responsibilities",
-            "requirements": "Requirements",
+            "responsibilities": "주 역할 및 책임",
+            "requirements": "핵심 자격요건",
             "condition": "Condition",
-            "employmentType": "Employment type",
-            "location": "Location",
-            "preferred": "Preferred",
+            "employmentType": "근무 형태",
+            "location": "근무장소",
+            "preferred": "우대사항",
             "technologyStack": "Technology stack",
             "applicationAndSelection": "Application and selection process",
-            "howToApply": "How to apply",
-            "selectionProcess": "Selection process"
+            "howToApply": "지원방법",
+            "selectionProcess": "채용절차"
         },
         "sections": [
             {
                 "id": "experienced",
-                "title": "Platform Web Frontend / Backend (SW Engineer)",
-                "badge": "Experienced",
-                "recruitments": "HanaLoop full-stack engineers build climate-tech products with teammates who share a mission to accelerate climate action and deliver practical solutions.",
-                "quota": "1 position",
-                "dueDate": "Open until filled",
+                "title": "플랫폼 웹 프론트엔드 / 백엔드 (SW엔지니어)",
+                "badge": "경력",
+                "recruitments": "하나루프의 Full-stack 개발자는 전지구적 기후위기 대응 가속화에 비전을 품은 사람들과 함께, 공동의 목표로 함께 문제를 해결하고 솔루션을 구현합니다.",
+                "quota": "1명",
+                "dueDate": "상시채용",
                 "jobDescription": {
                     "responsibilities": [
-                        "Develop frontend/backend features for the platform and participate in product development ceremonies",
-                        "Work with the Product Manager and CTO to continuously improve the product"
+                        "환경 플랫폼 프론트엔드/백엔드 개발 소프트웨어 프로덕트 개발 라이프사이클 세레모니 참여",
+                        "프로덕트 매니저 및 CTO와 함께 프로덕트 개선에 참여"
                     ],
                     "requirements": [
-                        "Degree in computer science or 2+ years of web application development experience",
-                        "Fast learner with a hands-on mindset",
-                        "Strong ownership and accountability for product delivery",
-                        "High standards for code quality"
+                        "컴퓨터학과 졸업 혹은 2년이상 웹 어플리케이션 개발 경험 있으신 분",
+                        "빠르게 배우고 실천하는 마인드셋을 가지고 계신 분",
+                        "프로덕트에 대한 오너십과 책임감이 있으신 분",
+                        "코드 품질에 기준이 높으신 분"
                     ]
                 },
                 "condition": {
                     "employmentType": [
-                        "3-month contract, then conversion to full-time"
+                        "계약기간 3개월 후 정규직 전환"
                     ],
                     "location": [
-                        "Seoul, HanaLoop"
+                        "서울시 하나루프"
                     ],
                     "preferred": [
-                        "Experience communicating in foreign languages and working with frameworks",
-                        "Strong communication skills and team-player mindset",
-                        "Practical DevSecOps knowledge: gitops, docker, kubernetes",
-                        "Experience in product design/architecture",
-                        "Experience with SQL and NoSQL",
-                        "Experience with cloud deployment and platform operations"
+                        "외국어로의 소통 및 프레임워크 경험 있으신 분",
+                        "원활한 의사소통 능력을 겸비한 팀플레이어 대환영",
+                        "DevSecOps 실무 지식: gitops, docker, kubernetes 등에 익숙하신 분",
+                        "제품 설계/아키텍처 경험 있으신 분",
+                        "SQL 및 NoSQL 경험이 있으신 분",
+                        "클라우드 배포 및 플랫폼 경험이 있으신 분"
                     ]
                 },
                 "stack": [
@@ -860,41 +966,41 @@
                 ],
                 "process": {
                     "howToApply": [
-                        "Please send your resume and career summary to the email below.",
+                        "이력서와 경력기술서를 아래의 메일로 보내주세요.",
                         "joinus@hanaloop.com"
                     ],
                     "steps": [
-                        "Resume screening & coding test > 1st interview > personality assessment & 2nd interview > medical checkup > offer",
-                        "The process may change depending on schedule and circumstances.",
-                        "Confirmed schedules will be shared individually.",
-                        "Please include the position name and your name in the email title."
+                        "서류전형 & 코딩테스트 > 1차 인터뷰 > 인성검사 & 2차 인터뷰 > 채용 건강검진 > 입사",
+                        "전형 절차는 일정 및 상황에 따라 변동될 수 있습니다.",
+                        "진행 일정은 확정되는대로 지원자분들께 개별 안내 예정입니다.",
+                        "이메일 제목에 지원 포지션 명 / 지원자 명 꼭 넣어주세요."
                     ]
                 }
             },
             {
                 "id": "entry",
-                "title": "Platform Web Frontend / Backend (SW Engineer)",
-                "badge": "Entry",
-                "recruitments": "We are looking for entry-level developers ready to grow with HanaLoop in climate tech.",
-                "quota": "0 position",
-                "dueDate": "Open until filled",
+                "title": "플랫폼 웹 프론트엔드 / 백엔드 (SW엔지니어)",
+                "badge": "신입",
+                "recruitments": "기후 테크 분야에서 하나루프와 함께 성장할 준비가 된 신입 개발자를 찾고 있습니다.",
+                "quota": "0명",
+                "dueDate": "상시채용",
                 "jobDescription": {
                     "responsibilities": [
-                        "Detailed JD is shared when entry openings are available."
+                        "신입 채용 시 상세 JD가 공유됩니다."
                     ],
                     "requirements": [
-                        "Solid fundamentals and problem-solving capability"
+                        "기본기가 탄탄하고 문제 해결 능력이 있으신 분"
                     ]
                 },
                 "condition": {
                     "employmentType": [
-                        "Full-time (probation may apply)"
+                        "정규직 (수습 기간 적용될 수 있음)"
                     ],
                     "location": [
-                        "Seoul, HanaLoop"
+                        "서울시 하나루프"
                     ],
                     "preferred": [
-                        "Collaboration experience and strong growth mindset"
+                        "협업 경험 및 강한 성장 마인드셋"
                     ]
                 },
                 "stack": [
@@ -903,13 +1009,210 @@
                 ],
                 "process": {
                     "howToApply": [
-                        "Please send your resume to the email below.",
+                        "이력서를 아래의 메일로 보내주세요.",
                         "joinus@hanaloop.com"
                     ],
                     "steps": [
-                        "Resume screening > interview > offer discussion > onboarding"
+                        "서류전형 > 인터뷰 > 처우협의 > 온보딩"
                     ]
                 }
+            }
+        ]
+    },
+    "CasesCards": {
+        "sectionAriaLabel": "고객 사례 카드 섹션",
+        "items": [
+            {
+                "id": "case-doosan",
+                "logo": "doosan",
+                "logoAlt": "두산에너빌리티 로고",
+                "href": "/partnership",
+                "ctaLabel": "더 자세히 보기",
+                "companyName": "두산에너빌리티",
+                "industryLabel": "에너지 / 플랜트 대기업",
+                "challengeLabel": "도전과제",
+                "challengeText": "EU CBAM 보고 기한 대응에 인력 과다 투입",
+                "solutionLabel": "솔루션",
+                "solutionText": "Hana.eco CBAM 솔루션 도입, ERP 연동, 자동 보고서 설정",
+                "resultLabel": "성과",
+                "resultText": "보고서 작성 시간 87% 단축 | LRQA 검증 통과 | 연간 탄소 비용 XX% 절감"
+            },
+            {
+                "id": "case-byucksan",
+                "logo": "byucksan",
+                "logoAlt": "벽산 로고",
+                "href": "/partnership",
+                "ctaLabel": "더 자세히 보기",
+                "companyName": "벽산",
+                "industryLabel": "에너지 / 플랜트 대기업",
+                "challengeLabel": "도전과제",
+                "challengeText": "EU CBAM 보고 기한 대응에 인력 과다 투입",
+                "solutionLabel": "솔루션",
+                "solutionText": "Hana.eco CBAM 솔루션 도입, ERP 연동, 자동 보고서 설정",
+                "resultLabel": "성과",
+                "resultText": "보고서 작성 시간 87% 단축 | LRQA 검증 통과 | 연간 탄소 비용 XX% 절감"
+            }
+        ]
+    },
+    "PrivacyPage": {
+        "title": "????? ???? ????",
+        "intro": "???? ????(?? ??????? ?)? ????? ???? ?30?? ?? ????? ????? ???? ?? ??? ??? ???? ???? ??? ? ??? ?? ??? ??? ?? ???? ?? ??? ????????.",
+        "sections": [
+            {
+                "title": "?1?(????? ????)",
+                "paragraphs": [
+                    "????? ??? ??? ??? ????? ?????. ??? ????? ??? ????? ???? ???? ??? ?? ??? ???? ???? ???? ??? ?18?? ?? ??? ??? ?? ? ??? ??? ??? ?????."
+                ],
+                "bullets": [
+                    "?. ???? ?? ?? ? ??: ?? ???? ??, ??? ??? ??? ?? ?? ?????, ???? ?????, ??? ???? ??, ?? ?????, ???? ??",
+                    "?. ??? ??: ???? ???? ? ?? ??? ?? ??? ??, ????, ???????, ?? ??? ?? ?",
+                    "?. ????: ?????? ?? ??, ???? ??, ????? ?? ?????, ???? ??",
+                    "?. ????? ???? ????: [???? ????? ?? ????]"
+                ]
+            },
+            {
+                "title": "?2?(????? ?? ? ????)",
+                "paragraphs": [
+                    "????? ??? ?? ???? ??????? ?? ??????? ????? ???? ???? ???? ??????? ??? ????? ????????.",
+                    "??? ???? ?? ? ?? ??? ??? ????."
+                ],
+                "bullets": [
+                    "1. ???? ?? ?? ? ??: ???/?? ???? ?? ???(??, ?? ?? ??? ?? ????? ?? ? ?? ?? ???, ??????? ?? ? ?? ???)",
+                    "2. ?? ?? ??? ??: ?????? ???? ? ??????? ?????",
+                    "3. ????? ???? ??? ??? ?? ??? ?? ?? ??: ????? 6??, ?? ?? ????/????/???? 5?, ??? ?? ?? ???? 3?",
+                    "4. ???????? ?? ???????? ??: ?????? ? 1?, ??? ??????/??? ???? 3??"
+                ]
+            },
+            {
+                "title": "?3?(????? ?3? ??)",
+                "paragraphs": [
+                    "????? ????? ??, ??? ??? ?? ? ???? ??? ?17? ? ?18?? ???? ???? ????? ?3??? ?????."
+                ],
+                "bullets": [
+                    "??(??) ?? ??: ??? ??, ????, ????, ??"
+                ]
+            },
+            {
+                "title": "?4?(??????? ??)",
+                "paragraphs": [
+                    "????? ??? ???? ????? ??? ???? ????? ??? ? ????."
+                ],
+                "bullets": [
+                    "???????: Auth0.com ??"
+                ]
+            },
+            {
+                "title": "?5?(????? ?????? ????? ? ????)",
+                "bullets": [
+                    "????? ???? ???? ????????????? ?? ?? ??? ??? ? ????.",
+                    "?? ??? ??, ???? ?? ??? ???? ????? ???? ?????.",
+                    "?? ??? ?????/?????? ??? ? ? ????.",
+                    "???? ?? ? ???? ??? ?? ??? ?? ??? ? ????.",
+                    "?? ???? ?? ???? ??? ????? ?? ??? ??? ? ????.",
+                    "??? ?? ?? ??? ??? ??? ?????."
+                ]
+            },
+            {
+                "title": "?6?(???? ???? ??)",
+                "bullets": [
+                    "1. ???? ?? ?? ? ??: ????(??, ???, ????, ????, ?????), ????(??, ????)",
+                    "2. ??? ??: ????(??, ???, ????, ????, ?????, ??????, ??????), ????(??, ????)",
+                    "3. ??? ??? ?????? ?? ??: IP??, ??, MAC??, ??? ????, ????"
+                ]
+            },
+            {
+                "title": "?7?(???? ?? ?? ? ????)",
+                "paragraphs": [
+                    "????? ????? ???? ????? ??? ?? ???? ?? ????? ?????. ?? ?? ??? ?? ????? ?? ???? ???? ????."
+                ],
+                "bullets": [
+                    "??? ?? ??: ?? ??? ???? ??? ???? ??",
+                    "?? ??: ?? ?? ??"
+                ]
+            },
+            {
+                "title": "?8?(????? ??? ????)",
+                "bullets": [
+                    "??? ??: ?????? ?????, ??? ?? ??",
+                    "??? ??: ???? ??, ??????? ??, ?????? ???, ?????? ??",
+                    "??? ??: ???, ????? ????"
+                ]
+            },
+            {
+                "title": "?9?(???? ?? ?? ??? ????? ? ??)",
+                "paragraphs": [
+                    "????? ????? ??? ?? ??(cookie)? ?????."
+                ],
+                "bullets": [
+                    "?? ????: ??/????, ?? ???, ???? ?? ?? ???? ???? ?? ??",
+                    "?? ??: Internet Explorer, Edge, Chrome? ???? ???? ??/?? ??",
+                    "?? ??? ?????? ?? ??? ??? ???? ??? ? ????."
+                ]
+            },
+            {
+                "title": "?10?(???? ?????)",
+                "paragraphs": [
+                    "????? ???? ??? ?? ??? ???? ???? ???? ?? ?? ???? ? ????? ??? ??? ?? ???? ?????? ???? ????."
+                ],
+                "bullets": [
+                    "??: ???",
+                    "??: ??",
+                    "???: info@hanaloop.com"
+                ]
+            },
+            {
+                "title": "?12?(?????? ??)",
+                "paragraphs": [
+                    "????? ????? ???? ?39??11? ?? ?????? ???????."
+                ],
+                "bullets": [
+                    "????? ??: ???",
+                    "????? ??????: info@hanaloop.com"
+                ]
+            },
+            {
+                "title": "?13?(???? ????? ????)",
+                "paragraphs": [
+                    "????? ????? ???? ?15??3? ? ?17??4?? ?? ?? ?? ????? ?? ?????? ? ??? ??? ? ?? ??? ?????."
+                ],
+                "bullets": [
+                    "?? ????? ??? ?? ?? ??? ???",
+                    "???? ?? ?? ?? ?? ??? ??? ? ?? ???",
+                    "????? ?? ?? ?? ??",
+                    "???? ?? ??? ? ??? ?? ?? ??"
+                ]
+            },
+            {
+                "title": "?14?(???? ????)",
+                "paragraphs": [
+                    "????? ????? ???? ?35?? ?? ????? ?? ??? ?? ??? ? ? ????."
+                ],
+                "bullets": [
+                    "???? ???? ????? ??: ?????",
+                    "???: ???",
+                    "???: info@hanaloop.com"
+                ]
+            },
+            {
+                "title": "?15?(????? ?? ????)",
+                "paragraphs": [
+                    "????? ??????? ?? ??? ?? ??? ?????? ?? ?? ??? ? ????."
+                ],
+                "bullets": [
+                    "??????????(????????): privacy.kisa.or.kr / (????) 118",
+                    "???? ???????: www.kopico.go.kr / 1833-6972",
+                    "???? ??????: www.spo.go.kr / (????) 1301",
+                    "??? ??????: ecrm.cyber.go.kr / (????) 182",
+                    "?????????: www.simpan.go.kr / (????) 110"
+                ]
+            },
+            {
+                "title": "?16?(???? ????? ??)",
+                "bullets": [
+                    "????: 2022? 9? 1?",
+                    "????: v0.8",
+                    "????: 2022? 9? 1?"
+                ]
             }
         ]
     }

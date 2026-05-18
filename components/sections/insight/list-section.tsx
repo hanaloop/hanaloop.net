@@ -1,5 +1,4 @@
-﻿import { getLocale } from 'next-intl/server';
-import type { ComponentType } from 'react';
+﻿import type { ComponentType } from 'react';
 import { InsightDetailLayout } from '@/components/sections/insight/detail-layout';
 import { buildInsightNavTree } from '@/lib/insight-navigation';
 import type { AppLocale } from '@/lib/locales';
@@ -13,6 +12,7 @@ const LABELS = {
 } as const;
 
 type InsightListSectionProps = {
+  locale: AppLocale;
   selectedSlug?: string[];
 };
 
@@ -35,8 +35,7 @@ function mapToc(tocValue: unknown): { id: string; text: string }[] {
     .filter((item): item is { id: string; text: string } => item !== null);
 }
 
-export async function InsightListSection({ selectedSlug }: InsightListSectionProps) {
-  const locale = (await getLocale()) as AppLocale;
+export async function InsightListSection({ locale, selectedSlug }: InsightListSectionProps) {
   const labels = LABELS[locale];
 
   const navTree = buildInsightNavTree(locale);

@@ -1,7 +1,9 @@
 import { SiteShell } from '@/components/layout/site-shell';
 import { HanaAiHeroSection } from '@/components/sections/hana-ai/hero-section';
 import { HanaAiOverviewSection } from '@/components/sections/hana-ai/overview-section';
-import { HanaAiProcessSection } from '@/components/sections/hana-ai/process-section';
+import { HanaAiWhyNeedSection } from '@/components/sections/hana-ai/why-need-section';
+import { HanaAiMainFeaturesSection } from '@/components/sections/hana-ai/main-features-section';
+import { CtaSection } from '@/components/sections/home/cta-section';
 import { notFound } from 'next/navigation';
 import { isLocale, locales } from '@/lib/locales';
 
@@ -17,7 +19,9 @@ export default async function Page({ params }: Props) {
         <SiteShell>
             <HanaAiHeroSection />
             <HanaAiOverviewSection />
-            <HanaAiProcessSection />
+            <HanaAiWhyNeedSection />
+            <HanaAiMainFeaturesSection />
+            <CtaSection />
         </SiteShell>
     );
 }

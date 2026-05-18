@@ -5,9 +5,7 @@ const BADGE = 'OUR MISSION';
 
 export async function HomeOurMissionSection() {
     const t = await getTranslations('HomeOurMission');
-
-    const desktopLead = t.raw('desktopLead') as string[];
-    const paragraphs = t.raw('paragraphs') as string[];
+    const body = t('body');
 
     return (
         <section className="px-5 pb-12 pt-10 md:px-8 md:pb-16 md:pt-16 lg:px-[64px] lg:pb-20 lg:pt-28">
@@ -21,11 +19,7 @@ export async function HomeOurMissionSection() {
                         <h2 className="max-w-[660px] font-semibold leading-[1.35] tracking-[-0.02em] [font-size:clamp(16px,calc(7.01px+2.43vw),42px)] lg:hidden">{t('heading')}</h2>
                         <div className="hidden max-w-[720px] space-y-2 text-[18px] font-medium leading-[1.9] text-[var(--color-text-muted)] lg:block">
                             <h2 className="whitespace-nowrap font-bold">{t('heading')}</h2>
-                            {desktopLead.map((line) => (
-                                <p key={line} className="whitespace-nowrap">
-                                    {line}
-                                </p>
-                            ))}
+                            <p>{body}</p>
                         </div>
                     </div>
                 </div>
@@ -35,9 +29,8 @@ export async function HomeOurMissionSection() {
                     <p className="pointer-events-none absolute bottom-1 left-7 [font-size:clamp(48px,calc(35.55px+3.36vw),84px)] font-medium leading-none tracking-[-0.02em] text-white/45 md:left-10 lg:hidden">OUR MISSION</p>
                 </div>
 
-                <div className="mt-8 space-y-6 font-medium leading-[1.6] text-[#141414] [font-size:clamp(14px,calc(3.63px+2.80vw),44px)] px-4 md:px-11 lg:hidden">
-                    <p>{paragraphs[0]}</p>
-                    <p>{paragraphs[1]}</p>
+                <div className="mt-8 font-medium leading-[1.6] text-[#141414] [font-size:clamp(14px,calc(3.63px+2.80vw),44px)] px-4 md:px-11 lg:hidden">
+                    <p>{body}</p>
                 </div>
             </div>
         </section>

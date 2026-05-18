@@ -5,6 +5,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import CaptionedImage from '@/components/sections/blog/captioned-image';
 import SectionBlock from '@/components/sections/blog/section-block';
 import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { SiteShell } from '@/components/layout/site-shell';
 import { BlogHeroSection } from '@/components/sections/blog/hero-section';
 import { BlogListSection } from '@/components/sections/blog/list-section';
@@ -23,12 +24,13 @@ export const dynamicParams = false;
 export default async function Page({ params }: Props) {
     const { locale, slug } = await params;
     if (!isLocale(locale)) notFound();
+    setRequestLocale(locale);
 
     if (!slug || slug.length === 0) {
         return (
             <SiteShell>
-                <BlogHeroSection />
-                <BlogListSection />
+                <BlogHeroSection locale={locale} />
+                <BlogListSection locale={locale} />
             </SiteShell>
         );
     }

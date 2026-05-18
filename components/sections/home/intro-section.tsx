@@ -47,14 +47,14 @@ export async function HomeIntroSection() {
                     </p>
 
                     <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] lg:mt-4">
-                        <span className="lg:hidden">
+                        <span className="lg:hidden font-bold">
                             {titleMobileLines.map((line) => (
                                 <span key={line} className="block whitespace-nowrap">
                                     {line}
                                 </span>
                             ))}
                         </span>
-                        <span className="hidden lg:block">
+                        <span className="hidden lg:block font-bold">
                             {titleDesktopLines.map((line) => (
                                 <span key={line} className="block whitespace-nowrap">
                                     {line}
@@ -82,7 +82,7 @@ export async function HomeIntroSection() {
                 </div>
 
                 <p className="mx-auto mt-9 hidden max-w-[1040px] text-center [font-size:clamp(13px,calc(11.96px+0.28vw),16px)] font-medium leading-[1.55] text-[var(--color-text-subtle)] lg:mt-16 lg:block">
-                    <span className="whitespace-nowrap">{t('descriptionDesktop')}</span>
+                    <span className="">{t('descriptionDesktop')}</span>
                 </p>
 
                 <div className="mt-8 grid gap-3.5 lg:mt-6 lg:grid-cols-3 lg:gap-4">

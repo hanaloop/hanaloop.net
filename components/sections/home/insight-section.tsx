@@ -29,16 +29,16 @@ export async function HomeInsightSection() {
                 };
 
     return (
-        <section className="px-4 pb-20 pt-16 lg:px-6 lg:pb-28 lg:pt-20">
+        <section className="px-4 pb-20 pt-10 lg:px-6 lg:pb-28 lg:pt-36">
             <div className="mx-auto w-full max-w-[1920px]">
                 <div className="lg:hidden">
                     <div className="mx-auto ">
                         <div className="px-[10px] pb-6 pt-8 text-center">
-                            <p className="[font-size:clamp(13px,calc(12.31px+0.19vw),15px)] font-medium tracking-[-0.25px]">{t('mobileEyebrow')}</p>
-                            <h3 className="mt-1 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-medium leading-[1.15] tracking-[-1px]">{t('mobileHeading')}</h3>
+                            <p className="[font-size:clamp(13px,calc(10.23px+0.75vw),21px)] font-semibold tracking-[-0.25px] text-[#141414]">{t('mobileEyebrow')}</p>
+                            <h3 className="mt-1 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-semibold leading-[1.15] tracking-[-1px] text-black">{t('mobileHeading')}</h3>
                         </div>
 
-                        <div className="mt-4 border-t border-[var(--color-text-subtle)] px-[10px] py-5">
+                        <div className="mt-4 lg:mt-20 border-t border-[var(--color-text-subtle)] px-[10px] py-5">
                             <div className="flex items-center justify-between">
                                 <p className="[font-size:clamp(16px,calc(14.62px+0.37vw),20px)] font-medium leading-none">Insight LIST</p>
                                 <Image src="/site/icons/up.png" alt="" aria-hidden="true" width={17} height={9} />
@@ -82,6 +82,10 @@ export async function HomeInsightSection() {
                 </div>
 
                 <div className="hidden lg:block">
+                    <div className="px-6 pb-10 pt-2 text-center">
+                        <p className="[font-size:clamp(13px,calc(10.23px+0.75vw),21px)] font-semibold tracking-[-0.25px] text-[#141414]">{t('mobileEyebrow')}</p>
+                        <h3 className="mt-2 [font-size:clamp(28px,calc(21.08px+1.87vw),48px)] font-semibold leading-[1.15] tracking-[-1px] text-black">{t('mobileHeading')}</h3>
+                    </div>
                     <ListTable heading={t('heading')} items={items} itemsPerPage={4} viewMoreHref={insightHref} viewMoreLabel={t('viewMoreLabel')} emptyTitle={emptyState.title} emptyDescription={emptyState.description} />
                 </div>
             </div>

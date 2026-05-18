@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { setRequestLocale } from 'next-intl/server';
 import { SiteShell } from '@/components/layout/site-shell';
 import { getBlogByTag, getBlogTags } from '@/lib/blog-tags';
 import { isLocale, locales } from '@/lib/locales';
@@ -38,6 +39,7 @@ function getTexts(locale: string) {
 export default async function Page({ params }: Props) {
   const { locale, tag } = await params;
   if (!isLocale(locale)) notFound();
+  setRequestLocale(locale);
 
   const decodedTag = decodeURIComponent(tag);
   const items = getBlogByTag(locale, decodedTag);

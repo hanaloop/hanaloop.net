@@ -15,13 +15,14 @@ export type PlatformHeroRelatedLink = {
 type PlatformHeroProps = {
     ariaLabel: string;
     backgroundImageUrl: string;
+    mobileBackgroundImageUrl?: string;
     heading: string;
     description: string;
     navAriaLabel: string;
     relatedLinks: PlatformHeroRelatedLink[];
 };
 
-export function PlatformHero({ ariaLabel, backgroundImageUrl, heading, description, navAriaLabel, relatedLinks }: PlatformHeroProps) {
+export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundImageUrl, heading, description, navAriaLabel, relatedLinks }: PlatformHeroProps) {
     const locale = useLocale() as AppLocale;
     const [mobileColumns, setMobileColumns] = useState<2 | 3>(2);
 
@@ -37,7 +38,14 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, heading, descripti
     return (
         <>
             <section className="relative h-[566px] overflow-hidden text-white lg:h-[420px] xl:h-[480px]" aria-label={ariaLabel}>
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${backgroundImageUrl}')` }} />
+                {mobileBackgroundImageUrl ? (
+                    <>
+                        <div className="absolute inset-0 bg-cover bg-center lg:hidden" style={{ backgroundImage: `url('${mobileBackgroundImageUrl}')` }} />
+                        <div className="absolute inset-0 bg-cover bg-center hidden lg:block" style={{ backgroundImage: `url('${backgroundImageUrl}')` }} />
+                    </>
+                ) : (
+                    <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('${backgroundImageUrl}')` }} />
+                )}
                 <div className="absolute inset-0 bg-black/30" />
 
                 <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col items-center justify-center px-4 text-center">

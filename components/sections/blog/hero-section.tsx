@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getTranslations, getLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
-export async function BlogHeroSection() {
-    const t = await getTranslations('BlogHero');
-    const locale = (await getLocale()) as AppLocale;
+export async function BlogHeroSection({ locale }: { locale: AppLocale }) {
+    const t = await getTranslations({ locale, namespace: 'BlogHero' });
 
     return (
         <section className="relative h-[300px] overflow-hidden md:h-[400px] lg:h-[480px] xl:h-[480px] 2xl:h-[480px]" aria-label="HanaLoop Blog Hero">

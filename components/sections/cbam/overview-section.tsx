@@ -9,7 +9,7 @@ export async function CbamOverviewSection() {
     const locale = (await getLocale()) as AppLocale;
 
     return (
-        <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[108px]" aria-label={t('sectionAriaLabel')}>
+        <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
                 <p className="mt-5 text-[#4C4C4C] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>
@@ -24,7 +24,7 @@ export async function CbamOverviewSection() {
                         <p className="mt-4 text-[#4C4C4C] [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] font-medium tracking-[-0.25px] md:mt-5">{t('whatBody')}</p>
 
                         <h3 className="mt-12 [font-size:clamp(28px,calc(26.62px+0.37vw),32px)] font-bold tracking-[-0.25px] text-black md:mt-14">{t('solutionTitle')}</h3>
-                        <p className="mt-4 text-[#4C4C4C] [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] font-medium tracking-[-0.25px] md:mt-5">{t('solutionBody')}</p>
+                        <p className="mt-4 text-[#4C4C4C] [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] font-medium tracking-[-0.25px] md:mt-5 whitespace-pre-line">{t('solutionBody')}</p>
 
                         <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={t('contactLabel')} className="mt-10 h-[52px] lg:max-w-[280px] md:mt-12 md:h-[56px]" />
                     </div>
@@ -37,7 +37,7 @@ export async function CbamOverviewSection() {
                     <p className="mt-6 text-[18px] font-medium tracking-[-0.25px]">{t('whatBody')}</p>
 
                     <h3 className="mt-22 text-[36px] font-bold tracking-[-0.25px] text-black">{t('solutionTitle')}</h3>
-                    <p className="mt-6 text-[18px] font-medium tracking-[-0.25px]">{t('solutionBody')}</p>
+                    <p className="mt-6 text-[18px] font-medium tracking-[-0.25px] whitespace-pre-line">{t('solutionBody')}</p>
 
                     <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={t('contactLabel')} className="mt-16" />
                 </div>

@@ -1,0 +1,81 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import { getLocale, getTranslations } from 'next-intl/server';
+import doosanLogo from '@/docs/export/ci-1.png';
+import byucksanLogo from '@/docs/export/ci-2.png';
+import type { AppLocale } from '@/lib/locales';
+import { withLocalePath } from '@/lib/locales';
+
+type CaseCardItem = {
+    id: string;
+    logo: 'doosan' | 'byucksan';
+    logoAlt: string;
+    href: string;
+    ctaLabel: string;
+    companyName: string;
+    industryLabel: string;
+    challengeLabel: string;
+    challengeText: string;
+    solutionLabel: string;
+    solutionText: string;
+    resultLabel: string;
+    resultText: string;
+};
+
+const logoMap = {
+    doosan: doosanLogo,
+    byucksan: byucksanLogo,
+} as const;
+
+export async function CaseCardsSection() {
+    const t = await getTranslations('CasesCards');
+    const locale = (await getLocale()) as AppLocale;
+    const items = t.raw('items') as CaseCardItem[];
+
+    return (
+        <section className="pb-16 lg:pb-[120px]" aria-label={t('sectionAriaLabel')}>
+            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5">
+                    {items.map((item) => (
+                        <article key={item.id} className="rounded-[16px] bg-[#dce7e4] px-[14px] pb-[16px] pt-[18px] md:px-[26px] md:pb-[28px] md:pt-[30px]">
+                            <div className="flex h-[140px] flex-col md:h-[100px] md:flex-row md:items-start md:justify-between md:gap-4">
+                                <Image src={logoMap[item.logo]} alt={item.logoAlt} className="h-auto w-auto max-h-[60px] max-w-[160px] md:max-h-[100px] md:max-w-[220px]" />
+                                <Link
+                                    href={withLocalePath(locale, item.href)}
+                                    className="order-2 mt-auto inline-flex h-[48px] w-full items-center justify-between rounded-full bg-black px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"
+                                >
+                                    <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-bold tracking-[-0.3px]">{item.ctaLabel}</span>
+                                    <Image src="/site/icons/ic-arrow.png" alt="" aria-hidden="true" width={10} height={10} className="h-[10px] w-[10px]" />
+                                </Link>
+                            </div>
+
+                            <div className="mt-4 border-t border-black/10 pt-4 md:mt-7 md:pt-8">
+                                <div className="flex items-center gap-4 md:gap-6">
+                                    <p className="[font-size:clamp(20px,calc(20px+(28-20)*((100vw-370px)/1070)),28px)] font-bold tracking-[-0.3px] text-[#222]">{item.companyName}</p>
+                                    <p className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-normal tracking-[-0.3px] text-[#6C6C6C]">{item.industryLabel}</p>
+                                </div>
+
+                                <div className="mt-6 space-y-4 md:mt-7 md:space-y-3.5">
+                                    <InfoRow label={item.challengeLabel} text={item.challengeText} />
+                                    <InfoRow label={item.solutionLabel} text={item.solutionText} />
+                                    <InfoRow label={item.resultLabel} text={item.resultText} />
+                                </div>
+                            </div>
+                        </article>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
+function InfoRow({ label, text }: { label: string; text: string }) {
+    return (
+        <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3">
+            <span className="inline-flex h-[26px] w-[80px] shrink-0 items-center justify-center rounded-full bg-[#21b97c] px-2 [font-size:clamp(12px,calc(11px+(16-11)*((100vw-370px)/1070)),16px)] font-bold leading-none tracking-[-0.3px] text-white md:w-[96px]">
+                {label}
+            </span>
+            <p className="pt-0.5 [font-size:clamp(16px,calc(16px+(18-16)*((100vw-370px)/1070)),18px)] font-normal tracking-[-0.3px] text-[#373737]">{text}</p>
+        </div>
+    );
+}
