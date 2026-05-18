@@ -150,7 +150,7 @@ export function HomeCollaborationSection() {
                             initialSlide={centerIndex}
                             centeredSlides
                             slidesPerView="auto"
-                            spaceBetween={viewportMode === 'mobile' ? -28 : viewportMode === 'lg' ? -60 : -90}
+                            spaceBetween={viewportMode === 'mobile' ? -28 : viewportMode === 'lg' ? -60 : -160}
                             effect="coverflow"
                             pagination={{ clickable: true }}
                             coverflowEffect={{
