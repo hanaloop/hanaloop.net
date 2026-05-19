@@ -1319,6 +1319,57 @@
                 ]
             },
             {
+                "id": 3,
+                "logoSrc": "/site/cases/ci-3.png",
+                "logoAlt": "CSWind logo",
+                "companyName": "CSWind",
+                "eyebrow": "Case study",
+                "title": "CSWind × HanaLoop — Building a Company-wide CBAM Response System for Overseas Operations",
+                "contactLabel": "Contact Us",
+                "summary": [
+                    {
+                        "label": "Challenge",
+                        "text": "With inadequate CBAM data management at overseas subsidiaries in Southeast Asia and the Middle East, and no company-wide response process or role structure in place at headquarters, it was difficult to guarantee continued EU export viability."
+                    },
+                    {
+                        "label": "Solution",
+                        "text": "HanaLoop supported end-to-end: CBAM data review and notification drafting for each subsidiary, company-wide process and R&R design, a certificate cost simulation tool, and ongoing advisory credit contracts — from subsidiary-level diagnosis to group-wide integrated response."
+                    },
+                    {
+                        "label": "Result",
+                        "text": "Established a company-wide climate regulation response process and passed a local third-party pre-verification, securing CBAM response credibility and export competitiveness in the EU market."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Project Background",
+                        "paragraphs": [
+                            "CSWind is a leading Korean wind tower manufacturer, supplying products to the global renewable energy market through overseas subsidiaries in Vietnam and Turkey. Steel-based wind towers fall directly under EU CBAM regulation, making CBAM compliance directly tied to export continuity for CSWind, which has high EU export exposure.",
+                            "The challenge was fragmented accountability. The Vietnam and Turkey subsidiaries each managed production data locally, but could not meet the data quality standards and embedded emission calculation methods required by CBAM. Without a company-wide response process and role structure at headquarters, the compliance gap was set to widen as regulatory requirements became more concrete.",
+                            "CSWind chose HanaLoop as its partner to systematically build both the data management infrastructure at overseas subsidiaries and a company-wide CBAM response process."
+                        ]
+                    },
+                    {
+                        "title": "Implementation — From Subsidiary Diagnosis to Company-wide Process Design",
+                        "paragraphs": [
+                            "HanaLoop designed this project not as isolated data checks for individual subsidiaries, but as an integrated effort to build CBAM response capabilities across the entire CSWind group."
+                        ],
+                        "bullets": [
+                            "Reviewed CBAM data quality and drafted Communication Templates for each subsidiary's representative products; assessed data gaps and produced improvement action lists per entity.",
+                            "Redesigned the group-wide CBAM response flow from AS-IS to TO-BE; produced an R&R Matrix, draft CBAM operating rules, and internal communication and approval procedures.",
+                            "Developed a cost simulation tool based on EU benchmark values and CBAM factors, enabling CSWind to forecast financial impact and inform strategic decisions ahead of full enforcement.",
+                            "Established an ongoing advisory credit structure so CSWind can continue to respond to regulatory changes after project completion."
+                        ]
+                    },
+                    {
+                        "title": "Results",
+                        "paragraphs": [
+                            "Through this project, CSWind established both subsidiary-level data management and a headquarters-led company-wide CBAM response process. The core outcome was building a structure where regulatory response is managed at the group level rather than dispersed as individual subsidiary tasks."
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": 4,
                 "logoSrc": "/site/cases/ci-4.png",
                 "logoAlt": "DAEHO AL logo",
@@ -1526,8 +1577,6 @@
                 "companyName": "Emart",
                 "eyebrow": "Case study",
                 "title": "emart × HanaLoop API Management Modernization",
-                "subtitle": "HanaLoop consulting designed the path from diagnosis to validation",
-                "contactLabel": "Contact Us",
                 "summary": [
                     {
                         "label": "Challenge",
