@@ -213,6 +213,103 @@
         "heading": "HanaLoop Blog",
         "contactLabel": "Contact Us"
     },
+    "OverviewOverview": {
+        "sectionAriaLabel": "Hana.eco Carbon Management Platform",
+        "heading": "Hana.eco Carbon Management Platform",
+        "subheading": "Choose the right solution for your carbon management goals."
+    },
+    "OverviewCbamPlan": {
+        "sectionAriaLabel": "Hana.eco CBAM Plan",
+        "heading": "Hana.eco CBAM Plan",
+        "cards": [
+            {
+                "title": "Standard",
+                "body": "Manage Scope 1·2 and CBAM carbon footprints across one or more sites\n(for steel and aluminum companies)"
+            },
+            {
+                "title": "Supply Chain - LITE",
+                "body": "Collect, track, and manage\nsupplier-specific embedded emissions data"
+            },
+            {
+                "title": "Supply Chain - ENTERPRISE",
+                "body": "Manage Scope 1·2 and CBAM carbon footprints across one or more sites\n(for steel and aluminum companies)"
+            }
+        ],
+        "imageAlt": "Hana.eco CBAM Plan background image",
+        "imageLabel": "Hana.eco EDITION"
+    },
+    "OverviewEcoEdition": {
+        "sectionAriaLabel": "Hana.eco EDITION",
+        "heading": "Hana.eco EDITION",
+        "saasEdition": "SAAS EDITION",
+        "onPremEdition": "ON-PREM EDITION",
+        "saasPlans": [
+            {
+                "title": "STANDARD",
+                "items": ["Up to 5 sites", "Scope 1, 2", "Corporate emissions reports", "Excel import/export"]
+            },
+            {
+                "title": "ENTERPRISE",
+                "items": ["Up to 20 sites", "Scope 1, 2, 3", "Corporate emissions report", "Integration with KEPCO", "Chatbot", "Cradle-to-gate PCF"]
+            },
+            {
+                "title": "SUPPLY CHAIN",
+                "items": ["Unlimited sites", "Scope 1, 2, 3", "Supply chain emission management", "Corporate emissions report", "Integration with KEPCO", "Chatbot", "Cradle-to-gate PCF"]
+            }
+        ],
+        "onPremPlan": {
+            "title": "ECO INTEGRATION",
+            "items": ["All features in Supply chain", "Datapipe: Connectors & APIs", "Session integration"]
+        }
+    },
+    "OverviewSolutionMatrix": {
+        "sectionAriaLabel": "Solution Selection Matrix",
+        "title": "Solution Selection Matrix",
+        "items": [
+            {
+                "from": "EU CBAM Compliance",
+                "to": "CBAM Solution\n+\nSupply Chain PCF"
+            },
+            {
+                "from": "Product\nCarbon Footprint Needs",
+                "to": "PCF/LCA Solution"
+            },
+            {
+                "from": "K-ETS·Target Management",
+                "to": "Carbon Accounting Solution"
+            },
+            {
+                "from": "Supplier Collaboration Management",
+                "to": "Supply Chain PCF Solution"
+            },
+            {
+                "from": "ESG Disclosure, SBTi",
+                "to": "PCF Carbon Accounting\n+\nHana.eco AI"
+            }
+        ]
+    },
+    "OverviewProcess": {
+        "sectionAriaLabel": "Carbon Management Platform Implementation Process",
+        "title": "Carbon Management Platform Implementation Process",
+        "steps": [
+            {
+                "heading": "1. Current-state analysis and consulting",
+                "items": ["Set boundaries by objective, define data monitoring points, collect data, and diagnose inventory completeness"]
+            },
+            {
+                "heading": "2. Platform setup",
+                "items": ["Normalize data, onboard historical data, and define operating processes"]
+            },
+            {
+                "heading": "3. Meter installation and integration",
+                "items": ["ERP/MES connectors, automated meter collection, and customization"]
+            },
+            {
+                "heading": "4. Transition and training",
+                "items": ["Provide manuals, train practitioners, and embed operations"]
+            }
+        ]
+    },
     "CompanyHero": {
         "heading": "Reliable and Agile Sustainability Partner",
         "contactLabel": "Contact Us"
@@ -309,6 +406,7 @@
         ]
     },
     "PlatformNav": {
+        "overview": "Carbon Management Services",
         "carbonAccounting": "Carbon Accounting Solution",
         "cbam": "CBAM Solution",
         "pcf": "PCF/LCA Solution",
@@ -745,6 +843,7 @@
         "insight": "Insight & Blog",
         "about": "About Us",
         "items": {
+            "Overview": "Carbon Management Services",
             "carbonAccounting": "Carbon Accounting Solution",
             "CBAM": "CBAM Solution",
             "ProductCarbonFootprint": "PCF/LCA Solution",
@@ -1026,7 +1125,7 @@
         "items": [
             {
                 "id": "case-doosan",
-                "logo": "doosan",
+                "logoSrc": "/site/cases/ci-1.png",
                 "logoAlt": "Doosan Enerbility logo",
                 "href": "/partnership",
                 "ctaLabel": "Learn more",
@@ -1041,7 +1140,7 @@
             },
             {
                 "id": "case-byucksan",
-                "logo": "byucksan",
+                "logoSrc": "/site/cases/ci-2.png",
                 "logoAlt": "Byucksan logo",
                 "href": "/partnership",
                 "ctaLabel": "Learn more",

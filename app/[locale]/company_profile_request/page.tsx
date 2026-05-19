@@ -16,9 +16,6 @@ export default async function Page({ params }: Props) {
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSeJEFIcUzy68oP-mA--noSht_3Bq8ctRC4aCTleWh6oYtmCQQ/viewform"
                     style={{ width: '100%', maxWidth: '1024px', margin: '0 auto', height: 'calc(100vh - 120px)', border: 0, padding: 0 }}
-                    frameBorder={0}
-                    marginHeight={0}
-                    marginWidth={0}
                 >
                     Loading...
                 </iframe>

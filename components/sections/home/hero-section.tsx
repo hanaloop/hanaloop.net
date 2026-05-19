@@ -44,7 +44,7 @@ export async function HomeHeroSection() {
                         </p>
 
                         <div className="mt-14 flex flex-col items-start gap-3 md:mt-14 md:max-w-[260px] lg:mt-14 lg:max-w-none lg:flex-row lg:gap-4">
-                            <HeroButton href="/solution" label={t('solutionLabel')} locale={locale} mobileWidthClassName="w-[206px]" />
+                            <HeroButton href="/overview" label={t('solutionLabel')} locale={locale} mobileWidthClassName="w-[206px]" />
                             <HeroButton href="/partnership" label={t('contactLabel')} locale={locale} mobileWidthClassName="w-[160px]" />
                         </div>
                     </div>

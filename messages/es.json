@@ -213,6 +213,103 @@
         "heading": "HanaLoop Blog",
         "contactLabel": "Contáctenos"
     },
+    "OverviewOverview": {
+        "sectionAriaLabel": "Plataforma de gestión de carbono Hana.eco",
+        "heading": "Plataforma de gestión de carbono Hana.eco",
+        "subheading": "Elija la solución adecuada para sus objetivos de gestión de carbono."
+    },
+    "OverviewCbamPlan": {
+        "sectionAriaLabel": "Plan CBAM de Hana.eco",
+        "heading": "Plan CBAM de Hana.eco",
+        "cards": [
+            {
+                "title": "Estandar",
+                "body": "Gestione Scope 1·2 y huellas de carbono CBAM en una o varias plantas\n(para empresas de acero y aluminio)"
+            },
+            {
+                "title": "Cadena de Suministro - LITE",
+                "body": "Recopile, rastree y gestione\ndatos de emisiones embebidas de proveedores"
+            },
+            {
+                "title": "Cadena de Suministro - ENTERPRISE",
+                "body": "Gestione Scope 1·2 y huellas de carbono CBAM en una o varias plantas\n(para empresas de acero y aluminio)"
+            }
+        ],
+        "imageAlt": "Imagen de fondo del plan CBAM de Hana.eco",
+        "imageLabel": "Hana.eco EDITION"
+    },
+    "OverviewEcoEdition": {
+        "sectionAriaLabel": "Hana.eco EDITION",
+        "heading": "Hana.eco EDITION",
+        "saasEdition": "SAAS EDITION",
+        "onPremEdition": "ON-PREM EDITION",
+        "saasPlans": [
+            {
+                "title": "STANDARD",
+                "items": ["Hasta 5 sitios", "Scope 1, 2", "Reportes de emisiones corporativas", "Importacion/exportacion de Excel"]
+            },
+            {
+                "title": "ENTERPRISE",
+                "items": ["Hasta 20 sitios", "Scope 1, 2, 3", "Reporte de emisiones corporativas", "Integracion con KEPCO", "Chatbot", "PCF cradle-to-gate"]
+            },
+            {
+                "title": "SUPPLY CHAIN",
+                "items": ["Sitios ilimitados", "Scope 1, 2, 3", "Gestion de emisiones de cadena de suministro", "Reporte de emisiones corporativas", "Integracion con KEPCO", "Chatbot", "PCF cradle-to-gate"]
+            }
+        ],
+        "onPremPlan": {
+            "title": "ECO INTEGRATION",
+            "items": ["Todas las funciones de Supply chain", "Datapipe: conectores y APIs", "Integracion de sesiones"]
+        }
+    },
+    "OverviewSolutionMatrix": {
+        "sectionAriaLabel": "Matriz de selección de soluciones",
+        "title": "Matriz de selección de soluciones",
+        "items": [
+            {
+                "from": "Cumplimiento EU CBAM",
+                "to": "Solución CBAM\n+\nPCF de cadena de suministro"
+            },
+            {
+                "from": "Necesidades de\nhuella de carbono de producto",
+                "to": "Solución PCF/LCA"
+            },
+            {
+                "from": "K-ETS·Gestión por objetivos",
+                "to": "Solución de contabilidad de carbono"
+            },
+            {
+                "from": "Gestión de proveedores",
+                "to": "Solución PCF de cadena de suministro"
+            },
+            {
+                "from": "Divulgación ESG, SBTi",
+                "to": "PCF y contabilidad de carbono\n+\nHana.eco AI"
+            }
+        ]
+    },
+    "OverviewProcess": {
+        "sectionAriaLabel": "Proceso de implementación de la plataforma de gestión de carbono",
+        "title": "Proceso de implementación de la plataforma de gestión de carbono",
+        "steps": [
+            {
+                "heading": "1. Análisis del estado actual y consultoría",
+                "items": ["Definir límites según objetivos, puntos de monitoreo de datos, recopilación de datos y diagnóstico de integridad del inventario"]
+            },
+            {
+                "heading": "2. Configuración de la plataforma",
+                "items": ["Normalizar datos, incorporar datos históricos y definir procesos operativos"]
+            },
+            {
+                "heading": "3. Instalación e integración de medidores",
+                "items": ["Conectores ERP/MES, recopilación automática de medidores y personalización"]
+            },
+            {
+                "heading": "4. Transición y capacitación",
+                "items": ["Proporcionar manuales, capacitar al equipo operativo e integrar la operación"]
+            }
+        ]
+    },
     "CompanyHero": {
         "heading": "Reliable and Agile Sustainability Partner",
         "contactLabel": "Contáctenos"
@@ -309,6 +406,7 @@
         ]
     },
     "PlatformNav": {
+        "overview": "Servicios de gestion de carbono",
         "carbonAccounting": "Solución de Contabilidad de Carbono",
         "cbam": "Solución CBAM",
         "pcf": "Solución PCF/LCA",
@@ -745,6 +843,7 @@
         "insight": "Insight & Blog",
         "about": "Nosotros",
         "items": {
+            "Overview": "Servicios de gestion de carbono",
             "carbonAccounting": "Solución de Contabilidad de Carbono",
             "CBAM": "Solución CBAM",
             "ProductCarbonFootprint": "Solución PCF/LCA",
@@ -1026,7 +1125,7 @@
         "items": [
             {
                 "id": "case-doosan",
-                "logo": "doosan",
+                "logoSrc": "/site/cases/ci-1.png",
                 "logoAlt": "Logo de Doosan Enerbility",
                 "href": "/partnership",
                 "ctaLabel": "Ver m?s detalles",
@@ -1041,7 +1140,7 @@
             },
             {
                 "id": "case-byucksan",
-                "logo": "byucksan",
+                "logoSrc": "/site/cases/ci-2.png",
                 "logoAlt": "Logo de Byucksan",
                 "href": "/partnership",
                 "ctaLabel": "Ver m?s detalles",

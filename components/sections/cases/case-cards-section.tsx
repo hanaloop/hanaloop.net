@@ -1,14 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
-import doosanLogo from '@/public/site/cases/ci-1.png';
-import byucksanLogo from '@/public/site/cases/ci-2.png';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
 type CaseCardItem = {
     id: string;
-    logo: 'doosan' | 'byucksan';
+    logoSrc: string;
     logoAlt: string;
     href: string;
     ctaLabel: string;
@@ -22,11 +20,6 @@ type CaseCardItem = {
     resultText: string;
 };
 
-const logoMap = {
-    doosan: doosanLogo,
-    byucksan: byucksanLogo,
-} as const;
-
 export async function CaseCardsSection() {
     const t = await getTranslations('CasesCards');
     const locale = (await getLocale()) as AppLocale;
@@ -39,7 +32,7 @@ export async function CaseCardsSection() {
                     {items.map((item) => (
                         <article key={item.id} className="rounded-[16px] bg-[#dce7e4] px-[14px] pb-[16px] pt-[18px] md:px-[26px] md:pb-[28px] md:pt-[30px]">
                             <div className="flex h-[140px] flex-col md:h-[100px] md:flex-row md:items-start md:justify-between md:gap-4">
-                                <Image src={logoMap[item.logo]} alt={item.logoAlt} className="h-auto w-auto max-h-[60px] max-w-[160px] md:max-h-[100px] md:max-w-[220px]" />
+                                <Image src={item.logoSrc} alt={item.logoAlt} width={220} height={100} className="h-auto w-auto max-h-[60px] max-w-[160px] md:max-h-[100px] md:max-w-[220px]" />
                                 <Link
                                     href={withLocalePath(locale, item.href)}
                                     className="order-2 mt-auto inline-flex h-[48px] w-full items-center justify-between rounded-full bg-black px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"

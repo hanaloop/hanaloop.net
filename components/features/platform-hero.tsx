@@ -56,11 +56,14 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                         {relatedLinks.map((item, index) => (
                             <div key={item.href} className="flex items-center">
                                 {item.current ? (
-                                    <span className="inline-flex h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 text-[21px] font-semibold tracking-[-0.25px] text-white" aria-current="page">
+                                    <span
+                                        className="inline-flex h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] font-semibold tracking-[-0.25px] text-white"
+                                        aria-current="page"
+                                    >
                                         {item.label}
                                     </span>
                                 ) : (
-                                    <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center text-[21px] tracking-[-0.25px] text-white/95 transition hover:text-white">
+                                    <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] tracking-[-0.25px] text-white/95 transition hover:text-white">
                                         {item.label}
                                     </Link>
                                 )}

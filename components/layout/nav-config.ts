@@ -16,6 +16,7 @@ export function buildMenus(locale: AppLocale, t: (key: string) => string): MenuG
         {
             label: t('platform'),
             items: [
+                { label: t('items.Overview'), href: '/overview' },
                 { label: t('items.carbonAccounting'), href: '/platform' },
                 { label: t('items.CBAM'), href: '/cbam' },
                 { label: t('items.ProductCarbonFootprint'), href: '/pcf' },

@@ -6,18 +6,18 @@ type ProcessStep = {
     items: string[];
 };
 
-export async function CbamProcessSection() {
-    const t = await getTranslations('CbamProcess');
+export async function OverviewProcessSection() {
+    const t = await getTranslations('OverviewProcess');
     const steps = t.raw('steps') as ProcessStep[];
 
     return (
         <section className="relative w-full overflow-hidden" aria-label={t('sectionAriaLabel')}>
             <div className="relative w-full lg:hidden">
-                <Image src="/site/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
+                <Image src="/site/overview/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
                 <div className="relative px-5 py-10 sm:px-8 md:py-14">
                     <h2 className="text-center text-white font-medium tracking-[-1px] [font-size:clamp(28px,calc(21.08px+1.87vw),48px)]">{t('title')}</h2>
 
-                    <div className="mx-auto mt-8 w-full rounded-[12px] bg-black/38 px-4 py-8 sm:px-8 lg:mt-[2vw] lg:px-8 lg:py-20">
+                    <div className="mx-auto mt-8 w-full rounded-[12px] bg-black/38 px-4 py-5 sm:px-6 md:mt-10 md:px-8 md:py-7">
                         <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
                             {steps.map((step) => (
                                 <div key={`${step.heading}-mobile`}>
@@ -29,7 +29,7 @@ export async function CbamProcessSection() {
                                             style={{ background: 'linear-gradient(45deg, transparent calc(50% - 0.5px), rgba(255,255,255,0.8) calc(50% - 0.5px), rgba(255,255,255,0.8) calc(50% + 0.5px), transparent calc(50% + 0.5px))' }}
                                         />
                                     </div>
-                                    <ul className="mt-6 list-disc space-y-1.5 pl-5 text-white marker:text-[16px] md:space-y-2">
+                                    <ul className="mt-6 list-none space-y-1.5 text-white md:space-y-2">
                                         {step.items.map((item) => (
                                             <li key={`${step.heading}-${item}`} className="font-medium tracking-[-0.25px] [font-size:clamp(14px,calc(12.62px+0.37vw),18px)]">
                                                 {item}
@@ -44,11 +44,11 @@ export async function CbamProcessSection() {
             </div>
 
             <div className="relative hidden w-full lg:block lg:max-h-[673px]">
-                <Image src="/site/cbam/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
+                <Image src="/site/overview/process-bg.png" alt="" aria-hidden="true" fill className="object-cover" sizes="100vw" priority />
                 <div className="relative px-5 py-10 sm:px-8 md:py-14 lg:px-[8.4375vw] lg:py-[5vw]">
                     <h2 className="text-center text-white font-medium tracking-[-1px] [font-size:clamp(28px,calc(21.08px+1.87vw),48px)]">{t('title')}</h2>
 
-                    <div className="mx-auto mt-8 w-full rounded-[12px] bg-black/38 px-4 py-5 sm:px-8 lg:mt-[2vw] lg:px-[2.7083vw] lg:py-[2.1875vw]">
+                    <div className="mx-auto mt-8 w-full rounded-[12px] bg-black/38 px-4 py-8 sm:px-8 lg:mt-[2vw] lg:px-[2.7083vw] lg:py-20">
                         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-9">
                             {steps.map((step) => (
                                 <div key={step.heading}>
@@ -66,7 +66,7 @@ export async function CbamProcessSection() {
 
                         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-[0.9375vw] lg:grid-cols-4 lg:gap-9">
                             {steps.map((step) => (
-                                <ul key={`${step.heading}-items`} className="list-disc space-y-2 pl-5 text-white marker:text-[18px]">
+                                <ul key={`${step.heading}-items`} className="list-none space-y-2 text-white">
                                     {step.items.map((item) => (
                                         <li key={item} className="font-medium tracking-[-0.25px] [font-size:clamp(14px,calc(12.62px+0.37vw),18px)]">
                                             {item}
