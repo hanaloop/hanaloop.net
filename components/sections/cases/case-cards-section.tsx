@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getLocale, getTranslations } from 'next-intl/server';
-import doosanLogo from '@/docs/export/ci-1.png';
-import byucksanLogo from '@/docs/export/ci-2.png';
+import doosanLogo from '@/public/site/cases/ci-1.png';
+import byucksanLogo from '@/public/site/cases/ci-2.png';
 import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 
