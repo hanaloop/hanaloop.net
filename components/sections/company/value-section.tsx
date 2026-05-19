@@ -8,7 +8,7 @@ const valueItems = [
         imageClassName: 'max-w-[220px]',
     },
     {
-        key: 'venture',
+        key: 'bold',
         imageSrc: '/site/company/our-value-2.png',
         imageClassName: 'max-w-[280px]',
     },
@@ -25,9 +25,7 @@ export async function CompanyValueSection() {
     return (
         <section className="pb-[72px] md:pb-[84px] xl:pb-[92px]" aria-label={t('title')}>
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-10 xl:px-[108px]">
-                <h2 className="inline-block text-gradient-brand [font-size:clamp(24px,calc(21.925px+0.5607vw),30px)] font-semibold leading-[1.2] tracking-[-0.02em]">
-                    {t('title')}
-                </h2>
+                <h2 className="inline-block text-gradient-brand [font-size:clamp(24px,calc(21.925px+0.5607vw),30px)] font-semibold leading-[1.2] tracking-[-0.02em]">{t('title')}</h2>
 
                 <div className="mt-5 grid grid-cols-1 gap-3 md:mt-8 md:gap-5 xl:mt-9 xl:grid-cols-3 xl:gap-[18px]">
                     {valueItems.map((item) => (
@@ -42,9 +40,7 @@ export async function CompanyValueSection() {
                                     sizes="(max-width: 767px) calc(100vw - 64px), (max-width: 1439px) calc((100vw - 120px) / 3), 313px"
                                 />
                             </div>
-                            <h3 className="mt-5 inline-block text-gradient-brand [font-size:clamp(18px,calc(16.617px+0.3738vw),22px)] font-semibold leading-[1.2] tracking-[-0.02em]">
-                                {t(`items.${item.key}.title`)}
-                            </h3>
+                            <h3 className="mt-5 inline-block text-gradient-brand [font-size:clamp(18px,calc(16.617px+0.3738vw),22px)] font-semibold leading-[1.2] tracking-[-0.02em]">{t(`items.${item.key}.title`)}</h3>
                             <p className="mt-4 whitespace-pre-line [font-size:clamp(14px,calc(13.309px+0.1869vw),16px)] font-normal leading-[1.65] tracking-[-0.02em] text-[var(--color-text-body)]">{t(`items.${item.key}.description`)}</p>
                         </article>
                     ))}

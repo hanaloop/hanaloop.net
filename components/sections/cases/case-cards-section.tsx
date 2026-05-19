@@ -8,7 +8,7 @@ type CaseCardItem = {
     id: string;
     logoSrc: string;
     logoAlt: string;
-    href: string;
+    hasDetail?: boolean;
     ctaLabel: string;
     companyName: string;
     industryLabel: string;
@@ -29,17 +29,27 @@ export async function CaseCardsSection() {
         <section className="pb-16 lg:pb-[120px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5">
-                    {items.map((item) => (
+                    {items.map((item, index) => (
                         <article key={item.id} className="rounded-[16px] bg-[#dce7e4] px-[14px] pb-[16px] pt-[18px] md:px-[26px] md:pb-[28px] md:pt-[30px]">
                             <div className="flex h-[140px] flex-col md:h-[100px] md:flex-row md:items-start md:justify-between md:gap-4">
                                 <Image src={item.logoSrc} alt={item.logoAlt} width={220} height={100} className="h-auto w-auto max-h-[60px] max-w-[160px] md:max-h-[100px] md:max-w-[220px]" />
-                                <Link
-                                    href={withLocalePath(locale, item.href)}
-                                    className="order-2 mt-auto inline-flex h-[48px] w-full items-center justify-between rounded-full bg-black px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"
-                                >
-                                    <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-bold tracking-[-0.3px]">{item.ctaLabel}</span>
-                                    <Image src="/site/icons/ic-arrow.png" alt="" aria-hidden="true" width={10} height={10} className="h-[10px] w-[10px]" />
-                                </Link>
+                                {item.hasDetail === false ? (
+                                    <span
+                                        aria-disabled="true"
+                                        className="order-2 mt-auto inline-flex h-[48px] w-full cursor-not-allowed items-center justify-between rounded-full bg-[#9a9a9a] px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"
+                                    >
+                                        <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-bold tracking-[-0.3px]">{item.ctaLabel}</span>
+                                        <Image src="/site/icons/ic-arrow.png" alt="" aria-hidden="true" width={10} height={10} className="h-[10px] w-[10px] opacity-60" />
+                                    </span>
+                                ) : (
+                                    <Link
+                                        href={withLocalePath(locale, `/case_detail?id=${index + 1}`)}
+                                        className="order-2 mt-auto inline-flex h-[48px] w-full items-center justify-between rounded-full bg-black px-[22px] text-white md:order-none md:mt-0 md:w-[182px] md:px-[26px]"
+                                    >
+                                        <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] font-bold tracking-[-0.3px]">{item.ctaLabel}</span>
+                                        <Image src="/site/icons/ic-arrow.png" alt="" aria-hidden="true" width={10} height={10} className="h-[10px] w-[10px]" />
+                                    </Link>
+                                )}
                             </div>
 
                             <div className="mt-4 border-t border-black/10 pt-4 md:mt-7 md:pt-8">

@@ -63,7 +63,11 @@
       "Bash(taskkill /IM node.exe /F)",
       "PowerShell(Stop-Process *)",
       "Bash(curl *)",
-      "Bash(findstr /r /s \"lg:text\\\\[\\\\|md:text\\\\[\\\\|sm:text\\\\[\" components\\\\*.tsx)"
+      "Bash(findstr /r /s \"lg:text\\\\[\\\\|md:text\\\\[\\\\|sm:text\\\\[\" components\\\\*.tsx)",
+      "Bash(npm list *)",
+      "Bash(python3 -c \"import json; json.load\\(open\\('messages/es.json'\\)\\); print\\('es.json valid'\\)\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('messages/en.json'\\)\\); print\\('en.json valid'\\)\")",
+      "Bash(python3 -c \"import json; json.load\\(open\\('messages/ko.json'\\)\\); print\\('ko.json valid'\\)\")"
     ]
   }
 }

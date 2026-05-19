@@ -246,20 +246,44 @@
         "saasPlans": [
             {
                 "title": "STANDARD",
-                "items": ["Hasta 5 sitios", "Scope 1, 2", "Reportes de emisiones corporativas", "Importacion/exportacion de Excel"]
+                "items": [
+                    "Hasta 5 sitios",
+                    "Scope 1, 2",
+                    "Reportes de emisiones corporativas",
+                    "Importacion/exportacion de Excel"
+                ]
             },
             {
                 "title": "ENTERPRISE",
-                "items": ["Hasta 20 sitios", "Scope 1, 2, 3", "Reporte de emisiones corporativas", "Integracion con KEPCO", "Chatbot", "PCF cradle-to-gate"]
+                "items": [
+                    "Hasta 20 sitios",
+                    "Scope 1, 2, 3",
+                    "Reporte de emisiones corporativas",
+                    "Integracion con KEPCO",
+                    "Chatbot",
+                    "PCF cradle-to-gate"
+                ]
             },
             {
                 "title": "SUPPLY CHAIN",
-                "items": ["Sitios ilimitados", "Scope 1, 2, 3", "Gestion de emisiones de cadena de suministro", "Reporte de emisiones corporativas", "Integracion con KEPCO", "Chatbot", "PCF cradle-to-gate"]
+                "items": [
+                    "Sitios ilimitados",
+                    "Scope 1, 2, 3",
+                    "Gestion de emisiones de cadena de suministro",
+                    "Reporte de emisiones corporativas",
+                    "Integracion con KEPCO",
+                    "Chatbot",
+                    "PCF cradle-to-gate"
+                ]
             }
         ],
         "onPremPlan": {
             "title": "ECO INTEGRATION",
-            "items": ["Todas las funciones de Supply chain", "Datapipe: conectores y APIs", "Integracion de sesiones"]
+            "items": [
+                "Todas las funciones de Supply chain",
+                "Datapipe: conectores y APIs",
+                "Integracion de sesiones"
+            ]
         }
     },
     "OverviewSolutionMatrix": {
@@ -294,19 +318,27 @@
         "steps": [
             {
                 "heading": "1. Análisis del estado actual y consultoría",
-                "items": ["Definir límites según objetivos, puntos de monitoreo de datos, recopilación de datos y diagnóstico de integridad del inventario"]
+                "items": [
+                    "Definir límites según objetivos, puntos de monitoreo de datos, recopilación de datos y diagnóstico de integridad del inventario"
+                ]
             },
             {
                 "heading": "2. Configuración de la plataforma",
-                "items": ["Normalizar datos, incorporar datos históricos y definir procesos operativos"]
+                "items": [
+                    "Normalizar datos, incorporar datos históricos y definir procesos operativos"
+                ]
             },
             {
                 "heading": "3. Instalación e integración de medidores",
-                "items": ["Conectores ERP/MES, recopilación automática de medidores y personalización"]
+                "items": [
+                    "Conectores ERP/MES, recopilación automática de medidores y personalización"
+                ]
             },
             {
                 "heading": "4. Transición y capacitación",
-                "items": ["Proporcionar manuales, capacitar al equipo operativo e integrar la operación"]
+                "items": [
+                    "Proporcionar manuales, capacitar al equipo operativo e integrar la operación"
+                ]
             }
         ]
     },
@@ -933,8 +965,8 @@
                 "title": "SYNERGISTIC",
                 "description": "Creamos sinergia más allá de la colaboración.\nUniendo la experiencia y capacidad de cada persona,\nconstruimos un valor mayor juntos."
             },
-            "venture": {
-                "title": "VENTURE",
+            "bold": {
+                "title": "BOLD",
                 "description": "Desafiamos sin miedo y ejecutamos con audacia.\nCon iniciativas adelantadas y una fuerte ejecución,\ngeneramos cambios significativos."
             },
             "reliable": {
@@ -970,38 +1002,38 @@
             {
                 "name": "김혜연 Hyeyeon Kim",
                 "role": "CEO / co-founder",
-                "bio": "Samsung Electronics, Altenia, Arteplus, KOWORC y otras organizaciones.\nProyectos: optimización de reconocimiento de voz, desarrollo de aplicaciones móviles y estudios globales de tendencias científicas y tecnológicas para NIA.\nGestora de Gases de Efecto Invernadero. LEED Green Associate. Desarrollo de software embebido. Gestión de organizaciones sin fines de lucro.\nInvestigación en industria y políticas públicas. Autora de artículos de IA.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Graduada en Física por Ewha Womans University y en Procesamiento de Imagen y Video por Korea University, lidera la estrategia de carbono neutral y las plataformas digitales de gestión de carbono de HanaLoop. Cuenta con experiencia en Samsung Electronics y consultoría IT.",
+                "imageSrc": "/site/company/team-1.jpg"
             },
             {
                 "name": "안영석 Young-Suk Ahn Park",
                 "role": "CTO / co-founder",
-                "bio": "Máster en Ingeniería de Software de Carnegie Mellon University y licenciado en Ciencias de la Computación de Korea University. Trabajó como arquitecto de software en empresas globales como Walt Disney, Pearson y Wayfair durante más de 20 años. Actualmente supervisa el desarrollo del SaaS de gestión de carbono y la plataforma digital MRV de HanaLoop.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Con una maestría en Ingeniería de Software de Carnegie Mellon University y formación en Ciencias de la Computación en Korea University, tiene más de 20 años de experiencia como arquitecto de software en empresas globales como Walt Disney, Pearson y Wayfair. Lidera el desarrollo de plataformas SaaS y MRV digitales de HanaLoop.",
+                "imageSrc": "/site/company/team-2.jpg"
             },
             {
                 "name": "안새애 Sae Ahn",
                 "role": "General Counsel",
-                "bio": "Posee un LL.M. de Tulane University Law School y es abogada certificada en Nueva York. Ha gestionado asuntos jurídicos internacionales y cumplimiento normativo en empresas globales como Samsung Electronics, LG Electronics y Microsoft Korea. En HanaLoop, asesora en regulaciones climáticas globales y asuntos legales relacionados con CBAM.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Graduada de Tulane University Law School y abogada licenciada en Nueva York, ha trabajado en asuntos legales internacionales y compliance para Samsung Electronics, LG Electronics y Microsoft Korea. En HanaLoop asesora sobre CBAM y regulaciones climáticas globales.",
+                "imageSrc": "/site/company/team-3.jpg"
             },
             {
                 "name": "이평휘 PyoungHwe Lee",
                 "role": "Metal & Manufacturing Specialist",
-                "bio": "Máster en Ingeniería Metalúrgica de la Universidad de Inha. Trabajó en el desarrollo de tecnología de procesos de fundición y refinación de metales y en proyectos de mejora de procesos de fabricación en Dongbu Metal y KPCM. En HanaLoop, apoya el cálculo de emisiones CBAM y las estrategias de reducción de carbono basadas en procesos, centradas en las industrias del acero y el aluminio.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Con una maestría en Ingeniería Metalúrgica de Inha University, posee experiencia en tecnologías de refinación de metales y mejora de procesos industriales en Dongbu Metal y KPCM. En HanaLoop apoya estrategias de reducción de carbono y cálculo de emisiones CBAM.",
+                "imageSrc": "/site/company/team-4.jpeg"
             },
             {
                 "name": "Dionysios Tsouklakis",
                 "role": "Climate Researcher & Developer",
-                "bio": "Graduado en ingeniería ambiental por la Universidad de Macedonia Occidental en Grecia. Trabajó en el análisis del mercado de carbono EU ETS y global en Aurora Energy Research y Vertis Environmental Finance. En HanaLoop, es responsable de la investigación sobre CBAM de la UE y el desarrollo de soluciones de gestión de carbono.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Graduado en Ingeniería Ambiental por la University of Western Macedonia, Grecia, trabajó previamente en Aurora Energy Research y Vertis Environmental Finance analizando EU ETS y mercados globales de carbono. En HanaLoop lidera investigaciones sobre EU CBAM y soluciones digitales de carbono.",
+                "imageSrc": "/site/company/team-5.jpg"
             },
             {
                 "name": "김현일 Hyeon-il Kim",
                 "role": "Researcher",
-                "bio": "Graduado en ingeniería arquitectónica de la Universidad Yonsei. Basándose en su experiencia en análisis de datos arquitectónicos e industriales, apoya el análisis de datos de actividad CBAM, la incorporación de datos de la cadena de suministro, el cálculo de Scope 3 y las operaciones del sistema de contabilidad de carbono.",
-                "imageSrc": "/site/company/team-hyeyeon.jpg"
+                "bio": "Graduado en Ingeniería Arquitectónica por Yonsei University, participa en análisis de datos CBAM, onboarding de cadenas de suministro, cálculo de Scope 3 y sistemas de contabilidad de carbono basados en análisis de datos industriales y arquitectónicos.",
+                "imageSrc": "/site/company/avatar-default.svg"
             }
         ]
     },
@@ -1121,138 +1153,244 @@
         ]
     },
     "CasesCards": {
-        "sectionAriaLabel": "Secci?n de tarjetas de casos",
+        "sectionAriaLabel": "Sección de tarjetas de casos",
         "items": [
             {
                 "id": "case-doosan",
                 "logoSrc": "/site/cases/ci-1.png",
                 "logoAlt": "Logo de Doosan Enerbility",
                 "href": "/partnership",
-                "ctaLabel": "Ver m?s detalles",
+                "ctaLabel": "Ver más detalles",
                 "companyName": "Doosan Enerbility",
-                "industryLabel": "Empresa grande de energ?a / planta",
-                "challengeLabel": "Desaf?o",
+                "industryLabel": "Empresa grande de energía / planta",
+                "challengeLabel": "Desafío",
                 "challengeText": "Exceso de recursos humanos para cumplir el plazo de reporte EU CBAM",
-                "solutionLabel": "Soluci?n",
-                "solutionText": "Implementaci?n de Hana.eco CBAM, integraci?n ERP y reportes autom?ticos",
+                "solutionLabel": "Solución",
+                "solutionText": "Implementación de Hana.eco CBAM, integración ERP y reportes automáticos",
                 "resultLabel": "Resultado",
-                "resultText": "87% menos tiempo de preparaci?n | Verificaci?n LRQA aprobada | XX% menos costo anual de carbono"
+                "resultText": "87% menos tiempo de preparación | Verificación LRQA aprobada | XX% menos costo anual de carbono"
             },
             {
                 "id": "case-byucksan",
                 "logoSrc": "/site/cases/ci-2.png",
                 "logoAlt": "Logo de Byucksan",
                 "href": "/partnership",
-                "ctaLabel": "Ver m?s detalles",
+                "ctaLabel": "Ver más detalles",
                 "companyName": "Byucksan",
-                "industryLabel": "Empresa grande de energ?a / planta",
-                "challengeLabel": "Desaf?o",
-                "challengeText": "Exceso de recursos humanos para cumplir el plazo de reporte EU CBAM",
-                "solutionLabel": "Soluci?n",
-                "solutionText": "Implementaci?n de Hana.eco CBAM, integraci?n ERP y reportes autom?ticos",
+                "industryLabel": "Empresa mediana de químicos y materiales de construcción",
+                "challengeLabel": "Desafío",
+                "challengeText": "Dificultad para calcular emisiones por cliente durante la respuesta a EU CBAM",
+                "solutionLabel": "Solución",
+                "solutionText": "Consultoría de Hana.eco",
                 "resultLabel": "Resultado",
-                "resultText": "87% menos tiempo de preparaci?n | Verificaci?n LRQA aprobada | XX% menos costo anual de carbono"
+                "resultText": "Más de 87% menos tiempo de trabajo y nuevas oportunidades de suministro en el exterior"
+            },
+            {
+                "id": "case-cswind",
+                "logoSrc": "/site/cases/ci-3.png",
+                "logoAlt": "Logo de CSWIND",
+                "href": "/partnership",
+                "hasDetail": false,
+                "ctaLabel": "Ver más detalles",
+                "companyName": "CSWIND",
+                "industryLabel": "Empresa mediana de energía renovable / torres eólicas",
+                "challengeLabel": "Desafío",
+                "challengeText": "Necesidad creciente de gestionar CBAM en plantas en el extranjero",
+                "solutionLabel": "Solución",
+                "solutionText": "Consultoría Hana.eco CBAM y análisis de datos por planta",
+                "resultLabel": "Resultado",
+                "resultText": "Gobernanza corporativa estandarizada y sistema de respuesta para clientes internacionales"
+            },
+            {
+                "id": "case-daehoal",
+                "logoSrc": "/site/cases/ci-4.png",
+                "logoAlt": "Logo de DAEHO AL",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "DAEHO AL",
+                "industryLabel": "Pyme de aluminio / metales no ferrosos",
+                "challengeLabel": "Desafío",
+                "challengeText": "Carga operativa para responder a la regulación EU CBAM",
+                "solutionLabel": "Solución",
+                "solutionText": "Consultoría Hana.eco CBAM con apoyo estructurado para comprensión y respuesta",
+                "resultLabel": "Resultado",
+                "resultText": "Gobernanza y procesos corporativos establecidos, con sistema de respuesta a clientes"
+            },
+            {
+                "id": "case-apollo",
+                "logoSrc": "/site/cases/ci-5.png",
+                "logoAlt": "Logo de Apollo Industrial",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "Apollo Industrial",
+                "industryLabel": "Pyme de plásticos / automoción",
+                "challengeLabel": "Desafío",
+                "challengeText": "Preparación insuficiente para cálculos complejos de carbono por producto exportado",
+                "solutionLabel": "Solución",
+                "solutionText": "Consultoría Hana.eco: métodos de cálculo Scope 1, 2 y 3 y planes de reducción",
+                "resultLabel": "Resultado",
+                "resultText": "Procesos corporativos de gestión de carbono y cálculo de factores de emisión"
+            },
+            {
+                "id": "case-kowell",
+                "logoSrc": "/site/cases/ci-6.png",
+                "logoAlt": "Logo de Kowell",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "Kowell",
+                "industryLabel": "Pyme de autopartes / precisión",
+                "challengeLabel": "Desafío",
+                "challengeText": "Necesidad de un sistema de recopilación de datos EU/ESG y respuesta a CBAM",
+                "solutionLabel": "Solución",
+                "solutionText": "Adopción de Hana.eco CBAM & LCA SaaS",
+                "resultLabel": "Resultado",
+                "resultText": "Datos por producto y por planta integrados en procesos corporativos de gestión de carbono"
+            },
+            {
+                "id": "case-origin-customs",
+                "logoSrc": "/site/cases/ci-7.png",
+                "logoAlt": "Logo del Servicio de Aduanas de Corea",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "Instituto de Información de Origen (Servicio de Aduanas de Corea)",
+                "industryLabel": "Institución pública",
+                "challengeLabel": "Desafío",
+                "challengeText": "Mayor necesidad de funciones de soporte CBAM para clientes en la plataforma FTA-Pass",
+                "solutionLabel": "Solución",
+                "solutionText": "Integración de API Hana.eco CBAM",
+                "resultLabel": "Resultado",
+                "resultText": "Infraestructura para fortalecer la capacidad regulatoria de pymes FTA"
+            },
+            {
+                "id": "case-taihan",
+                "logoSrc": "/site/cases/ci-8.png",
+                "logoAlt": "Logo de Taihan Fiber Optics",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "Taihan Fiber Optics (TFO Networks)",
+                "industryLabel": "Empresa mediana de cable y fibra óptica",
+                "challengeLabel": "Desafío",
+                "challengeText": "Solicitudes crecientes de datos CBAM por parte de clientes",
+                "solutionLabel": "Solución",
+                "solutionText": "Hana.eco CBAM, MRV digital y respuesta preliminar a CBAM",
+                "resultLabel": "Resultado",
+                "resultText": "Mejor gestión de datos de emisiones, confianza del cliente y control de riesgos de negocio"
+            },
+            {
+                "id": "case-emart",
+                "logoSrc": "/site/cases/ci-9.png",
+                "logoAlt": "Logo de emart",
+                "href": "/partnership",
+                "ctaLabel": "Ver más detalles",
+                "companyName": "emart",
+                "industryLabel": "Empresa grande de retail",
+                "challengeLabel": "Desafío",
+                "challengeText": "Visualización eficiente de datos para integración de API con sistemas internos como eMoney",
+                "solutionLabel": "Solución",
+                "solutionText": "Integración API, gobernanza de datos basada en OpenAPI y PoC de API Gateway en dos semanas con Agile Scrum",
+                "resultLabel": "Resultado",
+                "resultText": "Base para operación y expansión APIM, análisis multi-vendor automatizado y estándares de construcción API en entorno Gateway"
             }
         ]
     },
     "PrivacyPage": {
-        "title": "Pol?tica de Privacidad de HanaLoop",
-        "intro": "HanaLoop Co., Ltd. (\"HanaLoop\") establece y publica esta Pol?tica de Privacidad de conformidad con el Art?culo 30 de la Ley de Protecci?n de Informaci?n Personal, para proteger los datos personales de los titulares y gestionar de forma r?pida y adecuada las consultas o reclamaciones relacionadas.",
+        "title": "Política de Privacidad de HanaLoop",
+        "intro": "HanaLoop Co., Ltd. (\"HanaLoop\") establece y publica esta Política de Privacidad de conformidad con el Artículo 30 de la Ley de Protección de Información Personal, para proteger los datos personales de los titulares y gestionar de forma rápida y adecuada las consultas o reclamaciones relacionadas.",
         "sections": [
             {
-                "title": "Art?culo 1 (Finalidad del tratamiento de datos personales)",
+                "title": "Artículo 1 (Finalidad del tratamiento de datos personales)",
                 "paragraphs": [
-                    "HanaLoop trata datos personales para las siguientes finalidades. Los datos tratados no se utilizar?n para fines distintos y, si cambia la finalidad, se adoptar?n las medidas necesarias, como obtener consentimiento adicional conforme al Art?culo 18 de la ley aplicable."
+                    "HanaLoop trata datos personales para las siguientes finalidades. Los datos tratados no se utilizarán para fines distintos y, si cambia la finalidad, se adoptarán las medidas necesarias, como obtener consentimiento adicional conforme a la normativa aplicable."
                 ],
                 "bullets": [
-                    "A. Registro y gesti?n de miembros del sitio web: confirmaci?n de registro, identificaci?n/autenticaci?n, mantenimiento de membres?a, prevenci?n de uso indebido, avisos y gesti?n de reclamaciones",
-                    "B. Prestaci?n del servicio: servicios de datos de actividad de GEI y datos ambientales, verificaci?n de identidad, pago/liquidaci?n y provisi?n de infraestructura de colaboraci?n",
-                    "C. Gesti?n de reclamaciones: verificaci?n de identidad del reclamante, confirmaci?n del asunto, contacto/notificaci?n para investigaci?n y comunicaci?n del resultado",
-                    "D. Tareas de tratamiento de HanaLoop: [finalidad seg?n tarea de tratamiento]"
+                    "A. Registro y gestión de miembros del sitio web: confirmación de registro, identificación/autenticación, mantenimiento de membresía, prevención de uso indebido, avisos y gestión de reclamaciones",
+                    "B. Prestación del servicio: servicios de datos de actividad de GEI y datos ambientales, verificación de identidad, pago/liquidación y provisión de infraestructura de colaboración",
+                    "C. Gestión de reclamaciones: verificación de identidad del reclamante, confirmación del asunto, contacto/notificación para investigación y comunicación del resultado",
+                    "D. Tareas de tratamiento de HanaLoop: [finalidad según tarea de tratamiento]"
                 ]
             },
             {
-                "title": "Art?culo 2 (Periodo de tratamiento y conservaci?n)",
+                "title": "Artículo 2 (Periodo de tratamiento y conservación)",
                 "paragraphs": [
-                    "HanaLoop trata y conserva datos personales dentro del periodo exigido por ley o acordado con el titular en el momento de la recopilaci?n."
+                    "HanaLoop trata y conserva datos personales dentro del periodo exigido por ley o acordado con el titular en el momento de la recopilación."
                 ],
                 "bullets": [
-                    "1. Registro/gesti?n de miembros: hasta la baja de la cuenta (salvo investigaciones en curso o obligaciones pendientes)",
-                    "2. Prestaci?n de bienes/servicios: hasta finalizar suministro y liquidaci?n",
-                    "3. Registros bajo normativa de comercio electr?nico: publicidad 6 meses, contratos/pagos/suministro 5 a?os, quejas/disputas 3 a?os",
-                    "4. Registros bajo ley de secreto de comunicaciones: registros de telecomunicaciones 1 a?o, logs de internet/rastreo de acceso 3 meses"
+                    "1. Registro/gestión de miembros: hasta la baja de la cuenta (salvo investigaciones en curso u obligaciones pendientes)",
+                    "2. Prestación de bienes/servicios: hasta finalizar suministro y liquidación",
+                    "3. Registros bajo normativa de comercio electrónico: publicidad 6 meses, contratos/pagos/suministro 5 años, quejas/disputas 3 años",
+                    "4. Registros bajo ley de secreto de comunicaciones: registros de telecomunicaciones 1 año, logs de internet/rastreo de acceso 3 meses"
                 ]
             },
             {
-                "title": "Art?culo 3 (Cesi?n a terceros)",
+                "title": "Artículo 3 (Cesión a terceros)",
                 "paragraphs": [
-                    "HanaLoop solo proporciona datos personales a terceros cuando lo permiten los Art?culos 17 y 18 de la ley, incluido el consentimiento del titular o base legal espec?fica."
+                    "HanaLoop solo proporciona datos personales a terceros cuando lo permiten los Artículos 17 y 18 de la ley, incluido el consentimiento del titular o base legal específica."
                 ],
                 "bullets": [
-                    "Ejemplo de datos transferidos: nombre, fecha de nacimiento, tel?fono, direcci?n"
+                    "Ejemplo de datos transferidos: nombre, fecha de nacimiento, teléfono, dirección"
                 ]
             },
             {
-                "title": "Art?culo 4 (Encargo del tratamiento)",
+                "title": "Artículo 4 (Encargo del tratamiento)",
                 "paragraphs": [
-                    "HanaLoop puede encargar tareas de tratamiento de datos personales para una operaci?n fluida del servicio."
+                    "HanaLoop puede encargar tareas de tratamiento de datos personales para una operación fluida del servicio."
                 ],
                 "bullets": [
-                    "Servicio de verificaci?n de identidad: uso de Auth0.com"
+                    "Servicio de verificación de identidad: uso de Auth0.com"
                 ]
             },
             {
-                "title": "Art?culo 5 (Derechos del titular y representante legal)",
+                "title": "Artículo 5 (Derechos del titular y representante legal)",
                 "bullets": [
-                    "El titular puede solicitar acceso, rectificaci?n, supresi?n o suspensi?n del tratamiento en cualquier momento.",
-                    "Las solicitudes pueden realizarse por escrito o correo electr?nico y HanaLoop actuar? sin demora.",
+                    "El titular puede solicitar acceso, rectificación, supresión o suspensión del tratamiento en cualquier momento.",
+                    "Las solicitudes pueden realizarse por escrito o correo electrónico y HanaLoop actuará sin demora.",
                     "Las solicitudes pueden presentarse mediante representante legal o apoderado.",
-                    "El acceso/suspensi?n puede limitarse conforme a la ley aplicable.",
-                    "La supresi?n puede limitarse si otra norma obliga a conservar los datos.",
-                    "HanaLoop verifica si quien solicita es el titular o un representante leg?timo."
+                    "El acceso/suspensión puede limitarse conforme a la ley aplicable.",
+                    "La supresión puede limitarse si otra norma obliga a conservar los datos.",
+                    "HanaLoop verifica si quien solicita es el titular o un representante legítimo."
                 ]
             },
             {
-                "title": "Art?culo 6 (Datos personales tratados)",
+                "title": "Artículo 6 (Datos personales tratados)",
                 "bullets": [
-                    "1. Registro/gesti?n de miembros: obligatorios (nombre, ID, contrase?a, tel?fono, email), opcionales (direcci?n, intereses)",
-                    "2. Prestaci?n del servicio: obligatorios (nombre, ID, contrase?a, tel?fono, email, tarjeta, cuenta bancaria), opcionales (direcci?n, intereses)",
-                    "3. Recopilaci?n autom?tica durante uso de internet: IP, cookies, MAC, registros de uso e historial de visitas"
+                    "1. Registro/gestión de miembros: obligatorios (nombre, ID, contraseña, teléfono, email), opcionales (dirección, intereses)",
+                    "2. Prestación del servicio: obligatorios (nombre, ID, contraseña, teléfono, email, tarjeta, cuenta bancaria), opcionales (dirección, intereses)",
+                    "3. Recopilación automática durante uso de internet: IP, cookies, MAC, registros de uso e historial de visitas"
                 ]
             },
             {
-                "title": "Art?culo 7 (Procedimiento y m?todo de eliminaci?n)",
+                "title": "Artículo 7 (Procedimiento y método de eliminación)",
                 "paragraphs": [
-                    "HanaLoop elimina sin demora los datos cuando se cumple la finalidad, salvo conservaci?n obligatoria por otras leyes."
+                    "HanaLoop elimina sin demora los datos cuando se cumple la finalidad, salvo conservación obligatoria por otras leyes."
                 ],
                 "bullets": [
-                    "Registros electr?nicos: eliminaci?n irreversible mediante m?todos t?cnicos",
-                    "Documentos en papel: trituraci?n o incineraci?n"
+                    "Registros electrónicos: eliminación irreversible mediante métodos técnicos",
+                    "Documentos en papel: trituración o incineración"
                 ]
             },
             {
-                "title": "Art?culo 8 (Medidas de seguridad)",
+                "title": "Artículo 8 (Medidas de seguridad)",
                 "bullets": [
-                    "Administrativas: plan interno de gesti?n y formaci?n peri?dica",
-                    "T?cnicas: control de acceso, cifrado de identificadores ?nicos y software de seguridad",
-                    "F?sicas: control de acceso a salas de servidores/archivo"
+                    "Administrativas: plan interno de gestión y formación periódica",
+                    "Técnicas: control de acceso, cifrado de identificadores únicos y software de seguridad",
+                    "Físicas: control de acceso a salas de servidores/archivo"
                 ]
             },
             {
-                "title": "Art?culo 9 (Dispositivos de recopilaci?n autom?tica y rechazo)",
+                "title": "Artículo 9 (Dispositivos de recopilación automática y rechazo)",
                 "paragraphs": [
                     "HanaLoop utiliza cookies para ofrecer servicios personalizados."
                 ],
                 "bullets": [
-                    "Finalidad: analizar patrones de visita/uso, b?squedas populares y estado de acceso seguro para ofrecer informaci?n optimizada",
-                    "El usuario puede permitir/bloquear cookies en configuraci?n del navegador (Internet Explorer, Edge, Chrome).",
+                    "Finalidad: analizar patrones de visita/uso, búsquedas populares y estado de acceso seguro para ofrecer información optimizada",
+                    "El usuario puede permitir/bloquear cookies en configuración del navegador (Internet Explorer, Edge, Chrome).",
                     "Bloquear cookies puede dificultar el uso del servicio."
                 ]
             },
             {
-                "title": "Art?culo 10 (Responsable de privacidad)",
+                "title": "Artículo 10 (Responsable de privacidad)",
                 "paragraphs": [
-                    "HanaLoop designa al siguiente responsable para protecci?n de datos personales y gesti?n de reclamaciones."
+                    "HanaLoop designa al siguiente responsable para protección de datos personales y gestión de reclamaciones."
                 ],
                 "bullets": [
                     "Nombre: Hyeyeon Kim",
@@ -1261,9 +1399,9 @@
                 ]
             },
             {
-                "title": "Art?culo 12 (Representante en Corea)",
+                "title": "Artículo 12 (Representante en Corea)",
                 "paragraphs": [
-                    "HanaLoop ha designado un representante nacional conforme al Art?culo 39-11 de la ley."
+                    "HanaLoop ha designado un representante nacional conforme al Artículo 39-11 de la ley."
                 ],
                 "bullets": [
                     "Nombre: Hyeyeon Kim",
@@ -1271,21 +1409,21 @@
                 ]
             },
             {
-                "title": "Art?culo 13 (Criterios para uso/cesi?n adicional)",
+                "title": "Artículo 13 (Criterios para uso/cesión adicional)",
                 "paragraphs": [
-                    "Al evaluar si es posible un uso/cesi?n adicional sin consentimiento, HanaLoop considera:"
+                    "Al evaluar si es posible un uso/cesión adicional sin consentimiento, HanaLoop considera:"
                 ],
                 "bullets": [
-                    "Relaci?n con la finalidad original de recopilaci?n",
-                    "Previsibilidad seg?n contexto/pr?ctica de recopilaci?n",
+                    "Relación con la finalidad original de recopilación",
+                    "Previsibilidad según contexto/práctica de recopilación",
                     "Posible perjuicio injustificado a los intereses del titular",
-                    "Existencia de medidas de seguridad como seudonimizaci?n/cifrado"
+                    "Existencia de medidas de seguridad como seudonimización/cifrado"
                 ]
             },
             {
-                "title": "Art?culo 14 (Solicitud de acceso)",
+                "title": "Artículo 14 (Solicitud de acceso)",
                 "paragraphs": [
-                    "El titular puede solicitar acceso a sus datos personales seg?n el Art?culo 35 a trav?s del siguiente departamento."
+                    "El titular puede solicitar acceso a sus datos personales según el Artículo 35 a través del siguiente departamento."
                 ],
                 "bullets": [
                     "Departamento: Development Support Division",
@@ -1294,24 +1432,396 @@
                 ]
             },
             {
-                "title": "Art?culo 15 (V?as de reclamaci?n y reparaci?n)",
+                "title": "Artículo 15 (Vías de reclamación y reparación)",
                 "paragraphs": [
-                    "El titular puede solicitar resoluci?n de disputas o asesor?a ante las siguientes entidades."
+                    "El titular puede solicitar resolución de disputas o asesoría ante las siguientes entidades."
                 ],
                 "bullets": [
-                    "Centro de denuncia de infracci?n de privacidad (KISA): privacy.kisa.or.kr / 118",
-                    "Comit? de mediaci?n de disputas de privacidad: www.kopico.go.kr / 1833-6972",
-                    "Fiscal?a Suprema - Ciberunidad: www.spo.go.kr / 1301",
-                    "Polic?a Nacional - Ciberunidad: ecrm.cyber.go.kr / 182",
-                    "Comisi?n Central de Apelaciones Administrativas: www.simpan.go.kr / 110"
+                    "Centro de denuncia de infracción de privacidad (KISA): privacy.kisa.or.kr / 118",
+                    "Comité de mediación de disputas de privacidad: www.kopico.go.kr / 1833-6972",
+                    "Fiscalía Suprema - Ciberunidad: www.spo.go.kr / 1301",
+                    "Policía Nacional - Ciberunidad: ecrm.cyber.go.kr / 182",
+                    "Comisión Central de Apelaciones Administrativas: www.simpan.go.kr / 110"
                 ]
             },
             {
-                "title": "Art?culo 16 (Cambios de esta pol?tica)",
+                "title": "Artículo 16 (Cambios de esta política)",
                 "bullets": [
                     "Fecha de entrada en vigor: 1 de septiembre de 2022",
-                    "Versi?n: v0.8",
-                    "Fecha de modificaci?n: 1 de septiembre de 2022"
+                    "Versión: v0.8",
+                    "Fecha de modificación: 1 de septiembre de 2022"
+                ]
+            }
+        ]
+    },
+    "CasesDetail": {
+        "sectionAriaLabel": "Detalle del caso de cliente",
+        "defaultContactLabel": "Contáctenos",
+        "items": [
+            {
+                "id": 1,
+                "logoSrc": "/site/cases/ci-1.png",
+                "logoAlt": "Logo de Doosan Enerbility",
+                "companyName": "Doosan Enerbility",
+                "eyebrow": "Caso de cliente",
+                "title": "Doosan Enerbility × HanaLoop — Sistema de gestión de carbono de la cadena de suministro",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "El sistema interno de gestión de carbono no podía asegurar datos de carbono de la cadena de suministro a nivel de producto, incluidos proveedores, necesarios para CBAM."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop personalizó DPCM con licencia Hana.eco y lo conectó con el sistema DPCF existente para diseñar un flujo integral desde la recopilación de datos de proveedores hasta el cálculo SEE y el reporte CBAM automatizado."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Doosan obtuvo gestión de carbono a nivel de producto en toda la cadena de suministro y redujo el riesgo de cumplimiento CBAM al automatizar reportes manuales."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Doosan Enerbility ya operaba sistemas GEI para ETS desde 2009 y había avanzado su plataforma de huella de carbono de producto. CBAM exigió ampliar la gestión hacia datos de proveedores y emisiones embebidas por producto, incluido Scope 3.",
+                            "En lugar de construir desde cero, Doosan eligió ampliar una solución comprobada adoptando Hana.eco y conectándola con su sistema DPCF existente."
+                        ]
+                    },
+                    {
+                        "title": "Implementación — diseño del flujo de datos",
+                        "paragraphs": [
+                            "HanaLoop abordó el proyecto como infraestructura de datos de carbono para toda la cadena de suministro, no como una simple entrega de software."
+                        ],
+                        "bullets": [
+                            "Diseñó ingreso de datos de proveedores, gestión de evidencias y notificaciones CBAM automáticas.",
+                            "Mapeó datos de proveedores a productos y los conectó con datos de proceso para calcular SEE.",
+                            "Incorporó lógica de cálculo CBAM y generación automática de reportes.",
+                            "Apoyó capacitación y onboarding de proveedores para operación real."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "Doosan amplió la gestión desde Scope 1 y 2 hacia Scope 3 con proveedores, eliminó trabajo manual en hojas de cálculo y obtuvo eficiencia operativa y confiabilidad de datos."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "logoSrc": "/site/cases/ci-2.png",
+                "logoAlt": "Logo de Byucksan",
+                "companyName": "Byucksan",
+                "eyebrow": "Caso de cliente",
+                "title": "Byucksan × HanaLoop — Gestión de carbono para el comercio de emisiones",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "La gestión de datos de emisiones y los reportes del régimen de comercio de emisiones en múltiples plantas se concentraban en los equipos operativos, generando trabajo manual repetitivo y dificultando la previsión y los planes de reducción."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop implementó Hana.eco Standard para integrar datos de múltiples plantas en una sola plataforma y construir previsiones de emisiones basadas en K-ETS."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Byucksan estandarizó la gestión y el reporte de emisiones por planta, creando un sistema operativo basado en datos para el cumplimiento del comercio de emisiones."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Byucksan fabrica materiales de construcción como aislamiento, paneles de yeso y cemento. Al operar múltiples plantas, la gestión consistente de emisiones por sitio y el reporte K-ETS eran una carga operativa continua.",
+                            "La empresa necesitaba un socio que pudiera consolidar datos multisede y construir un proceso previsible de gestión de carbono."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de HanaLoop",
+                        "paragraphs": [
+                            "HanaLoop diseñó una estructura que integra datos de actividad y emisiones por sitio mediante Hana.eco Standard, pasando de una respuesta centrada en reportes a una operación con capacidad de previsión."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "Byucksan estandarizó datos de emisiones dispersos y redujo trabajo manual repetitivo, permitiendo que reportes y planes de reducción usen la misma base de datos."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "logoSrc": "/site/cases/ci-4.png",
+                "logoAlt": "Logo de DAEHO AL",
+                "companyName": "DAEHO AL",
+                "eyebrow": "Caso de cliente",
+                "title": "DAEHO AL × HanaLoop — Infraestructura de cálculo de carbono para CBAM",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "Como pyme que produce aluminio sujeto a CBAM, DAEHO AL necesitaba capacidades de cálculo y verificación de carbono a nivel de producto para exportar a la UE pese a contar con poca infraestructura de medición y recursos internos."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop construyó un sistema de cálculo basado en Hana.eco, diseñó infraestructura de medición en campo, apoyó la pre-verificación LRQA y capacitó al personal interno."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "DAEHO AL superó la pre-verificación LRQA y estableció procesos CBAM corporativos, asegurando datos confiables e infraestructura de cálculo para el mercado europeo."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "DAEHO AL produce productos de aluminio, por lo que el cumplimiento CBAM está directamente vinculado a la continuidad de exportaciones. Necesitaba datos confiables por producto y evidencias listas para verificación."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de implementación",
+                        "paragraphs": [
+                            "HanaLoop construyó un sistema de cálculo por producto basado en Hana.eco, diseñó infraestructura de medición en campo y apoyó documentación y preparación para pre-verificación LRQA."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "DAEHO AL obtuvo procesos CBAM corporativos y confirmó la confiabilidad de sus datos para el mercado europeo mediante pre-verificación."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "logoSrc": "/site/cases/ci-5.png",
+                "logoAlt": "Logo de Apollo Industrial",
+                "companyName": "Apollo Industrial",
+                "eyebrow": "Caso de cliente",
+                "title": "Apollo Industrial × HanaLoop — Inventario corporativo de carbono y gestión ESG",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "Apollo debía responder a requisitos ESG de clientes globales y evaluaciones EcoVadis, pero no contaba con un inventario GEI corporativo Scope 1, 2 y 3 ni procesos de datos vinculados al ERP."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop está construyendo inventarios Scope 1, 2 y 3 con Hana.eco Standard, automatizando la recopilación de datos de carbono mediante integración ERP y consultando procesos de gestión ESG."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Apollo mejora la confiabilidad de los datos mediante gestión corporativa de carbono y automatización ERP, creando capacidades para requisitos ESG de cadenas globales."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Apollo Industrial produce envases plásticos para marcas globales de consumo. Al volverse el desempeño ESG un criterio clave de selección de proveedores, la gestión de carbono se convirtió en un factor real de competitividad exportadora."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de implementación",
+                        "paragraphs": [
+                            "HanaLoop está construyendo inventarios Scope 1, 2 y 3, conectando datos de producción, compras, energía y logística con Hana.eco mediante ERP y diseñando procesos ESG para evaluaciones."
+                        ]
+                    },
+                    {
+                        "title": "Resultados esperados",
+                        "paragraphs": [
+                            "Apollo está creando una base para asegurar datos de carbono confiables de forma continua, responder a EcoVadis y cumplir requisitos ESG de clientes globales."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "logoSrc": "/site/cases/ci-6.png",
+                "logoAlt": "Logo de Kowell",
+                "companyName": "Kowell",
+                "eyebrow": "Caso de cliente",
+                "title": "Kowell × HanaLoop — Integración de datos ESG y respuesta CBAM",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "Kowell debía responder a EU CBAM y a solicitudes ESG de clientes globales, pero carecía de infraestructura de medición en campo y gestión integrada de datos empresariales."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop está construyendo infraestructura de medición con Hana.eco CBAM & API y ampliando el ERP de Kowell al dominio de gestión de carbono mediante integración API."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Kowell está asegurando datos medidos confiables para CBAM y estableciendo procesos de gestión de carbono dentro de su entorno ERP existente."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Kowell fabrica autopartes y alambre de acero. Los productos basados en acero están directamente sujetos a EU CBAM, por lo que el cálculo y reporte de carbono son esenciales para continuar suministrando al mercado europeo."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de implementación",
+                        "paragraphs": [
+                            "HanaLoop construyó medición en campo, incorporó estándares de cálculo y reporte CBAM y diseñó una integración ERP para consultar datos de carbono dentro del ERP existente."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "Kowell estableció infraestructura de datos medidos e integración ESG corporativa, asegurando datos aptos para regulación y una base operativa interna con capacitación."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "logoSrc": "/site/cases/ci-7.png",
+                "logoAlt": "Logo del Servicio de Aduanas de Corea",
+                "companyName": "Instituto de Información de Origen de Corea",
+                "eyebrow": "Caso de cliente",
+                "title": "Instituto de Información de Origen de Corea × HanaLoop x OpusM — Sistema EU CBAM para FTA-PASS",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "Fabricantes y exportadores coreanos necesitaban cálculo de emisiones por producto y reportes CBAM, pero muchas empresas no podían construir sus propios sistemas; por eso era necesario integrar funciones CBAM en FTA-PASS."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop integró su licencia de solución CBAM certificada en FTA-PASS, permitiendo cálculo de emisiones y generación automática de reportes CBAM dentro de la plataforma."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Cerca de 30.000 usuarios de FTA-PASS pueden gestionar origen y datos de carbono CBAM en una sola plataforma sin sistemas separados."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "El Instituto de Información de Origen de Corea opera FTA-PASS bajo supervisión del Servicio de Aduanas. EU CBAM creó nuevas obligaciones para calcular emisiones por producto y presentar reportes conformes, pero muchas empresas no tenían sistemas internos."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de implementación",
+                        "paragraphs": [
+                            "HanaLoop integró su licencia de solución CBAM certificada en FTA-PASS, implementando cálculo de emisiones con información empresarial y factores, además de reportes CBAM automáticos."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "FTA-PASS amplió su alcance desde gestión de origen hacia gestión de carbono CBAM, permitiendo a empresas responder a la regulación sin construir sistemas separados."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "logoSrc": "/site/cases/ci-8.png",
+                "logoAlt": "Logo de Taihan Fiber Optics",
+                "companyName": "Taihan Fiber Optics (TFO Networks)",
+                "eyebrow": "Caso de cliente",
+                "title": "Taihan Fiber Optics (TFO Networks) × HanaLoop — MRV digital y previsión de costos de carbono para CBAM",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "Aumentaban las solicitudes de datos CBAM por parte de clientes, pero faltaban medición en campo, cálculo confiable por producto y previsión del impacto financiero del costo de carbono."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop construyó infraestructura de medición, estableció un sistema MRV digital basado en Hana.eco, creó un modelo de previsión de costos de certificados CBAM y apoyó la pre-verificación."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "Taihan obtuvo infraestructura para responder de forma continua a clientes, prever costos de carbono y fortalecer su competitividad en la UE tras la pre-verificación."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Taihan Fiber Optics suministra cables ópticos e infraestructura de red a mercados globales. Necesitaba datos confiables por producto para clientes y una forma de entender el impacto de costos de certificados CBAM antes de su plena aplicación."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de implementación",
+                        "paragraphs": [
+                            "HanaLoop instaló medidores en planta, completó un flujo MRV digital que recopila datos automáticamente en Hana.eco, estableció estándares CBAM de cálculo y documentación, y apoyó previsión de costos y pre-verificación."
+                        ]
+                    },
+                    {
+                        "title": "Resultados",
+                        "paragraphs": [
+                            "Taihan puede calcular emisiones por producto con datos medidos y responder consistentemente a clientes. La pre-verificación confirmó la confiabilidad de los datos para el mercado europeo."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "logoSrc": "/site/cases/ci-9.png",
+                "logoAlt": "Logo de emart",
+                "companyName": "emart",
+                "eyebrow": "Caso de cliente",
+                "title": "emart × HanaLoop: modernización de la gestión de API",
+                "subtitle": "La consultoría de HanaLoop diseñó el proceso desde el diagnóstico hasta la validación",
+                "contactLabel": "Contáctenos",
+                "summary": [
+                    {
+                        "label": "Desafío",
+                        "text": "emart tenía límites de mantenibilidad y operación por baja calidad de integración API y falta de gestión API entre sistemas internos como eMoney."
+                    },
+                    {
+                        "label": "Solución",
+                        "text": "HanaLoop realizó diagnóstico API, repositorio de documentación basado en OpenAPI y PoC de API Gateway mediante Agile Scrum."
+                    },
+                    {
+                        "label": "Resultado",
+                        "text": "El proyecto identificó brechas de calidad API, entregó recomendaciones, estableció un repositorio documental estándar y validó la integración mediante Gateway para preparar la base de APIs de próxima generación."
+                    }
+                ],
+                "sections": [
+                    {
+                        "title": "Contexto del proyecto",
+                        "paragraphs": [
+                            "Los sistemas centrales de emart, incluido eMoney, crecieron independientemente durante años. Las brechas de calidad API, la documentación incompleta y la gestión fragmentada dificultaban operar APIs de forma consistente.",
+                            "emart eligió a HanaLoop porque necesitaba un camino sistemático de diagnóstico, estandarización y validación, no solo instalar una herramienta."
+                        ]
+                    },
+                    {
+                        "title": "Enfoque de HanaLoop",
+                        "paragraphs": [
+                            "HanaLoop diseñó un engagement de tres etapas en el que cada entregable alimentaba la siguiente fase, aplicando Agile Scrum con ciclos de demo y revisión para reducir riesgos."
+                        ]
+                    },
+                    {
+                        "title": "Fase 1 — Diagnóstico API",
+                        "paragraphs": [
+                            "HanaLoop evaluó las APIs de eMoney en mantenibilidad, integración y operación, cruzando documentos, entrevistas, repositorios, pruebas y monitoreo para identificar brechas estructurales de calidad."
+                        ]
+                    },
+                    {
+                        "title": "Fase 2 — Repositorio de documentación API",
+                        "paragraphs": [
+                            "HanaLoop definió endpoints eMoney en formato OpenAPI y construyó un repositorio de documentación con automatización SCM para mantener la documentación actualizada."
+                        ]
+                    },
+                    {
+                        "title": "Fase 3 — PoC de API Gateway",
+                        "paragraphs": [
+                            "HanaLoop instaló el API Gateway seleccionado, construyó test client y mock server, y validó integración eMoney incluyendo routing, caching y rate limiting para demostrar viabilidad productiva."
+                        ]
+                    }
                 ]
             }
         ]
