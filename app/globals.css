@@ -90,9 +90,8 @@ body {
     font-family: 'TT Fors Trial', 'Pretendard', sans-serif;
 }
 
-html:has(#mobile-menu-toggle:checked),
-body:has(#mobile-menu-toggle:checked) {
-    overflow: hidden;
+.mobile-menu-toggle {
+    position: fixed;
 }
 
 #mobile-menu-toggle ~ .mobile-menu-layer {
