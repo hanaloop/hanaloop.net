@@ -8,19 +8,12 @@ import bgImage from '@/public/site/supply/climate-management-bg.png';
 export async function SupplyClimateManagementSection() {
     const t = await getTranslations('SupplyChainOverview');
     const locale = (await getLocale()) as AppLocale;
-    const [messageFirstLine, messageSecondLine] = t('message').split('\n');
 
     return (
         <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11 ">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
                 <p className="mt-5 text-[var(--color-text-subtle)] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] font-semibold tracking-[0.5px] leading-[1.48]">{t('subheading')}</p>
-
-                <p className="mt-20 text-black [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-bold tracking-[-1px] leading-[1.28]">
-                    {messageFirstLine}
-                    <br />
-                    {messageSecondLine}
-                </p>
             </div>
 
             <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden">
