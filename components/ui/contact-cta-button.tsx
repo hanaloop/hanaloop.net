@@ -22,8 +22,8 @@ export function ContactCtaButton({ locale, className = '', iconSrc = '/site/icon
     return (
         <Link
             href={withLocalePath(locale, '/partnership')}
-            className={`inline-flex h-12 items-center gap-2 rounded-[50px] font-medium text-white transition hover:opacity-90 ${className}`}
-            style={{ background: 'linear-gradient(to right, #1FBD7D, #0194FF)', ...style }}
+            className={`bg-gradient-brand inline-flex h-12 items-center gap-2 rounded-[50px] font-medium text-white transition hover:opacity-90 ${className}`}
+            style={style}
         >
             {t('label')}
             <img src={iconSrc} alt="" aria-hidden="true" style={{ width: iconWidth, height: iconHeight }} className={iconClassName} />

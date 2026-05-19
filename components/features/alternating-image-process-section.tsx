@@ -22,7 +22,7 @@ export function AlternatingImageProcessSection({ ariaLabel, title, subtitle, car
             <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-11">
                 <header>
                     <h2 className="[font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-bold tracking-[-1px] leading-[1.2]">{title}</h2>
-                    <p className="mt-4 text-[#4C4C4C] [font-size:clamp(14px,calc(11.58px+0.65vw),21px)] font-semibold tracking-[0.5px] leading-[1.5]">{subtitle}</p>
+                    <p className="mt-4 text-[var(--color-text-subtle)] [font-size:clamp(14px,calc(11.58px+0.65vw),21px)] font-semibold tracking-[0.5px] leading-[1.5]">{subtitle}</p>
                 </header>
 
                 <div className="mt-14 space-y-12 lg:mt-26 lg:space-y-24">

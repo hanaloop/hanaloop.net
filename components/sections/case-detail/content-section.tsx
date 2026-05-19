@@ -1,7 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, getLocale } from 'next-intl/server';
+import type { AppLocale } from '@/lib/locales';
+import { withLocalePath } from '@/lib/locales';
 
 type CaseDetailSummary = {
     label: string;
@@ -31,6 +33,7 @@ type CaseDetailItem = {
 
 export async function CaseDetailContentSection({ caseId }: { caseId: number }) {
     const t = await getTranslations('CasesDetail');
+    const locale = (await getLocale()) as AppLocale;
     const items = t.raw('items') as CaseDetailItem[];
     const item = items.find((caseItem) => caseItem.id === caseId);
 
@@ -43,7 +46,7 @@ export async function CaseDetailContentSection({ caseId }: { caseId: number }) {
                     {!item.hideHeaderAssets ? (
                         <>
                             <Image src={item.logoSrc} alt={item.logoAlt} width={320} height={140} className="h-auto w-auto max-h-[100px] max-w-[260px] md:max-h-[140px] md:max-w-[320px]" priority />
-                            <Link href="/partnership" className="inline-flex h-[56px] w-[200px] items-center justify-between rounded-full bg-black px-4 text-white md:w-[240px] md:px-8 lg:w-[280px]">
+                            <Link href={withLocalePath(locale, '/partnership')} className="inline-flex h-[56px] w-[200px] items-center justify-between rounded-full bg-black px-4 text-white md:w-[240px] md:px-8 lg:w-[280px]">
                                 <span className="[font-size:clamp(14px,calc(14px+(18-14)*((100vw-370px)/1070)),18px)] tracking-[-0.3px]">{item.contactLabel ?? t('defaultContactLabel')}</span>
                                 <Image src="/site/icons/ic-arrow.png" alt="" aria-hidden="true" width={10} height={10} className="h-[10px] w-[10px]" />
                             </Link>

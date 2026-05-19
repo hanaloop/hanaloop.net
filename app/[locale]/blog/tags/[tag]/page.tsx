@@ -51,10 +51,10 @@ export default async function Page({ params }: Props) {
   return (
     <SiteShell mobileContextualNav={mobileContextualNav}>
       <div className="mx-auto max-w-5xl px-4 py-10 md:px-6">
-        <h1 className="text-4xl font-semibold text-gray-900 dark:text-white">
+        <h1 className="text-4xl font-semibold text-gray-900">
           {texts.title}: {decodedTag}
         </h1>
-        <p className="mt-3 text-base text-gray-600 dark:text-gray-400">{texts.description}</p>
+        <p className="mt-3 text-base text-gray-600">{texts.description}</p>
         <div className="mt-8 flex flex-col gap-4">
           {items.map((item) => (
             <Link key={item.href} href={item.href} className="rounded-lg border p-4 no-underline transition hover:bg-gray-50">
@@ -73,7 +73,6 @@ export async function generateStaticParams() {
     
     .flatMap((locale) => {
       const tags = getBlogTags(locale);
-      // If no tags, return dummy entry
       if (tags.length === 0) {
         return [{ locale, tag: '__no_tags__' }];
       }

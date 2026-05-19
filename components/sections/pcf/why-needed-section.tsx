@@ -24,7 +24,7 @@ export async function PcfWhyNeededSection() {
                             <div className="mt-2">
                                 <GradientHeading>{t('itemOneTitle')}</GradientHeading>
                             </div>
-                            <p className="mt-5 whitespace-pre-line text-[#4C4C4C] font-medium [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] tracking-[0.5px]">{t('itemOneBody')}</p>
+                            <p className="mt-5 whitespace-pre-line text-[var(--color-text-subtle)] font-medium [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] tracking-[0.5px]">{t('itemOneBody')}</p>
                         </article>
 
                         <article>
@@ -32,7 +32,7 @@ export async function PcfWhyNeededSection() {
                             <div className="mt-2">
                                 <GradientHeading>{t('itemTwoTitle')}</GradientHeading>
                             </div>
-                            <p className="mt-5 whitespace-pre-line text-[#4C4C4C] font-medium [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] tracking-[0.5px]">{t('itemTwoBody')}</p>
+                            <p className="mt-5 whitespace-pre-line text-[var(--color-text-subtle)] font-medium [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] tracking-[0.5px]">{t('itemTwoBody')}</p>
                         </article>
                     </div>
 

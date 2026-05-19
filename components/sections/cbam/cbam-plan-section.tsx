@@ -87,7 +87,7 @@ export function CbamPlanSection({ locale }: CbamPlanSectionProps) {
                         <article key={card.title}>
                             <h3 className="[font-size:clamp(18px,calc(14.54px+0.93vw),28px)] font-semibold leading-[1.35] tracking-[-0.25px] text-black">{card.title}</h3>
                             <div className="mt-3 h-px w-full bg-black/45 lg:mt-4" />
-                            <ul className="mt-5 list-disc space-y-2 pl-5 text-[#4C4C4C] lg:mt-7">
+                            <ul className="mt-5 list-disc space-y-2 pl-5 text-[var(--color-text-subtle)] lg:mt-7">
                                 {card.items.map((item) => (
                                     <li key={item} className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium leading-[1.55] tracking-[-0.25px]">
                                         {item}

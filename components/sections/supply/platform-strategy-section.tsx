@@ -33,7 +33,7 @@ export async function SupplyStrategySection() {
                             <div className="mt-6 h-px bg-black/40" />
                             <ul className="mt-7 list-disc space-y-2 pl-6 text-black">
                                 {column.bullets.map((bullet) => (
-                                    <li key={bullet} className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium tracking-[-0.25px] leading-[1.6] text-[#4C4C4C]">
+                                    <li key={bullet} className="[font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-medium tracking-[-0.25px] leading-[1.6] text-[var(--color-text-subtle)]">
                                         {bullet}
                                     </li>
                                 ))}

@@ -43,7 +43,7 @@ export async function InsightListSection({ locale, selectedSlug }: InsightListSe
 
   if (!slug.length) {
     return (
-      <InsightDetailLayout navTree={navTree} currentPath="" title="" dateText="" toc={[]} backHref={withLocalePath(locale, '/docs')} showBackLink={false} labels={labels}>
+      <InsightDetailLayout locale={locale} navTree={navTree} currentPath="" title="" dateText="" toc={[]} backHref={withLocalePath(locale, '/docs')} showBackLink={false} labels={labels}>
         <div />
       </InsightDetailLayout>
     );
@@ -67,6 +67,7 @@ export async function InsightListSection({ locale, selectedSlug }: InsightListSe
 
   return (
     <InsightDetailLayout
+      locale={locale}
       navTree={navTree}
       currentPath={currentPath}
       title={String(pageData.title ?? '')}

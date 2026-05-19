@@ -20,8 +20,8 @@ function DesktopPlanRow({ plan }: { plan: EditionPlan }) {
 
     return (
         <article className="grid min-h-[108px] grid-cols-[150px_1fr] items-center rounded-[12px] bg-[#EAF9F3] px-9 py-7 gap-x-2">
-            <h3 className="[font-size:clamp(20px,20px,20px)] font-semibold leading-[1.2] tracking-[-0.3px] text-[#1FBD7D]">{plan.title}</h3>
-            <div className={`grid gap-x-9 text-[#4C4C4C] ${columnCount === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
+            <h3 className="text-[20px] font-semibold leading-[1.2] tracking-[-0.3px] text-[var(--color-brand-green)]">{plan.title}</h3>
+            <div className={`grid gap-x-9 text-[var(--color-text-subtle)] ${columnCount === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
                 {columns.map((columnItems, columnIndex) => (
                     <ul key={`${plan.title}-column-${columnIndex}`} className="space-y-3">
                         {columnItems.map((item) => (
@@ -40,7 +40,7 @@ function DesktopPlanRow({ plan }: { plan: EditionPlan }) {
 function MobilePlanCard({ plan }: { plan: EditionPlan }) {
     return (
         <article className="rounded-[6px] bg-[#EAF9F3] px-[18px] pb-[19px] pt-[18px]">
-            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[#1FBD7D] px-[18px] py-2 [font-size:clamp(20px,20px,20px)] font-semibold leading-[1.2] tracking-[-0.3px] text-[#1FBD7D]">{plan.title}</h3>
+            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[var(--color-brand-green)] px-[18px] py-2 text-[20px] font-semibold leading-[1.2] tracking-[-0.3px] text-[var(--color-brand-green)]">{plan.title}</h3>
             <div className="mt-[18px] h-px w-full bg-black/20" />
             <ul className="mt-[18px] space-y-[13px] text-[#2F3C38]">
                 {plan.items.map((item) => (
@@ -78,7 +78,7 @@ export async function OverviewEcoEditionSection() {
 
                 <div className="mx-auto w-full space-y-3 lg:hidden">
                     <div className="flex justify-center pb-[13px]">
-                        <h3 className="inline-flex min-h-[30px] min-w-[292px] items-center justify-center rounded-full bg-[#1FBD7D] px-7 py-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-white">
+                        <h3 className="inline-flex min-h-[30px] min-w-[292px] items-center justify-center rounded-full bg-[var(--color-brand-green)] px-7 py-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-white">
                             {t('saasEdition')}
                         </h3>
                     </div>
@@ -88,7 +88,7 @@ export async function OverviewEcoEditionSection() {
                     ))}
 
                     <div className="flex justify-center py-[13px]">
-                        <h3 className="inline-flex min-h-[30px] min-w-[292px] items-center justify-center rounded-full bg-[#1FBD7D] px-7 py-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-white">
+                        <h3 className="inline-flex min-h-[30px] min-w-[292px] items-center justify-center rounded-full bg-[var(--color-brand-green)] px-7 py-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-white">
                             {t('onPremEdition')}
                         </h3>
                     </div>

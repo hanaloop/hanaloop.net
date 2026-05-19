@@ -40,7 +40,7 @@ export async function CtaSection({ isHome = false }: { isHome?: boolean }) {
                     <span className="hidden lg:inline lg:text-[42px]">{t('heading')}</span>
                 </h2>
 
-                <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-2 md:gap-4 lg:mt-16 lg:max-w-none flex-row justify-center lg:gap-6">
+                <div className="mx-auto mt-12 flex w-full max-w-[720px] flex-col gap-2 md:gap-4 lg:mt-16 lg:max-w-none lg:flex-row justify-center lg:gap-6">
                     {isHome ? (
                         <>
                             <CtaButton href="/demo_request" label={t('demoLabel')} locale={locale} />

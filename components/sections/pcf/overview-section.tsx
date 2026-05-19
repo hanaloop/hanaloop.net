@@ -14,9 +14,9 @@ export async function PcfOverviewSection() {
 
     return (
         <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
-            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11 ">
+            <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
-                <p className="mt-5 text-[#4c4c4c] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>
+                <p className="mt-5 text-[var(--color-text-subtle)] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>
 
                 <h3 className="mt-20 lg:mt-30 [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-bold tracking-[-0.25px] text-black">{t('title')}</h3>
 
@@ -68,8 +68,8 @@ export async function PcfOverviewSection() {
                     </div>
                 </div>
 
-                <p className="mt-[34px] whitespace-pre-line lg:font-semibold [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] tracking-[-0.25px] text-[#4C4C4C]">{t('lead')}</p>
-                <p className="mt-[22px] whitespace-pre-line [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] tracking-[-0.25px] text-[#4C4C4C]">{t('body')}</p>
+                <p className="mt-[34px] whitespace-pre-line lg:font-semibold [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] tracking-[-0.25px] text-[var(--color-text-subtle)]">{t('lead')}</p>
+                <p className="mt-[22px] whitespace-pre-line [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] tracking-[-0.25px] text-[var(--color-text-subtle)]">{t('body')}</p>
             </div>
         </section>
     );

@@ -18,11 +18,11 @@ export async function OverviewCbamPlanSection() {
                 <div className="mx-auto mt-6 grid w-full grid-cols-1 gap-3 md:mt-12 md:grid-cols-3 md:gap-10 lg:mt-[56px] lg:gap-[78px]">
                     {cards.map((card) => (
                         <article key={card.title} className="rounded-[8px] bg-[linear-gradient(105deg,rgba(31,189,125,0.08)_0%,rgba(1,148,255,0.10)_100%)] px-5 py-5 md:rounded-none md:bg-none md:p-0">
-                            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[#1FBD7D] px-5 py-2 [font-size:clamp(20px,calc(18.62px+0.37vw),24px)] font-bold leading-[1.2] tracking-[-0.3px] text-[#1FBD7D] md:min-h-0 md:border-0 md:px-0 md:text-black">
+                            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[var(--color-brand-green)] px-5 py-2 [font-size:clamp(20px,calc(18.62px+0.37vw),24px)] font-bold leading-[1.2] tracking-[-0.3px] text-[var(--color-brand-green)] md:min-h-0 md:border-0 md:px-0 md:text-black">
                                 {card.title}
                             </h3>
                             <div className="mt-4 h-px w-full bg-black/20 md:mt-4 md:bg-black/55" />
-                            <p className="mt-4 whitespace-pre-line text-[12px] font-medium leading-[1.55] tracking-[-0.2px] text-[#4C4C4C] md:mt-5 md:text-[14px] md:leading-[1.5]">{card.body}</p>
+                            <p className="mt-4 whitespace-pre-line text-[12px] font-medium leading-[1.55] tracking-[-0.2px] text-[var(--color-text-subtle)] md:mt-5 md:text-[14px] md:leading-[1.5]">{card.body}</p>
                         </article>
                     ))}
                 </div>

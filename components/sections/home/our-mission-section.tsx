@@ -29,7 +29,7 @@ export async function HomeOurMissionSection() {
                     <p className="pointer-events-none absolute bottom-1 left-7 [font-size:clamp(48px,calc(35.55px+3.36vw),84px)] font-medium leading-none tracking-[-0.02em] text-white/45 md:left-10 lg:hidden">OUR MISSION</p>
                 </div>
 
-                <div className="mt-8 font-medium leading-[1.6] text-[#141414] [font-size:clamp(14px,calc(3.63px+2.80vw),44px)] px-4 md:px-11 lg:hidden">
+                <div className="mt-8 font-medium leading-[1.6] text-[var(--color-text-default)] [font-size:clamp(14px,calc(3.63px+2.80vw),44px)] px-4 md:px-11 lg:hidden">
                     <p>{body}</p>
                 </div>
             </div>

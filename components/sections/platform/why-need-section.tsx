@@ -14,11 +14,11 @@ export async function PlatformWhyNeedSection() {
         <section className="pt-10 md:pt-20 lg:pt-30" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
-                <p className="mt-5 font-semibold text-[#4c4c4c] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[-0.5px]">{t('subheading')}</p>
+                <p className="mt-5 font-semibold text-[var(--color-text-subtle)] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[-0.5px]">{t('subheading')}</p>
 
                 <div className="pb-12 pt-8 text-center md:pb-16 md:pt-24 lg:pb-[62px] lg:pt-[20px]">
                     <h3 className="text-black font-bold [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] tracking-[-1px]">{t('whyTitle')}</h3>
-                    <p className="mt-4 font-semibold text-[#4c4c4c] [font-size:clamp(14px,calc(11.60px+0.65vw),21px)] tracking-[-0.5px]">{t('whySubheading')}</p>
+                    <p className="mt-4 font-semibold text-[var(--color-text-subtle)] [font-size:clamp(14px,calc(11.60px+0.65vw),21px)] tracking-[-0.5px]">{t('whySubheading')}</p>
                 </div>
             </div>
 

@@ -25,13 +25,13 @@ export function HeroCtaButton({ locale, href, label, variant, className = '', st
     const isOutline = variant === 'outline';
     const baseClassName = isOutline
         ? 'gradient-border relative inline-flex items-center justify-between rounded-full bg-transparent font-medium leading-none text-white transition'
-        : 'inline-flex items-center justify-center rounded-full font-medium leading-none text-white transition hover:opacity-90';
+        : 'bg-gradient-brand inline-flex items-center justify-center rounded-full font-medium leading-none text-white transition hover:opacity-90';
 
     return (
         <Link
             href={withLocalePath(locale, href)}
             className={`${baseClassName} ${className}`.trim()}
-            style={isOutline ? { ...outlineStyle, ...style } : { background: 'linear-gradient(90deg, #1FBD7D 0%, #0194FF 100%)', ...style }}
+            style={isOutline ? { ...outlineStyle, ...style } : style}
         >
             <span className="whitespace-nowrap">{label}</span>
             <Image

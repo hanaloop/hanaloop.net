@@ -5,8 +5,11 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { useMemo, useState } from 'react';
 import type { InsightHeading, InsightNavNode } from '@/lib/insight-navigation';
+import type { AppLocale } from '@/lib/locales';
+import { withLocalePath } from '@/lib/locales';
 
 type InsightDetailLayoutProps = {
+    locale: AppLocale;
     navTree: InsightNavNode[];
     currentPath: string;
     title: string;
@@ -38,7 +41,7 @@ function clampFont(minPx: number, maxPx: number) {
     return `clamp(${minPx}px, calc(${minPx}px + ${(maxPx - minPx).toFixed(4)} * ((100vw - 370px) / 1070)), ${maxPx}px)`;
 }
 
-function CbamSupportBanner() {
+function CbamSupportBanner({ locale }: { locale: AppLocale }) {
     return (
         <section className="mx-auto mt-30 w-full max-w-[1920px] border-t border-[#cfcfcf] pt-14 md:pt-16">
             <div className="w-full px-4 py-10 text-center md:px-8 md:py-12 lg:px-12 lg:py-14">
@@ -52,7 +55,7 @@ function CbamSupportBanner() {
                     하나루프 X (주)로엔컨설팅과 함께하는 정부지원사업
                 </p>
                 <Link
-                    href="/partnership"
+                    href={withLocalePath(locale, '/partnership')}
                     className="mx-auto mt-6 inline-flex w-full max-w-[320px] items-center justify-center whitespace-nowrap rounded-full px-6 text-center text-white bg-gradient-brand"
                     style={{ height: clampFont(50, 58), fontWeight: 600, fontSize: clampFont(16, 18), letterSpacing: '-0.02em' }}
                 >
@@ -105,7 +108,7 @@ function NavItem({ node, level, currentPath, openByLevel, setOpenAtLevel, closeD
                         style={{ fontSize: sizeByLevel, fontWeight: weightByLevel, letterSpacing: '-0.02em', color: colorByLevel }}
                     >
                         <span>{node.title}</span>
-                        {hasChildren ? <img src={isOpen ? '/site/docs/color_arrow.png' : '/site/docs/arrow.png'} alt="" className={`transition ${isOpen ? '' : 'rotate-180'}`} aria-hidden /> : null}
+                        {hasChildren ? <img src={isOpen ? '/site/docs/color_arrow.png' : '/site/docs/arrow.png'} alt="" className={`transition ${isOpen ? '' : 'rotate-180'}`} aria-hidden="true" /> : null}
                     </button>
                 )}
             </div>
@@ -139,7 +142,7 @@ function toOpenByLevel(ancestorIds: string[]): Record<number, string | null> {
     return open;
 }
 
-export function InsightDetailLayout({ navTree, currentPath, title, toc, backHref, showBackLink, dateText, image, children, labels }: InsightDetailLayoutProps) {
+export function InsightDetailLayout({ locale, navTree, currentPath, title, toc, backHref, showBackLink, dateText, image, children, labels }: InsightDetailLayoutProps) {
     const ancestors = useMemo(() => findAncestorIds(navTree, currentPath), [navTree, currentPath]);
     const [openByLevel, setOpenByLevel] = useState<Record<number, string | null>>(() => toOpenByLevel(ancestors));
     const [leftDrawerOpen, setLeftDrawerOpen] = useState(false);
@@ -227,7 +230,7 @@ export function InsightDetailLayout({ navTree, currentPath, title, toc, backHref
                 <div className="fixed inset-0 z-50 bg-black/40 lg:hidden" onClick={() => setLeftDrawerOpen(false)}>
                     <div className="h-full w-[88%] max-w-[360px] overflow-y-auto bg-white p-4" onClick={(e) => e.stopPropagation()}>
                         <button type="button" className="mb-3 ml-auto block p-1" onClick={() => setLeftDrawerOpen(false)} aria-label={labels.close}>
-                            <Image src="/site/icons/ic-close-white.png" alt="" width={18} height={18} className="h-[18px] w-[18px] brightness-0" aria-hidden />
+                            <Image src="/site/icons/ic-close-white.png" alt="" width={18} height={18} className="h-[18px] w-[18px] brightness-0" aria-hidden="true" />
                         </button>
                         <h2 style={{ fontWeight: 700, fontSize: clampFont(20, 24), letterSpacing: '-0.02em', color: 'var(--color-text-subtle)' }}>{labels.archiveTitle}</h2>
                         <ul className="mt-4 space-y-3">
@@ -243,7 +246,7 @@ export function InsightDetailLayout({ navTree, currentPath, title, toc, backHref
                 <div className="fixed inset-0 z-50 bg-black/40 lg:hidden" onClick={() => setRightDrawerOpen(false)}>
                     <div className="ml-auto h-full w-[84%] max-w-[320px] overflow-y-auto bg-white p-4" onClick={(e) => e.stopPropagation()}>
                         <button type="button" className="mb-3 block p-1" onClick={() => setRightDrawerOpen(false)} aria-label={labels.close}>
-                            <Image src="/site/icons/ic-close-white.png" alt="" width={18} height={18} className="h-[18px] w-[18px] brightness-0" aria-hidden />
+                            <Image src="/site/icons/ic-close-white.png" alt="" width={18} height={18} className="h-[18px] w-[18px] brightness-0" aria-hidden="true" />
                         </button>
                         <ul className="space-y-3">
                             {toc.map((item) => (
@@ -258,7 +261,7 @@ export function InsightDetailLayout({ navTree, currentPath, title, toc, backHref
                 </div>
             ) : null}
 
-            <CbamSupportBanner />
+            <CbamSupportBanner locale={locale} />
         </section>
     );
 }

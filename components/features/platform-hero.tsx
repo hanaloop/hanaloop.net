@@ -36,8 +36,7 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
     }, []);
 
     return (
-        <>
-            <section className="relative h-[566px] overflow-hidden text-white lg:h-[420px] xl:h-[480px]" aria-label={ariaLabel}>
+        <section className="relative h-[566px] overflow-hidden text-white lg:h-[420px] xl:h-[480px]" aria-label={ariaLabel}>
                 {mobileBackgroundImageUrl ? (
                     <>
                         <div className="absolute inset-0 bg-cover bg-center lg:hidden" style={{ backgroundImage: `url('${mobileBackgroundImageUrl}')` }} />
@@ -58,13 +57,13 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                                 {item.current ? (
                                     <Link
                                         href={withLocalePath(locale, item.href)}
-                                        className="inline-flex min-h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] font-semibold tracking-[-0.25px] text-white"
+                                        className="inline-flex min-h-8 min-w-0 items-center justify-center rounded-full border border-white/35 px-5 [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] font-semibold tracking-[-0.25px] text-white"
                                         aria-current="page"
                                     >
                                         {item.label}
                                     </Link>
                                 ) : (
-                                    <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center [font-size:clamp(14px,calc(12.62px+0.37vw),18px))] tracking-[-0.25px] text-white/95 transition hover:text-white">
+                                    <Link href={withLocalePath(locale, item.href)} className="inline-flex h-8 items-center [font-size:clamp(14px,calc(12.62px+0.37vw),18px)] tracking-[-0.25px] text-white/95 transition hover:text-white">
                                         {item.label}
                                     </Link>
                                 )}
@@ -99,7 +98,6 @@ export function PlatformHero({ ariaLabel, backgroundImageUrl, mobileBackgroundIm
                         </div>
                     </nav>
                 </div>
-            </section>
-        </>
+        </section>
     );
 }

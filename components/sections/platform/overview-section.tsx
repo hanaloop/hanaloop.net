@@ -12,7 +12,7 @@ export async function PlatformOverviewSection() {
         <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-11">
                 <h2 className="text-black font-bold [font-size:clamp(28px,calc(16.94px+2.99vw),60px)] tracking-[-1px]">{t('heading')}</h2>
-                <p className="mt-5 text-[#4C4C4C] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>
+                <p className="mt-5 text-[var(--color-text-subtle)] font-semibold [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] tracking-[0.5px]">{t('subheading')}</p>
 
                 <div className="mt-10 lg:hidden">
                     <div className="relative mt-10 aspect-[957/707] overflow-hidden rounded-tl-[18px] rounded-br-[18px] lg:mt-[8px] lg:w-[min(957px,49.84vw,50vw)] lg:shrink-0">
@@ -21,7 +21,7 @@ export async function PlatformOverviewSection() {
 
                     <div className="mt-10 pt-1 lg:max-w-[700px] lg:flex-1">
                         <h3 className="[font-size:clamp(28px,calc(26.62px+0.37vw),32px)] font-bold tracking-[-0.25px] text-black">{t('whatTitle')}</h3>
-                        <p className="mt-4 text-[#4C4C4C] [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] font-medium tracking-[-0.25px] md:mt-5">{t('whatBody')}</p>
+                        <p className="mt-4 text-[var(--color-text-subtle)] [font-size:clamp(16px,calc(14.27px+0.47vw),21px)] font-medium tracking-[-0.25px] md:mt-5">{t('whatBody')}</p>
 
                         <RoundedArrowButton href={withLocalePath(locale, '/partnership')} label={t('contactLabel')} className="mt-10 h-[52px] lg:max-w-[280px] md:mt-12 md:h-[56px]" />
                     </div>
