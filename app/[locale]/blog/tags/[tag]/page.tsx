@@ -6,7 +6,7 @@ import { SiteShell } from '@/components/layout/site-shell';
 import { getBlogByTag, getBlogTags } from '@/lib/blog-tags';
 import { isLocale, locales } from '@/lib/locales';
 import { buildBlogMobileContextualNav } from '@/lib/mobile-nav';
-import { siteConfig } from '@/lib/site-config';
+import { getLanguageAlternates, siteConfig } from '@/lib/site-config';
 
 type Props = {
   params: Promise<{
@@ -92,6 +92,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${texts.title}: ${decodedTag}`,
     description: texts.description,
+    alternates: getLanguageAlternates(locale, `/blog/tags/${tag}`),
     openGraph: {
       title: `${texts.title}: ${decodedTag}`,
       description: texts.description,

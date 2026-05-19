@@ -11,6 +11,7 @@ import { BlogHeroSection } from '@/components/sections/blog/hero-section';
 import { BlogListSection } from '@/components/sections/blog/list-section';
 import { getBlogPostContent, getBlogPostSlugs } from '@/lib/blog-content';
 import { isLocale, locales, withLocalePath } from '@/lib/locales';
+import { getLanguageAlternates } from '@/lib/site-config';
 
 type Props = {
     params: Promise<{
@@ -73,6 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return {
             title: 'HanaLoop Blog',
             description: 'HanaLoop blog and insight updates.',
+            alternates: getLanguageAlternates(locale, '/blog'),
         };
     }
 
@@ -82,6 +84,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: post.title,
         description: post.description || post.title,
+        alternates: getLanguageAlternates(locale, `/blog/${slug.join('/')}`),
         openGraph: {
             title: post.title,
             description: post.description || post.title,

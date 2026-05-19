@@ -10,7 +10,7 @@ import { HomeFaqSection } from '@/components/sections/home/faq-section';
 import { CtaSection } from '@/components/sections/home/cta-section';
 import { HomeRegulatoryComplianceSection } from '@/components/sections/home/regulatory-compliance-section';
 import { isLocale, locales } from '@/lib/locales';
-import { getHomeMetadataText, siteConfig } from '@/lib/site-config';
+import { getHomeMetadataText, siteConfig, getLanguageAlternates } from '@/lib/site-config';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -49,6 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description: meta.description,
+    alternates: getLanguageAlternates(locale, '/'),
     openGraph: { title, description: meta.description, images: [siteConfig.image] },
     twitter: { title, description: meta.description, images: [siteConfig.image] },
   };

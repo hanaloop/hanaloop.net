@@ -6,6 +6,7 @@ import { InsightHeroSection } from '@/components/sections/insight/hero-section';
 import { InsightListSection } from '@/components/sections/insight/list-section';
 import { getInsightPostSlugs } from '@/lib/insight-content';
 import { isLocale, locales, withLocalePath } from '@/lib/locales';
+import { getLanguageAlternates } from '@/lib/site-config';
 import { getDocsSource } from '@/lib/source';
 
 type Props = {
@@ -46,6 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return {
             title: 'HanaLoop Insight',
             description: 'HanaLoop insight and research updates.',
+            alternates: getLanguageAlternates(locale, '/insight'),
         };
     }
 
@@ -59,6 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title,
         description,
+        alternates: getLanguageAlternates(locale, `/insight/${slug.join('/')}`),
         openGraph: {
             title,
             description,

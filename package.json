@@ -8,7 +8,7 @@
         "prepare:blog-list": "node scripts/generate-blog-list-json.mjs",
         "prepare:insight-list": "node scripts/generate-insight-list-json.mjs",
         "dev": "yarn prepare:content && next dev -H 0.0.0.0 -p 3000",
-        "build": "yarn prepare:content && next build",
+        "build": "yarn prepare:content && next build && node scripts/export-default-locale.mjs",
         "start": "serve out",
         "types:check": "yarn prepare:content && next typegen && tsc --noEmit",
         "postinstall": "yarn prepare:content",
