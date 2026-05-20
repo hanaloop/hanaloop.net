@@ -40,7 +40,9 @@ function DesktopPlanRow({ plan }: { plan: EditionPlan }) {
 function MobilePlanCard({ plan }: { plan: EditionPlan }) {
     return (
         <article className="rounded-[6px] bg-[#EAF9F3] px-[18px] pb-[19px] pt-[18px]">
-            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[var(--color-brand-green)] px-[18px] py-2 text-[20px] font-semibold leading-[1.2] tracking-[-0.3px] text-[var(--color-brand-green)]">{plan.title}</h3>
+            <h3 className="inline-flex min-h-[30px] items-center rounded-full border border-[var(--color-brand-green)] px-[18px] py-2 text-[20px] font-semibold leading-[1.2] tracking-[-0.3px] text-[var(--color-brand-green)]">
+                {plan.title}
+            </h3>
             <div className="mt-[18px] h-px w-full bg-black/20" />
             <ul className="mt-[18px] space-y-[13px] text-[#2F3C38]">
                 {plan.items.map((item) => (
@@ -60,7 +62,7 @@ export async function OverviewEcoEditionSection() {
     const onPremPlan = t.raw('onPremPlan') as EditionPlan;
 
     return (
-        <section className="px-5 pb-16 pt-3 md:px-8 md:pb-20 lg:px-0 lg:pb-[82px]" aria-label={t('sectionAriaLabel')}>
+        <section className="pb-16 pt-3 lg:pb-[120px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <h2 className="hidden text-center [font-size:clamp(24px,calc(15.70px+2.243vw),48px)] font-semibold leading-[1.2] tracking-[-0.1px] text-black lg:block">{t('heading')}</h2>
 

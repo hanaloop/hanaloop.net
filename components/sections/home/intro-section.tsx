@@ -49,14 +49,14 @@ export async function HomeIntroSection() {
                     <h2 className="mx-auto mt-2 max-w-[1020px] text-center font-medium leading-[1.14] tracking-[-0.02em] text-black [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] lg:mt-4">
                         <span className="lg:hidden font-bold">
                             {titleMobileLines.map((line) => (
-                                <span key={line} className="block whitespace-nowrap">
+                                <span key={line} className="block">
                                     {line}
                                 </span>
                             ))}
                         </span>
                         <span className="hidden lg:block font-bold">
                             {titleDesktopLines.map((line) => (
-                                <span key={line} className="block whitespace-nowrap">
+                                <span key={line} className="block">
                                     {line}
                                 </span>
                             ))}

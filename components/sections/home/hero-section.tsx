@@ -29,17 +29,9 @@ export async function HomeHeroSection() {
     return (
         <section className="relative isolate overflow-x-hidden text-white">
             <div className="relative overflow-hidden bg-[var(--color-hero-bg)]" style={{ height: 'clamp(620px, calc(620px + 16vw), 958px)' }}>
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    src="/site/home/main.mp4"
-                    poster="/site/home/hero-bg-main.png"
-                    className="absolute inset-0 h-full w-full object-cover object-center"
-                />
+                <video autoPlay muted loop playsInline src="/site/home/main.mp4" poster="/site/home/hero-bg-main.png" className="absolute inset-0 h-full w-full object-cover object-center" />
                 <div className="absolute inset-0 bg-black/20" />
-                <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-8 lg:px-[64px]" style={{ paddingTop: 'clamp(92px, calc(54.14px + 10.10vw), 248px)' }}>
+                <div className="relative z-10 mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-8 lg:px-[64px] pt-40 md:pt-60 lg:t-80">
                     <div className="max-w-[800px]">
                         <h1 className="font-sans font-semibold leading-[1.18] tracking-[-0.02em] text-white [font-size:clamp(28px,calc(16.94px+2.99vw),60px)]">
                             <span className="block">{t('title')}</span>

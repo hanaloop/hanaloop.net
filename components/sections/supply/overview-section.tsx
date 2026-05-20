@@ -4,6 +4,7 @@ import type { AppLocale } from '@/lib/locales';
 import { withLocalePath } from '@/lib/locales';
 import { RoundedArrowButton } from '@/components/ui/rounded-arrow-button';
 import bgImage from '@/public/site/supply/climate-management-bg.png';
+import mobileBgImage from '@/public/site/cbam/plan-bg-mobile.jpg';
 
 export async function SupplyClimateManagementSection() {
     const t = await getTranslations('SupplyChainOverview');
@@ -16,9 +17,9 @@ export async function SupplyClimateManagementSection() {
                 <p className="mt-5 text-[var(--color-text-subtle)] [font-size:clamp(16px,calc(13.23px+0.75vw),24px)] font-semibold tracking-[0.5px] leading-[1.48]">{t('subheading')}</p>
             </div>
 
-            <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden">
+            <div className="mx-auto mt-14 w-full max-w-[1440px] lg:hidden px-4 md:px-8">
                 <div className="mt-12 overflow-hidden rounded-[20px] lg:mt-[58px]">
-                    <img src="/site/cbam/plan-bg-mobile.jpg" alt="" className="h-auto w-full" loading="eager" />
+                    <Image src={mobileBgImage} alt={t('imageAlt')} width={957} height={707} className="h-auto w-full" loading="eager" />
                 </div>
                 <div className="space-y-14 md:px-8 mt-10">
                     <article>

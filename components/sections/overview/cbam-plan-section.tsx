@@ -11,7 +11,7 @@ export async function OverviewCbamPlanSection() {
     const cards = t.raw('cards') as PlanCard[];
 
     return (
-        <section className="px-4 pb-14 pt-10 md:px-8 lg:px-0 lg:pb-[74px] lg:pt-[80px]" aria-label={t('sectionAriaLabel')}>
+        <section className="pb-16 pt-14 lg:pb-[120px] lg:pt-[150px]" aria-label={t('sectionAriaLabel')}>
             <div className="mx-auto w-full max-w-[1440px] px-4 md:px-8 lg:px-11">
                 <h2 className="text-center [font-size:clamp(24px,calc(15.70px+2.24vw),48px)] font-semibold leading-[1.2] tracking-[-0.1px] text-black my-8">{t('heading')}</h2>
 
