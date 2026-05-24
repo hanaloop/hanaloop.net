@@ -36,11 +36,11 @@ type LoopSlide = {
     fixedIndex: number;
 };
 
-const partnerLogoRows = [
-    { src: '/site/home/collaboration/partner-logos/cis-1.png', width: 1225, height: 57 },
-    { src: '/site/home/collaboration/partner-logos/cis-2.png', width: 1167, height: 57 },
-    { src: '/site/home/collaboration/partner-logos/cis-3.png', width: 1192, height: 57 },
-] as const;
+const partnerLogoGrid = Array.from({ length: 20 }, (_, i) => ({
+    src: `/site/home/collaboration/partner-logos/${i + 1}.png`,
+    width: 220,
+    height: 86,
+}));
 
 const staticCollaborations = [
     { id: 'sama', title: 'SamA', cardImage: '/site/home/collaboration/sama-img.png', logoImage: '/site/home/collaboration/sama.png' },
@@ -219,11 +219,13 @@ export function HomeCollaborationSection() {
                 </div>
                 <div className="mt-12 lg:mt-16">
                     <div className="partner-logo-rows" ref={partnerLogoRowsRef} style={{ cursor: 'grab' }}>
-                        {partnerLogoRows.map((row, i) => (
-                            <div key={i} className="partner-logo-row">
-                                <Image src={row.src} alt={`파트너 로고 ${i + 1}번째 줄`} width={row.width} height={row.height} className="partner-logo-row-image" sizes="(max-width: 1023px) 100vw, 1440px" draggable={false} />
-                            </div>
-                        ))}
+                        <div className="partner-logo-grid">
+                            {partnerLogoGrid.map((logo, i) => (
+                                <div key={i} className="partner-logo-cell">
+                                    <Image src={logo.src} alt={t('partnerLogoAlt', { index: i + 1 })} width={logo.width} height={logo.height} className="partner-logo-cell-image" sizes="(max-width: 1023px) 220px, 20vw" draggable={false} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

@@ -142,10 +142,6 @@
 
 .partner-logo-rows {
     -webkit-overflow-scrolling: touch;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 72px;
     overflow-x: auto;
     scrollbar-width: none;
     width: 100%;
@@ -155,12 +151,18 @@
     display: none;
 }
 
-.partner-logo-row {
-    flex: 0 0 auto;
-    width: 82vw;
+.partner-logo-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
 }
 
-.partner-logo-row-image {
+.partner-logo-cell {
+    flex: 0 0 auto;
+    width: 160px;
+}
+
+.partner-logo-cell-image {
     -webkit-user-drag: none;
     height: auto;
     object-fit: contain;
@@ -171,16 +173,20 @@
 
 @media (min-width: 1024px) {
     .partner-logo-rows {
-        flex-direction: column;
-        gap: clamp(16px, 2vw, 28px);
         margin-inline: auto;
         max-width: 1440px;
         overflow: hidden;
     }
 
-    .partner-logo-row {
+    .partner-logo-grid {
+        display: grid;
+        gap: clamp(12px, 1.5vw, 24px);
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .partner-logo-cell {
         flex: none;
-        width: 100%;
+        width: auto;
     }
 }
 

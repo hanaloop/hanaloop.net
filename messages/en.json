@@ -53,6 +53,7 @@
         "titleLines": ["Start carbon management with a trusted, proven partner."],
         "description": "Manufacturers in metals, automotive, heavy industry, and chemicals\nare moving beyond compliance to drive sustainability with HanaLoop.",
         "viewMore": "View more collaboration",
+        "partnerLogoAlt": "Partner logo {index}",
         "collaborations": [
             {
                 "subtitle": "",

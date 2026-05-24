@@ -53,6 +53,7 @@
         "titleLines": ["Comience la gestión de carbono con un socio de confianza."],
         "description": "Empresas de metales, automoción, industria pesada y química\ninnovan en sostenibilidad con HanaLoop.",
         "viewMore": "Ver más colaboraciones",
+        "partnerLogoAlt": "Logo de socio {index}",
         "collaborations": [
             {
                 "subtitle": "",

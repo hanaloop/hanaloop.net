@@ -53,6 +53,7 @@
         "titleLines": ["탄소 경영, 검증된 파트너와 시작하세요."],
         "description": "금속·비철금속, 자동차, 중공업, 화학 등 제조 기업들이 하나루프와 함께\n기후 규제를 넘어 지속가능성을 혁신하고 있습니다.",
         "viewMore": "View more collaboration",
+        "partnerLogoAlt": "파트너사 로고 {index}",
         "collaborations": [
             {
                 "subtitle": "",
