@@ -5,6 +5,8 @@ import { getInsightPostSlugs } from '@/lib/insight-content';
 import { getCanonicalUrl, getLanguageAlternates } from '@/lib/site-config';
 import koMessages from '@/messages/ko.json';
 
+export const dynamic = 'force-static';
+
 type SitemapEntry = MetadataRoute.Sitemap[number];
 
 const staticPaths = [
