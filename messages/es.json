@@ -197,10 +197,13 @@
                 "items": ["Sitios ilimitados", "Scope 1, 2, 3", "Gestion de emisiones de cadena de suministro", "Reporte de emisiones corporativas", "Integracion con KEPCO", "Chatbot", "PCF cradle-to-gate"]
             }
         ],
-        "onPremPlan": {
+        "onPremPlans": [{
             "title": "ECO INTEGRATION",
+            "items": ["Todas las funciones de ENTERPRISE", "Datapipe: conectores y APIs", "Integracion de sesiones"]
+        }, {
+            "title": "SUPPLIER INTEGRATION",
             "items": ["Todas las funciones de Supply chain", "Datapipe: conectores y APIs", "Integracion de sesiones"]
-        }
+        }]
     },
     "OverviewSolutionMatrix": {
         "sectionAriaLabel": "Matriz de selección de soluciones",

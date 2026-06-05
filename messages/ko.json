@@ -176,13 +176,13 @@
             }
         ],
         "imageAlt": "Hana.eco CBAM Plan 배경 이미지",
-        "imageLabel": "Hana.eco EDITION"
+        "imageLabel": "Hana.eco Platform"
     },
     "OverviewEcoEdition": {
-        "sectionAriaLabel": "Hana.eco EDITION",
-        "heading": "Hana.eco EDITION",
-        "saasEdition": "SAAS EDITION",
-        "onPremEdition": "ON-PREM EDITION",
+        "sectionAriaLabel": "Hana.eco Platform",
+        "heading": "Hana.eco Platform",
+        "saasEdition": "SAAS MODEL",
+        "onPremEdition": "ON-PREM MODEL",
         "saasPlans": [
             {
                 "title": "STANDARD",
@@ -197,10 +197,13 @@
                 "items": ["무제한 사업장", "Scope 1, 2, 3", "공급망 배출량 관리", "기업 배출량 리포트", "KEPCO 연동", "챗봇", "Cradle-to-gate PCF"]
             }
         ],
-        "onPremPlan": {
+        "onPremPlans": [{
             "title": "ECO INTEGRATION",
-            "items": ["Supply chain의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
-        }
+            "items": ["ENTERPRISE의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
+        }, {
+            "title": "SUPPLIER INTEGRATION",
+            "items": ["SUPPLY CHAIN의 모든 기능", "Datapipe: 커넥터 & API", "세션 연동"]
+        }]
     },
     "OverviewSolutionMatrix": {
         "sectionAriaLabel": "솔루션 선택 매트릭스",
@@ -975,7 +978,7 @@
                 "solutionLabel": "솔루션",
                 "solutionText": "Hana.eco CBAM 솔루션 도입, ERP 연동, 자동 보고서 설정",
                 "resultLabel": "성과",
-                "resultText": "보고서 작성 시간 87% 단축 | LRQA 검증 통과 | 연간 탄소 비용 XX% 절감"
+                "resultText": "협력사와 저탄소 생태계 형성. CBAM 준수"
             },
             {
                 "id": "case-byucksan",
@@ -1028,7 +1031,7 @@
                 "href": "/partnership",
                 "ctaLabel": "더 자세히 보기",
                 "companyName": "아폴로산업",
-                "industryLabel": "플라스틱/자동차 중소기업",
+                "industryLabel": "플라스틱 중소기업",
                 "challengeLabel": "도전과제",
                 "challengeText": "수출 제품별 복잡 탄소 배출량 산정 준비 부족",
                 "solutionLabel": "솔루션",

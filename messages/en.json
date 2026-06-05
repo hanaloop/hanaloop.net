@@ -176,7 +176,7 @@
             }
         ],
         "imageAlt": "Hana.eco CBAM Plan background image",
-        "imageLabel": "Hana.eco EDITION"
+        "imageLabel": "Hana.eco Platform"
     },
     "OverviewEcoEdition": {
         "sectionAriaLabel": "Hana.eco EDITION",
@@ -197,10 +197,16 @@
                 "items": ["Unlimited sites", "Scope 1, 2, 3", "Supply chain emission management", "Corporate emissions report", "Integration with KEPCO", "Chatbot", "Cradle-to-gate PCF"]
             }
         ],
-        "onPremPlan": {
-            "title": "ECO INTEGRATION",
-            "items": ["All features in Supply chain", "Datapipe: Connectors & APIs", "Session integration"]
-        }
+        "onPremPlans": [
+            {
+                "title": "ECO INTEGRATION",
+                "items": ["All features in ENTERPRISE", "Datapipe: Connectors & APIs", "Session integration"]
+            },
+            {
+                "title": "SUPPLIER INTEGRATION",
+                "items": ["All features in Supply chain", "Datapipe: Connectors & APIs", "Session integration"]
+            }
+        ]
     },
     "OverviewSolutionMatrix": {
         "sectionAriaLabel": "Solution Selection Matrix",

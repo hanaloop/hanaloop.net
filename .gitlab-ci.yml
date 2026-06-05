@@ -1,0 +1,32 @@
+# The Docker image that will be used to build your app
+image: "node:22"
+
+stages:
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+    - .next/cache/
+
+pages:
+  stage: deploy
+  # variables:
+    # Only needed when running on a subpath, e.g. https://example.com/branding/hanaloop.com
+    # WEB_PATH_PREFIX: "/branding/hanaloop.com"
+  script:
+    - corepack enable
+    - yarn install --immutable
+    - yarn build
+    - rm -rf ./public
+    - mv ./out ./public
+
+  artifacts:
+    paths:
+      # The folder that contains the files to be exposed at the Page URL
+      - public
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
