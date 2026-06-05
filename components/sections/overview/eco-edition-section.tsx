@@ -59,7 +59,7 @@ function MobilePlanCard({ plan }: { plan: EditionPlan }) {
 export async function OverviewEcoEditionSection() {
     const t = await getTranslations('OverviewEcoEdition');
     const saasPlans = t.raw('saasPlans') as EditionPlan[];
-    const onPremPlan = t.raw('onPremPlan') as EditionPlan;
+    const onPremPlans = t.raw('onPremPlans') as EditionPlan[];
 
     return (
         <section className="pb-16 pt-3 lg:pb-[120px]" aria-label={t('sectionAriaLabel')}>
@@ -75,7 +75,11 @@ export async function OverviewEcoEditionSection() {
                     </div>
 
                     <h3 className="pt-2 [font-size:clamp(20px,calc(17.23px+0.748vw),28px)] font-semibold leading-[1.2] tracking-[-0.3px] text-black">{t('onPremEdition')}</h3>
-                    <DesktopPlanRow plan={onPremPlan} />
+                    <div className="space-y-4">
+                        {onPremPlans.map((plan) => (
+                            <DesktopPlanRow key={plan.title} plan={plan} />
+                        ))}
+                    </div>
                 </div>
 
                 <div className="mx-auto w-full space-y-3 lg:hidden">
@@ -95,7 +99,9 @@ export async function OverviewEcoEditionSection() {
                         </h3>
                     </div>
 
-                    <MobilePlanCard plan={onPremPlan} />
+                    {onPremPlans.map((plan) => (
+                        <MobilePlanCard key={plan.title} plan={plan} />
+                    ))}
                 </div>
             </div>
         </section>
